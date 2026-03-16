@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"aztec","properties":{"id":"aztec","name":"Aztec Mythology","region":"Central Mexico","era":"MS 1300 – MS 1521","eraBucket":"modern","color":"#1ABC9C","bbox":"-105,14,-96,22"},"geometry":{"type":"Polygon","coordinates":[[[-105,14],[-96,14],[-96,22],[-105,22],[-105,14]]]}}]}

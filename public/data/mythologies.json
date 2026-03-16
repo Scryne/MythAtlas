@@ -1,0 +1,873 @@
+[
+  {
+    "id": "greek",
+    "name": "Greek Mythology",
+    "region": "Greece & Aegean",
+    "culture": "Ancient Greek",
+    "era": "MÖ 2000 – MS 400",
+    "origin": {
+      "lat": 37.97,
+      "lng": 23.72
+    },
+    "boundingBox": [
+      19,
+      34,
+      30,
+      42
+    ],
+    "color": "#4A90D9",
+    "description": "Greek mythology is a vast body of narratives concerning the gods, heroes, and rituals of the ancient Greeks. Centered on Mount Olympus, the twelve Olympian gods presided over mortals and shaped the world. These myths explored human nature through epic quests, tragic flaws, and divine intervention. They remain foundational to Western literature, art, and philosophy.",
+    "significance": "Greek myths laid the groundwork for Western literary traditions, introduced archetypes that persist in modern storytelling, and provided frameworks for understanding psychology and morality.",
+    "pantheonSize": 50,
+    "primaryLanguage": "Ancient Greek",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "tags": [
+      "olympian",
+      "heroic",
+      "tragic",
+      "western",
+      "classical"
+    ]
+  },
+  {
+    "id": "roman",
+    "name": "Roman Mythology",
+    "region": "Italian Peninsula & Roman Empire",
+    "culture": "Ancient Roman",
+    "era": "MÖ 800 – MS 500",
+    "origin": {
+      "lat": 41.9,
+      "lng": 12.49
+    },
+    "boundingBox": [
+      6,
+      36,
+      18,
+      47
+    ],
+    "color": "#C0392B",
+    "description": "Roman mythology absorbed and reinterpreted Greek deities while adding uniquely Roman gods like Janus and Quirinus. The Romans emphasized civic duty, ancestor worship, and the divine right of the state. Their myths intertwined with historical legends like the founding of Rome by Romulus and Remus. Religious practice was deeply embedded in public and political life.",
+    "significance": "Roman mythology spread across three continents through imperial expansion, shaping law, language, and religious practice throughout Europe and the Mediterranean.",
+    "pantheonSize": 45,
+    "primaryLanguage": "Latin",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pantheon_Roma_2.jpg/1280px-Pantheon_Roma_2.jpg",
+    "tags": [
+      "imperial",
+      "civic",
+      "classical",
+      "syncretic",
+      "western"
+    ]
+  },
+  {
+    "id": "norse",
+    "name": "Norse Mythology",
+    "region": "Scandinavia & Iceland",
+    "culture": "Viking / Norse",
+    "era": "MS 200 – MS 1100",
+    "origin": {
+      "lat": 59.91,
+      "lng": 10.75
+    },
+    "boundingBox": [
+      -25,
+      55,
+      30,
+      72
+    ],
+    "color": "#2ECC71",
+    "description": "Norse mythology tells of the nine worlds connected by Yggdrasil, the great ash tree. The Aesir and Vanir gods battled frost giants and prepared for Ragnarök, the twilight of the gods. Heroes like Sigurd and Beowulf embodied the warrior ethos of Viking culture. The mythology was preserved in the Eddas and sagas of medieval Iceland.",
+    "significance": "Norse myths profoundly influenced northern European culture, language, and calendar (Tuesday through Friday are named after Norse gods), and continue to inspire modern fantasy literature.",
+    "pantheonSize": 30,
+    "primaryLanguage": "Old Norse",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg/1280px-Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg",
+    "tags": [
+      "viking",
+      "warrior",
+      "ragnarok",
+      "northern",
+      "saga"
+    ]
+  },
+  {
+    "id": "celtic",
+    "name": "Celtic Mythology",
+    "region": "British Isles & Western Europe",
+    "culture": "Celtic",
+    "era": "MÖ 500 – MS 400",
+    "origin": {
+      "lat": 53.35,
+      "lng": -6.26
+    },
+    "boundingBox": [
+      -11,
+      46,
+      3,
+      59
+    ],
+    "color": "#27AE60",
+    "description": "Celtic mythology encompasses the beliefs of the ancient Celts across Ireland, Britain, and Gaul. The Tuatha Dé Danann, a race of supernatural beings, battled the Fomorians for control of Ireland. Druids served as priests, judges, and keepers of oral tradition. The myths feature enchanted forests, sacred wells, and the Otherworld.",
+    "significance": "Celtic myths shaped the Arthurian legends, influenced modern fantasy literature, and preserved pre-Christian European spiritual traditions through oral storytelling.",
+    "pantheonSize": 25,
+    "primaryLanguage": "Old Irish / Gaulish",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
+    "tags": [
+      "druidic",
+      "otherworld",
+      "nature",
+      "oral-tradition",
+      "arthurian"
+    ]
+  },
+  {
+    "id": "egyptian",
+    "name": "Egyptian Mythology",
+    "region": "Nile Valley & North Africa",
+    "culture": "Ancient Egyptian",
+    "era": "MÖ 3100 – MS 400",
+    "origin": {
+      "lat": 30.04,
+      "lng": 31.24
+    },
+    "boundingBox": [
+      24,
+      22,
+      37,
+      32
+    ],
+    "color": "#F39C12",
+    "description": "Egyptian mythology spans over three millennia, featuring gods like Ra, Osiris, and Isis. The cycle of death and rebirth mirrored the annual flooding of the Nile. Pharaohs were considered living gods, and elaborate burial practices aimed to ensure eternal life. The Book of the Dead guided souls through the perilous journey to the afterlife.",
+    "significance": "Egyptian mythology created one of history's most enduring civilizations, pioneered concepts of the afterlife, and influenced Jewish, Greek, and later Christian religious thought.",
+    "pantheonSize": 60,
+    "primaryLanguage": "Ancient Egyptian",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "tags": [
+      "pharaonic",
+      "afterlife",
+      "solar",
+      "ancient",
+      "monumental"
+    ]
+  },
+  {
+    "id": "mesopotamian",
+    "name": "Mesopotamian Mythology",
+    "region": "Fertile Crescent / Iraq",
+    "culture": "Sumerian / Babylonian / Assyrian",
+    "era": "MÖ 3500 – MÖ 500",
+    "origin": {
+      "lat": 33.31,
+      "lng": 44.37
+    },
+    "boundingBox": [
+      38,
+      29,
+      49,
+      38
+    ],
+    "color": "#D35400",
+    "description": "Mesopotamian mythology represents humanity's earliest recorded religious narratives. Sumerian, Babylonian, and Assyrian traditions share gods like Enlil, Enki, and Ishtar. The Epic of Gilgamesh is the world's oldest known literary work. These myths addressed flood narratives, the quest for immortality, and the relationship between humans and the divine.",
+    "significance": "As the world's first written mythology, Mesopotamian stories directly influenced biblical narratives, the concept of written law, and the foundations of urban civilization.",
+    "pantheonSize": 40,
+    "primaryLanguage": "Sumerian / Akkadian",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pergamonmuseum_Ischtar-Tor_01.jpg/800px-Pergamonmuseum_Ischtar-Tor_01.jpg",
+    "tags": [
+      "cradle-of-civilization",
+      "cuneiform",
+      "flood-myth",
+      "ancient",
+      "urban"
+    ]
+  },
+  {
+    "id": "persian",
+    "name": "Persian / Zoroastrian Mythology",
+    "region": "Iran & Central Asia",
+    "culture": "Ancient Persian / Zoroastrian",
+    "era": "MÖ 1500 – MS 700",
+    "origin": {
+      "lat": 32.66,
+      "lng": 51.68
+    },
+    "boundingBox": [
+      44,
+      25,
+      63,
+      40
+    ],
+    "color": "#9B59B6",
+    "description": "Zoroastrian mythology centers on the cosmic battle between Ahura Mazda (truth/light) and Angra Mainyu (falsehood/darkness). The Avesta contains sacred hymns and epic narratives. The Shahnameh, written by Ferdowsi, preserves pre-Islamic Persian legends including the tragic hero Rostam. Fire worship and ritual purity are central themes.",
+    "significance": "Zoroastrianism introduced dualistic theology that profoundly influenced Judaism, Christianity, and Islam — concepts like heaven/hell, angels/demons, and final judgment originate here.",
+    "pantheonSize": 20,
+    "primaryLanguage": "Avestan / Old Persian",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Persepolis_24.11.2009_11-12-14.jpg/1280px-Persepolis_24.11.2009_11-12-14.jpg",
+    "tags": [
+      "dualistic",
+      "fire-worship",
+      "cosmic-battle",
+      "avestan",
+      "imperial"
+    ]
+  },
+  {
+    "id": "hindu",
+    "name": "Hindu Mythology",
+    "region": "Indian Subcontinent",
+    "culture": "Hindu / Vedic",
+    "era": "MÖ 1500 – present",
+    "origin": {
+      "lat": 28.61,
+      "lng": 77.21
+    },
+    "boundingBox": [
+      68,
+      6,
+      97,
+      36
+    ],
+    "color": "#E74C3C",
+    "description": "Hindu mythology is one of the world's richest and most complex mythological systems, spanning thousands of years. The Vedas, Upanishads, Ramayana, and Mahabharata contain epic narratives of gods like Brahma, Vishnu, and Shiva. The cycle of creation, preservation, and destruction reflects Hindu cosmology. Avatars, karma, and dharma are central concepts.",
+    "significance": "Hindu mythology forms the spiritual foundation for over a billion people, introduced concepts of cyclical time, karmic justice, and multiple paths to divine realization.",
+    "pantheonSize": 100,
+    "primaryLanguage": "Sanskrit",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "tags": [
+      "vedic",
+      "dharma",
+      "karma",
+      "avatar",
+      "epic",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "buddhist",
+    "name": "Buddhist Mythology",
+    "region": "South & East Asia",
+    "culture": "Buddhist",
+    "era": "MÖ 500 – present",
+    "origin": {
+      "lat": 27.47,
+      "lng": 83.28
+    },
+    "boundingBox": [
+      68,
+      5,
+      145,
+      50
+    ],
+    "color": "#F1C40F",
+    "description": "Buddhist mythology incorporates stories of the Buddha's many lives (Jataka tales), cosmological realms, and protective deities. While Buddhism emphasizes philosophical practice over worship, rich narrative traditions developed across Theravada, Mahayana, and Vajrayana schools. Bodhisattvas, heavenly realms, and demons populate an elaborate spiritual universe.",
+    "significance": "Buddhist narratives spread across Asia, adapting to local cultures while promoting compassion, non-violence, and the pursuit of enlightenment for all beings.",
+    "pantheonSize": 35,
+    "primaryLanguage": "Pali / Sanskrit",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "tags": [
+      "enlightenment",
+      "compassion",
+      "jataka",
+      "meditation",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "chinese",
+    "name": "Chinese Mythology",
+    "region": "China & East Asia",
+    "culture": "Chinese",
+    "era": "MÖ 2000 – present",
+    "origin": {
+      "lat": 39.9,
+      "lng": 116.4
+    },
+    "boundingBox": [
+      73,
+      18,
+      135,
+      54
+    ],
+    "color": "#E67E22",
+    "description": "Chinese mythology blends Taoist, Buddhist, and Confucian traditions with ancient folk beliefs. Creation myths like Pangu and Nüwa, the Jade Emperor's celestial bureaucracy, and journey narratives like the Monkey King form its core. Dragons, phoenixes, and celestial beings populate a cosmos organized by yin-yang balance and five elements.",
+    "significance": "Chinese mythology unified one of the world's largest civilizations, influenced art, philosophy, medicine, and martial arts, and continues as a living tradition in festivals and daily life.",
+    "pantheonSize": 80,
+    "primaryLanguage": "Classical Chinese",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Temple_of_Heaven.jpg/1280px-Temple_of_Heaven.jpg",
+    "tags": [
+      "taoist",
+      "confucian",
+      "dragon",
+      "celestial",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "japanese",
+    "name": "Japanese Mythology",
+    "region": "Japan",
+    "culture": "Japanese / Shinto",
+    "era": "MS 700 – present",
+    "origin": {
+      "lat": 35.68,
+      "lng": 139.69
+    },
+    "boundingBox": [
+      128,
+      30,
+      146,
+      46
+    ],
+    "color": "#E74C3C",
+    "description": "Japanese mythology draws from both indigenous Shinto beliefs and imported Buddhist traditions. The Kojiki and Nihon Shoki record creation myths involving Izanagi and Izanami, the sun goddess Amaterasu, and the storm god Susanoo. Kami (spirits) inhabit all natural phenomena. Yokai, oni, and kitsune populate a rich folklore tradition.",
+    "significance": "Japanese mythology remains deeply embedded in daily life through Shinto shrines, festivals, and cultural practices, while inspiring global entertainment through anime, manga, and video games.",
+    "pantheonSize": 45,
+    "primaryLanguage": "Classical Japanese",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "tags": [
+      "shinto",
+      "kami",
+      "yokai",
+      "nature-spirits",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "korean",
+    "name": "Korean Mythology",
+    "region": "Korean Peninsula",
+    "culture": "Korean",
+    "era": "MÖ 2333 – present",
+    "origin": {
+      "lat": 37.57,
+      "lng": 126.98
+    },
+    "boundingBox": [
+      124,
+      33,
+      132,
+      43
+    ],
+    "color": "#3498DB",
+    "description": "Korean mythology begins with the Dangun creation story and encompasses shamanic traditions, Buddhist legends, and Confucian ancestor tales. The Samguk Yusa preserves founding myths of the Three Kingdoms. Dokkaebi (goblins), gumiho (nine-tailed foxes), and dragon kings populate Korean folklore. Mudang shamans serve as intermediaries with the spirit world.",
+    "significance": "Korean mythology preserved a unique cultural identity through centuries of foreign influence, blending shamanistic, Buddhist, and Confucian elements into a distinctive spiritual tradition.",
+    "pantheonSize": 20,
+    "primaryLanguage": "Middle Korean",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Gyeongbokgung_Palace.jpg/1280px-Gyeongbokgung_Palace.jpg",
+    "tags": [
+      "shamanic",
+      "dangun",
+      "three-kingdoms",
+      "dokkaebi",
+      "ancestral"
+    ]
+  },
+  {
+    "id": "aztec",
+    "name": "Aztec Mythology",
+    "region": "Central Mexico",
+    "culture": "Aztec / Mexica",
+    "era": "MS 1300 – MS 1521",
+    "origin": {
+      "lat": 19.43,
+      "lng": -99.13
+    },
+    "boundingBox": [
+      -105,
+      14,
+      -96,
+      22
+    ],
+    "color": "#1ABC9C",
+    "description": "Aztec mythology features the Five Suns cosmology, where the current world is the fifth creation. Huitzilopochtli, the war god, demanded blood sacrifice to keep the sun moving. Quetzalcoatl, the feathered serpent, represented wisdom and wind. The sacred calendar (tonalpohualli) governed ritual life, and death was not an end but a journey through Mictlan.",
+    "significance": "Aztec mythology sustained one of the Americas' most powerful empires, featuring sophisticated astronomical knowledge, complex sacrifice theology, and a rich artistic tradition.",
+    "pantheonSize": 30,
+    "primaryLanguage": "Nahuatl",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Piramide_del_Sol_072006.jpg/1280px-Piramide_del_Sol_072006.jpg",
+    "tags": [
+      "mesoamerican",
+      "sacrifice",
+      "five-suns",
+      "feathered-serpent",
+      "calendar"
+    ]
+  },
+  {
+    "id": "maya",
+    "name": "Maya Mythology",
+    "region": "Central America & Yucatan",
+    "culture": "Maya",
+    "era": "MÖ 2000 – MS 1500",
+    "origin": {
+      "lat": 17.21,
+      "lng": -89.62
+    },
+    "boundingBox": [
+      -92,
+      13,
+      -86,
+      22
+    ],
+    "color": "#16A085",
+    "description": "Maya mythology is recorded in the Popol Vuh, the K'iche' Maya creation epic. The Hero Twins Hunahpu and Xbalanque defeated the lords of Xibalba (the underworld). Creation involved multiple attempts by the gods to make humans, first from mud, then wood, finally maize. The Maya developed sophisticated astronomical calendars and hieroglyphic writing.",
+    "significance": "Maya mythology supported one of the most intellectually advanced pre-Columbian civilizations, with achievements in astronomy, mathematics (including zero), and writing.",
+    "pantheonSize": 25,
+    "primaryLanguage": "K'iche' Maya",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "tags": [
+      "mesoamerican",
+      "popol-vuh",
+      "hero-twins",
+      "calendar",
+      "hieroglyphic"
+    ]
+  },
+  {
+    "id": "inca",
+    "name": "Inca Mythology",
+    "region": "Andes / South America",
+    "culture": "Inca / Quechua",
+    "era": "MS 1200 – MS 1533",
+    "origin": {
+      "lat": -13.52,
+      "lng": -71.98
+    },
+    "boundingBox": [
+      -82,
+      -22,
+      -68,
+      -1
+    ],
+    "color": "#2980B9",
+    "description": "Inca mythology centered on Inti, the sun god, from whom the Sapa Inca claimed descent. Viracocha created the world from Lake Titicaca. Pachamama (Earth Mother) and the mountains (apus) were venerated as living spirits. The Inca empire, Tawantinsuyu, organized its vast territory according to sacred geography and ceque lines.",
+    "significance": "Inca mythology integrated political power with religious cosmology, creating one of history's largest empires administered through a unique system of sacred geography and reciprocity.",
+    "pantheonSize": 15,
+    "primaryLanguage": "Quechua",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
+    "tags": [
+      "andean",
+      "solar",
+      "pachamama",
+      "mountain-worship",
+      "imperial"
+    ]
+  },
+  {
+    "id": "slavic",
+    "name": "Slavic Mythology",
+    "region": "Eastern Europe",
+    "culture": "Slavic",
+    "era": "MÖ 500 – MS 1200",
+    "origin": {
+      "lat": 50.45,
+      "lng": 30.52
+    },
+    "boundingBox": [
+      14,
+      42,
+      40,
+      60
+    ],
+    "color": "#8E44AD",
+    "description": "Slavic mythology features Perun (thunder god) battling Veles (underworld serpent) in a cosmic struggle mirroring Indo-European mythological patterns. Rod created the universe, while Svarog forged the sun. Domovoi (house spirits), rusalki (water nymphs), and Baba Yaga populate a rich folklore tradition. Christianization suppressed but never fully erased these beliefs.",
+    "significance": "Slavic mythology preserved ancient Indo-European theological patterns and sustained cultural identity across the largest ethnic group in Europe through folklore, fairy tales, and seasonal festivals.",
+    "pantheonSize": 20,
+    "primaryLanguage": "Proto-Slavic",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/St_Basils_Cathedral-500px.jpg/500px-St_Basils_Cathedral-500px.jpg",
+    "tags": [
+      "thunder-god",
+      "nature-spirits",
+      "folk-tradition",
+      "indo-european",
+      "eastern"
+    ]
+  },
+  {
+    "id": "turkic",
+    "name": "Turkish / Tengrist Mythology",
+    "region": "Central Asia & Anatolia",
+    "culture": "Turkic / Tengrist",
+    "era": "MÖ 1000 – MS 1500",
+    "origin": {
+      "lat": 47.91,
+      "lng": 106.91
+    },
+    "boundingBox": [
+      26,
+      35,
+      120,
+      55
+    ],
+    "color": "#C0392B",
+    "description": "Turkic mythology centers on Tengri (Sky God) and Umay (mother goddess). The Ergenekon legend tells of Turks escaping a mountain valley led by a grey wolf (Bozkurt). Shamans (kam) served as intermediaries between the human and spirit worlds. The world tree connects the upper, middle, and lower realms in Tengrist cosmology.",
+    "significance": "Tengrist mythology unified diverse Turkic peoples across the Eurasian steppe, from the Göktürks to the Seljuks, and elements survive in modern Turkish, Kazakh, and Kyrgyz folklore.",
+    "pantheonSize": 18,
+    "primaryLanguage": "Old Turkic",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/202408_Orkhon_Valley_01.jpg/1280px-202408_Orkhon_Valley_01.jpg",
+    "tags": [
+      "tengrist",
+      "shamanistic",
+      "steppe",
+      "wolf-totem",
+      "sky-worship"
+    ]
+  },
+  {
+    "id": "mongolian",
+    "name": "Mongolian Mythology",
+    "region": "Mongolia & Central Asia",
+    "culture": "Mongol",
+    "era": "MÖ 500 – present",
+    "origin": {
+      "lat": 47.92,
+      "lng": 106.92
+    },
+    "boundingBox": [
+      87,
+      41,
+      120,
+      52
+    ],
+    "color": "#2C3E50",
+    "description": "Mongolian mythology blends ancient Tengrist beliefs with Buddhist and shamanistic traditions. The Blue Wolf and Fallow Doe are ancestral figures of the Mongol people. Genghis Khan was believed to have a divine mandate from Eternal Blue Heaven (Möngke Tengri). Shamans communicate with spirits through ecstatic rituals on the vast steppe.",
+    "significance": "Mongolian mythology provided spiritual legitimacy to the largest contiguous land empire in history and preserves some of the oldest shamanistic traditions of Inner Asia.",
+    "pantheonSize": 12,
+    "primaryLanguage": "Mongolian",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Steppe_of_western_Mongolia.jpg/1280px-Steppe_of_western_Mongolia.jpg",
+    "tags": [
+      "tengrist",
+      "shamanistic",
+      "steppe",
+      "imperial",
+      "blue-sky"
+    ]
+  },
+  {
+    "id": "yoruba",
+    "name": "Yoruba Mythology",
+    "region": "West Africa (Nigeria / Benin)",
+    "culture": "Yoruba",
+    "era": "MÖ 500 – present",
+    "origin": {
+      "lat": 7.4,
+      "lng": 3.92
+    },
+    "boundingBox": [
+      2,
+      4,
+      6,
+      10
+    ],
+    "color": "#E91E63",
+    "description": "Yoruba mythology features Olodumare (supreme deity), the orishas (divine intermediaries), and Ifa divination. Ogun rules iron and war, Shango commands thunder, and Yemoja governs the ocean. The mythology emphasizes balance between the visible world (Aye) and the spirit realm (Orun). Through the Atlantic slave trade, these beliefs spread to the Americas as Candomblé, Santería, and Voodoo.",
+    "significance": "Yoruba mythology is one of the most influential African religious systems, with active practice by millions across Africa and the Americas in syncretic forms.",
+    "pantheonSize": 35,
+    "primaryLanguage": "Yoruba",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Obalufon_mask_Ife.jpg/440px-Obalufon_mask_Ife.jpg",
+    "tags": [
+      "orisha",
+      "divination",
+      "diaspora",
+      "syncretic",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "nubian",
+    "name": "Nubian / Kushite Mythology",
+    "region": "Sudan & Upper Nile",
+    "culture": "Nubian / Kushite",
+    "era": "MÖ 2500 – MS 500",
+    "origin": {
+      "lat": 18.49,
+      "lng": 31.6
+    },
+    "boundingBox": [
+      28,
+      15,
+      38,
+      23
+    ],
+    "color": "#795548",
+    "description": "Nubian mythology blended indigenous African traditions with Egyptian religious practices. The Kingdom of Kush worshipped Apedemak (lion-headed war god) alongside Egyptian deities. Meroe's pyramids and Jebel Barkal's sacred mountain reflect a civilization that rivaled Egypt. Queens (Kandakes) held exceptional political and religious power.",
+    "significance": "Nubian mythology represents a major African civilization that interacted with Egypt as both rival and cultural exchange partner, challenging Eurocentric views of ancient history.",
+    "pantheonSize": 15,
+    "primaryLanguage": "Meroitic",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nubian_pyramids_2.jpg/1280px-Nubian_pyramids_2.jpg",
+    "tags": [
+      "african",
+      "nilotic",
+      "pyramids",
+      "kushite",
+      "warrior-queen"
+    ]
+  },
+  {
+    "id": "aboriginal",
+    "name": "Aboriginal Australian Mythology",
+    "region": "Australia",
+    "culture": "Aboriginal Australian",
+    "era": "60,000+ years ago – present",
+    "origin": {
+      "lat": -25.27,
+      "lng": 131.04
+    },
+    "boundingBox": [
+      112,
+      -44,
+      154,
+      -10
+    ],
+    "color": "#FF5722",
+    "description": "Aboriginal Australian mythology, known as the Dreaming (Dreamtime), is the world's oldest continuous spiritual tradition. Ancestor beings like the Rainbow Serpent shaped the land and its laws during the creative era. Songlines crisscross the continent as paths of creation. Every landscape feature holds mythological significance, connecting past, present, and future.",
+    "significance": "As the world's oldest living mythological tradition (60,000+ years), Aboriginal Dreaming represents an unbroken spiritual lineage and a fundamentally different understanding of time and creation.",
+    "pantheonSize": 20,
+    "primaryLanguage": "Various (250+ languages)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Uluru%2C_helicopter_view%2C_cropped.jpg/1280px-Uluru%2C_helicopter_view%2C_cropped.jpg",
+    "tags": [
+      "dreamtime",
+      "oldest-tradition",
+      "songline",
+      "land-based",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "polynesian",
+    "name": "Maori / Polynesian Mythology",
+    "region": "Pacific Islands & New Zealand",
+    "culture": "Polynesian / Maori",
+    "era": "MS 300 – present",
+    "origin": {
+      "lat": -17.65,
+      "lng": -149.42
+    },
+    "boundingBox": [
+      -180,
+      -50,
+      -130,
+      30
+    ],
+    "color": "#00BCD4",
+    "description": "Polynesian mythology spans the Pacific from Hawaii to New Zealand to Easter Island. Maui, the trickster demigod, fished up islands, snared the sun, and stole fire. Rangi (Sky Father) and Papa (Earth Mother) were separated to create the world. The ocean was both highway and sacred space, navigated by ancestral star knowledge.",
+    "significance": "Polynesian myths guided the greatest maritime expansion in human history, enabling navigation across thousands of miles of open ocean using stars, currents, and oral tradition.",
+    "pantheonSize": 25,
+    "primaryLanguage": "Proto-Polynesian / Maori",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Milford_Sound_%28New_Zealand%29.jpg/1280px-Milford_Sound_%28New_Zealand%29.jpg",
+    "tags": [
+      "oceanic",
+      "navigation",
+      "trickster",
+      "island",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "native-american",
+    "name": "Native American Mythology",
+    "region": "North America",
+    "culture": "Various Native American Nations",
+    "era": "12,000+ years ago – present",
+    "origin": {
+      "lat": 39.83,
+      "lng": -98.58
+    },
+    "boundingBox": [
+      -170,
+      24,
+      -52,
+      72
+    ],
+    "color": "#8D6E63",
+    "description": "Native American mythology encompasses hundreds of distinct traditions across North America. Coyote, Raven, and Spider Woman are common trickster/creator figures. The Haudenosaunee Great Law of Peace, Navajo creation stories, and Lakota vision quests represent diverse approaches to the sacred. Land, animals, and natural cycles are central to all traditions.",
+    "significance": "Native American myths represent thousands of years of ecological wisdom, offering perspectives on humanity's relationship with nature that are increasingly relevant in the modern era.",
+    "pantheonSize": 50,
+    "primaryLanguage": "Various (300+ languages)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/1280px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+    "tags": [
+      "indigenous",
+      "trickster",
+      "nature",
+      "oral-tradition",
+      "living-tradition"
+    ]
+  },
+  {
+    "id": "finnish",
+    "name": "Finnish / Kalevala Mythology",
+    "region": "Finland & Estonia",
+    "culture": "Finno-Ugric",
+    "era": "MÖ 1000 – MS 1800",
+    "origin": {
+      "lat": 60.17,
+      "lng": 24.94
+    },
+    "boundingBox": [
+      19,
+      57,
+      32,
+      70
+    ],
+    "color": "#5C6BC0",
+    "description": "Finnish mythology, compiled in the 19th-century Kalevala epic, tells of Väinämöinen, the eternal sage-singer, and the forging of the magical Sampo. Creation began from a broken cosmic egg. Shamanic elements include journeys to Tuonela (the underworld) and the power of songs (runot) to shape reality. Nature spirits inhabit forests, waters, and the sky.",
+    "significance": "The Kalevala became the national epic of Finland, catalyzing Finnish national identity, and directly inspired Tolkien's Lord of the Rings and Middle-earth mythology.",
+    "pantheonSize": 15,
+    "primaryLanguage": "Finnish",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Aurora_borealis_above_Lyngen_Alps.jpg/1280px-Aurora_borealis_above_Lyngen_Alps.jpg",
+    "tags": [
+      "kalevala",
+      "shamanistic",
+      "song-magic",
+      "nature",
+      "northern"
+    ]
+  },
+  {
+    "id": "armenian",
+    "name": "Armenian Mythology",
+    "region": "Armenian Highlands",
+    "culture": "Armenian",
+    "era": "MÖ 3000 – MS 400",
+    "origin": {
+      "lat": 40.18,
+      "lng": 44.51
+    },
+    "boundingBox": [
+      38,
+      37,
+      47,
+      42
+    ],
+    "color": "#AB47BC",
+    "description": "Armenian mythology features Aramazd (supreme god, cognate with Ahura Mazda), Anahit (goddess of fertility), and Vahagn (dragon slayer). The epic David of Sassoun tells of a hero who defies oppression. Mount Ararat holds deep mythological significance as a symbol of national identity. Pre-Christian temples at Garni reflect Hellenistic and Iranian influences.",
+    "significance": "Armenian mythology represents a unique crossroads of Indo-European, Iranian, and Mesopotamian traditions, preserving cultural identity through centuries of foreign domination.",
+    "pantheonSize": 12,
+    "primaryLanguage": "Classical Armenian",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ararat_from_Yerevan.jpg/1280px-Ararat_from_Yerevan.jpg",
+    "tags": [
+      "indo-european",
+      "dragon-slayer",
+      "mountain",
+      "crossroads",
+      "ancient"
+    ]
+  },
+  {
+    "id": "georgian",
+    "name": "Georgian Mythology",
+    "region": "Caucasus / Georgia",
+    "culture": "Georgian / Kartvelian",
+    "era": "MÖ 2000 – MS 400",
+    "origin": {
+      "lat": 41.72,
+      "lng": 44.79
+    },
+    "boundingBox": [
+      40,
+      41,
+      47,
+      44
+    ],
+    "color": "#26A69A",
+    "description": "Georgian mythology features Amirani, a Prometheus-like figure chained to the Caucasus Mountains for stealing fire from the gods. The Kartvelian peoples worshipped gods like Armazi (supreme deity) and moon/sun deities. The Caucasus Mountains themselves are sacred, believed to be where heaven meets earth. Rich folklore includes stories of dragons, giants, and heroic warriors.",
+    "significance": "Georgian mythology preserves unique Caucasian religious traditions distinct from both European and Asian systems, with the Prometheus parallel suggesting deep Indo-European connections.",
+    "pantheonSize": 10,
+    "primaryLanguage": "Old Georgian",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gergeti_Trinity_Church.jpg/1280px-Gergeti_Trinity_Church.jpg",
+    "tags": [
+      "caucasian",
+      "prometheus-parallel",
+      "mountain",
+      "fire-theft",
+      "ancient"
+    ]
+  },
+  {
+    "id": "phoenician",
+    "name": "Phoenician / Canaanite Mythology",
+    "region": "Levant / Eastern Mediterranean",
+    "culture": "Phoenician / Canaanite",
+    "era": "MÖ 3000 – MÖ 300",
+    "origin": {
+      "lat": 33.89,
+      "lng": 35.5
+    },
+    "boundingBox": [
+      34,
+      31,
+      37,
+      35
+    ],
+    "color": "#FF7043",
+    "description": "Phoenician mythology features El (supreme god), Baal (storm god), Astarte (fertility goddess), and Mot (death). The Baal Cycle describes Baal's defeat of Yamm (sea) and Mot (death). Phoenicians spread their culture and alphabet across the Mediterranean. Child sacrifice (tophet) remains one of the most debated aspects of their religion.",
+    "significance": "Phoenician mythology directly influenced biblical narratives, and the Phoenician alphabet became the ancestor of virtually all modern alphabets including Greek, Latin, and Arabic.",
+    "pantheonSize": 15,
+    "primaryLanguage": "Phoenician",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Baalbek_-_temple_of_Bacchus.jpg/1280px-Baalbek_-_temple_of_Bacchus.jpg",
+    "tags": [
+      "levantine",
+      "maritime",
+      "alphabet",
+      "baal",
+      "ancient"
+    ]
+  },
+  {
+    "id": "hittite",
+    "name": "Hittite Mythology",
+    "region": "Anatolia / Central Turkey",
+    "culture": "Hittite",
+    "era": "MÖ 1700 – MÖ 1180",
+    "origin": {
+      "lat": 40.02,
+      "lng": 34.62
+    },
+    "boundingBox": [
+      26,
+      36,
+      44,
+      42
+    ],
+    "color": "#FF9800",
+    "description": "Hittite mythology drew from both Indo-European and Hurrian traditions. The Kumarbi cycle (Song of Going Forth) tells of divine succession remarkably parallel to Greek Theogony. The storm god Teshub battled Kumarbi for cosmic kingship. Hittites practiced elaborate ritual purification and treaty ceremonies invoking thousands of gods. Yazilikaya served as their open-air temple.",
+    "significance": "Hittite myths provide a direct link between Mesopotamian and Greek mythological traditions, revealing how stories traveled and transformed across the ancient Near East.",
+    "pantheonSize": 18,
+    "primaryLanguage": "Hittite (Indo-European)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yazilikaya_Kammer_A.jpg/1280px-Yazilikaya_Kammer_A.jpg",
+    "tags": [
+      "anatolian",
+      "indo-european",
+      "storm-god",
+      "treaty",
+      "ancient"
+    ]
+  },
+  {
+    "id": "etruscan",
+    "name": "Etruscan Mythology",
+    "region": "Central Italy / Tuscany",
+    "culture": "Etruscan",
+    "era": "MÖ 900 – MÖ 100",
+    "origin": {
+      "lat": 43.07,
+      "lng": 11.78
+    },
+    "boundingBox": [
+      10,
+      41,
+      14,
+      44
+    ],
+    "color": "#607D8B",
+    "description": "Etruscan mythology combined indigenous Italic beliefs with Greek and Near Eastern influences. Tinia (sky god), Uni (queen), and Menrva (wisdom) formed a primary triad later adopted by Rome. Etruscan religion was heavily focused on divination — reading lightning, bird flight, and animal entrails (haruspicy). Their elaborate tomb paintings reveal beliefs about joyful afterlife banquets.",
+    "significance": "Etruscan religious practices and deities were directly absorbed into Roman religion, making them a crucial intermediary between Greek and Roman mythological traditions.",
+    "pantheonSize": 14,
+    "primaryLanguage": "Etruscan",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Banditaccia_Tomba_dei_Rilievi.jpg/1280px-Banditaccia_Tomba_dei_Rilievi.jpg",
+    "tags": [
+      "italic",
+      "divination",
+      "tombs",
+      "proto-roman",
+      "mysterious"
+    ]
+  }
+]

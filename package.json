@@ -1,0 +1,39 @@
+{
+  "name": "mythatlas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "qa:data-integrity": "node qa/data-integrity-check.mjs",
+    "qa:new-feature": "node qa/new-feature-audit.mjs",
+    "qa:browser": "node qa/new-feature-browser-audit.mjs",
+    "qa:full": "node qa/full-qa-audit.mjs",
+    "qa:release": "npm run lint && npm run qa:data-integrity && npm run qa:new-feature && npm run build"
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0",
+    "framer-motion": "^11.0.0",
+    "maplibre-gl": "^4.1.0",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.0",
+    "lighthouse": "^13.0.3",
+    "playwright": "^1.58.2",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.0"
+  }
+}

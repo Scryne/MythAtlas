@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0d0a07"/>
+  <rect x="64" y="64" width="1072" height="572" rx="20" fill="#0f0b08" stroke="#c9a84c" stroke-opacity="0.35"/>
+  <rect x="96" y="96" width="1008" height="508" rx="16" fill="#111015"/>
+  <path d="M120 290 C260 180 460 180 580 260 C700 340 860 340 1040 260" fill="none" stroke="#7ad7f4" stroke-width="4" stroke-opacity="0.8"/>
+  <circle cx="320" cy="280" r="12" fill="#c9a84c"/>
+  <circle cx="520" cy="250" r="12" fill="#c9a84c"/>
+  <circle cx="760" cy="320" r="12" fill="#c9a84c"/>
+  <text x="600" y="560" fill="#f4e4c1" font-size="34" text-anchor="middle" font-family="sans-serif">Map + Parallel Layers</text>
+</svg>

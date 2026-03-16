@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"aboriginal","properties":{"id":"aboriginal","name":"Aboriginal Australian Mythology","region":"Australia","era":"60,000+ years ago – present","eraBucket":"modern","color":"#FF5722","bbox":"112,-44,154,-10"},"geometry":{"type":"Polygon","coordinates":[[[112,-44],[154,-44],[154,-10],[112,-10],[112,-44]]]}}]}

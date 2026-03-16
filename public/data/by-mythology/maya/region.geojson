@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"maya","properties":{"id":"maya","name":"Maya Mythology","region":"Central America & Yucatan","era":"MÖ 2000 – MS 1500","eraBucket":"ancient","color":"#16A085","bbox":"-92,13,-86,22"},"geometry":{"type":"Polygon","coordinates":[[[-92,13],[-86,13],[-86,22],[-92,22],[-92,13]]]}}]}

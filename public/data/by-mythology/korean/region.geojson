@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"korean","properties":{"id":"korean","name":"Korean Mythology","region":"Korean Peninsula","era":"MÖ 2333 – present","eraBucket":"ancient","color":"#3498DB","bbox":"124,33,132,43"},"geometry":{"type":"Polygon","coordinates":[[[124,33],[132,33],[132,43],[124,43],[124,33]]]}}]}

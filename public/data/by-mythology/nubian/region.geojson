@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"nubian","properties":{"id":"nubian","name":"Nubian / Kushite Mythology","region":"Sudan & Upper Nile","era":"MÖ 2500 – MS 500","eraBucket":"ancient","color":"#795548","bbox":"28,15,38,23"},"geometry":{"type":"Polygon","coordinates":[[[28,15],[38,15],[38,23],[28,23],[28,15]]]}}]}

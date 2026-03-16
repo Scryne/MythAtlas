@@ -1,0 +1,87 @@
+﻿[
+  {
+    "id": "greek",
+    "name": { "tr": "Yunan Mitolojisi", "en": "Greek Mythology" },
+    "description": {
+      "tr": "Antik Yunanistan'in tanrilari, kahramanlari ve efsaneleri. Olympos Dagi'ndan Yeralti Dunyasi'na uzanan destansi hikayeler.",
+      "en": "Gods, heroes, and legends of Ancient Greece. Epic tales spanning from Mount Olympus to the Underworld."
+    },
+    "region": "Mediterranean / Balkans",
+    "coordinates": [23.7275, 37.9838],
+    "period": "~2000 BCE - 400 CE",
+    "color": "#4a90d9",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Parthenon_from_west.jpg/1280px-Parthenon_from_west.jpg",
+    "mythCount": 3
+  },
+  {
+    "id": "norse",
+    "name": { "tr": "Iskandinav Mitolojisi", "en": "Norse Mythology" },
+    "description": {
+      "tr": "Vikinglerin tanrilari ve destanlari. Yggdrasil'den Ragnarok'e, buz ve atesin hikayesi.",
+      "en": "Gods and sagas of the Vikings. From Yggdrasil to Ragnarok, a tale of ice and fire."
+    },
+    "region": "Scandinavia",
+    "coordinates": [10.7522, 59.9139],
+    "period": "~200 CE - 1100 CE",
+    "color": "#5bb5a2",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Geirangerfjorden_from_Flydalsjuvet_2013.jpg/1280px-Geirangerfjorden_from_Flydalsjuvet_2013.jpg",
+    "mythCount": 2
+  },
+  {
+    "id": "egyptian",
+    "name": { "tr": "Misir Mitolojisi", "en": "Egyptian Mythology" },
+    "description": {
+      "tr": "Nil'in kiyisinda dogan kadim tanrilar ve olumsuzluk arayisi. Ra'dan Osiris'e, piramitlerin ardindaki sirlar.",
+      "en": "Ancient gods born on the banks of the Nile and the quest for immortality. From Ra to Osiris, the secrets behind the pyramids."
+    },
+    "region": "North Africa / Nile Valley",
+    "coordinates": [31.2357, 30.0444],
+    "period": "~3100 BCE - 400 CE",
+    "color": "#d4a843",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "mythCount": 2
+  },
+  {
+    "id": "mesopotamian",
+    "name": { "tr": "Mezopotamya Mitolojisi", "en": "Mesopotamian Mythology" },
+    "description": {
+      "tr": "Medeniyetin besigi Mezopotamya'nin tanrilari. Sumer'den Babil'e, insanligin ilk yazili destanlari.",
+      "en": "Gods of Mesopotamia, the cradle of civilization. From Sumer to Babylon, humanity's first written epics."
+    },
+    "region": "Fertile Crescent / Iraq",
+    "coordinates": [44.3661, 33.3152],
+    "period": "~3500 BCE - 500 BCE",
+    "color": "#c97b3c",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pergamonmuseum_Ischtar-Tor_01.jpg/800px-Pergamonmuseum_Ischtar-Tor_01.jpg",
+    "mythCount": 2
+  },
+  {
+    "id": "japanese",
+    "name": { "tr": "Japon Mitolojisi", "en": "Japanese Mythology" },
+    "description": {
+      "tr": "Gunesin dogdugu yerin tanrilari ve ruhlari. Amaterasu'dan yokai'lere, Sinto ve Budist geleneklerin birlestigi masallar.",
+      "en": "Gods and spirits of the Land of the Rising Sun. From Amaterasu to yokai, tales where Shinto and Buddhist traditions converge."
+    },
+    "region": "Japan / East Asia",
+    "coordinates": [139.6917, 35.6895],
+    "period": "~700 CE - present",
+    "color": "#e05555",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "mythCount": 2
+  },
+  {
+    "id": "celtic",
+    "name": { "tr": "Kelt Mitolojisi", "en": "Celtic Mythology" },
+    "description": {
+      "tr": "Sis kapli ormanlarin ve kutsal kaynaklarin tanrilari. Druidler, periler ve savascilarin destansi hikayeleri.",
+      "en": "Gods of mist-covered forests and sacred springs. Epic tales of druids, faeries, and warriors."
+    },
+    "region": "British Isles / Western Europe",
+    "coordinates": [-6.2603, 53.3498],
+    "period": "~500 BCE - 400 CE",
+    "color": "#6dbf6d",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
+    "mythCount": 1
+  }
+]
+

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"finnish","properties":{"id":"finnish","name":"Finnish / Kalevala Mythology","region":"Finland & Estonia","era":"MÖ 1000 – MS 1800","eraBucket":"ancient","color":"#5C6BC0","bbox":"19,57,32,70"},"geometry":{"type":"Polygon","coordinates":[[[19,57],[32,57],[32,70],[19,70],[19,57]]]}}]}

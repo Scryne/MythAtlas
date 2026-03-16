@@ -1,0 +1,55 @@
+:root {
+  --color-bg-primary: #0d0a07;
+  --color-bg-surface: #1a1510;
+  --color-bg-elevated: #241d17;
+  --color-bg-overlay: #2e2520;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e8c96a;
+  --color-gold-dim: #8a6f32;
+  --color-red: #8b2e2e;
+  --color-red-light: #b54444;
+  --color-parchment: #f4e4c1;
+  --color-text-primary: #f0e6d3;
+  --color-text-secondary: #a89880;
+  --color-text-muted: #6b5d50;
+  --color-border: rgba(201, 168, 76, 0.15);
+  --color-border-hover: rgba(201, 168, 76, 0.35);
+  --rgb-bg-primary: 13 10 7;
+  --rgb-bg-surface: 26 21 16;
+  --rgb-bg-elevated: 36 29 23;
+  --rgb-bg-overlay: 46 37 32;
+  --rgb-gold: 201 168 76;
+  --rgb-gold-light: 232 201 106;
+  --rgb-gold-dim: 138 111 50;
+  --rgb-red: 139 46 46;
+  --rgb-red-light: 181 68 68;
+  --rgb-parchment: 244 228 193;
+  --rgb-text-primary: 240 230 211;
+  --rgb-text-secondary: 168 152 128;
+  --rgb-text-muted: 107 93 80;
+  --font-display: var(--font-cinzel), 'Cinzel', serif;
+  --font-body: var(--font-inter), 'Inter', sans-serif;
+  --font-mono: var(--font-jetbrains), 'JetBrains Mono', monospace;
+  --space-component: 16px;
+  --space-component-desktop: 24px;
+  --space-card-gap: 16px;
+  --space-section: 40px;
+  --space-section-desktop: 64px;
+  --radius-badge: 4px;
+  --radius-button: 6px;
+  --radius-card: 8px;
+  --radius-modal: 12px;
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 0 20px rgba(201, 168, 76, 0.15);
+  --header-height: 72px;
+  --transition-fast: 150ms ease;
+  --transition-medium: 200ms ease;
+  --transition-panel: 300ms ease-out;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 80px;
+  }
+}
