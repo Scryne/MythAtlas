@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"inca","properties":{"id":"inca","name":"Inca Mythology","region":"Andes / South America","era":"MS 1200 – MS 1533","eraBucket":"modern","color":"#2980B9","bbox":"-82,-22,-68,-1"},"geometry":{"type":"Polygon","coordinates":[[[-82,-22],[-68,-22],[-68,-1],[-82,-1],[-82,-22]]]}}]}

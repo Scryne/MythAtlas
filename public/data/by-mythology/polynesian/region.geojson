@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"polynesian","properties":{"id":"polynesian","name":"Maori / Polynesian Mythology","region":"Pacific Islands & New Zealand","era":"MS 300 – present","eraBucket":"modern","color":"#00BCD4","bbox":"-180,-50,-130,30"},"geometry":{"type":"Polygon","coordinates":[[[-180,-50],[-130,-50],[-130,30],[-180,30],[-180,-50]]]}}]}

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"yoruba","properties":{"id":"yoruba","name":"Yoruba Mythology","region":"West Africa (Nigeria / Benin)","era":"MÖ 500 – present","eraBucket":"ancient","color":"#E91E63","bbox":"2,4,6,10"},"geometry":{"type":"Polygon","coordinates":[[[2,4],[6,4],[6,10],[2,10],[2,4]]]}}]}

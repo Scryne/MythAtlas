@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"hindu","properties":{"id":"hindu","name":"Hindu Mythology","region":"Indian Subcontinent","era":"MÖ 1500 – present","eraBucket":"ancient","color":"#E74C3C","bbox":"68,6,97,36"},"geometry":{"type":"Polygon","coordinates":[[[68,6],[97,6],[97,36],[68,36],[68,6]]]}}]}

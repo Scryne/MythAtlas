@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"norse","properties":{"id":"norse","name":"Norse Mythology","region":"Scandinavia & Iceland","era":"MS 200 – MS 1100","eraBucket":"medieval","color":"#2ECC71","bbox":"-25,55,30,72"},"geometry":{"type":"Polygon","coordinates":[[[-25,55],[30,55],[30,72],[-25,72],[-25,55]]]}}]}

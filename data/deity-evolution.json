@@ -1,0 +1,218 @@
+[
+  {
+    "id": "lineage-love-goddess",
+    "name": "Ask Tanricasinin Yolculugu",
+    "chain": [
+      {
+        "deityId": "inanna",
+        "mythologyId": "sumerian",
+        "period": "c. 3000-2000 BCE",
+        "changes": ["Ilk asama: ask, savas ve bereket birlikte temsil edilir.", "Gezegen Venus ile guclu bag kurulur."]
+      },
+      {
+        "deityId": "ishtar-deity",
+        "mythologyId": "babylonian",
+        "period": "c. 2000-600 BCE",
+        "changes": ["Akkadca dilde Ishtar formu standartlasir.", "Imparatorluk tanricasi kimligi guclenir."]
+      },
+      {
+        "deityId": "astarte",
+        "mythologyId": "phoenician",
+        "period": "c. 1200-300 BCE",
+        "changes": ["Deniz ticaret aglariyla Levant ve Akdeniz'e yayilir.", "Yerel savas ve bereket kultleriyle birlesir."]
+      },
+      {
+        "deityId": "aphrodite",
+        "mythologyId": "greek",
+        "period": "c. 800-100 BCE",
+        "changes": ["Yunan mitlerinde ask ve guzellik odagi artar.", "Dogu etkileri Hellenik estetikte yeniden yorumlanir."]
+      },
+      {
+        "deityId": "venus",
+        "mythologyId": "roman",
+        "period": "c. 300 BCE-400 CE",
+        "changes": ["Roma siyasi soykutuk anlatilarina baglanir.", "Devlet ideolojisi icinde imparatorluk sembolune donusur."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-sky-god",
+    "name": "Gok Tanrisi",
+    "chain": [
+      {
+        "deityId": "dyeus",
+        "mythologyId": "proto-indo-european",
+        "period": "Prehistory",
+        "changes": ["Yeniden kurulan kok form: gok ve gunduz sema otoritesi.", "Dilsel kok bircok dalda yasar."]
+      },
+      {
+        "deityId": "zeus",
+        "mythologyId": "greek",
+        "period": "c. 1200-200 BCE",
+        "changes": ["Gok tanrisina simsek ve krallik fonksiyonlari eklenir.", "Olimpos hiyerarsisinin merkezi olur."]
+      },
+      {
+        "deityId": "jupiter",
+        "mythologyId": "roman",
+        "period": "c. 500 BCE-400 CE",
+        "changes": ["Civic ve hukuki egemenlik vurgusu artar.", "Devlet yemini ve zafer ritullerinde merkez olur."]
+      },
+      {
+        "deityId": "tyr",
+        "mythologyId": "norse",
+        "period": "c. 200-1100 CE",
+        "changes": ["Hukuk ve antlasma boyutu on plana cikar.", "Gok-baba fonksiyonu Odin ve Thor ile paylasilir."]
+      },
+      {
+        "deityId": "odin",
+        "mythologyId": "norse",
+        "period": "c. 200-1100 CE",
+        "changes": ["Savas, bilgelik ve sihir fonksiyonlari yogunlasir.", "Krallik-karizma boyutu ustun hale gelir."]
+      },
+      {
+        "deityId": "tiwaz",
+        "mythologyId": "proto-indo-european",
+        "period": "Comparative reconstruction",
+        "changes": ["Tyr ile baglanan ad/yemin kokeni korunur.", "Zincirin dilsel boyutu akademik olarak tartisilir."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-death-rebirth",
+    "name": "Olum ve Dirilis",
+    "chain": [
+      {
+        "deityId": "osiris",
+        "mythologyId": "egyptian",
+        "period": "c. 2500-300 BCE",
+        "changes": ["Olum-sonrasi yargi ve yeniden dogus modelini kurar.", "Tarimsal dongu sembolizmi gucludur."]
+      },
+      {
+        "deityId": "dionysus",
+        "mythologyId": "greek",
+        "period": "c. 800-100 BCE",
+        "changes": ["Ekstaz ve rituel yeniden dogus ekseni eklenir.", "Mister kultlerinde olum-dirilis temasi yogunlasir."]
+      },
+      {
+        "deityId": "attis",
+        "mythologyId": "hellenistic-syncretic",
+        "period": "c. 300 BCE-300 CE",
+        "changes": ["Anadolu ve Roma baglaminda mevsimsel olum-dirilis ritmine baglanir.", "Kultik inisiyasyonla birlesir."]
+      },
+      {
+        "deityId": "mithras",
+        "mythologyId": "persian",
+        "period": "c. 100 BCE-400 CE",
+        "changes": ["Roma dunyasinda kurtuluscu gizem dini formu alir.", "Akademik paralellikler tartisilmaya devam eder."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-wisdom",
+    "name": "Bilgelik Tanrisi",
+    "chain": [
+      {
+        "deityId": "enki",
+        "mythologyId": "mesopotamian",
+        "period": "c. 2500-1200 BCE",
+        "changes": ["Bilgelik, su ve teknik zeka fonksiyonlarini birlestirir.", "Yaratici-duzenleyici rol ustlenir."]
+      },
+      {
+        "deityId": "thoth",
+        "mythologyId": "egyptian",
+        "period": "c. 2000-300 BCE",
+        "changes": ["Yazi, hesap ve kozmik duzen koruyucusu olur.", "Rahiplik bilgisinin tanrisi olarak kurumsallasir."]
+      },
+      {
+        "deityId": "hermes",
+        "mythologyId": "greek",
+        "period": "c. 800-100 BCE",
+        "changes": ["Aracilik, dil ve kurnazlik boyutu guclenir.", "Felsefi/hermetik gelenekle bag kurar."]
+      },
+      {
+        "deityId": "mercury",
+        "mythologyId": "roman",
+        "period": "c. 300 BCE-400 CE",
+        "changes": ["Ticaret, hukuk ve yolculuk ekseni one cikar.", "Galya ve Roma eyaletlerinde yerel tanrilarla senkretiklesir."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-enlil-zeus",
+    "name": "Enlil'den Zeus'a",
+    "chain": [
+      {
+        "deityId": "enlil",
+        "mythologyId": "sumerian",
+        "period": "c. 2500-1800 BCE",
+        "changes": ["Firtina ve krallik otoritesiyle yuksek tanri modeli sunar.", "Erken kozmik egemenlik temasi kurulur."]
+      },
+      {
+        "deityId": "marduk",
+        "mythologyId": "babylonian",
+        "period": "c. 1700-600 BCE",
+        "changes": ["Imparatorluk merkezinde ust tanri rolunu devralir.", "Kozmik duzen anlatisi ile siyasi mesruiyet birlesir."]
+      },
+      {
+        "deityId": "zeus",
+        "mythologyId": "greek",
+        "period": "c. 1200-100 BCE",
+        "changes": ["Yunan panteonunda goge dayali krallik modeline donusur.", "Dogu etkileri Hellenik soylenceye uyarlanir."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-teshub-zeus",
+    "name": "Teshub'dan Zeus'a",
+    "chain": [
+      {
+        "deityId": "teshub",
+        "mythologyId": "hittite",
+        "period": "c. 1700-1200 BCE",
+        "changes": ["Anadolu firtina tanrisi olarak hanedan mitlerinde merkezdir.", "Kumarbi dongusuyle iliskili kozmik iktidar temasi tasir."]
+      },
+      {
+        "deityId": "zeus",
+        "mythologyId": "greek",
+        "period": "c. 1200-100 BCE",
+        "changes": ["Firtina-krallik modeli Yunan soy kurgusuyla birlesir.", "Dogrudan bag akademide tartismalidir."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-osiris-dionysus",
+    "name": "Osiris ve Dionysus Paraleli",
+    "chain": [
+      {
+        "deityId": "osiris",
+        "mythologyId": "egyptian",
+        "period": "c. 2500-300 BCE",
+        "changes": ["Olum ve yeniden dogusun krallik modeli kurulur.", "Rituel drama ve tarimsal donguyle baglanir."]
+      },
+      {
+        "deityId": "dionysus",
+        "mythologyId": "greek",
+        "period": "c. 800-100 BCE",
+        "changes": ["Ekstaz ve mister ritueli one cikar.", "Paralellik kuvvetli olsa da dogrudan soy bagi tartismalidir."]
+      }
+    ]
+  },
+  {
+    "id": "lineage-el-yahweh",
+    "name": "El'den Yahweh'e Tartismasi",
+    "chain": [
+      {
+        "deityId": "el",
+        "mythologyId": "phoenician",
+        "period": "c. 1400-800 BCE",
+        "changes": ["Levantta ust tanri unvani ve ata figuru olarak gorulur.", "Cok-tanrili panteon icindeki hiyerarsik merkezdir."]
+      },
+      {
+        "deityId": "yahweh",
+        "mythologyId": "biblical-hebrew",
+        "period": "c. 1000-400 BCE",
+        "changes": ["Monolatristten tektanrici yoruma giden surecte ustlesir.", "El unvaninin Yahweh teolojisine eklemlenmesi akademide tartisilir."]
+      }
+    ]
+  }
+]

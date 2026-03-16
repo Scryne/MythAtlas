@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"egyptian","properties":{"id":"egyptian","name":"Egyptian Mythology","region":"Nile Valley & North Africa","era":"MÖ 3100 – MS 400","eraBucket":"ancient","color":"#F39C12","bbox":"24,22,37,32"},"geometry":{"type":"Polygon","coordinates":[[[24,22],[37,22],[37,32],[24,32],[24,22]]]}}]}

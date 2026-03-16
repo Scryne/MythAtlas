@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"japanese","properties":{"id":"japanese","name":"Japanese Mythology","region":"Japan","era":"MS 700 – present","eraBucket":"modern","color":"#E74C3C","bbox":"128,30,146,46"},"geometry":{"type":"Polygon","coordinates":[[[128,30],[146,30],[146,46],[128,46],[128,30]]]}}]}

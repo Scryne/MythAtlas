@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"buddhist","properties":{"id":"buddhist","name":"Buddhist Mythology","region":"South & East Asia","era":"MÖ 500 – present","eraBucket":"ancient","color":"#F1C40F","bbox":"68,5,145,50"},"geometry":{"type":"Polygon","coordinates":[[[68,5],[145,5],[145,50],[68,50],[68,5]]]}}]}
