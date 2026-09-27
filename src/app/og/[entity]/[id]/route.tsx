@@ -4,10 +4,10 @@ import { deities, mythologies, myths, sacredSites } from '@/lib/myth-data';
 export const runtime = 'edge';
 
 interface OgRouteParams {
-  params: {
+  params: Promise<{
     entity: string;
     id: string;
-  };
+  }>;
 }
 
 function resolveEntity(entity: string, id: string): { title: string; subtitle: string; image: string } {
@@ -45,7 +45,8 @@ function resolveEntity(entity: string, id: string): { title: string; subtitle: s
   };
 }
 
-export async function GET(_request: Request, { params }: OgRouteParams) {
+export async function GET(_request: Request, props: OgRouteParams) {
+  const params = await props.params;
   const data = resolveEntity(params.entity, params.id);
 
   return new ImageResponse(

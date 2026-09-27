@@ -28,9 +28,9 @@ import {
 } from '@/lib/myth-utils';
 
 interface DeityPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
@@ -113,7 +113,8 @@ export function generateStaticParams() {
   return deities.map((item) => ({ id: item.id }));
 }
 
-export function generateMetadata({ params }: DeityPageProps): Metadata {
+export async function generateMetadata(props: DeityPageProps): Promise<Metadata> {
+  const params = await props.params;
   const deity = getDeity(params.id);
   if (!deity) {
     return {
@@ -145,7 +146,8 @@ export function generateMetadata({ params }: DeityPageProps): Metadata {
   };
 }
 
-export default function DeityDetailPage({ params }: DeityPageProps) {
+export default async function DeityDetailPage(props: DeityPageProps) {
+  const params = await props.params;
   const deity = getDeity(params.id);
   if (!deity) notFound();
 

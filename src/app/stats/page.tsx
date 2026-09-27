@@ -1,6 +1,5 @@
-﻿'use client';
+'use client';
 
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useMemo } from 'react';
 import CountUpOnView from '@/components/stats/CountUpOnView';
@@ -19,15 +18,7 @@ import {
   getTotalsData,
 } from '@/lib/insights';
 import { getMythologyNode } from '@/lib/family-tree-data';
-
-const StatsCharts = dynamic(() => import('@/components/stats/StatsCharts'), {
-  ssr: false,
-  loading: () => (
-    <div className="ancient-card skeleton-warm p-6 text-sm text-foreground/65">
-      Istatistik grafikler yukleniyor...
-    </div>
-  ),
-});
+import StatsCharts from './StatsCharts.lazy';
 
 export default function StatsPage() {
   const totals = useMemo(() => getTotalsData(), []);
