@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import maplibregl, { GeoJSONSource, MapMouseEvent } from 'maplibre-gl';
+import * as maplibregl from 'maplibre-gl';
+import type { GeoJSONSource, MapMouseEvent } from 'maplibre-gl';
 import AncientImage from '@/components/common/AncientImage';
 import HoverPrefetchLink from '@/components/common/HoverPrefetchLink';
 import {
@@ -33,6 +34,9 @@ import {
   type InfluenceMapFeatureProperties,
 } from '@/lib/family-tree-data';
 import type { Deity, Mythology } from '@/types/mythology';
+
+// Worker dosyası scripts/copy-maplibre-worker.mjs ile public/ altına kopyalanır.
+maplibregl.setWorkerUrl('/vendor/maplibre/maplibre-gl-worker.mjs');
 
 export const dynamic = 'force-dynamic';
 

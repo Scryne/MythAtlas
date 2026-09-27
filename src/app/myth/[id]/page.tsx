@@ -38,9 +38,9 @@ import {
 } from '@/lib/myth-utils';
 
 interface MythPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
@@ -94,7 +94,8 @@ export function generateStaticParams() {
   return myths.map((item) => ({ id: item.id }));
 }
 
-export function generateMetadata({ params }: MythPageProps): Metadata {
+export async function generateMetadata(props: MythPageProps): Promise<Metadata> {
+  const params = await props.params;
   const myth = getMyth(params.id);
   if (!myth) {
     return {
@@ -126,7 +127,8 @@ export function generateMetadata({ params }: MythPageProps): Metadata {
   };
 }
 
-export default function MythDetailPage({ params }: MythPageProps) {
+export default async function MythDetailPage(props: MythPageProps) {
+  const params = await props.params;
   const myth = getMyth(params.id);
   if (!myth) notFound();
 

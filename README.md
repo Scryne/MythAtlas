@@ -1,7 +1,7 @@
 # MythAtlas
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
-![React](https://img.shields.io/badge/React-18-149eca?logo=react)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-149eca?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
 ![MapLibre](https://img.shields.io/badge/MapLibre-GL-2f9e44)
 ![License](https://img.shields.io/badge/License-MIT-gold)
@@ -12,7 +12,21 @@ MythAtlas is a public mythology atlas that maps myths, deities, and sacred sites
 - Interactive world map for mythologies, myths, deities, and sacred sites.
 - Rich detail pages with cross-links between entities.
 - Open data model powered by static JSON for easy contribution.
-- CI pipeline with data integrity checks and production build validation.
+- Content integrity gate: every citation, image and heritage claim must be verifiable.
+- CI pipeline with lint, type check, data and content integrity checks and a production build.
+
+## Content integrity
+An earlier version of the dataset contained generated filler: invented archaeological
+references, the same theory books cited on nearly every myth, placeholder images, fabricated
+excavation status and unsourced "scholarly consensus" labels. It was cleaned in September 2026:
+
+- Wikipedia/Wikidata matching (`npm run data:wiki-match`) with strict rules; images are kept
+  only when they come from the matched article (deities 176/212, sites 90/104).
+- UNESCO World Heritage status is kept only when Wikidata confirms it (70 confirmed, 4 dropped).
+- Citations went from 1,826 to 274; template references and dead links were removed.
+- Parallel-myth similarity is the Jaccard overlap of the two myths' motif sets, nothing more.
+- `npm run qa:content` fails the build if unverifiable content returns
+  (the pre-cleanup data produces 5,483 violations).
 
 ## Vision
 - Build a visually rich atlas for comparative mythology.
@@ -20,8 +34,8 @@ MythAtlas is a public mythology atlas that maps myths, deities, and sacred sites
 - Provide fast, accessible exploration on map, detail, and analytics surfaces.
 
 ## Screenshots
-![Home](./public/screenshots/home.svg)
-![Map](./public/screenshots/map.svg)
+![Map](./docs/screenshots/map.png)
+![Sacred site](./docs/screenshots/site.png)
 
 ## Tech Stack
 - Next.js App Router (TypeScript)
@@ -53,6 +67,14 @@ MythAtlas is a public mythology atlas that maps myths, deities, and sacred sites
 - Run data integrity audit:
   ```bash
   npm run qa:data-integrity
+  ```
+- Run content integrity check (and verify `public/data` is in sync):
+  ```bash
+  npm run qa:content
+  ```
+- Rebuild cleaned data and `public/data`:
+  ```bash
+  npm run data:clean
   ```
 - Run release gate (lint + audits + build):
   ```bash

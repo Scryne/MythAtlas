@@ -14,9 +14,9 @@ import {
 import { buildConceptComparison, findSimilarMythologies } from '@/lib/myth-utils';
 
 interface MythologyPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
@@ -69,7 +69,8 @@ export function generateStaticParams() {
   return mythologies.map((item) => ({ id: item.id }));
 }
 
-export function generateMetadata({ params }: MythologyPageProps): Metadata {
+export async function generateMetadata(props: MythologyPageProps): Promise<Metadata> {
+  const params = await props.params;
   const bundle = getMythologyBundle(params.id);
   if (!bundle) {
     return {
@@ -109,7 +110,8 @@ export function generateMetadata({ params }: MythologyPageProps): Metadata {
   };
 }
 
-export default function MythologyDetailPage({ params }: MythologyPageProps) {
+export default async function MythologyDetailPage(props: MythologyPageProps) {
+  const params = await props.params;
   const bundle = getMythologyBundle(params.id);
   if (!bundle) notFound();
   const { mythology } = bundle;

@@ -1,17 +1,12 @@
-﻿'use client';
+'use client';
 
-import dynamic from 'next/dynamic';
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import HoverPrefetchLink from '@/components/common/HoverPrefetchLink';
 import MythDNA from '@/components/MythDNA';
 import { getMythsForTheme, getThemeSummaries, buildThemeNetwork } from '@/lib/insights';
 import { mythologies } from '@/lib/myth-data';
-
-const ThemeNetworkGraph = dynamic(() => import('@/components/themes/ThemeNetworkGraph'), {
-  ssr: false,
-  loading: () => <div className="skeleton-warm h-[460px] w-full rounded-xl border border-gold/20 bg-black/25" />,
-});
+import ThemeNetworkGraph from './ThemeNetworkGraph.lazy';
 
 export default function ThemesPage() {
   const router = useRouter();

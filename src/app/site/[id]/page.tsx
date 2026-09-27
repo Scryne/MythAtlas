@@ -20,9 +20,9 @@ import {
 import { haversineKm, siteTypeLabel } from '@/lib/myth-utils';
 
 interface SitePageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
@@ -52,7 +52,8 @@ export function generateStaticParams() {
   return sacredSites.map((item) => ({ id: item.id }));
 }
 
-export function generateMetadata({ params }: SitePageProps): Metadata {
+export async function generateMetadata(props: SitePageProps): Promise<Metadata> {
+  const params = await props.params;
   const site = getSite(params.id);
   if (!site) {
     return {
@@ -84,7 +85,8 @@ export function generateMetadata({ params }: SitePageProps): Metadata {
   };
 }
 
-export default function SacredSiteDetailPage({ params }: SitePageProps) {
+export default async function SacredSiteDetailPage(props: SitePageProps) {
+  const params = await props.params;
   const site = getSite(params.id);
   if (!site) notFound();
 
