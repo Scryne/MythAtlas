@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[43,29],[49,29],[49,34],[43,34],[43,29]]]},"properties":{"id":"sumerian","name":"Sumerian Mythology","region":"Southern Mesopotamia","era":"c. 3500-1900 BCE","eraBucket":"ancient","color":"#b9894a","bbox":"43,29,49,34"}}]}

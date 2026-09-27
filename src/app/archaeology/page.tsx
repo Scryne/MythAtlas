@@ -9,8 +9,8 @@ import {
   mythologyById,
   sacredSites,
   siteArtifactCount,
-  siteExcavationStatus,
   siteProtectionStatus,
+  siteWorldHeritage,
 } from '@/lib/myth-data';
 
 const ArchaeologyHubCharts = dynamic(
@@ -232,9 +232,11 @@ export default function ArchaeologyHubPage() {
     []
   );
 
-  const featuredExcavations = useMemo(() => {
-    return archaeologySites.filter((site) => siteExcavationStatus(site) === 'active_excavation').slice(0, 6);
-  }, [archaeologySites]);
+  // Yalnız Wikidata'da doğrulanmış UNESCO kaydı olan alanlar öne çıkar.
+  const worldHeritageSites = useMemo(
+    () => sacredSites.filter((site) => siteWorldHeritage(site) !== null).slice(0, 6),
+    []
+  );
 
   const excavationTimeline = useMemo(() => {
     const regionIndex = new Map<string, number>();
@@ -275,12 +277,12 @@ export default function ArchaeologyHubPage() {
             city: museum.city,
             country: museum.country,
             collectionUrl: museum.collectionUrl,
-            artifactCount: museum.artifactCount,
+            artifactCount: museum.notableArtifacts?.length ?? 0,
             siteIds: [site.id],
           });
           return;
         }
-        existing.artifactCount += museum.artifactCount;
+        existing.artifactCount += museum.notableArtifacts?.length ?? 0;
         if (!existing.siteIds.includes(site.id)) existing.siteIds.push(site.id);
       });
     });
@@ -332,12 +334,11 @@ export default function ArchaeologyHubPage() {
       </section>
 
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Featured Excavations</h2>
-        <p className="meta-text mt-1 text-sm">Devam eden kazilar ve yeni tamamlanan arastirma kampanyalari.</p>
+        <h2 className="text-2xl text-gold">UNESCO Dünya Mirası</h2>
+        <p className="meta-text mt-1 text-sm">Dünya Mirası kaydı Wikidata üzerinden doğrulanmış kutsal alanlar.</p>
         <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {featuredExcavations.map((site) => {
-            const first = site.archaeology?.discoveryHistory.majorExcavations[0];
-            const isActive = siteExcavationStatus(site) === 'active_excavation';
+          {worldHeritageSites.map((site) => {
+            const heritage = siteWorldHeritage(site);
             return (
               <HoverPrefetchLink key={site.id} href={`/site/${site.id}`} className="overflow-hidden rounded-lg border border-gold/25 bg-black/25">
                 <div className="relative h-40">
@@ -345,16 +346,12 @@ export default function ArchaeologyHubPage() {
                 </div>
                 <div className="space-y-1 p-4">
                   <p className="text-base text-gold-light">{site.name}</p>
-                  <p className="text-xs text-foreground/70">{first?.institution || 'Arastirma kurumu bilgisi bekleniyor'}</p>
-                  <p className="line-clamp-2 text-xs text-foreground/65">{first?.findings || 'Bulgu ozeti yakinda eklenecek.'}</p>
-                  <span
-                    className={`mt-2 inline-flex rounded-full border px-2 py-0.5 text-[11px] ${
-                      isActive
-                        ? 'animate-pulse border-emerald-400/40 bg-emerald-400/10 text-emerald-100'
-                        : 'border-sky-400/35 bg-sky-400/10 text-sky-100'
-                    }`}
-                  >
-                    {isActive ? 'Devam eden kazilar' : 'Yeni tamamlanan kazi'}
+                  <p className="text-xs text-foreground/70">{site.country}</p>
+                  {heritage && heritage.name !== site.name && (
+                    <p className="line-clamp-2 text-xs text-foreground/65">Liste kaydı: {heritage.name}</p>
+                  )}
+                  <span className="mt-2 inline-flex rounded-full border border-sky-400/35 bg-sky-400/10 px-2 py-0.5 text-[11px] text-sky-100">
+                    UNESCO #{heritage?.listId}
                   </span>
                 </div>
               </HoverPrefetchLink>

@@ -19,10 +19,9 @@ import {
   siteArchaeology,
   siteArtifactCount,
   siteExcavationStartYear,
-  siteExcavationStatus,
   siteHasForeignMuseumHoldings,
   siteMuseumCount,
-  siteProtectionStatus,
+  siteWorldHeritage,
 } from '@/lib/myth-data';
 import { formatSlugLabel, mythTypeLabel, siteTypeLabel } from '@/lib/myth-utils';
 
@@ -128,23 +127,6 @@ function chronologyNumericValue(input: string): number {
   return year;
 }
 
-function protectionBadge(status: string | null) {
-  if (status === 'UNESCO') return 'UNESCO';
-  if (status === 'national_heritage') return 'Ulusal Miras';
-  if (status === 'local_protection') return 'Yerel Koruma';
-  if (status === 'disputed') return 'Tartismali Koruma';
-  return 'Koruma Durumu Belirsiz';
-}
-
-function excavationBadge(status: string | null) {
-  if (status === 'active_excavation') return 'Devam eden kazi';
-  if (status === 'completed') return 'Kazilar tamamlandi';
-  if (status === 'protected') return 'Koruma altinda';
-  if (status === 'unexcavated') return 'Henuz kazilmadi';
-  if (status === 'inaccessible') return 'Erisim kisitli';
-  return 'Durum bilinmiyor';
-}
-
 export default function SiteDetailTabs({
   site,
   mythologyName,
@@ -165,8 +147,7 @@ export default function SiteDetailTabs({
   const excavationStartYear = siteExcavationStartYear(site);
   const artifactCount = siteArtifactCount(site);
   const museumCount = siteMuseumCount(site);
-  const excavationStatus = siteExcavationStatus(site);
-  const protectionStatus = siteProtectionStatus(site);
+  const worldHeritage = siteWorldHeritage(site);
   const hasForeignMuseums = siteHasForeignMuseumHoldings(site);
 
   const markers = useMemo(() => museumMarkers(site), [site]);
@@ -242,17 +223,16 @@ export default function SiteDetailTabs({
                     `${site.name} arkeolojik kayitlarda ${mythologyName || 'ilgili mitoloji'} geleneginin maddi izlerini tasir.`}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full border border-gold/40 bg-black/30 px-3 py-1 text-gold-light">
-                    {protectionBadge(protectionStatus)}
-                  </span>
-                  <span className="rounded-full border border-sky-400/35 bg-sky-400/10 px-3 py-1 text-sky-100">
-                    {excavationBadge(excavationStatus)}
-                  </span>
-                  {excavationStatus === 'active_excavation' && (
-                    <span className="animate-pulse rounded-full border border-emerald-400/45 bg-emerald-400/15 px-3 py-1 text-emerald-100">
-                      Devam eden kazi
-                    </span>
-                  )}
+                  {worldHeritage ? (
+                    <a
+                      href={worldHeritage.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-gold/40 bg-black/30 px-3 py-1 text-gold-light hover:border-gold/70"
+                    >
+                      UNESCO Dünya Mirası #{worldHeritage.listId}
+                    </a>
+                  ) : null}
                 </div>
               </div>
 
@@ -406,14 +386,6 @@ export default function SiteDetailTabs({
 
           <div className="ancient-card p-6">
             <h3 className="mb-2 text-2xl text-gold">Kazi Tarihi</h3>
-            <div className="mb-4 flex flex-wrap gap-2 text-xs">
-              <span className="rounded-full border border-sky-400/35 bg-sky-400/10 px-3 py-1 text-sky-100">
-                {excavationBadge(excavationStatus)}
-              </span>
-              <span className="rounded-full border border-gold/40 bg-black/25 px-3 py-1 text-gold-light">
-                {protectionBadge(protectionStatus)}
-              </span>
-            </div>
             {excavations.length === 0 ? (
               <p className="text-sm text-foreground/65">Buyuk kazi kampanyasi kaydi henuz eklenmedi.</p>
             ) : (
@@ -544,7 +516,6 @@ export default function SiteDetailTabs({
                       <p className="meta-text mt-1 text-xs uppercase tracking-[0.12em]">
                         {museum.city} · {museum.country}
                       </p>
-                      <p className="mt-2 text-xs text-foreground/70">Yaklasik eser: {museum.artifactCount}</p>
                       <p className="mt-2 text-xs text-foreground/70">{museum.notableArtifacts.join(', ')}</p>
                       <a
                         href={museum.collectionUrl}

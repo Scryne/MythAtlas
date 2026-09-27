@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[34,29],[37,29],[37,34],[34,34],[34,29]]]},"properties":{"id":"biblical-hebrew","name":"Biblical/Hebrew Tradition","region":"Levant","era":"c. 1200-200 BCE","eraBucket":"ancient","color":"#8f7a52","bbox":"34,29,37,34"}}]}

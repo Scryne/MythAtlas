@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import AcademicSources from '@/components/AcademicSources';
 import AncientImage from '@/components/common/AncientImage';
@@ -28,7 +28,6 @@ import { LAST_UPDATED_LABEL, mythSourceCounts } from '@/lib/academic-utils';
 import {
   formatDNAKeyLabel,
   getMythsByDNA,
-  ORIGIN_THEORY_EXPLANATIONS,
 } from '@/lib/dna';
 import {
   buildCharacterCards,
@@ -62,43 +61,6 @@ const COSMIC_SCOPE_LABELS: Record<string, string> = {
   communal: 'Topluluk',
   civilizational: 'Medeniyet',
   universal: 'Evrensel',
-};
-
-const ORIGIN_THEORY_LABELS: Record<string, string> = {
-  diffusion: 'Difuzyon',
-  convergent: 'Eszamanli gelisim',
-  universal: 'Evrensel kalip',
-  unknown: 'Bilinmiyor',
-};
-
-const CONNECTION_BADGES: Record<string, { icon: string; label: string }> = {
-  diffusion: { icon: '→', label: 'Kulturel yayilim' },
-  convergent_evolution: { icon: '∞', label: 'Bagimsiz gelisim' },
-  common_ancestor: { icon: 'Y', label: 'Ortak koken' },
-  unknown: { icon: '?', label: 'Belirsiz bag' },
-};
-
-const CONTROVERSY_BADGES: Record<string, { label: string; className: string; tooltip: string }> = {
-  consensus: {
-    label: 'Akademik konsensus',
-    className: 'border-emerald-300/35 bg-emerald-500/10 text-emerald-100',
-    tooltip: 'Akademik konsensus',
-  },
-  accepted: {
-    label: 'Yaygin kabul',
-    className: 'border-green-300/35 bg-green-500/10 text-green-100',
-    tooltip: 'Akademik konsensus',
-  },
-  debated: {
-    label: 'Tartismali',
-    className: 'border-yellow-300/35 bg-yellow-500/10 text-yellow-100',
-    tooltip: 'Bu baglanti akademik cevrelerde tartismalidir',
-  },
-  fringe: {
-    label: 'Tartismali teori',
-    className: 'border-orange-300/35 bg-orange-500/10 text-orange-100',
-    tooltip: 'Bu baglanti akademik cevrelerde tartismalidir',
-  },
 };
 
 function SimilarityArc({ score }: { score: number }) {
@@ -225,17 +187,6 @@ export default function MythDetailPage({ params }: MythPageProps) {
     .slice(0, 6);
   const parallelCultureCount = mythParallelCultureCount(myth, myths);
   const isUniversalStory = parallelIds.length >= 5;
-  const uniqueParallelScholars = Array.from(
-    new Set(
-      parallelEntries.flatMap((entry) => entry.evidence?.keyScholars || [])
-    )
-  );
-  const connectionDistribution = parallelEntries.reduce<Record<string, number>>((acc, entry) => {
-    const key = entry.evidence?.connectionType || 'unknown';
-    acc[key] = (acc[key] || 0) + 1;
-    return acc;
-  }, {});
-
   const allMapMarkers = [
     {
       id: myth.id,
@@ -361,12 +312,6 @@ export default function MythDetailPage({ params }: MythPageProps) {
             <span className="rounded-full border border-gold/35 bg-gold/10 px-3 py-1 text-sm text-gold-light">
               Kozmik kapsami: {COSMIC_SCOPE_LABELS[myth.dna.cosmicScope] || formatSlugLabel(myth.dna.cosmicScope)}
             </span>
-            <span
-              title={ORIGIN_THEORY_EXPLANATIONS[myth.dna.originTheory] || ''}
-              className="rounded-full border border-gold/35 bg-black/30 px-3 py-1 text-sm text-gold-light"
-            >
-              Koken teorisi: {ORIGIN_THEORY_LABELS[myth.dna.originTheory] || formatSlugLabel(myth.dna.originTheory)}
-            </span>
           </div>
           <p className="mb-5 text-sm text-foreground/70">{myth.dna.moralLesson}</p>
           <MythDNA myth={myth} size="full" showRadar showFingerprint />
@@ -451,10 +396,7 @@ export default function MythDetailPage({ params }: MythPageProps) {
           <div className="grid gap-4 md:grid-cols-2">
             {parallelEntries.map((entry) => {
               const parent = mythologyById.get(entry.myth.mythologyId);
-              const score = entry.evidence?.similarityScore ?? 62;
-              const connection = CONNECTION_BADGES[entry.evidence?.connectionType || 'unknown'];
-              const controversy =
-                CONTROVERSY_BADGES[entry.evidence?.controversyLevel || 'debated'];
+              const score = entry.evidence?.similarityScore;
 
               return (
                 <article key={entry.myth.id} className="ancient-card overflow-hidden p-4">
@@ -469,7 +411,7 @@ export default function MythDetailPage({ params }: MythPageProps) {
                         {parent?.name || entry.myth.mythologyId}
                       </p>
                     </div>
-                    <SimilarityArc score={score} />
+                    {typeof score === 'number' && <SimilarityArc score={score} />}
                   </div>
 
                   <div className="flex flex-wrap gap-1.5">
@@ -496,47 +438,6 @@ export default function MythDetailPage({ params }: MythPageProps) {
                     </div>
                   )}
 
-                  <div className="mt-3 flex flex-wrap items-center gap-2">
-                    <span className="rounded-full border border-sky-300/35 bg-sky-500/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.12em] text-sky-100">
-                      {connection.icon} {connection.label}
-                    </span>
-                    <span
-                      title={controversy.tooltip}
-                      className={`rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-[0.12em] ${controversy.className}`}
-                    >
-                      {controversy.label}
-                    </span>
-                    {entry.evidence?.controversyLevel === 'consensus' && (
-                      <span title="Akademik konsensus" className="text-xs text-emerald-200">
-                        ✓
-                      </span>
-                    )}
-                    {(entry.evidence?.controversyLevel === 'debated' ||
-                      entry.evidence?.controversyLevel === 'fringe') && (
-                      <span
-                        title="Bu baglanti akademik cevrelerde tartismalidir"
-                        className="text-xs text-amber-200"
-                      >
-                        ⚠
-                      </span>
-                    )}
-                  </div>
-
-                  {entry.evidence?.keyScholars && entry.evidence.keyScholars.length > 0 && (
-                    <p className="mt-2 text-xs text-foreground/70">
-                      {entry.evidence.keyScholars.join(', ')} bu baglantiyi not etmistir.
-                    </p>
-                  )}
-
-                  {entry.evidence?.connectionExplanation && (
-                    <details className="mt-3 rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
-                      <summary className="cursor-pointer text-xs uppercase tracking-[0.12em] text-gold/80">
-                        Detayli analiz
-                      </summary>
-                      <p className="mt-2 leading-6">{entry.evidence.connectionExplanation}</p>
-                    </details>
-                  )}
-
                   <div className="mt-3">
                     <SourceHighlightButton sourceIds={entry.evidence?.academicSourceIds || []} />
                   </div>
@@ -555,19 +456,8 @@ export default function MythDetailPage({ params }: MythPageProps) {
           <div className="ancient-card p-6">
             <h3 className="text-2xl text-gold">Karsilastirmali Analiz</h3>
             <p className="mt-2 text-sm text-foreground/80">
-              Bu mitin evrensel bir anlati oldugu {uniqueParallelScholars.length} akademisyen
-              tarafindan farkli yontemlerle belgelenmistir.
-            </p>
-            <p className="mt-3 text-sm text-foreground/75">
-              Baglanti dagilimi:{' '}
-              {Object.entries(connectionDistribution)
-                .map(([key, value]) => `${value} varyant ${CONNECTION_BADGES[key]?.label || key}`)
-                .join(', ')}
-              .
-            </p>
-            <p className="mt-3 rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
-              {uniqueParallelScholars[0] || 'Campbell'} bu anlati yapisini farkli kulturlerde
-              tekrarlanan bir sembolik cozum repertuvari olarak yorumlar.
+              Bu mit {parallelCultureCount} farklı kültürden {parallelEntries.length} anlatıyla ortak motif paylaşıyor.
+              Benzerlik yüzdesi, iki mitin motif kümelerinin kesişiminin birleşimine oranıdır (Jaccard).
             </p>
             <div className="mt-4">
               <MiniWorldMap

@@ -8,10 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "qa:data-integrity": "node qa/data-integrity-check.mjs",
+    "qa:content": "node qa/content-integrity-check.mjs && node scripts/build-public-data.mjs --check",
+    "data:clean": "node scripts/clean-content.mjs && node scripts/build-public-data.mjs",
+    "data:wiki-match": "node scripts/wiki-match.mjs",
     "qa:new-feature": "node qa/new-feature-audit.mjs",
     "qa:browser": "node qa/new-feature-browser-audit.mjs",
     "qa:full": "node qa/full-qa-audit.mjs",
-    "qa:release": "npm run lint && npm run qa:data-integrity && npm run qa:new-feature && npm run build"
+    "qa:release": "npm run lint && npm run qa:data-integrity && npm run qa:content && npm run qa:new-feature && npm run build"
   },
   "dependencies": {
     "d3-force": "^3.0.0",

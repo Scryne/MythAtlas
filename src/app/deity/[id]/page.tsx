@@ -15,7 +15,6 @@ import {
   mythologyById,
   sacredSites,
   siteDeityIds,
-  siteExcavationStatus,
   siteProtectionStatus,
 } from '@/lib/myth-data';
 import {
@@ -108,22 +107,7 @@ function toEquivalentCards(baseDeityId: string, equivalentIds: string[]): Equiva
   });
 }
 
-function excavationLabel(status: string | null): string {
-  if (status === 'active_excavation') return 'Devam eden kazi';
-  if (status === 'completed') return 'Kazi tamamlandi';
-  if (status === 'protected') return 'Koruma altinda';
-  if (status === 'unexcavated') return 'Kazilmamis';
-  if (status === 'inaccessible') return 'Erisim kisitli';
-  return 'Durum bilinmiyor';
-}
 
-function protectionLabel(status: string | null): string {
-  if (status === 'UNESCO') return 'UNESCO';
-  if (status === 'national_heritage') return 'Ulusal miras';
-  if (status === 'local_protection') return 'Yerel koruma';
-  if (status === 'disputed') return 'Tartismali';
-  return 'Koruma bilgisi yok';
-}
 
 export function generateStaticParams() {
   return deities.map((item) => ({ id: item.id }));
@@ -189,7 +173,6 @@ export default function DeityDetailPage({ params }: DeityPageProps) {
         .sort((a, b) => b.relevance - a.relevance);
       return {
         site,
-        status: siteExcavationStatus(site),
         protection: siteProtectionStatus(site),
         artifacts: ranked.slice(0, 2).map((item) => item.artifact),
       };
@@ -491,14 +474,11 @@ export default function DeityDetailPage({ params }: DeityPageProps) {
                     </HoverPrefetchLink>
                     <span className="text-xs text-foreground/60">{entry.site.country || 'Unknown'}</span>
                   </div>
-                  <div className="mt-2 flex flex-wrap gap-2 text-[11px]">
-                    <span className="rounded-full border border-sky-300/30 bg-sky-500/10 px-2 py-0.5 text-sky-100">
-                      {excavationLabel(entry.status)}
-                    </span>
-                    <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-gold-light">
-                      {protectionLabel(entry.protection)}
-                    </span>
-                  </div>
+                  {entry.protection === 'UNESCO' && (
+                    <div className="mt-2 flex flex-wrap gap-2 text-[11px]">
+                      <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-gold-light">UNESCO Dünya Mirası</span>
+                    </div>
+                  )}
                   {entry.artifacts.length > 0 ? (
                     <div className="mt-3 space-y-2">
                       {entry.artifacts.map((artifact) => (

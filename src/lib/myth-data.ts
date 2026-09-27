@@ -19,27 +19,22 @@ export interface AcademicSource {
   year: number;
   originalLanguage: string;
   estimatedDate: string;
-  description: string;
-  relevantPassage: string;
-  url: string;
+  description?: string;
+  relevantPassage?: string;
+  url?: string;
   isOpenAccess: boolean;
   citationAPA: string;
   citationChicago: string;
 }
 
-export type MythConnectionType = 'diffusion' | 'convergent_evolution' | 'common_ancestor' | 'unknown';
-export type MythControversyLevel = 'consensus' | 'accepted' | 'debated' | 'fringe';
-
+// Paralel mit kanıtı. similarityScore bir akademik değerlendirme değildir: iki mitin temaları ve
+// DNA öğeleri arasındaki örtüşmedir (|A ∩ B| / |A ∪ B| × 100, scripts/clean-content.mjs).
 export interface MythParallelEvidence {
   mythId: string;
   similarityScore: number;
   sharedElements: string[];
   divergences: string[];
-  connectionType: MythConnectionType;
-  connectionExplanation: string;
-  keyScholars: string[];
   academicSourceIds: string[];
-  controversyLevel: MythControversyLevel;
 }
 
 export type MythParallelReference = string | MythParallelEvidence;
@@ -116,8 +111,6 @@ export type MythDNAEmotionalCore =
 
 export type MythDNACosmicScope = 'personal' | 'communal' | 'civilizational' | 'universal';
 
-export type MythDNAOriginTheory = 'diffusion' | 'convergent' | 'universal' | 'unknown';
-
 export interface MythDNA {
   elements: string[];
   archetypes: string[];
@@ -125,7 +118,6 @@ export interface MythDNA {
   moralLesson: string;
   emotionalCore: MythDNAEmotionalCore;
   cosmicScope: MythDNACosmicScope;
-  originTheory: MythDNAOriginTheory;
 }
 
 interface MythParallelRecord {
@@ -133,11 +125,7 @@ interface MythParallelRecord {
   similarityScore?: number;
   sharedElements?: string[];
   divergences?: string[];
-  connectionType?: MythConnectionType;
-  connectionExplanation?: string;
-  keyScholars?: string[];
   academicSourceIds?: string[];
-  controversyLevel?: MythControversyLevel;
 }
 
 function normalizeParallelReferences(input: unknown): MythParallelReference[] {
@@ -149,14 +137,10 @@ function normalizeParallelReferences(input: unknown): MythParallelReference[] {
         const typed = item as MythParallelRecord;
         return {
           mythId: typed.mythId as string,
-          similarityScore: Number(typed.similarityScore ?? 65),
+          similarityScore: Number(typed.similarityScore ?? 0),
           sharedElements: Array.isArray(typed.sharedElements) ? typed.sharedElements : [],
           divergences: Array.isArray(typed.divergences) ? typed.divergences : [],
-          connectionType: typed.connectionType ?? 'unknown',
-          connectionExplanation: typed.connectionExplanation ?? '',
-          keyScholars: Array.isArray(typed.keyScholars) ? typed.keyScholars : [],
           academicSourceIds: Array.isArray(typed.academicSourceIds) ? typed.academicSourceIds : [],
-          controversyLevel: typed.controversyLevel ?? 'debated',
         } as MythParallelEvidence;
       }
       return null;
@@ -179,9 +163,9 @@ function normalizeAcademicSources(input: unknown): AcademicSource[] {
         year: Number(typed.year ?? 0),
         originalLanguage: typed.originalLanguage || 'N/A',
         estimatedDate: typed.estimatedDate || 'N/A',
-        description: typed.description || '',
-        relevantPassage: typed.relevantPassage || '',
-        url: typed.url || '',
+        description: typed.description || undefined,
+        relevantPassage: typed.relevantPassage || undefined,
+        url: typed.url || undefined,
         isOpenAccess: Boolean(typed.isOpenAccess),
         citationAPA: typed.citationAPA || '',
         citationChicago: typed.citationChicago || '',
@@ -213,20 +197,6 @@ export interface DeityData {
   symbols: string[];
   era: string;
 }
-
-export type ArchaeologyCurrentStatus =
-  | 'active_excavation'
-  | 'completed'
-  | 'protected'
-  | 'unexcavated'
-  | 'inaccessible';
-
-export type ArchaeologyProtectionStatus =
-  | 'UNESCO'
-  | 'national_heritage'
-  | 'local_protection'
-  | 'unprotected'
-  | 'disputed';
 
 export type ArchaeologyArtifactType =
   | 'sculpture'
@@ -285,7 +255,6 @@ export interface ArchaeologyMuseumConnectionEntry {
   city: string;
   country: string;
   collectionUrl: string;
-  artifactCount: number;
   notableArtifacts: string[];
 }
 
@@ -297,21 +266,22 @@ export interface ArchaeologyChronologyEntry {
 
 export interface ArchaeologyData {
   discoveryHistory: {
-    firstDocumented: string;
+    firstDocumented?: string;
     majorExcavations: ArchaeologyExcavationEntry[];
-    currentStatus: ArchaeologyCurrentStatus;
-    protectionStatus: ArchaeologyProtectionStatus;
+    // Yalnız Wikidata'da doğrulanan UNESCO Dünya Mirası (scripts/clean-content.mjs).
+    protectionStatus?: 'UNESCO';
+    worldHeritage?: { name: string; listId: string; url: string };
   };
   artifacts: ArchaeologyArtifactEntry[];
   inscriptions: ArchaeologyInscriptionEntry[];
   architecture: {
-    originalStructure: string;
-    constructionPeriod: string;
-    dimensions: string;
+    originalStructure?: string;
+    constructionPeriod?: string;
+    dimensions?: string;
     materials: string[];
-    constructionTechnique: string;
+    constructionTechnique?: string;
     modifications: ArchaeologyModificationEntry[];
-    currentState: string;
+    currentState?: string;
   };
   museumConnections: ArchaeologyMuseumConnectionEntry[];
   chronology: ArchaeologyChronologyEntry[];
@@ -607,12 +577,13 @@ export function siteMuseumCount(site: SiteData): number {
   return site.archaeology?.museumConnections?.length ?? 0;
 }
 
-export function siteProtectionStatus(site: SiteData): ArchaeologyProtectionStatus | null {
+// Yalnız Wikidata'da doğrulanan UNESCO Dünya Mirası döner; başka koruma iddiası tutulmuyor.
+export function siteProtectionStatus(site: SiteData): 'UNESCO' | null {
   return site.archaeology?.discoveryHistory?.protectionStatus ?? null;
 }
 
-export function siteExcavationStatus(site: SiteData): ArchaeologyCurrentStatus | null {
-  return site.archaeology?.discoveryHistory?.currentStatus ?? null;
+export function siteWorldHeritage(site: SiteData): { name: string; listId: string; url: string } | null {
+  return site.archaeology?.discoveryHistory?.worldHeritage ?? null;
 }
 
 export function siteExcavationStartYear(site: SiteData): number | null {

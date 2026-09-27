@@ -12,7 +12,6 @@ const REQUEST_TIMEOUT_MS = 15000;
 const MAX_ATTEMPTS = 3;
 const MAX_CONCURRENT_UPSTREAM_FETCHES = 2;
 const COMMONS_API_BASE = 'https://commons.wikimedia.org/w/api.php';
-const SEARCH_RESULT_LIMIT = 5;
 let activeUpstreamFetches = 0;
 const pendingUpstreamFetches: Array<() => void> = [];
 const COMMONS_TITLE_OVERRIDES: Record<string, string> = {
@@ -56,57 +55,6 @@ async function withUpstreamSlot<T>(work: () => Promise<T>) {
   }
 }
 
-function normalizeSearchText(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/\.[a-z0-9]+$/i, '')
-    .replace(/[_()\-]+/g, ' ')
-    .replace(/[^a-z0-9\s]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function tokenize(value: string) {
-  const stopWords = new Set([
-    'the',
-    'of',
-    'and',
-    'by',
-    'in',
-    'on',
-    'at',
-    'with',
-    'from',
-    'file',
-    'jpg',
-    'jpeg',
-    'png',
-    'svg',
-  ]);
-
-  return normalizeSearchText(value)
-    .split(' ')
-    .filter((token) => token.length > 1 && !stopWords.has(token));
-}
-
-function scoreCandidate(query: string, candidateTitle: string) {
-  const queryTokens = tokenize(query);
-  const candidateTokens = tokenize(candidateTitle.replace(/^File:/, ''));
-  if (queryTokens.length === 0 || candidateTokens.length === 0) {
-    return { score: 0, overlap: 0 };
-  }
-
-  const candidateSet = new Set(candidateTokens);
-  const overlap = queryTokens.filter((token) => candidateSet.has(token)).length;
-  const queryCoverage = overlap / queryTokens.length;
-  const candidateCoverage = overlap / candidateTokens.length;
-
-  return {
-    overlap,
-    score: queryCoverage * 0.75 + candidateCoverage * 0.25,
-  };
-}
-
 async function fetchCommonsJson(params: URLSearchParams) {
   const response = await fetch(`${COMMONS_API_BASE}?${params.toString()}`, {
     next: { revalidate: 60 * 60 * 24 * 30 },
@@ -148,40 +96,7 @@ async function fetchImageInfoUrl(title: string, width?: number) {
   return info?.thumburl ?? info?.url ?? null;
 }
 
-async function findBestCandidateTitle(query: string, allowSingleToken = false) {
-  const normalizedQuery = normalizeSearchText(query);
-  if (!normalizedQuery) return null;
-  if (!allowSingleToken && tokenize(normalizedQuery).length < 2) return null;
-
-  const params = new URLSearchParams({
-    action: 'query',
-    format: 'json',
-    list: 'search',
-    srnamespace: '6',
-    srlimit: String(SEARCH_RESULT_LIMIT),
-    srsearch: normalizedQuery,
-  });
-
-  const json = await fetchCommonsJson(params);
-  const results = (json.query?.search ?? []) as Array<{ title: string }>;
-
-  let best: { title: string; score: number; overlap: number } | null = null;
-
-  for (const result of results) {
-    const scored = scoreCandidate(normalizedQuery, result.title);
-    if (!best || scored.score > best.score) {
-      best = { title: result.title.replace(/^File:/, ''), score: scored.score, overlap: scored.overlap };
-    }
-  }
-
-  if (!best) return null;
-  if (best.overlap < 2 && tokenize(normalizedQuery).length > 2) return null;
-  if (best.score < 0.6) return null;
-
-  return best.title;
-}
-
-async function resolveUpstreamUrl(src: string, label?: string | null) {
+async function resolveUpstreamUrl(src: string) {
   const request = extractWikimediaImageRequest(src);
   if (!request) return src;
 
@@ -194,25 +109,7 @@ async function resolveUpstreamUrl(src: string, label?: string | null) {
   const directMatch = await fetchImageInfoUrl(request.filename, request.width);
   if (directMatch) return directMatch;
 
-  const queryCandidates = [
-    request.filename,
-  ];
-
-  if (label?.trim()) {
-    const normalizedLabel = label.trim();
-    const labelTokens = tokenize(normalizedLabel);
-    queryCandidates.push(labelTokens.length < 2 ? `${normalizedLabel} mythology` : normalizedLabel);
-  }
-
-  for (let index = 0; index < queryCandidates.length; index += 1) {
-    const query = queryCandidates[index];
-    const title = await findBestCandidateTitle(query, index === 0);
-    if (!title) continue;
-
-    const resolvedUrl = await fetchImageInfoUrl(title, request.width);
-    if (resolvedUrl) return resolvedUrl;
-  }
-
+  // Arama ile "en yakın" görsel seçilmez: dosya yoksa istemci yer tutucuya düşer.
   return src;
 }
 
@@ -257,7 +154,6 @@ async function fetchBinary(url: string) {
 
 export async function GET(request: NextRequest) {
   const src = request.nextUrl.searchParams.get('src');
-  const label = request.nextUrl.searchParams.get('label');
 
   if (!src) {
     return NextResponse.json({ error: 'missing_src' }, { status: 400 });
@@ -269,7 +165,7 @@ export async function GET(request: NextRequest) {
 
   const candidates = Array.from(
     new Set([
-      await resolveUpstreamUrl(src, label),
+      await resolveUpstreamUrl(src),
       src,
     ])
   );

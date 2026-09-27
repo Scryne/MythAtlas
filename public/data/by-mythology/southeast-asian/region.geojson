@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[94,-11],[141,-11],[141,25],[94,25],[94,-11]]]},"properties":{"id":"southeast-asian","name":"Southeast Asian Mythologies","region":"Southeast Asia","era":"c. 200 BCE-1900 CE","eraBucket":"ancient","color":"#4b9f74","bbox":"94,-11,141,25"}}]}
