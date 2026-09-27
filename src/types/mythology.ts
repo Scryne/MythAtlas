@@ -54,8 +54,6 @@ export type MythDNAEmotionalCore =
 
 export type MythDNACosmicScope = 'personal' | 'communal' | 'civilizational' | 'universal';
 
-export type MythDNAOriginTheory = 'diffusion' | 'convergent' | 'universal' | 'unknown';
-
 export interface MythDNA {
   elements: string[];
   archetypes: string[];
@@ -63,7 +61,6 @@ export interface MythDNA {
   moralLesson: string;
   emotionalCore: MythDNAEmotionalCore;
   cosmicScope: MythDNACosmicScope;
-  originTheory: MythDNAOriginTheory;
 }
 
 export type AcademicSourceType = 'primary' | 'secondary' | 'archaeological';
@@ -76,32 +73,21 @@ export interface AcademicSource {
   year: number;
   originalLanguage: string;
   estimatedDate: string;
-  description: string;
-  relevantPassage: string;
-  url: string;
+  description?: string;
+  relevantPassage?: string;
+  url?: string;
   isOpenAccess: boolean;
   citationAPA: string;
   citationChicago: string;
 }
 
-export type MythConnectionType =
-  | 'diffusion'
-  | 'convergent_evolution'
-  | 'common_ancestor'
-  | 'unknown';
-
-export type MythControversyLevel = 'consensus' | 'accepted' | 'debated' | 'fringe';
-
+// similarityScore: tema örtüşmesi (|A ∩ B| / |A ∪ B| × 100), akademik değerlendirme değil.
 export interface MythParallelEvidence {
   mythId: string;
   similarityScore: number;
   sharedElements: string[];
   divergences: string[];
-  connectionType: MythConnectionType;
-  connectionExplanation: string;
-  keyScholars: string[];
   academicSourceIds: string[];
-  controversyLevel: MythControversyLevel;
 }
 
 export interface Myth {
@@ -175,25 +161,15 @@ export interface SacredSite {
   visitInfo?: string;
   archaeology?: {
     discoveryHistory: {
-      firstDocumented: string;
+      firstDocumented?: string;
       majorExcavations: Array<{
         year: string;
         led_by: string;
         institution: string;
         findings: string;
       }>;
-      currentStatus:
-        | 'active_excavation'
-        | 'completed'
-        | 'protected'
-        | 'unexcavated'
-        | 'inaccessible';
-      protectionStatus:
-        | 'UNESCO'
-        | 'national_heritage'
-        | 'local_protection'
-        | 'unprotected'
-        | 'disputed';
+      protectionStatus?: 'UNESCO';
+      worldHeritage?: { name: string; listId: string; url: string };
     };
     artifacts: Array<{
       id: string;
@@ -224,20 +200,19 @@ export interface SacredSite {
       scholar: string;
     }>;
     architecture: {
-      originalStructure: string;
-      constructionPeriod: string;
-      dimensions: string;
+      originalStructure?: string;
+      constructionPeriod?: string;
+      dimensions?: string;
       materials: string[];
-      constructionTechnique: string;
+      constructionTechnique?: string;
       modifications: Array<{ period: string; description: string }>;
-      currentState: string;
+      currentState?: string;
     };
     museumConnections: Array<{
       museumName: string;
       city: string;
       country: string;
       collectionUrl: string;
-      artifactCount: number;
       notableArtifacts: string[];
     }>;
     chronology: Array<{

@@ -1,0 +1,5412 @@
+{
+ "generatedAt": "2026-09-27T15:19:17.320Z",
+ "source": "en.wikipedia.org + wikidata.org",
+ "entries": {
+  "mythology": {
+   "greek": {
+    "matched": true,
+    "title": "Greek mythology",
+    "description": "Body of myths originating in ancient Greece",
+    "qid": "Q34726",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Achilles_Penthesileia_BM_B209.jpg/960px-Achilles_Penthesileia_BM_B209.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Achilles_Penthesileia_BM_B209.jpg"
+   },
+   "roman": {
+    "matched": false
+   },
+   "norse": {
+    "matched": true,
+    "title": "Norse mythology",
+    "description": "Body of myths from Scandinavia",
+    "qid": "Q128285",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Tj%C3%A4ngvide.jpg/960px-Tj%C3%A4ngvide.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tjängvide.jpg"
+   },
+   "celtic": {
+    "matched": false
+   },
+   "egyptian": {
+    "matched": false
+   },
+   "mesopotamian": {
+    "matched": true,
+    "title": "Mesopotamian mythology",
+    "description": "Mesopotamian texts that talk about gods and fantastic creatures",
+    "qid": "Q3859459",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Newly_Discovered_Tablet_V_of_the_Epic_of_Gilgamesh%2C_The_Sulaymaniyah_Museum%2C_Iraq.jpg/960px-The_Newly_Discovered_Tablet_V_of_the_Epic_of_Gilgamesh%2C_The_Sulaymaniyah_Museum%2C_Iraq.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "The_Newly_Discovered_Tablet_V_of_the_Epic_of_Gilgamesh,_The_Sulaymaniyah_Museum,_Iraq.jpg"
+   },
+   "persian": {
+    "matched": true,
+    "title": "Iranian religions",
+    "description": "Religions that originated in the Iranian plateau",
+    "qid": "Q1463386",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Icon-religion.svg/960px-Icon-religion.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Icon-religion.svg"
+   },
+   "hindu": {
+    "matched": false
+   },
+   "buddhist": {
+    "matched": false
+   },
+   "chinese": {
+    "matched": true,
+    "title": "Chinese mythology",
+    "description": "Mythology of the greater Chinese area",
+    "qid": "Q210677",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Nine-Dragons1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Nine-Dragons1.jpg"
+   },
+   "japanese": {
+    "matched": true,
+    "title": "Japanese mythology",
+    "description": "Body of myths originating in Japan",
+    "qid": "Q814158",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Origin_of_Iwato_Kagura_Dance_Amaterasu_by_Toyokuni_III_%28Kunisada%29_1856.png/960px-Origin_of_Iwato_Kagura_Dance_Amaterasu_by_Toyokuni_III_%28Kunisada%29_1856.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Origin_of_Iwato_Kagura_Dance_Amaterasu_by_Toyokuni_III_(Kunisada)_1856.png"
+   },
+   "korean": {
+    "matched": true,
+    "title": "Korean mythology",
+    "description": "Myths of ancient Korea",
+    "qid": "Q702065",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mansindo_%28%E8%90%AC%E7%A5%9E%E5%9C%96%29%2C_early_19th-c._Korean_shamanic_painting.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Mansindo_(萬神圖),_early_19th-c._Korean_shamanic_painting.jpg"
+   },
+   "aztec": {
+    "matched": true,
+    "title": "Aztec mythology",
+    "description": "Religious folklore of the Nahua peoples of the Triple Alliance (Aztec Empire)",
+    "qid": "Q391184",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Codex_Borgia_page_56.jpg/960px-Codex_Borgia_page_56.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Codex_Borgia_page_56.jpg"
+   },
+   "maya": {
+    "matched": false
+   },
+   "inca": {
+    "matched": true,
+    "title": "Inca mythology",
+    "description": "Myths of the Inca civilization",
+    "qid": "Q629040",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Machu_Picchu_Panorama_2025_%28cropped%29.jpg/960px-Machu_Picchu_Panorama_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Machu_Picchu_Panorama_2025_(cropped).jpg"
+   },
+   "slavic": {
+    "matched": false
+   },
+   "turkic": {
+    "matched": true,
+    "title": "Turkic mythology",
+    "description": "Myths and legends told by the Turkic people",
+    "qid": "Q588796",
+    "image": null,
+    "imageFile": null
+   },
+   "mongolian": {
+    "matched": false
+   },
+   "yoruba": {
+    "matched": true,
+    "title": "Yoruba religion",
+    "description": "West-African religion",
+    "qid": "Q1086440",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Obatala_Temple_Ile_Ife.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Obatala_Temple_Ile_Ife.jpg"
+   },
+   "nubian": {
+    "matched": true,
+    "title": "Kushite religion",
+    "description": "Religious beliefs of the Kushites",
+    "qid": "Q117421539",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Mero%C3%AB%2C_the_City_of_the_Ethiopians_-_being_an_account_of_a_first_season%27s_excavations_on_the_site%2C_1909-1910_%281911%29_%2814578210660%29.jpg/960px-Mero%C3%AB%2C_the_City_of_the_Ethiopians_-_being_an_account_of_a_first_season%27s_excavations_on_the_site%2C_1909-1910_%281911%29_%2814578210660%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Meroë,_the_City_of_the_Ethiopians_-_being_an_account_of_a_first_season's_excavations_on_the_site,_1909-1910_(1911)_(14578210660).jpg"
+   },
+   "aboriginal": {
+    "matched": false
+   },
+   "polynesian": {
+    "matched": false
+   },
+   "native-american": {
+    "matched": false
+   },
+   "finnish": {
+    "matched": true,
+    "title": "Kalevala",
+    "description": "1835 Finnish epic poem compiled by Elias Lönnrot",
+    "qid": "Q130924",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Kalevala1.jpg/960px-Kalevala1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Kalevala1.jpg"
+   },
+   "armenian": {
+    "matched": false
+   },
+   "georgian": {
+    "matched": false
+   },
+   "phoenician": {
+    "matched": true,
+    "title": "Canaanite religion",
+    "description": "Group of ancient Semitic religions",
+    "qid": "Q2914567",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Baal_thunderbolt_Louvre_AO15775.jpg/960px-Baal_thunderbolt_Louvre_AO15775.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Baal_thunderbolt_Louvre_AO15775.jpg"
+   },
+   "hittite": {
+    "matched": false
+   },
+   "etruscan": {
+    "matched": false
+   },
+   "sumerian": {
+    "matched": true,
+    "title": "Sumerian religion",
+    "description": "First known Mesopotamian religion",
+    "qid": "Q275051",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Wall_plaque_showing_libation_scene_from_Ur%2C_Iraq%2C_2500_BCE._British_Museum_%28adjusted_for_perspective%29.jpg/960px-Wall_plaque_showing_libation_scene_from_Ur%2C_Iraq%2C_2500_BCE._British_Museum_%28adjusted_for_perspective%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Wall_plaque_showing_libation_scene_from_Ur,_Iraq,_2500_BCE._British_Museum_(adjusted_for_perspective).jpg"
+   },
+   "babylonian": {
+    "matched": false
+   },
+   "biblical-hebrew": {
+    "matched": true,
+    "title": "Bible",
+    "description": "Collection of religious texts",
+    "qid": "Q1845",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/960px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg"
+   },
+   "proto-indo-european": {
+    "matched": false
+   },
+   "hellenistic-syncretic": {
+    "matched": false
+   },
+   "southeast-asian": {
+    "matched": false
+   },
+   "estonian": {
+    "matched": false
+   }
+  },
+  "myth": {
+   "prometheus-fire": {
+    "matched": false
+   },
+   "odyssey": {
+    "matched": true,
+    "title": "Odyssey",
+    "description": "Epic poem attributed to Homer",
+    "qid": "Q35160",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fragment_Odyssee_2245_2.jpg/960px-Fragment_Odyssee_2245_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Fragment_Odyssee_2245_2.jpg"
+   },
+   "iliad-achilles": {
+    "matched": false
+   },
+   "heracles-labors": {
+    "matched": false
+   },
+   "orpheus-eurydice": {
+    "matched": true,
+    "title": "Orpheus and Eurydice",
+    "description": "Ancient Greek legend",
+    "qid": "Q7103994",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Egyptian_-_Wall_Hanging_or_Curtain_Fragment_with_Orpheus_and_Eurydice_-_Walters_83466.jpg/960px-Egyptian_-_Wall_Hanging_or_Curtain_Fragment_with_Orpheus_and_Eurydice_-_Walters_83466.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Egyptian_-_Wall_Hanging_or_Curtain_Fragment_with_Orpheus_and_Eurydice_-_Walters_83466.jpg"
+   },
+   "greek-creation": {
+    "matched": false
+   },
+   "persephone-seasons": {
+    "matched": false
+   },
+   "romulus-remus": {
+    "matched": true,
+    "title": "Romulus and Remus",
+    "description": "Twin brothers and central characters of Rome's foundation myth",
+    "qid": "Q2197",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Lupa_Capitolina%2C_Rome.jpg/960px-Lupa_Capitolina%2C_Rome.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Lupa_Capitolina,_Rome.jpg"
+   },
+   "aeneid": {
+    "matched": true,
+    "title": "Aeneid",
+    "description": "Latin epic poem by Virgil",
+    "qid": "Q60220",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg/960px-Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Aeneas'_Flight_from_Troy_by_Federico_Barocci.jpg"
+   },
+   "ragnarok": {
+    "matched": true,
+    "title": "Ragnarök",
+    "description": "End times in Norse mythology",
+    "qid": "Q170148",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Stave_church_Urnes%2C_craving_detail_1.jpg/960px-Stave_church_Urnes%2C_craving_detail_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Stave_church_Urnes,_craving_detail_1.jpg"
+   },
+   "sigurd-dragon": {
+    "matched": false
+   },
+   "norse-creation": {
+    "matched": false
+   },
+   "gilgamesh-quest": {
+    "matched": true,
+    "title": "Epic of Gilgamesh",
+    "description": "Epic poem from Mesopotamia",
+    "qid": "Q8272",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/British_Museum_Flood_Tablet.jpg/960px-British_Museum_Flood_Tablet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "British_Museum_Flood_Tablet.jpg"
+   },
+   "enuma-elish": {
+    "matched": true,
+    "title": "Enūma Eliš",
+    "description": "Babylonian creation myth",
+    "qid": "Q206063",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Chaos_Monster_and_Sun_God.png/960px-Chaos_Monster_and_Sun_God.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Chaos_Monster_and_Sun_God.png"
+   },
+   "ishtar-descent": {
+    "matched": false
+   },
+   "mesopotamian-flood": {
+    "matched": true,
+    "title": "Flood myth",
+    "description": "Myth in which a great flood destroys civilization",
+    "qid": "Q134052",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Gustave_Dor%C3%A9_-_The_Holy_Bible_-_Plate_I%2C_The_Deluge.jpg/960px-Gustave_Dor%C3%A9_-_The_Holy_Bible_-_Plate_I%2C_The_Deluge.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gustave_Doré_-_The_Holy_Bible_-_Plate_I,_The_Deluge.jpg"
+   },
+   "osiris-isis": {
+    "matched": false
+   },
+   "book-of-dead": {
+    "matched": false
+   },
+   "egyptian-creation": {
+    "matched": false
+   },
+   "mahabharata-war": {
+    "matched": true,
+    "title": "Mahabharata",
+    "description": "Ancient smṛti text and Sanskrit epic",
+    "qid": "Q8276",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Kurukshetra.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Kurukshetra.jpg"
+   },
+   "ramayana": {
+    "matched": true,
+    "title": "Ramayana",
+    "description": "Ancient Sanskrit epic",
+    "qid": "Q37293",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/R%C4%81ma_slays_R%C4%81va%E1%B9%87a.png/960px-R%C4%81ma_slays_R%C4%81va%E1%B9%87a.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Rāma_slays_Rāvaṇa.png"
+   },
+   "samudra-manthan": {
+    "matched": false
+   },
+   "pangu-creation": {
+    "matched": false
+   },
+   "nuwa-creation": {
+    "matched": false
+   },
+   "monkey-king": {
+    "matched": true,
+    "title": "Journey to the West",
+    "description": "16th-century novel by Wu Cheng'en",
+    "qid": "Q70784",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Evl53201b_pic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Evl53201b_pic.jpg"
+   },
+   "izanagi-izanami": {
+    "matched": false
+   },
+   "amaterasu-cave": {
+    "matched": false
+   },
+   "dangun": {
+    "matched": true,
+    "title": "Tan'gun",
+    "description": "Korean king and deity",
+    "qid": "Q549567",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Portrait_of_Dangun.jpg/960px-Portrait_of_Dangun.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Portrait_of_Dangun.jpg"
+   },
+   "aztec-five-suns": {
+    "matched": true,
+    "title": "Five Suns",
+    "description": "Creation Legend of the Aztecs",
+    "qid": "Q786836",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/File-Monolito_de_la_Piedra_del_Sol_%28centro%29.jpg/960px-File-Monolito_de_la_Piedra_del_Sol_%28centro%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "File-Monolito_de_la_Piedra_del_Sol_(centro).jpg"
+   },
+   "popol-vuh": {
+    "matched": true,
+    "title": "Popol Vuh",
+    "description": "Text recounting Maya mythology and history",
+    "qid": "Q220264",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Popol_vuh.jpg/960px-Popol_vuh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Popol_vuh.jpg"
+   },
+   "inca-viracocha": {
+    "matched": false
+   },
+   "perun-veles": {
+    "matched": false
+   },
+   "ergenekon": {
+    "matched": false
+   },
+   "rostam-labors": {
+    "matched": false
+   },
+   "maui-fire": {
+    "matched": false
+   },
+   "dreamtime-rainbow-serpent": {
+    "matched": false
+   },
+   "yoruba-creation": {
+    "matched": false
+   },
+   "kalevala-sampo": {
+    "matched": false
+   },
+   "coyote-trickster": {
+    "matched": false
+   },
+   "cuchulainn-battle": {
+    "matched": false
+   },
+   "amirani-fire": {
+    "matched": true,
+    "title": "Amirani",
+    "description": "Georgian mythical figure",
+    "qid": "Q2914970",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/So_1956.jpg/960px-So_1956.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "So_1956.jpg"
+   },
+   "kumarbi-cycle": {
+    "matched": true,
+    "title": "Kumarbi",
+    "description": "Hurrian father of the gods",
+    "qid": "Q945508",
+    "image": null,
+    "imageFile": null
+   },
+   "baal-cycle": {
+    "matched": true,
+    "title": "Baal Cycle",
+    "description": "Levantine mythological cycle of stories",
+    "qid": "Q2735731",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/P1180250_Louvre_Langue_ougaritique_Tablette_poeme_mythologique_AO16641_et_16642_rwk.jpg/960px-P1180250_Louvre_Langue_ougaritique_Tablette_poeme_mythologique_AO16641_et_16642_rwk.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "P1180250_Louvre_Langue_ougaritique_Tablette_poeme_mythologique_AO16641_et_16642_rwk.jpg"
+   },
+   "david-sassoun": {
+    "matched": true,
+    "title": "David of Sassoun",
+    "description": "Protagonist of Armenian epic Daredevils of Sassoun",
+    "qid": "Q2389038",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Sasuntsi_Davit_closeup3.jpg/960px-Sasuntsi_Davit_closeup3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Sasuntsi_Davit_closeup3.jpg"
+   },
+   "shango-thunder": {
+    "matched": true,
+    "title": "Shango",
+    "description": "Yoruba deity of thunder and 3rd Alaafin of the Oyo Empire",
+    "qid": "Q1547934",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Representa%C3%A7%C3%A3o_de_Xang%C3%B4_MN_01.jpg/960px-Representa%C3%A7%C3%A3o_de_Xang%C3%B4_MN_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Representação_de_Xangô_MN_01.jpg"
+   },
+   "mongol-blue-wolf": {
+    "matched": false
+   },
+   "nubian-apedemak": {
+    "matched": false
+   },
+   "buddhist-jataka": {
+    "matched": true,
+    "title": "Jataka tales",
+    "description": "Traditional narratives of the previous lives of Buddha",
+    "qid": "Q668439",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Southern_India%2C_Andhra_Pradesh%2C_possibly_Amaravati%2C_Satavahana_period_-_Buddha%27s_Previous_Life_as_a_Woodpecker-_Javasakunda_Jataka_-_1970.350_-_Cleveland_Museum_of_Art_%28cropped%29.tif/lossy-page1-960px-thumbnail.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Southern_India,_Andhra_Pradesh,_possibly_Amaravati,_Satavahana_period_-_Buddha's_Previous_Life_as_a_Woodpecker-_Javasakunda_Jataka_-_1970.350_-_Cleveland_Museum_of_Art_(cropped).tif"
+   },
+   "etruscan-afterlife": {
+    "matched": false
+   },
+   "quetzalcoatl": {
+    "matched": false
+   },
+   "persian-creation": {
+    "matched": false
+   },
+   "deucalion-flood": {
+    "matched": false
+   },
+   "theseus-minotaur": {
+    "matched": true,
+    "title": "Theseus",
+    "description": "Legendary king of Athens who slayed the Minotaur",
+    "qid": "Q1320718",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg/960px-Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg"
+   },
+   "perseus-medusa": {
+    "matched": false
+   },
+   "jason-argonauts": {
+    "matched": true,
+    "title": "Jason",
+    "description": "Greek mythological hero and leader of the Argonauts",
+    "qid": "Q176758",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Douris_cup_Jason_Vatican_16545.jpg/960px-Douris_cup_Jason_Vatican_16545.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Douris_cup_Jason_Vatican_16545.jpg"
+   },
+   "oedipus": {
+    "matched": false
+   },
+   "thor-jormungandr": {
+    "matched": false
+   },
+   "loki-trickster": {
+    "matched": false
+   },
+   "balder-death": {
+    "matched": false
+   },
+   "manu-flood": {
+    "matched": false
+   },
+   "krishna-lila": {
+    "matched": false
+   },
+   "hindu-pralaya": {
+    "matched": true,
+    "title": "Pralaya",
+    "description": "Period of dissolution (non-activity) in Hindu cosmology",
+    "qid": "Q2627710",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Wisdom-of-manu-1916.jpg%21PinterestLarge.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Wisdom-of-manu-1916.jpg!PinterestLarge.jpg"
+   },
+   "chang-e-moon": {
+    "matched": false
+   },
+   "dragon-kings": {
+    "matched": false
+   },
+   "susanoo-serpent": {
+    "matched": false
+   },
+   "kitsune-tales": {
+    "matched": false
+   },
+   "gumiho": {
+    "matched": true,
+    "title": "Gumiho",
+    "description": "Korean mythological creature",
+    "qid": "Q718580",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/KUMIHO.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "KUMIHO.jpg"
+   },
+   "maya-creation": {
+    "matched": false
+   },
+   "baba-yaga": {
+    "matched": false
+   },
+   "dede-korkut": {
+    "matched": true,
+    "title": "Book of Dede Korkut",
+    "description": "Epic tales of the Oghuz Turkic people",
+    "qid": "Q903320",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Kitab-%C4%B1_Dede_Korkut_ala-lisan-i_Ta%27ife-i_O%C4%9Fuzhan%2C_Dresden.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Kitab-ı_Dede_Korkut_ala-lisan-i_Ta'ife-i_Oğuzhan,_Dresden.jpg"
+   },
+   "anansi": {
+    "matched": false
+   },
+   "raven-light": {
+    "matched": false
+   },
+   "white-buffalo": {
+    "matched": true,
+    "title": "White Buffalo Calf Woman",
+    "description": "Sacred woman of supernatural origin, central to the Lakota religion",
+    "qid": "Q268174",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Detail_from_%E2%80%9CApparition_of_the_Buffalo_Calf_Maiden%E2%80%9D_%281959%29_by_Frithjof_Schuon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Detail_from_“Apparition_of_the_Buffalo_Calf_Maiden”_(1959)_by_Frithjof_Schuon.jpg"
+   },
+   "kalevala-vainamoinen": {
+    "matched": false
+   },
+   "aztec-tlaloc": {
+    "matched": false
+   },
+   "inca-inti-raymi": {
+    "matched": true,
+    "title": "Inti Raymi",
+    "description": "Incan religious festival",
+    "qid": "Q1165988",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Inti_Raymi.jpg/960px-Inti_Raymi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Inti_Raymi.jpg"
+   },
+   "polynesian-creation": {
+    "matched": false
+   },
+   "sedna": {
+    "matched": false
+   },
+   "songline": {
+    "matched": false
+   },
+   "aztec-mictlan": {
+    "matched": false
+   },
+   "finnish-tuonela": {
+    "matched": false
+   },
+   "hindu-creation": {
+    "matched": false
+   },
+   "mongol-creation": {
+    "matched": false
+   },
+   "slavic-creation": {
+    "matched": false
+   },
+   "turkic-creation": {
+    "matched": false
+   },
+   "phoenician-creation": {
+    "matched": false
+   },
+   "hittite-illuyanka": {
+    "matched": false
+   },
+   "nubian-creation": {
+    "matched": true,
+    "title": "Jebel Barkal",
+    "description": "Archaeological Site in Sudan",
+    "qid": "Q499019",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Gebel_Barkal.jpg/960px-Gebel_Barkal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gebel_Barkal.jpg"
+   },
+   "armenian-vahagn": {
+    "matched": false
+   },
+   "georgian-creation": {
+    "matched": false
+   },
+   "roman-metamorphoses": {
+    "matched": true,
+    "title": "Metamorphoses",
+    "description": "Mythological narrative poem by Ovid",
+    "qid": "Q184742",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ovidius_Naso_-_Metamorphoses%2C_del_MCCCCLXXXXVII_Adi_X_del_mese_di_aprile_-_1583162_Carta_a1r.jpeg/960px-Ovidius_Naso_-_Metamorphoses%2C_del_MCCCCLXXXXVII_Adi_X_del_mese_di_aprile_-_1583162_Carta_a1r.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ovidius_Naso_-_Metamorphoses,_del_MCCCCLXXXXVII_Adi_X_del_mese_di_aprile_-_1583162_Carta_a1r.jpeg"
+   },
+   "roman-creation": {
+    "matched": false
+   },
+   "celtic-arthurian": {
+    "matched": false
+   },
+   "celtic-tir-na-nog": {
+    "matched": false
+   },
+   "korean-chunhyang": {
+    "matched": false
+   },
+   "etruscan-creation": {
+    "matched": false
+   },
+   "pandora-box": {
+    "matched": true,
+    "title": "Pandora's box",
+    "description": "Greek mythological artefact",
+    "qid": "Q937164",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Lawrence_Alma-Tadema_10.jpeg/960px-Lawrence_Alma-Tadema_10.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Lawrence_Alma-Tadema_10.jpeg"
+   },
+   "narcissus": {
+    "matched": true,
+    "title": "Echo and Narcissus",
+    "description": "Story in Greek mythology",
+    "qid": "Q3241738",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Affresco_romano_-_Pompei_-_Narciso_ed_Eco.JPG/960px-Affresco_romano_-_Pompei_-_Narciso_ed_Eco.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Affresco_romano_-_Pompei_-_Narciso_ed_Eco.JPG"
+   },
+   "trojan-horse": {
+    "matched": true,
+    "title": "Trojan Horse",
+    "description": "Wooden horse in Greek mythology",
+    "qid": "Q50193",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Mykonos_vase.jpg/960px-Mykonos_vase.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Mykonos_vase.jpg"
+   },
+   "mead-poetry": {
+    "matched": false
+   },
+   "hindu-narasimha": {
+    "matched": true,
+    "title": "Narasimha",
+    "description": "Man-lion and the fourth avatar of Hindu god Vishnu",
+    "qid": "Q237543",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/South_India%2C_late_Chola_Period_-_Yoga_Narashimha%2C_Vishnu_in_his_Man-Lion_Avatar_-_1973.187_-_Cleveland_Museum_of_Art.tif/lossy-page1-960px-South_India%2C_late_Chola_Period_-_Yoga_Narashimha%2C_Vishnu_in_his_Man-Lion_Avatar_-_1973.187_-_Cleveland_Museum_of_Art.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "South_India,_late_Chola_Period_-_Yoga_Narashimha,_Vishnu_in_his_Man-Lion_Avatar_-_1973.187_-_Cleveland_Museum_of_Art.tif"
+   },
+   "chinese-yijing": {
+    "matched": false
+   },
+   "chinese-flood": {
+    "matched": false
+   },
+   "japanese-tanabata": {
+    "matched": true,
+    "title": "Tanabata",
+    "description": "Japanese festival",
+    "qid": "Q1193996",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Fussa_Tanabata_Festival-Tokyo.jpg/960px-Fussa_Tanabata_Festival-Tokyo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Fussa_Tanabata_Festival-Tokyo.jpg"
+   },
+   "urashima-taro": {
+    "matched": true,
+    "title": "Urashima Tarō",
+    "description": "Protagonist of a Japanese fairy tale",
+    "qid": "Q55617997",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Matsuki_Heikichi%281899%29-Urashima-p04.jpg/960px-Matsuki_Heikichi%281899%29-Urashima-p04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Matsuki_Heikichi(1899)-Urashima-p04.jpg"
+   },
+   "maya-flood": {
+    "matched": false
+   },
+   "slavic-rusalki": {
+    "matched": false
+   },
+   "turkic-alp-er-tunga": {
+    "matched": true,
+    "title": "Alp Er Tunga",
+    "description": "Legendary Turkic Khan",
+    "qid": "Q1086106",
+    "image": null,
+    "imageFile": null
+   },
+   "persian-simorgh": {
+    "matched": false
+   },
+   "buddhist-mara": {
+    "matched": false
+   },
+   "polynesian-pele": {
+    "matched": true,
+    "title": "Pele (deity)",
+    "description": "Hawaiian goddess of volcanoes and fire",
+    "qid": "Q1133063",
+    "image": null,
+    "imageFile": null
+   },
+   "aboriginal-fire": {
+    "matched": false
+   },
+   "yoruba-ifa": {
+    "matched": false
+   },
+   "mongol-shamanism": {
+    "matched": false
+   },
+   "nubian-kandake": {
+    "matched": false
+   },
+   "inca-pachamama": {
+    "matched": true,
+    "title": "Pachamama",
+    "description": "Andean fertility goddess",
+    "qid": "Q266462",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Santa_Cruz_Pachacuti_Yamqui_Pachamama.jpg/960px-Santa_Cruz_Pachacuti_Yamqui_Pachamama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Santa_Cruz_Pachacuti_Yamqui_Pachamama.jpg"
+   },
+   "maya-xibalba": {
+    "matched": false
+   },
+   "persian-flood": {
+    "matched": false
+   },
+   "navajo-creation": {
+    "matched": false
+   },
+   "chinese-zhurong": {
+    "matched": false
+   },
+   "korean-ondal": {
+    "matched": false
+   },
+   "hindu-ganesha": {
+    "matched": false
+   },
+   "celtic-morrigan": {
+    "matched": true,
+    "title": "The Morrígan",
+    "description": "Figure from Irish mythology",
+    "qid": "Q828550",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Morrigan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Morrigan.jpg"
+   },
+   "aztec-coyolxauhqui": {
+    "matched": false
+   },
+   "roman-proserpina": {
+    "matched": false
+   },
+   "finnish-lemminkainen": {
+    "matched": false
+   },
+   "greek-daedalus": {
+    "matched": true,
+    "title": "Daedalus",
+    "description": "Greek mythological figure",
+    "qid": "Q134756",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Gaziantep_Zeugma_Museum_Daedalus_mosaic_1873.jpg/960px-Gaziantep_Zeugma_Museum_Daedalus_mosaic_1873.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gaziantep_Zeugma_Museum_Daedalus_mosaic_1873.jpg"
+   },
+   "norse-freya-necklace": {
+    "matched": false
+   },
+   "egyptian-sekhmet": {
+    "matched": false
+   },
+   "hindu-shiva-tandava": {
+    "matched": false
+   },
+   "chinese-white-snake": {
+    "matched": true,
+    "title": "Legend of the White Snake",
+    "description": "Chinese legend",
+    "qid": "Q1329003",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Long_Gallery-Legend_white_snake.JPG/960px-Long_Gallery-Legend_white_snake.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Long_Gallery-Legend_white_snake.JPG"
+   },
+   "japanese-momotaro": {
+    "matched": true,
+    "title": "Momotarō",
+    "description": "Popular hero of Japanese folklore",
+    "qid": "Q877820",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Momotaro2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Momotaro2.jpg"
+   },
+   "slavic-firebird": {
+    "matched": false
+   },
+   "persian-kay-kavus": {
+    "matched": false
+   },
+   "buddhist-avalokiteshvara": {
+    "matched": false
+   },
+   "polynesian-creation-chant": {
+    "matched": true,
+    "title": "Kumulipo",
+    "description": "Hawaiian chant",
+    "qid": "Q1246476",
+    "image": null,
+    "imageFile": null
+   },
+   "native-american-corn-mother": {
+    "matched": false
+   },
+   "roman-sabine": {
+    "matched": true,
+    "title": "Rape of the Sabine women",
+    "description": "Incident in Roman mythology",
+    "qid": "Q1048568",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/L._Titurius_L.f._Sabinus._denarius%2C_89_BC%2C_RRC_344-1a_%28cropped_reverse%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "L._Titurius_L.f._Sabinus._denarius,_89_BC,_RRC_344-1a_(cropped_reverse).jpg"
+   },
+   "egyptian-thoth": {
+    "matched": false
+   },
+   "mesopotamian-etana": {
+    "matched": true,
+    "title": "Etana",
+    "description": "Ancient Mesopotamian king",
+    "qid": "Q335721",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Fragment_of_the_Epic_of_Etana%2C_Akkadian%2C_Mesopotamia%2C_First_Dynasty_of_Babylon%2C_c._1895-1595_BC%2C_clay_-_Morgan_Library_%26_Museum_-_New_York_City_-_DSC06599.jpg/960px-Fragment_of_the_Epic_of_Etana%2C_Akkadian%2C_Mesopotamia%2C_First_Dynasty_of_Babylon%2C_c._1895-1595_BC%2C_clay_-_Morgan_Library_%26_Museum_-_New_York_City_-_DSC06599.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Fragment_of_the_Epic_of_Etana,_Akkadian,_Mesopotamia,_First_Dynasty_of_Babylon,_c._1895-1595_BC,_clay_-_Morgan_Library_&_Museum_-_New_York_City_-_DSC06599.jpg"
+   },
+   "hindu-durga": {
+    "matched": false
+   },
+   "chinese-chang-e-archer": {
+    "matched": false
+   },
+   "korean-creation": {
+    "matched": false
+   },
+   "celtic-salmon-knowledge": {
+    "matched": false
+   },
+   "yoruba-ogun": {
+    "matched": false
+   },
+   "aborig-seven-sisters": {
+    "matched": false
+   },
+   "mongol-geser": {
+    "matched": true,
+    "title": "Epic of King Gesar",
+    "description": "East and Central Asian epic cycle",
+    "qid": "Q842370",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gesar_Gruschke.jpg/960px-Gesar_Gruschke.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gesar_Gruschke.jpg"
+   },
+   "greek-antigone": {
+    "matched": false
+   },
+   "norse-valhalla": {
+    "matched": true,
+    "title": "Valhalla",
+    "description": "Legendary hall in Norse mythology",
+    "qid": "Q177860",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Walhalla_%281896%29_by_Max_Br%C3%BCckner.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Walhalla_(1896)_by_Max_Brückner.jpg"
+   },
+   "egyptian-ra-journey": {
+    "matched": false
+   },
+   "mesopotamian-adapa": {
+    "matched": false
+   },
+   "inca-ayar": {
+    "matched": false
+   },
+   "hindu-hanuman": {
+    "matched": false
+   },
+   "chinese-ne-zha": {
+    "matched": false
+   },
+   "aboriginal-crow-fire": {
+    "matched": false
+   },
+   "noah-flood": {
+    "matched": false
+   },
+   "apollo-python": {
+    "matched": false
+   }
+  },
+  "deity": {
+   "zeus": {
+    "matched": true,
+    "title": "Zeus",
+    "description": "Greek god of the sky and king of the gods",
+    "qid": "Q34201",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Zeus_Otricoli_Pio-Clementino_Inv257.jpg/960px-Zeus_Otricoli_Pio-Clementino_Inv257.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Zeus_Otricoli_Pio-Clementino_Inv257.jpg"
+   },
+   "athena": {
+    "matched": true,
+    "title": "Athena",
+    "description": "Ancient Greek goddess",
+    "qid": "Q37122",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Mattei_Athena_Louvre_Ma530_n2.jpg/960px-Mattei_Athena_Louvre_Ma530_n2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Mattei_Athena_Louvre_Ma530_n2.jpg"
+   },
+   "poseidon": {
+    "matched": true,
+    "title": "Poseidon",
+    "description": "Ancient Greek god of the sea, earthquakes, and horses",
+    "qid": "Q41127",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Statue_of_Poseidon_NAMA_235_%28DerHexer%29%2C_part_2.JPG/960px-Statue_of_Poseidon_NAMA_235_%28DerHexer%29%2C_part_2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Statue_of_Poseidon_NAMA_235_(DerHexer),_part_2.JPG"
+   },
+   "hades-god": {
+    "matched": true,
+    "title": "Hades",
+    "description": "God of the underworld in Greek mythology",
+    "qid": "Q41410",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Persephone_Hades_BM_Vase_E82_%28cropped%29.jpg/960px-Persephone_Hades_BM_Vase_E82_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Persephone_Hades_BM_Vase_E82_(cropped).jpg"
+   },
+   "apollo": {
+    "matched": true,
+    "title": "Apollo",
+    "description": "Ancient Greek god",
+    "qid": "Q37340",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Italy-3104_-_Apollo_%285378415112%29.jpg/960px-Italy-3104_-_Apollo_%285378415112%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Italy-3104_-_Apollo_(5378415112).jpg"
+   },
+   "ares": {
+    "matched": true,
+    "title": "Ares",
+    "description": "God of war in ancient Greek religion",
+    "qid": "Q40901",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/%CE%9F_%CE%86%CF%81%CE%B7%CF%82_%28Borghese-%CE%9B%CE%BF%CF%8D%CE%B2%CF%81%CE%BF%CF%85%29.jpg/960px-%CE%9F_%CE%86%CF%81%CE%B7%CF%82_%28Borghese-%CE%9B%CE%BF%CF%8D%CE%B2%CF%81%CE%BF%CF%85%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ο_Άρης_(Borghese-Λούβρου).jpg"
+   },
+   "aphrodite": {
+    "matched": true,
+    "title": "Aphrodite",
+    "description": "Ancient Greek goddess of love",
+    "qid": "Q35500",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Cnidus_Aphrodite_Altemps_Inv8619.jpg/960px-Cnidus_Aphrodite_Altemps_Inv8619.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Cnidus_Aphrodite_Altemps_Inv8619.jpg"
+   },
+   "hermes": {
+    "matched": true,
+    "title": "Hermes",
+    "description": "Ancient Greek deity and herald of the gods",
+    "qid": "Q41484",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Hermes_Ingenui_Pio-Clementino_Inv544.jpg/960px-Hermes_Ingenui_Pio-Clementino_Inv544.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Hermes_Ingenui_Pio-Clementino_Inv544.jpg"
+   },
+   "jupiter": {
+    "matched": true,
+    "title": "Jupiter (god)",
+    "description": "Chief deity of Roman state religion",
+    "qid": "Q4649",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/0_Jupiter_-_Louvre_MR_254_-_Louvre-Lens_%282%29.JPG/960px-0_Jupiter_-_Louvre_MR_254_-_Louvre-Lens_%282%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "0_Jupiter_-_Louvre_MR_254_-_Louvre-Lens_(2).JPG"
+   },
+   "mars": {
+    "matched": true,
+    "title": "Mars (mythology)",
+    "description": "Roman god of war, guardian of agriculture",
+    "qid": "Q112",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/0_Statue_de_Mars_%28Pyrrhus%29_-_Musei_Capitolini_-_MC0058_%282%29.JPG/960px-0_Statue_de_Mars_%28Pyrrhus%29_-_Musei_Capitolini_-_MC0058_%282%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "0_Statue_de_Mars_(Pyrrhus)_-_Musei_Capitolini_-_MC0058_(2).JPG"
+   },
+   "odin": {
+    "matched": true,
+    "title": "Odin",
+    "description": "Widely revered deity in Germanic mythology",
+    "qid": "Q43610",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Georg_von_Rosen_-_Oden_som_vandringsman%2C_1886_%28Odin%2C_the_Wanderer%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Georg_von_Rosen_-_Oden_som_vandringsman,_1886_(Odin,_the_Wanderer).jpg"
+   },
+   "thor": {
+    "matched": true,
+    "title": "Thor",
+    "description": "Germanic god associated with thunder",
+    "qid": "Q42952",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/A_painting_by_Max_Friedrich_Koch_-_Donar-Thor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "A_painting_by_Max_Friedrich_Koch_-_Donar-Thor.jpg"
+   },
+   "loki": {
+    "matched": true,
+    "title": "Loki",
+    "description": "Norse deity",
+    "qid": "Q133147",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Processed_SAM_loki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Processed_SAM_loki.jpg"
+   },
+   "freyja": {
+    "matched": true,
+    "title": "Freyja",
+    "description": "Norse goddess",
+    "qid": "Q1647325",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Freyja_and_the_Necklace_by_James_Doyle_Penrose%2C_1890.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Freyja_and_the_Necklace_by_James_Doyle_Penrose,_1890.jpg"
+   },
+   "ra": {
+    "matched": true,
+    "title": "Ra",
+    "description": "Ancient Egyptian solar deity",
+    "qid": "Q1252904",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Re-Horakhty.svg/960px-Re-Horakhty.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Re-Horakhty.svg"
+   },
+   "osiris": {
+    "matched": true,
+    "title": "Osiris",
+    "description": "Ancient Egyptian god of the afterlife",
+    "qid": "Q46491",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Standing_Osiris.svg/960px-Standing_Osiris.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Standing_Osiris.svg"
+   },
+   "isis": {
+    "matched": true,
+    "title": "Isis",
+    "description": "Ancient Egyptian goddess",
+    "qid": "Q79876",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Isis.svg/960px-Isis.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Isis.svg"
+   },
+   "anubis": {
+    "matched": true,
+    "title": "Anubis",
+    "description": "Ancient Egyptian god of funerary rites",
+    "qid": "Q47534",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Anubis_standing.svg/960px-Anubis_standing.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Anubis_standing.svg"
+   },
+   "marduk": {
+    "matched": true,
+    "title": "Marduk",
+    "description": "National god of the Babylonians",
+    "qid": "Q190123",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Chaos_Monster_and_Sun_God.png/960px-Chaos_Monster_and_Sun_God.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Chaos_Monster_and_Sun_God.png"
+   },
+   "ishtar-deity": {
+    "matched": true,
+    "title": "Inanna",
+    "description": "Ancient Mesopotamian goddess",
+    "qid": "Q272523",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Ishtar_on_an_Akkadian_seal.jpg/960px-Ishtar_on_an_Akkadian_seal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ishtar_on_an_Akkadian_seal.jpg"
+   },
+   "enki": {
+    "matched": true,
+    "title": "Enki",
+    "description": "God in Sumerian mythology",
+    "qid": "Q189726",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Enki%28Ea%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Enki(Ea).jpg"
+   },
+   "vishnu": {
+    "matched": true,
+    "title": "Vishnu",
+    "description": "Major deity in Hinduism",
+    "qid": "Q11380",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Vishnu_from_Gita_Govinda.jpg/960px-Vishnu_from_Gita_Govinda.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Vishnu_from_Gita_Govinda.jpg"
+   },
+   "shiva": {
+    "matched": true,
+    "title": "Shiva",
+    "description": "Major deity in Hinduism",
+    "qid": "Q11378",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bangalore_Shiva.jpg/960px-Bangalore_Shiva.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Bangalore_Shiva.jpg"
+   },
+   "brahma": {
+    "matched": true,
+    "title": "Brahma",
+    "description": "Creator god in Hinduism",
+    "qid": "Q11389",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Brahma%2C_dal_soffitto_del_tempio_di_huchchappaiyya_gudi%2C_aihole_%28balgakot%29%2C_karnataka%2C_VII_secolo_%28cropped%29.jpg/960px-Brahma%2C_dal_soffitto_del_tempio_di_huchchappaiyya_gudi%2C_aihole_%28balgakot%29%2C_karnataka%2C_VII_secolo_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Brahma,_dal_soffitto_del_tempio_di_huchchappaiyya_gudi,_aihole_(balgakot),_karnataka,_VII_secolo_(cropped).jpg"
+   },
+   "ganesha": {
+    "matched": true,
+    "title": "Ganesha",
+    "description": "Hindu god of new beginnings, wisdom and luck",
+    "qid": "Q1579",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Ganesha_Basohli_miniature_circa_1730_Dubost_p73.jpg/960px-Ganesha_Basohli_miniature_circa_1730_Dubost_p73.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ganesha_Basohli_miniature_circa_1730_Dubost_p73.jpg"
+   },
+   "hanuman-deity": {
+    "matched": true,
+    "title": "Hanuman",
+    "description": "Hindu god, companion of the god Rama",
+    "qid": "Q188618",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hanuman_Statue_at_Sidhheshwar_Temple%2C_Chhindwara%2C_MP.jpg/960px-Hanuman_Statue_at_Sidhheshwar_Temple%2C_Chhindwara%2C_MP.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Hanuman_Statue_at_Sidhheshwar_Temple,_Chhindwara,_MP.jpg"
+   },
+   "durga": {
+    "matched": true,
+    "title": "Durga",
+    "description": "Major deity in Hinduism",
+    "qid": "Q382973",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Mahishasura-Mardini_Durga.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Mahishasura-Mardini_Durga.jpg"
+   },
+   "amaterasu": {
+    "matched": true,
+    "title": "Amaterasu",
+    "description": "Sun goddess in Shinto",
+    "qid": "Q455602",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Amaterasu_cave_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Amaterasu_cave_crop.jpg"
+   },
+   "susanoo": {
+    "matched": true,
+    "title": "Susanoo-no-Mikoto",
+    "description": "Shinto god",
+    "qid": "Q272993",
+    "image": null,
+    "imageFile": null
+   },
+   "quetzalcoatl-deity": {
+    "matched": true,
+    "title": "Quetzalcōātl",
+    "description": "Central deity in Aztec religion",
+    "qid": "Q179818",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Quetzalc%C3%B3atl_como_la_serpiente_emplumada_y_el_dios_del_viento_Eh%C3%A9catl%2C_en_el_folio_19.jpg/960px-Quetzalc%C3%B3atl_como_la_serpiente_emplumada_y_el_dios_del_viento_Eh%C3%A9catl%2C_en_el_folio_19.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Quetzalcóatl_como_la_serpiente_emplumada_y_el_dios_del_viento_Ehécatl,_en_el_folio_19.jpg"
+   },
+   "huitzilopochtli-deity": {
+    "matched": true,
+    "title": "Huītzilōpōchtli",
+    "description": "Aztec war and solar deity",
+    "qid": "Q219412",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Huitzilopochtli_V.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Huitzilopochtli_V.png"
+   },
+   "perun": {
+    "matched": true,
+    "title": "Perun",
+    "description": "Slavic supreme god of the sky and war",
+    "qid": "Q206561",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Saint_George_slays_the_dragon%2C_Croatia%2C_8th_century.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Saint_George_slays_the_dragon,_Croatia,_8th_century.jpg"
+   },
+   "veles": {
+    "matched": true,
+    "title": "Veles (god)",
+    "description": "Slavic god of earth, waters and the underworld",
+    "qid": "Q824249",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Symbol_of_Veles.svg/960px-Symbol_of_Veles.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Symbol_of_Veles.svg"
+   },
+   "tengri": {
+    "matched": true,
+    "title": "Tengri",
+    "description": "Chief deity of the Eurasian steppe religion",
+    "qid": "Q2481517",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Orkhon.svg/960px-Orkhon.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Orkhon.svg"
+   },
+   "umay": {
+    "matched": true,
+    "title": "Umay",
+    "description": "Turkic goddess of children, babies, and souls",
+    "qid": "Q2996714",
+    "image": null,
+    "imageFile": null
+   },
+   "ahura-mazda": {
+    "matched": true,
+    "title": "Ahura Mazda",
+    "description": "Highest deity of Zoroastrianism",
+    "qid": "Q179575",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Naqshe_Rostam_Darafsh_Ordibehesht_93_%2835%29.JPG/960px-Naqshe_Rostam_Darafsh_Ordibehesht_93_%2835%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Naqshe_Rostam_Darafsh_Ordibehesht_93_(35).JPG"
+   },
+   "olodumare": {
+    "matched": true,
+    "title": "Ọlọrun",
+    "description": "Supreme Being in the Yoruba religion",
+    "qid": "Q2021170",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Olorun.png/960px-Olorun.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Olorun.png"
+   },
+   "shango": {
+    "matched": true,
+    "title": "Shango",
+    "description": "Yoruba deity of thunder and 3rd Alaafin of the Oyo Empire",
+    "qid": "Q1547934",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Representa%C3%A7%C3%A3o_de_Xang%C3%B4_MN_01.jpg/960px-Representa%C3%A7%C3%A3o_de_Xang%C3%B4_MN_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Representação_de_Xangô_MN_01.jpg"
+   },
+   "ogun-deity": {
+    "matched": true,
+    "title": "Ogun",
+    "description": "Deity of war, iron and blacksmiths in the Yoruba religion",
+    "qid": "Q255116",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Ogun_Helmet_Mask.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Ogun_Helmet_Mask.jpg"
+   },
+   "yemoja": {
+    "matched": true,
+    "title": "Yemọja",
+    "description": "Major water Orisha in the Yoruba religion",
+    "qid": "Q1477162",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Abeokuta_procession.jpg/960px-Abeokuta_procession.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Abeokuta_procession.jpg"
+   },
+   "inti-deity": {
+    "matched": true,
+    "title": "Inti",
+    "description": "Incan sun god",
+    "qid": "Q213771",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/C%C3%A1pac_Inti_Raimi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Cápac_Inti_Raimi.jpg"
+   },
+   "pachamama-deity": {
+    "matched": true,
+    "title": "Pachamama",
+    "description": "Andean fertility goddess",
+    "qid": "Q266462",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Santa_Cruz_Pachacuti_Yamqui_Pachamama.jpg/960px-Santa_Cruz_Pachacuti_Yamqui_Pachamama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Santa_Cruz_Pachacuti_Yamqui_Pachamama.jpg"
+   },
+   "maui-deity": {
+    "matched": true,
+    "title": "Māui",
+    "description": "Polynesian mythological hero and trickster",
+    "qid": "Q1791456",
+    "image": null,
+    "imageFile": null
+   },
+   "pele-deity": {
+    "matched": true,
+    "title": "Pele (deity)",
+    "description": "Hawaiian goddess of volcanoes and fire",
+    "qid": "Q1133063",
+    "image": null,
+    "imageFile": null
+   },
+   "vainamoinen": {
+    "matched": false
+   },
+   "baal-deity": {
+    "matched": true,
+    "title": "Baal",
+    "description": "Semitic title often used in reference to deities",
+    "qid": "Q590467",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Baal_thunderbolt_Louvre_AO15775.jpg/960px-Baal_thunderbolt_Louvre_AO15775.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Baal_thunderbolt_Louvre_AO15775.jpg"
+   },
+   "teshub": {
+    "matched": true,
+    "title": "Teshub",
+    "description": "Hurrian weather god and king of the gods",
+    "qid": "Q248242",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Chamber_A%2C_Yazilikaya_06.jpg/960px-Chamber_A%2C_Yazilikaya_06.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Chamber_A,_Yazilikaya_06.jpg"
+   },
+   "tinia": {
+    "matched": true,
+    "title": "Tinia",
+    "description": "Etruscan sky god",
+    "qid": "Q926518",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Tinia_Staatliche_Antikensammlungen_M%C3%BCnchen_2013.jpg/960px-Tinia_Staatliche_Antikensammlungen_M%C3%BCnchen_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tinia_Staatliche_Antikensammlungen_München_2013.jpg"
+   },
+   "apedemak": {
+    "matched": true,
+    "title": "Apedemak",
+    "description": "Ancient Nubian deity",
+    "qid": "Q618126",
+    "image": null,
+    "imageFile": null
+   },
+   "aramazd": {
+    "matched": true,
+    "title": "Aramazd",
+    "description": "Creator god in pre-Christian Armenian mythology",
+    "qid": "Q2417584",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Aramazd_painting_by_Josef_Roter.jpg/960px-Aramazd_painting_by_Josef_Roter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Aramazd_painting_by_Josef_Roter.jpg"
+   },
+   "amirani-deity": {
+    "matched": false
+   },
+   "jade-emperor": {
+    "matched": true,
+    "title": "Jade Emperor",
+    "description": "Type of god in Chinese culture",
+    "qid": "Q860434",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/%E7%8E%89%E7%9A%87%E5%A4%A7%E5%B8%9D%E7%95%AB%E5%83%8F.jpg/960px-%E7%8E%89%E7%9A%87%E5%A4%A7%E5%B8%9D%E7%95%AB%E5%83%8F.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "玉皇大帝畫像.jpg"
+   },
+   "sun-wukong": {
+    "matched": true,
+    "title": "Sun Wukong",
+    "description": "Character in Chinese mythology",
+    "qid": "Q11773777",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Xiyou.PNG/960px-Xiyou.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Xiyou.PNG"
+   },
+   "nuwa-deity": {
+    "matched": true,
+    "title": "Nüwa",
+    "description": "Mother goddess of Chinese mythology",
+    "qid": "Q641632",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Ping_Sien_Si_-_065_Nu_Wa_Niang_Niang_%2816140351273%29.jpg/960px-Ping_Sien_Si_-_065_Nu_Wa_Niang_Niang_%2816140351273%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ping_Sien_Si_-_065_Nu_Wa_Niang_Niang_(16140351273).jpg"
+   },
+   "avalokiteshvara-deity": {
+    "matched": false
+   },
+   "fenrir": {
+    "matched": true,
+    "title": "Fenrir",
+    "description": "Monstrous wolf in Norse mythology",
+    "qid": "Q182560",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tullstorpstenen%2C_DR_271%2CTullstorp_1-1%2C_Runristning_%28cropped%29.jpg/960px-Tullstorpstenen%2C_DR_271%2CTullstorp_1-1%2C_Runristning_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tullstorpstenen,_DR_271,Tullstorp_1-1,_Runristning_(cropped).jpg"
+   },
+   "jormungandr": {
+    "matched": true,
+    "title": "Jörmungandr",
+    "description": "Sea serpent in Norse mythology",
+    "qid": "Q181227",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Ragnarok_-_Louis_Moe_%2817006%29_-_cropped_%28cropped%29.png/960px-Ragnarok_-_Louis_Moe_%2817006%29_-_cropped_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ragnarok_-_Louis_Moe_(17006)_-_cropped_(cropped).png"
+   },
+   "krishna": {
+    "matched": true,
+    "title": "Krishna",
+    "description": "Major deity in Hinduism",
+    "qid": "Q42891",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Krishna_Holds_Up_Mount_Govardhan_%28MET_70694%29_cropped.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Krishna_Holds_Up_Mount_Govardhan_(MET_70694)_cropped.png"
+   },
+   "rama": {
+    "matched": true,
+    "title": "Rama",
+    "description": "Major deity in Hinduism",
+    "qid": "Q160213",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Rama_in_Adhyatma_Ramayana.jpg/960px-Rama_in_Adhyatma_Ramayana.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Rama_in_Adhyatma_Ramayana.jpg"
+   },
+   "eshu": {
+    "matched": true,
+    "title": "Eshu",
+    "description": "Deity in the Yoruba religion",
+    "qid": "Q1367665",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Wooden_figure_representing_the_god_Eshu%2C_Nigeria%2C_1880-1920_Wellcome_L0057651.jpg/960px-Wooden_figure_representing_the_god_Eshu%2C_Nigeria%2C_1880-1920_Wellcome_L0057651.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Wooden_figure_representing_the_god_Eshu,_Nigeria,_1880-1920_Wellcome_L0057651.jpg"
+   },
+   "tezcatlipoca": {
+    "matched": true,
+    "title": "Tezcatlipoca",
+    "description": "Aztec deity of darkness and violence",
+    "qid": "Q756797",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Tezcatlipoca.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Tezcatlipoca.png"
+   },
+   "orunmila": {
+    "matched": true,
+    "title": "Ọrunmila",
+    "description": "Major deity in the Yoruba religion",
+    "qid": "Q378028",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/%C3%80g%C3%A9r%C3%A9_If%C3%A1_%28If%C3%A1_divination_vessel%29_with_kneeling_woman_%28MET_1991.17.127%29_DP-31157-001.jpg/960px-%C3%80g%C3%A9r%C3%A9_If%C3%A1_%28If%C3%A1_divination_vessel%29_with_kneeling_woman_%28MET_1991.17.127%29_DP-31157-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Àgéré_Ifá_(Ifá_divination_vessel)_with_kneeling_woman_(MET_1991.17.127)_DP-31157-001.jpg"
+   },
+   "coyote-deity": {
+    "matched": true,
+    "title": "Coyote (mythology)",
+    "description": "North American mythological character",
+    "qid": "Q3001901",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Coyoteinacanoe.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Coyoteinacanoe.png"
+   },
+   "raven-deity": {
+    "matched": false
+   },
+   "viracocha-deity": {
+    "matched": true,
+    "title": "Viracocha",
+    "description": "Creator deity in Inca mythology",
+    "qid": "Q209605",
+    "image": null,
+    "imageFile": null
+   },
+   "mongke-tengri": {
+    "matched": false
+   },
+   "vahagn": {
+    "matched": true,
+    "title": "Vahagn",
+    "description": "Character of ancient Armenian mythology",
+    "qid": "Q2996497",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/%D5%8E%D5%AB%D5%B7%D5%A1%D5%BA%D5%A1%D6%84%D5%A1%D5%B2.jpg/960px-%D5%8E%D5%AB%D5%B7%D5%A1%D5%BA%D5%A1%D6%84%D5%A1%D5%B2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Վիշապաքաղ.jpg"
+   },
+   "artemis": {
+    "matched": true,
+    "title": "Artemis",
+    "description": "Ancient Greek goddess",
+    "qid": "Q39503",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Diane_de_Versailles_-_Mus%C3%A9e_du_Louvre_AGER_Ma_589.jpg/960px-Diane_de_Versailles_-_Mus%C3%A9e_du_Louvre_AGER_Ma_589.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Diane_de_Versailles_-_Musée_du_Louvre_AGER_Ma_589.jpg"
+   },
+   "hephaestus": {
+    "matched": true,
+    "title": "Hephaestus",
+    "description": "Greek god of blacksmiths",
+    "qid": "Q44384",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg/960px-Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg"
+   },
+   "demeter": {
+    "matched": true,
+    "title": "Demeter",
+    "description": "Greek goddess of the harvest, grains, and agriculture",
+    "qid": "Q40730",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Demeter_Altemps_Inv8546.jpg/960px-Demeter_Altemps_Inv8546.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Demeter_Altemps_Inv8546.jpg"
+   },
+   "dionysus": {
+    "matched": true,
+    "title": "Dionysus",
+    "description": "Ancient Greek god of winemaking and wine",
+    "qid": "Q41680",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Dionysos_Louvre_Ma87_n2.jpg/960px-Dionysos_Louvre_Ma87_n2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Dionysos_Louvre_Ma87_n2.jpg"
+   },
+   "prometheus-deity": {
+    "matched": true,
+    "title": "Prometheus",
+    "description": "Greek mythological figure",
+    "qid": "Q83160",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg/960px-Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Prometheus_and_Atlas,_Laconian_black-figure_kylix,_by_the_Arkesilas_Painter,_560-550_BC,_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg"
+   },
+   "diana": {
+    "matched": true,
+    "title": "Diana (mythology)",
+    "description": "Roman goddess of hunting and the wild",
+    "qid": "Q132543",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Statue_of_Artemis%2C_fresco_from_Pompeii.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Statue_of_Artemis,_fresco_from_Pompeii.jpg"
+   },
+   "venus": {
+    "matched": true,
+    "title": "Venus (mythology)",
+    "description": "Ancient Roman goddess of love, sex and fertility",
+    "qid": "Q47652",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Aphrodite_Anadyomene_from_Pompeii_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Aphrodite_Anadyomene_from_Pompeii_cropped.jpg"
+   },
+   "mercury": {
+    "matched": true,
+    "title": "Mercury (mythology)",
+    "description": "Roman god of trade, merchants and travel",
+    "qid": "Q1150",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Casa_dei_vettii%2C_vestibolo%2C_oechus_affrescato_sul_peristilio%2C_issione_legato_alla_ruota_da_vulcano_alla_presenza_di_giunone_02.jpg/960px-Casa_dei_vettii%2C_vestibolo%2C_oechus_affrescato_sul_peristilio%2C_issione_legato_alla_ruota_da_vulcano_alla_presenza_di_giunone_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Casa_dei_vettii,_vestibolo,_oechus_affrescato_sul_peristilio,_issione_legato_alla_ruota_da_vulcano_alla_presenza_di_giunone_02.jpg"
+   },
+   "janus": {
+    "matched": true,
+    "title": "Janus",
+    "description": "Roman god",
+    "qid": "Q167685",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Double_herm_Chiaramonti_Inv1395.jpg/960px-Double_herm_Chiaramonti_Inv1395.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Double_herm_Chiaramonti_Inv1395.jpg"
+   },
+   "frigg": {
+    "matched": true,
+    "title": "Frigg",
+    "description": "Germanic goddess",
+    "qid": "Q131654",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Frigg_by_Doepler.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Frigg_by_Doepler.jpg"
+   },
+   "tyr": {
+    "matched": true,
+    "title": "Týr",
+    "description": "Germanic deity",
+    "qid": "Q172713",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Tyr_and_Fenrir-John_Bauer_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Tyr_and_Fenrir-John_Bauer_(cropped).jpg"
+   },
+   "hel": {
+    "matched": true,
+    "title": "Hel (mythological being)",
+    "description": "Underworld entity in Norse mythology",
+    "qid": "Q191589",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Hel_%281889%29_by_Johannes_Gehrts.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Hel_(1889)_by_Johannes_Gehrts.jpg"
+   },
+   "thoth": {
+    "matched": true,
+    "title": "Thoth",
+    "description": "Ancient Egyptian deity of the Moon, learning, writing",
+    "qid": "Q146921",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Thoth.svg/960px-Thoth.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Thoth.svg"
+   },
+   "sekhmet": {
+    "matched": true,
+    "title": "Sekhmet",
+    "description": "Ancient Egyptian goddess",
+    "qid": "Q146104",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Sekhmet.svg/960px-Sekhmet.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Sekhmet.svg"
+   },
+   "set-deity": {
+    "matched": true,
+    "title": "Set (deity)",
+    "description": "Egyptian god of the desert, storms, violence, and foreigners",
+    "qid": "Q131795",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Set.svg/960px-Set.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Set.svg"
+   },
+   "hathor": {
+    "matched": true,
+    "title": "Hathor",
+    "description": "Major goddess in ancient Egyptian religion",
+    "qid": "Q133343",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Hathor.svg/960px-Hathor.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Hathor.svg"
+   },
+   "horus": {
+    "matched": true,
+    "title": "Horus",
+    "description": "Egyptian war and sky deity",
+    "qid": "Q84122",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Horus_standing.svg/960px-Horus_standing.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Horus_standing.svg"
+   },
+   "enlil": {
+    "matched": true,
+    "title": "Enlil",
+    "description": "Ancient Mesopotamian god",
+    "qid": "Q214672",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/God_Enlil%2C_seated%2C_from_Nippur%2C_Iraq._1800-1600_BCE._Iraq_Museum.jpg/960px-God_Enlil%2C_seated%2C_from_Nippur%2C_Iraq._1800-1600_BCE._Iraq_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "God_Enlil,_seated,_from_Nippur,_Iraq._1800-1600_BCE._Iraq_Museum.jpg"
+   },
+   "tiamat": {
+    "matched": true,
+    "title": "Tiamat",
+    "description": "Primordial goddess of ancient Babylon religion",
+    "qid": "Q145983",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Myths_and_legends_of_Babylonia_and_Assyria_%281916%29_%2814759101646%29.jpg/960px-Myths_and_legends_of_Babylonia_and_Assyria_%281916%29_%2814759101646%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Myths_and_legends_of_Babylonia_and_Assyria_(1916)_(14759101646).jpg"
+   },
+   "gilgamesh-deity": {
+    "matched": false
+   },
+   "parvati": {
+    "matched": true,
+    "title": "Parvati",
+    "description": "Major goddess in Hinduism",
+    "qid": "Q170485",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Goddess_Parvati_and_her_son_Ganesha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Goddess_Parvati_and_her_son_Ganesha.jpg"
+   },
+   "lakshmi": {
+    "matched": true,
+    "title": "Lakshmi",
+    "description": "Major Hindu goddess; goddess of wealth and beauty",
+    "qid": "Q131443",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Raja_Ravi_Varma%2C_Goddess_Lakshmi%2C_1896.jpg/960px-Raja_Ravi_Varma%2C_Goddess_Lakshmi%2C_1896.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Raja_Ravi_Varma,_Goddess_Lakshmi,_1896.jpg"
+   },
+   "saraswati": {
+    "matched": true,
+    "title": "Saraswati",
+    "description": "Principal Hindu goddess; goddess of knowledge, music, and speech",
+    "qid": "Q58838",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Saraswati.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Saraswati.jpg"
+   },
+   "indra": {
+    "matched": true,
+    "title": "Indra",
+    "description": "Hindu god of rain, lightning, storm and weather",
+    "qid": "Q128335",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Indra%2C_Chief_of_the_Gods_LACMA_M.69.13.4_%281_of_5%29.jpg/960px-Indra%2C_Chief_of_the_Gods_LACMA_M.69.13.4_%281_of_5%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Indra,_Chief_of_the_Gods_LACMA_M.69.13.4_(1_of_5).jpg"
+   },
+   "kali": {
+    "matched": true,
+    "title": "Kali",
+    "description": "Major deity in Indian religions symbolizing power, time, and death",
+    "qid": "Q132127",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kali_by_Raja_Ravi_Varma.jpg/960px-Kali_by_Raja_Ravi_Varma.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Kali_by_Raja_Ravi_Varma.jpg"
+   },
+   "tsukuyomi": {
+    "matched": true,
+    "title": "Tsukuyomi-no-Mikoto",
+    "description": "Moon Kami in Shinto and Japanese mythology",
+    "qid": "Q595520",
+    "image": null,
+    "imageFile": null
+   },
+   "inari": {
+    "matched": true,
+    "title": "Inari Ōkami",
+    "description": "One of the principal kami of Shinto",
+    "qid": "Q719665",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Blacksmith_Munechika%2C_helped_by_a_fox_spirit%2C_forging_the_blade_Ko-Gitsune_Maru%2C_by_Ogata_Gekk%C5%8D.jpg/960px-Blacksmith_Munechika%2C_helped_by_a_fox_spirit%2C_forging_the_blade_Ko-Gitsune_Maru%2C_by_Ogata_Gekk%C5%8D.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Blacksmith_Munechika,_helped_by_a_fox_spirit,_forging_the_blade_Ko-Gitsune_Maru,_by_Ogata_Gekkō.jpg"
+   },
+   "izanagi": {
+    "matched": true,
+    "title": "Izanagi",
+    "description": "Deity of Shinto religion",
+    "qid": "Q813858",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Kobayashi_Izanami_and_Izanagi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Kobayashi_Izanami_and_Izanagi.jpg"
+   },
+   "izanami": {
+    "matched": true,
+    "title": "Izanami",
+    "description": "Goddess of Shinto religion",
+    "qid": "Q682306",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Kobayashi_Izanami_and_Izanagi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Kobayashi_Izanami_and_Izanagi.jpg"
+   },
+   "tlaloc-deity": {
+    "matched": true,
+    "title": "Tláloc",
+    "description": "Deity in Aztec religion; a god of rain and thunder, fertility, and water",
+    "qid": "Q232870",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Tlaloc_glyph.svg/960px-Tlaloc_glyph.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tlaloc_glyph.svg"
+   },
+   "mictlantecuhtli": {
+    "matched": true,
+    "title": "Mictlāntēcutli",
+    "description": "Aztec god of the dead",
+    "qid": "Q591056",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Mictlantecuhtli.svg/960px-Mictlantecuhtli.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Mictlantecuhtli.svg"
+   },
+   "ixchel": {
+    "matched": true,
+    "title": "Ixchel",
+    "description": "Mayan goddess",
+    "qid": "Q1772980",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ixchel_Dresden.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Ixchel_Dresden.jpg"
+   },
+   "kukulkan": {
+    "matched": true,
+    "title": "Kukulkan",
+    "description": "Serpent deity in Mesoamerican mythology",
+    "qid": "Q768072",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kukulkan_%28reconstructed%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Kukulkan_(reconstructed).jpg"
+   },
+   "svarog": {
+    "matched": true,
+    "title": "Svarog",
+    "description": "Slavic blacksmith deity",
+    "qid": "Q689826",
+    "image": null,
+    "imageFile": null
+   },
+   "mokosh": {
+    "matched": true,
+    "title": "Mokosh",
+    "description": "Slavic deity",
+    "qid": "Q817358",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%D0%94%D0%B2%D0%B0%D0%B4%D1%86%D0%B0%D1%82%D1%8C_%D0%BF%D1%8F%D1%82%D1%8B%D0%B9_%D0%BB%D0%B8%D1%81%D1%82_%D0%9B%D0%B0%D0%B2%D1%80%D0%B5%D0%BD%D1%82%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BB%D0%B5%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D0%B8_%28%D0%9C%D0%BE%D0%BA%D0%BE%D1%88%D1%8C%29.jpg/960px-%D0%94%D0%B2%D0%B0%D0%B4%D1%86%D0%B0%D1%82%D1%8C_%D0%BF%D1%8F%D1%82%D1%8B%D0%B9_%D0%BB%D0%B8%D1%81%D1%82_%D0%9B%D0%B0%D0%B2%D1%80%D0%B5%D0%BD%D1%82%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BB%D0%B5%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D0%B8_%28%D0%9C%D0%BE%D0%BA%D0%BE%D1%88%D1%8C%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Двадцать_пятый_лист_Лаврентьевской_летописи_(Мокошь).jpg"
+   },
+   "ilmarinen": {
+    "matched": true,
+    "title": "Ilmarinen",
+    "description": "God from Finnish mythology",
+    "qid": "Q781257",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Robert_Stigell_Ilmarinen_1888.jpg/960px-Robert_Stigell_Ilmarinen_1888.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Robert_Stigell_Ilmarinen_1888.jpg"
+   },
+   "louhi": {
+    "matched": false
+   },
+   "anahit": {
+    "matched": true,
+    "title": "Anahit",
+    "description": "Armenian Goddess",
+    "qid": "Q2463867",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Satala_Aphrodite_Yerevan_2025.jpg/960px-Satala_Aphrodite_Yerevan_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Satala_Aphrodite_Yerevan_2025.jpg"
+   },
+   "erlik": {
+    "matched": true,
+    "title": "Erlik",
+    "description": "God of the underworld in Turkic and Mongolic mythology",
+    "qid": "Q2366098",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Court_of_Erlik_Khan.jpg/960px-Court_of_Erlik_Khan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Court_of_Erlik_Khan.jpg"
+   },
+   "angra-mainyu": {
+    "matched": true,
+    "title": "Ahriman",
+    "description": "Personification of the \"destructive spirit\" in Zoroastrianism",
+    "qid": "Q223805",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ahrimane_%28Mythologie_pittoresque%2C_pl._18%29.jpg/960px-Ahrimane_%28Mythologie_pittoresque%2C_pl._18%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ahrimane_(Mythologie_pittoresque,_pl._18).jpg"
+   },
+   "rostam-deity": {
+    "matched": true,
+    "title": "Rostam",
+    "description": "Persian mythological hero of the epic poem Shahnameh",
+    "qid": "Q60062",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Rostam_and_the_White_Div_from_Baysanghar_Shahnameh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Rostam_and_the_White_Div_from_Baysanghar_Shahnameh.jpg"
+   },
+   "simorgh-deity": {
+    "matched": true,
+    "title": "Simurgh",
+    "description": "Iranian mythological bird",
+    "qid": "Q548119",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Senmurv.svg/960px-Senmurv.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Senmurv.svg"
+   },
+   "tane-mahuta": {
+    "matched": true,
+    "title": "Tāne",
+    "description": "God of forests and of birds in Māori mythology",
+    "qid": "Q1790773",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Carving_of_Tane_nui_a_Rangi%2C_at_Auckland_Zoo.jpg/960px-Carving_of_Tane_nui_a_Rangi%2C_at_Auckland_Zoo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Carving_of_Tane_nui_a_Rangi,_at_Auckland_Zoo.jpg"
+   },
+   "tangaroa": {
+    "matched": true,
+    "title": "Tangaroa",
+    "description": "Māori sea and water body god",
+    "qid": "Q1241320",
+    "image": null,
+    "imageFile": null
+   },
+   "rainbow-serpent": {
+    "matched": true,
+    "title": "Rainbow Serpent",
+    "description": "Creator god and common motif of Aboriginal Australia",
+    "qid": "Q1476490",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/RainbowSerpent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "RainbowSerpent.jpg"
+   },
+   "white-buffalo-deity": {
+    "matched": true,
+    "title": "White Buffalo Calf Woman",
+    "description": "Sacred woman of supernatural origin, central to the Lakota religion",
+    "qid": "Q268174",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Detail_from_%E2%80%9CApparition_of_the_Buffalo_Calf_Maiden%E2%80%9D_%281959%29_by_Frithjof_Schuon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Detail_from_“Apparition_of_the_Buffalo_Calf_Maiden”_(1959)_by_Frithjof_Schuon.jpg"
+   },
+   "spider-woman": {
+    "matched": true,
+    "title": "Spider Grandmother",
+    "description": "Figure in Native American mythology",
+    "qid": "Q2889131",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Transitional_Navajo_Blanket_04.jpg/960px-Transitional_Navajo_Blanket_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Transitional_Navajo_Blanket_04.jpg"
+   },
+   "sedna-deity": {
+    "matched": true,
+    "title": "Sedna (mythology)",
+    "description": "Inuit water deity",
+    "qid": "Q875507",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Sanna_aux_doigts_coup%C3%A9s.jpg/960px-Sanna_aux_doigts_coup%C3%A9s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Sanna_aux_doigts_coupés.jpg"
+   },
+   "oshun": {
+    "matched": true,
+    "title": "Oshun",
+    "description": "Yoruba orisha",
+    "qid": "Q1851943",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/WLA_haa_Kneeling_Female_Figure_Devotee_of_Oshun_Yoruba_people_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "WLA_haa_Kneeling_Female_Figure_Devotee_of_Oshun_Yoruba_people_2.jpg"
+   },
+   "oya": {
+    "matched": true,
+    "title": "Ọya",
+    "description": "Orisha in the Yorùbá religion",
+    "qid": "Q2004715",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Oya_oriri_in_Oya_grove_03.jpg/960px-Oya_oriri_in_Oya_grove_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Oya_oriri_in_Oya_grove_03.jpg"
+   },
+   "obatala": {
+    "matched": true,
+    "title": "Ọbatala",
+    "description": "King of the Orisha in Yoruba religion",
+    "qid": "Q2008736",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Oxal%C3%A1.jpg/960px-Oxal%C3%A1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Oxalá.jpg"
+   },
+   "cuchulainn": {
+    "matched": true,
+    "title": "Cú Chulainn",
+    "description": "Irish mythological hero",
+    "qid": "Q211955",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cuslayshound.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Cuslayshound.jpg"
+   },
+   "dagda": {
+    "matched": true,
+    "title": "The Dagda",
+    "description": "God in Irish mythology",
+    "qid": "Q436436",
+    "image": null,
+    "imageFile": null
+   },
+   "lugh": {
+    "matched": true,
+    "title": "Lugh",
+    "description": "Irish god of skills and the arts",
+    "qid": "Q215683",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lugh_spear_Millar.jpg/960px-Lugh_spear_Millar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Lugh_spear_Millar.jpg"
+   },
+   "brigid": {
+    "matched": true,
+    "title": "Brigid",
+    "description": "Gaelic goddess",
+    "qid": "Q255459",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Thecomingofbrideduncan1917.jpg/960px-Thecomingofbrideduncan1917.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Thecomingofbrideduncan1917.jpg"
+   },
+   "el-deity": {
+    "matched": true,
+    "title": "El (deity)",
+    "description": "Northwest Semitic supreme deity",
+    "qid": "Q1316633",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/%E3%82%A4%E3%83%AB%E7%A5%9E%E3%81%AE%E5%9D%90%E5%83%8F.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "イル神の坐像.jpg"
+   },
+   "astarte": {
+    "matched": true,
+    "title": "Astarte",
+    "description": "Middle Eastern goddess, worshipped from the Bronze Age through classical antiquity",
+    "qid": "Q130274",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Astarte_-_7th_cent_AD_-_Museo_Arqueol%C3%B3gico_de_Sevilla-2.jpg/960px-Astarte_-_7th_cent_AD_-_Museo_Arqueol%C3%B3gico_de_Sevilla-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Astarte_-_7th_cent_AD_-_Museo_Arqueológico_de_Sevilla-2.jpg"
+   },
+   "menrva": {
+    "matched": true,
+    "title": "Menrva",
+    "description": "Etruscan goddess of war, art, wisdom, and medicine",
+    "qid": "Q2003921",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Populonia_AR_20_BMC_74000021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Populonia_AR_20_BMC_74000021.jpg"
+   },
+   "charun": {
+    "matched": true,
+    "title": "Charun",
+    "description": "Etruscan mythological figure",
+    "qid": "Q1067918",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Charun_dead_souls_Cdm_Paris_2783.jpg/960px-Charun_dead_souls_Cdm_Paris_2783.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Charun_dead_souls_Cdm_Paris_2783.jpg"
+   },
+   "kumarbi": {
+    "matched": true,
+    "title": "Kumarbi",
+    "description": "Hurrian father of the gods",
+    "qid": "Q945508",
+    "image": null,
+    "imageFile": null
+   },
+   "baba-yaga-deity": {
+    "matched": true,
+    "title": "Baba Yaga",
+    "description": "Slavic mythological figure",
+    "qid": "Q187002",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0_%D0%91%D0%B0%D0%B1%D0%B0-%D1%8F%D0%B3%D0%B0_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Сказка_Баба-яга_3.jpg"
+   },
+   "guan-yu": {
+    "matched": false
+   },
+   "guanyin": {
+    "matched": false
+   },
+   "mazu": {
+    "matched": true,
+    "title": "Mazu",
+    "description": "Chinese sea goddess",
+    "qid": "Q418226",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Wood_Statue_of_Mazu_Late_19th_century_CE_Qing_Dynasty_%281644-1911_CE%29_China.jpg/960px-Wood_Statue_of_Mazu_Late_19th_century_CE_Qing_Dynasty_%281644-1911_CE%29_China.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Wood_Statue_of_Mazu_Late_19th_century_CE_Qing_Dynasty_(1644-1911_CE)_China.jpg"
+   },
+   "mama-quilla": {
+    "matched": true,
+    "title": "Mama Killa",
+    "description": "Mother Moon in Inca mythology",
+    "qid": "Q1137398",
+    "image": null,
+    "imageFile": null
+   },
+   "buddha": {
+    "matched": false
+   },
+   "mara-deity": {
+    "matched": true,
+    "title": "Māra",
+    "description": "Goddess in Baltic mythology",
+    "qid": "Q1302527",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Maznodupju_Stone_Load_%28Mara%27s_Sanctuary%29_Maznodupju_akmens_kr%C4%81vums_%28M%C4%81ras_sv%C4%93tn%C4%ABca%29_-_panoramio_%284%29.jpg/960px-Maznodupju_Stone_Load_%28Mara%27s_Sanctuary%29_Maznodupju_akmens_kr%C4%81vums_%28M%C4%81ras_sv%C4%93tn%C4%ABca%29_-_panoramio_%284%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Maznodupju_Stone_Load_(Mara's_Sanctuary)_Maznodupju_akmens_krāvums_(Māras_svētnīca)_-_panoramio_(4).jpg"
+   },
+   "hwanung": {
+    "matched": true,
+    "title": "Hwanung",
+    "description": "Figure in Korean origin mythology",
+    "qid": "Q702937",
+    "image": null,
+    "imageFile": null
+   },
+   "anansi-deity": {
+    "matched": false
+   },
+   "heracles": {
+    "matched": true,
+    "title": "Heracles",
+    "description": "Divine hero in Greek mythology",
+    "qid": "Q122248",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg/960px-Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg"
+   },
+   "achilles-deity": {
+    "matched": true,
+    "title": "Achilles",
+    "description": "Greek mythological hero",
+    "qid": "Q41746",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Achilles_fighting_against_Memnon_Leiden_Rijksmuseum_voor_Oudheden.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Achilles_fighting_against_Memnon_Leiden_Rijksmuseum_voor_Oudheden.jpg"
+   },
+   "odysseus-deity": {
+    "matched": false
+   },
+   "hera": {
+    "matched": true,
+    "title": "Hera",
+    "description": "Goddess from Greek mythology, wife and sister of Zeus",
+    "qid": "Q38012",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Hera_Campana_Louvre_Ma2283.jpg/960px-Hera_Campana_Louvre_Ma2283.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Hera_Campana_Louvre_Ma2283.jpg"
+   },
+   "juno": {
+    "matched": true,
+    "title": "Juno (mythology)",
+    "description": "Ancient Roman goddess of marriage and childbirth",
+    "qid": "Q125046",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Juno_Sospita_Statue.jpg/960px-Juno_Sospita_Statue.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Juno_Sospita_Statue.jpg"
+   },
+   "minerva": {
+    "matched": true,
+    "title": "Minerva",
+    "description": "Roman goddess of wisdom",
+    "qid": "Q126916",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Herculaneum_Collegio_degli_Augustali_Ercole_sull%27Olimpo_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Herculaneum_Collegio_degli_Augustali_Ercole_sull'Olimpo_(cropped).jpg"
+   },
+   "pluto-god": {
+    "matched": true,
+    "title": "Pluto (god)",
+    "description": "God in Greek mythology",
+    "qid": "Q152262",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Statuette_of_Pluto%2C_front_-_Getty_Museum_%2871.AA.438%29.jpg/960px-Statuette_of_Pluto%2C_front_-_Getty_Museum_%2871.AA.438%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Statuette_of_Pluto,_front_-_Getty_Museum_(71.AA.438).jpg"
+   },
+   "ceres": {
+    "matched": true,
+    "title": "Ceres (mythology)",
+    "description": "Roman goddess of agriculture",
+    "qid": "Q32102",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ceres_of_M%C3%A9rida_%28cropped%29.jpg/960px-Ceres_of_M%C3%A9rida_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ceres_of_Mérida_(cropped).jpg"
+   },
+   "persephone": {
+    "matched": true,
+    "title": "Persephone",
+    "description": "Greek goddess of spring and the queen of the underworld",
+    "qid": "Q45967",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Terracotta_votive_plaque_from_Eleusis%2C_450_BC%2C_NAMA%2C_190875.jpg/960px-Terracotta_votive_plaque_from_Eleusis%2C_450_BC%2C_NAMA%2C_190875.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Terracotta_votive_plaque_from_Eleusis,_450_BC,_NAMA,_190875.jpg"
+   },
+   "pan": {
+    "matched": true,
+    "title": "Pan (god)",
+    "description": "Ancient Greek god of the wilds, shepherds, and flocks",
+    "qid": "Q132582",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/PanandDaphnis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "PanandDaphnis.jpg"
+   },
+   "hecate": {
+    "matched": true,
+    "title": "Hecate",
+    "description": "Greek goddess of magic and transitions",
+    "qid": "Q131575",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Relief_triplicate_Hekate_marble%2C_Hadrian_clasicism%2C_Prague_Kinsky%2C_NM-H10_4742%2C_140995.jpg/960px-Relief_triplicate_Hekate_marble%2C_Hadrian_clasicism%2C_Prague_Kinsky%2C_NM-H10_4742%2C_140995.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Relief_triplicate_Hekate_marble,_Hadrian_clasicism,_Prague_Kinsky,_NM-H10_4742,_140995.jpg"
+   },
+   "balder": {
+    "matched": true,
+    "title": "Baldr",
+    "description": "Norse deity",
+    "qid": "Q131658",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Each_arrow_overshot_his_head_by_Elmer_Boyd_Smith.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Each_arrow_overshot_his_head_by_Elmer_Boyd_Smith.jpg"
+   },
+   "heimdall": {
+    "matched": true,
+    "title": "Heimdall",
+    "description": "Norse deity",
+    "qid": "Q131196",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Nils_Asplund_-_Heimdal.jpg/960px-Nils_Asplund_-_Heimdal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Nils_Asplund_-_Heimdal.jpg"
+   },
+   "njord": {
+    "matched": true,
+    "title": "Njörðr",
+    "description": "God among the Vanir in Norse mythology",
+    "qid": "Q193879",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/AM_738_4to%2C_36r%2C_BW_Nj%C3%B6r%C3%B0r.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "AM_738_4to,_36r,_BW_Njörðr.jpeg"
+   },
+   "freyr": {
+    "matched": true,
+    "title": "Freyr",
+    "description": "Norse deity",
+    "qid": "Q131474",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Frej_R%C3%A4llinge.jpg/960px-Frej_R%C3%A4llinge.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Frej_Rällinge.jpg"
+   },
+   "bastet": {
+    "matched": true,
+    "title": "Bastet",
+    "description": "Ancient Egyptian goddess",
+    "qid": "Q129106",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bastet.svg/960px-Bastet.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Bastet.svg"
+   },
+   "ptah": {
+    "matched": true,
+    "title": "Ptah",
+    "description": "Ancient Egyptian deity",
+    "qid": "Q146321",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ptah_standing.svg/960px-Ptah_standing.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ptah_standing.svg"
+   },
+   "maat": {
+    "matched": true,
+    "title": "Maat",
+    "description": "Egyptian deity and concepts of truth, order and justice",
+    "qid": "Q170471",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Maat.svg/960px-Maat.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Maat.svg"
+   },
+   "ereshkigal": {
+    "matched": true,
+    "title": "Ereshkigal",
+    "description": "Ancient Mesopotamian goddess of death and the underworld",
+    "qid": "Q654458",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Relieve_Reina_de_la_Noche_%28ca._1800_a.C%29.jpg/960px-Relieve_Reina_de_la_Noche_%28ca._1800_a.C%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Relieve_Reina_de_la_Noche_(ca._1800_a.C).jpg"
+   },
+   "shamash": {
+    "matched": true,
+    "title": "Shamash",
+    "description": "Mesopotamian sun god",
+    "qid": "Q332188",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tablet_of_Shamash_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Tablet_of_Shamash_(2).jpg"
+   },
+   "sin-deity": {
+    "matched": true,
+    "title": "Sin",
+    "description": "Transgression against divine law",
+    "qid": "Q60227",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg/960px-Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg"
+   },
+   "dangun": {
+    "matched": true,
+    "title": "Tan'gun",
+    "description": "Korean king and deity",
+    "qid": "Q549567",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Portrait_of_Dangun.jpg/960px-Portrait_of_Dangun.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Portrait_of_Dangun.jpg"
+   },
+   "jangseung": {
+    "matched": false
+   },
+   "amathaunta": {
+    "matched": true,
+    "title": "Eshmun",
+    "description": "Deity of Phoenician mythology",
+    "qid": "Q1367147",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Eshmun_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Eshmun_Temple.jpg"
+   },
+   "hepat": {
+    "matched": true,
+    "title": "Ḫepat",
+    "description": "Hurrian goddess",
+    "qid": "Q425430",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Chamber_A%2C_Yazilikaya_06.jpg/960px-Chamber_A%2C_Yazilikaya_06.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Chamber_A,_Yazilikaya_06.jpg"
+   },
+   "vanth": {
+    "matched": true,
+    "title": "Vanth",
+    "description": "Etruscan mythological figure",
+    "qid": "Q1235270",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Vanth.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Vanth.jpg"
+   },
+   "amun": {
+    "matched": false
+   },
+   "medea-deity": {
+    "matched": true,
+    "title": "Medea",
+    "description": "Daughter of King Aeëtes of Colchis in Greek mythology",
+    "qid": "Q174278",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Relief_of_Medea_and_the_Peliades_Antikensammlung_Berlin.jpg/960px-Relief_of_Medea_and_the_Peliades_Antikensammlung_Berlin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Relief_of_Medea_and_the_Peliades_Antikensammlung_Berlin.jpg"
+   },
+   "yama-deity": {
+    "matched": true,
+    "title": "Yama",
+    "description": "Hindu god of death",
+    "qid": "Q45097",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Yama_on_buffalo.jpg/960px-Yama_on_buffalo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Yama_on_buffalo.jpg"
+   },
+   "agni": {
+    "matched": true,
+    "title": "Agni",
+    "description": "Hindu fire god",
+    "qid": "Q394867",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Agni_18th_century_miniature.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Agni_18th_century_miniature.jpg"
+   },
+   "surya": {
+    "matched": true,
+    "title": "Surya",
+    "description": "Solar deity in Hinduism",
+    "qid": "Q204418",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Surya_with_Adityas_and_attendants.jpg/960px-Surya_with_Adityas_and_attendants.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Surya_with_Adityas_and_attendants.jpg"
+   },
+   "vayu": {
+    "matched": true,
+    "title": "Vayu",
+    "description": "Hindu god of the wind",
+    "qid": "Q473731",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Vayu_Deva.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Vayu_Deva.jpg"
+   },
+   "sita": {
+    "matched": true,
+    "title": "Sita",
+    "description": "Major goddess in Hinduism and consort of Rama",
+    "qid": "Q191114",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sita_in_exile.jpg/960px-Sita_in_exile.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Sita_in_exile.jpg"
+   },
+   "radha": {
+    "matched": true,
+    "title": "Radha",
+    "description": "Hindu goddess of love and chief consort of the god Krishna",
+    "qid": "Q113904",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Radharani_10.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Radharani_10.JPG"
+   },
+   "kartikeya": {
+    "matched": true,
+    "title": "Kartikeya",
+    "description": "Hindu god of victory and war",
+    "qid": "Q380817",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Batu_Caves%2C_Lord_Murugan_Statue._2019-12-01_10-49-22.jpg/960px-Batu_Caves%2C_Lord_Murugan_Statue._2019-12-01_10-49-22.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Batu_Caves,_Lord_Murugan_Statue._2019-12-01_10-49-22.jpg"
+   },
+   "fujin": {
+    "matched": true,
+    "title": "Fūjin",
+    "description": "Japanese god of the wind",
+    "qid": "Q1483957",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/F%C5%ABjin_at_Sanj%C5%ABsangen-d%C5%8D.jpg/960px-F%C5%ABjin_at_Sanj%C5%ABsangen-d%C5%8D.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Fūjin_at_Sanjūsangen-dō.jpg"
+   },
+   "raijin": {
+    "matched": true,
+    "title": "Raijin",
+    "description": "Japanese god of lightning",
+    "qid": "Q12808082",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Raijin_in_Sanj%C5%ABsangen-d%C5%8D._Mid-13th_century.jpg/960px-Raijin_in_Sanj%C5%ABsangen-d%C5%8D._Mid-13th_century.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Raijin_in_Sanjūsangen-dō._Mid-13th_century.jpg"
+   },
+   "hachiman": {
+    "matched": true,
+    "title": "Hachiman",
+    "description": "Japanese Shinto–Buddhist syncretic deity",
+    "qid": "Q261637",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/%E5%85%AB%E5%B9%A1%E7%A5%9E%E5%9D%90%E5%83%8F%2C_Hachiman.jpg/960px-%E5%85%AB%E5%B9%A1%E7%A5%9E%E5%9D%90%E5%83%8F%2C_Hachiman.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "八幡神坐像,_Hachiman.jpg"
+   },
+   "ryujin": {
+    "matched": true,
+    "title": "Ryūjin",
+    "description": "Japanese deity of the sea",
+    "qid": "Q2458617",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/The_Dragon_King_Ryujin_and_the_Tide-controlling_Jewels_beneath_the_sea.jpg/960px-The_Dragon_King_Ryujin_and_the_Tide-controlling_Jewels_beneath_the_sea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "The_Dragon_King_Ryujin_and_the_Tide-controlling_Jewels_beneath_the_sea.jpg"
+   },
+   "chaac-deity": {
+    "matched": true,
+    "title": "Chaac",
+    "description": "Maya god of rain, thunder, and lightning",
+    "qid": "Q1058253",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/MyanRainGodChac0180Rot.jpg/960px-MyanRainGodChac0180Rot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "MyanRainGodChac0180Rot.jpg"
+   },
+   "ah-puch": {
+    "matched": true,
+    "title": "Cizin",
+    "description": "Maya god of death and earthquakes",
+    "qid": "Q104861248",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Maize_God_and_Itzamn%C3%A1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Maize_God_and_Itzamná.JPG"
+   },
+   "supay": {
+    "matched": true,
+    "title": "Supay",
+    "description": "Inca and Andean underworld deity or spirit, later associated with the Christian Devil",
+    "qid": "Q1659436",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Diablo_pune%C3%B1o.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Diablo_puneño.jpg"
+   },
+   "coatlicue": {
+    "matched": true,
+    "title": "Cōātlīcue",
+    "description": "Aztec mother goddess",
+    "qid": "Q829508",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Coatlicue.png/960px-Coatlicue.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Coatlicue.png"
+   },
+   "xipe-totec": {
+    "matched": true,
+    "title": "Xipe Totec",
+    "description": "Central deity in Aztec religion",
+    "qid": "Q558970",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Xipe-totec.svg/960px-Xipe-totec.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Xipe-totec.svg"
+   },
+   "dazhbog": {
+    "matched": true,
+    "title": "Dazhbog",
+    "description": "Slavic deity",
+    "qid": "Q1144144",
+    "image": null,
+    "imageFile": null
+   },
+   "stribog": {
+    "matched": true,
+    "title": "Stribog",
+    "description": "Slavic god",
+    "qid": "Q911168",
+    "image": null,
+    "imageFile": null
+   },
+   "rod-deity": {
+    "matched": false
+   },
+   "maitreya": {
+    "matched": false
+   },
+   "green-tara": {
+    "matched": false
+   },
+   "yamantaka": {
+    "matched": true,
+    "title": "Yamantaka",
+    "description": "\"Lord of death\" deity in Vajrayana Buddhism",
+    "qid": "Q1348317",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Yamantaka%2C_Fear-Striking_Vajra%2C_Lord_of_Death_on_a_water_buffalo%2C_Vajrayana_Buddhism.jpg/960px-Yamantaka%2C_Fear-Striking_Vajra%2C_Lord_of_Death_on_a_water_buffalo%2C_Vajrayana_Buddhism.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Yamantaka,_Fear-Striking_Vajra,_Lord_of_Death_on_a_water_buffalo,_Vajrayana_Buddhism.jpg"
+   },
+   "erlik-deity": {
+    "matched": false
+   },
+   "astghik": {
+    "matched": true,
+    "title": "Astłik",
+    "description": "Ancient Armenian deity",
+    "qid": "Q2992141",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Dtatue_of_godness_Astgik.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Dtatue_of_godness_Astgik.jpg"
+   },
+   "dali-deity": {
+    "matched": true,
+    "title": "Dali (goddess)",
+    "description": "Hunting goddess from Georgian mythology",
+    "qid": "Q7192221",
+    "image": null,
+    "imageFile": null
+   },
+   "eros": {
+    "matched": true,
+    "title": "Eros",
+    "description": "Greek god of love and sex",
+    "qid": "Q121973",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Eros_Farnese_N%C3%A1poles_05.jpg/960px-Eros_Farnese_N%C3%A1poles_05.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Eros_Farnese_Nápoles_05.jpg"
+   },
+   "nike": {
+    "matched": true,
+    "title": "Nike (mythology)",
+    "description": "Personification of victory in Greek mythology",
+    "qid": "Q165023",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/02_2020_Grecia_photo_Paolo_Villa_FO190013_%28Museo_archeologico_di_Olimpia_-_Statua_della_Vittoria-Nike_scolpita_da_Paionios%29.jpg/960px-02_2020_Grecia_photo_Paolo_Villa_FO190013_%28Museo_archeologico_di_Olimpia_-_Statua_della_Vittoria-Nike_scolpita_da_Paionios%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "02_2020_Grecia_photo_Paolo_Villa_FO190013_(Museo_archeologico_di_Olimpia_-_Statua_della_Vittoria-Nike_scolpita_da_Paionios).jpg"
+   },
+   "kronos": {
+    "matched": true,
+    "title": "Cronus",
+    "description": "Ruler of the Titans in Greek mythology",
+    "qid": "Q44204",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Rhea_handing_a_swaddled_stone_to_Cronus%2C_Attic_terracotta_pelike%2C_c._460%E2%80%93450_BC%2C_Met_06.1021.144.jpg_%28cropped%29.jpg/960px-Rhea_handing_a_swaddled_stone_to_Cronus%2C_Attic_terracotta_pelike%2C_c._460%E2%80%93450_BC%2C_Met_06.1021.144.jpg_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Rhea_handing_a_swaddled_stone_to_Cronus,_Attic_terracotta_pelike,_c._460–450_BC,_Met_06.1021.144.jpg_(cropped).jpg"
+   },
+   "saturn": {
+    "matched": true,
+    "title": "Saturn (mythology)",
+    "description": "God in ancient Roman mythology",
+    "qid": "Q134388",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Saturn_with_head_protected_by_winter_cloak%2C_holding_a_scythe_in_his_right_hand%2C_fresco_from_the_House_of_the_Dioscuri_at_Pompeii%2C_Naples_Archaeological_Museum_%2823497733210%29.jpg/960px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Saturn_with_head_protected_by_winter_cloak,_holding_a_scythe_in_his_right_hand,_fresco_from_the_House_of_the_Dioscuri_at_Pompeii,_Naples_Archaeological_Museum_(23497733210).jpg"
+   },
+   "bacchus": {
+    "matched": true,
+    "title": "Dionysus",
+    "description": "Ancient Greek god of winemaking and wine",
+    "qid": "Q41680",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Dionysos_Louvre_Ma87_n2.jpg/960px-Dionysos_Louvre_Ma87_n2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Dionysos_Louvre_Ma87_n2.jpg"
+   },
+   "nepthys": {
+    "matched": true,
+    "title": "Nephthys",
+    "description": "Ancient Egyptian goddess",
+    "qid": "Q169040",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Nepthys.svg/960px-Nepthys.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Nepthys.svg"
+   },
+   "khepri": {
+    "matched": true,
+    "title": "Khepri",
+    "description": "Ancient Egyptian god",
+    "qid": "Q215940",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Khepri.svg/960px-Khepri.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Khepri.svg"
+   },
+   "anu": {
+    "matched": true,
+    "title": "Anu",
+    "description": "Ancient Mesopotamian god of the sky; god of all gods",
+    "qid": "Q188536",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Detail%2C_middle_part%2C_Kudurru_of_Ritti-Marduk%2C_from_Sippar%2C_Iraq%2C_1125-1104_BCE._British_Museum.jpg/960px-Detail%2C_middle_part%2C_Kudurru_of_Ritti-Marduk%2C_from_Sippar%2C_Iraq%2C_1125-1104_BCE._British_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Detail,_middle_part,_Kudurru_of_Ritti-Marduk,_from_Sippar,_Iraq,_1125-1104_BCE._British_Museum.jpg"
+   },
+   "kama": {
+    "matched": true,
+    "title": "Kamadeva",
+    "description": "Hindu god of love",
+    "qid": "Q113155",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Kama_sculpture_at_the_group_of_monuments_at_Belur%2C_Hassan%2C_Karnataka%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Kama_sculpture_at_the_group_of_monuments_at_Belur,_Hassan,_Karnataka,_India.jpg"
+   },
+   "yemaya-nubian": {
+    "matched": true,
+    "title": "Amesemi",
+    "description": "Ancient Kushite goddess",
+    "qid": "Q470284",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Amesemi.svg/960px-Amesemi.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Amesemi.svg"
+   },
+   "dangun-deity": {
+    "matched": false
+   },
+   "san-shin": {
+    "matched": true,
+    "title": "Mountain God",
+    "description": "East Asian tutelary deities",
+    "qid": "Q16256547",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Brooklyn_Museum_-_Mountain_Spirit_%28Sanshin%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Brooklyn_Museum_-_Mountain_Spirit_(Sanshin).jpg"
+   },
+   "tane-deity": {
+    "matched": true,
+    "title": "Tūmatauenga",
+    "description": "Māori war god",
+    "qid": "Q1507592",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Tumatauenga_04.jpg/960px-Tumatauenga_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tumatauenga_04.jpg"
+   },
+   "inanna": {
+    "matched": true,
+    "title": "Inanna",
+    "description": "Ancient Mesopotamian goddess",
+    "qid": "Q272523",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Ishtar_on_an_Akkadian_seal.jpg/960px-Ishtar_on_an_Akkadian_seal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ishtar_on_an_Akkadian_seal.jpg"
+   },
+   "dyeus": {
+    "matched": true,
+    "title": "*Dyēus",
+    "description": "Father Sky-god in Proto-Indo-European mythology",
+    "qid": "Q796807",
+    "image": null,
+    "imageFile": null
+   },
+   "dyaus-pitr": {
+    "matched": true,
+    "title": "Dyaus",
+    "description": "Vedic god of the sky",
+    "qid": "Q1133509",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/A_group_of_birds_in_cloudy_sky_%28India%2C_2016%29.jpg/960px-A_group_of_birds_in_cloudy_sky_%28India%2C_2016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "A_group_of_birds_in_cloudy_sky_(India,_2016).jpg"
+   },
+   "tiwaz": {
+    "matched": true,
+    "title": "Týr",
+    "description": "Germanic deity",
+    "qid": "Q172713",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Tyr_and_Fenrir-John_Bauer_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Tyr_and_Fenrir-John_Bauer_(cropped).jpg"
+   },
+   "attis": {
+    "matched": true,
+    "title": "Attis",
+    "description": "Phrygian and Greek god",
+    "qid": "Q262016",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Statue_of_Attis%2C_2nd_half_of_2nd_century_AD%2C_from_the_Hierapolis_Agora%2C_Hierapolis_Archaeology_Museum%2C_Turkey_%2817234601835%29.jpg/960px-Statue_of_Attis%2C_2nd_half_of_2nd_century_AD%2C_from_the_Hierapolis_Agora%2C_Hierapolis_Archaeology_Museum%2C_Turkey_%2817234601835%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Statue_of_Attis,_2nd_half_of_2nd_century_AD,_from_the_Hierapolis_Agora,_Hierapolis_Archaeology_Museum,_Turkey_(17234601835).jpg"
+   },
+   "adonis": {
+    "matched": true,
+    "title": "Adonis",
+    "description": "Greek god of beauty and desire",
+    "qid": "Q163920",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Cupid_with_Venus_and_Adonis%2C_fresco_in_Pompeii.jpg/960px-Cupid_with_Venus_and_Adonis%2C_fresco_in_Pompeii.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Cupid_with_Venus_and_Adonis,_fresco_in_Pompeii.jpg"
+   },
+   "mithras": {
+    "matched": true,
+    "title": "Mithraism",
+    "description": "Mystery religion in the Roman Empire",
+    "qid": "Q219903",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Mithra_sacrifiant_le_Taureau-005.JPG/960px-Mithra_sacrifiant_le_Taureau-005.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Mithra_sacrifiant_le_Taureau-005.JPG"
+   },
+   "sol-invictus": {
+    "matched": true,
+    "title": "Sol Invictus",
+    "description": "Late Roman solar deity",
+    "qid": "Q214494",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Naiskos_with_relief_of_Sol_%28Lyon%2C_Mus_Gal-Rom_2001.0.326%29_01.jpg/960px-Naiskos_with_relief_of_Sol_%28Lyon%2C_Mus_Gal-Rom_2001.0.326%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Naiskos_with_relief_of_Sol_(Lyon,_Mus_Gal-Rom_2001.0.326)_01.jpg"
+   },
+   "el": {
+    "matched": true,
+    "title": "El (deity)",
+    "description": "Northwest Semitic supreme deity",
+    "qid": "Q1316633",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/%E3%82%A4%E3%83%AB%E7%A5%9E%E3%81%AE%E5%9D%90%E5%83%8F.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "イル神の坐像.jpg"
+   },
+   "yahweh": {
+    "matched": true,
+    "title": "Yahweh",
+    "description": "Ancient Semitic deity in the Levant",
+    "qid": "Q766677",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Zeus_Yahweh.jpg/960px-Zeus_Yahweh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Zeus_Yahweh.jpg"
+   }
+  },
+  "site": {
+   "abu-simbel": {
+    "matched": true,
+    "title": "Abu Simbel",
+    "description": "UNESCO World Heritage Site in southern Egypt",
+    "qid": "Q134140",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg/960px-Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ramsis,_Aswan_Governorate,_Egypt_-_panoramio.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 22.336944444444,
+     "lng": 31.625555555556
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Abu Simbel",
+      "whsId": "88-001",
+      "km": 0.6
+     },
+     {
+      "name": "Nubian Monuments from Abu Simbel to Philae",
+      "whsId": "88",
+      "km": 0.6
+     }
+    ]
+   },
+   "sri-pada": {
+    "matched": true,
+    "title": "Adam's Peak",
+    "description": "Mountain in Sri Lanka",
+    "qid": "Q60789",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Sri_Pada.JPG/960px-Sri_Pada.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Sri_Pada.JPG",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 6.809444444444445,
+     "lng": 80.49972222222222
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Peak Wilderness Sanctuary",
+      "whsId": "1203-001",
+      "km": 1.8
+     }
+    ]
+   },
+   "angkor-wat": {
+    "matched": true,
+    "title": "Angkor Wat",
+    "description": "Buddhist temple complex in Cambodia",
+    "qid": "Q43473",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Angkor_Wat.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 13.4125,
+     "lng": 103.86666666667
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Angkor Wat",
+      "whsId": "668-001",
+      "km": 0.5
+     },
+     {
+      "name": "Angkor",
+      "whsId": "668",
+      "km": 3.6
+     },
+     {
+      "name": "Roluos",
+      "whsId": "668-002",
+      "km": 13.4
+     }
+    ]
+   },
+   "asgard": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "fire-temple-yazd": {
+    "matched": false,
+    "worldHeritage": [
+     {
+      "name": "Heritage district of Yazd",
+      "whsId": "1544",
+      "km": 0.1
+     },
+     {
+      "name": "Dowlatabad Garden",
+      "whsId": "1372-007",
+      "km": 1.7
+     },
+     {
+      "name": "Zarch Qanat",
+      "whsId": "1506-003",
+      "km": 14
+     }
+    ]
+   },
+   "baalbek": {
+    "matched": true,
+    "title": "Baalbek",
+    "description": "City in Baalbek-Hermel, Lebanon",
+    "qid": "Q178835",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Temple_of_Bacchus%2C_Baalbek%2C_Lebanon_%2849890013476%29.jpg/960px-Temple_of_Bacchus%2C_Baalbek%2C_Lebanon_%2849890013476%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Temple_of_Bacchus,_Baalbek,_Lebanon_(49890013476).jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 34.006111111111,
+     "lng": 36.208611111111
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Baalbek",
+      "whsId": "294",
+      "km": 0.5
+     }
+    ]
+   },
+   "babylon": {
+    "matched": true,
+    "title": "Babylon",
+    "description": "Ancient Mesopotamian city in Iraq",
+    "qid": "Q5684",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ishtar_Gate.jpg/960px-Ishtar_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ishtar_Gate.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 32.5425,
+     "lng": 44.42111111111111
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Babylon",
+      "whsId": "278rev",
+      "km": 1.1
+     }
+    ]
+   },
+   "bagan": {
+    "matched": true,
+    "title": "Bagan",
+    "description": "UNESCO historical city in Mandalay Region, Myanmar",
+    "qid": "Q29317",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Bagan%2C_Burma.jpg/960px-Bagan%2C_Burma.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Bagan,_Burma.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 21.1725,
+     "lng": 94.86
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Bagan",
+      "whsId": "1588",
+      "km": 0.3
+     }
+    ]
+   },
+   "bear-butte": {
+    "matched": true,
+    "title": "Bear Butte",
+    "description": "Mountain in South Dakota, U.S.",
+    "qid": "Q2892841",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/BEAR_BUTTE.jpg/960px-BEAR_BUTTE.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "BEAR_BUTTE.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 44.47582,
+     "lng": -103.42685
+    },
+    "distanceKm": 1,
+    "worldHeritage": []
+   },
+   "bodhi-tree": {
+    "matched": true,
+    "title": "Bodhi tree",
+    "description": "Sacred fig tree in Bodh Gaya, Bihar, India",
+    "qid": "Q321437",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bodhgaya_3639641913_f4c5f73689_t.jpg/960px-Bodhgaya_3639641913_f4c5f73689_t.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Bodhgaya_3639641913_f4c5f73689_t.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 24.695913888889,
+     "lng": 84.991469444444
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Mahabodhi Temple",
+      "whsId": "1056",
+      "km": 0.5
+     }
+    ]
+   },
+   "borobudur": {
+    "matched": true,
+    "title": "Borobudur",
+    "description": "9th-century Buddhist temple in Java, Indonesia",
+    "qid": "Q42798",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Pradaksina.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": -7.60793,
+     "lng": 110.20384
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Borobudur Temple Compounds",
+      "whsId": "592",
+      "km": 0.5
+     },
+     {
+      "name": "Borobudur Temple",
+      "whsId": "592-001",
+      "km": 0.5
+     },
+     {
+      "name": "Pawon",
+      "whsId": "592-003",
+      "km": 2.2
+     },
+     {
+      "name": "Mendut Temple",
+      "whsId": "592-002",
+      "km": 3.4
+     }
+    ]
+   },
+   "boudhanath": {
+    "matched": false,
+    "worldHeritage": [
+     {
+      "name": "Boudhanath",
+      "whsId": "121bis-005",
+      "km": 0.2
+     },
+     {
+      "name": "Pashupatinath Temple",
+      "whsId": "121bis-006",
+      "km": 1.5
+     },
+     {
+      "name": "Kathmandu Valley",
+      "whsId": "121",
+      "km": 5.4
+     },
+     {
+      "name": "Kathmandu Valley",
+      "whsId": "121bis",
+      "km": 5.4
+     },
+     {
+      "name": "Basantapur Durbar Square",
+      "whsId": "121bis-001",
+      "km": 5.5
+     },
+     {
+      "name": "Patan Durbar Square",
+      "whsId": "121bis-002",
+      "km": 6.2
+     },
+     {
+      "name": "Changu Narayan Temple",
+      "whsId": "121bis-007",
+      "km": 6.7
+     },
+     {
+      "name": "Swayambhunath",
+      "whsId": "121bis-004",
+      "km": 6.9
+     },
+     {
+      "name": "Bhaktapur Durbar Square",
+      "whsId": "121bis-003",
+      "km": 8.6
+     }
+    ]
+   },
+   "byblos": {
+    "matched": true,
+    "title": "Byblos",
+    "description": "City in Keserwan-Jbeil, Lebanon",
+    "qid": "Q173532",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Byblos_Libanon_2003.JPG/960px-Byblos_Libanon_2003.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Byblos_Libanon_2003.JPG",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 34.116666666667,
+     "lng": 35.65
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Byblos",
+      "whsId": "295",
+      "km": 0.3
+     }
+    ]
+   },
+   "cahokia": {
+    "matched": true,
+    "title": "Cahokia",
+    "description": "Archaeological site in southwestern Illinois, US",
+    "qid": "Q333661",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/960px-Monks_Mound_-_Summer_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Monks_Mound_-_Summer_2024.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 38.653888888889,
+     "lng": -90.064444444444
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Cahokia",
+      "whsId": "198bis",
+      "km": 0.8
+     }
+    ]
+   },
+   "cappadocia": {
+    "matched": true,
+    "title": "Cappadocia",
+    "description": "Historical region in Central Anatolia, Turkey",
+    "qid": "Q217265",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg/960px-Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Cappadocia_balloon_trip,_Ortahisar_Castle_(11893715185).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 38.670556,
+     "lng": 34.839167
+    },
+    "distanceKm": 5,
+    "worldHeritage": [
+     {
+      "name": "Göreme National Park",
+      "whsId": "357-001",
+      "km": 3.8
+     },
+     {
+      "name": "Göreme National Park and the Rock Sites of Cappadocia",
+      "whsId": "357",
+      "km": 4.4
+     }
+    ]
+   },
+   "catalhoyuk": {
+    "matched": true,
+    "title": "Çatalhöyük",
+    "description": "Archaeological site in Turkey",
+    "qid": "Q192522",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/960px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Çatalhöyük,_7400_BC,_Konya,_Turkey_-_UNESCO_World_Heritage_Site,_08.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 37.6675,
+     "lng": 32.828333333333
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Çatalhöyük",
+      "whsId": "1405",
+      "km": 0.3
+     }
+    ]
+   },
+   "underground-rivers": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "chichen-itza": {
+    "matched": true,
+    "title": "Chichen Itza",
+    "description": "Pre-Columbian Maya city in Mexico",
+    "qid": "Q5859",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Chichen_Itza_3.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 20.683055555556,
+     "lng": -88.568611111111
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Chichen Itza",
+      "whsId": "483",
+      "km": 0.4
+     }
+    ]
+   },
+   "colosseum": {
+    "matched": true,
+    "title": "Colosseum",
+    "description": "Ancient Roman amphitheater in Rome",
+    "qid": "Q10285",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Colosseo_2020.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 41.890277777778,
+     "lng": 12.492222222222
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+      "whsId": "91",
+      "km": 0.4
+     },
+     {
+      "name": "Basilica di Santa Maria Maggiore",
+      "whsId": "91-003",
+      "km": 1.1
+     },
+     {
+      "name": "Palazzo Maffei Marescotti",
+      "whsId": "91-007",
+      "km": 1.3
+     },
+     {
+      "name": "Archbasilica of St. John Lateran",
+      "whsId": "91-002a",
+      "km": 1.4
+     },
+     {
+      "name": "Lateran",
+      "whsId": "91-002",
+      "km": 1.4
+     },
+     {
+      "name": "Scala Sancta",
+      "whsId": "91-002b",
+      "km": 1.4
+     },
+     {
+      "name": "Palazzo San Callisto",
+      "whsId": "91-004a",
+      "km": 1.6
+     },
+     {
+      "name": "Palazzo della Cancelleria",
+      "whsId": "91-005",
+      "km": 1.7
+     },
+     {
+      "name": "Palazzo di Propaganda Fide",
+      "whsId": "91-006",
+      "km": 1.7
+     },
+     {
+      "name": "historic centre of Rome",
+      "whsId": "91-001",
+      "km": 1.9
+     },
+     {
+      "name": "Palazzo San Pio X",
+      "whsId": "91-010",
+      "km": 2.6
+     },
+     {
+      "name": "Palazzo dei Convertendi",
+      "whsId": "91-008",
+      "km": 2.8
+     },
+     {
+      "name": "Palazzo detto dei Propilei",
+      "whsId": "91-009",
+      "km": 2.9
+     },
+     {
+      "name": "Palace of the Holy Office",
+      "whsId": "91-012",
+      "km": 3.1
+     },
+     {
+      "name": "Vatican City",
+      "whsId": "286",
+      "km": 3.4
+     },
+     {
+      "name": "Basilica of Saint Paul outside the Walls",
+      "whsId": "91-013",
+      "km": 3.6
+     },
+     {
+      "name": "Appian Way",
+      "whsId": "1708",
+      "km": 6.5
+     }
+    ]
+   },
+   "cusco": {
+    "matched": true,
+    "title": "Cusco",
+    "description": "City in Peru",
+    "qid": "Q5582862",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Vista_Calle_Suecia.jpg/960px-Vista_Calle_Suecia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Vista_Calle_Suecia.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": -13.516944444444444,
+     "lng": -71.9786111111111
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Historic centre of Cusco",
+      "whsId": "273",
+      "km": 0.3
+     },
+     {
+      "name": "City of Cusco - Main Square and Historic Centre",
+      "whsId": "273-001",
+      "km": 0.4
+     },
+     {
+      "name": "Santiago Square and Church",
+      "whsId": "273-003",
+      "km": 0.7
+     },
+     {
+      "name": "Belén Square and Church",
+      "whsId": "273-004",
+      "km": 0.8
+     },
+     {
+      "name": "Almudena and Almudena Church",
+      "whsId": "273-002",
+      "km": 1.1
+     },
+     {
+      "name": "PE-PH-01/CS-2011",
+      "whsId": "1459-084",
+      "km": 2.7
+     }
+    ]
+   },
+   "delphi": {
+    "matched": true,
+    "title": "Delphi",
+    "description": "Sacred site and oracle of Ancient Greece",
+    "qid": "Q75459",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Delphi%2C_Greece_-_panoramio.jpg/960px-Delphi%2C_Greece_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Delphi,_Greece_-_panoramio.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 38.483333333333,
+     "lng": 22.5
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "archaeological Site of Delphi",
+      "whsId": "393",
+      "km": 0.2
+     }
+    ]
+   },
+   "devils-tower": {
+    "matched": true,
+    "title": "Devils Tower",
+    "description": "Flat-topped volcanic plug in Wyoming, US",
+    "qid": "Q306201",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Columnar-jointed_porphyritic_phonolite_%28Eocene%2C_49_Ma%3B_Devils_Tower%2C_Wyoming%2C_USA%29_48.jpg/960px-Columnar-jointed_porphyritic_phonolite_%28Eocene%2C_49_Ma%3B_Devils_Tower%2C_Wyoming%2C_USA%29_48.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Columnar-jointed_porphyritic_phonolite_(Eocene,_49_Ma;_Devils_Tower,_Wyoming,_USA)_48.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 44.590277777778,
+     "lng": -104.71527777778
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "ellora-caves": {
+    "matched": true,
+    "title": "Ellora Caves",
+    "description": "Ancient cave temples in Maharashtra, India",
+    "qid": "Q189616",
+    "image": null,
+    "imageFile": null,
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 20.026388888889,
+     "lng": 75.179166666667
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Ellora Caves",
+      "whsId": "243",
+      "km": 0.4
+     }
+    ]
+   },
+   "epidaurus": {
+    "matched": true,
+    "title": "Epidaurus",
+    "description": "UNESCO World Heritage Site",
+    "qid": "Q233576",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/20190511_172_epidaure.jpg/960px-20190511_172_epidaure.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "20190511_172_epidaure.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 37.59777777777778,
+     "lng": 23.074444444444445
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Sanctuary of Asclepius, Epidaurus",
+      "whsId": "491",
+      "km": 0.5
+     }
+    ]
+   },
+   "erdene-zuu": {
+    "matched": true,
+    "title": "Erdene Zuu Monastery",
+    "description": "Buddhist monastery in Kharkhorin, Övörkhangai, Mongolia",
+    "qid": "Q1058965",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/%C5%9Awi%C4%85tynia_Zachodnia_w_klasztorze_Erdene_Dzuu_01.jpg/960px-%C5%9Awi%C4%85tynia_Zachodnia_w_klasztorze_Erdene_Dzuu_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Świątynia_Zachodnia_w_klasztorze_Erdene_Dzuu_01.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 47.201666666667,
+     "lng": 102.84333333333
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "forbidden-city": {
+    "matched": true,
+    "title": "Forbidden City",
+    "description": "Imperial palace complex in Beijing, China",
+    "qid": "Q80290",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 39.91583333333333,
+     "lng": 116.39083333333333
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Forbidden City",
+      "whsId": "439-001",
+      "km": 0.5
+     },
+     {
+      "name": "Central Axis of Beijing",
+      "whsId": "1714",
+      "km": 2.3
+     },
+     {
+      "name": "Temple of Heaven",
+      "whsId": "881",
+      "km": 4.4
+     },
+     {
+      "name": "Summer Palace",
+      "whsId": "880",
+      "km": 13.4
+     }
+    ]
+   },
+   "fushimi-inari": {
+    "matched": true,
+    "title": "Fushimi Inari-taisha",
+    "description": "Shinto shrine near Kyoto, Japan",
+    "qid": "Q714828",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 34.967202,
+     "lng": 135.773386
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Tō-ji Temple",
+      "whsId": "688-003",
+      "km": 2.3
+     },
+     {
+      "name": "Nishi Hongan-ji Temple",
+      "whsId": "688-016",
+      "km": 3
+     },
+     {
+      "name": "Kiyomizu-dera",
+      "whsId": "688-004",
+      "km": 3.1
+     },
+     {
+      "name": "Daigo-ji Temple",
+      "whsId": "688-006",
+      "km": 5
+     },
+     {
+      "name": "Nijō Castle",
+      "whsId": "688-017",
+      "km": 5.3
+     },
+     {
+      "name": "Ginkaku-ji Temple",
+      "whsId": "688-014",
+      "km": 6.8
+     },
+     {
+      "name": "Shimogamo Shrine",
+      "whsId": "688-002",
+      "km": 7.7
+     },
+     {
+      "name": "Saihō-ji Temple",
+      "whsId": "688-011",
+      "km": 8.2
+     },
+     {
+      "name": "Ninna-ji Temple",
+      "whsId": "688-007",
+      "km": 8.5
+     },
+     {
+      "name": "Ryōan-ji Temple",
+      "whsId": "688-015",
+      "km": 8.6
+     },
+     {
+      "name": "Kinkaku-ji Temple",
+      "whsId": "688-013",
+      "km": 8.6
+     },
+     {
+      "name": "Ujigami Shrine",
+      "whsId": "688-009",
+      "km": 9.5
+     },
+     {
+      "name": "Byōdō-in Temple",
+      "whsId": "688-008",
+      "km": 9.6
+     },
+     {
+      "name": "Tenryū-ji Temple",
+      "whsId": "688-012",
+      "km": 10.1
+     },
+     {
+      "name": "Kamigamo Shrine",
+      "whsId": "688-001",
+      "km": 10.2
+     },
+     {
+      "name": "Historic Monuments of Ancient Kyoto",
+      "whsId": "688",
+      "km": 10.2
+     },
+     {
+      "name": "Enryaku-ji Temple",
+      "whsId": "688-005",
+      "km": 12.9
+     },
+     {
+      "name": "Kōzan-ji Temple",
+      "whsId": "688-010",
+      "km": 13
+     }
+    ]
+   },
+   "garni": {
+    "matched": true,
+    "title": "Garni Temple",
+    "description": "Greco-Roman colonnaded building in Armenia",
+    "qid": "Q684072",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Garni_temple_2021_drone.jpg/960px-Garni_temple_2021_drone.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Garni_temple_2021_drone.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 40.112,
+     "lng": 44.729
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Monastery of Geghard and the Upper Azat Valley",
+      "whsId": "960",
+      "km": 7.9
+     }
+    ]
+   },
+   "gergeti": {
+    "matched": true,
+    "title": "Gergeti Trinity Church",
+    "description": "Church near Stepantsminda, Georgia",
+    "qid": "Q1511206",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Gergeti_Trinity_Church_09.23.jpg/960px-Gergeti_Trinity_Church_09.23.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gergeti_Trinity_Church_09.23.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 42.662426,
+     "lng": 44.620463
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "glastonbury": {
+    "matched": true,
+    "title": "Glastonbury Tor",
+    "description": "Hill in Glastonbury, Somerset, England",
+    "qid": "Q1412726",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Glastonbury_Tor-_View_of_an_iconic_landmark_%28geograph_5500644%29.jpg/960px-Glastonbury_Tor-_View_of_an_iconic_landmark_%28geograph_5500644%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Glastonbury_Tor-_View_of_an_iconic_landmark_(geograph_5500644).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 51.144444444444,
+     "lng": -2.6986111111111
+    },
+    "distanceKm": 1,
+    "worldHeritage": []
+   },
+   "gobekli-tepe": {
+    "matched": true,
+    "title": "Göbekli Tepe",
+    "description": "Neolithic archaeological site in Turkey",
+    "qid": "Q214944",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/960px-G%C3%B6bekli_Tepe%2C_Urfa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Göbekli_Tepe,_Urfa.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 37.223055555556,
+     "lng": 38.9225
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Göbekli Tepe",
+      "whsId": "1572",
+      "km": 0.4
+     }
+    ]
+   },
+   "giza-pyramids": {
+    "matched": false,
+    "worldHeritage": [
+     {
+      "name": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+      "whsId": "86",
+      "km": 0.4
+     },
+     {
+      "name": "Pyramid fields from Giza to Dahshur",
+      "whsId": "86-002",
+      "km": 0.4
+     },
+     {
+      "name": "El-Fustat",
+      "whsId": "89-001",
+      "km": 10.7
+     },
+     {
+      "name": "Al-Sayeda Nafeesah Mosque",
+      "whsId": "89-004",
+      "km": 12.7
+     },
+     {
+      "name": "Mausoleum of Imam al-Shafi'i",
+      "whsId": "89-003",
+      "km": 12.8
+     },
+     {
+      "name": "Mosque of Ahmed Ibn Tulun, The Citadel Area, The Fatimid Nucleus of Cairo, Necropolis",
+      "whsId": "89-002",
+      "km": 14.6
+     },
+     {
+      "name": "Islamic Cairo",
+      "whsId": "89",
+      "km": 14.7
+     }
+    ]
+   },
+   "ur-ziggurat": {
+    "matched": false,
+    "worldHeritage": [
+     {
+      "name": "Ur",
+      "whsId": "1481-006",
+      "km": 0.5
+     }
+    ]
+   },
+   "gyeongbokgung": {
+    "matched": true,
+    "title": "Gyeongbokgung",
+    "description": "Palace in Seoul, South Korea",
+    "qid": "Q482485",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg/960px-%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "광화문_월대.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 37.5798841,
+     "lng": 126.9767996
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Changdeokgung",
+      "whsId": "816",
+      "km": 1
+     },
+     {
+      "name": "Jongmyo",
+      "whsId": "738",
+      "km": 1.3
+     },
+     {
+      "name": "Jeongneung (Queen Sindeok)",
+      "whsId": "1319-010",
+      "km": 3.3
+     },
+     {
+      "name": "Uireung (Gyeongjong)",
+      "whsId": "1319-011",
+      "km": 7.2
+     },
+     {
+      "name": "Seooreung",
+      "whsId": "1319-012",
+      "km": 9.8
+     },
+     {
+      "name": "Seonjeongneung",
+      "whsId": "1319-007",
+      "km": 10
+     },
+     {
+      "name": "Taegangneung",
+      "whsId": "1319-009",
+      "km": 12
+     },
+     {
+      "name": "Seosamneung",
+      "whsId": "1319-013",
+      "km": 13.4
+     },
+     {
+      "name": "Tonggurung",
+      "whsId": "1319-001",
+      "km": 14.2
+     }
+    ]
+   },
+   "gyeongju": {
+    "matched": true,
+    "title": "Gyeongju",
+    "description": "City in North Gyeongsang, South Korea",
+    "qid": "Q42097",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Gyeongju_montage.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Gyeongju_montage.png",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 35.85,
+     "lng": 129.21666666667
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Tumuli Park Belt",
+      "whsId": "976-003",
+      "km": 1
+     },
+     {
+      "name": "Wolseong Belt",
+      "whsId": "976-002",
+      "km": 1.6
+     },
+     {
+      "name": "Hwangnyongsa Belt",
+      "whsId": "976-004",
+      "km": 2.1
+     },
+     {
+      "name": "Sanseong Belt",
+      "whsId": "976-005",
+      "km": 4.4
+     },
+     {
+      "name": "Gyeongju Historic Areas",
+      "whsId": "976",
+      "km": 5.9
+     },
+     {
+      "name": "Namsam Belt",
+      "whsId": "976-001",
+      "km": 6
+     },
+     {
+      "name": "Seokguram Grotto and Bulguksa Temple",
+      "whsId": "736",
+      "km": 13.8
+     }
+    ]
+   },
+   "hattusa": {
+    "matched": true,
+    "title": "Hattusa",
+    "description": "Capital of the Hittite Empire",
+    "qid": "Q181007",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg/960px-Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Lion_Gate,_Hattusa_13_(cropped).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 40.019722222222,
+     "lng": 34.615277777778
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Hattusa",
+      "whsId": "377-001",
+      "km": 0.4
+     },
+     {
+      "name": "Hattusha: the Hittite Capital",
+      "whsId": "377",
+      "km": 0.7
+     },
+     {
+      "name": "Osman Kayası",
+      "whsId": "377-004",
+      "km": 0.8
+     },
+     {
+      "name": "Yazılıkaya",
+      "whsId": "377-002",
+      "km": 1.2
+     },
+     {
+      "name": "Kayalı Boğaz",
+      "whsId": "377-003",
+      "km": 2.4
+     }
+    ]
+   },
+   "ife": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "ise-jingu": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "itsukushima": {
+    "matched": true,
+    "title": "Itsukushima Shrine",
+    "description": "Shinto shrine in Hiroshima Prefecture, Japan",
+    "qid": "Q191763",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg/960px-Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Itsukushima_Shrine_Torii_Gate_(13890465459).jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 34.29577,
+     "lng": 132.320105
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Itsukushima Shrine",
+      "whsId": "776",
+      "km": 0.5
+     }
+    ]
+   },
+   "izumo-shrine": {
+    "matched": true,
+    "title": "Izumo-taisha",
+    "description": "Oldest Shinto shrine in Japan",
+    "qid": "Q696362",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Izumo-taisha14bs4592.jpg/960px-Izumo-taisha14bs4592.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Izumo-taisha14bs4592.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 35.401944444444446,
+     "lng": 132.68544444444444
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "puri-temple": {
+    "matched": true,
+    "title": "Jagannath Temple, Puri",
+    "description": "Hindu temple at Puri, Odisha, India",
+    "qid": "Q1678260",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/960px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Shri_Jagannath_temple.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 19.804722222222,
+     "lng": 85.818333333333
+    },
+    "distanceKm": 1,
+    "worldHeritage": []
+   },
+   "jebel-barkal": {
+    "matched": true,
+    "title": "Jebel Barkal",
+    "description": "Archaeological Site in Sudan",
+    "qid": "Q499019",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Gebel_Barkal.jpg/960px-Gebel_Barkal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Gebel_Barkal.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 18.5368,
+     "lng": 31.8276
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Gebel Barkal and the Sites of the Napatan Region",
+      "whsId": "1073",
+      "km": 0.5
+     },
+     {
+      "name": "Jebel Barkal",
+      "whsId": "1073-001",
+      "km": 1.1
+     },
+     {
+      "name": "Sanam",
+      "whsId": "1073-004",
+      "km": 5.2
+     },
+     {
+      "name": "Nuri",
+      "whsId": "1073-003",
+      "km": 11
+     },
+     {
+      "name": "El-Kurru",
+      "whsId": "1073-002",
+      "km": 14.4
+     }
+    ]
+   },
+   "kalevala-land": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "karnak": {
+    "matched": true,
+    "title": "Karnak",
+    "description": "Ancient Egyptian temple complex",
+    "qid": "Q522862",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Temple_de_Louxor_68.jpg/960px-Temple_de_Louxor_68.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Temple_de_Louxor_68.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 25.718333333333334,
+     "lng": 32.65833333333333
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Karnak Temple Complex",
+      "whsId": "87-001",
+      "km": 0.2
+     },
+     {
+      "name": "Luxor Temple",
+      "whsId": "87-002",
+      "km": 3.1
+     },
+     {
+      "name": "Ancient Thebes with its Necropolis",
+      "whsId": "87",
+      "km": 5
+     },
+     {
+      "name": "Theban Necropolis",
+      "whsId": "87-003",
+      "km": 6.2
+     }
+    ]
+   },
+   "kata-tjuta": {
+    "matched": true,
+    "title": "Kata Tjuta",
+    "description": "Domed rock formations in the Northern Territory",
+    "qid": "Q279980",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Aerial_Kata_Tjuta_olgas4799.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Aerial_Kata_Tjuta_olgas4799.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": -25.3,
+     "lng": 130.7593
+    },
+    "distanceKm": 3,
+    "worldHeritage": []
+   },
+   "khajuraho": {
+    "matched": true,
+    "title": "Khajuraho",
+    "description": "City in Madhya Pradesh, India",
+    "qid": "Q178948",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/960px-1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "1_Khajuraho.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 24.85279611111111,
+     "lng": 79.9254938888889
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Khajuraho Group of Monuments",
+      "whsId": "240",
+      "km": 0.3
+     },
+     {
+      "name": "Chausath Yogini Temple, Khajuraho",
+      "whsId": "240-002",
+      "km": 0.3
+     },
+     {
+      "name": "Khajuraho Protected Temple Area",
+      "whsId": "240-001",
+      "km": 0.3
+     },
+     {
+      "name": "Khajuraho chopra tank",
+      "whsId": "240-003",
+      "km": 0.7
+     },
+     {
+      "name": "Lalguan Mahadeva temple",
+      "whsId": "240-004",
+      "km": 0.9
+     },
+     {
+      "name": "Colossal statue of Shri Hanuman",
+      "whsId": "240-006",
+      "km": 1
+     },
+     {
+      "name": "Colossal statue of Shri Hanuman",
+      "whsId": "240-009",
+      "km": 1
+     },
+     {
+      "name": "Brahma Temple",
+      "whsId": "240-005",
+      "km": 1.3
+     },
+     {
+      "name": "Ghantai temple",
+      "whsId": "240-007",
+      "km": 1.4
+     },
+     {
+      "name": "Javari Temple, Khajuraho",
+      "whsId": "240-008",
+      "km": 1.5
+     },
+     {
+      "name": "Vamana Temple, Khajuraho",
+      "whsId": "240-010",
+      "km": 1.5
+     },
+     {
+      "name": "Duladeo Temple",
+      "whsId": "240-014",
+      "km": 1.7
+     },
+     {
+      "name": "Adinatha temple",
+      "whsId": "240-011",
+      "km": 1.8
+     },
+     {
+      "name": "Parshvanatha Temple",
+      "whsId": "240-012",
+      "km": 1.8
+     },
+     {
+      "name": "Shantinatha temple",
+      "whsId": "240-013",
+      "km": 1.8
+     },
+     {
+      "name": "Chaturbhuj Temple, Khajuraho",
+      "whsId": "240-015",
+      "km": 3
+     }
+    ]
+   },
+   "hawaii-volcanoes": {
+    "matched": true,
+    "title": "Kīlauea",
+    "description": "Active volcano in Hawaii",
+    "qid": "Q188698",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Episode_4_of_Kilauea%27s_December_2024_eruption_2025-01-16.jpg/960px-Episode_4_of_Kilauea%27s_December_2024_eruption_2025-01-16.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Episode_4_of_Kilauea's_December_2024_eruption_2025-01-16.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 19.421097,
+     "lng": -155.286762
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "ʻŌlaʻa Forest Tract",
+      "whsId": "409-002",
+      "km": 9.8
+     }
+    ]
+   },
+   "knossos": {
+    "matched": true,
+    "title": "Knossos",
+    "description": "Archaeological site and Minoan palace complex in Heraklion, Crete",
+    "qid": "Q173527",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Crete_integrated_map-en.svg/960px-Crete_integrated_map-en.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Crete_integrated_map-en.svg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 35.297961111111,
+     "lng": 25.163155555556
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Palace of Knossos",
+      "whsId": "1733",
+      "km": 0.4
+     }
+    ]
+   },
+   "konark-sun": {
+    "matched": true,
+    "title": "Konark Sun Temple",
+    "description": "13th-century UNESCO world heritage site in Odisha, India",
+    "qid": "Q752091",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/960px-Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Konarka_Temple.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 19.887444,
+     "lng": 86.094596
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Konark Sun Temple",
+      "whsId": "246",
+      "km": 0.6
+     }
+    ]
+   },
+   "lake-titicaca": {
+    "matched": true,
+    "title": "Lake Titicaca",
+    "description": "Large lake on the border of Peru and Bolivia",
+    "qid": "Q35342",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Lake_Titicaca_ESA22522896.jpeg/960px-Lake_Titicaca_ESA22522896.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Lake_Titicaca_ESA22522896.jpeg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": -15.825,
+     "lng": -69.325
+    },
+    "distanceKm": 74,
+    "worldHeritage": [
+     {
+      "name": "PE-CD-10/C-2011",
+      "whsId": "1459-091",
+      "km": 3.7
+     },
+     {
+      "name": "PE-CD-09/CS-2011",
+      "whsId": "1459-090",
+      "km": 7.7
+     },
+     {
+      "name": "PE-CD-11/C-2011",
+      "whsId": "1459-092",
+      "km": 8.2
+     }
+    ]
+   },
+   "lumbini": {
+    "matched": true,
+    "title": "Lumbini",
+    "description": "Historical city in Lumbini Province, Nepal",
+    "qid": "Q9213",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/BRP_Lumbini_Mayadevi_temple.jpg/960px-BRP_Lumbini_Mayadevi_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "BRP_Lumbini_Mayadevi_temple.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 27.4814,
+     "lng": 83.275829
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Lumbini",
+      "whsId": "666",
+      "km": 1.3
+     },
+     {
+      "name": "Lumbini",
+      "whsId": "666rev",
+      "km": 1.3
+     }
+    ]
+   },
+   "luxor-temple": {
+    "matched": true,
+    "title": "Luxor Temple",
+    "description": "Ancient Egyptian temple",
+    "qid": "Q319841",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/1550_bis_1070_v._Chr._ca._wurde_der_Tempel_von_Luxor_erbaut._01.jpg/960px-1550_bis_1070_v._Chr._ca._wurde_der_Tempel_von_Luxor_erbaut._01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "1550_bis_1070_v._Chr._ca._wurde_der_Tempel_von_Luxor_erbaut._01.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 25.7,
+     "lng": 32.639166666667
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Luxor Temple",
+      "whsId": "87-002",
+      "km": 0.1
+     },
+     {
+      "name": "Karnak Temple Complex",
+      "whsId": "87-001",
+      "km": 2.7
+     },
+     {
+      "name": "Ancient Thebes with its Necropolis",
+      "whsId": "87",
+      "km": 3.8
+     },
+     {
+      "name": "Theban Necropolis",
+      "whsId": "87-003",
+      "km": 5.5
+     }
+    ]
+   },
+   "machu-picchu": {
+    "matched": true,
+    "title": "Machu Picchu",
+    "description": "15th-century Inca citadel in Peru",
+    "qid": "Q676203",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Machu_Picchu,_2023_(012).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": -13.163333333333334,
+     "lng": -72.54555555555555
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Historic Sanctuary of Machu Picchu",
+      "whsId": "274",
+      "km": 6
+     }
+    ]
+   },
+   "mesa-verde": {
+    "matched": false,
+    "worldHeritage": [
+     {
+      "name": "Mesa Verde National Park",
+      "whsId": "27",
+      "km": 8.9
+     }
+    ]
+   },
+   "kremlin-moscow": {
+    "matched": true,
+    "title": "Moscow",
+    "description": "Capital and most populous city of Russia",
+    "qid": "Q649",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/960px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Saint_Basil's_Cathedral_and_the_Red_Square.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 55.75055555555556,
+     "lng": 37.6175
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Kremlin and Red Square",
+      "whsId": "545",
+      "km": 0.4
+     },
+     {
+      "name": "Novodevichy Convent",
+      "whsId": "1097",
+      "km": 4.8
+     },
+     {
+      "name": "Church of the Ascension, Kolomenskoye",
+      "whsId": "634",
+      "km": 9.7
+     }
+    ]
+   },
+   "mount-ararat": {
+    "matched": true,
+    "title": "Mount Ararat",
+    "description": "Highest mountain in Turkey",
+    "qid": "Q72303",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2850mm%29.jpg/960px-Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2850mm%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Mount_Ararat_and_the_Yerevan_skyline_in_spring_(50mm).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 39.70194444444444,
+     "lng": 44.29833333333333
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "baekdu": {
+    "matched": true,
+    "title": "Changbai Mountains",
+    "description": "Mountain range in China and North Korea",
+    "qid": "Q512139",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/ISS030-E-5315_-_View_of_China.jpg/960px-ISS030-E-5315_-_View_of_China.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "ISS030-E-5315_-_View_of_China.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 41.733,
+     "lng": 128.067
+    },
+    "distanceKm": 30,
+    "worldHeritage": []
+   },
+   "mount-fuji": {
+    "matched": true,
+    "title": "Mount Fuji",
+    "description": "Volcano in Japan",
+    "qid": "Q39231",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/960px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "View_of_Mount_Fuji_from_Ōwakudani_20211202.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 35.36055555555556,
+     "lng": 138.7275
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Mount Fuji",
+      "whsId": "1418-001",
+      "km": 0.2
+     },
+     {
+      "name": "Fujisan, sacred place and source of artistic inspiration",
+      "whsId": "1418",
+      "km": 0.2
+     },
+     {
+      "name": "Fuji Omuro Sengen Shrine",
+      "whsId": "1418-008",
+      "km": 5
+     },
+     {
+      "name": "Funatsu Lava Tree Molds",
+      "whsId": "1418-021",
+      "km": 10.5
+     },
+     {
+      "name": "Higashiguchi Hongu Fuji Sengen Shrine",
+      "whsId": "1418-006",
+      "km": 12.1
+     },
+     {
+      "name": "Murayama Sengen Shrine",
+      "whsId": "1418-004",
+      "km": 12.4
+     },
+     {
+      "name": "Hitoana Fuji-ko Iseki",
+      "whsId": "1418-023",
+      "km": 12.6
+     },
+     {
+      "name": "Yamamiya Sengen Shrine",
+      "whsId": "1418-003",
+      "km": 13
+     },
+     {
+      "name": "Shiraito Falls",
+      "whsId": "1418-024",
+      "km": 13.8
+     },
+     {
+      "name": "house of the Osano Family",
+      "whsId": "1418-010",
+      "km": 14.1
+     },
+     {
+      "name": "Deguchi-ike Pond",
+      "whsId": "1418-013",
+      "km": 14.2
+     },
+     {
+      "name": "Okama-ike Pond",
+      "whsId": "1418-014",
+      "km": 14.4
+     },
+     {
+      "name": "Sokonashi-ike Pond",
+      "whsId": "1418-015",
+      "km": 14.4
+     },
+     {
+      "name": "Chōshi-ike Pond",
+      "whsId": "1418-016",
+      "km": 14.4
+     },
+     {
+      "name": "Waku-ike Pond",
+      "whsId": "1418-017",
+      "km": 14.5
+     },
+     {
+      "name": "Nigori-ike Pond",
+      "whsId": "1418-018",
+      "km": 14.5
+     },
+     {
+      "name": "former house of the Togawa Family",
+      "whsId": "1418-009",
+      "km": 14.6
+     },
+     {
+      "name": "Kagami-ike Pond",
+      "whsId": "1418-019",
+      "km": 14.6
+     },
+     {
+      "name": "Lake Yamanaka",
+      "whsId": "1418-011",
+      "km": 14.6
+     },
+     {
+      "name": "Shōbu-ike Pond",
+      "whsId": "1418-020",
+      "km": 14.7
+     }
+    ]
+   },
+   "mount-kailash": {
+    "matched": true,
+    "title": "Mount Kailash",
+    "description": "Religious mountain in Tibet Autonomous Region in China",
+    "qid": "Q229107",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Kailash_north.JPG/960px-Kailash_north.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Kailash_north.JPG",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 31.066944444444,
+     "lng": 81.312777777778
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "olympus": {
+    "matched": true,
+    "title": "Mount Olympus",
+    "description": "Highest mountain in Greece",
+    "qid": "Q80344",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Olympus_National_Park_30.jpg/960px-Olympus_National_Park_30.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Olympus_National_Park_30.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 40.083333333333336,
+     "lng": 22.35
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "The wider area of Mount Olympus",
+      "whsId": "1719",
+      "km": 1.3
+     }
+    ]
+   },
+   "mount-tai": {
+    "matched": true,
+    "title": "Mount Tai",
+    "description": "Mountain in Shandong, China",
+    "qid": "Q216059",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/50304-Taishan_%2849055660366%29.jpg/960px-50304-Taishan_%2849055660366%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "50304-Taishan_(49055660366).jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 36.266666666667,
+     "lng": 117.1
+    },
+    "distanceKm": 2,
+    "worldHeritage": [
+     {
+      "name": "Mount Tai",
+      "whsId": "437",
+      "km": 1.9
+     }
+    ]
+   },
+   "mycenae": {
+    "matched": true,
+    "title": "Mycenae",
+    "description": "Archaeological site in Greece",
+    "qid": "Q132564",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg/960px-Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Path_upto_the_Lion_Gate,_Mycenae_(28693130016).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 37.730833333333,
+     "lng": 22.756111111111
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Archaeological Sites of Mycenae and Tiryns",
+      "whsId": "941",
+      "km": 0.4
+     },
+     {
+      "name": "Mycenae",
+      "whsId": "941-001",
+      "km": 0.5
+     }
+    ]
+   },
+   "nazca-lines": {
+    "matched": true,
+    "title": "Nazca lines",
+    "description": "Geoglyphs in the Nazca Desert, Peru",
+    "qid": "Q2620036",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Líneas_de_Nazca,_Nazca,_Perú,_2015-07-29,_DD_49.JPG",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": -14.6975,
+     "lng": -75.135
+    },
+    "distanceKm": 5,
+    "worldHeritage": [
+     {
+      "name": "Nazca Lines",
+      "whsId": "700",
+      "km": 4.8
+     }
+    ]
+   },
+   "newgrange": {
+    "matched": true,
+    "title": "Newgrange",
+    "description": "Neolithic monument in County Meath, Ireland",
+    "qid": "Q339503",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Irelands_history.jpg/960px-Irelands_history.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Irelands_history.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 53.6947251,
+     "lng": -6.4755655
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Brú na Bóinne",
+      "whsId": "659",
+      "km": 2
+     }
+    ]
+   },
+   "nineveh": {
+    "matched": true,
+    "title": "Nineveh",
+    "description": "Ancient Assyrian city",
+    "qid": "Q5680",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Nineveh_-_Mashki_Gate.jpg/960px-Nineveh_-_Mashki_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Nineveh_-_Mashki_Gate.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 36.366667,
+     "lng": 43.15
+    },
+    "distanceKm": 1,
+    "worldHeritage": []
+   },
+   "oshogbo-grove": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "olympia": {
+    "matched": true,
+    "title": "Olympia, Greece",
+    "description": "Town in Elis, Greece",
+    "qid": "Q38888",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Ancient_Olympia%2C_Greece2.jpg/960px-Ancient_Olympia%2C_Greece2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ancient_Olympia,_Greece2.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 37.638333333333335,
+     "lng": 21.63
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Olympia",
+      "whsId": "517",
+      "km": 0.2
+     }
+    ]
+   },
+   "orkhon-valley": {
+    "matched": true,
+    "title": "Orkhon Valley",
+    "description": "Valley in central Mongolia",
+    "qid": "Q1453235",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Orchon-mongolei.JPG/960px-Orchon-mongolei.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Orchon-mongolei.JPG",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 47.556666666667,
+     "lng": 102.83138888889
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Orkhon Valley",
+      "whsId": "1081",
+      "km": 0.7
+     },
+     {
+      "name": "Orkhon Valley",
+      "whsId": "1081rev",
+      "km": 0.7
+     }
+    ]
+   },
+   "osun-grove": {
+    "matched": true,
+    "title": "Osun-Osogbo",
+    "description": "UNESCO World Heritage Site in Osogbo, Nigeria",
+    "qid": "Q621498",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Osun_groove_Osogbo.jpg/960px-Osun_groove_Osogbo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Osun_groove_Osogbo.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 7.7555555555556,
+     "lng": 4.5522222222222
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Osun-Osogbo Grove",
+      "whsId": "1118",
+      "km": 0.6
+     }
+    ]
+   },
+   "palenque": {
+    "matched": true,
+    "title": "Palenque",
+    "description": "Ancient Maya city-state in Chiapas, Mexico",
+    "qid": "Q181427",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Palenque_Collage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Palenque_Collage.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 17.484166666666667,
+     "lng": -92.04638888888888
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Palenque",
+      "whsId": "411",
+      "km": 0.6
+     }
+    ]
+   },
+   "pantheon-rome": {
+    "matched": true,
+    "title": "Pantheon, Rome",
+    "description": "Roman temple, later church, in Rome",
+    "qid": "Q99309",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/960px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Pantheon_(Rome)_-_Right_side_and_front.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 41.89861111111111,
+     "lng": 12.476944444444445
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Palazzo Maffei Marescotti",
+      "whsId": "91-007",
+      "km": 0.4
+     },
+     {
+      "name": "Palazzo di Propaganda Fide",
+      "whsId": "91-006",
+      "km": 0.5
+     },
+     {
+      "name": "Palazzo della Cancelleria",
+      "whsId": "91-005",
+      "km": 0.8
+     },
+     {
+      "name": "historic centre of Rome",
+      "whsId": "91-001",
+      "km": 0.8
+     },
+     {
+      "name": "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+      "whsId": "91",
+      "km": 1
+     },
+     {
+      "name": "Palazzo San Pio X",
+      "whsId": "91-010",
+      "km": 1.4
+     },
+     {
+      "name": "Palazzo San Callisto",
+      "whsId": "91-004a",
+      "km": 1.4
+     },
+     {
+      "name": "Palazzo dei Convertendi",
+      "whsId": "91-008",
+      "km": 1.6
+     },
+     {
+      "name": "Basilica di Santa Maria Maggiore",
+      "whsId": "91-003",
+      "km": 1.6
+     },
+     {
+      "name": "Palazzo detto dei Propilei",
+      "whsId": "91-009",
+      "km": 1.7
+     },
+     {
+      "name": "Palace of the Holy Office",
+      "whsId": "91-012",
+      "km": 2
+     },
+     {
+      "name": "Vatican City",
+      "whsId": "286",
+      "km": 2.3
+     },
+     {
+      "name": "Scala Sancta",
+      "whsId": "91-002b",
+      "km": 2.6
+     },
+     {
+      "name": "Archbasilica of St. John Lateran",
+      "whsId": "91-002a",
+      "km": 2.7
+     },
+     {
+      "name": "Lateran",
+      "whsId": "91-002",
+      "km": 2.7
+     },
+     {
+      "name": "Basilica of Saint Paul outside the Walls",
+      "whsId": "91-013",
+      "km": 4.6
+     },
+     {
+      "name": "Appian Way",
+      "whsId": "1708",
+      "km": 7.8
+     }
+    ]
+   },
+   "parthenon": {
+    "matched": true,
+    "title": "Parthenon",
+    "description": "Temple on the Athenian Acropolis, Greece",
+    "qid": "Q10288",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "The_Parthenon_in_Athens.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 37.971527,
+     "lng": 23.726601
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Parthenon",
+      "whsId": "404",
+      "km": 0.3
+     },
+     {
+      "name": "Temple of Rome and Augustus",
+      "whsId": "404-003",
+      "km": 0.3
+     },
+     {
+      "name": "Erechtheion",
+      "whsId": "404-004",
+      "km": 0.4
+     },
+     {
+      "name": "Brauroneion",
+      "whsId": "404-002",
+      "km": 0.4
+     },
+     {
+      "name": "Temple of Athena Nike",
+      "whsId": "404-005",
+      "km": 0.5
+     },
+     {
+      "name": "Propylaea of Athens",
+      "whsId": "404-006",
+      "km": 0.5
+     },
+     {
+      "name": "Daphni Monastery",
+      "whsId": "537-002",
+      "km": 9.5
+     }
+    ]
+   },
+   "pasargadae": {
+    "matched": true,
+    "title": "Pasargadae",
+    "description": "Archaeological site in Fars province, Iran",
+    "qid": "Q230025",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Pasargad_Tomb_Cyrus3.jpg/960px-Pasargad_Tomb_Cyrus3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Pasargad_Tomb_Cyrus3.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 30.2,
+     "lng": 53.179444444444
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Pasargadae",
+      "whsId": "1106",
+      "km": 1.4
+     },
+     {
+      "name": "Pasargadae Garden",
+      "whsId": "1372-001",
+      "km": 1.6
+     }
+    ]
+   },
+   "persepolis": {
+    "matched": true,
+    "title": "Persepolis",
+    "description": "Ceremonial capital of the Achaemenid Empire",
+    "qid": "Q129072",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/2018-09-21_Iran%2C_Persepolis%2C_Tachara_%28from_the_southeast%29.jpg/960px-2018-09-21_Iran%2C_Persepolis%2C_Tachara_%28from_the_southeast%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "2018-09-21_Iran,_Persepolis,_Tachara_(from_the_southeast).jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 29.935,
+     "lng": 52.89
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Persepolis",
+      "whsId": "114",
+      "km": 0.6
+     },
+     {
+      "name": "Ardashir Investiture Relief",
+      "whsId": "1568-002",
+      "km": 6.7
+     }
+    ]
+   },
+   "petra": {
+    "matched": true,
+    "title": "Petra",
+    "description": "Ancient rock-cut historical city in Jordan",
+    "qid": "Q5788",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Al_Deir_Petra.JPG",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 30.328888888889,
+     "lng": 35.440277777778
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Petra",
+      "whsId": "326",
+      "km": 0.1
+     }
+    ]
+   },
+   "pompeii": {
+    "matched": true,
+    "title": "Pompeii",
+    "description": "Ancient city near modern Naples, Italy",
+    "qid": "Q43332",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg/960px-Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Aerial_image_of_Pompeii_and_Mount_Vesuvius_(view_from_the_southeast).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 40.750556,
+     "lng": 14.489722
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "archaeological excavations of Pompeii",
+      "whsId": "829-001",
+      "km": 0.1
+     },
+     {
+      "name": "archaeological excavations of Pompeii",
+      "whsId": "829bis-001",
+      "km": 0.1
+     },
+     {
+      "name": "Archaeological Areas of Pompei, Herculaneum and Torre Annunziata",
+      "whsId": "829",
+      "km": 0.6
+     },
+     {
+      "name": "Villa of the Mysteries",
+      "whsId": "829-002",
+      "km": 1.1
+     },
+     {
+      "name": "Villa of L. Crassius Tertius",
+      "whsId": "829-007",
+      "km": 2.9
+     },
+     {
+      "name": "Villa Poppaea",
+      "whsId": "829-003",
+      "km": 3.3
+     },
+     {
+      "name": "theatre of Herculaneum",
+      "whsId": "829-005",
+      "km": 13.6
+     },
+     {
+      "name": "Villa of the Papyri",
+      "whsId": "829-004",
+      "km": 13.7
+     }
+    ]
+   },
+   "potala-palace": {
+    "matched": true,
+    "title": "Potala Palace",
+    "description": "Fortress in Lhasa, Tibet",
+    "qid": "Q71229",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Potala_Palace_HQ.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 29.657777777777778,
+     "lng": 91.11694444444444
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Potala Palace",
+      "whsId": "707",
+      "km": 0.4
+     },
+     {
+      "name": "World Heritage Sites in Tibet",
+      "whsId": "707bis",
+      "km": 0.4
+     },
+     {
+      "name": "World Heritage Sites in Tibet",
+      "whsId": "707ter",
+      "km": 0.4
+     },
+     {
+      "name": "Jokhang",
+      "whsId": "707-002",
+      "km": 1.4
+     },
+     {
+      "name": "Norbulingka",
+      "whsId": "707-003",
+      "km": 2.5
+     }
+    ]
+   },
+   "prambanan": {
+    "matched": true,
+    "title": "Prambanan",
+    "description": "9th-century Hindu temple compound near Yogyakarta, Indonesia",
+    "qid": "Q47721",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Prambanan_Temple_Yogyakarta_Indonesia.jpg/960px-Prambanan_Temple_Yogyakarta_Indonesia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Prambanan_Temple_Yogyakarta_Indonesia.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": -7.752,
+     "lng": 110.49122
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Prambanan Temple",
+      "whsId": "642",
+      "km": 0.3
+     },
+     {
+      "name": "The Cosmological Axis of Yogyakarta and its Historic Landmarks",
+      "whsId": "1671",
+      "km": 14.9
+     }
+    ]
+   },
+   "meroe-pyramids": {
+    "matched": true,
+    "title": "Pyramids of Meroë",
+    "description": "Pyramids in Sudan",
+    "qid": "Q456939",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/NubianMeroePyramids30sep2005%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "NubianMeroePyramids30sep2005(2).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 16.93833333,
+     "lng": 33.74916667
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Meroë",
+      "whsId": "1336-001",
+      "km": 0.5
+     },
+     {
+      "name": "Meroë",
+      "whsId": "1336-002",
+      "km": 0.5
+     },
+     {
+      "name": "Archaeological Sites of the Island of Meroe",
+      "whsId": "1336",
+      "km": 3.6
+     }
+    ]
+   },
+   "rapa-nui": {
+    "matched": true,
+    "title": "Rapa Nui National Park",
+    "description": "World Heritage Site in Easter Island",
+    "qid": "Q1763364",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ahu-Akivi-1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Ahu-Akivi-1.JPG",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": -27.072877,
+     "lng": -109.348579
+    },
+    "distanceKm": 6,
+    "worldHeritage": [
+     {
+      "name": "Rapa Nui National Park",
+      "whsId": "715",
+      "km": 5.7
+     }
+    ]
+   },
+   "sarnath": {
+    "matched": true,
+    "title": "Sarnath",
+    "description": "Buddhist pilgrimage site in India",
+    "qid": "Q324394",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg/960px-Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site,_Sarnath.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 25.381111111111,
+     "lng": 83.021388888889
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Sarnath",
+      "whsId": "927",
+      "km": 0.2
+     }
+    ]
+   },
+   "selimiye": {
+    "matched": true,
+    "title": "Selimiye Mosque, Edirne",
+    "description": "Mosque in Edirne, Turkey",
+    "qid": "Q184534",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Selimiye_Mosque_%2815051985908%29_%28cropped%29.jpg/960px-Selimiye_Mosque_%2815051985908%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Selimiye_Mosque_(15051985908)_(cropped).jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 41.678056,
+     "lng": 26.559444
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Selimiye Mosque",
+      "whsId": "1366",
+      "km": 0.2
+     }
+    ]
+   },
+   "shiprock": {
+    "matched": true,
+    "title": "Shiprock",
+    "description": "Monadnock in San Juan County, New Mexico",
+    "qid": "Q2208162",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Shiprock.snodgrass3.jpg/960px-Shiprock.snodgrass3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Shiprock.snodgrass3.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 36.6875,
+     "lng": -108.836
+    },
+    "distanceKm": 0,
+    "worldHeritage": []
+   },
+   "shwedagon": {
+    "matched": true,
+    "title": "Shwedagon Pagoda",
+    "description": "Buddhist pagoda in Yangon, Myanmar",
+    "qid": "Q464535",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/960px-Shwedagon_Pagoda_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Shwedagon_Pagoda_2017.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 16.79833333,
+     "lng": 96.14944444
+    },
+    "distanceKm": 8,
+    "worldHeritage": []
+   },
+   "sigiriya": {
+    "matched": true,
+    "title": "Sigiriya",
+    "description": "Ancient rock fortress near Dambulla, Sri Lanka",
+    "qid": "Q272153",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sigiriya_%28141688197%29.jpeg/960px-Sigiriya_%28141688197%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Sigiriya_(141688197).jpeg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 7.9569444444444,
+     "lng": 80.759722222222
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Sigiriya",
+      "whsId": "202",
+      "km": 0.3
+     }
+    ]
+   },
+   "stonehenge": {
+    "matched": true,
+    "title": "Stonehenge",
+    "description": "Prehistoric monument in England",
+    "qid": "Q39671",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Stonehenge2007_07_30.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 51.17888888888889,
+     "lng": -1.826111111111111
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Stonehenge",
+      "whsId": "373",
+      "km": 0.3
+     },
+     {
+      "name": "Stonehenge and Associated Monuments",
+      "whsId": "373-001",
+      "km": 0.3
+     }
+    ]
+   },
+   "taktsang": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "tarquinia": {
+    "matched": true,
+    "title": "Tarquinia",
+    "description": "Town in Lazio, Italy",
+    "qid": "Q179999",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Tarquinia_town_square_AvL.JPG/960px-Tarquinia_town_square_AvL.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tarquinia_town_square_AvL.JPG",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 42.249166666667,
+     "lng": 11.756111111111
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Necropolis of Monterozzi",
+      "whsId": "1158-002",
+      "km": 0.1
+     }
+    ]
+   },
+   "ephesus": {
+    "matched": true,
+    "title": "Temple of Artemis",
+    "description": "Ancient Greek temple in Ephesus (near present-day Selçuk, Turkey)",
+    "qid": "Q43018",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Philips_Galle%2C_Dianatemplet_i_Efesos%2C_1572%2C_KKSgb10001-5%2C_Statens_Museum_for_Kunst_%28cropped%29.jpg/960px-Philips_Galle%2C_Dianatemplet_i_Efesos%2C_1572%2C_KKSgb10001-5%2C_Statens_Museum_for_Kunst_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Philips_Galle,_Dianatemplet_i_Efesos,_1572,_KKSgb10001-5,_Statens_Museum_for_Kunst_(cropped).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 37.949722,
+     "lng": 27.363889
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Temple of Ephesian Artemis",
+      "whsId": "1018rev-003",
+      "km": 0.3
+     },
+     {
+      "name": "Ephesus",
+      "whsId": "1018",
+      "km": 1.5
+     },
+     {
+      "name": "Çukuriçi Höyük",
+      "whsId": "1018rev-001",
+      "km": 2.3
+     },
+     {
+      "name": "Ephesus",
+      "whsId": "1018rev",
+      "km": 2.3
+     },
+     {
+      "name": "House of the Virgin Mary",
+      "whsId": "1018rev-004",
+      "km": 4.8
+     }
+    ]
+   },
+   "temple-heaven": {
+    "matched": true,
+    "title": "Temple of Heaven",
+    "description": "Imperial complex of religious buildings in Beijing, China",
+    "qid": "Q125445",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Temple_of_Heaven_20160323_01.jpg/960px-Temple_of_Heaven_20160323_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Temple_of_Heaven_20160323_01.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 39.8822,
+     "lng": 116.4066
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Temple of Heaven",
+      "whsId": "881",
+      "km": 0.4
+     },
+     {
+      "name": "Central Axis of Beijing",
+      "whsId": "1714",
+      "km": 2.7
+     },
+     {
+      "name": "Forbidden City",
+      "whsId": "439-001",
+      "km": 4.3
+     }
+    ]
+   },
+   "templo-mayor": {
+    "matched": true,
+    "title": "Templo Mayor",
+    "description": "Former Aztec temple in Tenochtitlan (now Mexico City)",
+    "qid": "Q774021",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Templo_Mayor_50.jpg/960px-Templo_Mayor_50.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Templo_Mayor_50.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 19.435,
+     "lng": -99.131389
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Historic downtown of Mexico City",
+      "whsId": "1351-00",
+      "km": 0.4
+     },
+     {
+      "name": "Historic downtown of Mexico City",
+      "whsId": "412-001",
+      "km": 0.4
+     },
+     {
+      "name": "Historic Centre of Mexico City and Xochimilco",
+      "whsId": "412",
+      "km": 1.3
+     },
+     {
+      "name": "Luis Barragán House and Studio",
+      "whsId": "1136",
+      "km": 6.9
+     },
+     {
+      "name": "Ciudad Universitaria",
+      "whsId": "1250",
+      "km": 12.5
+     }
+    ]
+   },
+   "teotihuacan": {
+    "matched": true,
+    "title": "Teotihuacan",
+    "description": "Ancient Mesoamerican city",
+    "qid": "Q172613",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg/960px-ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "ZA77_Teotihuacán_edo_de_mex_Herberto_de_la_rosa.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 19.6925,
+     "lng": -98.843888888889
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Teotihuacan",
+      "whsId": "414",
+      "km": 0.5
+     }
+    ]
+   },
+   "tikal": {
+    "matched": true,
+    "title": "Tikal",
+    "description": "Ruins of major ancient Maya city",
+    "qid": "Q181172",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Tikal_3.jpg/960px-Tikal_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tikal_3.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 17.222094444444,
+     "lng": -89.623613888889
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Tikal National Park",
+      "whsId": "64",
+      "km": 0.5
+     }
+    ]
+   },
+   "tiwanaku": {
+    "matched": true,
+    "title": "Tiwanaku",
+    "description": "Archaeological site in Bolivia",
+    "qid": "Q61750",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/PUERTA_DEL_SOL_TIWANAKU.jpg/960px-PUERTA_DEL_SOL_TIWANAKU.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "PUERTA_DEL_SOL_TIWANAKU.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": -16.554722222222,
+     "lng": -68.673333333333
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Tiwanaku",
+      "whsId": "567",
+      "km": 0.6
+     },
+     {
+      "name": "Tiwanaku",
+      "whsId": "567rev",
+      "km": 0.6
+     },
+     {
+      "name": "BO-DV-02/CS-2011",
+      "whsId": "1459-015",
+      "km": 1.7
+     }
+    ]
+   },
+   "nara-todaiji": {
+    "matched": true,
+    "title": "Tōdai-ji",
+    "description": "Buddhist temple in Nara, Japan",
+    "qid": "Q460367",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/960px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Tōdai-ji_Kon-dō.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 34.689166666667,
+     "lng": 135.83972222222
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Tōdai-ji Temple",
+      "whsId": "870-001",
+      "km": 0.1
+     },
+     {
+      "name": "Kōfuku-ji Temple",
+      "whsId": "870-002",
+      "km": 1.1
+     },
+     {
+      "name": "Kasuga-Taisha and Kasugayama Primeval Forest",
+      "whsId": "870-003",
+      "km": 1.2
+     },
+     {
+      "name": "Historic Monuments of Ancient Nara",
+      "whsId": "870",
+      "km": 1.6
+     },
+     {
+      "name": "Gangō-ji Temple",
+      "whsId": "870-004",
+      "km": 1.6
+     },
+     {
+      "name": "Heijō Palace",
+      "whsId": "870-007",
+      "km": 4.1
+     },
+     {
+      "name": "Tōshōdai-ji Temple",
+      "whsId": "870-006",
+      "km": 5.3
+     },
+     {
+      "name": "Yakushi-ji Temple",
+      "whsId": "870-005",
+      "km": 5.6
+     },
+     {
+      "name": "Hokki-ji Temple",
+      "whsId": "660-002",
+      "km": 11.4
+     },
+     {
+      "name": "Chūgū-ji Temple",
+      "whsId": "660",
+      "km": 12.4
+     }
+    ]
+   },
+   "troy": {
+    "matched": true,
+    "title": "Troy",
+    "description": "Ancient city in northwest Asia Minor",
+    "qid": "Q22647",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/960px-Walls_of_Troy_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Walls_of_Troy_(2).jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 39.9575,
+     "lng": 26.238888888889
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Troy",
+      "whsId": "849",
+      "km": 0.3
+     }
+    ]
+   },
+   "uluru": {
+    "matched": true,
+    "title": "Uluru",
+    "description": "Sandstone monolith in the Northern Territory, Australia",
+    "qid": "Q33910",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/960px-ULURU.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "ULURU.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": -25.345,
+     "lng": 131.0361111111111
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Uluṟu-Kata Tjuṯa National Park",
+      "whsId": "447",
+      "km": 5.8
+     }
+    ]
+   },
+   "valhalla-site": {
+    "matched": true,
+    "title": "Uppsala",
+    "description": "City in Uppland, Sweden",
+    "qid": "Q25286",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Uppsala.jpg/960px-Uppsala.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Uppsala.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 59.849760548324,
+     "lng": 17.638946597524
+    },
+    "distanceKm": 6,
+    "worldHeritage": []
+   },
+   "valley-kings": {
+    "matched": true,
+    "title": "Valley of the Kings",
+    "description": "Necropolis in ancient Egypt",
+    "qid": "Q133423",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Luxor%2C_Tal_der_K%C3%B6nige_%281995%2C_860x605%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageFile": "Luxor,_Tal_der_Könige_(1995,_860x605).jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 25.74025,
+     "lng": 32.602358
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Theban Necropolis",
+      "whsId": "87-003",
+      "km": 0.7
+     },
+     {
+      "name": "Ancient Thebes with its Necropolis",
+      "whsId": "87",
+      "km": 2.4
+     },
+     {
+      "name": "Luxor Temple",
+      "whsId": "87-002",
+      "km": 5.9
+     },
+     {
+      "name": "Karnak Temple Complex",
+      "whsId": "87-001",
+      "km": 6.3
+     }
+    ]
+   },
+   "varanasi": {
+    "matched": true,
+    "title": "Varanasi",
+    "description": "Metropolis in Uttar Pradesh, India",
+    "qid": "Q79980",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg/960px-Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Varanasi,_India,_Ghats,_Cremation_ceremony_in_progress.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 25.318888888889,
+     "lng": 83.012777777778
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Sarnath",
+      "whsId": "927",
+      "km": 6.9
+     }
+    ]
+   },
+   "wulingyuan": {
+    "matched": true,
+    "title": "Wulingyuan",
+    "description": "Scenic and historic site in Hunan Province, China",
+    "qid": "Q4187",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/960px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 29.345555555555556,
+     "lng": 110.46666666666667
+    },
+    "distanceKm": 5,
+    "worldHeritage": [
+     {
+      "name": "Wulingyuan",
+      "whsId": "640",
+      "km": 4.6
+     }
+    ]
+   },
+   "yazilikaya": {
+    "matched": true,
+    "title": "Yazılıkaya",
+    "description": "Capital city of the Hittite Empire",
+    "qid": "Q529923",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Yazilikaya_Kammer_A.jpg/960px-Yazilikaya_Kammer_A.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Yazilikaya_Kammer_A.jpg",
+    "unesco": false,
+    "wikidataCoord": {
+     "lat": 40.025,
+     "lng": 34.63278
+    },
+    "distanceKm": 1,
+    "worldHeritage": [
+     {
+      "name": "Osman Kayası",
+      "whsId": "377-004",
+      "km": 0.9
+     },
+     {
+      "name": "Hattusa",
+      "whsId": "377-001",
+      "km": 1.2
+     },
+     {
+      "name": "Yazılıkaya",
+      "whsId": "377-002",
+      "km": 1.2
+     },
+     {
+      "name": "Hattusha: the Hittite Capital",
+      "whsId": "377",
+      "km": 1.8
+     },
+     {
+      "name": "Kayalı Boğaz",
+      "whsId": "377-003",
+      "km": 3.3
+     }
+    ]
+   },
+   "yggdrasil-well": {
+    "matched": false,
+    "worldHeritage": []
+   },
+   "thingvellir": {
+    "matched": true,
+    "title": "Þingvellir",
+    "description": "Site of Iceland's ancient parliament",
+    "qid": "Q107370",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/960px-%C3%9Eingvellir_from_the_information_centre.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageFile": "Þingvellir_from_the_information_centre.JPG",
+    "unesco": true,
+    "wikidataCoord": {
+     "lat": 64.258055555556,
+     "lng": -21.125
+    },
+    "distanceKm": 0,
+    "worldHeritage": [
+     {
+      "name": "Thingvellir National Park",
+      "whsId": "1152",
+      "km": 0.3
+     }
+    ]
+   }
+  }
+ }
+}

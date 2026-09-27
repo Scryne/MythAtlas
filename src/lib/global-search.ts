@@ -145,7 +145,6 @@ function buildEntries(): SearchEntry[] {
         item.dna?.moralLesson || '',
         item.dna?.emotionalCore || '',
         item.dna?.cosmicScope || '',
-        item.dna?.originTheory || '',
       ].join(' '),
     };
   });

@@ -9,7 +9,6 @@ import {
   sacredSites,
   siteArchaeologyPeriod,
   siteArtifactCount,
-  siteExcavationStatus,
   siteProtectionStatus,
 } from '@/lib/myth-data';
 import { siteTypeLabel } from '@/lib/myth-utils';
@@ -19,18 +18,6 @@ type ViewMode = 'map' | 'grid' | 'list';
 const PROTECTION_FILTERS = [
   { key: 'all', label: 'Tum korumalar' },
   { key: 'UNESCO', label: 'UNESCO Dunya Mirasi' },
-  { key: 'national_heritage', label: 'Ulusal miras' },
-  { key: 'local_protection', label: 'Yerel koruma' },
-  { key: 'disputed', label: 'Tartismali' },
-] as const;
-
-const EXCAVATION_FILTERS = [
-  { key: 'all', label: 'Tum kazi durumlari' },
-  { key: 'active_excavation', label: 'Devam eden kazi' },
-  { key: 'completed', label: 'Tamamlandi' },
-  { key: 'protected', label: 'Koruma altinda' },
-  { key: 'unexcavated', label: 'Kazilmamis' },
-  { key: 'inaccessible', label: 'Erisim yok' },
 ] as const;
 
 const PERIOD_FILTERS = [
@@ -75,7 +62,6 @@ export default function AllSitesPage() {
   const [typeFilter, setTypeFilter] = useState('all');
   const [protectionFilter, setProtectionFilter] = useState<(typeof PROTECTION_FILTERS)[number]['key']>('all');
   const [periodFilter, setPeriodFilter] = useState<(typeof PERIOD_FILTERS)[number]['key']>('all');
-  const [excavationFilter, setExcavationFilter] = useState<(typeof EXCAVATION_FILTERS)[number]['key']>('all');
   const [sortBy, setSortBy] = useState<'name' | 'mythology' | 'era' | 'artifactCount'>('name');
 
   const mythologies = useMemo(
@@ -95,19 +81,18 @@ export default function AllSitesPage() {
         if (typeFilter !== 'all' && site.type !== typeFilter) return false;
         if (protectionFilter !== 'all' && siteProtectionStatus(site) !== protectionFilter) return false;
         if (periodFilter !== 'all' && siteArchaeologyPeriod(site) !== periodFilter) return false;
-        if (excavationFilter !== 'all' && siteExcavationStatus(site) !== excavationFilter) return false;
         if (!q) return true;
         const blob = `${site.name} ${site.country || ''} ${site.description}`.toLowerCase();
         return blob.includes(q);
       })
       .sort((a, b) => compareBySort(a, b, sortBy));
-  }, [excavationFilter, mythologyFilter, periodFilter, protectionFilter, query, sortBy, typeFilter]);
+  }, [mythologyFilter, periodFilter, protectionFilter, query, sortBy, typeFilter]);
 
   const visibleMapCards = useMemo(() => filteredSites.slice(0, mapCardLimit), [filteredSites, mapCardLimit]);
 
   useEffect(() => {
     setMapCardLimit(6);
-  }, [query, mythologyFilter, typeFilter, protectionFilter, periodFilter, excavationFilter, sortBy]);
+  }, [query, mythologyFilter, typeFilter, protectionFilter, periodFilter, sortBy]);
 
   const mapMarkers = useMemo(
     () =>
@@ -195,18 +180,6 @@ export default function AllSitesPage() {
               </option>
             ))}
           </select>
-          <select
-            value={excavationFilter}
-            onChange={(event) => setExcavationFilter(event.target.value as (typeof EXCAVATION_FILTERS)[number]['key'])}
-            className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
-          >
-            {EXCAVATION_FILTERS.map((item) => (
-              <option key={item.key} value={item.key}>
-                {item.label}
-              </option>
-            ))}
-          </select>
-
           <div className="grid grid-cols-3 gap-2">
             {(['map', 'grid', 'list'] as ViewMode[]).map((mode) => (
               <button
@@ -277,7 +250,7 @@ export default function AllSitesPage() {
                 </p>
                 <p className="line-clamp-3 text-sm text-foreground/75">{site.description}</p>
                 <p className="text-xs text-foreground/65">
-                  {site.country || 'Unknown'} · Kazi: {siteExcavationStatus(site) || '-'} · Eser: {siteArtifactCount(site)}
+                  {site.country || 'Unknown'} · Eser: {siteArtifactCount(site)}
                 </p>
               </div>
             </HoverPrefetchLink>
@@ -294,7 +267,6 @@ export default function AllSitesPage() {
                 <th className="px-3 py-2">Mitoloji</th>
                 <th className="px-3 py-2">Donem</th>
                 <th className="px-3 py-2">Koruma</th>
-                <th className="px-3 py-2">Kazi</th>
                 <th className="px-3 py-2">Eser</th>
               </tr>
             </thead>
@@ -309,7 +281,6 @@ export default function AllSitesPage() {
                   <td className="px-3 py-2 text-foreground/75">{mythologyById.get(site.mythologyId)?.name || site.mythologyId}</td>
                   <td className="px-3 py-2 text-foreground/75">{site.era || '-'}</td>
                   <td className="px-3 py-2 text-foreground/75">{siteProtectionStatus(site) || '-'}</td>
-                  <td className="px-3 py-2 text-foreground/75">{siteExcavationStatus(site) || '-'}</td>
                   <td className="px-3 py-2 text-foreground/75">{siteArtifactCount(site)}</td>
                 </tr>
               ))}

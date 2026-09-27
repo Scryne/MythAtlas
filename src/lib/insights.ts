@@ -720,7 +720,8 @@ export function getArtifactsByCurrentCountryData(): ArtifactCountryDatum[] {
   sacredSites.forEach((site) => {
     (site.archaeology?.museumConnections || []).forEach((museum) => {
       const country = museum.country?.trim() || 'Unknown';
-      grouped.set(country, (grouped.get(country) ?? 0) + Number(museum.artifactCount || 0));
+      // Kayıtlı öne çıkan eserler sayılır (eski "artifactCount" kaynaksız bir tahmindi).
+      grouped.set(country, (grouped.get(country) ?? 0) + (museum.notableArtifacts?.length ?? 0));
     });
   });
 

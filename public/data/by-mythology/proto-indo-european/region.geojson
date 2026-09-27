@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[25,42],[52,42],[52,57],[25,57],[25,42]]]},"properties":{"id":"proto-indo-european","name":"Proto-Indo-European Tradition","region":"Pontic-Caspian Steppe","era":"Prehistory","eraBucket":"ancient","color":"#6c5c95","bbox":"25,42,52,57"}}]}

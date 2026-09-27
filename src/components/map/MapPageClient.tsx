@@ -20,7 +20,6 @@ import {
   sacredSites as sacredSitesCatalog,
   siteArchaeologyPeriod,
   siteArtifactCount,
-  siteExcavationStatus,
   siteHasForeignMuseumHoldings,
   siteProtectionStatus,
   type MythData,
@@ -60,7 +59,6 @@ const LAYERS = {
   siteClusterCount: 'site-cluster-count',
   sites: 'sites',
   siteArchaeologyUnesco: 'site-archaeology-unesco',
-  siteArchaeologyActive: 'site-archaeology-active',
   siteArchaeologyForeign: 'site-archaeology-foreign',
   mythGlow: 'myth-glow',
   myths: 'myths',
@@ -350,8 +348,7 @@ export default function MapPage() {
         sites.map((site) => [
           site.id,
           {
-            protectionStatus: siteProtectionStatus(site) || 'unprotected',
-            excavationStatus: siteExcavationStatus(site) || 'protected',
+            protectionStatus: siteProtectionStatus(site) || 'none',
             artifactCount: siteArtifactCount(site),
             hasForeignMuseums: siteHasForeignMuseumHoldings(site),
             archaeologyPeriod: siteArchaeologyPeriod(site),
@@ -993,20 +990,6 @@ export default function MapPage() {
           },
         });
         map.addLayer({
-          id: LAYERS.siteArchaeologyActive,
-          type: 'circle',
-          source: SOURCES.sites,
-          filter: ['all', ['!', ['has', 'point_count']], ['==', ['get', 'excavationStatus'], 'active_excavation']],
-          minzoom: 4,
-          paint: {
-            'circle-color': 'rgba(0,0,0,0)',
-            'circle-stroke-color': 'rgb(232, 201, 106)',
-            'circle-stroke-width': 1.2,
-            'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 7, 10, 12],
-            'circle-opacity': 0.55,
-          },
-        });
-        map.addLayer({
           id: LAYERS.siteArchaeologyForeign,
           type: 'circle',
           source: SOURCES.sites,
@@ -1261,8 +1244,7 @@ export default function MapPage() {
                 const siteId = String(feature?.properties?.id || '');
                 const siteRecord = siteById.get(siteId);
                 const meta = siteArchaeologyMetaById.get(siteId);
-                const protectionStatus = meta?.protectionStatus || 'unprotected';
-                const excavationStatus = meta?.excavationStatus || 'protected';
+                const protectionStatus = meta?.protectionStatus || 'none';
                 const artifactCount = meta?.artifactCount || 0;
                 const hasForeignMuseums = meta?.hasForeignMuseums ? 'true' : 'false';
                 const archaeologyPeriod = meta?.archaeologyPeriod || 'ancient';
@@ -1271,7 +1253,6 @@ export default function MapPage() {
                   properties: {
                     ...feature.properties,
                     protectionStatus,
-                    excavationStatus,
                     artifactCount,
                     hasForeignMuseums,
                     archaeologyPeriod,
@@ -1317,7 +1298,6 @@ export default function MapPage() {
           LAYERS.siteGlow,
           LAYERS.sites,
           LAYERS.siteArchaeologyUnesco,
-          LAYERS.siteArchaeologyActive,
           LAYERS.siteArchaeologyForeign,
           LAYERS.myths,
           LAYERS.deities,
@@ -1365,12 +1345,12 @@ export default function MapPage() {
           const feature = event.features?.[0];
           if (!feature) return;
           const name = String(feature.properties?.name || 'Unknown site');
-          const protection = String(feature.properties?.protectionStatus || 'unprotected');
-          const excavation = String(feature.properties?.excavationStatus || 'protected');
+          const unesco = feature.properties?.protectionStatus === 'UNESCO';
           const artifacts = Number(feature.properties?.artifactCount || 0);
+          const parts = [unesco ? 'UNESCO Dünya Mirası' : null, artifacts ? `${artifacts} eser kaydı` : null].filter(Boolean);
           setTooltip({
             title: name,
-            subtitle: `${protection} · ${excavation} · artifacts: ${artifacts}`,
+            subtitle: parts.join(' · '),
             x: event.point.x,
             y: event.point.y,
           });
@@ -1669,10 +1649,6 @@ export default function MapPage() {
       if (map.getLayer(LAYERS.siteGlow)) {
         map.setPaintProperty(LAYERS.siteGlow, 'circle-opacity', dimExpression);
       }
-      if (map.getLayer(LAYERS.siteArchaeologyActive)) {
-        map.setPaintProperty(LAYERS.siteArchaeologyActive, 'circle-radius', ['interpolate', ['linear'], ['zoom'], 4, 8, 10, 12] as any);
-        map.setPaintProperty(LAYERS.siteArchaeologyActive, 'circle-opacity', 0.45 as any);
-      }
       return;
     }
 
@@ -1722,23 +1698,6 @@ export default function MapPage() {
                 0.06,
               ] as any)
             : ((0.22 + Math.sin(phase) * 0.05) as any)
-        );
-      }
-
-      if (map.getLayer(LAYERS.siteArchaeologyActive)) {
-        map.setPaintProperty(LAYERS.siteArchaeologyActive, 'circle-radius', [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          4,
-          7 + Math.sin(phase * 1.6) * 1.1,
-          10,
-          11.5 + Math.sin(phase * 1.6) * 1.3,
-        ] as any);
-        map.setPaintProperty(
-          LAYERS.siteArchaeologyActive,
-          'circle-opacity',
-          0.38 + Math.sin(phase * 1.35) * 0.17 as any
         );
       }
 
@@ -1839,19 +1798,6 @@ export default function MapPage() {
               siteFilter,
             ] as any)
           : (['all', ['!', ['has', 'point_count']], ['==', ['get', 'protectionStatus'], 'UNESCO']] as any)
-      );
-    }
-    if (map.getLayer(LAYERS.siteArchaeologyActive)) {
-      map.setFilter(
-        LAYERS.siteArchaeologyActive,
-        siteFilter
-          ? ([
-              'all',
-              ['!', ['has', 'point_count']],
-              ['==', ['get', 'excavationStatus'], 'active_excavation'],
-              siteFilter,
-            ] as any)
-          : (['all', ['!', ['has', 'point_count']], ['==', ['get', 'excavationStatus'], 'active_excavation']] as any)
       );
     }
     if (map.getLayer(LAYERS.siteArchaeologyForeign)) {
@@ -1999,7 +1945,6 @@ export default function MapPage() {
     setVisibility(LAYERS.siteGlow, visible.sites);
     setVisibility(LAYERS.sites, visible.sites);
     setVisibility(LAYERS.siteArchaeologyUnesco, visible.sites && archaeologyLayerEnabled);
-    setVisibility(LAYERS.siteArchaeologyActive, visible.sites && archaeologyLayerEnabled);
     setVisibility(LAYERS.siteArchaeologyForeign, visible.sites && archaeologyLayerEnabled);
     setVisibility(LAYERS.mythGlow, visible.myths);
     setVisibility(LAYERS.myths, visible.myths);

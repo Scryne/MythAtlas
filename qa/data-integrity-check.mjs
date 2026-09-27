@@ -277,7 +277,8 @@ for (const mythology of mythologies) {
     });
   }
 
-  if (!WIKIMEDIA_RE.test(String(mythology.imageUrl || ''))) {
+  // Görsel boş olabilir (doğrulanamayan kayıt görselsiz kalır); doluysa Commons olmalı.
+  if (mythology.imageUrl && !WIKIMEDIA_RE.test(String(mythology.imageUrl))) {
     pushIssue(report.issues.mythologies, 'invalid_image_url', 'Image URL is not a Wikimedia Commons upload URL.', {
       id: mythology.id,
       imageUrl: mythology.imageUrl,
@@ -365,7 +366,8 @@ for (const myth of myths) {
     }
   }
 
-  if (!WIKIMEDIA_RE.test(String(myth.imageUrl || ''))) {
+  // Görsel boş olabilir (doğrulanamayan kayıt görselsiz kalır); doluysa Commons olmalı.
+  if (myth.imageUrl && !WIKIMEDIA_RE.test(String(myth.imageUrl))) {
     pushIssue(report.issues.myths, 'invalid_image_url', 'Image URL is not a Wikimedia Commons upload URL.', {
       id: myth.id,
       imageUrl: myth.imageUrl,
@@ -435,7 +437,8 @@ for (const deity of deities) {
     });
   }
 
-  if (!WIKIMEDIA_RE.test(String(deity.imageUrl || ''))) {
+  // Görsel boş olabilir (doğrulanamayan kayıt görselsiz kalır); doluysa Commons olmalı.
+  if (deity.imageUrl && !WIKIMEDIA_RE.test(String(deity.imageUrl))) {
     pushIssue(report.issues.deities, 'invalid_image_url', 'Image URL is not a Wikimedia Commons upload URL.', {
       id: deity.id,
       imageUrl: deity.imageUrl,
@@ -508,7 +511,8 @@ for (const site of sacredSites) {
     });
   }
 
-  if (!WIKIMEDIA_RE.test(String(site.imageUrl || ''))) {
+  // Görsel boş olabilir (doğrulanamayan kayıt görselsiz kalır); doluysa Commons olmalı.
+  if (site.imageUrl && !WIKIMEDIA_RE.test(String(site.imageUrl))) {
     pushIssue(report.issues.sacredSites, 'invalid_image_url', 'Image URL is not a Wikimedia Commons upload URL.', {
       id: site.id,
       imageUrl: site.imageUrl,

@@ -18,7 +18,7 @@
       "ptah"
     ],
     "era": "MÖ 1264",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg/960px-Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg",
     "modernStatus": "UNESCO World Heritage Site, relocated from Aswan dam flooding",
     "country": "Egypt",
     "tags": [
@@ -29,17 +29,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Abu Simbel",
+          "listId": "88",
+          "url": "https://whc.unesco.org/en/list/88/"
+        }
       },
       "artifacts": [
         {
@@ -50,7 +46,6 @@
           "currentLocation": "In situ",
           "description": "Monumental facade colossi of the Great Temple.",
           "mythologicalSignificance": "Royal-divine iconography tied to solar cult.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
           "museumUrl": "https://whc.unesco.org/en/list/88/"
         }
       ],
@@ -63,38 +58,10 @@
           "Sandstone"
         ],
         "constructionTechnique": "Rock-cut monumental carving",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
-      "museumConnections": [
-        {
-          "museumName": "Abu Simbel Site Context",
-          "city": "Abu Simbel",
-          "country": "Egypt",
-          "collectionUrl": "https://whc.unesco.org/en/list/88/",
-          "artifactCount": 60,
-          "notableArtifacts": [
-            "Ramesses II Colossi"
-          ]
-        }
-      ],
-      "chronology": [
-        {
-          "period": "c. 1264-1244 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "museumConnections": [],
+      "chronology": []
     }
   },
   {
@@ -114,7 +81,7 @@
       "shiva"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sri_Pada.JPG/960px-Sri_Pada.JPG",
     "modernStatus": "Active pilgrimage site for all four religions",
     "country": "Sri Lanka",
     "tags": [
@@ -125,19 +92,18 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Peak Wilderness Sanctuary",
+          "listId": "1203",
+          "url": "https://whc.unesco.org/en/list/1203/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active pilgrimage site for all four religions"
       },
@@ -166,7 +132,7 @@
       "shiva"
     ],
     "era": "MS 1150",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg",
     "modernStatus": "UNESCO World Heritage Site, Cambodia's symbol",
     "country": "Cambodia",
     "tags": [
@@ -177,17 +143,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Angkor Wat",
+          "listId": "668",
+          "url": "https://whc.unesco.org/en/list/668/"
+        }
       },
       "artifacts": [
         {
@@ -198,7 +160,6 @@
           "currentLocation": "In situ",
           "description": "Narrative relief panels across gallery walls.",
           "mythologicalSignificance": "Visualizes Vishnu-centered cosmic order.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
           "museumUrl": "https://www.nationalmuseum.gov.kh/"
         }
       ],
@@ -212,13 +173,7 @@
           "Laterite"
         ],
         "constructionTechnique": "Hydraulic-sacred landscape engineering",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -226,24 +181,12 @@
           "city": "Phnom Penh",
           "country": "Cambodia",
           "collectionUrl": "https://www.nationalmuseum.gov.kh/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Samudra Manthan Bas-Reliefs"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 1113-1150 CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -269,7 +212,7 @@
       "frigg"
     ],
     "era": "MS 200",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg/1280px-Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg",
+    "imageUrl": "",
     "modernStatus": "Mythical — no physical location",
     "country": "Mythical",
     "tags": [
@@ -280,19 +223,13 @@
     "stillExists": false,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 200",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Mythical — no physical location"
       },
@@ -318,7 +255,7 @@
       "ahura-mazda"
     ],
     "era": "MS 470",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Persepolis_24.11.2009_11-12-14.jpg/1280px-Persepolis_24.11.2009_11-12-14.jpg",
+    "imageUrl": "",
     "modernStatus": "Active Zoroastrian temple and museum",
     "country": "Iran",
     "tags": [
@@ -329,19 +266,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Heritage district of Yazd",
+          "listId": "1544",
+          "url": "https://whc.unesco.org/en/list/1544/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 470",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active Zoroastrian temple and museum"
       },
@@ -369,7 +306,7 @@
       "el-deity"
     ],
     "era": "MÖ 2500",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Baalbek_-_temple_of_Bacchus.jpg/1280px-Baalbek_-_temple_of_Bacchus.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Temple_of_Bacchus%2C_Baalbek%2C_Lebanon_%2849890013476%29.jpg/960px-Temple_of_Bacchus%2C_Baalbek%2C_Lebanon_%2849890013476%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Lebanon",
     "tags": [
@@ -380,21 +317,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Baalbek",
+          "listId": "294",
+          "url": "https://whc.unesco.org/en/list/294/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 2500",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -420,7 +356,7 @@
       "ishtar-deity"
     ],
     "era": "MÖ 1800",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pergamonmuseum_Ischtar-Tor_01.jpg/800px-Pergamonmuseum_Ischtar-Tor_01.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ishtar_Gate.jpg/960px-Ishtar_Gate.jpg",
     "modernStatus": "UNESCO World Heritage Site, partially reconstructed",
     "country": "Iraq",
     "tags": [
@@ -431,19 +367,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Babylon",
+          "listId": "278rev",
+          "url": "https://whc.unesco.org/en/list/278rev/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 1800",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, partially reconstructed"
       },
@@ -470,7 +406,7 @@
       "maitreya"
     ],
     "era": "MS 849",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bagan%2C_Burma.jpg/960px-Bagan%2C_Burma.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Myanmar",
     "tags": [
@@ -481,21 +417,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Bagan",
+          "listId": "1588",
+          "url": "https://whc.unesco.org/en/list/1588/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 849",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -519,7 +454,7 @@
       "white-buffalo-deity"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/1280px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BEAR_BUTTE.jpg/960px-BEAR_BUTTE.jpg",
     "modernStatus": "State park, active sacred site, prayer cloths visible",
     "country": "USA",
     "tags": [
@@ -530,19 +465,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "State park, active sacred site, prayer cloths visible"
       },
@@ -568,7 +496,7 @@
       "buddha"
     ],
     "era": "MÖ 528",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Bodhgaya_3639641913_f4c5f73689_t.jpg/960px-Bodhgaya_3639641913_f4c5f73689_t.jpg",
     "modernStatus": "UNESCO World Heritage Site, active pilgrimage center",
     "country": "India",
     "tags": [
@@ -579,19 +507,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Mahabodhi Temple",
+          "listId": "1056",
+          "url": "https://whc.unesco.org/en/list/1056/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 528",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, active pilgrimage center"
       },
@@ -618,7 +546,7 @@
       "avalokiteshvara-deity"
     ],
     "era": "MS 800",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg",
     "modernStatus": "UNESCO World Heritage Site, New Seven Wonders candidate",
     "country": "Indonesia",
     "tags": [
@@ -629,17 +557,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Borobudur Temple Compounds",
+          "listId": "592",
+          "url": "https://whc.unesco.org/en/list/592/"
+        }
       },
       "artifacts": [
         {
@@ -650,7 +574,6 @@
           "currentLocation": "In situ",
           "description": "Extensive relief corpus depicting Buddhist cosmology.",
           "mythologicalSignificance": "Represents karmic worlds and bodhisattva path.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
           "museumUrl": "https://kebudayaan.kemdikbud.go.id/"
         }
       ],
@@ -663,13 +586,7 @@
           "Andesite"
         ],
         "constructionTechnique": "Interlocking stone terrace system",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -677,24 +594,12 @@
           "city": "Magelang",
           "country": "Indonesia",
           "collectionUrl": "https://kebudayaan.kemdikbud.go.id/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Buddhist Narrative Relief Panels"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "8th-9th century CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -715,7 +620,7 @@
       "avalokiteshvara-deity"
     ],
     "era": "MS 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "",
     "modernStatus": "UNESCO World Heritage Site, active Buddhist center",
     "country": "Nepal",
     "tags": [
@@ -726,19 +631,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Boudhanath",
+          "listId": "121bis",
+          "url": "https://whc.unesco.org/en/list/121bis/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, active Buddhist center"
       },
@@ -765,7 +670,7 @@
       "el-deity"
     ],
     "era": "MÖ 5000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Baalbek_-_temple_of_Bacchus.jpg/1280px-Baalbek_-_temple_of_Bacchus.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Byblos_Libanon_2003.JPG/960px-Byblos_Libanon_2003.JPG",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Lebanon",
     "tags": [
@@ -776,21 +681,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Byblos",
+          "listId": "295",
+          "url": "https://whc.unesco.org/en/list/295/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 5000",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -812,7 +716,7 @@
     ],
     "associatedDeities": [],
     "era": "MS 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/1280px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/960px-Monks_Mound_-_Summer_2024.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "USA",
     "tags": [
@@ -823,21 +727,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Cahokia",
+          "listId": "198bis",
+          "url": "https://whc.unesco.org/en/list/198bis/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -861,7 +764,7 @@
       "teshub"
     ],
     "era": "MÖ 1200",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yazilikaya_Kammer_A.jpg/1280px-Yazilikaya_Kammer_A.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg/960px-Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg",
     "modernStatus": "UNESCO World Heritage Site, tourist destination",
     "country": "Turkey",
     "tags": [
@@ -872,19 +775,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Göreme National Park and the Rock Sites of Cappadocia",
+          "listId": "357",
+          "url": "https://whc.unesco.org/en/list/357/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 1200",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, tourist destination"
       },
@@ -906,7 +809,7 @@
     "associatedMyths": [],
     "associatedDeities": [],
     "era": "M? 7400",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/%C3%87atalh%C3%B6y%C3%BCk_excavation.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/960px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Turkey",
     "tags": [
@@ -917,17 +820,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "completed",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Çatalhöyük",
+          "listId": "1405",
+          "url": "https://whc.unesco.org/en/list/1405/"
+        }
       },
       "artifacts": [
         {
@@ -938,7 +837,6 @@
           "currentLocation": "Ankara collections",
           "description": "Symbolic figurines and ritual domestic finds.",
           "mythologicalSignificance": "Early household ritual symbolism.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/%C3%87atalh%C3%B6y%C3%BCk_excavation.jpg",
           "museumUrl": "https://muze.gov.tr/"
         }
       ],
@@ -952,13 +850,7 @@
           "Clay plaster"
         ],
         "constructionTechnique": "Rooftop-access agglomerated architecture",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -966,24 +858,12 @@
           "city": "Ankara",
           "country": "Turkey",
           "collectionUrl": "https://muze.gov.tr/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Neolithic Figurines"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 7400-6200 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -1005,7 +885,7 @@
       "chaac-deity"
     ],
     "era": "MÖ 900",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "imageUrl": "",
     "modernStatus": "Tourist and diving sites, some still sacred",
     "country": "Mexico",
     "tags": [
@@ -1016,19 +896,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 900",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Tourist and diving sites, some still sacred"
       },
@@ -1054,7 +928,7 @@
       "kukulkan"
     ],
     "era": "MS 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg",
     "modernStatus": "UNESCO World Heritage Site, New Seven Wonders of the World",
     "country": "Mexico",
     "tags": [
@@ -1065,17 +939,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Chichen Itza",
+          "listId": "483",
+          "url": "https://whc.unesco.org/en/list/483/"
+        }
       },
       "artifacts": [
         {
@@ -1086,7 +956,6 @@
           "currentLocation": "Site museum and national collections",
           "description": "Ritual offering figures from temple precincts.",
           "mythologicalSignificance": "Connected to Kukulkan and Chaac ritual programs.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
           "museumUrl": "https://www.inah.gob.mx/"
         }
       ],
@@ -1099,13 +968,7 @@
           "Limestone"
         ],
         "constructionTechnique": "Corbelled vaulting and plaza planning",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -1113,24 +976,12 @@
           "city": "Yucatan",
           "country": "Mexico",
           "collectionUrl": "https://www.inah.gob.mx/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Chac Mool Figures"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 600-1200 CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -1152,7 +1003,7 @@
       "jupiter"
     ],
     "era": "MS 80",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pantheon_Roma_2.jpg/1280px-Pantheon_Roma_2.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg",
     "modernStatus": "UNESCO World Heritage Site, Rome's most iconic landmark",
     "country": "Italy",
     "tags": [
@@ -1163,17 +1014,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+          "listId": "91",
+          "url": "https://whc.unesco.org/en/list/91/"
+        }
       },
       "artifacts": [
         {
@@ -1184,7 +1031,6 @@
           "currentLocation": "In situ and Colosseum collections",
           "description": "Seat and circulation inscriptions from amphitheater sectors.",
           "mythologicalSignificance": "Tied public spectacle to divine-imperial ideology.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pantheon_Roma_2.jpg/1280px-Pantheon_Roma_2.jpg",
           "museumUrl": "https://parcocolosseo.it/"
         }
       ],
@@ -1198,13 +1044,7 @@
           "Concrete"
         ],
         "constructionTechnique": "Roman vault engineering",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -1212,24 +1052,12 @@
           "city": "Rome",
           "country": "Italy",
           "collectionUrl": "https://parcocolosseo.it/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Flavian Arena Inscriptions"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "72-80 CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -1252,7 +1080,7 @@
       "viracocha-deity"
     ],
     "era": "MS 1100",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Vista_Calle_Suecia.jpg/960px-Vista_Calle_Suecia.jpg",
     "modernStatus": "UNESCO World Heritage Site, vibrant living city",
     "country": "Peru",
     "tags": [
@@ -1263,19 +1091,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Historic centre of Cusco",
+          "listId": "273",
+          "url": "https://whc.unesco.org/en/list/273/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1100",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, vibrant living city"
       },
@@ -1302,7 +1130,7 @@
       "apollo"
     ],
     "era": "MÖ 800",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Delphi%2C_Greece_-_panoramio.jpg/960px-Delphi%2C_Greece_-_panoramio.jpg",
     "modernStatus": "UNESCO World Heritage Site, archaeological museum",
     "country": "Greece",
     "tags": [
@@ -1322,8 +1150,12 @@
             "findings": "Exposed Apollo sanctuary and treasury terraces."
           }
         ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "archaeological Site of Delphi",
+          "listId": "393",
+          "url": "https://whc.unesco.org/en/list/393/"
+        }
       },
       "artifacts": [
         {
@@ -1334,7 +1166,6 @@
           "currentLocation": "Delphi Archaeological Museum",
           "description": "Bronze dedicatory statue from sanctuary context.",
           "mythologicalSignificance": "Embodies Apolline prestige and ritual diplomacy.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
           "museumUrl": "https://odysseus.culture.gr/"
         }
       ],
@@ -1372,7 +1203,6 @@
           "city": "Delphi",
           "country": "Greece",
           "collectionUrl": "https://odysseus.culture.gr/",
-          "artifactCount": 300,
           "notableArtifacts": [
             "Charioteer",
             "Omphalos"
@@ -1416,7 +1246,7 @@
       "coyote-deity"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/1280px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Columnar-jointed_porphyritic_phonolite_%28Eocene%2C_49_Ma%3B_Devils_Tower%2C_Wyoming%2C_USA%29_48.jpg/960px-Columnar-jointed_porphyritic_phonolite_%28Eocene%2C_49_Ma%3B_Devils_Tower%2C_Wyoming%2C_USA%29_48.jpg",
     "modernStatus": "National Monument, voluntary climbing ban in June",
     "country": "USA",
     "tags": [
@@ -1427,19 +1257,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "national_heritage"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "National Monument, voluntary climbing ban in June"
       },
@@ -1465,7 +1288,7 @@
       "shiva"
     ],
     "era": "MS 760",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "India",
     "tags": [
@@ -1476,21 +1299,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Ellora Caves",
+          "listId": "243",
+          "url": "https://whc.unesco.org/en/list/243/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 760",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -1512,7 +1334,7 @@
       "apollo"
     ],
     "era": "MÖ 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/20190511_172_epidaure.jpg/960px-20190511_172_epidaure.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Greece",
     "tags": [
@@ -1523,21 +1345,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Sanctuary of Asclepius, Epidaurus",
+          "listId": "491",
+          "url": "https://whc.unesco.org/en/list/491/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -1563,7 +1384,7 @@
       "avalokiteshvara-deity"
     ],
     "era": "MS 1585",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Steppe_of_western_Mongolia.jpg/1280px-Steppe_of_western_Mongolia.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%C5%9Awi%C4%85tynia_Zachodnia_w_klasztorze_Erdene_Dzuu_01.jpg/960px-%C5%9Awi%C4%85tynia_Zachodnia_w_klasztorze_Erdene_Dzuu_01.jpg",
     "modernStatus": "UNESCO buffer zone, active monastery",
     "country": "Mongolia",
     "tags": [
@@ -1574,19 +1395,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1585",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO buffer zone, active monastery"
       },
@@ -1612,7 +1427,7 @@
       "jade-emperor"
     ],
     "era": "MS 1420",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Temple_of_Heaven.jpg/1280px-Temple_of_Heaven.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
     "modernStatus": "UNESCO World Heritage Site, Palace Museum",
     "country": "China",
     "tags": [
@@ -1623,19 +1438,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Forbidden City",
+          "listId": "439",
+          "url": "https://whc.unesco.org/en/list/439/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1420",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, Palace Museum"
       },
@@ -1661,7 +1476,7 @@
       "inari"
     ],
     "era": "MS 711",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
     "modernStatus": "Active Shinto shrine, most visited in Japan",
     "country": "Japan",
     "tags": [
@@ -1672,19 +1487,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 711",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active Shinto shrine, most visited in Japan"
       },
@@ -1711,7 +1520,7 @@
       "vahagn"
     ],
     "era": "MÖ 77",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ararat_from_Yerevan.jpg/1280px-Ararat_from_Yerevan.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Garni_temple_2021_drone.jpg/960px-Garni_temple_2021_drone.jpg",
     "modernStatus": "National monument, fully restored",
     "country": "Armenia",
     "tags": [
@@ -1722,19 +1531,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "national_heritage"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 77",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "National monument, fully restored"
       },
@@ -1761,7 +1564,7 @@
       "amirani-deity"
     ],
     "era": "MS 1300",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gergeti_Trinity_Church.jpg/1280px-Gergeti_Trinity_Church.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gergeti_Trinity_Church_09.23.jpg/960px-Gergeti_Trinity_Church_09.23.jpg",
     "modernStatus": "Active church, iconic Georgian landmark",
     "country": "Georgia",
     "tags": [
@@ -1772,19 +1575,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1300",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active church, iconic Georgian landmark"
       },
@@ -1810,7 +1607,7 @@
       "dagda"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Glastonbury_Tor-_View_of_an_iconic_landmark_%28geograph_5500644%29.jpg/960px-Glastonbury_Tor-_View_of_an_iconic_landmark_%28geograph_5500644%29.jpg",
     "modernStatus": "National Trust property",
     "country": "England",
     "tags": [
@@ -1821,19 +1618,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "national_heritage"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "National Trust property"
       },
@@ -1859,7 +1649,7 @@
       "tengri"
     ],
     "era": "MÖ 9600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/202408_Orkhon_Valley_01.jpg/1280px-202408_Orkhon_Valley_01.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/960px-G%C3%B6bekli_Tepe%2C_Urfa.jpg",
     "modernStatus": "UNESCO World Heritage Site, ongoing excavation",
     "country": "Turkey",
     "tags": [
@@ -1870,17 +1660,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Göbekli Tepe",
+          "listId": "1572",
+          "url": "https://whc.unesco.org/en/list/1572/"
+        }
       },
       "artifacts": [
         {
@@ -1891,7 +1677,6 @@
           "currentLocation": "In situ and Sanliurfa Museum",
           "description": "Carved megalithic pillars with symbolic fauna.",
           "mythologicalSignificance": "Early ritual cosmology before urban religion.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/202408_Orkhon_Valley_01.jpg/1280px-202408_Orkhon_Valley_01.jpg",
           "museumUrl": "https://muze.gov.tr/"
         }
       ],
@@ -1904,13 +1689,7 @@
           "Limestone"
         ],
         "constructionTechnique": "Megalith carving and intentional backfilling",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -1918,24 +1697,12 @@
           "city": "Sanliurfa",
           "country": "Turkey",
           "collectionUrl": "https://muze.gov.tr/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "T-Pillar Animal Reliefs"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 9600-8200 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -1958,7 +1725,7 @@
       "osiris"
     ],
     "era": "MÖ 2560",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "imageUrl": "",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Egypt",
     "tags": [
@@ -1969,17 +1736,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+          "listId": "86",
+          "url": "https://whc.unesco.org/en/list/86/"
+        }
       },
       "artifacts": [
         {
@@ -1990,7 +1753,6 @@
           "currentLocation": "Grand Egyptian Museum",
           "description": "Large ritual boat from sealed pit near Great Pyramid.",
           "mythologicalSignificance": "Linked to solar afterlife voyage of the king.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
           "museumUrl": "https://grandegyptianmuseum.org/"
         }
       ],
@@ -2004,13 +1766,7 @@
           "Granite"
         ],
         "constructionTechnique": "Large block engineering and astronomical alignment",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -2018,24 +1774,12 @@
           "city": "Giza",
           "country": "Egypt",
           "collectionUrl": "https://grandegyptianmuseum.org/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Khufu Solar Boat"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 2580-2510 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -2057,7 +1801,7 @@
       "enki"
     ],
     "era": "MÖ 2100",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pergamonmuseum_Ischtar-Tor_01.jpg/800px-Pergamonmuseum_Ischtar-Tor_01.jpg",
+    "imageUrl": "",
     "modernStatus": "Partially restored, near Nasiriyah air base",
     "country": "Iraq",
     "tags": [
@@ -2068,17 +1812,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Ur",
+          "listId": "1481",
+          "url": "https://whc.unesco.org/en/list/1481/"
+        }
       },
       "artifacts": [
         {
@@ -2089,7 +1829,6 @@
           "currentLocation": "Baghdad and international collections",
           "description": "Cuneiform records from temple-economy contexts.",
           "mythologicalSignificance": "Associated with Nanna/Sin cult administration.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pergamonmuseum_Ischtar-Tor_01.jpg/800px-Pergamonmuseum_Ischtar-Tor_01.jpg",
           "museumUrl": "https://www.sba-iraq.com/"
         }
       ],
@@ -2103,13 +1842,7 @@
           "Baked brick"
         ],
         "constructionTechnique": "Mass mudbrick core with brick revetment",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -2117,24 +1850,12 @@
           "city": "Baghdad",
           "country": "Iraq",
           "collectionUrl": "https://www.sba-iraq.com/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Ur Temple Tablets"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 21st century BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -2155,7 +1876,7 @@
       "san-shin"
     ],
     "era": "MS 1395",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Gyeongbokgung_Palace.jpg/1280px-Gyeongbokgung_Palace.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg/960px-%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
     "modernStatus": "National treasure, partially restored",
     "country": "South Korea",
     "tags": [
@@ -2166,19 +1887,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "national_heritage"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Changdeokgung",
+          "listId": "816",
+          "url": "https://whc.unesco.org/en/list/816/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1395",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "National treasure, partially restored"
       },
@@ -2205,7 +1926,7 @@
       "hwanung"
     ],
     "era": "MÖ 57",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Gyeongbokgung_Palace.jpg/1280px-Gyeongbokgung_Palace.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Gyeongju_montage.png",
     "modernStatus": "UNESCO World Heritage Site, 'museum without walls'",
     "country": "South Korea",
     "tags": [
@@ -2216,19 +1937,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Tumuli Park Belt",
+          "listId": "976",
+          "url": "https://whc.unesco.org/en/list/976/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 57",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, 'museum without walls'"
       },
@@ -2255,7 +1976,7 @@
       "teshub"
     ],
     "era": "MÖ 1650",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yazilikaya_Kammer_A.jpg/1280px-Yazilikaya_Kammer_A.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg/960px-Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Turkey",
     "tags": [
@@ -2266,21 +1987,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Hattusa",
+          "listId": "377",
+          "url": "https://whc.unesco.org/en/list/377/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 1650",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -2306,7 +2026,7 @@
       "ogun-deity"
     ],
     "era": "MÖ 500",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Obalufon_mask_Ife.jpg/440px-Obalufon_mask_Ife.jpg",
+    "imageUrl": "",
     "modernStatus": "Historic city, active Yoruba spiritual center",
     "country": "Nigeria",
     "tags": [
@@ -2317,19 +2037,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 500",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Historic city, active Yoruba spiritual center"
       },
@@ -2355,7 +2069,7 @@
       "amaterasu"
     ],
     "era": "MÖ 4",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "imageUrl": "",
     "modernStatus": "Active shrine, rebuilt every 20 years (most recent: 2013)",
     "country": "Japan",
     "tags": [
@@ -2366,19 +2080,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 4",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active shrine, rebuilt every 20 years (most recent: 2013)"
       },
@@ -2405,7 +2113,7 @@
       "susanoo"
     ],
     "era": "MS 593",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg/960px-Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Japan",
     "tags": [
@@ -2416,21 +2124,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Itsukushima Shrine",
+          "listId": "776",
+          "url": "https://whc.unesco.org/en/list/776/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 593",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -2454,7 +2161,7 @@
       "susanoo"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Izumo-taisha14bs4592.jpg/960px-Izumo-taisha14bs4592.jpg",
     "modernStatus": "Active Shinto shrine",
     "country": "Japan",
     "tags": [
@@ -2465,19 +2172,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active Shinto shrine"
       },
@@ -2504,7 +2204,7 @@
       "vishnu"
     ],
     "era": "MS 1161",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/960px-Shri_Jagannath_temple.jpg",
     "modernStatus": "Active Hindu temple, major pilgrimage site",
     "country": "India",
     "tags": [
@@ -2515,19 +2215,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1161",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active Hindu temple, major pilgrimage site"
       },
@@ -2553,7 +2247,7 @@
       "amun"
     ],
     "era": "MÖ 1500",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nubian_pyramids_2.jpg/1280px-Nubian_pyramids_2.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gebel_Barkal.jpg/960px-Gebel_Barkal.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Sudan",
     "tags": [
@@ -2564,21 +2258,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Gebel Barkal and the Sites of the Napatan Region",
+          "listId": "1073",
+          "url": "https://whc.unesco.org/en/list/1073/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 1500",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -2606,7 +2299,7 @@
       "louhi"
     ],
     "era": "MS 1835",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Aurora_borealis_above_Lyngen_Alps.jpg/1280px-Aurora_borealis_above_Lyngen_Alps.jpg",
+    "imageUrl": "",
     "modernStatus": "Cultural landscape, UNESCO consideration",
     "country": "Finland/Russia",
     "tags": [
@@ -2617,19 +2310,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1835",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Cultural landscape, UNESCO consideration"
       },
@@ -2656,7 +2343,7 @@
       "amun"
     ],
     "era": "MÖ 2000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Temple_de_Louxor_68.jpg/960px-Temple_de_Louxor_68.jpg",
     "modernStatus": "UNESCO World Heritage Site, major tourist destination",
     "country": "Egypt",
     "tags": [
@@ -2667,17 +2354,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Karnak Temple Complex",
+          "listId": "87",
+          "url": "https://whc.unesco.org/en/list/87/"
+        }
       },
       "artifacts": [
         {
@@ -2688,7 +2371,6 @@
           "currentLocation": "Luxor and Cairo museums",
           "description": "Royal and divine statues from temple cachette deposits.",
           "mythologicalSignificance": "Embodies Amun-centered state theology.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
           "museumUrl": "https://egymonuments.gov.eg/"
         }
       ],
@@ -2702,13 +2384,7 @@
           "Granite"
         ],
         "constructionTechnique": "Dynastic additive monumentality",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -2716,24 +2392,12 @@
           "city": "Luxor",
           "country": "Egypt",
           "collectionUrl": "https://egymonuments.gov.eg/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Karnak Cachette Statues"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 2000 BCE-30 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -2754,7 +2418,7 @@
       "rainbow-serpent"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Uluru%2C_helicopter_view%2C_cropped.jpg/1280px-Uluru%2C_helicopter_view%2C_cropped.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Aerial_Kata_Tjuta_olgas4799.jpg",
     "modernStatus": "UNESCO World Heritage Site, parts restricted to public",
     "country": "Australia",
     "tags": [
@@ -2765,19 +2429,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "inaccessible",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, parts restricted to public"
       },
@@ -2804,7 +2461,7 @@
       "vishnu"
     ],
     "era": "MS 950",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/960px-1_Khajuraho.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "India",
     "tags": [
@@ -2815,21 +2472,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Khajuraho Group of Monuments",
+          "listId": "240",
+          "url": "https://whc.unesco.org/en/list/240/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 950",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -2853,7 +2509,7 @@
       "pele-deity"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Milford_Sound_%28New_Zealand%29.jpg/1280px-Milford_Sound_%28New_Zealand%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Episode_4_of_Kilauea%27s_December_2024_eruption_2025-01-16.jpg/960px-Episode_4_of_Kilauea%27s_December_2024_eruption_2025-01-16.jpg",
     "modernStatus": "Hawaii Volcanoes National Park, UNESCO World Heritage Site",
     "country": "USA (Hawaii)",
     "tags": [
@@ -2864,19 +2520,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Hawaii Volcanoes National Park, UNESCO World Heritage Site"
       },
@@ -2903,7 +2552,7 @@
       "poseidon"
     ],
     "era": "MÖ 2000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Crete_integrated_map-en.svg/960px-Crete_integrated_map-en.svg.png",
     "modernStatus": "Archaeological site, partially reconstructed by Evans",
     "country": "Greece (Crete)",
     "tags": [
@@ -2914,17 +2563,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "national_heritage"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Palace of Knossos",
+          "listId": "1733",
+          "url": "https://whc.unesco.org/en/list/1733/"
+        }
       },
       "artifacts": [
         {
@@ -2935,7 +2580,6 @@
           "currentLocation": "Heraklion Museum",
           "description": "Administrative tablets from palace archive.",
           "mythologicalSignificance": "Context for later Cretan mythic traditions.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
           "museumUrl": "https://heraklionmuseum.gr/"
         }
       ],
@@ -2949,13 +2593,7 @@
           "Limestone"
         ],
         "constructionTechnique": "Complex palatial planning",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -2963,24 +2601,12 @@
           "city": "Heraklion",
           "country": "Greece",
           "collectionUrl": "https://heraklionmuseum.gr/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Linear B Tablets (Knossos)"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 2000-1350 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -2999,7 +2625,7 @@
       "surya"
     ],
     "era": "MS 1250",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/960px-Konarka_Temple.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "India",
     "tags": [
@@ -3010,21 +2636,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Konark Sun Temple",
+          "listId": "246",
+          "url": "https://whc.unesco.org/en/list/246/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1250",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -3049,7 +2674,7 @@
       "inti-deity"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lake_Titicaca_ESA22522896.jpeg/960px-Lake_Titicaca_ESA22522896.jpeg",
     "modernStatus": "Active pilgrimage and tourist site",
     "country": "Peru/Bolivia",
     "tags": [
@@ -3060,19 +2685,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active pilgrimage and tourist site"
       },
@@ -3098,7 +2716,7 @@
       "buddha"
     ],
     "era": "MÖ 563",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/BRP_Lumbini_Mayadevi_temple.jpg/960px-BRP_Lumbini_Mayadevi_temple.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Nepal",
     "tags": [
@@ -3109,21 +2727,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Lumbini",
+          "listId": "666",
+          "url": "https://whc.unesco.org/en/list/666/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 563",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -3147,7 +2764,7 @@
       "ra"
     ],
     "era": "MÖ 1400",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/1550_bis_1070_v._Chr._ca._wurde_der_Tempel_von_Luxor_erbaut._01.jpg/960px-1550_bis_1070_v._Chr._ca._wurde_der_Tempel_von_Luxor_erbaut._01.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Egypt",
     "tags": [
@@ -3158,17 +2775,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Luxor Temple",
+          "listId": "87",
+          "url": "https://whc.unesco.org/en/list/87/"
+        }
       },
       "artifacts": [
         {
@@ -3179,7 +2792,6 @@
           "currentLocation": "Luxor and Paris",
           "description": "Granite obelisks erected at temple entrance.",
           "mythologicalSignificance": "Solar-royal symbolism in Amun cult.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
           "museumUrl": "https://egymonuments.gov.eg/"
         }
       ],
@@ -3193,13 +2805,7 @@
           "Granite"
         ],
         "constructionTechnique": "Axial temple planning",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -3207,24 +2813,12 @@
           "city": "Luxor",
           "country": "Egypt",
           "collectionUrl": "https://egymonuments.gov.eg/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Luxor Obelisk Pair"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 1400 BCE onward",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -3247,7 +2841,7 @@
       "pachamama-deity"
     ],
     "era": "MS 1450",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg",
     "modernStatus": "UNESCO World Heritage Site, New Seven Wonders of the World",
     "country": "Peru",
     "tags": [
@@ -3258,17 +2852,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Historic Sanctuary of Machu Picchu",
+          "listId": "274",
+          "url": "https://whc.unesco.org/en/list/274/"
+        }
       },
       "artifacts": [
         {
@@ -3279,7 +2869,6 @@
           "currentLocation": "Museo Machu Picchu, Cusco",
           "description": "Ceramic and ritual objects from urban-ceremonial sectors.",
           "mythologicalSignificance": "Linked to Inti-centered imperial rites.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
           "museumUrl": "https://museomachupicchu.yale.edu/"
         }
       ],
@@ -3292,13 +2881,7 @@
           "Granite"
         ],
         "constructionTechnique": "Dry masonry with seismic resistance",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -3306,24 +2889,12 @@
           "city": "Cusco",
           "country": "Peru",
           "collectionUrl": "https://museomachupicchu.yale.edu/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Inca Ritual Ceramics"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 1450 CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -3344,7 +2915,7 @@
       "spider-woman"
     ],
     "era": "MS 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/1280px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+    "imageUrl": "",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "USA",
     "tags": [
@@ -3355,21 +2926,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Mesa Verde National Park",
+          "listId": "27",
+          "url": "https://whc.unesco.org/en/list/27/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -3394,7 +2964,7 @@
       "mokosh"
     ],
     "era": "MS 1156",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/St_Basils_Cathedral-500px.jpg/500px-St_Basils_Cathedral-500px.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/960px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
     "modernStatus": "UNESCO World Heritage Site, seat of Russian government",
     "country": "Russia",
     "tags": [
@@ -3405,19 +2975,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Kremlin and Red Square",
+          "listId": "545",
+          "url": "https://whc.unesco.org/en/list/545/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1156",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, seat of Russian government"
       },
@@ -3443,7 +3013,7 @@
       "aramazd"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ararat_from_Yerevan.jpg/1280px-Ararat_from_Yerevan.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2850mm%29.jpg/960px-Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2850mm%29.jpg",
     "modernStatus": "National park in Turkey, visible from Yerevan",
     "country": "Turkey",
     "tags": [
@@ -3454,19 +3024,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "national_heritage"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "National park in Turkey, visible from Yerevan"
       },
@@ -3492,7 +3055,7 @@
       "hwanung"
     ],
     "era": "MÖ 2333",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Gyeongbokgung_Palace.jpg/1280px-Gyeongbokgung_Palace.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/ISS030-E-5315_-_View_of_China.jpg/960px-ISS030-E-5315_-_View_of_China.jpg",
     "modernStatus": "Natural reserve, politically sensitive (NK/China border)",
     "country": "North Korea/China",
     "tags": [
@@ -3503,19 +3066,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 2333",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Natural reserve, politically sensitive (NK/China border)"
       },
@@ -3541,7 +3098,7 @@
       "amaterasu"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/960px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
     "modernStatus": "UNESCO World Heritage Site, active pilgrimage",
     "country": "Japan",
     "tags": [
@@ -3552,19 +3109,18 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Mount Fuji",
+          "listId": "1418",
+          "url": "https://whc.unesco.org/en/list/1418/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, active pilgrimage"
       },
@@ -3591,7 +3147,7 @@
       "parvati"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kailash_north.JPG/960px-Kailash_north.JPG",
     "modernStatus": "Pilgrimage site, restricted access via China",
     "country": "China (Tibet)",
     "tags": [
@@ -3602,19 +3158,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "inaccessible",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Pilgrimage site, restricted access via China"
       },
@@ -3645,7 +3194,7 @@
       "hera"
     ],
     "era": "MÖ 2000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Olympus_National_Park_30.jpg/960px-Olympus_National_Park_30.jpg",
     "modernStatus": "UNESCO Biosphere Reserve, national park",
     "country": "Greece",
     "tags": [
@@ -3656,19 +3205,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "The wider area of Mount Olympus",
+          "listId": "1719",
+          "url": "https://whc.unesco.org/en/list/1719/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 2000",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO Biosphere Reserve, national park"
       },
@@ -3694,7 +3243,7 @@
       "jade-emperor"
     ],
     "era": "MÖ 2000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Temple_of_Heaven.jpg/1280px-Temple_of_Heaven.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/50304-Taishan_%2849055660366%29.jpg/960px-50304-Taishan_%2849055660366%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "China",
     "tags": [
@@ -3705,21 +3254,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Mount Tai",
+          "listId": "437",
+          "url": "https://whc.unesco.org/en/list/437/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 2000",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -3739,7 +3287,7 @@
     "associatedMyths": [],
     "associatedDeities": [],
     "era": "M? 1600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Lion_Gate_Mycenae.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg/960px-Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Greece",
     "tags": [
@@ -3750,17 +3298,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Archaeological Sites of Mycenae and Tiryns",
+          "listId": "941",
+          "url": "https://whc.unesco.org/en/list/941/"
+        }
       },
       "artifacts": [
         {
@@ -3771,7 +3315,6 @@
           "currentLocation": "Athens collections",
           "description": "Elite burial masks from shaft graves.",
           "mythologicalSignificance": "Connected to heroic-age king traditions.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Lion_Gate_Mycenae.jpg",
           "museumUrl": "https://www.namuseum.gr/en/"
         }
       ],
@@ -3785,13 +3328,7 @@
           "Mudbrick"
         ],
         "constructionTechnique": "Cyclopean fortification masonry",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -3799,24 +3336,12 @@
           "city": "Athens",
           "country": "Greece",
           "collectionUrl": "https://www.namuseum.gr/en/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Gold Funerary Masks"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 1600-1100 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -3837,7 +3362,7 @@
       "viracocha-deity"
     ],
     "era": "MÖ 500",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Peru",
     "tags": [
@@ -3848,21 +3373,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Nazca Lines",
+          "listId": "700",
+          "url": "https://whc.unesco.org/en/list/700/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 500",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -3886,7 +3410,7 @@
       "dagda"
     ],
     "era": "MÖ 3200",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Irelands_history.jpg/960px-Irelands_history.jpg",
     "modernStatus": "UNESCO World Heritage Site, solstice lottery for visitors",
     "country": "Ireland",
     "tags": [
@@ -3897,17 +3421,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Brú na Bóinne",
+          "listId": "659",
+          "url": "https://whc.unesco.org/en/list/659/"
+        }
       },
       "artifacts": [
         {
@@ -3918,7 +3438,6 @@
           "currentLocation": "In situ",
           "description": "Spiral-decorated megalithic entrance stone motifs.",
           "mythologicalSignificance": "Associated with solar and ancestral cosmology.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
           "museumUrl": "https://www.worldheritageireland.ie/bruna-boinne/"
         }
       ],
@@ -3932,13 +3451,7 @@
           "Quartz"
         ],
         "constructionTechnique": "Corbelled megalithic chamber construction",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -3946,24 +3459,12 @@
           "city": "County Meath",
           "country": "Ireland",
           "collectionUrl": "https://www.worldheritageireland.ie/bruna-boinne/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Entrance Kerbstone Carvings"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 3200 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -3987,7 +3488,7 @@
       "marduk"
     ],
     "era": "MÖ 2500",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pergamonmuseum_Ischtar-Tor_01.jpg/800px-Pergamonmuseum_Ischtar-Tor_01.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Nineveh_-_Mashki_Gate.jpg/960px-Nineveh_-_Mashki_Gate.jpg",
     "modernStatus": "Archaeological site, severely damaged by ISIS in 2015",
     "country": "Iraq",
     "tags": [
@@ -3998,19 +3499,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 2500",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Archaeological site, severely damaged by ISIS in 2015"
       },
@@ -4036,7 +3531,7 @@
       "ogun-deity"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Obalufon_mask_Ife.jpg/440px-Obalufon_mask_Ife.jpg",
+    "imageUrl": "",
     "modernStatus": "Active shrine with annual festival",
     "country": "Nigeria",
     "tags": [
@@ -4047,19 +3542,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active shrine with annual festival"
       },
@@ -4084,7 +3572,7 @@
       "hera"
     ],
     "era": "M? 776",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Olympia_Zeus_temple.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ancient_Olympia%2C_Greece2.jpg/960px-Ancient_Olympia%2C_Greece2.jpg",
     "modernStatus": "UNESCO World Heritage Site, archaeological park",
     "country": "Greece",
     "tags": [
@@ -4104,8 +3592,12 @@
             "findings": "Excavated Temple of Zeus and sanctuary core."
           }
         ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Olympia",
+          "listId": "517",
+          "url": "https://whc.unesco.org/en/list/517/"
+        }
       },
       "artifacts": [
         {
@@ -4154,7 +3646,6 @@
           "city": "Olympia",
           "country": "Greece",
           "collectionUrl": "https://odysseus.culture.gr/",
-          "artifactCount": 250,
           "notableArtifacts": [
             "Hermes statue",
             "Temple sculpture"
@@ -4199,7 +3690,7 @@
       "tengri"
     ],
     "era": "MS 735",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/202408_Orkhon_Valley_01.jpg/1280px-202408_Orkhon_Valley_01.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Orchon-mongolei.JPG/960px-Orchon-mongolei.JPG",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Mongolia",
     "tags": [
@@ -4210,21 +3701,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Orkhon Valley",
+          "listId": "1081",
+          "url": "https://whc.unesco.org/en/list/1081/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 735",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -4248,7 +3738,7 @@
       "oshun"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Obalufon_mask_Ife.jpg/440px-Obalufon_mask_Ife.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Osun_groove_Osogbo.jpg/960px-Osun_groove_Osogbo.jpg",
     "modernStatus": "UNESCO World Heritage Site, annual festival",
     "country": "Nigeria",
     "tags": [
@@ -4259,19 +3749,18 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Osun-Osogbo Grove",
+          "listId": "1118",
+          "url": "https://whc.unesco.org/en/list/1118/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, annual festival"
       },
@@ -4297,7 +3786,7 @@
       "ah-puch"
     ],
     "era": "MS 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Palenque_Collage.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Mexico",
     "tags": [
@@ -4308,21 +3797,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Palenque",
+          "listId": "411",
+          "url": "https://whc.unesco.org/en/list/411/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -4348,7 +3836,7 @@
       "mars"
     ],
     "era": "MS 125",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pantheon_Roma_2.jpg/1280px-Pantheon_Roma_2.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/960px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg",
     "modernStatus": "Active church, UNESCO World Heritage Site",
     "country": "Italy",
     "tags": [
@@ -4359,19 +3847,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Palazzo Maffei Marescotti",
+          "listId": "91",
+          "url": "https://whc.unesco.org/en/list/91/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 125",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active church, UNESCO World Heritage Site"
       },
@@ -4397,7 +3885,7 @@
       "athena"
     ],
     "era": "MÖ 447",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg",
     "modernStatus": "UNESCO World Heritage Site, most visited site in Greece",
     "country": "Greece",
     "tags": [
@@ -4423,8 +3911,12 @@
             "findings": "Scientific restoration and block-level conservation."
           }
         ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Parthenon",
+          "listId": "404",
+          "url": "https://whc.unesco.org/en/list/404/"
+        }
       },
       "artifacts": [
         {
@@ -4435,7 +3927,6 @@
           "currentLocation": "Acropolis Museum and British Museum",
           "description": "Marble narrative frieze blocks from the temple program.",
           "mythologicalSignificance": "Linked to Athena cult and Panathenaic ritual memory.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
           "museumUrl": "https://www.britishmuseum.org/collection/galleries/parthenon-sculptures"
         }
       ],
@@ -4481,7 +3972,6 @@
           "city": "Athens",
           "country": "Greece",
           "collectionUrl": "https://www.theacropolismuseum.gr/en",
-          "artifactCount": 150,
           "notableArtifacts": [
             "Frieze blocks",
             "Metopes"
@@ -4492,7 +3982,6 @@
           "city": "London",
           "country": "United Kingdom",
           "collectionUrl": "https://www.britishmuseum.org/collection/galleries/parthenon-sculptures",
-          "artifactCount": 75,
           "notableArtifacts": [
             "Parthenon marbles"
           ]
@@ -4535,7 +4024,7 @@
       "ahura-mazda"
     ],
     "era": "MÖ 550",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Persepolis_24.11.2009_11-12-14.jpg/1280px-Persepolis_24.11.2009_11-12-14.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pasargad_Tomb_Cyrus3.jpg/960px-Pasargad_Tomb_Cyrus3.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Iran",
     "tags": [
@@ -4546,21 +4035,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Pasargadae",
+          "listId": "1106",
+          "url": "https://whc.unesco.org/en/list/1106/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 550",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -4584,7 +4072,7 @@
       "ahura-mazda"
     ],
     "era": "MÖ 515",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Persepolis_24.11.2009_11-12-14.jpg/1280px-Persepolis_24.11.2009_11-12-14.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2018-09-21_Iran%2C_Persepolis%2C_Tachara_%28from_the_southeast%29.jpg/960px-2018-09-21_Iran%2C_Persepolis%2C_Tachara_%28from_the_southeast%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Iran",
     "tags": [
@@ -4595,17 +4083,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Persepolis",
+          "listId": "114",
+          "url": "https://whc.unesco.org/en/list/114/"
+        }
       },
       "artifacts": [
         {
@@ -4616,7 +4100,6 @@
           "currentLocation": "Tehran and study collections",
           "description": "Administrative tablets from imperial complex.",
           "mythologicalSignificance": "Documents ritual economy under Ahura Mazda kingship.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Persepolis_24.11.2009_11-12-14.jpg/1280px-Persepolis_24.11.2009_11-12-14.jpg",
           "museumUrl": "https://irannationalmuseum.ir/"
         }
       ],
@@ -4630,13 +4113,7 @@
           "Mudbrick"
         ],
         "constructionTechnique": "Monumental terrace engineering",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -4644,24 +4121,12 @@
           "city": "Tehran",
           "country": "Iran",
           "collectionUrl": "https://irannationalmuseum.ir/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Persepolis Fortification Tablets"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 518-330 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -4680,7 +4145,7 @@
       "el-deity"
     ],
     "era": "MÖ 300",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Baalbek_-_temple_of_Bacchus.jpg/1280px-Baalbek_-_temple_of_Bacchus.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG",
     "modernStatus": "UNESCO World Heritage Site, New Seven Wonders of the World",
     "country": "Jordan",
     "tags": [
@@ -4691,19 +4156,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Petra",
+          "listId": "326",
+          "url": "https://whc.unesco.org/en/list/326/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 300",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, New Seven Wonders of the World"
       },
@@ -4731,7 +4196,7 @@
       "apollo"
     ],
     "era": "MÖ 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pantheon_Roma_2.jpg/1280px-Pantheon_Roma_2.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg/960px-Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg",
     "modernStatus": "UNESCO World Heritage Site, ongoing excavation",
     "country": "Italy",
     "tags": [
@@ -4742,17 +4207,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "archaeological excavations of Pompeii",
+          "listId": "829",
+          "url": "https://whc.unesco.org/en/list/829/"
+        }
       },
       "artifacts": [
         {
@@ -4763,7 +4224,6 @@
           "currentLocation": "Naples Museum",
           "description": "Temple paintings and cult objects from Isis precinct.",
           "mythologicalSignificance": "Shows Roman-Egyptian religious syncretism.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pantheon_Roma_2.jpg/1280px-Pantheon_Roma_2.jpg",
           "museumUrl": "https://mann-napoli.it/"
         }
       ],
@@ -4777,13 +4237,7 @@
           "Brick"
         ],
         "constructionTechnique": "Roman urban construction system",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -4791,24 +4245,12 @@
           "city": "Naples",
           "country": "Italy",
           "collectionUrl": "https://mann-napoli.it/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Temple of Isis Frescoes"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "6th century BCE-79 CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -4830,7 +4272,7 @@
       "green-tara"
     ],
     "era": "MS 637",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg",
     "modernStatus": "UNESCO World Heritage Site, museum",
     "country": "China (Tibet)",
     "tags": [
@@ -4841,19 +4283,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Potala Palace",
+          "listId": "707",
+          "url": "https://whc.unesco.org/en/list/707/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 637",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, museum"
       },
@@ -4881,7 +4323,7 @@
       "brahma"
     ],
     "era": "MS 850",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Prambanan_Temple_Yogyakarta_Indonesia.jpg/960px-Prambanan_Temple_Yogyakarta_Indonesia.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Indonesia",
     "tags": [
@@ -4892,21 +4334,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Prambanan Temple",
+          "listId": "642",
+          "url": "https://whc.unesco.org/en/list/642/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 850",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -4931,7 +4372,7 @@
       "amun"
     ],
     "era": "MÖ 700",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nubian_pyramids_2.jpg/1280px-Nubian_pyramids_2.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/NubianMeroePyramids30sep2005%282%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Sudan",
     "tags": [
@@ -4942,21 +4383,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Meroë",
+          "listId": "1336",
+          "url": "https://whc.unesco.org/en/list/1336/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 700",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -4981,7 +4421,7 @@
       "tane-deity"
     ],
     "era": "MS 1250",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Milford_Sound_%28New_Zealand%29.jpg/1280px-Milford_Sound_%28New_Zealand%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ahu-Akivi-1.JPG",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Chile",
     "tags": [
@@ -4992,21 +4432,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Rapa Nui National Park",
+          "listId": "715",
+          "url": "https://whc.unesco.org/en/list/715/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1250",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -5030,7 +4469,7 @@
       "buddha"
     ],
     "era": "MÖ 528",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg/960px-Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg",
     "modernStatus": "Archaeological site, pilgrimage center",
     "country": "India",
     "tags": [
@@ -5041,19 +4480,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Sarnath",
+          "listId": "927",
+          "url": "https://whc.unesco.org/en/list/927/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 528",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Archaeological site, pilgrimage center"
       },
@@ -5077,7 +4516,7 @@
       "tengri"
     ],
     "era": "MS 1575",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/202408_Orkhon_Valley_01.jpg/1280px-202408_Orkhon_Valley_01.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Selimiye_Mosque_%2815051985908%29_%28cropped%29.jpg/960px-Selimiye_Mosque_%2815051985908%29_%28cropped%29.jpg",
     "modernStatus": "UNESCO World Heritage Site, active mosque",
     "country": "Turkey",
     "tags": [
@@ -5088,19 +4527,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Selimiye Mosque",
+          "listId": "1366",
+          "url": "https://whc.unesco.org/en/list/1366/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1575",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, active mosque"
       },
@@ -5126,7 +4565,7 @@
       "spider-woman"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/1280px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Shiprock.snodgrass3.jpg/960px-Shiprock.snodgrass3.jpg",
     "modernStatus": "Sacred site, climbing prohibited since 1970",
     "country": "USA",
     "tags": [
@@ -5137,19 +4576,12 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Sacred site, climbing prohibited since 1970"
       },
@@ -5175,7 +4607,7 @@
       "buddha"
     ],
     "era": "MÖ 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/960px-Shwedagon_Pagoda_2017.jpg",
     "modernStatus": "Active pagoda, most sacred Buddhist site in Myanmar",
     "country": "Myanmar",
     "tags": [
@@ -5186,19 +4618,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active pagoda, most sacred Buddhist site in Myanmar"
       },
@@ -5222,7 +4648,7 @@
     ],
     "associatedDeities": [],
     "era": "MS 477",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath-2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sigiriya_%28141688197%29.jpeg/960px-Sigiriya_%28141688197%29.jpeg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Sri Lanka",
     "tags": [
@@ -5233,21 +4659,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Sigiriya",
+          "listId": "202",
+          "url": "https://whc.unesco.org/en/list/202/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 477",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -5272,7 +4697,7 @@
       "lugh"
     ],
     "era": "MÖ 3000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "England",
     "tags": [
@@ -5283,17 +4708,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Stonehenge",
+          "listId": "373",
+          "url": "https://whc.unesco.org/en/list/373/"
+        }
       },
       "artifacts": [
         {
@@ -5304,7 +4725,6 @@
           "currentLocation": "Salisbury Museum and archives",
           "description": "Excavated ritual and burial-related tools and contexts.",
           "mythologicalSignificance": "Relates to mortuary and cosmological ritual cycles.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cliffs_of_Moher_on_a_sunny_day.jpg/1280px-Cliffs_of_Moher_on_a_sunny_day.jpg",
           "museumUrl": "https://www.english-heritage.org.uk/visit/places/stonehenge/"
         }
       ],
@@ -5318,13 +4738,7 @@
           "Bluestone"
         ],
         "constructionTechnique": "Megalith transport and stone carpentry",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -5332,24 +4746,12 @@
           "city": "Amesbury",
           "country": "United Kingdom",
           "collectionUrl": "https://www.english-heritage.org.uk/visit/places/stonehenge/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Antler Picks and Cremation Finds"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 3000-1600 BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -5370,7 +4772,7 @@
       "buddha"
     ],
     "era": "MS 1692",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Boudhanath-2016.jpg/1280px-Boudhanath_2016.jpg",
+    "imageUrl": "",
     "modernStatus": "Active monastery, Bhutan's most iconic site",
     "country": "Bhutan",
     "tags": [
@@ -5381,19 +4783,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1692",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active monastery, Bhutan's most iconic site"
       },
@@ -5421,7 +4817,7 @@
       "vanth"
     ],
     "era": "MÖ 600",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Banditaccia_Tomba_dei_Rilievi.jpg/1280px-Banditaccia_Tomba_dei_Rilievi.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tarquinia_town_square_AvL.JPG/960px-Tarquinia_town_square_AvL.JPG",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Italy",
     "tags": [
@@ -5432,21 +4828,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Necropolis of Monterozzi",
+          "listId": "1158",
+          "url": "https://whc.unesco.org/en/list/1158/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 600",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -5468,7 +4863,7 @@
       "artemis"
     ],
     "era": "MÖ 550",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Philips_Galle%2C_Dianatemplet_i_Efesos%2C_1572%2C_KKSgb10001-5%2C_Statens_Museum_for_Kunst_%28cropped%29.jpg/960px-Philips_Galle%2C_Dianatemplet_i_Efesos%2C_1572%2C_KKSgb10001-5%2C_Statens_Museum_for_Kunst_%28cropped%29.jpg",
     "modernStatus": "Single column remains, archaeological site",
     "country": "Turkey",
     "tags": [
@@ -5479,17 +4874,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Temple of Ephesian Artemis",
+          "listId": "1018rev",
+          "url": "https://whc.unesco.org/en/list/1018rev/"
+        }
       },
       "artifacts": [
         {
@@ -5500,7 +4891,6 @@
           "currentLocation": "Selcuk and London collections",
           "description": "Temple of Artemis architectural remains.",
           "mythologicalSignificance": "Core material of Artemis Ephesia cult.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
           "museumUrl": "https://muze.gov.tr/"
         }
       ],
@@ -5514,13 +4904,7 @@
           "Limestone"
         ],
         "constructionTechnique": "Large Ionic temple engineering",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -5528,24 +4912,12 @@
           "city": "Selcuk",
           "country": "Turkey",
           "collectionUrl": "https://muze.gov.tr/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Artemision Column Fragments"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "Archaic-Classical core",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -5566,7 +4938,7 @@
       "jade-emperor"
     ],
     "era": "MS 1420",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Temple_of_Heaven.jpg/1280px-Temple_of_Heaven.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Temple_of_Heaven_20160323_01.jpg/960px-Temple_of_Heaven_20160323_01.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "China",
     "tags": [
@@ -5577,21 +4949,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Temple of Heaven",
+          "listId": "881",
+          "url": "https://whc.unesco.org/en/list/881/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1420",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -5617,7 +4988,7 @@
       "tlaloc-deity"
     ],
     "era": "MS 1325",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Piramide_del_Sol_072006.jpg/1280px-Piramide_del_Sol_072006.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Templo_Mayor_50.jpg/960px-Templo_Mayor_50.jpg",
     "modernStatus": "Archaeological site and museum in Mexico City",
     "country": "Mexico",
     "tags": [
@@ -5628,19 +4999,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Historic downtown of Mexico City",
+          "listId": "1351",
+          "url": "https://whc.unesco.org/en/list/1351/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 1325",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Archaeological site and museum in Mexico City"
       },
@@ -5667,7 +5038,7 @@
       "tlaloc-deity"
     ],
     "era": "MÖ 200",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Piramide_del_Sol_072006.jpg/1280px-Piramide_del_Sol_072006.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg/960px-ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg",
     "modernStatus": "UNESCO World Heritage Site, most visited ruin in Mexico",
     "country": "Mexico",
     "tags": [
@@ -5678,17 +5049,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Teotihuacan",
+          "listId": "414",
+          "url": "https://whc.unesco.org/en/list/414/"
+        }
       },
       "artifacts": [
         {
@@ -5699,7 +5066,6 @@
           "currentLocation": "Site and national museum",
           "description": "Temple facade heads and associated iconography.",
           "mythologicalSignificance": "Linked to Quetzalcoatl and creation-war cosmology.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Piramide_del_Sol_072006.jpg/1280px-Piramide_del_Sol_072006.jpg",
           "museumUrl": "https://mna.inah.gob.mx/"
         }
       ],
@@ -5713,13 +5079,7 @@
           "Adobe"
         ],
         "constructionTechnique": "Talud-tablero urban architecture",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -5727,24 +5087,12 @@
           "city": "Mexico City",
           "country": "Mexico",
           "collectionUrl": "https://mna.inah.gob.mx/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Feathered Serpent Sculptural Heads"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 100 BCE-550 CE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -5767,7 +5115,7 @@
       "chaac-deity"
     ],
     "era": "MÖ 400",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tikal_3.jpg/960px-Tikal_3.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Guatemala",
     "tags": [
@@ -5778,21 +5126,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Tikal National Park",
+          "listId": "64",
+          "url": "https://whc.unesco.org/en/list/64/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 400",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -5816,7 +5163,7 @@
       "viracocha-deity"
     ],
     "era": "MÖ 300",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/1280px-Before_Machu_Picchu.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PUERTA_DEL_SOL_TIWANAKU.jpg/960px-PUERTA_DEL_SOL_TIWANAKU.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Bolivia",
     "tags": [
@@ -5827,21 +5174,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Tiwanaku",
+          "listId": "567",
+          "url": "https://whc.unesco.org/en/list/567/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 300",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -5866,7 +5212,7 @@
       "avalokiteshvara-deity"
     ],
     "era": "MS 752",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Itsukushima_Torii.jpg/1280px-Itsukushima_Torii.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/960px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
     "modernStatus": "UNESCO World Heritage Site, active Buddhist temple",
     "country": "Japan",
     "tags": [
@@ -5877,19 +5223,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Tōdai-ji Temple",
+          "listId": "870",
+          "url": "https://whc.unesco.org/en/list/870/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 752",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, active Buddhist temple"
       },
@@ -5919,7 +5265,7 @@
       "apollo"
     ],
     "era": "MÖ 3000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/960px-Walls_of_Troy_%282%29.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Turkey",
     "tags": [
@@ -5930,17 +5276,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Troy",
+          "listId": "849",
+          "url": "https://whc.unesco.org/en/list/849/"
+        }
       },
       "artifacts": [
         {
@@ -5951,7 +5293,6 @@
           "currentLocation": "Moscow and other collections",
           "description": "Gold and metal assemblage from early excavations.",
           "mythologicalSignificance": "Strongly tied to Trojan-war memory in modern reception.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
           "museumUrl": "https://www.pushkinmuseum.art/"
         }
       ],
@@ -5965,13 +5306,7 @@
           "Mudbrick"
         ],
         "constructionTechnique": "Repeated fortification and rebuilding cycles",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -5979,24 +5314,12 @@
           "city": "Moscow",
           "country": "Russia",
           "collectionUrl": "https://www.pushkinmuseum.art/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Priam's Treasure Assemblage"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 3000 BCE-Byzantine era",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -6018,7 +5341,7 @@
       "rainbow-serpent"
     ],
     "era": "60,000+ years",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Uluru%2C_helicopter_view%2C_cropped.jpg/1280px-Uluru%2C_helicopter_view%2C_cropped.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/960px-ULURU.jpg",
     "modernStatus": "UNESCO World Heritage Site, climbing banned since 2019",
     "country": "Australia",
     "tags": [
@@ -6029,19 +5352,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Uluṟu-Kata Tjuṯa National Park",
+          "listId": "447",
+          "url": "https://whc.unesco.org/en/list/447/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "60,000+ years",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, climbing banned since 2019"
       },
@@ -6070,7 +5393,7 @@
       "freyr"
     ],
     "era": "MS 500",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg/1280px-Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Uppsala.jpg/960px-Uppsala.jpg",
     "modernStatus": "Archaeological site and museum",
     "country": "Sweden",
     "tags": [
@@ -6081,19 +5404,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 500",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Archaeological site and museum"
       },
@@ -6122,7 +5439,7 @@
       "hathor"
     ],
     "era": "MÖ 1539",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Luxor%2C_Tal_der_K%C3%B6nige_%281995%2C_860x605%29.jpg",
     "modernStatus": "UNESCO World Heritage Site, ongoing excavations",
     "country": "Egypt",
     "tags": [
@@ -6133,17 +5450,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Documented in modern archaeology (18th-20th century)",
-        "majorExcavations": [
-          {
-            "year": "19th-20th century",
-            "led_by": "Multiple teams",
-            "institution": "National and international institutions",
-            "findings": "Systematic excavation and conservation established modern chronology."
-          }
-        ],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "UNESCO"
+        "majorExcavations": [],
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Theban Necropolis",
+          "listId": "87",
+          "url": "https://whc.unesco.org/en/list/87/"
+        }
       },
       "artifacts": [
         {
@@ -6154,7 +5467,6 @@
           "currentLocation": "Cairo / Giza collections",
           "description": "Gold mask from KV62 royal burial assemblage.",
           "mythologicalSignificance": "Embodies Osirian rebirth theology.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
           "museumUrl": "https://egyptianmuseumcairo.eg/"
         }
       ],
@@ -6168,13 +5480,7 @@
           "Plaster"
         ],
         "constructionTechnique": "Rock-cut corridors with textual painting programs",
-        "modifications": [
-          {
-            "period": "Later periods",
-            "description": "Successive reuse, damage, or restoration changed the site over time."
-          }
-        ],
-        "currentState": "Visible remains survive and are managed under heritage protection."
+        "modifications": []
       },
       "museumConnections": [
         {
@@ -6182,24 +5488,12 @@
           "city": "Cairo",
           "country": "Egypt",
           "collectionUrl": "https://egyptianmuseumcairo.eg/",
-          "artifactCount": 60,
           "notableArtifacts": [
             "Tutankhamun Funerary Mask"
           ]
         }
       ],
-      "chronology": [
-        {
-          "period": "c. 16th-11th century BCE",
-          "event": "Primary construction and ritual use phase.",
-          "type": "construction"
-        },
-        {
-          "period": "Modern era",
-          "event": "Archaeological excavation and conservation programs.",
-          "type": "excavation"
-        }
-      ]
+      "chronology": []
     }
   },
   {
@@ -6222,7 +5516,7 @@
       "ganesha"
     ],
     "era": "MÖ 1100",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Taj_Mahal_1921.JPG/802px-Taj_Mahal_1921.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg/960px-Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg",
     "modernStatus": "Active pilgrimage city, millions of visitors annually",
     "country": "India",
     "tags": [
@@ -6234,19 +5528,13 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "active_excavation",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 1100",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Active pilgrimage city, millions of visitors annually"
       },
@@ -6272,7 +5560,7 @@
       "jade-emperor"
     ],
     "era": "ancient",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Temple_of_Heaven.jpg/1280px-Temple_of_Heaven.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/960px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
     "modernStatus": "UNESCO World Heritage Site, national geopark",
     "country": "China",
     "tags": [
@@ -6283,19 +5571,18 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Wulingyuan",
+          "listId": "640",
+          "url": "https://whc.unesco.org/en/list/640/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
-        "constructionPeriod": "ancient",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, national geopark"
       },
@@ -6323,7 +5610,7 @@
       "hepat"
     ],
     "era": "MÖ 1250",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yazilikaya_Kammer_A.jpg/1280px-Yazilikaya_Kammer_A.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yazilikaya_Kammer_A.jpg/960px-Yazilikaya_Kammer_A.jpg",
     "modernStatus": "UNESCO World Heritage Site",
     "country": "Turkey",
     "tags": [
@@ -6334,21 +5621,20 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Osman Kayası",
+          "listId": "377",
+          "url": "https://whc.unesco.org/en/list/377/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MÖ 1250",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
-        "modifications": [],
-        "currentState": "UNESCO World Heritage Site"
+        "modifications": []
       },
       "museumConnections": [],
       "chronology": []
@@ -6374,7 +5660,7 @@
       "odin"
     ],
     "era": "MS 200",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg/1280px-Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg",
+    "imageUrl": "",
     "modernStatus": "Mythical — represented in Viking Age art and runestones",
     "country": "Mythical",
     "tags": [
@@ -6385,19 +5671,13 @@
     "stillExists": false,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
-        "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "local_protection"
+        "majorExcavations": []
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 200",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "Mythical — represented in Viking Age art and runestones"
       },
@@ -6424,7 +5704,7 @@
       "thor"
     ],
     "era": "MS 930",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg/1280px-Geirangerfjord_from_%C3%98rnesvingen%2C_2013_June.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/960px-%C3%9Eingvellir_from_the_information_centre.JPG",
     "modernStatus": "UNESCO World Heritage Site, Icelandic national park",
     "country": "Iceland",
     "tags": [
@@ -6435,19 +5715,19 @@
     "stillExists": true,
     "archaeology": {
       "discoveryHistory": {
-        "firstDocumented": "Modern scholarly documentation (18th-20th century)",
         "majorExcavations": [],
-        "currentStatus": "protected",
-        "protectionStatus": "UNESCO"
+        "protectionStatus": "UNESCO",
+        "worldHeritage": {
+          "name": "Thingvellir National Park",
+          "listId": "1152",
+          "url": "https://whc.unesco.org/en/list/1152/"
+        }
       },
       "artifacts": [],
       "inscriptions": [],
       "architecture": {
-        "originalStructure": "Archaeological profile is being expanded.",
         "constructionPeriod": "MS 930",
-        "dimensions": "Unknown",
         "materials": [],
-        "constructionTechnique": "Unknown",
         "modifications": [],
         "currentState": "UNESCO World Heritage Site, Icelandic national park"
       },
