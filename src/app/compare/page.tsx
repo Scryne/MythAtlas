@@ -479,7 +479,7 @@ export default function ComparePage() {
                   disabled={sameSelection}
                   className="app-button app-button-secondary min-h-10 rounded-full px-3 py-1.5 text-[11px] uppercase tracking-[0.12em]"
                 >
-                  Share URL
+                  Bağlantıyı paylaş
                 </button>
                 <button
                   type="button"
@@ -552,7 +552,7 @@ export default function ComparePage() {
           )}
           {fourthSuggestionId && entityById.get(fourthSuggestionId) && (
             <div className="mt-2 rounded-card border border-[color:var(--color-border)] bg-surface/70 p-3 text-sm text-primary">
-              Ek dorduncu eslesme: <strong>{entityById.get(fourthSuggestionId)?.name}</strong>
+              Ek dördüncü eşleşme: <strong>{entityById.get(fourthSuggestionId)?.name}</strong>
             </div>
           )}
         </section>

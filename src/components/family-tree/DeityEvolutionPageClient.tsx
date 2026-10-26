@@ -237,7 +237,7 @@ export default function DeityEvolutionPageClient() {
                 <p className="leading-relaxed">{activeStepData.deity.description}</p>
               ) : (
                 <p className="leading-relaxed text-[#c5b38d]">
-                  Bu adim icin yerel deity kaydi bulunmuyor; zincir verisi akademik karsilastirma amaciyla
+                  Bu adım için yerel tanrı kaydı bulunmuyor; zincir verisi akademik karşılaştırma amacıyla
                   derlenmiştir.
                 </p>
               )}

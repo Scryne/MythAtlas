@@ -58,7 +58,7 @@ export async function generateMetadata(props: SitePageProps): Promise<Metadata> 
   if (!site) {
     return {
       title: 'Kutsal Alan Bulunamadı',
-      description: 'This sacred site entry could not be found in MythAtlas.',
+      description: 'Bu kutsal alan kaydı MythAtlas\'ta bulunamadı.',
     };
   }
 

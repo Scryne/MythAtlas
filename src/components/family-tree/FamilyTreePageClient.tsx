@@ -547,7 +547,7 @@ export default function FamilyTreePageClient() {
       {timelineMode && (
         <div className="pointer-events-auto absolute bottom-6 left-1/2 z-40 w-[min(92vw,920px)] -translate-x-1/2 rounded-xl border border-[#6ed2ef]/35 bg-[#081822]/93 p-3">
           <div className="mb-2 flex items-center justify-between">
-            <p className="text-xs tracking-[0.1em] text-[#bfeefe]">Timeline: {yearLabel(timelineYear)}</p>
+            <p className="text-xs tracking-[0.1em] text-[#bfeefe]">Zaman çizelgesi: {yearLabel(timelineYear)}</p>
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -744,10 +744,10 @@ export default function FamilyTreePageClient() {
             return (
               <>
                 <p className="text-[#f2d58d]">{node.name}</p>
-                <p>Myths: {node.mythCount}</p>
-                <p>Deities: {node.deityCount}</p>
-                <p>Sites: {node.siteCount}</p>
-                <p>Era: {node.era}</p>
+                <p>Mitler: {node.mythCount}</p>
+                <p>Tanrılar: {node.deityCount}</p>
+                <p>Alanlar: {node.siteCount}</p>
+                <p>Dönem: {node.era}</p>
                 <p>Veri durumu: {COMPLETENESS_LABELS[node.completeness.label]}</p>
               </>
             );
@@ -800,7 +800,7 @@ export default function FamilyTreePageClient() {
               <p className="inline-flex rounded-full border border-[#7ad7f4]/35 bg-[#122735] px-2 py-0.5 text-xs text-[#c9f1ff]">
                 {CONNECTION_TYPE_LABELS[selectedConnection.type]}
               </p>
-              <p className="text-[#f3deaa]">Strength: {strengthStars(selectedConnection.strength)}</p>
+              <p className="text-[#f3deaa]">Bağ gücü: {strengthStars(selectedConnection.strength)}</p>
               <p className="leading-relaxed">{selectedConnection.description}</p>
               <div>
                 <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Örnekler</p>
@@ -893,7 +893,7 @@ export default function FamilyTreePageClient() {
               </div>
               {selectedNode.isSynthetic || selectedNode.missingSections.length > 0 ? (
                 <div className="rounded-md border border-[#f0cf85]/25 bg-[#2a1c0f] p-3 text-xs text-[#e1c792]">
-                  Bu node icin detail verisi sinirli olabilir; gosterilen sayaclar yalnizca mevcut veri setinden gelir.
+                  Bu düğüm için ayrıntı verisi sınırlı olabilir; gösterilen sayaçlar yalnızca mevcut veri setinden gelir.
                 </div>
               ) : null}
               <div>

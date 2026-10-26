@@ -285,9 +285,9 @@ export default function ParallelsPage() {
                 <p className="mt-3 font-heading text-lg text-[#f6df9d]">{cluster.name}</p>
                 <p className="mt-2 text-xs leading-6 text-[#ceb990]">{cluster.subtitle}</p>
                 <p className="mt-2 text-[11px] text-[#d7c39a]">
-                  Insanlik <CountUpOnView value={insight?.cultureCount ?? 0} /> kulturde ayni hikayeyi anlatti.
+                  İnsanlık <CountUpOnView value={insight?.cultureCount ?? 0} /> kültürde aynı hikâyeyi anlattı.
                 </p>
-                <p className="mt-1 line-clamp-1 text-[11px] text-[#c8b286]">En ilginc benzerlik: {insight?.farPairText}</p>
+                <p className="mt-1 line-clamp-1 text-[11px] text-[#c8b286]">En ilginç benzerlik: {insight?.farPairText}</p>
               </button>
             );
           })}
@@ -393,7 +393,7 @@ export default function ParallelsPage() {
 
           <aside className="rounded-2xl border border-[#d6b56a]/20 bg-[#100d09] p-4 sm:p-5">
             <h3 className="font-heading text-lg text-[#f6df9d]">Mit Varyantları</h3>
-            <p className="mt-1 text-xs text-[#c8b286]">İki varyanti secerek benzerlik olcumu yap.</p>
+            <p className="mt-1 text-xs text-[#c8b286]">İki varyantı seçerek benzerlik ölçümü yap.</p>
 
             <div className="mt-4 max-h-[300px] space-y-2 overflow-y-auto pr-1">
               {activeTheme.versions.map((version) => {
@@ -469,7 +469,7 @@ export default function ParallelsPage() {
               <p className="text-[11px] uppercase tracking-[0.15em] text-[#f3d189]">{farthestPairCallout.title}</p>
               <p className="mt-2 leading-6">{farthestPairCallout.body}</p>
               <p className="mt-2 text-xs text-[#e2c890]">
-                Insanlik <CountUpOnView value={activeInsight?.cultureCount ?? 0} /> kulturde bu temayi anlatti.
+                İnsanlık <CountUpOnView value={activeInsight?.cultureCount ?? 0} /> kültürde bu temayı anlattı.
               </p>
             </div>
           </aside>

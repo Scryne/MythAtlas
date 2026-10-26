@@ -2040,7 +2040,7 @@ export default function MapPage() {
         <ul>
           {mythologies.map((mythology) => (
             <li key={`sr-${mythology.id}`}>
-              {mythology.name} region near {mythology.region}
+              {mythology.name}: {mythology.region} bölgesi
             </li>
           ))}
         </ul>
@@ -2125,7 +2125,7 @@ export default function MapPage() {
 
       {influenceMode && !activeInfluenceConnection && (
         <div className="pointer-events-none absolute left-1/2 top-32 z-30 -translate-x-1/2 rounded-lg border border-gold/45 bg-surface/90 px-4 py-2 text-xs tracking-[0.08em] text-gold-light">
-          Etki Ağı aktif: bir bağlantı yayına tıklayarak tarihsel etkileşim detayini aç.
+          Etki Ağı aktif: bir bağlantı yayına tıklayarak tarihsel etkileşim detayını aç.
         </div>
       )}
 
@@ -2515,9 +2515,9 @@ export default function MapPage() {
 
                 {tab === 'overview' && (
                   <div className="space-y-2 text-xs text-secondary">
-                    <p>Culture: {selectedMythology.culture}</p>
-                    <p>Primary language: {selectedMythology.primaryLanguage}</p>
-                    <p>Tags: {selectedMythology.tags.join(', ')}</p>
+                    <p>Kültür: {selectedMythology.culture}</p>
+                    <p>Ana dil: {selectedMythology.primaryLanguage}</p>
+                    <p>Etiketler: {selectedMythology.tags.join(', ')}</p>
                   </div>
                 )}
 
@@ -2730,7 +2730,7 @@ export default function MapPage() {
               {CONSENSUS_LABELS[activeInfluenceConnection.academicConsensus]}
             </span>
             <span className="rounded-full border border-gold/30 px-2 py-1 text-secondary">
-              Donem: {activeInfluenceConnection.period}
+              Dönem: {activeInfluenceConnection.period}
             </span>
           </div>
 
@@ -2757,7 +2757,7 @@ export default function MapPage() {
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-xs text-secondary">
-              {activeInfluenceConnection.sourceName} ile {activeInfluenceConnection.targetName} arasindaki etkilesim
+              {activeInfluenceConnection.sourceName} ile {activeInfluenceConnection.targetName} arasındaki etkileşim
               seviyesi: {activeInfluenceConnection.strength}/3.
             </p>
             {canCompareInfluenceConnection ? (
@@ -2776,7 +2776,7 @@ export default function MapPage() {
         </div>
       )}
 
-      {searchOpen && (<div className="pointer-events-auto absolute right-4 top-16 z-40 w-[min(92vw,340px)] rounded-xl border border-gold/20 bg-background/95 p-3 backdrop-blur-md"><input value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Search... or elements:flood archetypes:hero" className="w-full rounded-md border border-gold/20 bg-surface px-3 py-2 text-sm text-primary outline-none focus:border-gold/60" /><div className="mt-2 max-h-80 overflow-y-auto">{searchResults.length === 0 && searchQuery.trim().length > 1 && <p className="px-1 py-2 text-xs text-secondary">No results.</p>}{searchResults.map((result) => (<button key={`${result.kind}-${result.id}`} type="button" onClick={() => selectSearch(result)} className="w-full rounded-md px-2 py-2 text-left hover:bg-overlay"><p className="text-sm text-primary">{result.title}</p><p className="text-xs capitalize text-secondary">{result.kind} · {result.subtitle}</p></button>))}</div></div>)}
+      {searchOpen && (<div className="pointer-events-auto absolute right-4 top-16 z-40 w-[min(92vw,340px)] rounded-xl border border-gold/20 bg-background/95 p-3 backdrop-blur-md"><input value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Ara... ya da elements:flood archetypes:hero" className="w-full rounded-md border border-gold/20 bg-surface px-3 py-2 text-sm text-primary outline-none focus:border-gold/60" /><div className="mt-2 max-h-80 overflow-y-auto">{searchResults.length === 0 && searchQuery.trim().length > 1 && <p className="px-1 py-2 text-xs text-secondary">Sonuç yok.</p>}{searchResults.map((result) => (<button key={`${result.kind}-${result.id}`} type="button" onClick={() => selectSearch(result)} className="w-full rounded-md px-2 py-2 text-left hover:bg-overlay"><p className="text-sm text-primary">{result.title}</p><p className="text-xs capitalize text-secondary">{result.kind} · {result.subtitle}</p></button>))}</div></div>)}
 
       
     </div>

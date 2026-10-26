@@ -186,10 +186,10 @@ export default function BibliographyPageClient() {
             <section className="ancient-card p-6">
               <h2 className="text-2xl text-gold">
                 {groupType === 'primary'
-                  ? 'Primary Sources'
+                  ? 'Birincil Kaynaklar'
                   : groupType === 'secondary'
                     ? 'İkincil Kaynaklar'
-                    : 'Archaeological'}
+                    : 'Arkeolojik'}
               </h2>
 
               <div className="mt-4 space-y-3">

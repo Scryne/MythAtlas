@@ -464,7 +464,7 @@ export default function DNAExplorerPage() {
               {surprisingPair.left.name} ({mythologyNameById.get(surprisingPair.left.mythologyId)}) -{' '}
               {surprisingPair.right.name} ({mythologyNameById.get(surprisingPair.right.mythologyId)}) · {surprisingPair.score}%
             </p>
-            <p className="mt-1 text-xs text-sky-200/85">Yaklasik mesafe: {Math.round(surprisingPair.distanceKm)} km</p>
+            <p className="mt-1 text-xs text-sky-200/85">Yaklaşık mesafe: {Math.round(surprisingPair.distanceKm)} km</p>
           </div>
         )}
 
@@ -541,10 +541,10 @@ export default function DNAExplorerPage() {
 
         <div className="grid gap-3 md:grid-cols-2">
           <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/80">
-            Ayni mitoloji icindeki ortalama DNA benzerligi: <strong>{toPercent(dnaStats.withinAvg)}</strong>
+            Aynı mitoloji içindeki ortalama DNA benzerliği: <strong>{toPercent(dnaStats.withinAvg)}</strong>
           </div>
           <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/80">
-            Mitolojiler arasi ortalama DNA benzerligi: <strong>{toPercent(dnaStats.acrossAvg)}</strong>
+            Mitolojiler arası ortalama DNA benzerliği: <strong>{toPercent(dnaStats.acrossAvg)}</strong>
           </div>
         </div>
 

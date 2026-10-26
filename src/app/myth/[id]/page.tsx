@@ -100,7 +100,7 @@ export async function generateMetadata(props: MythPageProps): Promise<Metadata> 
   if (!myth) {
     return {
       title: 'Mit Bulunamadı',
-      description: 'This myth entry could not be found in MythAtlas.',
+      description: 'Bu mit kaydı MythAtlas\'ta bulunamadı.',
     };
   }
 
@@ -292,7 +292,7 @@ export default async function MythDetailPage(props: MythPageProps) {
         <div className="ancient-card p-6">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <h2 className="text-2xl text-gold">Tam Özet</h2>
-            <ShareButton title={myth.name} text={`Explore ${myth.name} on MythAtlas`} url={`${SITE_URL}/myth/${myth.id}`} />
+            <ShareButton title={myth.name} text={`${myth.name}: MythAtlas'ta keşfet`} url={`${SITE_URL}/myth/${myth.id}`} />
           </div>
           <p className="mb-4 leading-relaxed text-foreground/80">{myth.summary}</p>
           <p className="leading-relaxed text-foreground/70">{myth.significance}</p>
@@ -309,10 +309,10 @@ export default async function MythDetailPage(props: MythPageProps) {
                 EMOTIONAL_CORE_TONES[myth.dna.emotionalCore] || 'border-gold/35 bg-gold/10 text-gold-light'
               }`}
             >
-              Duygusal cekirdek: {formatSlugLabel(myth.dna.emotionalCore)}
+              Duygusal çekirdek: {formatSlugLabel(myth.dna.emotionalCore)}
             </span>
             <span className="rounded-full border border-gold/35 bg-gold/10 px-3 py-1 text-sm text-gold-light">
-              Kozmik kapsami: {COSMIC_SCOPE_LABELS[myth.dna.cosmicScope] || formatSlugLabel(myth.dna.cosmicScope)}
+              Kozmik kapsamı: {COSMIC_SCOPE_LABELS[myth.dna.cosmicScope] || formatSlugLabel(myth.dna.cosmicScope)}
             </span>
           </div>
           <p className="mb-5 text-sm text-foreground/70">{myth.dna.moralLesson}</p>
@@ -567,13 +567,13 @@ export default async function MythDetailPage(props: MythPageProps) {
           <h3 className="mb-3 text-xl text-gold">Bu miti paylaş</h3>
           <div className="grid gap-3 md:grid-cols-3">
             <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
-              Biliyor muydunuz? {myth.name} mitiyle benzer hikaye {parallelCultureCount} farkli kulturde anlatiliyor.
+              Biliyor muydunuz? {myth.name} mitine benzer bir hikâye {parallelCultureCount} farklı kültürde anlatılıyor.
             </div>
             <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
-              {myth.name}: {mythTypeLabel(myth.type)} anlatilarin evrensel temasini guclu bicimde tasiyan bir metin.
+              {myth.name}: {mythTypeLabel(myth.type)} anlatıların evrensel temasını güçlü biçimde taşıyan bir metin.
             </div>
             <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
-              MythAtlas notu: {myth.name} hikayesi, mitler arasi baglanti aginda onemli bir dugum olusturuyor.
+              MythAtlas notu: {myth.name} hikâyesi, mitler arası bağlantı ağında önemli bir düğüm oluşturuyor.
             </div>
           </div>
         </div>
@@ -625,7 +625,7 @@ export default async function MythDetailPage(props: MythPageProps) {
               </HoverPrefetchLink>
             ))}
             {relatedSites.length === 0 && (
-              <p className="text-sm text-foreground/60">No sacred site links are indexed for this myth yet.</p>
+              <p className="text-sm text-foreground/60">Bu mite henüz bağlı kutsal alan yok.</p>
             )}
           </div>
         </div>

@@ -127,7 +127,7 @@ export default function StatsCharts({
         </article>
 
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Mythologies by region (choropleth)</h2>
+          <h2 className="text-xl text-gold">Bölgelere göre mitolojiler (koroplet)</h2>
           <p className="mt-1 text-xs text-foreground/60">Renk yoğunluğu mit sayısını temsil eder.</p>
           <div className="mt-4">
             <MythologyChoropleth data={heatData} />
@@ -199,7 +199,7 @@ export default function StatsCharts({
         </article>
 
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Mythology timeline (Gantt)</h2>
+          <h2 className="text-xl text-gold">Mitoloji zaman çizelgesi (Gantt)</h2>
           <p className="mt-1 text-xs text-foreground/60">Barlar mitolojik sistemlerin etkin dönemini gösterir.</p>
           <div className="mt-2 flex flex-wrap gap-2 text-[11px] text-foreground/70">
             <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#6ba8de]" />Akdeniz</span>

@@ -75,7 +75,7 @@ export async function generateMetadata(props: MythologyPageProps): Promise<Metad
   if (!bundle) {
     return {
       title: 'Mitoloji Bulunamadı',
-      description: 'This mythology entry could not be found in MythAtlas.',
+      description: 'Bu mitoloji kaydı MythAtlas\'ta bulunamadı.',
     };
   }
   const { mythology } = bundle;

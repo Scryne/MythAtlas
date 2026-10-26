@@ -306,7 +306,7 @@ export default function SiteDetailTabs({
                   <p className="meta-text text-xs uppercase tracking-[0.12em]">{mythTypeLabel(myth.type)}</p>
                 </HoverPrefetchLink>
               ))}
-              {connectedMyths.length === 0 && <p className="text-sm text-foreground/60">No myth links are indexed yet.</p>}
+              {connectedMyths.length === 0 && <p className="text-sm text-foreground/60">Henüz bağlı mit yok.</p>}
             </div>
           </div>
 
@@ -321,7 +321,7 @@ export default function SiteDetailTabs({
                   </p>
                 </HoverPrefetchLink>
               ))}
-              {connectedDeities.length === 0 && <p className="text-sm text-foreground/60">No deity links are indexed yet.</p>}
+              {connectedDeities.length === 0 && <p className="text-sm text-foreground/60">Henüz bağlı tanrı yok.</p>}
             </div>
           </div>
 
@@ -451,7 +451,7 @@ export default function SiteDetailTabs({
                       {item.language} · {item.period}
                     </p>
                     <p className="mt-2 text-sm text-foreground/70">{item.significance}</p>
-                    <p className="meta-text mt-1 text-xs">Scholar: {item.scholar}</p>
+                    <p className="meta-text mt-1 text-xs">Akademisyen: {item.scholar}</p>
                   </article>
                 ))}
               </div>

@@ -1,6 +1,6 @@
 'use client';
 
-export default function LoadingSpinner({ text = 'Loading...' }: { text?: string }) {
+export default function LoadingSpinner({ text = 'Yükleniyor...' }: { text?: string }) {
   return (
     <div className="flex flex-col items-center justify-center gap-6 py-20">
       <div className="relative h-20 w-20">

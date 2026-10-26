@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import FamilyTreePageClient from './FamilyTreePageClient.lazy';
 
 export const metadata: Metadata = {
-  title: 'Mythology Family Tree | MythAtlas',
+  title: 'Mitoloji Aile Ağacı',
   description:
-    'Interactive influence network showing how mythologies shaped, borrowed from, and evolved across history.',
+    'Mitolojilerin tarih boyunca birbirini nasıl biçimlendirdiğini, birbirinden neler aldığını ve nasıl evrildiğini gösteren etkileşimli etki ağı.',
 };
 
 export default function FamilyTreePage() {

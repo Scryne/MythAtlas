@@ -398,7 +398,7 @@ export default function ArchaeologyHubPage() {
               {selectedMuseumSites.map((site) => (
                 <HoverPrefetchLink key={site.id} href={`/site/${site.id}`} className="rounded-md border border-gold/20 bg-black/20 p-3">
                   <p className="text-sm text-gold-light">{site.name}</p>
-                  <p className="text-xs text-foreground/65">Eser kaydi: {siteArtifactCount(site)}</p>
+                  <p className="text-xs text-foreground/65">Eser kaydı: {siteArtifactCount(site)}</p>
                 </HoverPrefetchLink>
               ))}
             </div>

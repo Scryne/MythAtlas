@@ -79,7 +79,7 @@ export default function ArchaeologyHubCharts({
           </div>
           <div className="rounded-md border border-gold/20 bg-black/20 p-4 text-sm text-foreground/75">
             <p>
-              Bu merkez, kutsal alanlari sadece konum verisi degil; kazi tarihi, eser dagilimi, yazıt kayıtları ve
+              Bu merkez, kutsal alanları sadece konum verisi değil; kazı tarihi, eser dağılımı, yazıt kayıtları ve
               müze bağlantılarıyla birlikte arkeolojik bir bilgi katmanı olarak sunar.
             </p>
           </div>

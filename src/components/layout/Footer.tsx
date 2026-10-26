@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="gold-divider my-8" />
 
         <div className="flex flex-col gap-3 text-xs text-secondary md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} MythAtlas. Tanimlar, veri notlari ve gorseller kaynaklariyla birlikte sunulur.</p>
+          <p>© {new Date().getFullYear()} MythAtlas. Tanımlar, veri notları ve görseller kaynaklarıyla birlikte sunulur.</p>
           <p>Veriye katkı için GitHub üzerinden pull request gönderebilirsiniz.</p>
         </div>
       </div>

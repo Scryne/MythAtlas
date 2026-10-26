@@ -119,7 +119,7 @@ export async function generateMetadata(props: DeityPageProps): Promise<Metadata>
   if (!deity) {
     return {
       title: 'Tanrı Bulunamadı',
-      description: 'This deity entry could not be found in MythAtlas.',
+      description: 'Bu tanrı kaydı MythAtlas\'ta bulunamadı.',
     };
   }
 
@@ -278,7 +278,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
               {deityTypeLabel(deity.type)}
             </span>
             <span className="rounded-full border border-gold/35 bg-black/45 px-3 py-1 text-xs text-gold-light">
-              {equivalentCultures} kulturde benzeri var
+              {equivalentCultures} kültürde benzeri var
             </span>
             {archetype && (
               <span className="rounded-full border border-[#e3c169]/45 bg-[#2f1f0f]/75 px-3 py-1 text-xs text-[#f6dfab]">
@@ -302,11 +302,11 @@ export default async function DeityDetailPage(props: DeityPageProps) {
             </div>
             {deity.alternateNames.length > 0 && (
               deity.alternateNames.length <= 3 ? (
-                <p className="mt-4 text-sm text-foreground/75">Also known as: {deity.alternateNames.join(', ')}</p>
+                <p className="mt-4 text-sm text-foreground/75">Diğer adları: {deity.alternateNames.join(', ')}</p>
               ) : (
                 <details className="mt-4 max-w-3xl rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
                   <summary className="cursor-pointer text-gold-light">{deity.alternateNames.slice(0, 3).join(', ')} + {deity.alternateNames.length - 3} daha</summary>
-                  <p className="mt-3">Also known as: {deity.alternateNames.join(', ')}</p>
+                  <p className="mt-3">Diğer adları: {deity.alternateNames.join(', ')}</p>
                 </details>
               )
             )}
@@ -360,10 +360,10 @@ export default async function DeityDetailPage(props: DeityPageProps) {
               <HoverPrefetchLink key={myth.id} href={`/myth/${myth.id}`} className="rounded-md border border-gold/20 bg-gold/5 p-3">
                 <p className="text-gold-light">{myth.name}</p>
                 <p className="meta-text text-xs uppercase tracking-[0.12em]">{mythTypeLabel(myth.type)}</p>
-                <p className="mt-2 text-xs text-foreground/60">Paralel bag: {myth.parallels.length}</p>
+                <p className="mt-2 text-xs text-foreground/60">Paralel bağ: {myth.parallels.length}</p>
               </HoverPrefetchLink>
             ))}
-            {myths.length === 0 && <p className="text-sm text-foreground/60">No linked myths in the current dataset.</p>}
+            {myths.length === 0 && <p className="text-sm text-foreground/60">Veri setinde bağlı mit yok.</p>}
           </div>
         </div>
 
@@ -432,7 +432,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
                           key={`${equivalent.id}-${domain}`}
                           className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[11px] text-gold-light"
                         >
-                          Shared: {formatSlugLabel(domain)}
+                          Ortak: {formatSlugLabel(domain)}
                         </span>
                       ))}
                     </div>
@@ -453,7 +453,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
               <div key={symbol} className="rounded-md border border-gold/25 bg-gold/10 p-3">
                 <p className="text-lg text-gold-light">{symbolEmoji(symbol)} {formatSlugLabel(symbol)}</p>
                 <p className="mt-1 text-xs text-foreground/60">
-                  Bu sembol, {deity.name} figuruyle iliskilendirilen rituel veya temsil alanini ifade eder.
+                  Bu sembol, {deity.name} figürüyle ilişkilendirilen ritüel veya temsil alanını ifade eder.
                 </p>
               </div>
             ))}
@@ -521,7 +521,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
                 </p>
               </HoverPrefetchLink>
             ))}
-            {worshipSites.length === 0 && <p className="text-sm text-foreground/60">No worship site links are indexed yet.</p>}
+            {worshipSites.length === 0 && <p className="text-sm text-foreground/60">Henüz bağlı tapınım alanı yok.</p>}
           </div>
         </div>
 

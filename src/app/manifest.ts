@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'MythAtlas',
     short_name: 'MythAtlas',
-    description: 'Interactive mythology atlas with ancient civilizations, myths, deities, and sacred sites.',
+    description: 'Kadim medeniyetlerin mitlerini, tanrılarını ve kutsal alanlarını bağlayan etkileşimli mitoloji atlası.',
     start_url: withBasePath('/'),
     scope: withBasePath('/'),
     display: 'standalone',

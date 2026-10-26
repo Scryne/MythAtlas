@@ -102,7 +102,7 @@ export default async function DiscoverPage() {
                 <p className="text-lg text-gold-light">{weeklySpotlight.name}</p>
                 <p className="mt-1 text-xs text-foreground/60">{weeklySpotlight.region} · {weeklySpotlight.era}</p>
                 <p className="mt-2 line-clamp-3 text-sm text-foreground/75">{weeklySpotlight.description}</p>
-                <HoverPrefetchLink href={`/mythology/${weeklySpotlight.id}`} className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light">Spotlighti keşfet</HoverPrefetchLink>
+                <HoverPrefetchLink href={`/mythology/${weeklySpotlight.id}`} className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light">Öne çıkanı keşfet</HoverPrefetchLink>
               </div>
             </div>
           </article>
@@ -146,12 +146,12 @@ export default async function DiscoverPage() {
               <div className="relative">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="rounded-full border border-gold/30 bg-black/25 px-2 py-0.5 text-[11px] text-gold-light">{collection.subtitle}</span>
-                  <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[11px] text-gold-light">{collection.mythCount + collection.mythologyCount} oge</span>
+                  <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[11px] text-gold-light">{collection.mythCount + collection.mythologyCount} öğe</span>
                   {collection.featured && <span className="rounded-full border border-gold/35 bg-gold/15 px-2 py-0.5 text-[11px] text-gold-light">Özel</span>}
                 </div>
                 <h3 className="text-lg text-gold">{collection.title}</h3>
                 <p className="mt-2 text-sm text-foreground/70">{collection.description}</p>
-                <div className="meta-text mt-3 flex gap-3 text-xs"><span>{collection.mythCount} mit</span><span>{collection.mythologyCount} kultur</span></div>
+                <div className="meta-text mt-3 flex gap-3 text-xs"><span>{collection.mythCount} mit</span><span>{collection.mythologyCount} kültür</span></div>
               </div>
             </article>
           ))}

@@ -9,7 +9,7 @@ const DeityEvolutionPageClient = dynamic(
     ssr: false,
     loading: () => (
       <div className="flex min-h-screen items-center justify-center bg-background">
-        <LoadingSpinner text="Deity evolution zincirleri yükleniyor..." />
+        <LoadingSpinner text="Tanrı evrimi zincirleri yükleniyor..." />
       </div>
     ),
   }

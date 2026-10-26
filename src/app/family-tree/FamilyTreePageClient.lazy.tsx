@@ -7,7 +7,7 @@ const FamilyTreePageClient = dynamic(() => import('@/components/family-tree/Fami
   ssr: false,
   loading: () => (
     <div className="flex min-h-screen items-center justify-center bg-background">
-      <LoadingSpinner text="Mythology Family Tree yükleniyor..." />
+      <LoadingSpinner text="Mitoloji aile ağacı yükleniyor..." />
     </div>
   ),
 });

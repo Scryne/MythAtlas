@@ -75,7 +75,7 @@ export default function ThemesPage() {
                   <h3 className="text-base text-gold">{theme.name}</h3>
                 </div>
                 <p className="meta-text text-xs">{theme.mythCount} mit</p>
-                <p className="meta-text mt-2 text-xs">Ornek kulturler: {theme.topCultures.join(', ') || '-'}</p>
+                <p className="meta-text mt-2 text-xs">Örnek kültürler: {theme.topCultures.join(', ') || '-'}</p>
               </button>
             );
           })}
@@ -87,12 +87,12 @@ export default function ThemesPage() {
           <div>
             <h2 className="text-2xl text-gold">Filtrelenmiş mit listesi</h2>
             {selectedTheme && (
-              <p className="meta-text mt-1 text-sm">Secili tema: {selectedTheme.name} ({myths.length} mit)</p>
+              <p className="meta-text mt-1 text-sm">Seçili tema: {selectedTheme.name} ({myths.length} mit)</p>
             )}
           </div>
           {selectedTheme && (
             <HoverPrefetchLink href={`/map?theme=${selectedTheme.id}`} className="text-xs uppercase tracking-[0.14em] text-gold/80 hover:text-gold-light">
-              Theme map view
+              Tema harita görünümü
             </HoverPrefetchLink>
           )}
         </div>

@@ -199,7 +199,7 @@ export default function AllSitesPage() {
         </div>
 
         <p className="meta-text text-xs">
-          {filteredSites.length} alan bulundu · UNESCO filtresi icin koruma secicisinde "UNESCO Dünya Mirası" secilebilir.
+          {filteredSites.length} alan bulundu · UNESCO filtresi için koruma seçicisinde "UNESCO Dünya Mirası" seçilebilir.
         </p>
       </section>
 
@@ -229,7 +229,7 @@ export default function AllSitesPage() {
                 onClick={() => setMapCardLimit((current) => current + 6)}
                 className="rounded-full border border-gold/35 bg-gold/10 px-4 py-2 text-xs uppercase tracking-[0.12em] text-gold-light hover:border-gold/55"
               >
-                Daha fazla goster ({filteredSites.length - mapCardLimit})
+                Daha fazla göster ({filteredSites.length - mapCardLimit})
               </button>
             </div>
           )}
