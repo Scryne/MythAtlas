@@ -2130,7 +2130,8 @@ export default function MapPage() {
       )}
 
       <div className="pointer-events-none absolute inset-0 z-20">
-        <div className="pointer-events-auto absolute left-4 top-4 flex items-center gap-3 rounded-xl border border-gold/25 bg-surface/85 px-3 py-2 backdrop-blur-md">
+        {/* Dar ekranda sitenin üst çubuğu zaten markayı taşıyor; kart araç çubuğunun altında kalıyordu. */}
+        <div className="pointer-events-auto absolute left-4 top-4 hidden items-center gap-3 rounded-xl border border-gold/25 bg-surface/85 px-3 py-2 backdrop-blur-md md:flex">
           <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/50 bg-overlay text-gold-light">✧</div>
           <div>
             <p className="font-heading text-sm tracking-[0.14em] text-gold-light">MythAtlas</p>
@@ -2138,7 +2139,8 @@ export default function MapPage() {
           </div>
         </div>
 
-        <div className="pointer-events-auto absolute right-4 top-4 flex flex-wrap items-center justify-end gap-2">
+        {/* Araç çubuğu marka kartının sağında kırılır; boş kalan şerit haritayı sürüklemeyi engellemesin diye yalnız düğmeler tıklanır. */}
+        <div className="pointer-events-none absolute left-4 right-4 top-4 flex flex-wrap items-center justify-end gap-2 *:pointer-events-auto md:left-56">
           <button
             type="button"
             aria-label="Paralel mit kipini aç/kapat"
