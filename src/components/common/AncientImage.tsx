@@ -70,7 +70,8 @@ export default function AncientImage({
           <p className="mt-3 text-[11px] uppercase tracking-[0.24em] text-foreground/50">
             {failed ? 'Görsel şu anda görüntülenemiyor' : src ? 'Görsel yükleniyor' : 'Görsel hazırlanıyor'}
           </p>
-          <p className="mt-2 text-xs uppercase tracking-[0.14em] text-foreground/75">{label}</p>
+          {/* Kayıt adları veride İngilizce: sayfa dili tr iken büyük harf "Fire"ı "FİRE" yapıyordu. */}
+          <p lang="en" className="mt-2 text-xs uppercase tracking-[0.14em] text-foreground/75">{label}</p>
         </div>
       </div>
     );
