@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
+import { absoluteUrl, ogImageUrl } from '@/lib/site';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
 
 interface BuildPageMetadataInput {
   title: string;
@@ -10,16 +10,12 @@ interface BuildPageMetadataInput {
   image?: string;
 }
 
-export function absoluteUrl(path: string) {
-  return new URL(path, SITE_URL).toString();
-}
-
 export function buildPageMetadata({
   title,
   description,
   path,
   keywords = [],
-  image = '/og/site/default',
+  image = ogImageUrl('site', 'default'),
 }: BuildPageMetadataInput): Metadata {
   const url = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
@@ -29,7 +25,7 @@ export function buildPageMetadata({
     description,
     keywords,
     alternates: {
-      canonical: path,
+      canonical: url,
     },
     openGraph: {
       title: `${title} | MythAtlas`,

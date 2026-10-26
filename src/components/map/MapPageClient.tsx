@@ -34,9 +34,10 @@ import {
   type InfluenceMapFeatureProperties,
 } from '@/lib/family-tree-data';
 import type { Deity, Mythology } from '@/types/mythology';
+import { withBasePath } from '@/lib/site';
 
 // Worker dosyası scripts/copy-maplibre-worker.mjs ile public/ altına kopyalanır.
-maplibregl.setWorkerUrl('/vendor/maplibre/maplibre-gl-worker.mjs');
+maplibregl.setWorkerUrl(withBasePath('/vendor/maplibre/maplibre-gl-worker.mjs'));
 
 export const dynamic = 'force-dynamic';
 
@@ -830,7 +831,7 @@ export default function MapPage() {
       initialized = true;
 
       try {
-        const manifestResponse = await fetch('/data/by-mythology/manifest.json');
+        const manifestResponse = await fetch(withBasePath('/data/by-mythology/manifest.json'));
         if (!manifestResponse.ok) throw new Error('GeoJSON manifest failed');
         const manifest = (await manifestResponse.json()) as { mythologies: string[] };
 
@@ -1216,10 +1217,10 @@ export default function MapPage() {
             chunk.map(async (mythologyId) => {
               if (disposed) return null;
               const [regionsChunk, sitesChunk, mythsChunk, deitiesChunk] = await Promise.all([
-                fetch(`/data/by-mythology/${mythologyId}/region.geojson`),
-                fetch(`/data/by-mythology/${mythologyId}/sites.geojson`),
-                fetch(`/data/by-mythology/${mythologyId}/myths.geojson`),
-                fetch(`/data/by-mythology/${mythologyId}/deities.geojson`),
+                fetch(withBasePath(`/data/by-mythology/${mythologyId}/region.geojson`)),
+                fetch(withBasePath(`/data/by-mythology/${mythologyId}/sites.geojson`)),
+                fetch(withBasePath(`/data/by-mythology/${mythologyId}/myths.geojson`)),
+                fetch(withBasePath(`/data/by-mythology/${mythologyId}/deities.geojson`)),
               ]);
               if (!regionsChunk.ok || !sitesChunk.ok || !mythsChunk.ok || !deitiesChunk.ok) {
                 throw new Error(`GeoJSON chunk failed for ${mythologyId}`);
@@ -2118,7 +2119,7 @@ export default function MapPage() {
           <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/50 bg-overlay text-gold-light">✧</div>
           <div>
             <p className="font-heading text-sm tracking-[0.14em] text-gold-light">MythAtlas</p>
-            <HoverPrefetchLink href="/" className="text-[11px] text-secondary hover:text-gold-light">← Back to Home</HoverPrefetchLink>
+            <HoverPrefetchLink href="/" className="text-[11px] text-secondary hover:text-gold-light">← Ana sayfaya dön</HoverPrefetchLink>
           </div>
         </div>
 
@@ -2187,7 +2188,7 @@ export default function MapPage() {
             }}
             className="rounded-lg border border-gold/25 bg-surface/85 px-3 py-2 text-xs text-primary hover:bg-overlay"
           >
-            Search
+            Ara
           </button>
           <button
             type="button"
@@ -2198,7 +2199,7 @@ export default function MapPage() {
             }}
             className="relative rounded-lg border border-gold/25 bg-surface/85 px-3 py-2 text-xs text-primary hover:bg-overlay"
           >
-            Filters
+            Filtreler
             {activeFilterCount > 0 && (
               <span className="absolute -right-2 -top-2 rounded-full bg-gold px-1.5 py-0.5 text-[10px] font-semibold text-background">
                 {activeFilterCount}
@@ -2214,13 +2215,13 @@ export default function MapPage() {
             }}
             className="rounded-lg border border-gold/25 bg-surface/85 px-3 py-2 text-xs text-primary hover:bg-overlay"
           >
-            Legend
+            Lejant
           </button>
           <HoverPrefetchLink href="/parallels" className="rounded-lg border border-gold/25 bg-surface/85 px-3 py-2 text-xs text-primary hover:bg-overlay">
-            Parallels
+            Paraleller
           </HoverPrefetchLink>
           <HoverPrefetchLink href="/compare" className="rounded-lg border border-gold/25 bg-surface/85 px-3 py-2 text-xs text-primary hover:bg-overlay">
-            Compare
+            Karşılaştır
           </HoverPrefetchLink>
         </div>
 
@@ -2418,7 +2419,7 @@ export default function MapPage() {
                 }}
                 className="text-xs text-secondary hover:text-gold-light"
               >
-                Close
+                Kapat
               </button>
             </div>
             <div className="h-[calc(100%-56px)] overflow-y-auto">

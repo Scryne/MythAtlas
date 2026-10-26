@@ -18,6 +18,7 @@ import {
   siteMythIds,
 } from '@/lib/myth-data';
 import { haversineKm, siteTypeLabel } from '@/lib/myth-utils';
+import { SITE_URL, absoluteUrl, ogImageUrl } from '@/lib/site';
 
 interface SitePageProps {
   params: Promise<{
@@ -25,7 +26,6 @@ interface SitePageProps {
   }>;
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
 
 const visitorNotes: Record<string, string> = {
   'mount-olympus': 'Ruzgar burada hala tanrilarin adlarini fisildiyor.',
@@ -68,11 +68,11 @@ export async function generateMetadata(props: SitePageProps): Promise<Metadata> 
     title: site.name,
     description: site.description,
     keywords: [site.name, siteTypeLabel(site.type), site.country || '', mythology?.name || '', 'sacred site', 'mythology', 'archaeology'].filter(Boolean),
-    alternates: { canonical: `/site/${site.id}` },
+    alternates: { canonical: absoluteUrl(`/site/${site.id}`) },
     openGraph: {
       title: `${site.name} | MythAtlas`,
       description: site.description,
-      images: [`/og/site/${site.id}`],
+      images: [ogImageUrl('site', site.id)],
       type: 'article',
       url: `${SITE_URL}/site/${site.id}`,
     },
@@ -80,7 +80,7 @@ export async function generateMetadata(props: SitePageProps): Promise<Metadata> 
       card: 'summary_large_image',
       title: `${site.name} | MythAtlas`,
       description: site.description,
-      images: [`/og/site/${site.id}`],
+      images: [ogImageUrl('site', site.id)],
     },
   };
 }

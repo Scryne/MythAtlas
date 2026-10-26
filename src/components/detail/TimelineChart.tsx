@@ -16,7 +16,7 @@ export default function TimelineChart({ era }: TimelineChartProps) {
   return (
     <div className="ancient-card p-4">
       <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-gold/80">
-        Historical Timeline
+        Tarihsel Zaman Çizelgesi
       </h3>
       <div className="rounded-lg border border-gold/15 bg-black/20 p-4">
         <div className="relative h-16">

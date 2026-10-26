@@ -148,7 +148,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                     </span>
                     {source.isOpenAccess && (
                       <span className="rounded-full border border-emerald-300/35 bg-emerald-500/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.12em] text-emerald-100">
-                        Open access
+                        Açık erişim
                       </span>
                     )}
                   </div>

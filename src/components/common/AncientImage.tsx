@@ -2,7 +2,7 @@
 
 import Image, { type ImageProps } from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
-import { getDisplayImageSrc, isImageProxyUrl } from '@/lib/image-proxy';
+import { getDisplayImageSrc } from '@/lib/image-proxy';
 
 const DEFAULT_BLUR =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241817'/%3E%3Cstop offset='1' stop-color='%231a1510'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' fill='url(%23g)'/%3E%3Ccircle cx='20' cy='18' r='12' fill='%23c9a84c22'/%3E%3Ccircle cx='46' cy='40' r='14' fill='%23e8c96a22'/%3E%3C/svg%3E";
@@ -81,7 +81,7 @@ export default function AncientImage({
       {...props}
       src={currentSrc}
       alt={alt}
-      unoptimized={isImageProxyUrl(currentSrc) || /^https?:\/\//.test(currentSrc)}
+      unoptimized={/^https?:\/\//.test(currentSrc)}
       className={`${className || ''} ${loaded ? 'fade-in-image' : ''}`.trim()}
       placeholder="blur"
       blurDataURL={blurDataURL}

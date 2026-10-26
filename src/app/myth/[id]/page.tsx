@@ -36,6 +36,7 @@ import {
   mythTypeLabel,
   siteTypeLabel,
 } from '@/lib/myth-utils';
+import { SITE_URL, absoluteUrl, ogImageUrl } from '@/lib/site';
 
 interface MythPageProps {
   params: Promise<{
@@ -43,7 +44,6 @@ interface MythPageProps {
   }>;
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
 
 const EMOTIONAL_CORE_TONES: Record<string, string> = {
   fear: 'border-amber-300/45 bg-amber-800/25 text-amber-100',
@@ -110,11 +110,11 @@ export async function generateMetadata(props: MythPageProps): Promise<Metadata> 
     title: myth.name,
     description: myth.summary,
     keywords: [myth.name, mythology?.name || '', myth.type, ...myth.themes.slice(0, 6)].filter(Boolean),
-    alternates: { canonical: `/myth/${myth.id}` },
+    alternates: { canonical: absoluteUrl(`/myth/${myth.id}`) },
     openGraph: {
       title: `${myth.name} | MythAtlas`,
       description: myth.significance,
-      images: [`/og/myth/${myth.id}`],
+      images: [ogImageUrl('myth', myth.id)],
       type: 'article',
       url: `${SITE_URL}/myth/${myth.id}`,
     },
@@ -122,7 +122,7 @@ export async function generateMetadata(props: MythPageProps): Promise<Metadata> 
       card: 'summary_large_image',
       title: `${myth.name} | MythAtlas`,
       description: myth.summary,
-      images: [`/og/myth/${myth.id}`],
+      images: [ogImageUrl('myth', myth.id)],
     },
   };
 }
@@ -641,7 +641,7 @@ export default async function MythDetailPage(props: MythPageProps) {
             href={mythology ? `/mythology/${mythology.id}` : '/map'}
             className="inline-flex rounded-full border border-gold/40 px-4 py-2 text-xs uppercase tracking-[0.14em] text-gold hover:bg-gold/10"
           >
-            Back to Mythology
+            Mitolojiye dön
           </HoverPrefetchLink>
         </div>
       </section>

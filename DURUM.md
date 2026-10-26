@@ -4,7 +4,7 @@
 > Kapanış standardı: `ScryneOS/🎯 100-Command-Center/Kapanis-Standardi.md`
 
 **Ölçüm tarihi:** 2026-10-26 (önceki: 2026-08-27)
-**Tek cümle:** 566 sayfa derleniyor, veri ve içerik denetimleri temiz, arayüz tutarlı Türkçe; canlı kurulumu yok.
+**Tek cümle:** Canlıda (https://scryne.github.io/MythAtlas/, GitHub Pages, statik); 566 sayfa, veri ve içerik denetimleri temiz, arayüz tutarlı Türkçe.
 
 ## Ne çalışıyor (2026-10-26'da ölçüldü)
 
@@ -29,12 +29,14 @@
 
 ## Ne yarım / bilinen sınırlar
 
-- **Canlı kurulum yok** (`og/[entity]/[id]` görsel rotaları sunucu istiyor; statik dışa aktarım için bu rotalar
-  derleme anında üretilmeli). `metadataBase` `NEXT_PUBLIC_SITE_URL` yoksa `mythatlas.app`'e düşüyor; alan adı alınmadı.
+- ~~Canlı kurulum yok~~ → 2026-10-26: statik dışa aktarım + GitHub Pages (`.github/workflows/pages.yml`). Görsel proxy'si
+  kalktı (Commons adresleri derlemeden önce `npm run images:resolve` ile çözülüyor; 371 adresin 41'i Commons'ta yok, yer
+  tutucu), paylaşım kartları derlemede metin kartı olarak üretiliyor, taban yol `/MythAtlas` tek modülden (`src/lib/site.ts`).
 - Soy ağacı ve paraleller sayfalarında ham hex renkler duruyor (eski borç, `DESIGN.md`'de not edildi).
 - Mobilde soy ağacı "masaüstünde daha iyi" kapısıyla açılıyor; kapıdan geçilince grafik dokunmatik kaydırmayla çalışıyor.
 - `eslint` 33 uyarı (çoğu `set-state-in-effect`), hata yok.
 
 ## Sonraki adım
 
-Yayın kararı Scryne'da: Vercel/Pages ve alan adı. Teknik iş: OG rotalarını derleme anında üretip statik dışa aktarım.
+Alan adı istenirse: `NEXT_PUBLIC_SITE_URL` + CNAME, `NEXT_PUBLIC_BASE_PATH` boş. Commons'ta bulunamayan 41 görsel için doğru dosya
+adları elle bulunup `scripts/resolve-images.mjs` eşleme tablosuna eklenebilir.

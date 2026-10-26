@@ -3,6 +3,7 @@ import { Cinzel, Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import AppShell from '@/components/layout/AppShell';
 import PwaBridge from '@/components/pwa/PwaBridge';
+import { SITE_URL, absoluteUrl, ogImageUrl } from '@/lib/site';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app'),
+  metadataBase: new URL(`${SITE_URL}/`),
   title: {
     default: 'MythAtlas - Canlı Mitoloji Atlası',
     template: '%s | MythAtlas',
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     'harita',
   ],
   alternates: {
-    canonical: '/',
+    canonical: absoluteUrl('/'),
   },
   openGraph: {
     title: 'MythAtlas - Canlı Mitoloji Atlası',
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     alternateLocale: 'en_US',
     images: [
       {
-        url: 'https://mythatlas.app/og/site/default',
+        url: ogImageUrl('site', 'default'),
         width: 1200,
         height: 630,
         alt: 'MythAtlas cover',
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MythAtlas - Canlı Mitoloji Atlası',
     description: 'Kadim medeniyetlerin mitlerini, tanrılarını ve kutsal alanlarını tek bir interaktif atlas üzerinden keşfedin.',
-    images: ['https://mythatlas.app/og/site/default'],
+    images: [ogImageUrl('site', 'default')],
   },
 };
 

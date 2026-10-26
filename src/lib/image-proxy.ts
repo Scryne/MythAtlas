@@ -1,11 +1,13 @@
+import imageMap from '@/data/image-map.json';
+import { withBasePath } from '@/lib/site';
+
 const WIKIMEDIA_HOSTNAME = 'upload.wikimedia.org';
 const WIKIMEDIA_COMMONS_PATH = '/wikipedia/commons/';
-const IMAGE_PROXY_PREFIX = '/api/image';
 
-export interface WikimediaImageRequest {
-  filename: string;
-  width?: number;
-}
+// Derlemeden önce çözülmüş Commons adresleri (`npm run images:resolve`, scripts/resolve-images.mjs).
+// Site statik yayınlandığı için çalışma anında görsel proxy'si yok; tarayıcı görseli doğrudan Wikimedia'dan alır.
+// Değer '' ise dosya Commons'ta yok: istek atılmaz, bileşen yer tutucusunu çizer.
+const RESOLVED_IMAGES: Record<string, string> = imageMap;
 
 function parseUrl(value: string) {
   try {
@@ -27,42 +29,16 @@ export function isWikimediaCommonsImageUrl(value?: string | null): value is stri
   );
 }
 
-export function isImageProxyUrl(value?: string | null): value is string {
-  return Boolean(value && value.startsWith(`${IMAGE_PROXY_PREFIX}?`));
-}
-
-export function extractWikimediaImageRequest(value?: string | null): WikimediaImageRequest | null {
-  if (!isWikimediaCommonsImageUrl(value)) return null;
-
-  const url = parseUrl(value.trim());
-  if (!url) return null;
-
-  const parts = url.pathname.split('/').filter(Boolean);
-  const lastSegment = parts[parts.length - 1];
-  const filenameSegment = parts[parts.length - 2];
-  if (!lastSegment || !filenameSegment) return null;
-
-  const widthMatch = lastSegment.match(/^(\d+)px-/);
-
-  return {
-    filename: decodeURIComponent(filenameSegment),
-    width: widthMatch ? Number(widthMatch[1]) : undefined,
-  };
-}
-
-export function getDisplayImageSrc(value?: string | null, searchHint?: string): string | undefined {
+export function getDisplayImageSrc(value?: string | null, _searchHint?: string): string | undefined {
   if (!value) return undefined;
 
   const trimmed = value.trim();
   if (!trimmed) return undefined;
-  if (trimmed.startsWith('/')) return trimmed;
-  if (isImageProxyUrl(trimmed)) return trimmed;
+  if (trimmed.startsWith('/')) return withBasePath(trimmed);
   if (isWikimediaCommonsImageUrl(trimmed)) {
-    const params = new URLSearchParams({ src: trimmed });
-    if (searchHint && searchHint.trim()) {
-      params.set('label', searchHint.trim());
-    }
-    return `${IMAGE_PROXY_PREFIX}?${params.toString()}`;
+    const resolved = RESOLVED_IMAGES[trimmed];
+    if (resolved === '') return undefined;
+    return resolved ?? trimmed;
   }
 
   return trimmed;

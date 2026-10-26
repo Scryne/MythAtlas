@@ -8,6 +8,9 @@
 
 MythAtlas is a public mythology atlas that maps myths, deities, and sacred sites across civilizations.
 
+**Live:** https://scryne.github.io/MythAtlas/ (static build on GitHub Pages; the interface is in Turkish, the
+underlying myth, deity and site data are in English).
+
 ## Highlights
 - Interactive world map for mythologies, myths, deities, and sacred sites.
 - Rich detail pages with cross-links between entities.
@@ -58,6 +61,22 @@ excavation status and unsourced "scholarly consensus" labels. It was cleaned in 
    npm run build
    npm run start
    ```
+
+## Deployment
+The site is exported as static HTML and published to GitHub Pages by `.github/workflows/pages.yml` on every push to
+`master`:
+
+```bash
+MYTHATLAS_STATIC=1 NEXT_PUBLIC_BASE_PATH=/MythAtlas NEXT_PUBLIC_SITE_URL=https://scryne.github.io/MythAtlas npm run build
+# → out/ (566 pages, a 1200x630 share card per entity under out/og/)
+```
+
+- There is no image proxy at runtime: Wikimedia Commons URLs are resolved once, before the build, by
+  `npm run images:resolve` into `src/data/image-map.json` (current thumbnail URL per file, renamed files mapped, missing
+  files marked so the UI draws its placeholder without a request). Run it after adding images; `npm run images:check`
+  fails the deploy if an image URL is not in the map.
+- Share cards are generated at build time by `src/app/og/[entity]/[file]/route.tsx` as text cards (no remote photo), so
+  every build is deterministic and does not call Wikimedia.
 
 ## Quality Checks
 - Run linting:

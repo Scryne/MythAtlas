@@ -94,7 +94,7 @@ export default function DeityEvolutionPageClient() {
           <h1 className="mt-3 font-heading text-3xl text-[#f0d58d] sm:text-4xl">Tanrı Evrim Zincirleri</h1>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-[#cfbc95]">
             Zincirler, tanrı figürlerinin farklı mitolojik sistemlerde nasıl yeniden yorumlandığını gösterir.
-            Oklarin ustune gelerek hangi ozelliklerin degistigini gorebilirsin.
+            Okların üstüne gelerek hangi özelliklerin değiştiğini görebilirsin.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <HoverPrefetchLink href="/family-tree" className="rounded-full border border-[#c9a84c]/35 px-4 py-2 text-xs text-[#f0d58d]">
@@ -212,7 +212,7 @@ export default function DeityEvolutionPageClient() {
           <div className="flex items-center justify-between border-b border-[#c9a84c]/20 px-4 py-3">
             <h3 className="text-sm tracking-[0.14em] text-[#edd39c]">Tanrı Ayrıntısı</h3>
             <button type="button" onClick={() => setSelectedStep(null)} className="text-xs text-[#d0bb8b] hover:text-[#f2d68e]">
-              Close
+              Kapat
             </button>
           </div>
           {activeStepData && (
@@ -238,7 +238,7 @@ export default function DeityEvolutionPageClient() {
               ) : (
                 <p className="leading-relaxed text-[#c5b38d]">
                   Bu adim icin yerel deity kaydi bulunmuyor; zincir verisi akademik karsilastirma amaciyla
-                  derlenmistir.
+                  derlenmiştir.
                 </p>
               )}
               <div>
@@ -254,7 +254,7 @@ export default function DeityEvolutionPageClient() {
                   href={`/deity/${activeStepData.deity.id}`}
                   className="inline-flex rounded-full border border-[#c9a84c]/40 px-4 py-2 text-xs text-[#f0d58d]"
                 >
-                  Deity detail page
+                  Tanrı ayrıntı sayfası
                 </HoverPrefetchLink>
               )}
             </div>

@@ -26,6 +26,7 @@ import {
   parseEraRange,
   siteTypeLabel,
 } from '@/lib/myth-utils';
+import { SITE_URL, absoluteUrl, ogImageUrl } from '@/lib/site';
 
 interface DeityPageProps {
   params: Promise<{
@@ -33,7 +34,6 @@ interface DeityPageProps {
   }>;
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
 
 interface EquivalentCard {
   id: string;
@@ -129,11 +129,11 @@ export async function generateMetadata(props: DeityPageProps): Promise<Metadata>
     title: deity.name,
     description: deity.description,
     keywords: [deity.name, ...deity.domain, mythology?.name || '', 'deity', 'mythology'].filter(Boolean),
-    alternates: { canonical: `/deity/${deity.id}` },
+    alternates: { canonical: absoluteUrl(`/deity/${deity.id}`) },
     openGraph: {
       title: `${deity.name} | MythAtlas`,
       description: deity.description,
-      images: [`/og/deity/${deity.id}`],
+      images: [ogImageUrl('deity', deity.id)],
       type: 'profile',
       url: `${SITE_URL}/deity/${deity.id}`,
     },
@@ -141,7 +141,7 @@ export async function generateMetadata(props: DeityPageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: `${deity.name} | MythAtlas`,
       description: deity.description,
-      images: [`/og/deity/${deity.id}`],
+      images: [ogImageUrl('deity', deity.id)],
     },
   };
 }

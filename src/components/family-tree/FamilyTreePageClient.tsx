@@ -564,7 +564,7 @@ export default function FamilyTreePageClient() {
                 }}
                 className="rounded-md border border-[#6ed2ef]/35 px-2 py-1 text-xs text-[#c9f3ff]"
               >
-                Reset
+                Sıfırla
               </button>
             </div>
           </div>
@@ -921,14 +921,14 @@ export default function FamilyTreePageClient() {
                   href={`/mythology/${selectedNode.id}`}
                   className="inline-flex rounded-full border border-[#c9a84c]/40 px-4 py-2 text-xs tracking-[0.1em] text-[#f1d58d]"
                 >
-                  Mythology detail page
+                  Mitoloji ayrıntı sayfası
                 </HoverPrefetchLink>
               )}
               <HoverPrefetchLink
                 href={`/family-tree?mythologyId=${selectedNode.id}`}
                 className="inline-flex rounded-full border border-[#7ad7f4]/40 px-4 py-2 text-xs tracking-[0.1em] text-[#bceafb]"
               >
-                Graph centered on this node
+                Grafiği bu düğüme ortala
               </HoverPrefetchLink>
             </>
           )}

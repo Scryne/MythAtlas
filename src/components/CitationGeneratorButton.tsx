@@ -115,7 +115,7 @@ export default function CitationGeneratorButton({
 
             <p className="mt-4 rounded-md border border-amber-300/30 bg-amber-500/10 p-3 text-sm text-amber-100">
               Bu platform ikincil kaynak olarak kullanılabilir. Doğrudan akademik çalışmalar için
-              birincil kaynaklara basvurunuz.
+              birincil kaynaklara başvurunuz.
             </p>
 
             <div className="mt-4 rounded-md border border-gold/20 bg-black/20 p-3">

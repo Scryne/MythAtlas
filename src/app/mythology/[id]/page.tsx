@@ -12,6 +12,7 @@ import {
   type MythologyBundle,
 } from '@/lib/myth-data';
 import { buildConceptComparison, findSimilarMythologies } from '@/lib/myth-utils';
+import { SITE_URL, absoluteUrl, ogImageUrl } from '@/lib/site';
 
 interface MythologyPageProps {
   params: Promise<{
@@ -19,7 +20,6 @@ interface MythologyPageProps {
   }>;
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
 
 function buildSimilarCards(bundle: MythologyBundle): SimilarMythologyCardData[] {
   if (!bundle.completeness.hasComparableData) return [];
@@ -92,12 +92,12 @@ export async function generateMetadata(props: MythologyPageProps): Promise<Metad
       'sacred sites',
     ],
     alternates: {
-      canonical: `/mythology/${mythology.id}`,
+      canonical: absoluteUrl(`/mythology/${mythology.id}`),
     },
     openGraph: {
       title: `${mythology.name} | MythAtlas`,
       description: mythology.significance,
-      images: [`/og/mythology/${mythology.id}`],
+      images: [ogImageUrl('mythology', mythology.id)],
       type: 'article',
       url: `${SITE_URL}/mythology/${mythology.id}`,
     },
@@ -105,7 +105,7 @@ export async function generateMetadata(props: MythologyPageProps): Promise<Metad
       card: 'summary_large_image',
       title: `${mythology.name} | MythAtlas`,
       description: mythology.significance,
-      images: [`/og/mythology/${mythology.id}`],
+      images: [ogImageUrl('mythology', mythology.id)],
     },
   };
 }

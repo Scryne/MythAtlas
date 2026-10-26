@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { useEffect, useState } from 'react';
+import { withBasePath } from '@/lib/site';
 
 export default function PwaBridge() {
   const [offline, setOffline] = useState(false);
@@ -13,7 +14,7 @@ export default function PwaBridge() {
     window.addEventListener('offline', sync);
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').catch(() => undefined);
+      navigator.serviceWorker.register(withBasePath('/sw.js'), { scope: withBasePath('/') }).catch(() => undefined);
     }
 
     return () => {

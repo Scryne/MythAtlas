@@ -1,29 +1,43 @@
 ﻿import { ImageResponse } from 'next/og';
 import { deities, mythologies, myths, sacredSites } from '@/lib/myth-data';
 
-export const runtime = 'edge';
+// Paylaşım kartları derleme anında `og/<varlık>/<kimlik>.png` olarak üretilir (statik site, GitHub Pages).
+// Fotoğraf gömülmez: kart başına ~1–2 MB ve her derlemede Wikimedia'ya 510 istek demekti; markalı metin kartı
+// her derlemede aynı çıkar ve ~40 KB'dır.
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return [
+    { entity: 'site', file: 'default.png' },
+    ...mythologies.map((item) => ({ entity: 'mythology', file: `${item.id}.png` })),
+    ...myths.map((item) => ({ entity: 'myth', file: `${item.id}.png` })),
+    ...deities.map((item) => ({ entity: 'deity', file: `${item.id}.png` })),
+    ...sacredSites.map((item) => ({ entity: 'site', file: `${item.id}.png` })),
+  ];
+}
 
 interface OgRouteParams {
   params: Promise<{
     entity: string;
-    id: string;
+    file: string;
   }>;
 }
 
-function resolveEntity(entity: string, id: string): { title: string; subtitle: string; image: string } {
+function resolveEntity(entity: string, id: string): { title: string; subtitle: string } {
   if (entity === 'mythology') {
     const item = mythologies.find((mythology) => mythology.id === id);
-    if (item) return { title: item.name, subtitle: item.region, image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: item.region };
   }
 
   if (entity === 'myth') {
     const item = myths.find((myth) => myth.id === id);
-    if (item) return { title: item.name, subtitle: 'Mit', image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: 'Mit' };
   }
 
   if (entity === 'deity') {
     const item = deities.find((deity) => deity.id === id);
-    if (item) return { title: item.name, subtitle: 'Tanrı', image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: 'Tanrı' };
   }
 
   if (entity === 'site') {
@@ -31,23 +45,21 @@ function resolveEntity(entity: string, id: string): { title: string; subtitle: s
       return {
         title: 'MythAtlas',
         subtitle: 'İnteraktif Mitoloji Atlası',
-        image: mythologies[0]?.imageUrl || '',
       };
     }
     const item = sacredSites.find((site) => site.id === id);
-    if (item) return { title: item.name, subtitle: 'Kutsal Alan', image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: 'Kutsal Alan' };
   }
 
   return {
     title: 'MythAtlas',
     subtitle: 'İnteraktif Mitoloji Atlası',
-    image: mythologies[0]?.imageUrl || '',
   };
 }
 
 export async function GET(_request: Request, props: OgRouteParams) {
   const params = await props.params;
-  const data = resolveEntity(params.entity, params.id);
+  const data = resolveEntity(params.entity, params.file.replace(/\.png$/, ''));
 
   return new ImageResponse(
     (
@@ -58,24 +70,10 @@ export async function GET(_request: Request, props: OgRouteParams) {
           display: 'flex',
           position: 'relative',
           overflow: 'hidden',
-          background: '#0d0a07',
+          background: 'radial-gradient(circle at 18% 12%, rgba(201,168,76,0.30) 0%, rgba(13,10,7,1) 58%)',
           color: '#f4e4c1',
         }}
       >
-        {data.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={data.image}
-            alt={data.title}
-            style={{
-              position: 'absolute',
-              inset: 0,
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        ) : null}
 
         <div
           style={{

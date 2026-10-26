@@ -523,7 +523,7 @@ export default function SiteDetailTabs({
                         rel="noopener noreferrer"
                         className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light hover:bg-gold/10"
                       >
-                        Koleksiyon sayfasi
+                        Koleksiyon sayfası
                       </a>
                     </article>
                   ))}

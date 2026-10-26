@@ -1,7 +1,9 @@
 ﻿import type { MetadataRoute } from 'next';
 import { deities, mythologies, myths, sacredSites } from '@/lib/myth-data';
+import { SITE_URL } from '@/lib/site';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
+export const dynamic = 'force-static';
+
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

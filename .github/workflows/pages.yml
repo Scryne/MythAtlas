@@ -1,0 +1,47 @@
+name: Pages
+
+# master'a her push'ta statik siteyi derleyip GitHub Pages'e (https://scryne.github.io/MythAtlas/) yayınlar.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # görsel adresleri derlemeden önce çözülmüş olmalı (src/data/image-map.json); eksik varsa yayın durur
+      - run: npm run images:check
+      - run: npm run build
+        env:
+          MYTHATLAS_STATIC: "1"
+          NEXT_PUBLIC_BASE_PATH: /MythAtlas
+          NEXT_PUBLIC_SITE_URL: https://scryne.github.io/MythAtlas
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

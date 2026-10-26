@@ -1,15 +1,15 @@
-const CACHE_VERSION = 'mythatlas-v4';
+const CACHE_VERSION = 'mythatlas-v5';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 
+// Site bir alt yolda yayınlanabilir (GitHub Pages: /MythAtlas); taban kayıt kapsamından okunur.
+const BASE = new URL(self.registration.scope).pathname.replace(/\/$/, '');
+const at = (path) => `${BASE}${path}`;
+
+// Rota sayfaları gezinirken önbelleğe alınır; burada önceden alınmaz (sondaki eğik çizgi yönlendirmesi
+// addAll'u düşürüp service worker kurulumunu iptal ediyordu).
 const CORE_ASSETS = [
   '/',
-  '/map',
-  '/discover',
-  '/themes',
-  '/parallels',
-  '/compare',
-  '/stats',
   '/offline.html',
   '/icons/mythatlas-icon.svg',
   '/data/mythologies.json',
@@ -28,17 +28,17 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const staticCache = await caches.open(STATIC_CACHE);
-      await staticCache.addAll(CORE_ASSETS);
+      await staticCache.addAll(CORE_ASSETS.map(at));
 
       const dataCache = await caches.open(DATA_CACHE);
-      const manifestResponse = await fetch('/data/by-mythology/manifest.json');
+      const manifestResponse = await fetch(at('/data/by-mythology/manifest.json'));
       if (manifestResponse.ok) {
         const manifest = await manifestResponse.json();
         const paths = (manifest.mythologies || []).flatMap((id) => [
-          `/data/by-mythology/${id}/region.geojson`,
-          `/data/by-mythology/${id}/sites.geojson`,
-          `/data/by-mythology/${id}/myths.geojson`,
-          `/data/by-mythology/${id}/deities.geojson`,
+          at(`/data/by-mythology/${id}/region.geojson`),
+          at(`/data/by-mythology/${id}/sites.geojson`),
+          at(`/data/by-mythology/${id}/myths.geojson`),
+          at(`/data/by-mythology/${id}/deities.geojson`),
         ]);
         await Promise.all(paths.map((path) => dataCache.add(path).catch(() => undefined)));
       }
@@ -66,11 +66,11 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
 
   const url = new URL(request.url);
-  const isBuildAsset = url.pathname.startsWith('/_next/');
+  const isBuildAsset = url.pathname.startsWith(at('/_next/'));
   const isDataRequest =
     url.pathname.endsWith('.json') ||
     url.pathname.endsWith('.geojson') ||
-    url.pathname.startsWith('/data/');
+    url.pathname.startsWith(at('/data/'));
 
   // Never cache Next.js build assets; stale chunk references cause 404 loops after deploys.
   if (isBuildAsset) {
@@ -90,7 +90,7 @@ self.addEventListener('fetch', (event) => {
         } catch {
           const cached = await caches.match(request);
           if (cached) return cached;
-          const offline = await caches.match('/offline.html');
+          const offline = await caches.match(at('/offline.html'));
           if (offline) return offline;
           return Response.error();
         }
