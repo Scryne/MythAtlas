@@ -3,7 +3,7 @@ import { Cinzel, Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import AppShell from '@/components/layout/AppShell';
 import PwaBridge from '@/components/pwa/PwaBridge';
-import { SITE_URL, absoluteUrl, ogImageUrl } from '@/lib/site';
+import { SITE_URL, absoluteUrl, ogImageUrl, withBasePath } from '@/lib/site';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -43,6 +43,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: absoluteUrl('/'),
+  },
+  // Pages alt yolunda tarayıcının varsayılan /favicon.ico isteği sitenin dışına (kök alana) düşer; simge açıkça verilir.
+  icons: {
+    icon: [{ url: withBasePath('/icons/mythatlas-icon.svg'), type: 'image/svg+xml' }],
   },
   openGraph: {
     title: 'MythAtlas - Canlı Mitoloji Atlası',

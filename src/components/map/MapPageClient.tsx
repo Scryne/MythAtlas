@@ -41,8 +41,20 @@ maplibregl.setWorkerUrl(withBasePath('/vendor/maplibre/maplibre-gl-worker.mjs'))
 
 export const dynamic = 'force-dynamic';
 
-const MAP_STYLE = 'https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json';
-const MAP_STYLE_FALLBACK = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+// İki altlık da anahtarsız ve alan adı kaydı istemez. Stadia (önceki birincil) yalnız localhost'ta anahtarsız çalışıyordu:
+// github.io'da her döşeme 401 döndü (2026-10-26 canlı ölçüm), harita ancak yedeğe düşünce çizildi.
+const BASEMAPS = {
+  primary: {
+    style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+    credit: { label: '© CARTO', href: 'https://carto.com/attributions' },
+  },
+  fallback: {
+    style: 'https://tiles.openfreemap.org/styles/dark',
+    credit: { label: 'OpenFreeMap', href: 'https://openfreemap.org' },
+  },
+} as const;
+// Altlık isteği yetkisiz, sunucu hatalı ya da ağdan dönmediyse (AJAXError iletisi "Unauthorized (401): <url>" biçiminde).
+const BASEMAP_FAILURE = /\((401|403|5\d\d)\)|Failed to fetch|NetworkError/;
 const INITIAL_CENTER: [number, number] = [20, 20];
 const INITIAL_ZOOM = 2;
 
@@ -275,6 +287,7 @@ export default function MapPage() {
 
   const [mapReady, setMapReady] = useState(false);
   const [mapError, setMapError] = useState<string | null>(null);
+  const [basemap, setBasemap] = useState<keyof typeof BASEMAPS>('primary');
 
   const [filterOpen, setFilterOpen] = useState(false);
   const [legendOpen, setLegendOpen] = useState(false);
@@ -799,7 +812,7 @@ export default function MapPage() {
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current,
-      style: MAP_STYLE,
+      style: BASEMAPS.primary.style,
       center: INITIAL_CENTER,
       zoom: INITIAL_ZOOM,
       minZoom: 1.5,
@@ -1505,9 +1518,11 @@ export default function MapPage() {
 
     map.on('error', (event) => {
       const msg = event.error?.message ?? '';
-      if (!fallbackActivated && (msg.includes('401') || msg.includes('403'))) {
+      // Yalnız uygulama katmanları kurulmadan önce: setStyle sonradan eklenen kaynak ve katmanları siler.
+      if (!fallbackActivated && !initialized && BASEMAP_FAILURE.test(msg)) {
         fallbackActivated = true;
-        map.setStyle(MAP_STYLE_FALLBACK);
+        setBasemap('fallback');
+        map.setStyle(BASEMAPS.fallback.style);
         return;
       }
       if (!mapReadyRef.current) setMapError('Map style failed to load.');
@@ -2237,6 +2252,11 @@ export default function MapPage() {
           <div className="mb-1 h-[4px] rounded-full bg-gold-light" style={{ width: `${scale.width}px` }} />
           <div className="text-[11px] text-primary">{scale.label}</div>
           <div className="mt-2 border-t border-gold/15 pt-2 font-mono text-[11px] text-secondary">{coords[1].toFixed(4)}, {coords[0].toFixed(4)}</div>
+          <div className="mt-2 text-[10px] text-secondary">
+            <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer" className="pointer-events-auto hover:text-gold-light">© OpenStreetMap</a>
+            {' · '}
+            <a href={BASEMAPS[basemap].credit.href} target="_blank" rel="noreferrer" className="pointer-events-auto hover:text-gold-light">{BASEMAPS[basemap].credit.label}</a>
+          </div>
         </div>
       </div>
 
