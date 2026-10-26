@@ -26,9 +26,9 @@ export default function CopyCoordinates({ lat, lng }: CopyCoordinatesProps) {
       type="button"
       onClick={onCopy}
       className="rounded-md border border-gold/25 bg-black/20 px-3 py-2 text-xs text-foreground/75 hover:border-gold/45"
-      title="Koordinati kopyala"
+      title="Koordinatı kopyala"
     >
-      {copied ? 'Kopyalandi' : text}
+      {copied ? 'Kopyalandı' : text}
     </button>
   );
 }

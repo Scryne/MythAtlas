@@ -19,8 +19,8 @@ const ArchaeologyHubCharts = dynamic(
     ssr: false,
     loading: () => (
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Timeline of Discovery</h2>
-        <p className="meta-text mt-1 text-sm">Grafikler yukleniyor...</p>
+        <h2 className="text-2xl text-gold">Keşif Zaman Çizelgesi</h2>
+        <p className="meta-text mt-1 text-sm">Grafikler yükleniyor...</p>
         <div className="mt-4 h-[360px] rounded-md border border-gold/20 bg-black/20" />
       </section>
     ),
@@ -330,7 +330,7 @@ export default function ArchaeologyHubPage() {
     <div className="section-container space-y-8 py-8">
       <section className="ancient-card p-6">
         <h1 className="text-3xl text-gold">Arkeoloji Merkezi</h1>
-        <p className="meta-text mt-2 text-sm">Kutsal alanlarin arkeolojik kesifleri, eser dagilimlari ve kazi etkinligi.</p>
+        <p className="meta-text mt-2 text-sm">Kutsal alanların arkeolojik keşifleri, eser dağılımları ve kazı etkinliği.</p>
       </section>
 
       <section className="ancient-card p-6">
@@ -363,10 +363,10 @@ export default function ArchaeologyHubPage() {
       <ArchaeologyHubCharts excavationTimeline={excavationTimeline} protectionStats={protectionStats} />
 
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Artifacts by Museum</h2>
+        <h2 className="text-2xl text-gold">Müzeye Göre Eserler</h2>
         <p className="meta-text mt-1 text-sm">Bazi eserlerin hangi ulkede olmasi gerektigi tartisma konusudur.</p>
         <div className="mt-4 grid gap-4 xl:grid-cols-[2fr_1fr]">
-          <MiniWorldMap markers={museumMarkers} title="Museum Distribution" className="p-3" />
+          <MiniWorldMap markers={museumMarkers} title="Müze Dağılımı" className="p-3" />
           <div className="space-y-2">
             {museums.slice(0, 10).map((museum) => (
               <button
@@ -407,7 +407,7 @@ export default function ArchaeologyHubPage() {
       </section>
 
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Insanligin En Onemli Mitolojik Buluntulari</h2>
+        <h2 className="text-2xl text-gold">İnsanlığın En Önemli Mitolojik Buluntuları</h2>
         <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {SIGNIFICANT_FINDS.map((item) => (
             <article key={item.id} className="overflow-hidden rounded-lg border border-gold/20 bg-black/20">

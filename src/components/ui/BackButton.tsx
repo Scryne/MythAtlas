@@ -8,7 +8,7 @@ interface BackButtonProps {
   className?: string;
 }
 
-export default function BackButton({ label = 'Geri don', className }: BackButtonProps) {
+export default function BackButton({ label = 'Geri dön', className }: BackButtonProps) {
   const router = useRouter();
 
   return (

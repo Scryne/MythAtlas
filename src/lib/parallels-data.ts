@@ -54,7 +54,7 @@ export const parallelThemeClusters: ParallelThemeCluster[] = [
       { id: 'norse-flood-curated', mythName: 'Bergelmir Seli', tradition: 'Norse', culture: 'Old Norse', coordinates: [10.8, 59.9], motifs: ['primordial-flood', 'ancestral-survival'], summary: 'Ymir kanından doğan kozmik sel.' },
       { id: 'sumerian-ziusudra-curated', mythName: 'Ziusudra Tufanı', tradition: 'Sumerian', culture: 'Sumer', coordinates: [45.0, 31.0], motifs: ['flood', 'boat', 'sacrifice'], summary: 'Utnapiştim öncülü gelenek.' },
       { id: 'korean-flood-curated', mythName: 'Mokdooryeong Seli', tradition: 'Korean', culture: 'Korean', coordinates: [127.0, 37.5], motifs: ['flood', 'survival', 'pairing'], summary: 'Selden sonra soyun sürdürülmesi.' },
-      { id: 'tai-flood-curated', mythName: 'Naga Seli', tradition: 'Tai-Lao', culture: 'Southeast Asian', coordinates: [102.6, 17.9], motifs: ['flood', 'serpent', 'reset'], summary: 'Yılan bağlantılı su felaketi.' },
+      { id: 'tai-flood-curated', mythName: 'Naga Seli', tradition: 'Tai-Lao', culture: 'Southeast Asian', coordinates: [102.6, 17.9], motifs: ['flood', 'serpent', 'reset'], summary: 'Yılan bağlantılı şu felaketi.' },
       { id: 'yoruba-flood-curated', mythName: 'Olokun Taşkını', tradition: 'Yoruba', culture: 'West African', coordinates: [3.9, 7.4], motifs: ['flood', 'divine-balance', 'restoration'], summary: 'Denge bozulur, yeni düzen kurulur.' },
       { id: 'maasai-flood-curated', mythName: 'Tumbainot Seli', tradition: 'Maasai', culture: 'East African', coordinates: [36.8, -1.3], motifs: ['flood', 'vessel', 'renewal'], summary: 'Seçilmiş kurtuluş kalıbı.' },
       { id: 'apache-flood-curated', mythName: 'Dağ Tepesi Seli', tradition: 'Apache', culture: 'Native North American', coordinates: [-109.0, 34.0], motifs: ['flood', 'high-ground', 'ancestral-survival'], summary: 'Topluluk yüksek zeminde korunur.' },
@@ -127,7 +127,7 @@ export const parallelThemeClusters: ParallelThemeCluster[] = [
     id: 'fire-theft',
     icon: '🔥',
     name: 'Ateşin Çalınması',
-    subtitle: 'Ateşin kültür teknolojisi olarak insanlığa geçiş hikayeleri.',
+    subtitle: 'Ateşin kültür teknolojisi olarak insanlığa geçiş hikâyeleri.',
     color: '#FF6B35',
     versions: [
       { id: 'prometheus-fire', mythName: 'Prometheus Ateşi Çalar', tradition: 'Greek', culture: 'Hellenic', coordinates: [22.5, 38.4], motifs: ['fire', 'theft', 'gift-to-humanity', 'punishment'], summary: 'Ateş armağanı ve ağır bedel.' },
@@ -167,7 +167,7 @@ export const parallelThemeClusters: ParallelThemeCluster[] = [
     versions: [
       { id: 'thor-jormungandr', mythName: 'Thor ve Jörmungandr', tradition: 'Norse', culture: 'Old Norse', coordinates: [-21.9, 64.1], motifs: ['serpent', 'cosmic-battle', 'sea'], summary: 'Yılan kaosu ve tanrısal düzen çatışması.' },
       { id: 'susanoo-serpent', mythName: 'Susanoo ve Orochi', tradition: 'Japanese', culture: 'Shinto', coordinates: [132.5, 35.4], motifs: ['serpent', 'heroic-slaying', 'treasure'], summary: 'Yılan yenilir, kutsal armağan doğar.' },
-      { id: 'dragon-kings', mythName: 'Dört Ejderha Kralı', tradition: 'Chinese', culture: 'Han', coordinates: [121.5, 31.2], motifs: ['dragon', 'water', 'weather-control'], summary: 'Ejderha su düzeni kurar.' },
+      { id: 'dragon-kings', mythName: 'Dört Ejderha Kralı', tradition: 'Chinese', culture: 'Han', coordinates: [121.5, 31.2], motifs: ['dragon', 'water', 'weather-control'], summary: 'Ejderha şu düzeni kurar.' },
       { id: 'quetzalcoatl', mythName: 'Quetzalcoatl', tradition: 'Mesoamerican', culture: 'Nahua', coordinates: [-99.1, 19.4], motifs: ['feathered-serpent', 'wisdom', 'civilization'], summary: 'Tüylü yılan bilgi ve düzen taşır.' },
       { id: 'dreamtime-rainbow-serpent', mythName: 'Gökkuşağı Yılanı', tradition: 'Aboriginal Australian', culture: 'Aboriginal', coordinates: [133.8, -25.2], motifs: ['serpent', 'creation', 'law', 'water'], summary: 'Yılan toprağı ve yasayı şekillendirir.' },
       { id: 'hittite-illuyanka', mythName: 'Illuyanka', tradition: 'Hittite', culture: 'Anatolian', coordinates: [34.6, 40.0], motifs: ['dragon', 'storm-god', 'kingship'], summary: 'Fırtına tanrısı ejderha düellosu.' },
@@ -226,13 +226,13 @@ export const curatedComparisons: CuratedComparisonEntry[] = [
   {
     ids: ['noah-flood-curated', 'mesopotamian-flood'],
     similarity: 95,
-    probableConnection: 'Levant-Mesopotamya hattında metin ve sözlü gelenek dolaşımı.',
+    probableConnection: 'Levant-Mezopotamya hattında metin ve sözlü gelenek dolaşımı.',
     analysis: 'Gemi, seçilmiş kurtuluş, ilahi yargı ve tufan sonrası yeni düzen öğeleri çok güçlü biçimde örtüşür.',
   },
   {
     ids: ['prometheus-fire', 'maui-fire'],
     similarity: 90,
-    probableConnection: 'Doğrudan temas yerine kültür-kurucu trickster/isyankar arketipinin bağımsız tekrarı.',
+    probableConnection: 'Doğrudan temas yerine kültür-kurucu trickster/isyankâr arketipinin bağımsız tekrarı.',
     analysis: 'İki anlatı da ateşi teknik sıçrama olarak kodlar; biri titan isyanı, diğeri trickster zekasıyla çalışır.',
   },
   {

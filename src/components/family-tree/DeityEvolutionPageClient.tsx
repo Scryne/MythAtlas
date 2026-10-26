@@ -29,12 +29,13 @@ function normalize(value: string): string {
   return value.toLowerCase().trim();
 }
 
-function stepImage(step: DeityEvolutionStep): string {
+function stepImage(step: DeityEvolutionStep): string | undefined {
   const deity = getDeityRecord(step.deityId);
   if (deity?.imageUrl) return deity.imageUrl;
   const mythologyNode = getMythologyNode(step.mythologyId);
   if (mythologyNode?.imageUrl) return mythologyNode.imageUrl;
-  return 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ancient_Greek_Temple_Icon.svg/512px-Ancient_Greek_Temple_Icon.svg.png';
+  // Görsel yoksa AncientImage kendi yer tutucusunu çizer (eski Commons yedeği yoktu, 404 → 502 dönüyordu)
+  return undefined;
 }
 
 export default function DeityEvolutionPageClient() {
@@ -89,32 +90,32 @@ export default function DeityEvolutionPageClient() {
     <div className="min-h-screen bg-[#050505] px-4 pb-14 pt-24 text-[#ebd7ab] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 rounded-2xl border border-[#c9a84c]/25 bg-[radial-gradient(circle_at_18%_20%,rgba(201,168,76,0.16),rgba(7,7,7,0.94)_55%)] p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-[#d9bf87]">Deity Evolution Chains</p>
-          <h1 className="mt-3 font-heading text-3xl text-[#f0d58d] sm:text-4xl">Tanri Evrim Zincirleri</h1>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#d9bf87]">Kültürler arası dönüşüm</p>
+          <h1 className="mt-3 font-heading text-3xl text-[#f0d58d] sm:text-4xl">Tanrı Evrim Zincirleri</h1>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-[#cfbc95]">
-            Zincirler, tanri figurlarinin farkli mitolojik sistemlerde nasil yeniden yorumlandigini gosterir.
+            Zincirler, tanrı figürlerinin farklı mitolojik sistemlerde nasıl yeniden yorumlandığını gösterir.
             Oklarin ustune gelerek hangi ozelliklerin degistigini gorebilirsin.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <HoverPrefetchLink href="/family-tree" className="rounded-full border border-[#c9a84c]/35 px-4 py-2 text-xs text-[#f0d58d]">
-              Family Tree graphine don
+              Aile ağacı grafiğine dön
             </HoverPrefetchLink>
             <HoverPrefetchLink href="/compare" className="rounded-full border border-[#7ad7f4]/35 px-4 py-2 text-xs text-[#bceffc]">
-              Compare araci
+              Karşılaştırma aracı
             </HoverPrefetchLink>
           </div>
         </div>
 
         <div className="mb-8 rounded-xl border border-[#c9a84c]/20 bg-[#0f0d09]/85 p-4">
-          <label className="text-xs uppercase tracking-[0.16em] text-[#c9b082]">Search Deity Lineage</label>
+          <label className="text-xs uppercase tracking-[0.16em] text-[#c9b082]">Tanrı soyunda ara</label>
           <input
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder="Ornek: Ishtar, Zeus, Enki..."
+            placeholder="Örnek: Ishtar, Zeus, Enki..."
             className="mt-2 w-full rounded-md border border-[#c9a84c]/25 bg-[#16120d] px-3 py-2 text-sm text-[#ead5a4] outline-none focus:border-[#e6c879]"
           />
           {normalize(search).length >= 2 && !searchMatch && (
-            <p className="mt-2 text-sm text-[#d8b383]">Bu tanrinin bilinen bir evrimi bulunmuyor.</p>
+            <p className="mt-2 text-sm text-[#d8b383]">Bu tanrının bilinen bir evrimi bulunmuyor.</p>
           )}
           {searchMatch && (
             <p className="mt-2 text-sm text-[#9fe6ff]">
@@ -209,7 +210,7 @@ export default function DeityEvolutionPageClient() {
           }`}
         >
           <div className="flex items-center justify-between border-b border-[#c9a84c]/20 px-4 py-3">
-            <h3 className="text-sm tracking-[0.14em] text-[#edd39c]">Deity Detail</h3>
+            <h3 className="text-sm tracking-[0.14em] text-[#edd39c]">Tanrı Ayrıntısı</h3>
             <button type="button" onClick={() => setSelectedStep(null)} className="text-xs text-[#d0bb8b] hover:text-[#f2d68e]">
               Close
             </button>
@@ -241,7 +242,7 @@ export default function DeityEvolutionPageClient() {
                 </p>
               )}
               <div>
-                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Degisim Notlari</p>
+                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Değişim Notlari</p>
                 <ul className="list-disc space-y-1 pl-5 text-xs">
                   {activeStepData.step.changes.map((change) => (
                     <li key={change}>{change}</li>

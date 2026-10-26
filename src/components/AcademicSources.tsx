@@ -12,7 +12,7 @@ interface AcademicSourcesProps {
 
 const TYPE_LABELS: Record<AcademicSourceType, string> = {
   primary: 'BIRINCIL',
-  secondary: 'IKINCIL',
+  secondary: 'İKİNCİL',
   archaeological: 'ARKEOLOJIK',
 };
 
@@ -94,7 +94,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
           <h3 className="text-xl text-gold">Akademik Kaynaklar</h3>
         </div>
         <span className="rounded-full border border-gold/30 bg-black/30 px-2 py-1 text-[11px] uppercase tracking-[0.12em] text-gold-light">
-          {open ? 'Gizle' : 'Goster'}
+          {open ? 'Gizle' : 'Göster'}
         </span>
       </button>
 
@@ -115,7 +115,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                 {type === 'primary'
                   ? 'Birincil Kaynaklar'
                   : type === 'secondary'
-                    ? 'Ikincil Kaynaklar'
+                    ? 'İkincil Kaynaklar'
                     : 'Arkeolojik Kaynaklar'}{' '}
                 <span className="ml-1 rounded-full bg-black/35 px-1.5 py-0.5 text-[10px]">
                   {byType[type].length}
@@ -175,7 +175,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                         rel="noopener noreferrer"
                         className="rounded-full border border-gold/35 bg-black/35 px-3 py-1 text-[11px] uppercase tracking-[0.12em] text-gold-light"
                       >
-                        Kaynaga git (dis baglanti)
+                        Kaynağa git (dış bağlantı)
                       </a>
                     )}
 
@@ -200,7 +200,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                         try {
                           await navigator.clipboard.writeText(citation);
                           setCopiedId(source.id);
-                          setToast(`${citationStyle} alintisi kopyalandi`);
+                          setToast(`${citationStyle} alıntısı kopyalandı`);
                           window.setTimeout(() => setCopiedId(null), 1200);
                           window.setTimeout(() => setToast(null), 1200);
                         } catch {
@@ -209,11 +209,11 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                         }
                       }}
                     >
-                      Alinti kopyala
+                      Alıntı kopyala
                     </button>
 
                     {copiedId === source.id && (
-                      <span className="text-xs text-emerald-200">Kopyalandi</span>
+                      <span className="text-xs text-emerald-200">Kopyalandı</span>
                     )}
                   </div>
                 </article>

@@ -99,7 +99,7 @@ export async function generateMetadata(props: MythPageProps): Promise<Metadata> 
   const myth = getMyth(params.id);
   if (!myth) {
     return {
-      title: 'Myth Not Found',
+      title: 'Mit Bulunamadı',
       description: 'This myth entry could not be found in MythAtlas.',
     };
   }
@@ -255,18 +255,18 @@ export default async function MythDetailPage(props: MythPageProps) {
             <BackButton />
           </div>
           <div className="mt-auto">
-            <p className="meta-text mb-3 text-xs uppercase tracking-[0.2em]">Myth Detail</p>
-            <h1 className="text-4xl text-gold md:text-6xl">{myth.name}</h1>
+            <p className="meta-text mb-3 text-xs uppercase tracking-[0.2em]">Mit Ayrıntısı</p>
+            <h1 lang="en" className="text-4xl text-gold md:text-6xl">{myth.name}</h1>
             <div className="mt-4 flex flex-wrap items-center gap-2">
             <span className="rounded-full border border-gold/35 bg-black/45 px-3 py-1 text-xs text-gold-light">
               {mythTypeLabel(myth.type)}
             </span>
             {isUniversalStory && (
               <span
-                title="Bu hikaye dunyanin pek cok kulturunde anlatilir"
+                title="Bu hikâye dünyanın pek çok kültüründe anlatılır"
                 className="rounded-full border border-[#e6c56a]/45 bg-[#322210]/75 px-3 py-1 text-xs text-[#f4dea2]"
               >
-                Evrensel Hikaye
+                Evrensel Hikâye
               </span>
             )}
             {mythology && (
@@ -291,7 +291,7 @@ export default async function MythDetailPage(props: MythPageProps) {
       <section className="section-container space-y-6 py-8">
         <div className="ancient-card p-6">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-2xl text-gold">Full Summary</h2>
+            <h2 className="text-2xl text-gold">Tam Özet</h2>
             <ShareButton title={myth.name} text={`Explore ${myth.name} on MythAtlas`} url={`${SITE_URL}/myth/${myth.id}`} />
           </div>
           <p className="mb-4 leading-relaxed text-foreground/80">{myth.summary}</p>
@@ -301,7 +301,7 @@ export default async function MythDetailPage(props: MythPageProps) {
         <div className="ancient-card p-6">
           <div className="mb-4 flex items-center gap-2">
             <span className="text-xl text-gold">🧬</span>
-            <h3 className="text-2xl text-gold">Bu Mitin DNA'si</h3>
+            <h3 className="text-2xl text-gold">Bu Mitin DNA'sı</h3>
           </div>
           <div className="mb-4 flex flex-wrap gap-2">
             <span
@@ -320,12 +320,12 @@ export default async function MythDetailPage(props: MythPageProps) {
         </div>
 
         <div className="parchment-callout rounded-md p-5">
-          <h3 className="text-lg text-gold">Bu mit neden onemli?</h3>
+          <h3 className="text-lg text-gold">Bu mit neden önemli?</h3>
           <p className="mt-2 text-sm leading-7 text-foreground/80">{myth.significance}</p>
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Characters</h3>
+          <h3 className="mb-4 text-xl text-gold">Karakterler</h3>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {characterCards.map((character) => (
               <div key={character.name} className="rounded-md border border-gold/20 bg-gold/5 p-3">
@@ -333,7 +333,7 @@ export default async function MythDetailPage(props: MythPageProps) {
                 <p className="meta-text text-sm">{character.role}</p>
                 {character.deityId && deityById.get(character.deityId) && (
                   <div className="mt-3 rounded-md border border-gold/25 bg-black/25 p-3">
-                    <p className="text-xs uppercase tracking-[0.12em] text-foreground/55">Bilinen tanri profili</p>
+                    <p className="text-xs uppercase tracking-[0.12em] text-foreground/55">Bilinen tanrı profili</p>
                     <p className="mt-1 text-sm text-gold-light">{deityById.get(character.deityId)?.name}</p>
                     <p className="mt-1 text-xs text-foreground/60">
                       {(deityById.get(character.deityId)?.domain || []).slice(0, 3).join(' · ')}
@@ -352,7 +352,7 @@ export default async function MythDetailPage(props: MythPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-3 text-xl text-gold">Themes</h3>
+          <h3 className="mb-3 text-xl text-gold">Temalar</h3>
           <div className="flex flex-wrap gap-2">
             {myth.themes.map((theme) => (
               <span key={theme} className="rounded-full border border-gold/25 bg-gold/10 px-3 py-1 text-xs text-gold-light">
@@ -366,14 +366,14 @@ export default async function MythDetailPage(props: MythPageProps) {
 
         <div className="space-y-4">
           <div className="ancient-card p-6">
-            <h3 className="text-2xl text-gold">Dunya genelinde benzer hikayeler</h3>
+            <h3 className="text-2xl text-gold">Dünya genelinde benzer hikâyeler</h3>
             <p className="mt-2 text-foreground/75">
-              Paralel mitler, paylasilan anlati cekirdekleri ve akademik baglanti tartismalariyla birlikte sunulur.
+              Paralel mitler, paylaşılan anlatı çekirdekleri ve akademik bağlantı tartışmalarıyla birlikte sunulur.
             </p>
           </div>
 
           <MiniWorldMap
-            title="Paralel Mit Cografyasi"
+            title="Paralel Mit Coğrafyası"
             markers={[
               {
                 id: myth.id,
@@ -448,7 +448,7 @@ export default async function MythDetailPage(props: MythPageProps) {
             })}
             {parallelEntries.length === 0 && (
               <div className="ancient-card p-4 text-sm text-foreground/65">
-                Bu mite bagli acik paralel kaydi bulunmuyor.
+                Bu mite bağlı açık paralel kaydı bulunmuyor.
               </div>
             )}
           </div>
@@ -456,14 +456,14 @@ export default async function MythDetailPage(props: MythPageProps) {
 
         {parallelEntries.length >= 3 && (
           <div className="ancient-card p-6">
-            <h3 className="text-2xl text-gold">Karsilastirmali Analiz</h3>
+            <h3 className="text-2xl text-gold">Karşılaştırmalı Analiz</h3>
             <p className="mt-2 text-sm text-foreground/80">
               Bu mit {parallelCultureCount} farklı kültürden {parallelEntries.length} anlatıyla ortak motif paylaşıyor.
               Benzerlik yüzdesi, iki mitin motif kümelerinin kesişiminin birleşimine oranıdır (Jaccard).
             </p>
             <div className="mt-4">
               <MiniWorldMap
-                title="Paralel anlatilarin cografi yayilimi"
+                title="Paralel anlatıların coğrafi yayılımı"
                 markers={[
                   {
                     id: myth.id,
@@ -487,13 +487,13 @@ export default async function MythDetailPage(props: MythPageProps) {
 
         <div className="space-y-4">
           <div className="ancient-card p-6">
-            <h3 className="text-2xl text-gold">DNA'ya Gore Benzer Mitler</h3>
+            <h3 className="text-2xl text-gold">DNA'ya Göre Benzer Mitler</h3>
             <p className="mt-2 text-foreground/75">
-              Algoritmik DNA eslesmeleri ve akademik kaynakli paraleller ayni katmanda goruntulenir.
+              Algoritmik DNA eşleşmeleri ve akademik kaynaklı paraleller aynı katmanda görüntülenir.
             </p>
           </div>
 
-          <MiniWorldMap title="DNA Benzerlik Haritasi" markers={allMapMarkers} />
+          <MiniWorldMap title="DNA Benzerlik Haritası" markers={allMapMarkers} />
 
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {dnaMatches.map((match) => {
@@ -557,14 +557,14 @@ export default async function MythDetailPage(props: MythPageProps) {
             })}
             {dnaMatches.length === 0 && (
               <div className="ancient-card p-4 text-sm text-foreground/60">
-                DNA tabanli benzer mit bulunamadi.
+                DNA tabanlı benzer mit bulunamadı.
               </div>
             )}
           </div>
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-3 text-xl text-gold">Bu miti paylas</h3>
+          <h3 className="mb-3 text-xl text-gold">Bu miti paylaş</h3>
           <div className="grid gap-3 md:grid-cols-3">
             <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-sm text-foreground/75">
               Biliyor muydunuz? {myth.name} mitiyle benzer hikaye {parallelCultureCount} farkli kulturde anlatiliyor.
@@ -579,10 +579,10 @@ export default async function MythDetailPage(props: MythPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Arkeolojik Kanit</h3>
+          <h3 className="mb-4 text-xl text-gold">Arkeolojik Kanıt</h3>
           {archaeologyEvidence.length === 0 ? (
             <p className="text-sm text-foreground/60">
-              Bu mite bagli arkeolojik eser kaydi henuz eklenmedi.
+              Bu mite bağlı arkeolojik eser kaydı henüz eklenmedi.
             </p>
           ) : (
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -604,7 +604,7 @@ export default async function MythDetailPage(props: MythPageProps) {
                             rel="noopener noreferrer"
                       className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light hover:bg-gold/10"
                     >
-                      Muzede gor
+                      Müzede gör
                     </a>
                   )}
                 </article>
@@ -614,13 +614,13 @@ export default async function MythDetailPage(props: MythPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Related Sacred Sites</h3>
+          <h3 className="mb-4 text-xl text-gold">İlgili Kutsal Alanlar</h3>
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {relatedSites.map((site) => (
               <HoverPrefetchLink key={site.id} href={`/site/${site.id}`} className="rounded-md border border-gold/20 bg-gold/5 p-3">
                 <p className="text-gold-light">{site.name}</p>
                 <p className="meta-text text-xs uppercase tracking-[0.12em]">
-                  {siteTypeLabel(site.type)} · {site.country || 'Unknown'}
+                  {siteTypeLabel(site.type)} · {site.country || 'Bilinmiyor'}
                 </p>
               </HoverPrefetchLink>
             ))}
@@ -632,7 +632,7 @@ export default async function MythDetailPage(props: MythPageProps) {
 
         <footer className="rounded-md border border-gold/20 bg-black/20 p-4 text-sm text-foreground/75">
           Bu sayfadaki bilgiler {sourceCounts.primary} birincil, {sourceCounts.secondary} ikincil
-          kaynaktan derlenmistir. <span className="text-gold-light">Son guncelleme:</span>{' '}
+          kaynaktan derlenmistir. <span className="text-gold-light">Son güncelleme:</span>{' '}
           {LAST_UPDATED_LABEL}
         </footer>
 

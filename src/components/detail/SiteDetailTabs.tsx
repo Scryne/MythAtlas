@@ -201,7 +201,7 @@ export default function SiteDetailTabs({
                   : 'border-gold/20 bg-black/25 text-foreground/70 hover:border-gold/35'
               }`}
             >
-              {key === 'overview' ? 'Genel Bakis' : 'Arkeoloji'}
+              {key === 'overview' ? 'Genel Bakış' : 'Arkeoloji'}
             </button>
           ))}
         </div>
@@ -212,15 +212,15 @@ export default function SiteDetailTabs({
           <div className="grid gap-6 lg:grid-cols-5">
             <div className="space-y-6 lg:col-span-3">
               <div className="ancient-card p-6">
-                <h2 className="mb-3 text-2xl text-gold">Description</h2>
+                <h2 className="mb-3 text-2xl text-gold">Açıklama</h2>
                 <p className="leading-relaxed text-foreground/80">{site.description}</p>
               </div>
 
               <div className="rounded-lg border-2 border-gold/45 bg-[#20160d]/80 p-6">
-                <h3 className="text-xl text-gold">Arkeolojik Onem</h3>
+                <h3 className="text-xl text-gold">Arkeolojik Önem</h3>
                 <p className="mt-2 text-foreground/80">
                   {site.significance ||
-                    `${site.name} arkeolojik kayitlarda ${mythologyName || 'ilgili mitoloji'} geleneginin maddi izlerini tasir.`}
+                    `${site.name} arkeolojik kayıtlarda ${mythologyName || 'ilgili mitoloji'} geleneğinin maddi izlerini taşır.`}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs">
                   {worldHeritage ? (
@@ -238,21 +238,21 @@ export default function SiteDetailTabs({
 
               <div className="grid gap-3 sm:grid-cols-3">
                 <div className="ancient-card p-4">
-                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Kazi baslangici</p>
+                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Kazı başlangıcı</p>
                   <p className="mt-2 text-2xl text-gold-light">{excavationStartYear ?? '-'}</p>
                 </div>
                 <div className="ancient-card p-4">
-                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Eser sayisi</p>
+                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Eser sayısı</p>
                   <p className="mt-2 text-2xl text-gold-light">{artifactCount}</p>
                 </div>
                 <div className="ancient-card p-4">
-                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Muze sayisi</p>
+                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Müze sayısı</p>
                   <p className="mt-2 text-2xl text-gold-light">{museumCount}</p>
                 </div>
               </div>
 
               <div className="ancient-card p-6">
-                <h3 className="mb-3 text-xl text-gold">Historical Context</h3>
+                <h3 className="mb-3 text-xl text-gold">Tarihsel Bağlam</h3>
                 <div className="space-y-3">
                   {historicalContext.map((paragraph) => (
                     <p key={paragraph.slice(0, 24)} className="leading-relaxed text-foreground/75">
@@ -260,17 +260,17 @@ export default function SiteDetailTabs({
                     </p>
                   ))}
                 </div>
-                {site.era && <p className="meta-text mt-3 text-xs uppercase tracking-[0.12em]">Era: {site.era}</p>}
+                {site.era && <p className="meta-text mt-3 text-xs uppercase tracking-[0.12em]">Dönem: {site.era}</p>}
               </div>
 
               <div className="ancient-card p-6">
-                <h3 className="mb-3 text-xl text-gold">Visit Info</h3>
+                <h3 className="mb-3 text-xl text-gold">Ziyaret Bilgisi</h3>
                 <p className="text-foreground/75">{site.modernStatus || 'No modern visit note is available yet.'}</p>
               </div>
 
               {visitorNote && (
                 <div className="parchment-callout rounded-md p-5">
-                  <h3 className="text-lg text-gold">Ziyaretci notu</h3>
+                  <h3 className="text-lg text-gold">Ziyaretçi notu</h3>
                   <p className="mt-2 text-foreground/80">"{visitorNote}"</p>
                 </div>
               )}
@@ -278,7 +278,7 @@ export default function SiteDetailTabs({
 
             <div className="space-y-6 lg:col-span-2">
               <div className="ancient-card p-4">
-                <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-gold/80">Location Map</h3>
+                <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-gold/80">Konum Haritası</h3>
                 <SiteLocationMap
                   center={site.coordinates}
                   label={site.name}
@@ -298,7 +298,7 @@ export default function SiteDetailTabs({
           </div>
 
           <div className="ancient-card p-6">
-            <h3 className="mb-4 text-xl text-gold">Connected Myths</h3>
+            <h3 className="mb-4 text-xl text-gold">Bağlantılı Mitler</h3>
             <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
               {connectedMyths.map((myth) => (
                 <HoverPrefetchLink key={myth.id} href={`/myth/${myth.id}`} className="rounded-md border border-gold/20 bg-gold/5 p-3">
@@ -311,7 +311,7 @@ export default function SiteDetailTabs({
           </div>
 
           <div className="ancient-card p-6">
-            <h3 className="mb-4 text-xl text-gold">Connected Deities</h3>
+            <h3 className="mb-4 text-xl text-gold">Bağlantılı Tanrılar</h3>
             <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
               {connectedDeities.map((deity) => (
                 <HoverPrefetchLink key={deity.id} href={`/deity/${deity.id}`} className="rounded-md border border-gold/20 bg-gold/5 p-3">
@@ -326,9 +326,9 @@ export default function SiteDetailTabs({
           </div>
 
           <div className="ancient-card p-6">
-            <h3 className="mb-4 text-xl text-gold">Nearby Sites (within 1000 km)</h3>
+            <h3 className="mb-4 text-xl text-gold">Yakındaki Alanlar (1000 km içinde)</h3>
             {nearbySites.length === 0 ? (
-              <p className="text-sm text-foreground/60">No nearby sacred sites were found within 1000 km.</p>
+              <p className="text-sm text-foreground/60">1000 km içinde başka kutsal alan bulunamadı.</p>
             ) : (
               <div className="-mx-1 flex snap-x gap-3 overflow-x-auto px-1 pb-2 scroll-fade-x">
                 {nearbySites.map((item) => (
@@ -357,9 +357,9 @@ export default function SiteDetailTabs({
       {tab === 'archaeology' && (
         <>
           <div className="ancient-card p-6">
-            <h3 className="mb-4 text-2xl text-gold">Discovery Timeline</h3>
+            <h3 className="mb-4 text-2xl text-gold">Keşif Zaman Çizelgesi</h3>
             {chronology.length === 0 ? (
-              <p className="text-sm text-foreground/65">Bu site icin kronoloji kaydi henuz olusturulmadi.</p>
+              <p className="text-sm text-foreground/65">Bu site için kronoloji kaydı henüz oluşturulmadı.</p>
             ) : (
               <div className="relative space-y-3 pl-5">
                 <div className="absolute bottom-0 left-1 top-0 w-px bg-gold/25" />
@@ -385,9 +385,9 @@ export default function SiteDetailTabs({
           </div>
 
           <div className="ancient-card p-6">
-            <h3 className="mb-2 text-2xl text-gold">Kazi Tarihi</h3>
+            <h3 className="mb-2 text-2xl text-gold">Kazı Tarihi</h3>
             {excavations.length === 0 ? (
-              <p className="text-sm text-foreground/65">Buyuk kazi kampanyasi kaydi henuz eklenmedi.</p>
+              <p className="text-sm text-foreground/65">Büyük kazı kampanyası kaydı henüz eklenmedi.</p>
             ) : (
               <div className="space-y-3">
                 {excavations.map((entry, index) => (
@@ -404,7 +404,7 @@ export default function SiteDetailTabs({
 
           {artifacts.length > 0 && (
           <div className="ancient-card p-6">
-            <h3 className="mb-3 text-2xl text-gold">Notable Artifacts Gallery</h3>
+            <h3 className="mb-3 text-2xl text-gold">Öne Çıkan Eserler Galerisi</h3>
             {types.length > 0 && (
               <div className="mb-4 flex flex-wrap gap-2 text-xs">
                 <button
@@ -429,11 +429,11 @@ export default function SiteDetailTabs({
               </div>
             )}
 
-            {filteredArtifacts.length === 0 ? <p className="text-sm text-foreground/65">Bu filtrede eser kaydi yok.</p> : <div className="columns-1 gap-4 md:columns-2 xl:columns-3">{filteredArtifacts.map((item) => (<button key={item.id} type="button" onClick={() => setSelectedArtifact(item)} className="mb-4 block w-full break-inside-avoid overflow-hidden rounded-lg border border-gold/20 bg-black/20 text-left"><div className="relative h-44 w-full"><AncientImage src={item.imageUrl} alt={item.name} fill sizes="(max-width: 1280px) 50vw, 33vw" className="h-full w-full object-cover" /></div><div className="space-y-1 p-3"><p className="text-sm text-gold-light">{item.name}</p><p className="meta-text text-xs uppercase tracking-[0.12em]">{item.type}</p><p className="text-xs text-foreground/65">{item.period}</p><p className="text-xs text-foreground/65">{item.currentLocation}</p></div></button>))}</div>}
+            {filteredArtifacts.length === 0 ? <p className="text-sm text-foreground/65">Bu filtrede eser kaydı yok.</p> : <div className="columns-1 gap-4 md:columns-2 xl:columns-3">{filteredArtifacts.map((item) => (<button key={item.id} type="button" onClick={() => setSelectedArtifact(item)} className="mb-4 block w-full break-inside-avoid overflow-hidden rounded-lg border border-gold/20 bg-black/20 text-left"><div className="relative h-44 w-full"><AncientImage src={item.imageUrl} alt={item.name} fill sizes="(max-width: 1280px) 50vw, 33vw" className="h-full w-full object-cover" /></div><div className="space-y-1 p-3"><p className="text-sm text-gold-light">{item.name}</p><p className="meta-text text-xs uppercase tracking-[0.12em]">{item.type}</p><p className="text-xs text-foreground/65">{item.period}</p><p className="text-xs text-foreground/65">{item.currentLocation}</p></div></button>))}</div>}
 
             {hasForeignMuseums && (
               <p className="mt-2 text-sm text-foreground/70">
-                Bu eserlerin bir kismi yurt disindaki muzelerde bulunmaktadir.
+                Bu eserlerin bir kısmı yurt dışındaki müzelerde bulunmaktadır.
               </p>
             )}
           </div>
@@ -441,7 +441,7 @@ export default function SiteDetailTabs({
 
           {inscriptions.length > 0 && (
             <div className="ancient-card p-6">
-              <h3 className="mb-3 text-2xl text-gold">Inscriptions</h3>
+              <h3 className="mb-3 text-2xl text-gold">Yazıtlar</h3>
               <div className="grid gap-3 lg:grid-cols-2">
                 {inscriptions.map((item) => (
                   <article key={item.id} className="rounded-lg border border-gold/20 bg-black/20 p-4">
@@ -459,13 +459,13 @@ export default function SiteDetailTabs({
           )}
 
           <div className="ancient-card p-6">
-            <h3 className="mb-3 text-2xl text-gold">Architecture Deep Dive</h3>
+            <h3 className="mb-3 text-2xl text-gold">Mimari Ayrıntılar</h3>
             {archaeology ? (
               <div className="space-y-4">
                 <p className="text-sm text-foreground/80">{archaeology.architecture.originalStructure}</p>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                   <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-xs">
-                    <p className="meta-text">Donem</p>
+                    <p className="meta-text">Dönem</p>
                     <p className="mt-1 text-gold-light">{archaeology.architecture.constructionPeriod}</p>
                   </div>
                   <div className="rounded-md border border-gold/20 bg-black/20 p-3 text-xs">
@@ -495,18 +495,18 @@ export default function SiteDetailTabs({
                     <p className="mt-2 text-sm text-foreground/75">{archaeology.architecture.originalStructure}</p>
                   </div>
                   <div className="rounded-lg border border-gold/20 bg-black/20 p-4">
-                    <p className="meta-text text-xs uppercase tracking-[0.12em]">Simdi nasil</p>
+                    <p className="meta-text text-xs uppercase tracking-[0.12em]">Şimdi nasıl</p>
                     <p className="mt-2 text-sm text-foreground/75">{archaeology.architecture.currentState}</p>
                   </div>
                 </div>
               </div>
             ) : (
-              <p className="text-sm text-foreground/65">Mimari veri bulunamadi.</p>
+              <p className="text-sm text-foreground/65">Mimari veri bulunamadı.</p>
             )}
           </div>
 
           <div className="ancient-card p-6">
-            <h3 className="mb-3 text-2xl text-gold">Bu alandan cikan eserler hangi muzelerde?</h3>
+            <h3 className="mb-3 text-2xl text-gold">Bu alandan çıkan eserler hangi müzelerde?</h3>
             {archaeology && archaeology.museumConnections.length > 0 ? (
               <>
                 <div className="grid gap-3 lg:grid-cols-2">
@@ -528,10 +528,10 @@ export default function SiteDetailTabs({
                     </article>
                   ))}
                 </div>
-                {markers.length > 0 && <MiniWorldMap title="Muze Dagilimi" markers={markers} className="mt-4" />}
+                {markers.length > 0 && <MiniWorldMap title="Müze Dağılımı" markers={markers} className="mt-4" />}
               </>
             ) : (
-              <p className="text-sm text-foreground/65">Muze baglantisi kaydi bulunmuyor.</p>
+              <p className="text-sm text-foreground/65">Müze bağlantısı kaydı bulunmuyor.</p>
             )}
           </div>
         </>
@@ -539,7 +539,7 @@ export default function SiteDetailTabs({
 
       <footer className="rounded-md border border-gold/20 bg-black/20 p-4 text-sm text-foreground/75">
         Bu sayfadaki bilgiler {sourceCount.primary} birincil, {sourceCount.secondary} ikincil
-        kaynaktan derlenmistir. <span className="text-gold-light">Son guncelleme:</span>{' '}
+        kaynaktan derlenmistir. <span className="text-gold-light">Son güncelleme:</span>{' '}
         {lastUpdatedLabel}
       </footer>
 
@@ -550,7 +550,7 @@ export default function SiteDetailTabs({
         description={selectedArtifact ? `${selectedArtifact.type} · ${selectedArtifact.period}` : undefined}
         panelClassName="max-w-3xl"
       >
-        {selectedArtifact ? <div className="space-y-4"><div className="relative h-72 overflow-hidden rounded-card border border-gold/20"><AncientImage src={selectedArtifact.imageUrl} alt={selectedArtifact.name} fill sizes="100vw" className="h-full w-full object-cover" /></div><p className="text-sm text-foreground/75">{selectedArtifact.description}</p><p className="text-sm text-foreground/75">{selectedArtifact.mythologicalSignificance}</p><p className="text-xs text-foreground/70">{selectedArtifact.currentLocation}</p><a href={selectedArtifact.museumUrl} target="_blank" rel="noopener noreferrer" className="app-button app-button-secondary min-h-10 px-4 text-xs uppercase tracking-[0.12em]">Muzede gor</a></div> : null}
+        {selectedArtifact ? <div className="space-y-4"><div className="relative h-72 overflow-hidden rounded-card border border-gold/20"><AncientImage src={selectedArtifact.imageUrl} alt={selectedArtifact.name} fill sizes="100vw" className="h-full w-full object-cover" /></div><p className="text-sm text-foreground/75">{selectedArtifact.description}</p><p className="text-sm text-foreground/75">{selectedArtifact.mythologicalSignificance}</p><p className="text-xs text-foreground/70">{selectedArtifact.currentLocation}</p><a href={selectedArtifact.museumUrl} target="_blank" rel="noopener noreferrer" className="app-button app-button-secondary min-h-10 px-4 text-xs uppercase tracking-[0.12em]">Müzede gör</a></div> : null}
       </Modal>
     </section>
   );

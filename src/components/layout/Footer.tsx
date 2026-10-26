@@ -2,32 +2,32 @@ import Link from 'next/link';
 
 const linkGroups = [
   {
-    title: 'Kesfet',
+    title: 'Keşfet',
     links: [
       { href: '/map', label: 'Harita' },
-      { href: '/discover', label: 'Kesfet' },
+      { href: '/discover', label: 'Keşfet' },
       { href: '/parallels', label: 'Paraleller' },
       { href: '/sites', label: 'Kutsal Alanlar' },
     ],
   },
   {
-    title: 'Arastir',
+    title: 'Araştır',
     links: [
-      { href: '/stats', label: 'Istatistikler' },
+      { href: '/stats', label: 'İstatistikler' },
       { href: '/archaeology', label: 'Arkeoloji' },
-      { href: '/family-tree', label: 'Aile Agaci' },
+      { href: '/family-tree', label: 'Aile Ağacı' },
       { href: '/themes', label: 'Temalar' },
     ],
   },
   {
     title: 'Kaynaklar',
     links: [
-      { href: '/bibliography', label: 'Kaynakca' },
+      { href: '/bibliography', label: 'Kaynakça' },
       { href: '/scholars', label: 'Akademisyenler' },
       { href: '/methodology', label: 'Metodoloji' },
       {
-        href: 'https://github.com/scryn/MythAtlas/blob/main/data/CONTRIBUTING.md',
-        label: 'Veriye katki',
+        href: 'https://github.com/Scryne/MythAtlas/blob/master/data/CONTRIBUTING.md',
+        label: 'Veriye katkı',
         external: true,
       },
     ],
@@ -44,13 +44,13 @@ export default function Footer() {
             <div>
               <p className="font-heading text-2xl font-bold text-gold-gradient">MythAtlas</p>
               <p className="mt-2 max-w-md text-sm text-secondary">
-                Acik kaynak veriyle beslenen, kadim hikayeleri cografya ve arkeolojiyle birlikte
+                Açık kaynak veriyle beslenen, kadim hikâyeleri coğrafya ve arkeolojiyle birlikte
                 okutan dijital atlas.
               </p>
             </div>
             <div className="space-y-2 text-sm text-secondary">
-              <p>Tum veriler acik kaynak referanslardan derlenir.</p>
-              <p>MIT License ile lisanslanmistir.</p>
+              <p>Tüm veriler açık kaynak referanslardan derlenir.</p>
+              <p>MIT License ile lisanslanmıştır.</p>
             </div>
           </div>
 
@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-3 text-xs text-secondary md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} MythAtlas. Tanimlar, veri notlari ve gorseller kaynaklariyla birlikte sunulur.</p>
-          <p>Veriye katki icin GitHub uzerinden pull request gonderebilirsiniz.</p>
+          <p>Veriye katkı için GitHub üzerinden pull request gönderebilirsiniz.</p>
         </div>
       </div>
     </footer>

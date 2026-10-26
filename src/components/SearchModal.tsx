@@ -68,11 +68,11 @@ function mythologyColorForResult(result: SearchResult): string {
 }
 
 const filterOptions: Array<{ id: ResultFilter; label: string }> = [
-  { id: 'all', label: 'Tum Sonuclar' },
+  { id: 'all', label: 'Tüm Sonuçlar' },
   { id: 'mythology', label: 'Mitolojiler' },
   { id: 'myth', label: 'Mitler' },
-  { id: 'deity', label: 'Tanrilar' },
-  { id: 'site', label: 'Mekanlar' },
+  { id: 'deity', label: 'Tanrılar' },
+  { id: 'site', label: 'Mekânlar' },
 ];
 
 export default function SearchModal() {
@@ -207,7 +207,7 @@ export default function SearchModal() {
       open={open}
       onClose={closeModal}
       title="Atlas arama"
-      description="Mitolojiler, mitler, tanrilar ve kutsal alanlar arasinda hizli gecis."
+      description="Mitolojiler, mitler, tanrılar ve kutsal alanlar arasında hızlı geçiş."
       panelClassName="max-w-3xl"
     >
       <div className="space-y-5">
@@ -220,7 +220,7 @@ export default function SearchModal() {
             id="atlas-search-input"
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
-            placeholder="Mitoloji, tanri, site veya elements:flood"
+            placeholder="Mitoloji, tanrı, site veya elements:flood"
             className="w-full rounded-card border border-[color:var(--color-border)] bg-surface px-4 py-3 text-sm text-primary outline-none transition-colors focus:border-[color:var(--color-border-hover)]"
           />
           <div className="flex flex-wrap gap-2">
@@ -248,8 +248,8 @@ export default function SearchModal() {
           {query.trim()
             ? `${filteredResults.length} sonuc bulundu`
             : recents.length
-              ? `${recents.length} son arama saklandi`
-              : 'Aramaya baslamak icin en az iki karakter girin'}
+              ? `${recents.length} son arama saklandı`
+              : 'Aramaya başlamak için en az iki karakter girin'}
         </div>
 
         <div className="max-h-[60vh] overflow-y-auto">
@@ -259,8 +259,8 @@ export default function SearchModal() {
                 <h3 className="font-heading text-sm text-gold">Son aramalar</h3>
                 {recents.length === 0 ? (
                   <EmptyState
-                    title="Arama gecmisi henuz bos"
-                    description="Arama yaptikca hizli erisim icin burada son sorgularinizi gosteririz."
+                    title="Arama geçmişi henüz boş"
+                    description="Arama yaptıkça hızlı erişim için burada son sorgularınızı gösteririz."
                     icon="⌕"
                     className="items-start text-left"
                   />
@@ -281,7 +281,7 @@ export default function SearchModal() {
               </section>
 
               <section className="space-y-3">
-                <h3 className="font-heading text-sm text-gold">Populer aramalar</h3>
+                <h3 className="font-heading text-sm text-gold">Popüler aramalar</h3>
                 <div className="flex flex-wrap gap-2">
                   {popularSearches.map((term) => (
                     <button
@@ -298,8 +298,8 @@ export default function SearchModal() {
             </div>
           ) : groupedResults.length === 0 ? (
             <EmptyState
-              title="Bu iz surulemedi"
-              description="Aradiginiz ifade icin atlasin veri katmanlarinda dogrudan bir kayit bulamadik. Asagidaki onerilerle tekrar deneyebilirsiniz."
+              title="Bu iz sürülemedi"
+              description="Aradığınız ifade için atlasın veri katmanlarında doğrudan bir kayıt bulamadık. Aşağıdaki önerilerle tekrar deneyebilirsiniz."
               icon="✧"
               className="mt-2"
             />
@@ -380,7 +380,7 @@ export default function SearchModal() {
         ) : null}
 
         <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[color:var(--color-border)] pt-4 text-[11px] text-secondary">
-          <span>Kisayollar: ↑ ↓ gezin, Enter ac, ESC kapat</span>
+          <span>Kısayollar: ↑ ↓ gezin, Enter aç, ESC kapat</span>
           <span>Arama paneli: CMD/CTRL + K</span>
         </div>
       </div>

@@ -38,8 +38,8 @@ export interface HighlightPart {
 const categoryMetaList: CategoryMeta[] = [
   { id: 'mythology', label: 'Mitolojiler', icon: '◇' },
   { id: 'myth', label: 'Mitler', icon: '✦' },
-  { id: 'deity', label: 'Tanrilar', icon: '☼' },
-  { id: 'site', label: 'Kutsal Mekanlar', icon: '⌂' },
+  { id: 'deity', label: 'Tanrılar', icon: '☼' },
+  { id: 'site', label: 'Kutsal Mekânlar', icon: '⌂' },
   { id: 'theme', label: 'Temalar', icon: '◎' },
   { id: 'character', label: 'Karakterler', icon: '⚑' },
 ];
@@ -236,7 +236,7 @@ function buildEntries(): SearchEntry[] {
       id: `character:${normalize(item.name)}`,
       category: 'character' as const,
       label: item.name,
-      subtitle: `${item.count} farkli mitte geciyor`,
+      subtitle: `${item.count} farklı mitte geçiyor`,
       href: `/map?focusKind=myth&focusId=${item.mythId}&lat=${item.lat}&lng=${item.lng}&mythologyId=${item.mythologyId}`,
       scoreBoost: 7,
       searchText: `${item.name} character hero`,
@@ -256,7 +256,7 @@ const entries = buildEntries();
 
 export const searchCategories = categoryMetaList;
 
-export const popularSearches = ['Zeus', 'Tufan', 'Yaratilis', 'elements:flood archetypes:hero', 'Kahraman'];
+export const popularSearches = ['Zeus', 'Tufan', 'Yaratılış', 'elements:flood archetypes:hero', 'Kahraman'];
 
 export function runGlobalSearch(query: string, limit = 30): SearchResult[] {
   const dnaFilters = parseDNAQueryFilters(query);

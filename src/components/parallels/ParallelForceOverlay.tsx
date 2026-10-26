@@ -65,7 +65,7 @@ export default function ParallelForceOverlay({ versions, color }: ParallelForceO
 
   return (
     <div className="rounded-lg border border-gold/15 bg-black/20 p-2">
-      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="h-[240px] w-full" role="img" aria-label="Parallel myth force network">
+      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="h-[240px] w-full" role="img" aria-label="Paralel mit kuvvet ağı">
         <rect width={WIDTH} height={HEIGHT} fill="#0b0907" rx={12} />
         {nodes.map((node) => (
           <g key={node.id} transform={`translate(${node.x},${node.y})`}>
@@ -76,7 +76,7 @@ export default function ParallelForceOverlay({ versions, color }: ParallelForceO
           </g>
         ))}
       </svg>
-      <p className="meta-text mt-1 text-xs">D3 force yerlesimi, tema varyantlarinin yogunluk desenini gosterir.</p>
+      <p className="meta-text mt-1 text-xs">D3 kuvvet yerleşimi, tema varyantlarının yoğunluk desenini gösterir.</p>
     </div>
   );
 }

@@ -36,11 +36,11 @@ export default function StatsPage() {
 
   const timelineSpan = timeline.meta.maxYear - timeline.meta.minYear;
   const intersections = [
-    'Turk ve Iskandinav mitolojilerinde ejderha figuru benzer bicimde sinir bekcisi rolunde.',
-    'Mesopotamya, Yunan ve Hint tufan anlatilarinda secilmis kurtulus kalibi tekrar ediyor.',
-    'Atesin insanliga aktarimi en az 6 buyuk kulturde bagimsiz anlatilarla geciyor.',
-    'Olum-den donus motifi, tarim takvimiyle baglantili mitlerde beklenenden daha yogun.',
-    'Ayni gok tanrisi arketipi Yunan, Roma ve Hint sistemlerinde farkli siyasi anlamlar kazaniyor.',
+    'Türk ve İskandinav mitolojilerinde ejderha figürü benzer biçimde sınır bekçisi rolünde.',
+    'Mezopotamya, Yunan ve Hint tufan anlatılarında seçilmiş kurtuluş kalıbı tekrar ediyor.',
+    'Ateşin insanlığa aktarımı en az 6 büyük kültürde bağımsız anlatılarla geçiyor.',
+    'Ölümden dönüş motifi, tarım takvimiyle bağlantılı mitlerde beklenenden daha yoğun.',
+    'Aynı gök tanrısı arketipi Yunan, Roma ve Hint sistemlerinde farklı siyasi anlamlar kazanıyor.',
   ];
   const familyTree = {
     nodes: [
@@ -73,8 +73,8 @@ export default function StatsPage() {
   return (
     <div className="section-container space-y-8 py-8">
       <section className="ancient-card p-6">
-        <h1 className="text-3xl text-gold">Stats & Insights</h1>
-        <p className="meta-text mt-2 text-sm">MythAtlas veri setinin dagilimi, baglantilar ve kulturler arasi desenler.</p>
+        <h1 className="text-3xl text-gold">İstatistik ve İçgörüler</h1>
+        <p className="meta-text mt-2 text-sm">MythAtlas veri setinin dağılımı, bağlantılar ve kültürler arası desenler.</p>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
           <div className="rounded-lg border border-gold/20 bg-black/20 p-4">
             <p className="meta-text text-xs uppercase tracking-[0.14em]">Mitolojiler</p>
@@ -85,11 +85,11 @@ export default function StatsPage() {
             <p className="mt-2 text-3xl text-gold-light"><CountUpOnView value={totals.myths} /></p>
           </div>
           <div className="rounded-lg border border-gold/20 bg-black/20 p-4">
-            <p className="meta-text text-xs uppercase tracking-[0.14em]">Tanrilar</p>
+            <p className="meta-text text-xs uppercase tracking-[0.14em]">Tanrılar</p>
             <p className="mt-2 text-3xl text-gold-light"><CountUpOnView value={totals.deities} /></p>
           </div>
           <div className="rounded-lg border border-gold/20 bg-black/20 p-4">
-            <p className="meta-text text-xs uppercase tracking-[0.14em]">Kutsal mekanlar</p>
+            <p className="meta-text text-xs uppercase tracking-[0.14em]">Kutsal mekânlar</p>
             <p className="mt-2 text-3xl text-gold-light"><CountUpOnView value={totals.sacredSites} /></p>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function StatsPage() {
 
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-6">
-          <h2 className="text-2xl text-gold">Mitoloji Ailesi Agaci</h2>
+          <h2 className="text-2xl text-gold">Mitoloji Ailesi Ağacı</h2>
           <p className="meta-text mt-1 text-sm">Basit etki akislari: Greek -&gt; Roman, Sumerian -&gt; Babylonian -&gt; Hebrew.</p>
           <div className="mt-4 overflow-x-auto">
             <svg viewBox="0 0 560 200" className="min-w-[560px]">
@@ -155,7 +155,7 @@ export default function StatsPage() {
         </article>
 
         <article className="ancient-card p-6">
-          <h2 className="text-2xl text-gold">Ilginc Kesisimler</h2>
+          <h2 className="text-2xl text-gold">İlginç Kesişimler</h2>
           <div className="mt-4 space-y-2">
             {intersections.map((item) => (
               <p key={item} className="rounded-md border border-gold/15 bg-black/20 px-3 py-2 text-sm text-foreground/75">
@@ -167,7 +167,7 @@ export default function StatsPage() {
       </section>
 
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Fun facts</h2>
+        <h2 className="text-2xl text-gold">İlginç bilgiler</h2>
         <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
           {funFacts.map((fact, index) => (
             <div key={fact.label} className="stagger-card rounded-lg border border-gold/20 bg-black/20 p-4" style={{ animationDelay: `${index * 55}ms` }}>

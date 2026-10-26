@@ -38,21 +38,21 @@ export default function ThemesPage() {
   return (
     <div className="section-container space-y-8 py-8">
       <section className="ancient-card p-6">
-        <h1 className="text-3xl text-gold">Theme Explorer</h1>
+        <h1 className="text-3xl text-gold">Tema Gezgini</h1>
         <p className="meta-text mt-2 max-w-3xl text-sm">
-          Evrensel temalar arasinda gezin, hangi kulturlerin benzer motifleri paylastigini kesfet.
+          Evrensel temalar arasında gezin, hangi kültürlerin benzer motifleri paylaştığını keşfet.
         </p>
       </section>
 
       <section>
         <div className="mb-4 flex items-end justify-between">
-          <h2 className="text-2xl text-gold">Evrensel tema izgara</h2>
+          <h2 className="text-2xl text-gold">Evrensel tema ızgarası</h2>
           {selectedTheme && (
             <HoverPrefetchLink
               href={`/map?theme=${selectedTheme.id}`}
               className="rounded-full border border-gold/30 px-4 py-2 text-xs uppercase tracking-[0.14em] text-gold-light hover:border-gold/55 hover:bg-gold/10"
             >
-              Haritada goster
+              Haritada göster
             </HoverPrefetchLink>
           )}
         </div>
@@ -85,7 +85,7 @@ export default function ThemesPage() {
       <section className="ancient-card p-6">
         <div className="mb-4 flex items-center justify-between">
           <div>
-            <h2 className="text-2xl text-gold">Filtrelenmis mit listesi</h2>
+            <h2 className="text-2xl text-gold">Filtrelenmiş mit listesi</h2>
             {selectedTheme && (
               <p className="meta-text mt-1 text-sm">Secili tema: {selectedTheme.name} ({myths.length} mit)</p>
             )}
@@ -116,14 +116,14 @@ export default function ThemesPage() {
             ))}
           </div>
         ) : (
-          <p className="text-sm text-foreground/60">Tema seciniz.</p>
+          <p className="text-sm text-foreground/60">Tema seçiniz.</p>
         )}
       </section>
 
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Tema Agi</h2>
+        <h2 className="text-2xl text-gold">Tema Ağı</h2>
         <p className="meta-text mt-1 text-sm">
-          D3 force graph, temalarin birlikte gorulme sikligini baglanti agirligi ile gosterir.
+          D3 kuvvet grafiği, temaların birlikte görülme sıklığını bağlantı ağırlığı ile gösterir.
         </p>
         <div className="mt-4">
           <ThemeNetworkGraph nodes={network.nodes} edges={network.edges} />

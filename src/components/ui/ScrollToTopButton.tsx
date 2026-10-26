@@ -19,7 +19,7 @@ export default function ScrollToTopButton() {
   return (
     <button
       type="button"
-      aria-label="Sayfa basina don"
+      aria-label="Sayfa başına dön"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       className={`app-button app-button-icon fixed bottom-5 right-5 z-40 h-11 w-11 shadow-[var(--shadow-card)] transition-all ${
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-3 opacity-0'

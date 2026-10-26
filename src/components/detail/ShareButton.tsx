@@ -38,10 +38,10 @@ export default function ShareButton({ title, text, url }: ShareButtonProps) {
     status === 'shared'
       ? 'Paylasildi'
       : status === 'copied'
-        ? 'Baglanti kopyalandi'
+        ? 'Bağlantı kopyalandı'
         : status === 'error'
           ? 'Paylasim kullanilamiyor'
-          : 'Paylas';
+          : 'Paylaş';
 
   return (
     <Button type="button" onClick={handleShare} variant="secondary" size="sm">

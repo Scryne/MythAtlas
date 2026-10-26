@@ -38,8 +38,8 @@ export default function ArchaeologyHubCharts({
   return (
     <>
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Timeline of Discovery</h2>
-        <p className="meta-text mt-1 text-sm">1700-sonrasi buyuk kesif ve kazi kampanyalari.</p>
+        <h2 className="text-2xl text-gold">Keşif Zaman Çizelgesi</h2>
+        <p className="meta-text mt-1 text-sm">1700-sonrası büyük keşif ve kazı kampanyaları.</p>
         <div className="mt-4 h-[360px]">
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart margin={{ top: 16, right: 18, bottom: 16, left: 8 }}>
@@ -61,7 +61,7 @@ export default function ArchaeologyHubCharts({
       </section>
 
       <section className="ancient-card p-6">
-        <h2 className="text-2xl text-gold">Archaeology Snapshot</h2>
+        <h2 className="text-2xl text-gold">Arkeoloji Özeti</h2>
         <div className="mt-4 grid gap-5 lg:grid-cols-2">
           <div className="h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
@@ -79,8 +79,8 @@ export default function ArchaeologyHubCharts({
           </div>
           <div className="rounded-md border border-gold/20 bg-black/20 p-4 text-sm text-foreground/75">
             <p>
-              Bu merkez, kutsal alanlari sadece konum verisi degil; kazi tarihi, eser dagilimi, inscription kayitlari ve
-              muze baglantilariyla birlikte arkeolojik bir bilgi katmani olarak sunar.
+              Bu merkez, kutsal alanlari sadece konum verisi degil; kazi tarihi, eser dagilimi, yazıt kayıtları ve
+              müze bağlantılarıyla birlikte arkeolojik bir bilgi katmanı olarak sunar.
             </p>
           </div>
         </div>

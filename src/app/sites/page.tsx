@@ -16,17 +16,17 @@ import { siteTypeLabel } from '@/lib/myth-utils';
 type ViewMode = 'map' | 'grid' | 'list';
 
 const PROTECTION_FILTERS = [
-  { key: 'all', label: 'Tum korumalar' },
-  { key: 'UNESCO', label: 'UNESCO Dunya Mirasi' },
+  { key: 'all', label: 'Tüm korumalar' },
+  { key: 'UNESCO', label: 'UNESCO Dünya Mirası' },
 ] as const;
 
 const PERIOD_FILTERS = [
-  { key: 'all', label: 'Tum donemler' },
-  { key: 'prehistoric', label: 'Prehistoric' },
-  { key: 'ancient', label: 'Ancient' },
-  { key: 'classical', label: 'Classical' },
-  { key: 'medieval', label: 'Medieval' },
-  { key: 'early_modern', label: 'Early Modern' },
+  { key: 'all', label: 'Tüm dönemler' },
+  { key: 'prehistoric', label: 'Tarih Öncesi' },
+  { key: 'ancient', label: 'Antik' },
+  { key: 'classical', label: 'Klasik' },
+  { key: 'medieval', label: 'Orta Çağ' },
+  { key: 'early_modern', label: 'Erken Modern' },
 ] as const;
 
 function parseEraYear(value?: string): number {
@@ -109,8 +109,8 @@ export default function AllSitesPage() {
   return (
     <div className="section-container space-y-6 py-8">
       <section className="ancient-card p-6">
-        <h1 className="text-3xl text-gold">Tum Kutsal Alanlar</h1>
-        <p className="meta-text mt-2 text-sm">Harita, grid ve liste gorunumleriyle tum kutsal alanlari kesfet.</p>
+        <h1 className="text-3xl text-gold">Tüm Kutsal Alanlar</h1>
+        <p className="meta-text mt-2 text-sm">Harita, ızgara ve liste görünümleriyle tüm kutsal alanları keşfet.</p>
       </section>
 
       <section className="ancient-card space-y-4 p-5">
@@ -126,7 +126,7 @@ export default function AllSitesPage() {
             onChange={(event) => setMythologyFilter(event.target.value)}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
           >
-            <option value="all">Tum mitolojiler</option>
+            <option value="all">Tüm mitolojiler</option>
             {mythologies.map((id) => (
               <option key={id} value={id}>
                 {mythologyById.get(id)?.name || id}
@@ -138,7 +138,7 @@ export default function AllSitesPage() {
             onChange={(event) => setTypeFilter(event.target.value)}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
           >
-            <option value="all">Tum tipler</option>
+            <option value="all">Tüm tipler</option>
             {siteTypes.map((type) => (
               <option key={type} value={type}>
                 {siteTypeLabel(type)}
@@ -150,10 +150,10 @@ export default function AllSitesPage() {
             onChange={(event) => setSortBy(event.target.value as 'name' | 'mythology' | 'era' | 'artifactCount')}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
           >
-            <option value="name">Sirala: Isme gore</option>
-            <option value="mythology">Sirala: Mitolojiye gore</option>
-            <option value="era">Sirala: Doneme gore</option>
-            <option value="artifactCount">Sirala: Eser sayisina gore</option>
+            <option value="name">Sırala: İsme göre</option>
+            <option value="mythology">Sırala: Mitolojiye göre</option>
+            <option value="era">Sırala: Döneme göre</option>
+            <option value="artifactCount">Sırala: Eser sayısına göre</option>
           </select>
         </div>
 
@@ -199,13 +199,13 @@ export default function AllSitesPage() {
         </div>
 
         <p className="meta-text text-xs">
-          {filteredSites.length} site bulundu · UNESCO filtresi icin koruma secicisinde "UNESCO Dunya Mirasi" secilebilir.
+          {filteredSites.length} alan bulundu · UNESCO filtresi icin koruma secicisinde "UNESCO Dünya Mirası" secilebilir.
         </p>
       </section>
 
       {view === 'map' && (
         <section className="space-y-4">
-          <MiniWorldMap markers={mapMarkers} title="Dunya Uzerinde Kutsal Alanlar" className="p-4" />
+          <MiniWorldMap markers={mapMarkers} title="Dünya Üzerinde Kutsal Alanlar" className="p-4" />
           <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {visibleMapCards.map((site) => (
               <HoverPrefetchLink key={site.id} href={`/site/${site.id}`} className="ancient-card overflow-hidden">
@@ -217,7 +217,7 @@ export default function AllSitesPage() {
                   <p className="meta-text text-xs uppercase tracking-[0.12em]">
                     {mythologyById.get(site.mythologyId)?.name || site.mythologyId} · {siteTypeLabel(site.type)}
                   </p>
-                  <p className="text-xs text-foreground/65">{site.country || 'Unknown'} · Eser: {siteArtifactCount(site)}</p>
+                  <p className="text-xs text-foreground/65">{site.country || 'Bilinmiyor'} · Eser: {siteArtifactCount(site)}</p>
                 </div>
               </HoverPrefetchLink>
             ))}
@@ -250,7 +250,7 @@ export default function AllSitesPage() {
                 </p>
                 <p className="line-clamp-3 text-sm text-foreground/75">{site.description}</p>
                 <p className="text-xs text-foreground/65">
-                  {site.country || 'Unknown'} · Eser: {siteArtifactCount(site)}
+                  {site.country || 'Bilinmiyor'} · Eser: {siteArtifactCount(site)}
                 </p>
               </div>
             </HoverPrefetchLink>
@@ -263,9 +263,9 @@ export default function AllSitesPage() {
           <table className="min-w-full text-left text-sm">
             <thead className="text-xs uppercase tracking-[0.12em] text-gold/75">
               <tr>
-                <th className="px-3 py-2">Site</th>
+                <th className="px-3 py-2">Alan</th>
                 <th className="px-3 py-2">Mitoloji</th>
-                <th className="px-3 py-2">Donem</th>
+                <th className="px-3 py-2">Dönem</th>
                 <th className="px-3 py-2">Koruma</th>
                 <th className="px-3 py-2">Eser</th>
               </tr>

@@ -90,13 +90,13 @@ const MYTH_TYPE_COLORS: Record<string, string> = {
 };
 
 const SITE_TYPES = {
-  temple: { icon: '⛩', label: 'Temple', bg: 'rgb(46, 37, 32)', stroke: 'rgb(201, 168, 76)' },
-  oracle: { icon: '👁', label: 'Oracle', bg: 'rgb(36, 29, 23)', stroke: 'rgb(232, 201, 106)' },
-  battlefield: { icon: '⚔', label: 'Battlefield', bg: 'rgb(139, 46, 46)', stroke: 'rgb(181, 68, 68)' },
-  burial: { icon: '☽', label: 'Burial', bg: 'rgb(26, 21, 16)', stroke: 'rgb(168, 152, 128)' },
-  natural: { icon: '🌿', label: 'Natural', bg: 'rgb(36, 29, 23)', stroke: 'rgb(138, 111, 50)' },
-  ruins: { icon: '🏛', label: 'Ruins', bg: 'rgb(26, 21, 16)', stroke: 'rgb(240, 230, 211)' },
-  default: { icon: '✦', label: 'Site', bg: 'rgb(46, 37, 32)', stroke: 'rgb(201, 168, 76)' },
+  temple: { icon: '⛩', label: 'Tapınak', bg: 'rgb(46, 37, 32)', stroke: 'rgb(201, 168, 76)' },
+  oracle: { icon: '👁', label: 'Kehanet Merkezi', bg: 'rgb(36, 29, 23)', stroke: 'rgb(232, 201, 106)' },
+  battlefield: { icon: '⚔', label: 'Savaş Alanı', bg: 'rgb(139, 46, 46)', stroke: 'rgb(181, 68, 68)' },
+  burial: { icon: '☽', label: 'Mezar', bg: 'rgb(26, 21, 16)', stroke: 'rgb(168, 152, 128)' },
+  natural: { icon: '🌿', label: 'Doğal', bg: 'rgb(36, 29, 23)', stroke: 'rgb(138, 111, 50)' },
+  ruins: { icon: '🏛', label: 'Kalıntı', bg: 'rgb(26, 21, 16)', stroke: 'rgb(240, 230, 211)' },
+  default: { icon: '✦', label: 'Alan', bg: 'rgb(46, 37, 32)', stroke: 'rgb(201, 168, 76)' },
 } as const;
 
 type EraBucket = 'ancient' | 'medieval' | 'modern';
@@ -104,11 +104,11 @@ type ArchaeologyPeriodBucket = 'prehistoric' | 'ancient' | 'classical' | 'mediev
 type TabKey = 'overview' | 'myths' | 'deities' | 'sites';
 
 const ARCHAEOLOGY_PERIOD_OPTIONS: Array<{ key: ArchaeologyPeriodBucket; label: string }> = [
-  { key: 'prehistoric', label: 'Prehistoric' },
-  { key: 'ancient', label: 'Ancient' },
-  { key: 'classical', label: 'Classical' },
-  { key: 'medieval', label: 'Medieval' },
-  { key: 'early_modern', label: 'Early Modern' },
+  { key: 'prehistoric', label: 'Tarih Öncesi' },
+  { key: 'ancient', label: 'Antik' },
+  { key: 'classical', label: 'Klasik' },
+  { key: 'medieval', label: 'Orta Çağ' },
+  { key: 'early_modern', label: 'Erken Modern' },
 ];
 
 interface SearchResult {
@@ -600,7 +600,7 @@ export default function MapPage() {
     const hasDNAFilters = dnaFilters.elements.length > 0 || dnaFilters.archetypes.length > 0;
     if (!hasDNAFilters && q.length < 2) return [] as SearchResult[];
 
-    const nameOf = (id?: string) => mythologyById.get(id || '')?.name ?? id ?? 'Unknown';
+    const nameOf = (id?: string) => mythologyById.get(id || '')?.name ?? id ?? 'Bilinmiyor';
     const results: SearchResult[] = [];
 
     mythologies
@@ -1327,7 +1327,7 @@ export default function MapPage() {
           map.setFeatureState({ source: SOURCES.regions, id: next }, { hover: true });
           setTooltip({
             title: String(feature.properties?.name ?? 'Unknown mythology'),
-            subtitle: 'Mythology region',
+            subtitle: 'Mitoloji bölgesi',
             x: event.point.x,
             y: event.point.y,
           });
@@ -2013,14 +2013,14 @@ export default function MapPage() {
         ref={mapContainerRef}
         className="map-container absolute inset-0"
         role="application"
-        aria-label="Interactive mythology map"
+        aria-label="İnteraktif mitoloji haritası"
         tabIndex={0}
       />
       <div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(circle_at_55%_42%,rgba(201,168,76,0.08),rgba(9,7,5,0.22)_55%,rgba(7,6,5,0.38)_100%)]" />
       <div className="map-sepia-overlay" />
 
       <div className="sr-only">
-        <h2>Mythology regions on map</h2>
+        <h2>Haritada mitoloji bölgeleri</h2>
         <ul>
           {mythologies.map((mythology) => (
             <li key={`sr-${mythology.id}`}>
@@ -2043,9 +2043,9 @@ export default function MapPage() {
       {!mapReady && !mapError && (
         <div className="absolute inset-0 z-40 flex items-center justify-center bg-background/80 backdrop-blur-sm">
           <div className="ancient-card w-[min(92vw,360px)] p-5 text-center">
-            <p className="font-heading text-lg text-gold">Harita hazirlaniyor</p>
+            <p className="font-heading text-lg text-gold">Harita hazırlanıyor</p>
             <p className="mt-2 text-sm text-secondary">
-              Katmanlar yukleniyor, kutsal alanlar ve mit cografyasi yerlesiyor.
+              Katmanlar yükleniyor, kutsal alanlar ve mit coğrafyası yerleşiyor.
             </p>
           </div>
         </div>
@@ -2055,9 +2055,9 @@ export default function MapPage() {
         <div className="absolute inset-0 z-50 overflow-y-auto bg-background/95 p-6 backdrop-blur-sm">
           <div className="mx-auto max-w-6xl">
             <div className="mb-5 rounded-card border border-red/35 bg-red/20 p-4 text-parchment">
-              <p className="font-heading text-lg">Map load issue</p>
+              <p className="font-heading text-lg">Harita yüklenemedi</p>
               <p className="mt-1 text-sm">
-                Harita yuklenemedi. Liste gorunumune otomatik gecildi.
+                Harita yüklenemedi. Liste görünümüne otomatik geçildi.
               </p>
             </div>
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -2109,7 +2109,7 @@ export default function MapPage() {
 
       {influenceMode && !activeInfluenceConnection && (
         <div className="pointer-events-none absolute left-1/2 top-32 z-30 -translate-x-1/2 rounded-lg border border-gold/45 bg-surface/90 px-4 py-2 text-xs tracking-[0.08em] text-gold-light">
-          Etki Agi aktif: bir baglanti yayina tiklayarak tarihsel etkilesim detayini ac.
+          Etki Ağı aktif: bir bağlantı yayına tıklayarak tarihsel etkileşim detayini aç.
         </div>
       )}
 
@@ -2125,7 +2125,7 @@ export default function MapPage() {
         <div className="pointer-events-auto absolute right-4 top-4 flex flex-wrap items-center justify-end gap-2">
           <button
             type="button"
-            aria-label="Toggle parallel myths mode"
+            aria-label="Paralel mit kipini aç/kapat"
             onClick={() =>
               setParallelMode((value) => {
                 const next = !value;
@@ -2138,11 +2138,11 @@ export default function MapPage() {
             }
             className={`rounded-lg border px-3 py-2 text-xs ${parallelMode ? 'border-[color:var(--color-border-hover)] bg-elevated/90 text-primary' : 'border-[color:var(--color-border)] bg-surface/85 text-secondary hover:bg-overlay'}`}
           >
-            {parallelMode ? 'Paralel Modu: Acik' : 'Paralel Mitler Modu'}
+            {parallelMode ? 'Paralel Modu: Açık' : 'Paralel Mitler Modu'}
           </button>
           <button
             type="button"
-            aria-label="Toggle influence network"
+            aria-label="Etki ağını aç/kapat"
             onClick={() =>
               setInfluenceMode((value) => {
                 const next = !value;
@@ -2156,19 +2156,19 @@ export default function MapPage() {
             }
             className={`rounded-lg border px-3 py-2 text-xs ${influenceMode ? 'border-gold/70 bg-overlay/90 text-gold-light' : 'border-gold/25 bg-surface/90 text-secondary hover:bg-overlay'}`}
           >
-            {influenceMode ? 'Etki Agi: Acik' : 'Etki Agi'}
+            {influenceMode ? 'Etki Ağı: Açık' : 'Etki Ağı'}
           </button>
           <button
             type="button"
-            aria-label="Toggle connection density heatmap"
+            aria-label="Bağlantı yoğunluğu ısı haritasını aç/kapat"
             onClick={() => setConnectionHeatmap((value) => !value)}
             className={`rounded-lg border px-3 py-2 text-xs ${connectionHeatmap ? 'border-gold/70 bg-overlay/90 text-gold-light' : 'border-gold/25 bg-surface/90 text-secondary'}`}
           >
-            Baglanti Yogunlugu
+            Bağlantı Yoğunluğu
           </button>
           <button
             type="button"
-            aria-label="Toggle archaeology layer"
+            aria-label="Arkeoloji katmanını aç/kapat"
             onClick={() => setArchaeologyLayerEnabled((value) => !value)}
             className={`rounded-lg border px-3 py-2 text-xs ${
               archaeologyLayerEnabled
@@ -2176,11 +2176,11 @@ export default function MapPage() {
                 : 'border-gold/25 bg-surface/90 text-secondary'
             }`}
           >
-            Arkeoloji Katmani
+            Arkeoloji Katmanı
           </button>
           <button
             type="button"
-            aria-label="Open search panel"
+            aria-label="Arama panelini aç"
             onClick={() => {
               setSearchOpen((v) => !v);
               setLegendOpen(false);
@@ -2191,7 +2191,7 @@ export default function MapPage() {
           </button>
           <button
             type="button"
-            aria-label="Open filter panel"
+            aria-label="Filtre panelini aç"
             onClick={() => {
               setFilterOpen((v) => !v);
               setLegendOpen(false);
@@ -2207,7 +2207,7 @@ export default function MapPage() {
           </button>
           <button
             type="button"
-            aria-label="Open legend panel"
+            aria-label="Lejant panelini aç"
             onClick={() => {
               setLegendOpen((v) => !v);
               setFilterOpen(false);
@@ -2225,61 +2225,61 @@ export default function MapPage() {
         </div>
 
         <div className="pointer-events-auto absolute bottom-4 left-4 flex flex-col gap-2 rounded-xl border border-gold/25 bg-surface/90 p-2 backdrop-blur-md">
-          <button type="button" onClick={() => mapRef.current?.zoomIn({ duration: reducedMotion ? 0 : 250 })} aria-label="Zoom in" className="h-8 w-8 rounded-md border border-gold/20 text-gold-light hover:bg-overlay">+</button>
-          <button type="button" onClick={() => mapRef.current?.zoomOut({ duration: reducedMotion ? 0 : 250 })} aria-label="Zoom out" className="h-8 w-8 rounded-md border border-gold/20 text-gold-light hover:bg-overlay">−</button>
-          <button type="button" onClick={resetView} aria-label="Reset map view" className="rounded-md border border-gold/20 px-2 py-1 text-[11px] text-gold-light hover:bg-overlay">Reset</button>
-          <button type="button" onClick={() => mapRef.current?.easeTo({ bearing: 0, duration: reducedMotion ? 0 : 450 })} aria-label="Reset map bearing" className="flex h-8 w-8 items-center justify-center rounded-md border border-gold/20 hover:bg-overlay"><span className="inline-block text-gold-light" style={{ transform: `rotate(${-bearing}deg)` }}>▲</span></button>
+          <button type="button" onClick={() => mapRef.current?.zoomIn({ duration: reducedMotion ? 0 : 250 })} aria-label="Yakınlaştır" className="h-8 w-8 rounded-md border border-gold/20 text-gold-light hover:bg-overlay">+</button>
+          <button type="button" onClick={() => mapRef.current?.zoomOut({ duration: reducedMotion ? 0 : 250 })} aria-label="Uzaklaştır" className="h-8 w-8 rounded-md border border-gold/20 text-gold-light hover:bg-overlay">−</button>
+          <button type="button" onClick={resetView} aria-label="Harita görünümünü sıfırla" className="rounded-md border border-gold/20 px-2 py-1 text-[11px] text-gold-light hover:bg-overlay">Sıfırla</button>
+          <button type="button" onClick={() => mapRef.current?.easeTo({ bearing: 0, duration: reducedMotion ? 0 : 450 })} aria-label="Harita yönünü sıfırla" className="flex h-8 w-8 items-center justify-center rounded-md border border-gold/20 hover:bg-overlay"><span className="inline-block text-gold-light" style={{ transform: `rotate(${-bearing}deg)` }}>▲</span></button>
         </div>
 
         <div className="pointer-events-none absolute bottom-4 right-4 rounded-xl border border-gold/25 bg-surface/90 p-3 text-primary backdrop-blur-md">
-          <div className="mb-2 text-[11px] uppercase tracking-[0.15em] text-secondary">Scale</div>
+          <div className="mb-2 text-[11px] uppercase tracking-[0.15em] text-secondary">Ölçek</div>
           <div className="mb-1 h-[4px] rounded-full bg-gold-light" style={{ width: `${scale.width}px` }} />
           <div className="text-[11px] text-primary">{scale.label}</div>
           <div className="mt-2 border-t border-gold/15 pt-2 font-mono text-[11px] text-secondary">{coords[1].toFixed(4)}, {coords[0].toFixed(4)}</div>
         </div>
       </div>
 
-      <div tabIndex={0} aria-label="Map legend panel" className={`pointer-events-auto absolute left-0 top-0 z-30 h-full w-full transform border-r border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,340px)] ${legendOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div tabIndex={0} aria-label="Harita lejant paneli" className={`pointer-events-auto absolute left-0 top-0 z-30 h-full w-full transform border-r border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,340px)] ${legendOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex items-center justify-between border-b border-gold/15 px-4 py-3">
-          <h2 className="font-heading text-sm tracking-[0.2em] text-gold-light">Legend</h2>
-          <button type="button" onClick={() => setLegendOpen(false)} className="text-xs text-secondary hover:text-gold-light">Close</button>
+          <h2 className="font-heading text-sm tracking-[0.2em] text-gold-light">Lejant</h2>
+          <button type="button" onClick={() => setLegendOpen(false)} className="text-xs text-secondary hover:text-gold-light">Kapat</button>
         </div>
 
         <div className="h-[calc(100%-56px)] space-y-5 overflow-y-auto px-4 py-4 text-sm text-primary">
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Mythology Regions</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Mitoloji Bölgeleri</h3>
             <div className="space-y-1.5">
               {mythologies.map((m) => (<div key={m.id} className="flex items-center gap-2 text-xs"><span className="inline-block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: m.color }} /><span>{m.name}</span></div>))}
             </div>
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Myth Type Colors</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Mit Türü Renkleri</h3>
             <div className="space-y-1.5">
               {Object.entries(MYTH_TYPE_COLORS).map(([type, color]) => (<div key={type} className="flex items-center gap-2 text-xs"><span className="inline-block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: color }} /><span className="capitalize">{type}</span></div>))}
             </div>
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Site Icons</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Alan Simgeleri</h3>
             <div className="grid grid-cols-2 gap-2 text-xs">
               {Object.entries(SITE_TYPES).filter(([k]) => k !== 'default').map(([k, v]) => (<div key={k} className="flex items-center gap-2"><span>{v.icon}</span><span>{v.label}</span></div>))}
             </div>
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Archaeology Overlay</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Arkeoloji Katmanı</h3>
             <div className="space-y-1.5 text-xs text-primary">
               <p>★ UNESCO koruma isareti</p>
-              <p>⛏ Mavi halka = aktif kazi</p>
+              <p>⛏ Mavi halka = aktif kazı</p>
               <p>• Turuncu nokta = eserler birden fazla ulkede</p>
             </div>
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Layer On/Off</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Katman Aç/Kapat</h3>
             <div className="space-y-2 text-xs">
-              {[{ key: 'regions', label: 'Mythology Regions' }, { key: 'sites', label: 'Sacred Sites' }, { key: 'myths', label: 'Myth Origins' }, { key: 'deities', label: 'Deity Origins' }].map((item) => (
+              {[{ key: 'regions', label: 'Mitoloji Bölgeleri' }, { key: 'sites', label: 'Kutsal Alanlar' }, { key: 'myths', label: 'Mit Kökenleri' }, { key: 'deities', label: 'Tanrı Kökenleri' }].map((item) => (
                 <label key={item.key} className="flex items-center justify-between"><span>{item.label}</span><input type="checkbox" checked={layerVisibility[item.key as keyof typeof layerVisibility]} onChange={() => setLayerVisibility((prev) => ({ ...prev, [item.key]: !prev[item.key as keyof typeof prev] }))} className="accent-gold" /></label>
               ))}
             </div>
@@ -2287,12 +2287,12 @@ export default function MapPage() {
         </div>
       </div>
 
-      <div tabIndex={0} aria-label="Map filters panel" className={`pointer-events-auto absolute right-0 top-0 z-30 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(94vw,360px)] ${filterOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex items-center justify-between border-b border-gold/15 px-4 py-3"><h2 className="font-heading text-sm tracking-[0.2em] text-gold-light">Filters</h2><button type="button" onClick={() => setFilterOpen(false)} className="text-xs text-secondary hover:text-gold-light">Close</button></div>
+      <div tabIndex={0} aria-label="Harita filtre paneli" className={`pointer-events-auto absolute right-0 top-0 z-30 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(94vw,360px)] ${filterOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="flex items-center justify-between border-b border-gold/15 px-4 py-3"><h2 className="font-heading text-sm tracking-[0.2em] text-gold-light">Filtreler</h2><button type="button" onClick={() => setFilterOpen(false)} className="text-xs text-secondary hover:text-gold-light">Kapat</button></div>
 
         <div className="h-[calc(100%-56px)] space-y-5 overflow-y-auto px-4 py-4 text-sm text-primary">
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Mythology Systems</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Mitoloji Sistemleri</h3>
             <div className="flex flex-wrap gap-2">
               {mythologies.map((m) => {
                 const active = mythologyFilters.includes(m.id);
@@ -2302,9 +2302,9 @@ export default function MapPage() {
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Content Type</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">İçerik Türü</h3>
             <div className="grid grid-cols-3 gap-2 text-xs">
-              {[{ key: 'sites', label: 'Sacred Sites' }, { key: 'myths', label: 'Myths' }, { key: 'deities', label: 'Deities' }].map((item) => {
+              {[{ key: 'sites', label: 'Kutsal Alanlar' }, { key: 'myths', label: 'Mitler' }, { key: 'deities', label: 'Tanrılar' }].map((item) => {
                 const active = contentVisibility[item.key as keyof typeof contentVisibility];
                 return (<button key={item.key} type="button" onClick={() => setContentVisibility((prev) => ({ ...prev, [item.key]: !prev[item.key as keyof typeof prev] }))} className={`rounded-md border px-2 py-2 ${active ? 'border-gold/60 bg-overlay text-gold-light' : 'border-gold/20 text-secondary'}`}>{item.label}</button>);
               })}
@@ -2312,7 +2312,7 @@ export default function MapPage() {
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Myth Type</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Mit Türü</h3>
             <div className="flex flex-wrap gap-2">
               {mythTypes.map((type) => {
                 const active = mythTypeFilters.includes(type);
@@ -2322,12 +2322,12 @@ export default function MapPage() {
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Era</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Dönem</h3>
             <div className="flex flex-wrap gap-2">{(['ancient', 'medieval', 'modern'] as EraBucket[]).map((era) => { const active = eraFilters.includes(era); return (<button key={era} type="button" onClick={() => setEraFilters((prev) => (prev.includes(era) ? prev.filter((x) => x !== era) : [...prev, era]))} className={`rounded-full border px-3 py-1 text-xs ${active ? 'border-gold bg-overlay text-gold-light' : 'border-gold/25 text-secondary'}`}>{era}</button>); })}</div>
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Archaeological Periods</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Arkeolojik Dönemler</h3>
             <div className="flex flex-wrap gap-2">
               {ARCHAEOLOGY_PERIOD_OPTIONS.map((period) => {
                 const active = archaeologyPeriodFilters.includes(period.key);
@@ -2349,11 +2349,11 @@ export default function MapPage() {
                 );
               })}
             </div>
-            <p className="mt-2 text-[11px] text-secondary">Secildiginde diger donem siteleri haritada soldurulur.</p>
+            <p className="mt-2 text-[11px] text-secondary">Seçildiğinde diğer dönem siteleri haritada soldurulur.</p>
           </div>
 
           <div>
-            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Theme Tags</h3>
+            <h3 className="mb-2 text-xs uppercase tracking-[0.16em] text-secondary">Tema Etiketleri</h3>
             <div className="flex flex-wrap gap-2">{themeTags.map((theme) => { const active = themeFilters.includes(theme); return (<button key={theme} type="button" onClick={() => setThemeFilters((prev) => (prev.includes(theme) ? prev.filter((x) => x !== theme) : [...prev, theme]))} className={`rounded-full border px-3 py-1 text-xs ${active ? 'border-gold bg-overlay text-gold-light' : 'border-gold/25 text-secondary'}`}>{theme}</button>); })}</div>
           </div>
 
@@ -2384,13 +2384,13 @@ export default function MapPage() {
             </div>
           </div>
 
-          <div className="border-t border-gold/15 pt-3"><button type="button" onClick={clearFilters} className="rounded-md border border-gold/30 px-3 py-2 text-xs text-gold-light hover:bg-overlay">Clear all filters</button></div>
+          <div className="border-t border-gold/15 pt-3"><button type="button" onClick={clearFilters} className="rounded-md border border-gold/30 px-3 py-2 text-xs text-gold-light hover:bg-overlay">Tüm filtreleri temizle</button></div>
         </div>
       </div>
 
       <div
         tabIndex={0}
-        aria-label="Selected mythology panel"
+        aria-label="Seçili mitoloji paneli"
         className={`panel-gradient-top pointer-events-auto absolute right-0 top-0 z-40 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(94vw,400px)] ${selectedMythology ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {selectedMythology && (
@@ -2444,15 +2444,15 @@ export default function MapPage() {
                     <p className="mt-1 text-base text-gold-light">{selectedBundle?.datasetCounts.canonicalPantheonSize ?? selectedMythology.pantheonSize}</p>
                   </div>
                   <div className="rounded-md border border-gold/20 bg-surface/70 p-2">
-                    <p className="text-secondary">Myths</p>
+                    <p className="text-secondary">Mitler</p>
                     <p className="mt-1 text-base text-gold-light">{selectedBundle?.datasetCounts.myths ?? selectedMyths.length}</p>
                   </div>
                   <div className="rounded-md border border-gold/20 bg-surface/70 p-2">
-                    <p className="text-secondary">Deities</p>
+                    <p className="text-secondary">Tanrılar</p>
                     <p className="mt-1 text-base text-gold-light">{selectedBundle?.datasetCounts.deities ?? selectedDeities.length}</p>
                   </div>
                   <div className="rounded-md border border-gold/20 bg-surface/70 p-2">
-                    <p className="text-secondary">Kutsal mekanlar</p>
+                    <p className="text-secondary">Kutsal mekânlar</p>
                     <p className="mt-1 text-base text-gold-light">{selectedBundle?.datasetCounts.sites ?? selectedSites.length}</p>
                   </div>
                 </div>
@@ -2460,7 +2460,7 @@ export default function MapPage() {
                   <p>
                     Veri durumu:{' '}
                     <span className="text-gold-light">
-                      {selectedBundle ? { complete: 'Tam', partial: 'Kismi', sparse: 'Sinirli' }[selectedBundle.completeness.label] : 'Bilinmiyor'}
+                      {selectedBundle ? { complete: 'Tam', partial: 'Kısmı', sparse: 'Sınırlı' }[selectedBundle.completeness.label] : 'Bilinmiyor'}
                     </span>
                   </p>
                   {selectedBundle && selectedBundle.missingSections.length > 0 ? (
@@ -2484,7 +2484,7 @@ export default function MapPage() {
                         onClick={() => setTab(key)}
                         className={`rounded-full px-2 py-1 capitalize ${tab === key ? 'text-gold-light' : 'text-secondary hover:text-gold-light'}`}
                       >
-                        {key === 'sites' ? 'Sacred Sites' : key}
+                        {key === 'sites' ? 'Kutsal Alanlar' : key}
                       </button>
                     ))}
                   </div>
@@ -2502,7 +2502,7 @@ export default function MapPage() {
                   <div className="space-y-2">
                     {selectedMyths.length === 0 ? (
                       <div className="rounded-md border border-gold/15 bg-surface/80 p-3 text-xs text-secondary">
-                        Bu mitoloji icin mit listesi henuz tamamlanmadi.
+                        Bu mitoloji için mit listesi henüz tamamlanmadı.
                       </div>
                     ) : selectedMyths.map((myth, index) => (
                       <div
@@ -2525,7 +2525,7 @@ export default function MapPage() {
                             onClick={() => flyToCoordinates([myth.origin.lng, myth.origin.lat])}
                             className="rounded-md border border-gold/25 px-2 py-1 text-[11px] text-gold-light"
                           >
-                            Haritada goster
+                            Haritada göster
                           </button>
                         </div>
                       </div>
@@ -2537,7 +2537,7 @@ export default function MapPage() {
                   <div className="space-y-2">
                     {selectedDeities.length === 0 ? (
                       <div className="rounded-md border border-gold/15 bg-surface/80 p-3 text-xs text-secondary">
-                        Bu mitoloji icin panteon kayitlari henuz tamamlanmadi.
+                        Bu mitoloji için panteon kayıtları henüz tamamlanmadı.
                       </div>
                     ) : selectedDeities.map((deity, index) => (
                       <div
@@ -2560,7 +2560,7 @@ export default function MapPage() {
                             onClick={() => flyToCoordinates([deity.origin.lng, deity.origin.lat])}
                             className="rounded-md border border-gold/25 px-2 py-1 text-[11px] text-gold-light"
                           >
-                            Haritada goster
+                            Haritada göster
                           </button>
                         </div>
                       </div>
@@ -2572,7 +2572,7 @@ export default function MapPage() {
                   <div className="space-y-2">
                     {selectedSites.length === 0 ? (
                       <div className="rounded-md border border-gold/15 bg-surface/80 p-3 text-xs text-secondary">
-                        Bu mitoloji icin kutsal mekan kayitlari henuz tamamlanmadi.
+                        Bu mitoloji için kutsal mekân kayıtları henüz tamamlanmadı.
                       </div>
                     ) : selectedSites.map((site, index) => (
                       <div
@@ -2595,7 +2595,7 @@ export default function MapPage() {
                             onClick={() => flyToCoordinates([site.coordinates.lng, site.coordinates.lat])}
                             className="rounded-md border border-gold/25 px-2 py-1 text-[11px] text-gold-light"
                           >
-                            Haritada goster
+                            Haritada göster
                           </button>
                         </div>
                       </div>
@@ -2607,7 +2607,7 @@ export default function MapPage() {
                   href={`/mythology/${selectedMythology.id}`}
                   className="inline-flex rounded-full border border-gold/40 px-4 py-2 text-xs tracking-[0.14em] text-gold-light hover:bg-overlay"
                 >
-                  Daha fazla kesfet
+                  Daha fazla keşfet
                 </HoverPrefetchLink>
               </div>
             </div>
@@ -2615,15 +2615,15 @@ export default function MapPage() {
         )}
       </div>
 
-      <div tabIndex={0} aria-label="Entity detail panel" className={`pointer-events-auto absolute right-0 top-0 z-50 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,360px)] ${detailData ? 'translate-x-0' : 'translate-x-full'}`}>
-        {detailData && (<><div className="flex items-center justify-between border-b border-gold/15 px-4 py-3"><h2 className="font-heading text-sm tracking-[0.14em] text-gold-light">Detail</h2><button type="button" onClick={() => setDetail(null)} className="text-xs text-secondary hover:text-gold-light">Close</button></div><div className="h-[calc(100%-56px)] overflow-y-auto px-4 py-4 text-sm text-primary">{detailData.imageUrl && <AncientImage src={detailData.imageUrl} alt={detailData.title} width={560} height={240} sizes="(max-width: 768px) 90vw, 560px" className="mb-3 h-44 w-full rounded-md object-cover" />}<h3 className="font-heading text-base text-gold-light">{detailData.title}</h3><p className="mb-3 text-xs text-secondary">{detailData.subtitle}</p><p className="leading-relaxed text-primary">{detailData.description}</p>{'meta' in detailData && detailData.meta && <p className="mt-3 text-xs text-secondary">{detailData.meta}</p>}<div className="mt-4 flex flex-wrap gap-2 text-xs">{detailData.chips.map((chip) => (<span key={chip} className="rounded-full border border-gold/25 px-2 py-1 text-secondary">{chip}</span>))}</div></div></>)}
+      <div tabIndex={0} aria-label="Kayıt ayrıntı paneli" className={`pointer-events-auto absolute right-0 top-0 z-50 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,360px)] ${detailData ? 'translate-x-0' : 'translate-x-full'}`}>
+        {detailData && (<><div className="flex items-center justify-between border-b border-gold/15 px-4 py-3"><h2 className="font-heading text-sm tracking-[0.14em] text-gold-light">Ayrıntı</h2><button type="button" onClick={() => setDetail(null)} className="text-xs text-secondary hover:text-gold-light">Kapat</button></div><div className="h-[calc(100%-56px)] overflow-y-auto px-4 py-4 text-sm text-primary">{detailData.imageUrl && <AncientImage src={detailData.imageUrl} alt={detailData.title} width={560} height={240} sizes="(max-width: 768px) 90vw, 560px" className="mb-3 h-44 w-full rounded-md object-cover" />}<h3 className="font-heading text-base text-gold-light">{detailData.title}</h3><p className="mb-3 text-xs text-secondary">{detailData.subtitle}</p><p className="leading-relaxed text-primary">{detailData.description}</p>{'meta' in detailData && detailData.meta && <p className="mt-3 text-xs text-secondary">{detailData.meta}</p>}<div className="mt-4 flex flex-wrap gap-2 text-xs">{detailData.chips.map((chip) => (<span key={chip} className="rounded-full border border-gold/25 px-2 py-1 text-secondary">{chip}</span>))}</div></div></>)}
       </div>
 
       {parallelMode && activeParallelConnection && (
         <div className="pointer-events-auto absolute bottom-6 left-1/2 z-40 w-[min(96vw,820px)] -translate-x-1/2 rounded-2xl border border-gold/35 bg-background/95 p-4 shadow-[var(--shadow-gold)] backdrop-blur-md">
           <div className="mb-3 flex items-center justify-between gap-3">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.16em] text-gold-light">Paralel Baglanti</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-gold-light">Paralel Bağlantı</p>
               <p className="text-sm text-primary">
                 {activeParallelConnection.fromMyth.name} ↔ {activeParallelConnection.toMyth.name}
               </p>
@@ -2656,7 +2656,7 @@ export default function MapPage() {
               href={`/compare?left=${activeParallelConnection.fromMyth.id}&right=${activeParallelConnection.toMyth.id}`}
               className="rounded-full border border-gold/45 bg-overlay px-4 py-1.5 text-xs tracking-[0.1em] text-gold-light hover:bg-elevated"
             >
-              Karsilastirma Ac
+              Karşılaştırma Aç
             </HoverPrefetchLink>
           </div>
         </div>
@@ -2666,7 +2666,7 @@ export default function MapPage() {
         <div className="pointer-events-auto absolute bottom-6 left-1/2 z-40 w-[min(96vw,860px)] -translate-x-1/2 rounded-2xl border border-gold/35 bg-background/95 p-4 shadow-[var(--shadow-gold)] backdrop-blur-md">
           <div className="mb-3 flex items-center justify-between gap-3">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.16em] text-secondary">Etki Baglantisi</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-secondary">Etki Bağlantısı</p>
               <p className="text-sm text-primary">
                 {activeInfluenceConnection.sourceName} {'\u2192'} {activeInfluenceConnection.targetName}
               </p>
@@ -2715,7 +2715,7 @@ export default function MapPage() {
 
           <div className="mb-3 grid grid-cols-1 gap-3 md:grid-cols-2">
             <div className="rounded-lg border border-gold/20 bg-surface/80 p-3">
-              <p className="mb-2 text-xs uppercase tracking-[0.12em] text-secondary">Ornekler</p>
+              <p className="mb-2 text-xs uppercase tracking-[0.12em] text-secondary">Örnekler</p>
               <ul className="space-y-1 text-xs text-primary">
                 {activeInfluenceConnection.examples.map((example) => (
                   <li key={example}>• {example}</li>
@@ -2742,11 +2742,11 @@ export default function MapPage() {
                 href={`/compare?left=${activeInfluenceConnection.sourceId}&right=${activeInfluenceConnection.targetId}`}
                 className="rounded-full border border-gold/45 bg-overlay px-4 py-1.5 text-xs tracking-[0.1em] text-gold-light hover:bg-elevated"
               >
-                Her iki mitolojiyi karsilastir
+                Her iki mitolojiyi karşılaştır
               </HoverPrefetchLink>
             ) : (
               <span className="rounded-full border border-gold/35 px-3 py-1 text-[11px] text-secondary">
-                Karsilastirma bu cift icin mevcut degil
+                Karşılaştırma bu çift için mevcut değil
               </span>
             )}
           </div>

@@ -51,7 +51,7 @@ export default function Button(props: ButtonProps) {
     const linkProps = rest as AnchorHTMLAttributes<HTMLAnchorElement>;
     return (
       <Link href={props.href} className={sharedClassName} {...linkProps}>
-        {loading ? 'Yukleniyor...' : children}
+        {loading ? 'Yükleniyor...' : children}
       </Link>
     );
   }
@@ -65,7 +65,7 @@ export default function Button(props: ButtonProps) {
       className={sharedClassName}
       disabled={loading || buttonProps.disabled}
     >
-      {loading ? 'Yukleniyor...' : children}
+      {loading ? 'Yükleniyor...' : children}
     </button>
   );
 }

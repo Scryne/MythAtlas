@@ -76,7 +76,7 @@ function protectionLabel(status: string): string {
   if (status === 'UNESCO') return 'UNESCO';
   if (status === 'national_heritage') return 'Ulusal miras';
   if (status === 'local_protection') return 'Yerel koruma';
-  if (status === 'disputed') return 'Tartismali';
+  if (status === 'disputed') return 'Tartışmalı';
   if (status === 'unprotected') return 'Korumasiz';
   return status;
 }
@@ -98,7 +98,7 @@ export default function StatsCharts({
     <>
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Myths by type</h2>
+          <h2 className="text-xl text-gold">Türe göre mitler</h2>
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -128,7 +128,7 @@ export default function StatsCharts({
 
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Mythologies by region (choropleth)</h2>
-          <p className="mt-1 text-xs text-foreground/60">Renk yogunlugu mit sayisini temsil eder.</p>
+          <p className="mt-1 text-xs text-foreground/60">Renk yoğunluğu mit sayısını temsil eder.</p>
           <div className="mt-4">
             <MythologyChoropleth data={heatData} />
           </div>
@@ -137,7 +137,7 @@ export default function StatsCharts({
 
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Most connected myths</h2>
+          <h2 className="text-xl text-gold">En çok bağlantılı mitler</h2>
           <div className="mt-4 h-[360px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={connected} layout="vertical" margin={{ left: 18, right: 24, top: 8, bottom: 8 }}>
@@ -145,7 +145,7 @@ export default function StatsCharts({
                 <YAxis type="category" dataKey="name" width={150} tick={{ fill: '#d9c39b', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number, _name: string, entry: { payload?: { mythology?: string } }) => [
-                    `${value} baglanti`,
+                    `${value} bağlantı`,
                     entry.payload?.mythology || 'Mit',
                   ]}
                   contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
@@ -157,7 +157,7 @@ export default function StatsCharts({
         </article>
 
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Deities by domain</h2>
+          <h2 className="text-xl text-gold">Etki alanına göre tanrılar</h2>
           <div className="mt-4 h-[360px]">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 12, right: 12, bottom: 20, left: 12 }}>
@@ -166,7 +166,7 @@ export default function StatsCharts({
                 <Tooltip
                   cursor={{ stroke: 'rgba(201,168,76,0.25)' }}
                   formatter={(value: number, _name: string, entry: { payload?: { domain?: string } }) => [
-                    `${value} tanri`,
+                    `${value} tanrı`,
                     entry.payload?.domain || 'Domain',
                   ]}
                   contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
@@ -182,14 +182,14 @@ export default function StatsCharts({
 
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Sacred sites by type</h2>
+          <h2 className="text-xl text-gold">Türe göre kutsal alanlar</h2>
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={sitesByType} layout="vertical" margin={{ left: 12, right: 24, top: 8, bottom: 8 }}>
                 <XAxis type="number" stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 11 }} />
                 <YAxis type="category" dataKey="type" width={120} tick={{ fill: '#d9c39b', fontSize: 11 }} />
                 <Tooltip
-                  formatter={(value: number) => [`${value} mekan`, 'Adet']}
+                  formatter={(value: number) => [`${value} mekân`, 'Adet']}
                   contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
                 />
                 <Bar dataKey="count" fill="#81b7df" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
@@ -200,12 +200,12 @@ export default function StatsCharts({
 
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Mythology timeline (Gantt)</h2>
-          <p className="mt-1 text-xs text-foreground/60">Barlar mitolojik sistemlerin etkin donemini gosterir.</p>
+          <p className="mt-1 text-xs text-foreground/60">Barlar mitolojik sistemlerin etkin dönemini gösterir.</p>
           <div className="mt-2 flex flex-wrap gap-2 text-[11px] text-foreground/70">
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#6ba8de]" />Mediterranean</span>
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#5bbd7a]" />Northern Europe</span>
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#de8e5d]" />Asia</span>
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#d66f6f]" />Africa</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#6ba8de]" />Akdeniz</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#5bbd7a]" />Kuzey Avrupa</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#de8e5d]" />Asya</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#d66f6f]" />Afrika</span>
           </div>
           <div className="mt-4 h-[360px]">
             <ResponsiveContainer width="100%" height="100%">
@@ -246,7 +246,7 @@ export default function StatsCharts({
 
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Sites by protection status</h2>
+          <h2 className="text-xl text-gold">Koruma durumuna göre alanlar</h2>
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -274,14 +274,14 @@ export default function StatsCharts({
         </article>
 
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Excavation activity by decade</h2>
+          <h2 className="text-xl text-gold">On yıllara göre kazı etkinliği</h2>
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={excavationByDecade} margin={{ left: 6, right: 14, top: 8, bottom: 12 }}>
                 <XAxis dataKey="decade" stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 10 }} interval={0} angle={-35} textAnchor="end" height={54} />
                 <YAxis stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 11 }} />
                 <Tooltip
-                  formatter={(value: number) => [`${value} kazi kaydi`, 'Kampanya']}
+                  formatter={(value: number) => [`${value} kazı kaydı`, 'Kampanya']}
                   contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
                 />
                 <Bar dataKey="count" fill="#78b9e8" radius={[4, 4, 0, 0]} isAnimationActive animationDuration={1000} />
@@ -294,14 +294,14 @@ export default function StatsCharts({
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Artifacts by current country (choropleth)</h2>
-          <p className="mt-1 text-xs text-foreground/60">Muze koleksiyonlarindaki yaklasik eser dagilimi.</p>
+          <p className="mt-1 text-xs text-foreground/60">Müze koleksiyonlarındaki yaklaşık eser dağılımı.</p>
           <div className="mt-4">
             <ArtifactCountryChoropleth data={artifactsByCountry} />
           </div>
         </article>
 
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Most artifact-rich mythologies</h2>
+          <h2 className="text-xl text-gold">Eseri en zengin mitolojiler</h2>
           <div className="mt-4 h-[380px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={artifactRichMythologies} layout="vertical" margin={{ left: 16, right: 20, top: 8, bottom: 8 }}>

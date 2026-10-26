@@ -61,7 +61,7 @@ export default function CitationGeneratorButton({
         onClick={() => setOpen(true)}
         className="rounded-full border border-gold/35 bg-black/45 px-3 py-1 text-xs uppercase tracking-[0.12em] text-gold-light"
       >
-        Bu sayfayi alintila
+        Bu sayfayı alıntıla
       </button>
 
       {open && (
@@ -73,7 +73,7 @@ export default function CitationGeneratorButton({
         >
           <div className="ancient-card h-full w-full overflow-y-auto rounded-none p-5 sm:h-auto sm:max-w-2xl sm:rounded-xl sm:p-6">
             <div className="mb-4 flex items-center justify-between gap-3">
-              <h3 className="text-xl text-gold">Atif Olusturucu</h3>
+              <h3 className="text-xl text-gold">Atıf Oluşturucu</h3>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
@@ -94,7 +94,7 @@ export default function CitationGeneratorButton({
                 >
                   Kopyala
                 </button>
-                {copied === 'apa' && <span className="ml-2 text-xs text-emerald-200">Kopyalandi</span>}
+                {copied === 'apa' && <span className="ml-2 text-xs text-emerald-200">Kopyalandı</span>}
               </div>
 
               <div className="rounded-md border border-gold/20 bg-black/20 p-3">
@@ -108,19 +108,19 @@ export default function CitationGeneratorButton({
                   Kopyala
                 </button>
                 {copied === 'chicago' && (
-                  <span className="ml-2 text-xs text-emerald-200">Kopyalandi</span>
+                  <span className="ml-2 text-xs text-emerald-200">Kopyalandı</span>
                 )}
               </div>
             </div>
 
             <p className="mt-4 rounded-md border border-amber-300/30 bg-amber-500/10 p-3 text-sm text-amber-100">
-              Bu platform ikincil kaynak olarak kullanilabilir. Dogrudan akademik calismalar icin
+              Bu platform ikincil kaynak olarak kullanılabilir. Doğrudan akademik çalışmalar için
               birincil kaynaklara basvurunuz.
             </p>
 
             <div className="mt-4 rounded-md border border-gold/20 bg-black/20 p-3">
               <p className="text-xs uppercase tracking-[0.12em] text-gold/80">
-                Bu kayit icin one cikan birincil kaynaklar
+                Bu kayıt için öne çıkan birincil kaynaklar
               </p>
               <ul className="mt-2 space-y-1 text-sm text-foreground/80">
                 {primarySources.slice(0, 8).map((source) => (
@@ -129,7 +129,7 @@ export default function CitationGeneratorButton({
                   </li>
                 ))}
                 {primarySources.length === 0 && (
-                  <li>Birincil kaynak listesi bu kayitta henuz tanimlanmadi.</li>
+                  <li>Birincil kaynak listesi bu kayıtta henüz tanımlanmadı.</li>
                 )}
               </ul>
             </div>

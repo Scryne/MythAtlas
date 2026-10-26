@@ -70,10 +70,10 @@ export interface DNAQueryFilters {
 }
 
 export const ORIGIN_THEORY_EXPLANATIONS: Record<string, string> = {
-  diffusion: 'Anlatinin kulturel temaslar, ticaret ve goc yoluyla yayildigi gorusu.',
-  convergent: 'Benzer insan deneyimlerinden bagimsiz olarak tekrar tekrar ortaya cikmis olabilir.',
-  universal: 'Insan zihninin ortak mitik kaliplari nedeniyle kulturler arasi yaygin bir cekirdek tasir.',
-  unknown: 'Mevcut kaynaklar yayilim mekanizmasini acik sekilde gostermiyor.',
+  diffusion: 'Anlatının kültürel temaslar, ticaret ve göç yoluyla yayıldığı görüşü.',
+  convergent: 'Benzer insan deneyimlerinden bağımsız olarak tekrar tekrar ortaya çıkmış olabilir.',
+  universal: 'İnsan zihninin ortak mitik kalıpları nedeniyle kültürler arası yaygın bir çekirdek taşır.',
+  unknown: 'Mevcut kaynaklar yayılım mekanizmasını açık şekilde göstermiyor.',
 };
 
 const FINGERPRINT_FILLED = '1';

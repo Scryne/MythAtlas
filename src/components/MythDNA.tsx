@@ -207,12 +207,12 @@ export function DNAFingerprint({ myth }: FingerprintProps) {
           onClick={copyFingerprint}
           className="rounded-full border border-gold/30 px-3 py-1 text-xs text-gold-light hover:border-gold/55"
         >
-          {copied ? 'Kopyalandi' : 'Parmak izi kopyala'}
+          {copied ? 'Kopyalandı' : 'Parmak izi kopyala'}
         </button>
       </div>
       {copied && (
         <div className="fixed bottom-4 right-4 z-50 rounded-md border border-emerald-300/45 bg-emerald-500/15 px-3 py-2 text-xs text-emerald-100">
-          Parmak izi kopyalandi
+          Parmak izi kopyalandı
         </div>
       )}
     </div>

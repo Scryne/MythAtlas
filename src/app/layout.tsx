@@ -25,11 +25,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app'),
   title: {
-    default: 'MythAtlas - Canli Mitoloji Atlasi',
+    default: 'MythAtlas - Canlı Mitoloji Atlası',
     template: '%s | MythAtlas',
   },
   description:
-    'Kadim medeniyetlerin mitlerini, tanrilarini ve kutsal alanlarini tek bir interaktif atlas uzerinden kesfedin.',
+    'Kadim medeniyetlerin mitlerini, tanrılarını ve kutsal alanlarını tek bir interaktif atlas üzerinden keşfedin.',
   keywords: [
     'mythology',
     'atlas',
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'MythAtlas - Canli Mitoloji Atlasi',
-    description: 'Kadim medeniyetlerin mitlerini, tanrilarini ve kutsal alanlarini tek bir interaktif atlas uzerinden kesfedin.',
+    title: 'MythAtlas - Canlı Mitoloji Atlası',
+    description: 'Kadim medeniyetlerin mitlerini, tanrılarını ve kutsal alanlarını tek bir interaktif atlas üzerinden keşfedin.',
     type: 'website',
     locale: 'tr_TR',
     alternateLocale: 'en_US',
@@ -60,8 +60,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MythAtlas - Canli Mitoloji Atlasi',
-    description: 'Kadim medeniyetlerin mitlerini, tanrilarini ve kutsal alanlarini tek bir interaktif atlas uzerinden kesfedin.',
+    title: 'MythAtlas - Canlı Mitoloji Atlası',
+    description: 'Kadim medeniyetlerin mitlerini, tanrılarını ve kutsal alanlarını tek bir interaktif atlas üzerinden keşfedin.',
     images: ['https://mythatlas.app/og/site/default'],
   },
 };

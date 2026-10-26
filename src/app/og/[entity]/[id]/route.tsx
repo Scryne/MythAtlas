@@ -18,29 +18,29 @@ function resolveEntity(entity: string, id: string): { title: string; subtitle: s
 
   if (entity === 'myth') {
     const item = myths.find((myth) => myth.id === id);
-    if (item) return { title: item.name, subtitle: 'Myth', image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: 'Mit', image: item.imageUrl };
   }
 
   if (entity === 'deity') {
     const item = deities.find((deity) => deity.id === id);
-    if (item) return { title: item.name, subtitle: 'Deity', image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: 'Tanrı', image: item.imageUrl };
   }
 
   if (entity === 'site') {
     if (id === 'default') {
       return {
         title: 'MythAtlas',
-        subtitle: 'Interactive Mythology Atlas',
+        subtitle: 'İnteraktif Mitoloji Atlası',
         image: mythologies[0]?.imageUrl || '',
       };
     }
     const item = sacredSites.find((site) => site.id === id);
-    if (item) return { title: item.name, subtitle: 'Sacred Site', image: item.imageUrl };
+    if (item) return { title: item.name, subtitle: 'Kutsal Alan', image: item.imageUrl };
   }
 
   return {
     title: 'MythAtlas',
-    subtitle: 'Interactive Mythology Atlas',
+    subtitle: 'İnteraktif Mitoloji Atlası',
     image: mythologies[0]?.imageUrl || '',
   };
 }

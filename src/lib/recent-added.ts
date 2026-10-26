@@ -127,7 +127,7 @@ export async function getRecentlyAdded(limit = 10): Promise<RecentlyAddedResult>
     return {
       source: 'local',
       items: buildLocalFallback(limit),
-      warning: 'Supabase env bulunamadi; local fallback gosteriliyor.',
+      warning: 'Supabase env bulunamadı; local fallback gösteriliyor.',
     };
   }
 
@@ -151,13 +151,13 @@ export async function getRecentlyAdded(limit = 10): Promise<RecentlyAddedResult>
     return {
       source: 'local',
       items: buildLocalFallback(limit),
-      warning: 'Supabase sorgusu bos dondu; local fallback gosteriliyor.',
+      warning: 'Supabase sorgusu boş döndü; local fallback gösteriliyor.',
     };
   } catch {
     return {
       source: 'local',
       items: buildLocalFallback(limit),
-      warning: 'Supabase baglantisi kurulamadigi icin local fallback gosteriliyor.',
+      warning: 'Supabase bağlantısı kurulamadığı için local fallback gösteriliyor.',
     };
   }
 }

@@ -47,8 +47,8 @@ function buildArcPath(from: { x: number; y: number }, to: { x: number; y: number
 }
 
 function scoreLabel(score: number) {
-  if (score >= 88) return 'Cok guclu paralellik';
-  if (score >= 74) return 'Guclu paralellik';
+  if (score >= 88) return 'Çok güçlü paralellik';
+  if (score >= 74) return 'Güçlü paralellik';
   if (score >= 60) return 'Orta duzey paralellik';
   return 'Uzak paralellik';
 }
@@ -220,12 +220,12 @@ export default function ParallelsPage() {
     }
 
     if (!best) {
-      return { title: 'En ilginc benzerlik', body: 'Yeterli veri yok.' };
+      return { title: 'En ilginç benzerlik', body: 'Yeterli veri yok.' };
     }
 
     return {
-      title: 'En ilginc benzerlik',
-      body: `${best[0].mythName} ve ${best[1].mythName} arasinda yaklasik ${Math.round(maxDistance)} km mesafe olmasina ragmen guclu motif ortusmesi var.`,
+      title: 'En ilginç benzerlik',
+      body: `${best[0].mythName} ve ${best[1].mythName} arasında yaklaşık ${Math.round(maxDistance)} km mesafe olmasına rağmen güçlü motif örtüşmesi var.`,
     };
   }, [activeTheme.versions]);
 
@@ -237,23 +237,23 @@ export default function ParallelsPage() {
     <div className="min-h-screen bg-[#090806] px-4 pb-16 pt-24 text-[#f4e4c1] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 rounded-2xl border border-[#d6b56a]/25 bg-[radial-gradient(circle_at_20%_20%,rgba(214,181,106,0.18),rgba(9,8,6,0.94)_55%)] p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-[#d6b56a]/90">Parallel Myths Explorer</p>
-          <h1 className="mt-3 font-heading text-3xl text-[#f6df9d] sm:text-4xl">Insanligin Ortak Hikaye Haritasi</h1>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#d6b56a]/90">Paralel Mitler Gezgini</p>
+          <h1 className="mt-3 font-heading text-3xl text-[#f6df9d] sm:text-4xl">İnsanlığın Ortak Hikâye Haritası</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-[#d8c7a4] sm:text-base">
-            Tema kartlarini sec, benzer mitlerin cografi uzerindeki dagilimini ve kulturler arasi akis yonunu canli olarak izle.
+            Tema kartlarını seç, benzer mitlerin coğrafi üzerindeki dağılımını ve kültürler arası akış yönünü canlı olarak izle.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/compare"
               className="rounded-full border border-[#d6b56a]/60 bg-[#2b1f0f]/80 px-4 py-2 text-xs tracking-[0.16em] text-[#f7de96] hover:bg-[#3a2a14]"
             >
-              KARSILASTIRMA ARACI
+              KARŞILAŞTIRMA ARACI
             </Link>
             <Link
               href="/map"
               className="rounded-full border border-[#d6b56a]/30 px-4 py-2 text-xs tracking-[0.16em] text-[#e5cf95] hover:border-[#d6b56a]/60"
             >
-              ANA HARITAYA DON
+              ANA HARİTAYA DÖN
             </Link>
           </div>
         </div>
@@ -311,7 +311,7 @@ export default function ParallelsPage() {
                     : 'border-[#d6b56a]/30 bg-[#1a130d] text-[#d6bf8d]'
                 }`}
               >
-                Yayilma animasyonu: {spreadAnimation ? 'Acik' : 'Kapali'}
+                Yayilma animasyonu: {spreadAnimation ? 'Açık' : 'Kapali'}
               </button>
             </div>
 
@@ -392,8 +392,8 @@ export default function ParallelsPage() {
           </section>
 
           <aside className="rounded-2xl border border-[#d6b56a]/20 bg-[#100d09] p-4 sm:p-5">
-            <h3 className="font-heading text-lg text-[#f6df9d]">Mit Varyantlari</h3>
-            <p className="mt-1 text-xs text-[#c8b286]">Iki varyanti secerek benzerlik olcumu yap.</p>
+            <h3 className="font-heading text-lg text-[#f6df9d]">Mit Varyantları</h3>
+            <p className="mt-1 text-xs text-[#c8b286]">İki varyanti secerek benzerlik olcumu yap.</p>
 
             <div className="mt-4 max-h-[300px] space-y-2 overflow-y-auto pr-1">
               {activeTheme.versions.map((version) => {
@@ -432,7 +432,7 @@ export default function ParallelsPage() {
 
             {leftVersion && rightVersion && (
               <div className="mt-5 rounded-xl border border-[#d6b56a]/25 bg-[#16100b] p-4">
-                <p className="text-[11px] uppercase tracking-[0.15em] text-[#cdb57f]">Benzerlik Gosterge Saati</p>
+                <p className="text-[11px] uppercase tracking-[0.15em] text-[#cdb57f]">Benzerlik Gösterge Saati</p>
                 <div className="mt-2 flex items-center justify-between gap-4">
                   <svg viewBox="0 0 140 90" className="h-24 w-36">
                     <path d="M 14 76 A 56 56 0 0 1 126 76" fill="none" stroke="rgba(214,181,106,0.2)" strokeWidth="11" />
@@ -476,9 +476,9 @@ export default function ParallelsPage() {
         </div>
 
         <section className="mt-6 rounded-2xl border border-[#d6b56a]/20 bg-[#100d09] p-4 sm:p-5">
-          <h3 className="font-heading text-lg text-[#f6df9d]">Tema Yogunluk Agi</h3>
+          <h3 className="font-heading text-lg text-[#f6df9d]">Tema Yoğunluk Ağı</h3>
           <p className="mt-1 text-xs text-[#c8b286]">
-            D3 force yerlesimi secili tema varyantlarinin birbirine gore dagilim profilini gosterir.
+            D3 kuvvet yerleşimi seçili tema varyantlarının birbirine göre dağılım profilini gösterir.
           </p>
           <div className="mt-4">
             <ParallelForceOverlay versions={activeTheme.versions} color={activeTheme.color} />

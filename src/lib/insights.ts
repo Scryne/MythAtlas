@@ -167,32 +167,32 @@ export interface ArtifactRichMythologyDatum {
 }
 
 const themeDefinitions: ThemeDefinition[] = [
-  { id: 'death', name: 'Olum', icon: '☠', terms: ['death', 'afterlife', 'underworld', 'loss'] },
-  { id: 'rebirth', name: 'Yeniden Dogus', icon: '◌', terms: ['rebirth', 'resurrection', 'renewal'] },
-  { id: 'creation', name: 'Yaratilis', icon: '✶', terms: ['creation', 'origin', 'primordial'], mythTypes: ['creation'] },
+  { id: 'death', name: 'Ölüm', icon: '☠', terms: ['death', 'afterlife', 'underworld', 'loss'] },
+  { id: 'rebirth', name: 'Yeniden Doğuş', icon: '◌', terms: ['rebirth', 'resurrection', 'renewal'] },
+  { id: 'creation', name: 'Yaratılış', icon: '✶', terms: ['creation', 'origin', 'primordial'], mythTypes: ['creation'] },
   { id: 'flood', name: 'Tufan', icon: '≈', terms: ['flood', 'deluge', 'ark', 'inundation', 'water'] },
   { id: 'trickster', name: 'Hilebaz', icon: '⚝', terms: ['trickster', 'trickery', 'cleverness', 'theft'], mythTypes: ['trickster'] },
-  { id: 'hero', name: 'Kahramanlik', icon: '⚔', terms: ['hero', 'heroism', 'trial', 'journey', 'quest'], mythTypes: ['hero', 'quest'] },
-  { id: 'love', name: 'Ask', icon: '♥', terms: ['love', 'devotion', 'betrayal'] },
-  { id: 'war', name: 'Savas', icon: '🛡', terms: ['war', 'battle', 'conflict'], mythTypes: ['war'] },
-  { id: 'nature', name: 'Doga', icon: '❧', terms: ['nature', 'seasons', 'fertility', 'harvest'], mythTypes: ['nature'] },
-  { id: 'transformation', name: 'Donusum', icon: '◇', terms: ['transformation', 'metamorphosis', 'change'], mythTypes: ['transformation'] },
+  { id: 'hero', name: 'Kahramanlık', icon: '⚔', terms: ['hero', 'heroism', 'trial', 'journey', 'quest'], mythTypes: ['hero', 'quest'] },
+  { id: 'love', name: 'Aşk', icon: '♥', terms: ['love', 'devotion', 'betrayal'] },
+  { id: 'war', name: 'Savaş', icon: '🛡', terms: ['war', 'battle', 'conflict'], mythTypes: ['war'] },
+  { id: 'nature', name: 'Doğa', icon: '❧', terms: ['nature', 'seasons', 'fertility', 'harvest'], mythTypes: ['nature'] },
+  { id: 'transformation', name: 'Dönüşüm', icon: '◇', terms: ['transformation', 'metamorphosis', 'change'], mythTypes: ['transformation'] },
 ];
 
 const collectionDefinitions: CollectionDefinition[] = [
   {
     id: 'great-floods',
-    title: 'Buyuk Tufan Mitleri',
-    subtitle: '20 kultur',
-    description: 'Kulturel hafizada su baskini ve yeniden baslangic anlatilari.',
+    title: 'Büyük Tufan Mitleri',
+    subtitle: '20 kültür',
+    description: 'Kültürel hafızada şu baskını ve yeniden başlangıç anlatıları.',
     accent: '#5aa7d9',
     matchMyth: (myth) => matchesTheme(myth, themeDefinitionById.get('flood')),
   },
   {
     id: 'oldest-gods',
-    title: 'Dunyanin En Eski Tanrilari',
-    subtitle: 'Ilk panteonlar',
-    description: 'En eski mitolojik sistemlerde ortaya cikan ilahlar.',
+    title: 'Dünyanın En Eski Tanrıları',
+    subtitle: 'İlk panteonlar',
+    description: 'En eski mitolojik sistemlerde ortaya çıkan ilahlar.',
     accent: '#d9b15a',
     matchMyth: (myth) => {
       const mythology = mythologyById.get(myth.mythologyId);
@@ -202,17 +202,17 @@ const collectionDefinitions: CollectionDefinition[] = [
   },
   {
     id: 'hero-journeys',
-    title: 'Kahraman Yolculuklari',
-    subtitle: 'Sinav ve donusum',
-    description: 'Kahramanlarin zorlu yolculuklari ve kader testleri.',
+    title: 'Kahraman Yolculukları',
+    subtitle: 'Sınav ve dönüşüm',
+    description: 'Kahramanların zorlu yolculukları ve kader testleri.',
     accent: '#e88b4d',
     matchMyth: (myth) => matchesTheme(myth, themeDefinitionById.get('hero')),
   },
   {
     id: 'love-tragedy',
-    title: 'Ask ve Trajedi',
-    subtitle: 'Tutku ve kayip',
-    description: 'Ask, fedakarlik ve aci sonlarin mitolojik kesismeleri.',
+    title: 'Aşk ve Trajedi',
+    subtitle: 'Tutku ve kayıp',
+    description: 'Aşk, fedakârlık ve acı sonların mitolojik kesişmeleri.',
     accent: '#da6f8d',
     matchMyth: (myth) => {
       const blob = mythBlob(myth);
@@ -222,8 +222,8 @@ const collectionDefinitions: CollectionDefinition[] = [
   {
     id: 'dragons-monsters',
     title: 'Ejderhalar ve Canavarlar',
-    subtitle: 'Kaosla savas',
-    description: 'Duzen ve kaos arasindaki efsanevi canavar anlatilari.',
+    subtitle: 'Kaosla savaş',
+    description: 'Düzen ve kaos arasındaki efsanevi canavar anlatıları.',
     accent: '#8f7cf2',
     matchMyth: (myth) => {
       const blob = mythBlob(myth);
@@ -232,17 +232,17 @@ const collectionDefinitions: CollectionDefinition[] = [
   },
   {
     id: 'creation-stories',
-    title: 'Yaratilis Hikayeleri',
-    subtitle: 'Kozmik baslangic',
-    description: 'Evrenin ve insanligin kokenine dair kutsal anlatilar.',
+    title: 'Yaratılış Hikâyeleri',
+    subtitle: 'Kozmik başlangıç',
+    description: 'Evrenin ve insanlığın kökenine dair kutsal anlatılar.',
     accent: '#4dc2ae',
     matchMyth: (myth) => matchesTheme(myth, themeDefinitionById.get('creation')),
   },
   {
     id: 'turkic-central-asia',
-    title: 'Turk ve Orta Asya Mitolojisi',
-    subtitle: 'Ozel secki',
-    description: 'Anadolu ve Orta Asya ekseninde bicimlenen mitik aglar.',
+    title: 'Türk ve Orta Asya Mitolojisi',
+    subtitle: 'Özel secki',
+    description: 'Anadolu ve Orta Asya ekseninde biçimlenen mitik ağlar.',
     accent: '#f09e44',
     featured: true,
     matchMyth: (myth) => {
@@ -250,7 +250,7 @@ const collectionDefinitions: CollectionDefinition[] = [
       if (!mythology) return false;
       const text = normalizeText(`${mythology.name} ${mythology.region} ${mythology.culture} ${mythology.tags.join(' ')}`);
       return (
-        text.includes('turk') ||
+        text.includes('türk') ||
         text.includes('anatolia') ||
         text.includes('central asia') ||
         text.includes('mongol') ||
@@ -260,9 +260,9 @@ const collectionDefinitions: CollectionDefinition[] = [
   },
   {
     id: 'lost-mythologies',
-    title: 'Kayip Mitolojiler',
-    subtitle: 'Sinirli kaynak',
-    description: 'Yetersiz belgelenmis veya parcali ulasan mitolojik sistemler.',
+    title: 'Kayıp Mitolojiler',
+    subtitle: 'Sınırlı kaynak',
+    description: 'Yetersiz belgelenmiş veya parçalı ulaşan mitolojik sistemler.',
     accent: '#9a9a9a',
     matchMyth: (myth) => {
       const mythology = mythologyById.get(myth.mythologyId);
@@ -423,7 +423,7 @@ export function getThemeSummaries(): ThemeSummary[] {
         icon: definition.icon,
         mythCount: matchingMyths.length,
         topCultures,
-        description: `${definition.name} temasini tasiyan mitler`,
+        description: `${definition.name} temasını taşıyan mitler`,
       };
     })
     .filter((theme) => theme.mythCount > 0)
@@ -719,7 +719,7 @@ export function getArtifactsByCurrentCountryData(): ArtifactCountryDatum[] {
 
   sacredSites.forEach((site) => {
     (site.archaeology?.museumConnections || []).forEach((museum) => {
-      const country = museum.country?.trim() || 'Unknown';
+      const country = museum.country?.trim() || 'Bilinmiyor';
       // Kayıtlı öne çıkan eserler sayılır (eski "artifactCount" kaynaksız bir tahmindi).
       grouped.set(country, (grouped.get(country) ?? 0) + (museum.notableArtifacts?.length ?? 0));
     });
@@ -795,31 +795,31 @@ export function getFunFacts(): FunFact[] {
     {
       label: 'En evrensel mit',
       value: mostUniversal ? mostUniversal.myth.name : '-',
-      detail: mostUniversal ? `${mostUniversal.cultures} farkli mitolojik sistemde paralel iz` : 'Veri bulunamadi',
+      detail: mostUniversal ? `${mostUniversal.cultures} farklı mitolojik sistemde paralel iz` : 'Veri bulunamadı',
       href: mostUniversal ? `/myth/${mostUniversal.myth.id}` : undefined,
     },
     {
-      label: 'En eski kayitli mit',
+      label: 'En eski kayıtlı mit',
       value: oldestMyth ? oldestMyth.myth.name : '-',
-      detail: oldestMyth ? `${oldestMyth.myth.era}` : 'Veri bulunamadi',
+      detail: oldestMyth ? `${oldestMyth.myth.era}` : 'Veri bulunamadı',
       href: oldestMyth ? `/myth/${oldestMyth.myth.id}` : undefined,
     },
     {
-      label: 'En cok kulturlerarasi esdegeri olan tanri',
+      label: 'En çok kültürlerarası eşdeğeri olan tanrı',
       value: mostParallelDeity ? mostParallelDeity.deity.name : '-',
-      detail: mostParallelDeity ? `${mostParallelDeity.cultures} kulturde karsilik` : 'Veri bulunamadi',
+      detail: mostParallelDeity ? `${mostParallelDeity.cultures} kültürde karsilik` : 'Veri bulunamadı',
       href: mostParallelDeity ? `/deity/${mostParallelDeity.deity.id}` : undefined,
     },
     {
-      label: 'En cok kutsal mekana sahip mitoloji',
+      label: 'En çok kutsal mekâna sahip mitoloji',
       value: mostSiteRich ? mostSiteRich.mythology.name : '-',
-      detail: mostSiteRich ? `${mostSiteRich.sites} kutsal mekan kaydi` : 'Veri bulunamadi',
+      detail: mostSiteRich ? `${mostSiteRich.sites} kutsal mekân kaydı` : 'Veri bulunamadı',
       href: mostSiteRich ? `/mythology/${mostSiteRich.mythology.id}` : undefined,
     },
     {
-      label: 'En karmasik panteon',
+      label: 'En karmaşık panteon',
       value: mostComplexPantheon ? mostComplexPantheon.name : '-',
-      detail: mostComplexPantheon ? `${mostComplexPantheon.pantheonSize} tanri/tanrica` : 'Veri bulunamadi',
+      detail: mostComplexPantheon ? `${mostComplexPantheon.pantheonSize} tanrı/tanrıça` : 'Veri bulunamadı',
       href: mostComplexPantheon ? `/mythology/${mostComplexPantheon.id}` : undefined,
     },
   ];

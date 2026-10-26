@@ -59,7 +59,7 @@ const presets: PresetItem[] = [
   },
   {
     id: 'heracles-vs-gilgamesh',
-    label: 'Herkul vs Gilgamis',
+    label: 'Herkül vs Gılgamış',
     leftId: 'heracles-labors',
     rightId: 'gilgamesh-quest',
     hint: 'Hero journey super-pair',
@@ -179,8 +179,8 @@ function haversineKm(a?: [number, number], b?: [number, number]): number {
 }
 
 function similarityBand(score: number) {
-  if (score >= 90) return 'Cok Yuksek';
-  if (score >= 75) return 'Yuksek';
+  if (score >= 90) return 'Çok Yüksek';
+  if (score >= 75) return 'Yüksek';
   if (score >= 60) return 'Orta';
   return 'Dusuk-Orta';
 }
@@ -248,7 +248,7 @@ export default function ComparePage() {
       plotStructure: deity.description,
       keyCharacters: deity.myths.map((mythId) => mythById.get(mythId)?.name ?? mythId).slice(0, 8),
       themes: deity.domain.slice(0, 8),
-      moral: `${deity.name} figuru ${deity.domain.slice(0, 3).join(', ')} ekseninde kulturel duzeni sembolize eder.`,
+      moral: `${deity.name} figürü ${deity.domain.slice(0, 3).join(', ')} ekseninde kültürel düzeni sembolize eder.`,
       coordinates: [deity.origin.lng, deity.origin.lat],
     }));
 
@@ -323,17 +323,17 @@ export default function ComparePage() {
     if (activeCurated) return activeCurated.probableConnection;
 
     if (left.mythologyId === right.mythologyId) {
-      return 'Ayni mitolojik sistem icinde varyantlasma: ortak teolojik cekirdek, farkli anlati islevleri.';
+      return 'Aynı mitolojik sistem içinde varyantlaşma: ortak teolojik çekirdek, farklı anlatı işlevleri.';
     }
 
     const distance = haversineKm(left.coordinates, right.coordinates);
     if (distance < 2500) {
-      return 'Cografi yakinlik yuksek: ticaret aglari, savas/ittifak iliskileri ve goc hareketleri uzerinden kulturel gecis olasi.';
+      return 'Coğrafi yakınlık yüksek: ticaret ağları, savaş/ittifak ilişkileri ve göç hareketleri üzerinden kültürel geçiş olası.';
     }
     if (distance < 6000) {
-      return 'Orta mesafe baglantisi: Ipek Yolu benzeri cok durakli aktarim zincirleri veya imparatorluk temas bolgeleri olasi.';
+      return 'Orta mesafe bağlantısı: İpek Yolu benzeri çok duraklı aktarım zincirleri veya imparatorluk temas bölgeleri olası.';
     }
-    return 'Dogrudan aktarim olasiligi zayif: daha cok bagimsiz ama benzer toplumsal sorunlara verilen arketipsel cevaplar goruluyor.';
+    return 'Doğrudan aktarım olasılığı zayıf: daha çok bağımsız ama benzer toplumsal sorunlara verilen arketipsel cevaplar görülüyor.';
   }, [activeCurated, left, right]);
 
   const generatedAnalysis = useMemo(() => {
@@ -346,31 +346,31 @@ export default function ComparePage() {
     const highlights = sharedThemes.slice(0, 4).join(', ');
     const motifText = highlights
       ? `Ortak temalar: ${highlights}.`
-      : 'Dogrudan tema cakismasi sinirli; benzerlik daha cok yapisal duzeyde.';
+      : 'Doğrudan tema çakışması sınırlı; benzerlik daha çok yapısal düzeyde.';
 
-    return `${left.name} ve ${right.name} karsilastirmasinda anlati akisi, kahraman/figur islevi ve toplumsal duzen mesaji birlikte okunmali. ${motifText} Bu eslesme, yerel semboller farkli olsa da insan deneyiminin benzer krizlerini mitik duzlemde cozdugunu gosteriyor.`;
+    return `${left.name} ve ${right.name} karşılaştırmasında anlatı akışı, kahraman/figür işlevi ve toplumsal düzen mesajı birlikte okunmalı. ${motifText} Bu eşleşme, yerel semboller farklı olsa da insan deneyiminin benzer krizlerini mitik düzlemde çözdüğünü gösteriyor.`;
   }, [activeCurated, left, right]);
 
   const winnerSummary = useMemo(() => {
     if (!left || !right) return [] as Array<{ field: string; winner: 'left' | 'right' | 'draw' }>;
     const rows = [
       {
-        field: 'Tema Cesitliligi',
+        field: 'Tema Çeşitliliği',
         leftScore: left.themes.length,
         rightScore: right.themes.length,
       },
       {
-        field: 'Karakter Yogunlugu',
+        field: 'Karakter Yoğunluğu',
         leftScore: left.keyCharacters.length,
         rightScore: right.keyCharacters.length,
       },
       {
-        field: 'Anlati Derinligi',
+        field: 'Anlatı Derinliği',
         leftScore: normalizeTokens(left.plotStructure).length,
         rightScore: normalizeTokens(right.plotStructure).length,
       },
       {
-        field: 'Yapisal Uyum',
+        field: 'Yapısal Uyum',
         leftScore: similarityScore,
         rightScore: similarityScore,
       },
@@ -411,7 +411,7 @@ export default function ComparePage() {
   const copyShareSummary = async () => {
     if (sameSelection) return;
     if (!left || !right) return;
-    const summary = `Biliyor muydunuz? ${left.name} ve ${right.name} anlatilarinin benzerlik skoru ${similarityScore}. ${probableConnection}`;
+    const summary = `Biliyor muydunuz? ${left.name} ve ${right.name} anlatılarının benzerlik skoru ${similarityScore}. ${probableConnection}`;
     try {
       await navigator.clipboard.writeText(summary);
       setShareMessage('Summary copied');
@@ -425,10 +425,10 @@ export default function ComparePage() {
     <div className="min-h-screen bg-background px-4 pb-16 pt-24 text-primary sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="featured-card rounded-card border p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-gold">Comparison Tool</p>
-          <h1 className="mt-3 font-heading text-3xl text-gold-light sm:text-4xl">Mitler Arasi Paralel Karsilastirma</h1>
+          <p className="text-xs uppercase tracking-[0.2em] text-gold">Karşılaştırma Aracı</p>
+          <h1 className="mt-3 font-heading text-3xl text-gold-light sm:text-4xl">Mitler Arası Paralel Karşılaştırma</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-secondary sm:text-base">
-            Iki anlatiyi veya figuru yan yana getir, yapi ve tema benzerliklerini oku, ardindan olasi kulturel baglantiyi degerlendir.
+            İki anlatıyı veya figürü yan yana getir, yapı ve tema benzerliklerini oku, ardından olası kültürel bağlantıyı değerlendir.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -447,7 +447,7 @@ export default function ComparePage() {
         </div>
 
         <section className="app-card mt-8 rounded-card p-5">
-          <h2 className="font-heading text-xl text-gold-light">Presetler</h2>
+          <h2 className="font-heading text-xl text-gold-light">Hazır seçimler</h2>
           <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
             {presets.map((preset) => (
               <button
@@ -470,7 +470,7 @@ export default function ComparePage() {
 
         <section className="app-card mt-6 rounded-card p-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
-              <h2 className="font-heading text-xl text-gold-light">Iki Oge Sec</h2>
+              <h2 className="font-heading text-xl text-gold-light">İki Öğe Seç</h2>
               <div className="flex items-center gap-2">
                 {shareMessage && <span className="text-xs text-secondary">{shareMessage}</span>}
                 <button
@@ -487,14 +487,14 @@ export default function ComparePage() {
                   disabled={sameSelection}
                   className="app-button app-button-secondary min-h-10 rounded-full px-3 py-1.5 text-[11px] uppercase tracking-[0.12em]"
                 >
-                  Bu karsilastirmayi paylas
+                  Bu karşılaştırmayı paylaş
                 </button>
             </div>
           </div>
 
           <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
             <label className="text-sm text-secondary">
-              Sol Karsilastirma
+              Sol Karşılaştırma
               <select
                 value={leftId}
                 onChange={(event) => setLeftId(event.target.value)}
@@ -513,7 +513,7 @@ export default function ComparePage() {
             </label>
 
             <label className="text-sm text-secondary">
-              Sag Karsilastirma
+              Sağ Karşılaştırma
               <select
                 value={rightId}
                 onChange={(event) => setRightId(event.target.value)}
@@ -534,13 +534,13 @@ export default function ComparePage() {
 
           {sameSelection ? (
             <div className="mt-4 rounded-card border border-red/35 bg-red/15 px-4 py-3 text-sm text-parchment">
-              Ayni miti karsilastiramazsiniz.
+              Aynı miti karşılaştıramazsınız.
             </div>
           ) : null}
 
           {thirdSuggestionId && entityById.get(thirdSuggestionId) && (
             <div className="mt-4 rounded-card border border-[color:var(--color-border-hover)] bg-elevated/70 p-3 text-sm text-primary">
-              Bu preset icin ucuncu kiyas onerisi: <strong>{entityById.get(thirdSuggestionId)?.name}</strong>
+              Bu hazır seçim için ucuncu kiyas onerisi: <strong>{entityById.get(thirdSuggestionId)?.name}</strong>
               <button
                 type="button"
                 onClick={() => setRightId(thirdSuggestionId)}
@@ -579,7 +579,7 @@ export default function ComparePage() {
             </section>
 
             <section className="app-card mt-6 rounded-card p-5">
-              <h3 className="font-heading text-lg text-gold-light">Winner Summary</h3>
+              <h3 className="font-heading text-lg text-gold-light">Kazanan Özeti</h3>
               <div className="mt-3 grid gap-2">
                 {winnerSummary.map((row) => (
                   <div key={row.field} className="flex items-center justify-between rounded-md border border-[color:var(--color-border)] bg-surface/60 px-3 py-2 text-sm">
@@ -606,22 +606,22 @@ export default function ComparePage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-secondary">Plot Structure</td>
+                    <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-secondary">Olay Örgüsü</td>
                     <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-primary">{left.plotStructure}</td>
                     <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-primary">{right.plotStructure}</td>
                   </tr>
                   <tr>
-                    <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-secondary">Key Characters</td>
+                    <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-secondary">Ana Karakterler</td>
                     <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-primary">{left.keyCharacters.join(', ') || '-'}</td>
                     <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-primary">{right.keyCharacters.join(', ') || '-'}</td>
                   </tr>
                   <tr>
-                    <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-secondary">Themes</td>
+                    <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-secondary">Temalar</td>
                     <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-primary">{left.themes.join(', ') || '-'}</td>
                     <td className="border-b border-[color:var(--color-border)] px-4 py-3 text-primary">{right.themes.join(', ') || '-'}</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-secondary">Moral / Lesson</td>
+                    <td className="px-4 py-3 text-secondary">Ahlak / Ders</td>
                     <td className="px-4 py-3 text-primary">{left.moral}</td>
                     <td className="px-4 py-3 text-primary">{right.moral}</td>
                   </tr>
@@ -632,12 +632,12 @@ export default function ComparePage() {
 
             <section className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
               <div className="app-card rounded-card p-5">
-                <h3 className="font-heading text-lg text-gold-light">Muhtemel Baglanti</h3>
+                <h3 className="font-heading text-lg text-gold-light">Muhtemel Bağlantı</h3>
                 <p className="mt-3 text-sm leading-7 text-primary">{probableConnection}</p>
               </div>
 
               <div className="app-card rounded-card p-5">
-                <h3 className="font-heading text-lg text-gold-light">Karsilastirma Ozeti</h3>
+                <h3 className="font-heading text-lg text-gold-light">Karşılaştırma Özeti</h3>
                 <p className="mt-3 text-sm leading-7 text-primary">{generatedAnalysis}</p>
               </div>
             </section>

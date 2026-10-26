@@ -41,7 +41,7 @@ export default function AncientImage({
 
   const label = useMemo(() => {
     if (fallbackLabel) return fallbackLabel;
-    return alt.trim().length > 0 ? alt : 'Mitolojik gorsel';
+    return alt.trim().length > 0 ? alt : 'Mitolojik görsel';
   }, [alt, fallbackLabel]);
 
   useEffect(() => {
@@ -68,7 +68,7 @@ export default function AncientImage({
             )}
           </div>
           <p className="mt-3 text-[11px] uppercase tracking-[0.24em] text-foreground/50">
-            {failed ? 'Gorsel su anda goruntulenemiyor' : src ? 'Gorsel yukleniyor' : 'Gorsel hazirlaniyor'}
+            {failed ? 'Görsel şu anda görüntülenemiyor' : src ? 'Görsel yükleniyor' : 'Görsel hazırlanıyor'}
           </p>
           <p className="mt-2 text-xs uppercase tracking-[0.14em] text-foreground/75">{label}</p>
         </div>

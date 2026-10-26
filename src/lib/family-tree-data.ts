@@ -202,19 +202,19 @@ export const CONNECTION_TYPE_COLORS: Record<MythologyConnectionType, string> = {
 };
 
 export const CONNECTION_TYPE_LABELS: Record<MythologyConnectionType, string> = {
-  influenced: 'Influenced',
-  evolved_from: 'Evolved From',
-  absorbed: 'Absorbed',
-  syncretism: 'Syncretism',
-  parallel_development: 'Parallel Development',
-  trade_contact: 'Trade Contact',
-  conquest: 'Conquest',
+  influenced: 'Etkiledi',
+  evolved_from: 'Türedi',
+  absorbed: 'Bünyesine aldı',
+  syncretism: 'Senkretizm',
+  parallel_development: 'Paralel gelişim',
+  trade_contact: 'Ticari temas',
+  conquest: 'Fetih',
 };
 
 export const CONSENSUS_LABELS: Record<AcademicConsensus, string> = {
-  established: 'Established',
-  debated: 'Debated',
-  theory: 'Theory',
+  established: 'Kabul görmüş',
+  debated: 'Tartışmalı',
+  theory: 'Kuram',
 };
 
 function normalizeToMapEraBucket(year: number): 'ancient' | 'medieval' | 'modern' {

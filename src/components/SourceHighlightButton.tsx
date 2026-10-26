@@ -11,7 +11,7 @@ interface SourceHighlightButtonProps {
 export default function SourceHighlightButton({
   sourceIds,
   className,
-  label = 'Kaynaklari gor',
+  label = 'Kaynakları gör',
 }: SourceHighlightButtonProps) {
   if (!sourceIds.length) return null;
 

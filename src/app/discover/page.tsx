@@ -10,8 +10,8 @@ import { getRecentlyAdded } from '@/lib/recent-added';
 
 function kindLabel(kind: 'myth' | 'deity' | 'site' | 'mythology'): string {
   if (kind === 'myth') return 'Mit';
-  if (kind === 'deity') return 'Tanri';
-  if (kind === 'site') return 'Kutsal mekan';
+  if (kind === 'deity') return 'Tanrı';
+  if (kind === 'site') return 'Kutsal mekân';
   return 'Mitoloji';
 }
 
@@ -52,7 +52,7 @@ export default async function DiscoverPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" />
         <div className="absolute inset-0 flex items-end p-6 md:p-10">
           <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-[0.2em] text-gold/75">Her gun yeni bir hikaye</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-gold/75">Her gün yeni bir hikâye</p>
             <h1 className="mt-3 text-3xl text-gold md:text-5xl">{daily.myth.name}</h1>
             <p className="mt-3 text-sm text-foreground/80 md:text-base">{daily.myth.summary}</p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -72,7 +72,7 @@ export default async function DiscoverPage() {
       <section className="grid gap-4 lg:grid-cols-2">
         <article className="ancient-card overflow-hidden p-5">
           <div className="mb-3 flex items-center justify-between">
-            <h2 className="text-2xl text-gold">Bugunun Tanrisi</h2>
+            <h2 className="text-2xl text-gold">Bugünün Tanrısı</h2>
             {dailyDeityMythology && <span className="rounded-full border border-gold/30 px-2 py-0.5 text-[11px] text-gold-light">{dailyDeityMythology.name}</span>}
           </div>
           <div className="grid gap-3 sm:grid-cols-[140px_1fr]">
@@ -83,7 +83,7 @@ export default async function DiscoverPage() {
               <p className="text-lg text-gold-light">{dailyDeity.name}</p>
               <p className="mt-1 text-xs text-foreground/60">{dailyDeity.domain.slice(0, 4).join(' · ')}</p>
               <p className="mt-2 line-clamp-3 text-sm text-foreground/75">{dailyDeity.description}</p>
-              <HoverPrefetchLink href={`/deity/${dailyDeity.id}`} className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light">Tanri profilini ac</HoverPrefetchLink>
+              <HoverPrefetchLink href={`/deity/${dailyDeity.id}`} className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light">Tanrı profilini aç</HoverPrefetchLink>
             </div>
           </div>
         </article>
@@ -92,7 +92,7 @@ export default async function DiscoverPage() {
           <article className="ancient-card overflow-hidden p-5">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-2xl text-gold">Bilinmeyen Mitolojiler</h2>
-              <span className="rounded-full border border-gold/30 px-2 py-0.5 text-[11px] text-gold-light">Haftalik spotlight</span>
+              <span className="rounded-full border border-gold/30 px-2 py-0.5 text-[11px] text-gold-light">Haftanın öne çıkanı</span>
             </div>
             <div className="grid gap-3 sm:grid-cols-[140px_1fr]">
               <div className="relative h-36 overflow-hidden rounded-md border border-gold/20">
@@ -102,7 +102,7 @@ export default async function DiscoverPage() {
                 <p className="text-lg text-gold-light">{weeklySpotlight.name}</p>
                 <p className="mt-1 text-xs text-foreground/60">{weeklySpotlight.region} · {weeklySpotlight.era}</p>
                 <p className="mt-2 line-clamp-3 text-sm text-foreground/75">{weeklySpotlight.description}</p>
-                <HoverPrefetchLink href={`/mythology/${weeklySpotlight.id}`} className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light">Spotlighti kesfet</HoverPrefetchLink>
+                <HoverPrefetchLink href={`/mythology/${weeklySpotlight.id}`} className="mt-3 inline-flex rounded-full border border-gold/35 px-3 py-1 text-xs text-gold-light">Spotlighti keşfet</HoverPrefetchLink>
               </div>
             </div>
           </article>
@@ -113,7 +113,7 @@ export default async function DiscoverPage() {
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="text-2xl text-gold">Bu mitin benzerleri</h2>
-            <p className="meta-text mt-1 text-sm">Hizli baglantilarla benzer anlatilari kesfedin.</p>
+            <p className="meta-text mt-1 text-sm">Hızlı bağlantılarla benzer anlatıları keşfedin.</p>
           </div>
           <RandomExploreButton />
         </div>
@@ -134,9 +134,9 @@ export default async function DiscoverPage() {
         <div className="mb-5 flex items-end justify-between">
           <div>
             <h2 className="text-2xl text-gold">Tematik koleksiyonlar</h2>
-            <p className="meta-text text-sm">Editor secimi koleksiyonlar.</p>
+            <p className="meta-text text-sm">Editor seçimi koleksiyonlar.</p>
           </div>
-          <HoverPrefetchLink href="/themes" className="text-xs uppercase tracking-[0.14em] text-gold/80 hover:text-gold-light">Tum temalar</HoverPrefetchLink>
+          <HoverPrefetchLink href="/themes" className="text-xs uppercase tracking-[0.14em] text-gold/80 hover:text-gold-light">Tüm temalar</HoverPrefetchLink>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -147,7 +147,7 @@ export default async function DiscoverPage() {
                 <div className="mb-2 flex items-center gap-2">
                   <span className="rounded-full border border-gold/30 bg-black/25 px-2 py-0.5 text-[11px] text-gold-light">{collection.subtitle}</span>
                   <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[11px] text-gold-light">{collection.mythCount + collection.mythologyCount} oge</span>
-                  {collection.featured && <span className="rounded-full border border-gold/35 bg-gold/15 px-2 py-0.5 text-[11px] text-gold-light">Ozel</span>}
+                  {collection.featured && <span className="rounded-full border border-gold/35 bg-gold/15 px-2 py-0.5 text-[11px] text-gold-light">Özel</span>}
                 </div>
                 <h3 className="text-lg text-gold">{collection.title}</h3>
                 <p className="mt-2 text-sm text-foreground/70">{collection.description}</p>
@@ -161,8 +161,8 @@ export default async function DiscoverPage() {
       <section className="ancient-card p-6">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
           <div>
-            <h2 className="text-2xl text-gold">Recently Added</h2>
-            <p className="meta-text text-sm">Son 10 eklenen kayit (created_at sirasina gore).</p>
+            <h2 className="text-2xl text-gold">Son Eklenenler</h2>
+            <p className="meta-text text-sm">Son 10 eklenen kayıt (created_at sırasına göre).</p>
           </div>
           <span className="rounded-full border border-gold/25 px-3 py-1 text-xs text-foreground/65">Kaynak: {recent.source}</span>
         </div>

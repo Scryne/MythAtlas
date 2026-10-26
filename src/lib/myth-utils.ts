@@ -326,29 +326,29 @@ export function formatSlugLabel(value: string): string {
 
 export function mythTypeLabel(type: string): string {
   const labels: Record<string, string> = {
-    creation: 'Creation',
-    hero: 'Heroic',
-    trickster: 'Trickster',
-    love: 'Love',
-    war: 'War',
-    afterlife: 'Afterlife',
-    nature: 'Nature',
-    cosmology: 'Cosmology',
-    transformation: 'Transformation',
-    quest: 'Quest',
+    creation: 'Yaratılış',
+    hero: 'Kahramanlık',
+    trickster: 'Düzenbaz',
+    love: 'Aşk',
+    war: 'Savaş',
+    afterlife: 'Öte dünya',
+    nature: 'Doğa',
+    cosmology: 'Kozmoloji',
+    transformation: 'Dönüşüm',
+    quest: 'Arayış',
   };
   return labels[type.toLowerCase()] || formatSlugLabel(type);
 }
 
 export function deityTypeLabel(type: string): string {
   const labels: Record<string, string> = {
-    god: 'God',
-    goddess: 'Goddess',
-    demigod: 'Demigod',
+    god: 'Tanrı',
+    goddess: 'Tanrıça',
+    demigod: 'Yarı tanrı',
     titan: 'Titan',
-    spirit: 'Spirit',
-    trickster: 'Trickster',
-    monster: 'Monster',
+    spirit: 'Ruh',
+    trickster: 'Düzenbaz',
+    monster: 'Canavar',
   };
   return labels[type.toLowerCase()] || formatSlugLabel(type);
 }
@@ -520,13 +520,13 @@ export function sourceCitation(source: string): string {
 
 export function siteTypeLabel(type: string): string {
   const labels: Record<string, string> = {
-    temple: 'Temple',
-    mountain: 'Mountain',
-    natural: 'Natural Site',
-    city: 'Sacred City',
-    oracle: 'Oracle',
-    ruins: 'Ruins',
-    palace: 'Palace',
+    temple: 'Tapınak',
+    mountain: 'Dağ',
+    natural: 'Doğal alan',
+    city: 'Kutsal şehir',
+    oracle: 'Kehanet merkezi',
+    ruins: 'Kalıntı',
+    palace: 'Saray',
   };
   return labels[type.toLowerCase()] || formatSlugLabel(type);
 }

@@ -90,7 +90,7 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
   if (!nodes.length || !edges.length) {
     return (
       <div className="rounded-xl border border-gold/20 bg-black/25 p-6 text-sm text-foreground/60">
-        Tema baglantisi olusturmak icin yeterli veri yok.
+        Tema bağlantısı oluşturmak için yeterli veri yok.
       </div>
     );
   }
@@ -150,7 +150,7 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
         </g>
       </svg>
       <p className="mt-2 text-xs text-foreground/50">
-        Kenar kalinligi iki temanin birlikte gorulme sikligini gosterir.
+        Kenar kalınlığı iki temanın birlikte görülme sıklığını gösterir.
       </p>
     </div>
   );

@@ -43,21 +43,21 @@ interface MythologyDetailClientProps {
 }
 
 const TAB_LABELS: Record<TabKey, string> = {
-  overview: 'Genel Bakis',
+  overview: 'Genel Bakış',
   pantheon: 'Panteon',
   stories: 'Mitler',
-  sites: 'Kutsal Mekanlar',
-  interactions: 'Etkilesimler',
+  sites: 'Kutsal Mekânlar',
+  interactions: 'Etkileşimler',
   parallels: 'Paraleller',
 };
 
 const SECTION_LABELS: Record<MythologyBundleSection, string> = {
   myths: 'mitler',
-  deities: 'tanrilar',
-  sites: 'kutsal mekanlar',
-  connections: 'etki baglantilari',
-  parallels: 'paralel kulturler',
-  comparable: 'karsilastirma verisi',
+  deities: 'tanrılar',
+  sites: 'kutsal mekânlar',
+  connections: 'etki bağlantıları',
+  parallels: 'paralel kültürler',
+  comparable: 'karşılaştırma verisi',
 };
 
 const READING_LISTS: Record<string, string[]> = {
@@ -68,7 +68,7 @@ const READING_LISTS: Record<string, string[]> = {
   mesopotamian: ['Epic of Gilgamesh', 'Enuma Elish', 'Stephanie Dalley - Myths from Mesopotamia'],
 };
 
-const QUALITY_LABELS = { complete: 'Tam', partial: 'Kismi', sparse: 'Sinirli' } as const;
+const QUALITY_LABELS = { complete: 'Tam', partial: 'Kısmı', sparse: 'Sınırlı' } as const;
 const MYTH_TYPE_ACCENT: Record<string, string> = { creation: '#d4af37', hero: '#4c9eff', trickster: '#f08c28', love: '#d16ba5', war: '#d95b5b', afterlife: '#8c7ae6', nature: '#4cbf71', cosmology: '#00b3b8', transformation: '#e67e22', quest: '#5dade2' };
 
 function deityImportance(deity: DeityData): number {
@@ -164,19 +164,19 @@ export default function MythologyDetailClient({ bundle, similarMythologies }: My
           {activeTab === 'overview' && (
             <motion.div key="overview" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="grid gap-6 lg:grid-cols-5">
               <div className="space-y-6 lg:col-span-3">
-                <div className="ancient-card p-6"><h2 className="mb-3 text-2xl text-gold">Tanim ve onem</h2><p className="text-foreground/75">{mythology.description}</p><p className="mt-3 text-foreground/65">{mythology.significance}</p></div>
-                <div className="ancient-card p-6"><h3 className="mb-4 text-xl text-gold">Veri durumu</h3><div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4"><Metric label="Kanonik panteon" value={datasetCounts.canonicalPantheonSize} hint="Mitolojik olcekte beklenen genislik" /><Metric label="Kayitli mit" value={datasetCounts.myths} /><Metric label="Kayitli tanri" value={datasetCounts.deities} /><Metric label="Kayitli mekan" value={datasetCounts.sites} /></div><div className="mt-4 rounded-lg border border-gold/20 bg-black/20 p-4 text-sm text-foreground/70">{missingSections.length > 0 ? `Henuz tamamlanmayan alanlar: ${missingText}.` : 'Tum temel detail alanlari veri setinde mevcut.'}</div></div>
-                <div className="ancient-card p-6"><h3 className="mb-4 text-xl text-gold">Okuma listesi</h3><div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{readingList.map((book) => <article key={book} className="rounded-md border border-gold/20 bg-black/20 p-4"><div className="flex h-16 w-12 items-center justify-center rounded-md border border-gold/25 bg-elevated text-2xl text-gold-light">✦</div><p className="mt-3 text-sm text-primary">{book}</p><p className="mt-1 text-xs text-secondary">Kapak gorseli yoksa stilize yer tutucu gosterilir.</p></article>)}</div></div>
+                <div className="ancient-card p-6"><h2 className="mb-3 text-2xl text-gold">Tanım ve önem</h2><p className="text-foreground/75">{mythology.description}</p><p className="mt-3 text-foreground/65">{mythology.significance}</p></div>
+                <div className="ancient-card p-6"><h3 className="mb-4 text-xl text-gold">Veri durumu</h3><div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4"><Metric label="Kanonik panteon" value={datasetCounts.canonicalPantheonSize} hint="Mitolojik ölçekte beklenen genişlik" /><Metric label="Kayıtlı mit" value={datasetCounts.myths} /><Metric label="Kayıtlı tanrı" value={datasetCounts.deities} /><Metric label="Kayıtlı mekân" value={datasetCounts.sites} /></div><div className="mt-4 rounded-lg border border-gold/20 bg-black/20 p-4 text-sm text-foreground/70">{missingSections.length > 0 ? `Henüz tamamlanmayan alanlar: ${missingText}.` : 'Tüm temel detail alanları veri setinde mevcut.'}</div></div>
+                <div className="ancient-card p-6"><h3 className="mb-4 text-xl text-gold">Okuma listesi</h3><div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{readingList.map((book) => <article key={book} className="rounded-md border border-gold/20 bg-black/20 p-4"><div className="flex h-16 w-12 items-center justify-center rounded-md border border-gold/25 bg-elevated text-2xl text-gold-light">✦</div><p className="mt-3 text-sm text-primary">{book}</p><p className="mt-1 text-xs text-secondary">Kapak görseli yoksa stilize yer tutucu gösterilir.</p></article>)}</div></div>
               </div>
-              <div className="space-y-6 lg:col-span-2"><TimelineChart era={mythology.era} /><MiniWorldMap title="Mitolojinin cografi cekirdegi" markers={[{ id: mythology.id, label: mythology.name, lat: mythology.origin.lat, lng: mythology.origin.lng, color: mythology.color }]} highlightBox={mythology.boundingBox} /></div>
+              <div className="space-y-6 lg:col-span-2"><TimelineChart era={mythology.era} /><MiniWorldMap title="Mitolojinin coğrafi çekirdeği" markers={[{ id: mythology.id, label: mythology.name, lat: mythology.origin.lat, lng: mythology.origin.lng, color: mythology.color }]} highlightBox={mythology.boundingBox} /></div>
             </motion.div>
           )}
 
           {activeTab === 'pantheon' && (
             <motion.div key="pantheon" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
-              {!completeness.hasDeities ? <EmptyState title="Panteon verisi henuz tamamlanmadi" body="Bu mitoloji icin tanri/tanrica kayitlari veri setinde henuz yeterli kapsama ulasmadi." note="Panteon sekmesi sadece dogrulanmis kayitlar geldikce dolar." /> : <>
-                <div className="flex items-center justify-between gap-3"><h2 className="text-2xl text-gold">Panteon</h2><select value={pantheonSort} onChange={(event) => setPantheonSort(event.target.value as PantheonSort)} className="rounded-md border border-gold/30 bg-ink/70 px-2 py-1 text-xs text-foreground"><option value="importance">Oneme gore</option><option value="domain">Alana gore</option><option value="type">Ture gore</option></select></div>
-                <div className="ancient-card p-5"><h3 className="mb-3 text-lg text-gold">En gorunur figurler</h3><div className="grid gap-2 md:grid-cols-2">{topPowerDeities.map((deity, index) => <div key={deity.id} className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/75"><span className="text-gold-light">#{index + 1} {deity.name}</span><span className="ml-2 text-xs text-foreground/55">{deity.myths.length} mit ile bagli</span></div>)}</div></div>
+              {!completeness.hasDeities ? <EmptyState title="Panteon verisi henüz tamamlanmadı" body="Bu mitoloji için tanrı/tanrıça kayıtları veri setinde henüz yeterli kapsama ulaşmadı." note="Panteon sekmesi sadece doğrulanmış kayıtlar geldikçe dolar." /> : <>
+                <div className="flex items-center justify-between gap-3"><h2 className="text-2xl text-gold">Panteon</h2><select value={pantheonSort} onChange={(event) => setPantheonSort(event.target.value as PantheonSort)} className="rounded-md border border-gold/30 bg-ink/70 px-2 py-1 text-xs text-foreground"><option value="importance">Öneme göre</option><option value="domain">Alana göre</option><option value="type">Türe göre</option></select></div>
+                <div className="ancient-card p-5"><h3 className="mb-3 text-lg text-gold">En görünür figürler</h3><div className="grid gap-2 md:grid-cols-2">{topPowerDeities.map((deity, index) => <div key={deity.id} className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/75"><span className="text-gold-light">#{index + 1} {deity.name}</span><span className="ml-2 text-xs text-foreground/55">{deity.myths.length} mit ile bagli</span></div>)}</div></div>
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{sortedDeities.map((deity) => <button key={deity.id} type="button" onClick={() => setSelectedDeity(deity)} title={deity.description} className="ancient-card overflow-hidden text-left"><div className="relative h-40 overflow-hidden"><AncientImage src={deity.imageUrl} alt={deity.name} fill sizes="(max-width: 1280px) 50vw, 33vw" className="h-full w-full object-cover opacity-80" /></div><div className="p-4"><h3 className="text-lg text-gold">{deity.name}</h3><p className="mt-1 text-xs text-foreground/55">{deity.equivalents.length} kulturde esdeger bag</p><div className="mt-3 grid grid-cols-3 gap-2">{deity.domain.slice(0, 3).map((domain) => <div key={`${deity.id}-${domain}`} className="text-center"><p className="text-lg text-gold-light">{domainIcon(domain)}</p><p className="text-[10px] text-foreground/65">{formatSlugLabel(domain)}</p></div>)}</div></div></button>)}</div>
               </>}
             </motion.div>
@@ -184,8 +184,8 @@ export default function MythologyDetailClient({ bundle, similarMythologies }: My
 
           {activeTab === 'stories' && (
             <motion.div key="stories" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
-              {!completeness.hasMyths ? <EmptyState title="Mit verisi henuz tamamlanmadi" body="Bu mitoloji icin anlati kayitlari veri setinde henuz yeterli kapsama ulasmadi." note="Paralel baglantilar ve DNA kartlari dogrulanmis mitler geldikce acilir." /> : <>
-                <div className="flex flex-wrap gap-2"><button type="button" onClick={() => setMythFilter('all')} className="rounded-full border border-gold/20 px-3 py-1 text-xs">Tum mitler</button>{mythTypes.map((type) => <button key={type} type="button" onClick={() => setMythFilter(type)} className="rounded-full border border-gold/20 px-3 py-1 text-xs">{mythTypeLabel(type)}</button>)}</div>
+              {!completeness.hasMyths ? <EmptyState title="Mit verisi henüz tamamlanmadı" body="Bu mitoloji için anlatı kayıtları veri setinde henüz yeterli kapsama ulaşmadı." note="Paralel bağlantılar ve DNA kartları doğrulanmış mitler geldikçe açılır." /> : <>
+                <div className="flex flex-wrap gap-2"><button type="button" onClick={() => setMythFilter('all')} className="rounded-full border border-gold/20 px-3 py-1 text-xs">Tüm mitler</button>{mythTypes.map((type) => <button key={type} type="button" onClick={() => setMythFilter(type)} className="rounded-full border border-gold/20 px-3 py-1 text-xs">{mythTypeLabel(type)}</button>)}</div>
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{filteredMyths.map((myth) => { const parallelIds = mythParallelIds(myth); const firstParallels = myth.parallels.slice(0, 2).map((reference) => typeof reference === 'string' ? reference : reference.mythId).map((id) => mythById.get(id)).filter(Boolean) as MythData[]; const cultureCount = new Set([mythology.id, ...parallelIds.map((id) => mythById.get(id)?.mythologyId).filter((value): value is string => Boolean(value))]).size; return <HoverPrefetchLink key={myth.id} href={`/myth/${myth.id}`} className="group ancient-card overflow-hidden" style={{ borderLeft: `3px solid ${MYTH_TYPE_ACCENT[myth.type] || '#c9a84c'}` }}><div className="relative h-44 overflow-hidden"><AncientImage src={myth.imageUrl} alt={myth.name} fill sizes="(max-width: 1280px) 50vw, 33vw" className="h-full w-full object-cover opacity-80" /></div><div className="space-y-2 p-4"><h3 className="text-lg text-gold">{myth.name}</h3><div className="flex flex-wrap gap-1.5">{myth.themes.slice(0, 3).map((theme) => <span key={`${myth.id}-${theme}`} className="rounded-full border border-gold/20 px-2 py-0.5 text-[11px] text-foreground/65">{formatSlugLabel(theme)}</span>)}{cultureCount >= 5 ? <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[11px] text-gold-light">Evrensel tema</span> : null}</div><div className="flex items-center gap-2 text-xs text-foreground/65">{firstParallels.map((item) => <span key={`${myth.id}-${item.id}`} className="rounded-full border border-gold/15 px-2 py-0.5">{cultureFlag(item.mythologyId)} {item.name.slice(0, 10)}</span>)}</div><p className="line-clamp-1 text-xs text-foreground/0 transition-colors group-hover:text-foreground/70">{myth.summary}</p><div className="pt-1"><MythDNA myth={myth} size="mini" showRadar={false} showFingerprint={false} showHoverLegend /></div></div></HoverPrefetchLink>; })}</div>
               </>}
             </motion.div>
@@ -193,8 +193,8 @@ export default function MythologyDetailClient({ bundle, similarMythologies }: My
 
           {activeTab === 'sites' && (
             <motion.div key="sites" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
-              {!completeness.hasSites ? <EmptyState title="Kutsal mekan verisi henuz tamamlanmadi" body="Bu mitoloji icin site kayitlari veri setinde henuz yeterli kapsama ulasmadi." note="Harita ve rota kartlari dogrulanmis mekan kaydi geldikce dolar." /> : <>
-                <MiniWorldMap title="Kutsal mekan haritasi" markers={sites.map((site) => ({ id: site.id, label: site.name, lat: site.coordinates.lat, lng: site.coordinates.lng, color: mythology.color }))} />
+              {!completeness.hasSites ? <EmptyState title="Kutsal mekân verisi henüz tamamlanmadı" body="Bu mitoloji için site kayıtları veri setinde henüz yeterli kapsama ulaşmadı." note="Harita ve rota kartları doğrulanmış mekân kaydı geldikçe dolar." /> : <>
+                <MiniWorldMap title="Kutsal mekân haritası" markers={sites.map((site) => ({ id: site.id, label: site.name, lat: site.coordinates.lat, lng: site.coordinates.lng, color: mythology.color }))} />
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{sites.map((site) => { const lost = /ruin|destroyed|lost|abandoned/i.test(site.modernStatus || ''); const distance = userCoords ? Math.round(haversineKm(userCoords, site.coordinates)) : null; return <HoverPrefetchLink key={site.id} href={`/site/${site.id}`} className="group ancient-card overflow-hidden"><div className="relative h-40 overflow-hidden"><AncientImage src={site.imageUrl} alt={site.name} fill sizes="(max-width: 1280px) 50vw, 33vw" className="h-full w-full object-cover opacity-80" /><span className={`absolute left-2 top-2 rounded-full border px-2 py-1 text-[10px] ${lost ? 'border-red-300/35 bg-red-500/10 text-red-200' : 'border-emerald-300/35 bg-emerald-500/10 text-emerald-200'}`}>{lost ? 'Tarihe karismis' : 'Hala mevcut'}</span></div><div className="space-y-2 p-4"><h3 className="text-lg text-gold">{site.name}</h3><p className="text-xs uppercase tracking-[0.12em] text-foreground/55">{siteTypeLabel(site.type)} · {site.country || 'Konum bilgisi eksik'}</p>{distance != null ? <p className="text-xs text-foreground/60">Size uzaklik: {distance} km</p> : null}<p className="line-clamp-3 text-sm text-foreground/65">{site.description}</p><p className="text-[11px] text-foreground/0 transition-colors group-hover:text-foreground/65">{site.coordinates.lat.toFixed(3)}, {site.coordinates.lng.toFixed(3)}</p></div></HoverPrefetchLink>; })}</div>
               </>}
             </motion.div>
@@ -202,8 +202,8 @@ export default function MythologyDetailClient({ bundle, similarMythologies }: My
 
           {activeTab === 'interactions' && (
             <motion.div key="interactions" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
-              {!completeness.hasConnections ? <EmptyState title="Etkilesim verisi henuz tamamlanmadi" body="Bu mitoloji icin dogrulanmis etki akisi kaydi bulunmuyor." note="Bu alan sadece kaynakli giris-cikis baglantilari oldugunda gosterilir." /> : <>
-                <div className="ancient-card p-6"><h2 className="mb-2 text-2xl text-gold">Etkilesimler</h2><p className="text-sm text-foreground/70">Bu alan, secili mitolojinin bir adimlik etki agini gosterir: kimleri etkiledi ve kimlerden etkilendi.</p><div className="mt-4 grid gap-3 sm:grid-cols-2"><Metric label="Etkiledigi kultur" value={safeInfluence.outgoing.length} /><Metric label="Etkilendigi kultur" value={safeInfluence.incoming.length} /></div></div>
+              {!completeness.hasConnections ? <EmptyState title="Etkileşim verisi henüz tamamlanmadı" body="Bu mitoloji için doğrulanmış etki akışı kaydı bulunmuyor." note="Bu alan sadece kaynaklı giriş-çıkış bağlantıları olduğunda gösterilir." /> : <>
+                <div className="ancient-card p-6"><h2 className="mb-2 text-2xl text-gold">Etkileşimler</h2><p className="text-sm text-foreground/70">Bu alan, seçili mitolojinin bir adımlık etki ağını gösterir: kimleri etkiledi ve kimlerden etkilendi.</p><div className="mt-4 grid gap-3 sm:grid-cols-2"><Metric label="Etkilediği kültür" value={safeInfluence.outgoing.length} /><Metric label="Etkilendiği kültür" value={safeInfluence.incoming.length} /></div></div>
                 <MythologyInfluenceMiniGraph mythologyId={mythology.id} />
               </>}
             </motion.div>
@@ -211,9 +211,9 @@ export default function MythologyDetailClient({ bundle, similarMythologies }: My
 
           {activeTab === 'parallels' && (
             <motion.div key="parallels" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
-              {similarMythologies.length === 0 ? <EmptyState title="Paralel kultur verisi henuz tamamlanmadi" body="Bu mitoloji icin guvenli paralel veya karsilastirma verisi bulunmuyor." note="Sekme yalnizca dogrulanmis paralel anlatilar veya etki baglantilari oldugunda dolar." /> : <>
-                <div className="ancient-card p-6"><h2 className="mb-2 text-2xl text-gold">Paralel kulturler</h2><p className="text-sm text-foreground/70">Kartlar yalnizca guvenli paralel anlatilar veya dogrulanmis etki baglantilarindan uretilir.</p></div>
-                {closestParallel ? <div className="ancient-card p-6"><h3 className="mb-3 text-xl text-gold">En yakin paralel kume</h3><svg viewBox="0 0 360 220" className="mx-auto w-full max-w-xl"><circle cx="140" cy="110" r="70" fill="rgba(201,168,76,0.25)" stroke="rgba(201,168,76,0.6)" /><circle cx="220" cy="110" r="70" fill="rgba(122,215,244,0.23)" stroke="rgba(122,215,244,0.65)" /><text x="180" y="110" fill="#fff0c7" fontSize="12" textAnchor="middle">{closestParallel.sharedThemes.length}</text></svg></div> : null}
+              {similarMythologies.length === 0 ? <EmptyState title="Paralel kültür verisi henüz tamamlanmadı" body="Bu mitoloji için güvenli paralel veya karşılaştırma verisi bulunmuyor." note="Sekme yalnızca doğrulanmış paralel anlatılar veya etki bağlantıları olduğunda dolar." /> : <>
+                <div className="ancient-card p-6"><h2 className="mb-2 text-2xl text-gold">Paralel kültürler</h2><p className="text-sm text-foreground/70">Kartlar yalnızca güvenli paralel anlatılar veya doğrulanmış etki bağlantılarından üretilir.</p></div>
+                {closestParallel ? <div className="ancient-card p-6"><h3 className="mb-3 text-xl text-gold">En yakın paralel küme</h3><svg viewBox="0 0 360 220" className="mx-auto w-full max-w-xl"><circle cx="140" cy="110" r="70" fill="rgba(201,168,76,0.25)" stroke="rgba(201,168,76,0.6)" /><circle cx="220" cy="110" r="70" fill="rgba(122,215,244,0.23)" stroke="rgba(122,215,244,0.65)" /><text x="180" y="110" fill="#fff0c7" fontSize="12" textAnchor="middle">{closestParallel.sharedThemes.length}</text></svg></div> : null}
                 <div className="space-y-4">{similarMythologies.map((item) => <div key={item.id} className="ancient-card overflow-hidden"><div className="grid gap-0 lg:grid-cols-3"><div className="relative h-48 lg:h-full"><AncientImage src={item.imageUrl} alt={item.name} fill sizes="(max-width: 1280px) 40vw, 25vw" className="h-full w-full object-cover opacity-80" /></div><div className="space-y-3 p-5 lg:col-span-2"><div className="flex flex-wrap items-center gap-2 text-xs text-foreground/60"><span className="rounded-full border border-gold/25 px-2 py-1">{item.region}</span><span className="rounded-full border border-gold/25 px-2 py-1">{item.era}</span><span className="rounded-full border border-gold/25 px-2 py-1">{Math.round(item.distanceKm)} km</span></div><h3 className="text-xl text-gold"><HoverPrefetchLink href={`/mythology/${item.id}`}>{item.name}</HoverPrefetchLink></h3><div className="flex flex-wrap gap-2">{(item.sharedConcepts.length > 0 ? item.sharedConcepts : item.sharedThemes.map((theme) => formatSlugLabel(theme))).slice(0, 4).map((concept) => <span key={`${item.id}-${concept}`} className="rounded-full border border-gold/25 bg-gold/10 px-3 py-1 text-xs text-gold-light">{concept}</span>)}</div><div className="grid gap-2 sm:grid-cols-2">{item.comparison.filter((row) => row.baseHas || row.compareHas).slice(0, 4).map((row) => <div key={`${item.id}-${row.id}`} className="rounded-md border border-gold/15 bg-black/20 px-3 py-2 text-xs text-foreground/70"><span className="text-gold-light">{row.label}</span><span className="ml-2">{row.baseHas && row.compareHas ? 'ortak' : row.compareHas ? 'sadece karsida' : 'sadece burada'}</span></div>)}</div></div></div></div>)}</div>
               </>}
             </motion.div>
@@ -225,10 +225,10 @@ export default function MythologyDetailClient({ bundle, similarMythologies }: My
         open={Boolean(selectedDeity)}
         onClose={() => setSelectedDeity(null)}
         title={selectedDeity?.name}
-        description="Panteon ici hizli profil gorunumu"
+        description="Panteon içi hızlı profil görünümü"
         panelClassName="max-w-2xl"
       >
-        {selectedDeity ? <div className="space-y-4"><div className="relative h-56 overflow-hidden rounded-card border border-gold/20"><AncientImage src={selectedDeity.imageUrl} alt={selectedDeity.name} fill sizes="(max-width: 1024px) 92vw, 640px" className="h-full w-full object-cover" /></div><p className="leading-relaxed text-foreground/70">{selectedDeity.description}</p><HoverPrefetchLink href={`/deity/${selectedDeity.id}`} className="app-button app-button-secondary min-h-10 px-4 text-xs uppercase tracking-[0.14em]">Tanri detayini ac</HoverPrefetchLink></div> : null}
+        {selectedDeity ? <div className="space-y-4"><div className="relative h-56 overflow-hidden rounded-card border border-gold/20"><AncientImage src={selectedDeity.imageUrl} alt={selectedDeity.name} fill sizes="(max-width: 1024px) 92vw, 640px" className="h-full w-full object-cover" /></div><p className="leading-relaxed text-foreground/70">{selectedDeity.description}</p><HoverPrefetchLink href={`/deity/${selectedDeity.id}`} className="app-button app-button-secondary min-h-10 px-4 text-xs uppercase tracking-[0.14em]">Tanrı detayini aç</HoverPrefetchLink></div> : null}
       </Modal>
     </>
   );

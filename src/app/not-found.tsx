@@ -5,7 +5,7 @@ export default function NotFound() {
     <section className="section-container page-section">
       <div className="ancient-card mx-auto max-w-3xl overflow-hidden p-8 text-center">
         <div className="mb-6 rounded-xl border border-gold/20 bg-black/20 p-4">
-          <svg viewBox="0 0 640 240" className="h-44 w-full" role="img" aria-label="Ancient map illustration">
+          <svg viewBox="0 0 640 240" className="h-44 w-full" role="img" aria-label="Antik harita çizimi">
             <rect width="640" height="240" fill="var(--color-bg-surface)" rx="12" />
             <path d="M48 120 C140 40, 300 42, 410 110 S585 180, 602 122" fill="none" stroke="var(--color-gold)" strokeOpacity="0.45" strokeWidth="2" />
             <path d="M86 58 L154 48 L220 82 L186 126 L118 120 Z" fill="var(--color-bg-elevated)" stroke="var(--color-gold)" strokeOpacity="0.35" />
@@ -17,13 +17,13 @@ export default function NotFound() {
         </div>
 
         <p className="meta-text text-xs uppercase tracking-[0.2em]">404</p>
-        <h1 className="mt-2 text-3xl text-gold">Bu topraklarda kayip bir efsane gibisin...</h1>
+        <h1 className="mt-2 text-3xl text-gold">Bu topraklarda kayıp bir efsane gibisin...</h1>
         <p className="mt-3 text-sm text-secondary">
-          Aradigin sayfa atlasin sisleri arasinda kaybolmus olabilir.
+          Aradığın sayfa atlasın sisleri arasında kaybolmuş olabilir.
         </p>
         <div className="mt-6 flex items-center justify-center gap-3">
           <HoverPrefetchLink href="/map" className="app-button app-button-secondary min-h-10 px-4 text-xs uppercase tracking-[0.12em]">
-            Haritaya don
+            Haritaya dön
           </HoverPrefetchLink>
           <HoverPrefetchLink href="/" className="app-button app-button-ghost min-h-10 px-4 text-xs uppercase tracking-[0.12em]">
             Ana sayfa

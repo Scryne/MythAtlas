@@ -63,18 +63,18 @@ const ARCHETYPE_ICONS: Record<string, string> = {
 };
 
 const ARCHETYPE_DESCRIPTIONS: Record<string, string> = {
-  hero: 'Sinavlardan gecerek duzeni yeniden kuran figurdur.',
-  shadow: 'Bastirilan korku, siddet ve kaos kutbudur.',
-  trickster: 'Kurallari buken ve sistemi aciga cikaran zihin tipidir.',
-  wise_old_man: 'Bilgi, rehberlik ve anlam tasiyan mentor figurdur.',
-  great_mother: 'Koruyucu, dogurgan ve yikici doga gucunu temsil eder.',
-  anima: 'Duygusal iliski, hassasiyet ve cekim eksenidir.',
-  animus: 'Irade, yon verme ve disa vurum enerjisidir.',
+  hero: 'Sınavlardan geçerek düzeni yeniden kuran figürdür.',
+  shadow: 'Bastırılan korku, şiddet ve kaos kutbudur.',
+  trickster: 'Kuralları büken ve sistemi açığa çıkaran zihin tipidir.',
+  wise_old_man: 'Bilgi, rehberlik ve anlam taşıyan mentor figürdür.',
+  great_mother: 'Koruyucu, doğurgan ve yıkıcı doğa gücünü temsil eder.',
+  anima: 'Duygusal ilişki, hassasiyet ve çekim eksenidir.',
+  animus: 'İrade, yön verme ve dışa vurum enerjisidir.',
   self: 'Karsitliklari birlestiren butunluk ilkesidir.',
-  threshold_guardian: 'Gecisi zorlayan engel veya sinir bekcisidir.',
-  herald: 'Degisim cagrisini getiren isaretci figurdur.',
+  threshold_guardian: 'Geçişi zorlayan engel veya sınır bekçisidir.',
+  herald: 'Değişim çağrısını getiren işaretçi figürdür.',
   shapeshifter: 'Kimlik degistiren, belirsizlik ureten roldur.',
-  ally: 'Kahramanin yolculugunda destekleyen bag figurdur.',
+  ally: 'Kahramanın yolculuğunda destekleyen bağ figürdür.',
 };
 
 function average(values: number[]): number {
@@ -284,16 +284,16 @@ export default function DNAExplorerPage() {
   return (
     <div className="section-container space-y-8 py-8">
       <section className="ancient-card p-6">
-        <h1 className="text-3xl text-gold">Myth DNA Explorer</h1>
+        <h1 className="text-3xl text-gold">Mit DNA Gezgini</h1>
         <p className="mt-2 max-w-3xl text-sm text-foreground/75">
-          Mitleri ortak anlati atomlarina ayiran fingerprint katmani: elementler, arketipler ve anlati iskeletleri.
+          Mitleri ortak anlatı atomlarına ayıran parmak izi katmanı: elementler, arketipler ve anlatı iskeletleri.
         </p>
       </section>
 
       <section className="space-y-4">
         <div className="flex flex-wrap items-end justify-between gap-3">
-          <h2 className="text-2xl text-gold">Element Universe</h2>
-          <p className="text-xs text-foreground/60">En evrensel elementlerden baslayarak siralanir.</p>
+          <h2 className="text-2xl text-gold">Element Evreni</h2>
+          <p className="text-xs text-foreground/60">En evrensel elementlerden başlayarak sıralanır.</p>
         </div>
 
         <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-5">
@@ -331,7 +331,7 @@ export default function DNAExplorerPage() {
               </div>
             </div>
             <MiniWorldMap
-              title="Element Dagilimi"
+              title="Element Dağılımı"
               markers={mythsForSelectedElement.map((myth) => ({
                 id: myth.id,
                 label: myth.name,
@@ -344,7 +344,7 @@ export default function DNAExplorerPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl text-gold">Archetype Universe</h2>
+        <h2 className="text-2xl text-gold">Arketip Evreni</h2>
         <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {archetypeStats.map((item) => (
             <article key={item.archetype} className="rounded-xl border border-gold/20 bg-black/20 p-4">
@@ -354,7 +354,7 @@ export default function DNAExplorerPage() {
               </div>
               <h3 className="mt-2 text-base text-gold">{formatDNAKeyLabel(item.archetype)}</h3>
               <p className="mt-1 text-xs text-foreground/65">{ARCHETYPE_DESCRIPTIONS[item.archetype]}</p>
-              <p className="mt-3 text-[11px] uppercase tracking-[0.12em] text-foreground/50">Top 3 ornek</p>
+              <p className="mt-3 text-[11px] uppercase tracking-[0.12em] text-foreground/50">Top 3 örnek</p>
               <ul className="mt-1 space-y-1 text-xs text-foreground/70">
                 {item.topExamples.map((myth) => (
                   <li key={`${item.archetype}-${myth.id}`}>
@@ -368,7 +368,7 @@ export default function DNAExplorerPage() {
       </section>
 
       <section className="ancient-card space-y-4 p-6">
-        <h2 className="text-2xl text-gold">DNA Search Tool</h2>
+        <h2 className="text-2xl text-gold">DNA Arama Aracı</h2>
         <div className="flex justify-end">
           <button
             type="button"
@@ -378,12 +378,12 @@ export default function DNAExplorerPage() {
             }}
             className="rounded-full border border-gold/30 px-3 py-1 text-xs text-gold-light hover:border-gold/55"
           >
-            Tum secimleri temizle
+            Tüm seçimleri temizle
           </button>
         </div>
 
         <div>
-          <p className="mb-2 text-xs uppercase tracking-[0.12em] text-foreground/55">Element secimi</p>
+          <p className="mb-2 text-xs uppercase tracking-[0.12em] text-foreground/55">Element seçimi</p>
           <div className="flex flex-wrap gap-2">
             {DNA_ELEMENT_UNIVERSE.map((element) => {
               const active = selectedElements.includes(element);
@@ -404,7 +404,7 @@ export default function DNAExplorerPage() {
         </div>
 
         <div>
-          <p className="mb-2 text-xs uppercase tracking-[0.12em] text-foreground/55">Arketip secimi</p>
+          <p className="mb-2 text-xs uppercase tracking-[0.12em] text-foreground/55">Arketip seçimi</p>
           <div className="flex flex-wrap gap-2">
             {DNA_ARCHETYPE_UNIVERSE.map((archetype) => {
               const active = selectedArchetypes.includes(archetype);
@@ -430,7 +430,7 @@ export default function DNAExplorerPage() {
 
         <div className="grid gap-4 lg:grid-cols-[1.1fr_1fr]">
           <MiniWorldMap
-            title="DNA Arama Sonuclari"
+            title="DNA Arama Sonuçları"
             markers={dnaSearchResults.map((myth) => ({
               id: myth.id,
               label: myth.name,
@@ -451,7 +451,7 @@ export default function DNAExplorerPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl text-gold">Most Similar Myth Pairs</h2>
+        <h2 className="text-2xl text-gold">En Benzer Mit Çiftleri</h2>
         {!analysisReady && (
           <p className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-xs text-foreground/70">
             Benzerlik matrisi hesaplanıyor...
@@ -459,7 +459,7 @@ export default function DNAExplorerPage() {
         )}
         {surprisingPair && (
           <div className="rounded-lg border border-sky-300/35 bg-sky-900/20 p-4 text-sm text-sky-100">
-            <p className="text-xs uppercase tracking-[0.12em] text-sky-200">En sasirtici benzerlik</p>
+            <p className="text-xs uppercase tracking-[0.12em] text-sky-200">En şaşırtıcı benzerlik</p>
             <p className="mt-1">
               {surprisingPair.left.name} ({mythologyNameById.get(surprisingPair.left.mythologyId)}) -{' '}
               {surprisingPair.right.name} ({mythologyNameById.get(surprisingPair.right.mythologyId)}) · {surprisingPair.score}%
@@ -496,16 +496,16 @@ export default function DNAExplorerPage() {
       </section>
 
       <section className="ancient-card space-y-5 p-6">
-        <h2 className="text-2xl text-gold">DNA Statistics</h2>
+        <h2 className="text-2xl text-gold">DNA İstatistikleri</h2>
         {!analysisReady && (
           <p className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-xs text-foreground/70">
-            Istatistikler hazırlanıyor...
+            İstatistikler hazırlanıyor...
           </p>
         )}
 
         <div className="grid gap-4 lg:grid-cols-2">
           <div>
-            <p className="mb-2 text-sm text-gold-light">En yaygin elementler</p>
+            <p className="mb-2 text-sm text-gold-light">En yaygın elementler</p>
             <div className="space-y-2">
               {dnaStats.sortedElements.slice(0, 6).map(([element, count]) => (
                 <div key={`stat-element-${element}`}>
@@ -522,7 +522,7 @@ export default function DNAExplorerPage() {
           </div>
 
           <div>
-            <p className="mb-2 text-sm text-gold-light">En yaygin arketipler</p>
+            <p className="mb-2 text-sm text-gold-light">En yaygın arketipler</p>
             <div className="space-y-2">
               {dnaStats.sortedArchetypes.slice(0, 6).map(([archetype, count]) => (
                 <div key={`stat-archetype-${archetype}`}>
@@ -549,10 +549,10 @@ export default function DNAExplorerPage() {
         </div>
 
         <div className="rounded-lg border border-emerald-300/35 bg-emerald-900/20 p-3 text-sm text-emerald-100">
-          <p className="text-xs uppercase tracking-[0.12em]">Insanligin evrensel hikayeleri</p>
+          <p className="text-xs uppercase tracking-[0.12em]">İnsanlığın evrensel hikâyeleri</p>
           <p className="mt-1">
             80%+ mitte gorulen elementler:{' '}
-            {dnaStats.universalElements.length ? dnaStats.universalElements.join(', ') : 'Henuz 80% esigini gecen element yok.'}
+            {dnaStats.universalElements.length ? dnaStats.universalElements.join(', ') : 'Henüz %80 eşiğini geçen element yok.'}
           </p>
         </div>
       </section>

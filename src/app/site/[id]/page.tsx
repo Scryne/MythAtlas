@@ -30,20 +30,20 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythatlas.app';
 const visitorNotes: Record<string, string> = {
   'mount-olympus': 'Ruzgar burada hala tanrilarin adlarini fisildiyor.',
   delphi: 'Taslarin sessizliginde kehanetlerin yankisi duyulur.',
-  giza: 'Kumun altinda zaman degil, hafiza uyur.',
-  stonehenge: 'Gok ile toprak burada ayni cemberde bulusur.',
+  giza: 'Kumun altında zaman değil, hafıza uyur.',
+  stonehenge: 'Gök ile toprak burada aynı çemberde buluşur.',
 };
 
 function statusBadge(stillExists?: boolean): { label: string; className: string } {
   if (stillExists === false) {
     return {
-      label: 'Tarihe karisti',
+      label: 'Tarihe karıştı',
       className: 'border-red-400/30 bg-red-500/10 text-red-200',
     };
   }
 
   return {
-    label: 'Hala mevcut',
+    label: 'Hâlâ ayakta',
     className: 'border-emerald-400/30 bg-emerald-500/10 text-emerald-200',
   };
 }
@@ -57,7 +57,7 @@ export async function generateMetadata(props: SitePageProps): Promise<Metadata> 
   const site = getSite(params.id);
   if (!site) {
     return {
-      title: 'Sacred Site Not Found',
+      title: 'Kutsal Alan Bulunamadı',
       description: 'This sacred site entry could not be found in MythAtlas.',
     };
   }
@@ -131,8 +131,8 @@ export default async function SacredSiteDetailPage(props: SitePageProps) {
     .slice(0, 8);
 
   const historicalContext = [
-    `${site.name} belongs to the ${mythology?.name || site.mythologyId} sphere and is dated to ${site.era || 'an uncertain period'}. It functioned as a ritual, narrative, or political anchor where mythic memory was materially staged.`,
-    `${site.significance || 'Its significance in the dataset emphasizes continuity between sacred geography and cultural identity.'} The location reflects how stories, pilgrimage, and power were organized in space.`,
+    `${site.name}, ${mythology?.name || site.mythologyId} etki alanına giriyor ve ${site.era || 'kesin olmayan bir döneme'} tarihleniyor. Mitik hafızanın maddi olarak sahnelendiği bir ritüel, anlatı ya da siyaset merkeziydi.`,
+    `${site.significance || 'Veri setindeki önemi, kutsal coğrafya ile kültürel kimlik arasındaki sürekliliği öne çıkarıyor.'} Konumu, hikâyelerin, hac yolculuğunun ve iktidarın mekânda nasıl örgütlendiğini gösteriyor.`,
   ];
 
   const status = statusBadge(site.stillExists);
@@ -192,15 +192,15 @@ export default async function SacredSiteDetailPage(props: SitePageProps) {
             <BackButton />
           </div>
           <div className="mt-auto">
-            <p className="meta-text mb-3 text-xs uppercase tracking-[0.2em]">Sacred Site Profile</p>
-            <h1 className="text-4xl text-gold md:text-6xl">{site.name}</h1>
+            <p className="meta-text mb-3 text-xs uppercase tracking-[0.2em]">Kutsal Alan Profili</p>
+            <h1 lang="en" className="text-4xl text-gold md:text-6xl">{site.name}</h1>
             <div className="mt-4 flex flex-wrap gap-2">
             <span className="rounded-full border border-gold/35 bg-black/45 px-3 py-1 text-xs text-gold-light">
               {siteTypeLabel(site.type)}
             </span>
             <span className={`rounded-full border px-3 py-1 text-xs ${status.className}`}>{status.label}</span>
             <span className="rounded-full border border-gold/35 bg-black/45 px-3 py-1 text-xs text-gold-light">
-              {site.country || 'Unknown location'}
+              {site.country || 'Konum bilinmiyor'}
             </span>
             {mythology && (
               <HoverPrefetchLink

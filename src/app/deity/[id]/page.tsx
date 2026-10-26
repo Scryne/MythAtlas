@@ -118,7 +118,7 @@ export async function generateMetadata(props: DeityPageProps): Promise<Metadata>
   const deity = getDeity(params.id);
   if (!deity) {
     return {
-      title: 'Deity Not Found',
+      title: 'Tanrı Bulunamadı',
       description: 'This deity entry could not be found in MythAtlas.',
     };
   }
@@ -264,15 +264,15 @@ export default async function DeityDetailPage(props: DeityPageProps) {
               items={[
                 { label: 'Ana Sayfa', href: '/' },
                 { label: mythology?.name || deity.mythologyId, href: mythology ? `/mythology/${mythology.id}` : undefined },
-                { label: 'Tanrilar', href: mythology ? `/mythology/${mythology.id}` : undefined },
+                { label: 'Tanrılar', href: mythology ? `/mythology/${mythology.id}` : undefined },
                 { label: deity.name },
               ]}
             />
             <BackButton />
           </div>
           <div className="mt-auto">
-            <p className="meta-text mb-3 text-xs uppercase tracking-[0.2em]">Deity Profile</p>
-            <h1 className="text-4xl text-gold md:text-6xl">{deity.name}</h1>
+            <p className="meta-text mb-3 text-xs uppercase tracking-[0.2em]">Tanrı Profili</p>
+            <h1 lang="en" className="text-4xl text-gold md:text-6xl">{deity.name}</h1>
             <div className="mt-3 flex flex-wrap gap-2">
             <span className="rounded-full border border-gold/35 bg-black/45 px-3 py-1 text-xs text-gold-light">
               {deityTypeLabel(deity.type)}
@@ -282,7 +282,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
             </span>
             {archetype && (
               <span className="rounded-full border border-[#e3c169]/45 bg-[#2f1f0f]/75 px-3 py-1 text-xs text-[#f6dfab]">
-                Arketip Tanri
+                Arketip Tanrı
               </span>
             )}
             {mythology && (
@@ -316,12 +316,12 @@ export default async function DeityDetailPage(props: DeityPageProps) {
 
       <section className="section-container space-y-6 py-8">
         <div className="ancient-card p-6">
-          <h2 className="mb-3 text-2xl text-gold">Description</h2>
+          <h2 className="mb-3 text-2xl text-gold">Açıklama</h2>
           <p className="leading-relaxed text-foreground/80">{deity.description}</p>
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Domains</h3>
+          <h3 className="mb-4 text-xl text-gold">Etki Alanları</h3>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {deity.domain.map((domain) => (
               <div
@@ -337,7 +337,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Tapinilan donem</h3>
+          <h3 className="mb-4 text-xl text-gold">Tapınılan dönem</h3>
           <div className="rounded-md border border-gold/20 bg-black/20 p-4">
             <div className="relative h-3 rounded-full bg-[#2a1f13]">
               <div
@@ -354,7 +354,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Appears in Myths</h3>
+          <h3 className="mb-4 text-xl text-gold">Geçtiği Mitler</h3>
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {myths.map((myth) => (
               <HoverPrefetchLink key={myth.id} href={`/myth/${myth.id}`} className="rounded-md border border-gold/20 bg-gold/5 p-3">
@@ -369,8 +369,8 @@ export default async function DeityDetailPage(props: DeityPageProps) {
 
         {equivalents.length > 0 && (
         <div className="ancient-card p-6">
-          <h3 className="mb-2 text-2xl text-gold">Divine Equivalents Constellation</h3>
-          <p className="mb-4 text-foreground/75">Merkezde ana tanri, cevresinde kulturler arasi esdegerleri.</p>
+          <h3 className="mb-2 text-2xl text-gold">İlahi Eşdeğerler Takımyıldızı</h3>
+          <p className="mb-4 text-foreground/75">Merkezde ana tanrı, çevresinde kültürler arası eşdeğerleri.</p>
 
           <div className="overflow-x-auto rounded-md border border-gold/20 bg-black/20 p-3">
             <svg viewBox="0 0 420 420" className="mx-auto h-[420px] w-[420px]">
@@ -408,7 +408,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
               const sharedDomains = equivalent.domains.filter((value) => deity.domain.includes(value));
               return (
                 <div key={equivalent.id} className="rounded-md border border-gold/20 bg-black/20 p-4">
-                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Equivalent</p>
+                  <p className="meta-text text-xs uppercase tracking-[0.12em]">Eşdeğer</p>
                   {equivalent.isPlaceholder ? (
                     <h4 className="mt-1 text-xl text-gold-light">{equivalent.name}</h4>
                   ) : (
@@ -447,7 +447,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
         )}
 
         <div className="ancient-card p-6">
-          <h3 className="mb-3 text-xl text-gold">Ikonografi</h3>
+          <h3 className="mb-3 text-xl text-gold">İkonografi</h3>
           <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
             {deity.symbols.map((symbol) => (
               <div key={symbol} className="rounded-md border border-gold/25 bg-gold/10 p-3">
@@ -461,10 +461,10 @@ export default async function DeityDetailPage(props: DeityPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Tapinaklar ve Arkeolojik Kanitlar</h3>
+          <h3 className="mb-4 text-xl text-gold">Tapınaklar ve Arkeolojik Kanıtlar</h3>
           {archaeologyEvidence.length === 0 ? (
             <p className="text-sm text-foreground/60">
-              Bu tanri icin arkeolojik kazi kaydi bagli bir tapinak bulunmuyor.
+              Bu tanrı için arkeolojik kazı kaydı bağlı bir tapınak bulunmuyor.
             </p>
           ) : (
             <div className="grid gap-3 lg:grid-cols-2">
@@ -474,7 +474,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
                     <HoverPrefetchLink href={`/site/${entry.site.id}`} className="text-gold-light hover:text-gold">
                       {entry.site.name}
                     </HoverPrefetchLink>
-                    <span className="text-xs text-foreground/60">{entry.site.country || 'Unknown'}</span>
+                    <span className="text-xs text-foreground/60">{entry.site.country || 'Bilinmiyor'}</span>
                   </div>
                   {entry.protection === 'UNESCO' && (
                     <div className="mt-2 flex flex-wrap gap-2 text-[11px]">
@@ -495,14 +495,14 @@ export default async function DeityDetailPage(props: DeityPageProps) {
                               rel="noopener noreferrer"
                               className="mt-2 inline-flex rounded-full border border-gold/30 px-2 py-0.5 text-[11px] text-gold-light hover:bg-gold/10"
                             >
-                              Muzede gor
+                              Müzede gör
                             </a>
                           )}
                         </div>
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-3 text-xs text-foreground/60">Bu alanda eser karti henuz eklenmedi.</p>
+                    <p className="mt-3 text-xs text-foreground/60">Bu alanda eser kartı henüz eklenmedi.</p>
                   )}
                 </article>
               ))}
@@ -511,13 +511,13 @@ export default async function DeityDetailPage(props: DeityPageProps) {
         </div>
 
         <div className="ancient-card p-6">
-          <h3 className="mb-4 text-xl text-gold">Worshipped At</h3>
+          <h3 className="mb-4 text-xl text-gold">Tapınıldığı Yerler</h3>
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {worshipSites.map((site) => (
               <HoverPrefetchLink key={site.id} href={`/site/${site.id}`} className="rounded-md border border-gold/20 bg-gold/5 p-3">
                 <p className="text-gold-light">{site.name}</p>
                 <p className="meta-text text-xs uppercase tracking-[0.12em]">
-                  {siteTypeLabel(site.type)} · {site.country || 'Unknown'}
+                  {siteTypeLabel(site.type)} · {site.country || 'Bilinmiyor'}
                 </p>
               </HoverPrefetchLink>
             ))}
@@ -527,7 +527,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
 
         <footer className="rounded-md border border-gold/20 bg-black/20 p-4 text-sm text-foreground/75">
           Bu sayfadaki bilgiler {sourceCount.primary} birincil, {sourceCount.secondary} ikincil
-          kaynaktan derlenmistir. <span className="text-gold-light">Son guncelleme:</span>{' '}
+          kaynaktan derlenmistir. <span className="text-gold-light">Son güncelleme:</span>{' '}
           {LAST_UPDATED_LABEL}
         </footer>
       </section>

@@ -10,19 +10,19 @@ const OPEN_SEARCH_EVENT = 'mythatlas:open-search';
 
 const primaryNavLinks = [
   { href: '/map', label: 'Harita' },
-  { href: '/discover', label: 'Kesfet' },
+  { href: '/discover', label: 'Keşfet' },
   { href: '/parallels', label: 'Paraleller' },
-  { href: '/stats', label: 'Istatistikler' },
+  { href: '/stats', label: 'İstatistikler' },
   { href: '/archaeology', label: 'Arkeoloji' },
-  { href: '/family-tree', label: 'Aile Agaci' },
+  { href: '/family-tree', label: 'Aile Ağacı' },
 ];
 
 const secondaryNavLinks = [
   { href: '/sites', label: 'Kutsal Alanlar' },
   { href: '/themes', label: 'Temalar' },
   { href: '/dna', label: 'DNA' },
-  { href: '/compare', label: 'Karsilastir' },
-  { href: '/bibliography', label: 'Kaynakca' },
+  { href: '/compare', label: 'Karşılaştır' },
+  { href: '/bibliography', label: 'Kaynakça' },
   { href: '/scholars', label: 'Akademisyenler' },
 ];
 
@@ -78,7 +78,7 @@ export default function Header() {
               MythAtlas
             </span>
             <span className="hidden text-[11px] uppercase tracking-[0.18em] text-secondary lg:block">
-              Canli Mitoloji Atlasi
+              Canlı Mitoloji Atlası
             </span>
           </div>
         </Link>
@@ -119,7 +119,7 @@ export default function Header() {
 
         <button
           type="button"
-          aria-label={mobileOpen ? 'Menuyu kapat' : 'Menuyu ac'}
+          aria-label={mobileOpen ? 'Menüyü kapat' : 'Menüyü aç'}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((value) => !value)}
           className="app-button app-button-icon h-11 w-11 flex-col gap-1.5 lg:hidden"
@@ -159,7 +159,7 @@ export default function Header() {
           </div>
 
           <div className="space-y-3">
-            <p className="text-[11px] uppercase tracking-[0.18em] text-secondary">Diger rotalar</p>
+            <p className="text-[11px] uppercase tracking-[0.18em] text-secondary">Diğer rotalar</p>
             <div className="flex flex-wrap gap-2">
               {secondaryNavLinks.map((link) => (
                 <Link

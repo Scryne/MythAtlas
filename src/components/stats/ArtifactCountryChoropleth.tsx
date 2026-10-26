@@ -52,7 +52,7 @@ export default function ArtifactCountryChoropleth({ data }: ArtifactCountryChoro
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         role="img"
-        aria-label="Artifacts by current country choropleth"
+        aria-label="Bugünkü ülkeye göre eser haritası"
         className="h-[380px] w-full"
       >
         <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#0b0907" />

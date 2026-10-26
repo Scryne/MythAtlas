@@ -3,9 +3,9 @@ import HoverPrefetchLink from '@/components/common/HoverPrefetchLink';
 import AncientImage from '@/components/common/AncientImage';
 
 export const metadata: Metadata = {
-  title: 'Scholars',
+  title: 'Akademisyenler',
   description:
-    'Karsilastirmali mitoloji calismalarinda etkili akademisyenlerin profil ve eserleri.',
+    'Karşılaştırmalı mitoloji çalışmalarında etkili akademisyenlerin profil ve eserleri.',
 };
 
 interface ScholarProfile {
@@ -28,13 +28,13 @@ const scholars: ScholarProfile[] = [
     institution: 'Sarah Lawrence College',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Joseph_Campbell.jpg',
     contribution: [
-      'Kahraman anlatilarinin kulturlerarasi tekrar eden asamalarini derleyerek monomyth tartismasini yayginlastirdi.',
-      'Mitleri sadece tarihsel veri degil, psikolojik ve sembolik islevleri olan canli anlatilar olarak konumlandirdi.',
+      'Kahraman anlatılarının kültürlerarası tekrar eden aşamalarını derleyerek monomyth tartışmasını yaygınlaştırdı.',
+      'Mitleri sadece tarihsel veri değil, psikolojik ve sembolik işlevleri olan canlı anlatılar olarak konumlandırdı.',
     ],
     works: ['The Hero with a Thousand Faces', 'The Masks of God'],
     focusMyths: ['heracles-labors', 'gilgamesh-quest', 'odyssey'],
     thesisParaphrase:
-      'Toplumlar farkli isimler kullansa da kahramanlik dongusunun ana sinavlari benzer kalir.',
+      'Toplumlar farklı isimler kullansa da kahramanlık döngüsünün ana sınavları benzer kalır.',
   },
   {
     id: 'mircea-eliade',
@@ -43,28 +43,28 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Chicago',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Mircea_Eliade.jpg',
     contribution: [
-      'Kutsal zaman, rituel tekrar ve mitin kosmolojik yenileme islevini karsilastirmali bir modelde acikladi.',
-      'Mitin dogrudan gecmis anlatimi degil, su anki toplumsal duzeni kuran bir sembolik mekanizma oldugunu savundu.',
+      'Kutsal zaman, ritüel tekrar ve mitin kozmolojik yenileme işlevini karşılaştırmalı bir modelde açıkladı.',
+      'Mitin doğrudan geçmiş anlatımı değil, şu anki toplumsal düzeni kuran bir sembolik mekanizma olduğunu savundu.',
     ],
     works: ['Patterns in Comparative Religion', 'The Myth of the Eternal Return'],
     focusMyths: ['mesopotamian-flood', 'ragnarok', 'aztec-five-suns'],
     thesisParaphrase:
-      'Rituel tekrar, toplumu kurucu zamana geri baglayarak duzeni yeniden uretir.',
+      'Ritüel tekrar, toplumu kurucu zamana geri bağlayarak düzeni yeniden üretir.',
   },
   {
     id: 'claude-levi-strauss',
-    name: 'Claude Levi-Strauss',
+    name: 'Claude Lévi-Strauss',
     dates: '1908-2009',
     institution: 'College de France',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Claude_Levi-Strauss.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Claude_Lévi-Strauss.jpg',
     contribution: [
-      'Mitleri tek tek hikayeler yerine birbirini donusturen yapisal varyantlar olarak inceleyen analitik cerceve kurdu.',
-      'Ikili karsitliklarin anlatisal duzenleme gucunu gostererek karsilastirmali analizde yeni bir dil olusturdu.',
+      'Mitleri tek tek hikâyeler yerine birbirini dönüştüren yapısal varyantlar olarak inceleyen analitik çerçeve kurdu.',
+      'İkili karşıtlıkların anlatısal düzenleme gücünü göstererek karşılaştırmalı analizde yeni bir dil oluşturdu.',
     ],
     works: ['Structural Anthropology', 'Mythologiques'],
     focusMyths: ['coyote-trickster', 'prometheus-fire', 'dreamtime-rainbow-serpent'],
     thesisParaphrase:
-      'Mit, farkli varyantlara ayrilsa da alttaki yapisal iliskileri koruyarak anlam uretir.',
+      'Mit, farklı varyantlara ayrılsa da alttaki yapısal ilişkileri koruyarak anlam üretir.',
   },
   {
     id: 'walter-burkert',
@@ -73,13 +73,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Zurich',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Walter_Burkert.jpg',
     contribution: [
-      'Yunan mitolojisini yakin dogu temaslari ve rituel tarih ile birlikte okuyarak aktarim tartismasini guclendirdi.',
-      'Mit ve ritueli ayni toplumsal ekosistemin parcasi olarak ele aldi.',
+      'Yunan mitolojisini yakın doğu temasları ve ritüel tarih ile birlikte okuyarak aktarım tartışmasını güçlendirdi.',
+      'Mit ve ritüeli aynı toplumsal ekosistemin parçası olarak ele aldı.',
     ],
     works: ['Structure and History in Greek Mythology and Ritual', 'The Orientalizing Revolution'],
     focusMyths: ['greek-creation', 'prometheus-fire', 'enuma-elish'],
     thesisParaphrase:
-      'Yunan anlatilari, bolgesel temaslar ve rituel kurumlarin ortak etkisiyle bicimlenmistir.',
+      'Yunan anlatıları, bölgesel temaslar ve ritüel kurumların ortak etkisiyle biçimlenmiştir.',
   },
   {
     id: 'wendy-doniger',
@@ -88,13 +88,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Chicago',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/71/Wendy_Doniger.jpg',
     contribution: [
-      'Karsilastirmali okumada coklu anlam katmanlarini ve metinler arasi esnek gecisleri vurguladi.',
-      'Hindu ve dunya mitlerini birlikte degerlendirerek tek-merkezli aciklama modellerine alternatif sundu.',
+      'Karşılaştırmalı okumada çoklu anlam katmanlarını ve metinler arası esnek geçişleri vurguladı.',
+      'Hindu ve dünya mitlerini birlikte değerlendirerek tek-merkezli açıklama modellerine alternatif sundu.',
     ],
     works: ['The Implied Spider'],
     focusMyths: ['ramayana', 'mahabharata-war', 'ishtar-descent'],
     thesisParaphrase:
-      'Mitik benzerlikler tek bir kaynaga degil, coklu anlati stratejilerinin kesismesine de dayanir.',
+      'Mitik benzerlikler tek bir kaynağa değil, çoklu anlatı stratejilerinin kesişmesine de dayanır.',
   },
   {
     id: 'james-frazer',
@@ -103,13 +103,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Cambridge',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Sir_James_George_Frazer.jpg',
     contribution: [
-      'Mit ve rituel bagini genis bir karsilastirmali katalog halinde toplayarak alanin erken donemine yon verdi.',
-      'Yontemi gunumuzde elestirilse de karsilastirmali mitoloji tarihindeki etkisi surmektedir.',
+      'Mit ve ritüel bağını geniş bir karşılaştırmalı katalog halinde toplayarak alanın erken dönemine yön verdi.',
+      'Yöntemi günümüzde eleştirilse de karşılaştırmalı mitoloji tarihindeki etkisi sürmektedir.',
     ],
     works: ['The Golden Bough'],
     focusMyths: ['osiris-isis', 'persephone-seasons', 'book-of-dead'],
     thesisParaphrase:
-      'Rituel kaliplari farkli toplumlarda benzer mitik aciklama bicimleri uretebilir.',
+      'Ritüel kalıpları farklı toplumlarda benzer mitik açıklama biçimleri üretebilir.',
   },
   {
     id: 'ml-west',
@@ -118,13 +118,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Oxford',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Martin_Litchfield_West.jpg',
     contribution: [
-      'Filolojik ve metinsel karsilastirmalarla Yunan ile Yakin Dogu anlatilari arasindaki temas yollarini ayrintilandirdi.',
+      'Filolojik ve metinsel karşılaştırmalarla Yunan ile Yakın Doğu anlatıları arasındaki temas yollarını ayrıntılandırdı.',
       'Motif benzerliklerinin dilsel izlerle birlikte degerlendirilmesi gerektigini savundu.',
     ],
     works: ['The East Face of Helicon'],
     focusMyths: ['greek-creation', 'enuma-elish', 'kumarbi-cycle'],
     thesisParaphrase:
-      'Metinler arasi benzerlik, temas tarihinin filolojik kanitlariyla birlikte okunmalidir.',
+      'Metinler arası benzerlik, temas tarihinin filolojik kanıtlarıyla birlikte okunmalıdır.',
   },
   {
     id: 'georges-dumezil',
@@ -134,12 +134,12 @@ const scholars: ScholarProfile[] = [
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Georges_Dumezil.jpg',
     contribution: [
       'Hint-Avrupa mitlerinde islevsel ucleme modelini gelistirdi.',
-      'Savas, kutsallik ve uretim eksenlerinin mitik panteon organizasyonunda tekrarlandigini ileri surdu.',
+      'Savaş, kutsallık ve üretim eksenlerinin mitik panteon organizasyonunda tekrarlandığını ileri sürdü.',
     ],
     works: ['Mitra-Varuna', 'Archaic Roman Religion'],
     focusMyths: ['ragnarok', 'mahabharata-war', 'romulus-remus'],
     thesisParaphrase:
-      'Hint-Avrupa geleneklerinde panteon islevleri belirli toplumsal roller etrafinda organize olur.',
+      'Hint-Avrupa geleneklerinde panteon işlevleri belirli toplumsal roller etrafında organize olur.',
   },
   {
     id: 'jan-bremmer',
@@ -148,13 +148,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Groningen',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Jan_Bremmer.jpg',
     contribution: [
-      'Antik din ve mit calismalarinda tarihsel-kulturel baglamin onceligini vurguladi.',
-      'Yunan mitlerinin sosyal pratiklerle iliskisini ayrintili olarak inceledi.',
+      'Antik din ve mit çalışmalarında tarihsel-kültürel bağlamın önceliğini vurguladı.',
+      'Yunan mitlerinin sosyal pratiklerle ilişkisini ayrıntılı olarak inceledi.',
     ],
     works: ['Greek Religion', 'Interpretations of Greek Mythology'],
     focusMyths: ['orpheus-eurydice', 'persephone-seasons'],
     thesisParaphrase:
-      'Mitin anlami metnin kendisi kadar onu tasiyan toplumsal pratikte de uretilir.',
+      'Mitin anlamı metnin kendisi kadar onu taşıyan toplumsal pratikte de üretilir.',
   },
   {
     id: 'sarah-johnston',
@@ -163,13 +163,13 @@ const scholars: ScholarProfile[] = [
     institution: 'Ohio State University',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sarah_Iles_Johnston.jpg',
     contribution: [
-      'Antik mit anlatilarinda rituel pratik, buyu ve dini deneyim baglarini arastirdi.',
-      'Mitin sadece anlati degil performatif bir bilgi sistemi oldugunu gosterdi.',
+      'Antik mit anlatılarında ritüel pratik, büyü ve dini deneyim bağlarını araştırdı.',
+      'Mitin sadece anlatı değil performatif bir bilgi sistemi olduğunu gösterdi.',
     ],
     works: ['The Story of Myth', 'Restless Dead'],
     focusMyths: ['book-of-dead', 'ishtar-descent'],
     thesisParaphrase:
-      'Mitler, rituel performansla birlestiginde toplumsal hakikat rejimlerini guclendirir.',
+      'Mitler, ritüel performansla birleştiğinde toplumsal hakikat rejimlerini güçlendirir.',
   },
   {
     id: 'bruce-lincoln',
@@ -178,13 +178,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Chicago',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Bruce_Lincoln.jpg',
     contribution: [
-      'Mitin siyasi kullanimlarini ve ideolojik uretim gucunu karsilastirmali olarak inceledi.',
-      'Anlatilarin sadece sembolik degil iktidar iliskileriyle de bicimlendigini ortaya koydu.',
+      'Mitin siyasi kullanımlarını ve ideolojik üretim gücünü karşılaştırmalı olarak inceledi.',
+      'Anlatıların sadece sembolik değil iktidar ilişkileriyle de biçimlendiğini ortaya koydu.',
     ],
     works: ['Theorizing Myth', 'Discourse and the Construction of Society'],
     focusMyths: ['romulus-remus', 'aeneid', 'osiris-isis'],
     thesisParaphrase:
-      'Mit anlatisi, toplumsal duzeni mesrulastiran ideolojik bir arac olarak da isler.',
+      'Mit anlatısı, toplumsal düzeni meşrulaştıran ideolojik bir araç olarak da işler.',
   },
   {
     id: 'calvert-watkins',
@@ -193,13 +193,13 @@ const scholars: ScholarProfile[] = [
     institution: 'Harvard University',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Calvert_Watkins.jpg',
     contribution: [
-      'Hint-Avrupa poetik formullerinin mitik aktarimdaki rolunu filolojik olarak acikladi.',
-      'Dilsel tekrar kaliplarini mitik hafiza mekanizmasi olarak degerlendirdi.',
+      'Hint-Avrupa poetik formüllerinin mitik aktarımdaki rolünü filolojik olarak açıkladı.',
+      'Dilsel tekrar kalıplarını mitik hafıza mekanizması olarak değerlendirdi.',
     ],
     works: ['How to Kill a Dragon'],
     focusMyths: ['sigurd-dragon', 'thor-jormungandr', 'vritra-slaying'],
     thesisParaphrase:
-      'Poetik formuller, mitlerin kusaklar arasi iletiminde yapisal omurga islevi gorur.',
+      'Poetik formüller, mitlerin kuşaklar arası iletiminde yapısal omurga işlevi görür.',
   },
   {
     id: 'robert-segal',
@@ -208,13 +208,13 @@ const scholars: ScholarProfile[] = [
     institution: 'University of Aberdeen',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Robert_A._Segal.jpg',
     contribution: [
-      'Mit kuramlari tarihini sistematik sekilde siniflandirarak alana metodolojik netlik kazandirdi.',
-      'Psikolojik, sosyolojik ve yapisal yaklasimlarin kullanim alanlarini karsilastirdi.',
+      'Mit kuramları tarihini sistematik şekilde sınıflandırarak alana metodolojik netlik kazandırdı.',
+      'Psikolojik, sosyolojik ve yapısal yaklaşımların kullanım alanlarını karşılaştırdı.',
     ],
     works: ['Myth: A Very Short Introduction', 'Theorizing About Myth'],
     focusMyths: ['heracles-labors', 'odyssey'],
     thesisParaphrase:
-      'Mitleri anlamak icin once hangi kuramsal soruyu sordugumuzu aciklastirmak gerekir.',
+      'Mitleri anlamak için önce hangi kuramsal soruyu sorduğumuzu açıklaştırmak gerekir.',
   },
   {
     id: 'carlo-ginzburg',
@@ -223,13 +223,13 @@ const scholars: ScholarProfile[] = [
     institution: 'Scuola Normale Superiore / UCLA',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Carlo_Ginzburg.jpg',
     contribution: [
-      'Mikro-tarihsel yaklasimla halk inanc ve anlatilarinin uzun sureli donusumunu izledi.',
-      'Mitik kalintilarin yerel pratiklerde nasil yasadigina dair model sundu.',
+      'Mikro-tarihsel yaklaşımla halk inanç ve anlatılarının uzun süreli dönüşümünü izledi.',
+      'Mitik kalıntıların yerel pratiklerde nasıl yaşadığına dair model sundu.',
     ],
     works: ['Ecstasies', 'Clues, Myths, and the Historical Method'],
     focusMyths: ['baba-yaga', 'wild-hunt'],
     thesisParaphrase:
-      'Buyuk mitik yapilar, yerel uygulamalarda izlenebilen kucuk belirtilerle de okunabilir.',
+      'Büyük mitik yapılar, yerel uygulamalarda izlenebilen küçük belirtilerle de okunabilir.',
   },
   {
     id: 'gregory-nagy',
@@ -238,13 +238,13 @@ const scholars: ScholarProfile[] = [
     institution: 'Harvard University',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Gregory_Nagy.jpg',
     contribution: [
-      'Homeros gelenegini performans ve sozlu-formul kuramlariyla yeniden yorumladi.',
-      'Epik metnin sabit degil, performatif ve tarihsel olarak degisen bir gelenek oldugunu savundu.',
+      'Homeros geleneğini performans ve sözlü-formül kuramlarıyla yeniden yorumladı.',
+      'Epik metnin sabit değil, performatif ve tarihsel olarak değişen bir gelenek olduğunu savundu.',
     ],
     works: ['The Best of the Achaeans', 'Homer the Preclassic'],
     focusMyths: ['iliad-achilles', 'odyssey'],
     thesisParaphrase:
-      'Epik mit, tek bir metin degil performanslar aginda surekli yeniden kurulan bir gelenektir.',
+      'Epik mit, tek bir metin değil performanslar ağında sürekli yeniden kurulan bir gelenektir.',
   },
 ];
 
@@ -252,10 +252,10 @@ export default function ScholarsPage() {
   return (
     <section className="section-container py-24">
       <header className="ancient-card p-6">
-        <p className="meta-text text-xs uppercase tracking-[0.2em]">Comparative Mythology</p>
-        <h1 className="mt-2 text-4xl text-gold md:text-5xl">Scholars</h1>
+        <p className="meta-text text-xs uppercase tracking-[0.2em]">Karşılaştırmalı Mitoloji</p>
+        <h1 className="mt-2 text-4xl text-gold md:text-5xl">Akademisyenler</h1>
         <p className="mt-3 text-foreground/80">
-          MythAtlas paralellerinde sik referans verilen karsilastirmali mitoloji
+          MythAtlas paralellerinde sık referans verilen karşılaştırmalı mitoloji
           arastirmacilarinin temel profilleri.
         </p>
       </header>
@@ -286,7 +286,7 @@ export default function ScholarsPage() {
                 ))}
 
                 <div>
-                  <p className="text-xs uppercase tracking-[0.12em] text-gold/80">Onemli eserler</p>
+                  <p className="text-xs uppercase tracking-[0.12em] text-gold/80">Önemli eserler</p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {scholar.works.map((work) => (
                       <HoverPrefetchLink
@@ -302,7 +302,7 @@ export default function ScholarsPage() {
 
                 <div>
                   <p className="text-xs uppercase tracking-[0.12em] text-gold/80">
-                    MythAtlas odakli baglantilar
+                    MythAtlas odaklı bağlantılar
                   </p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {scholar.focusMyths.map((mythId) => (

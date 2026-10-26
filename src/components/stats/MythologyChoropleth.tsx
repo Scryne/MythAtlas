@@ -45,7 +45,7 @@ export default function MythologyChoropleth({ data }: ChoroplethProps) {
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         role="img"
-        aria-label="Mythologies by region choropleth"
+        aria-label="Bölgelere göre mitoloji haritası"
         className="h-[380px] w-full"
       >
         <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#0b0907" />

@@ -89,10 +89,10 @@ export default function BibliographyPageClient() {
   return (
     <section className="section-container py-24">
       <header className="ancient-card p-6">
-        <p className="meta-text text-xs uppercase tracking-[0.2em]">Reference Index</p>
-        <h1 className="mt-2 text-4xl text-gold md:text-5xl">Bibliography</h1>
+        <p className="meta-text text-xs uppercase tracking-[0.2em]">Kaynak Dizini</p>
+        <h1 className="mt-2 text-4xl text-gold md:text-5xl">Kaynakça</h1>
         <p className="mt-3 text-foreground/80">
-          MythAtlas genelinde kullanilan tum kaynaklar. Arama, filtreleme ve atif metni indirme
+          MythAtlas genelinde kullanılan tüm kaynaklar. Arama, filtreleme ve atıf metni indirme
           desteklenir.
         </p>
       </header>
@@ -109,9 +109,9 @@ export default function BibliographyPageClient() {
           onChange={(event) => setType(event.target.value as 'all' | AcademicSourceType)}
           className="rounded-md border border-gold/25 bg-black/25 px-3 py-2 text-sm text-foreground"
         >
-          <option value="all">Tum tipler</option>
+          <option value="all">Tüm tipler</option>
           <option value="primary">Birincil</option>
-          <option value="secondary">Ikincil</option>
+          <option value="secondary">İkincil</option>
           <option value="archaeological">Arkeolojik</option>
         </select>
         <select
@@ -119,7 +119,7 @@ export default function BibliographyPageClient() {
           onChange={(event) => setMythologyId(event.target.value)}
           className="rounded-md border border-gold/25 bg-black/25 px-3 py-2 text-sm text-foreground"
         >
-          <option value="all">Tum mitolojiler</option>
+          <option value="all">Tüm mitolojiler</option>
           {mythologyOptions.map((mythology) => (
             <option key={mythology.id} value={mythology.id}>
               {mythology.name}
@@ -129,7 +129,7 @@ export default function BibliographyPageClient() {
         <input
           value={yearFilter}
           onChange={(event) => setYearFilter(event.target.value)}
-          placeholder="Yil filtresi"
+          placeholder="Yıl filtresi"
           className="rounded-md border border-gold/25 bg-black/25 px-3 py-2 text-sm text-foreground"
         />
         <button
@@ -142,7 +142,7 @@ export default function BibliographyPageClient() {
       </div>
 
       <aside className="mt-6 ancient-card p-6">
-        <h2 className="text-xl text-gold">En cok referans verilen kaynaklar</h2>
+        <h2 className="text-xl text-gold">En çok referans verilen kaynaklar</h2>
         <ol className="mt-3 grid gap-2 md:grid-cols-2">
           {topReferenced.map((entry) => (
             <li key={`top-${entry.id}`} className="rounded-md border border-gold/20 bg-black/20 p-3">
@@ -172,7 +172,7 @@ export default function BibliographyPageClient() {
               {groupType === 'primary'
                 ? `Primary (${grouped.primary.length})`
                 : groupType === 'secondary'
-                  ? `Secondary (${grouped.secondary.length})`
+                  ? `İkincil (${grouped.secondary.length})`
                   : `Archaeological (${grouped.archaeological.length})`}
             </button>
           );
@@ -188,7 +188,7 @@ export default function BibliographyPageClient() {
                 {groupType === 'primary'
                   ? 'Primary Sources'
                   : groupType === 'secondary'
-                    ? 'Secondary Sources'
+                    ? 'İkincil Kaynaklar'
                     : 'Archaeological'}
               </h2>
 
@@ -229,7 +229,7 @@ export default function BibliographyPageClient() {
                       </div>
                       <div className="pt-2">
                         <p className="text-xs uppercase tracking-[0.12em] text-gold/80">
-                          Iliskili tanrilar
+                          İlişkili tanrılar
                         </p>
                         <div className="mt-2 flex flex-wrap gap-2">
                           {entry.deityIds.map((id, index) => (
@@ -242,13 +242,13 @@ export default function BibliographyPageClient() {
                             </HoverPrefetchLink>
                           ))}
                           {entry.deityIds.length === 0 && (
-                            <span className="text-xs text-foreground/55">Kayitli tanri baglantisi yok</span>
+                            <span className="text-xs text-foreground/55">Kayıtlı tanrı bağlantısı yok</span>
                           )}
                         </div>
                       </div>
                       <div className="pt-2">
                         <p className="text-xs uppercase tracking-[0.12em] text-gold/80">
-                          Iliskili kutsal alanlar
+                          İlişkili kutsal alanlar
                         </p>
                         <div className="mt-2 flex flex-wrap gap-2">
                           {entry.siteIds.map((id, index) => (
@@ -261,7 +261,7 @@ export default function BibliographyPageClient() {
                             </HoverPrefetchLink>
                           ))}
                           {entry.siteIds.length === 0 && (
-                            <span className="text-xs text-foreground/55">Kayitli alan baglantisi yok</span>
+                            <span className="text-xs text-foreground/55">Kayıtlı alan bağlantısı yok</span>
                           )}
                         </div>
                       </div>

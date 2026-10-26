@@ -120,7 +120,7 @@ export default function HomeClient() {
             transition={{ duration: 0.6, delay: 0.16 }}
             className="mt-5 font-heading text-sm uppercase tracking-[0.3em] text-parchment/85 sm:text-base"
           >
-            Insanligin hikayelerini cografyada oku
+            İnsanlığın hikâyelerini coğrafyada oku
           </motion.p>
 
           <motion.p
@@ -129,9 +129,9 @@ export default function HomeClient() {
             transition={{ duration: 0.65, delay: 0.26 }}
             className="mt-8 max-w-3xl text-base leading-8 text-secondary sm:text-lg"
           >
-            Kutsal mekanlari, tanrilari ve efsaneleri ayni atlas uzerinde bir araya getiren
-            karanlik ama sicak tonlu bir mitoloji arayuzu. Her tiklama, anlatilarin cografya ve
-            arkeolojiyle nasil kesistigini bir katman daha acar.
+            Kutsal mekânları, tanrıları ve efsaneleri aynı atlas üzerinde bir araya getiren
+            karanlık ama sıcak tonlu bir mitoloji arayüzü. Her tıklama, anlatıların coğrafya ve
+            arkeolojiyle nasıl kesiştiğini bir katman daha açar.
           </motion.p>
 
           <motion.div
@@ -147,7 +147,7 @@ export default function HomeClient() {
               Kesfe basla
             </Button>
             <span className="app-badge border-[color:var(--color-border)] bg-black/20 text-secondary">
-              Enter ile haritaya gec
+              Enter ile haritaya geç
             </span>
           </motion.div>
         </section>

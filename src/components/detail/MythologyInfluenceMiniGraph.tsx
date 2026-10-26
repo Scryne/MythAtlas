@@ -54,7 +54,7 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
   if (!centerNode) {
     return (
       <div className="rounded-xl border border-gold/20 bg-black/20 p-4 text-sm text-foreground/65">
-        Etkilesim verisi bulunamadi.
+        Etkileşim verisi bulunamadı.
       </div>
     );
   }
@@ -115,7 +115,7 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
 
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="rounded-lg border border-gold/20 bg-black/20 p-3">
-          <p className="mb-2 text-xs uppercase tracking-[0.14em] text-gold-light">Influenced Mythologies</p>
+          <p className="mb-2 text-xs uppercase tracking-[0.14em] text-gold-light">Etkilediği Mitolojiler</p>
           <ul className="space-y-1 text-sm text-foreground/75">
             {outgoing.map((connection) => (
               <li key={connection.id}>
@@ -125,7 +125,7 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
           </ul>
         </div>
         <div className="rounded-lg border border-gold/20 bg-black/20 p-3">
-          <p className="mb-2 text-xs uppercase tracking-[0.14em] text-gold-light">Influenced By</p>
+          <p className="mb-2 text-xs uppercase tracking-[0.14em] text-gold-light">Etkilendikleri</p>
           <ul className="space-y-1 text-sm text-foreground/75">
             {incoming.map((connection) => (
               <li key={connection.id}>
@@ -140,7 +140,7 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
         href={`/family-tree?mythologyId=${mythologyId}`}
         className="inline-flex rounded-full border border-gold/40 px-4 py-2 text-xs tracking-[0.14em] text-gold-light"
       >
-        Full family tree'de ac
+        Tam aile ağacında aç
       </HoverPrefetchLink>
     </div>
   );
