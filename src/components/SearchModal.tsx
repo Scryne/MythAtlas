@@ -15,6 +15,7 @@ import {
   type SearchResult,
 } from '@/lib/global-search';
 import { deities, mythologies, myths, sacredSites } from '@/lib/myth-data';
+import { startLoad } from '@/lib/start-load';
 
 const RECENT_KEY = 'mythatlas:recent-searches';
 const MAX_RECENTS = 8;
@@ -86,7 +87,7 @@ export default function SearchModal() {
   const [filter, setFilter] = useState<ResultFilter>('all');
 
   useEffect(() => {
-    setRecents(readRecents());
+    startLoad(() => setRecents(readRecents()));
   }, []);
 
   useEffect(() => {
@@ -131,9 +132,12 @@ export default function SearchModal() {
   const groupedResults = useMemo(() => groupResultsByCategory(filteredResults), [filteredResults]);
   const flatResults = useMemo(() => groupedResults.flatMap((group) => group.items), [groupedResults]);
 
-  useEffect(() => {
+  // Arama ya da süzgeç değişince seçim başa döner; render sırasında.
+  const [indexKey, setIndexKey] = useState(`${filter}|${query}`);
+  if (indexKey !== `${filter}|${query}`) {
+    setIndexKey(`${filter}|${query}`);
     setActiveIndex(0);
-  }, [filter, query]);
+  }
 
   const closeModal = useCallback(() => {
     setOpen(false);
@@ -246,7 +250,7 @@ export default function SearchModal() {
 
         <div aria-live="polite" className="text-xs text-secondary">
           {query.trim()
-            ? `${filteredResults.length} sonuc bulundu`
+            ? `${filteredResults.length} sonuç bulundu`
             : recents.length
               ? `${recents.length} son arama saklandı`
               : 'Aramaya başlamak için en az iki karakter girin'}

@@ -38,6 +38,23 @@ function stepImage(step: DeityEvolutionStep): string | undefined {
   return undefined;
 }
 
+/** Aranan tanrının ilk göründüğü soy zinciri ve adım (React derleyicisi döngüden erken dönüşü useMemo içinde koruyamıyordu). */
+function findLineageStep(search: string) {
+  const term = normalize(search);
+  if (term.length < 2) return null;
+
+  for (const lineage of deityEvolutionLineages) {
+    for (let index = 0; index < lineage.chain.length; index += 1) {
+      const step = lineage.chain[index];
+      if (normalize(getDeityName(step.deityId)).includes(term)) {
+        return { lineage, index };
+      }
+    }
+  }
+
+  return null;
+}
+
 export default function DeityEvolutionPageClient() {
   const [search, setSearch] = useState('');
   const [selectedStep, setSelectedStep] = useState<SelectedStep | null>(null);
@@ -45,21 +62,7 @@ export default function DeityEvolutionPageClient() {
     null
   );
 
-  const searchMatch = useMemo(() => {
-    const term = normalize(search);
-    if (term.length < 2) return null;
-
-    for (const lineage of deityEvolutionLineages) {
-      for (let index = 0; index < lineage.chain.length; index += 1) {
-        const step = lineage.chain[index];
-        if (normalize(getDeityName(step.deityId)).includes(term)) {
-          return { lineage, index };
-        }
-      }
-    }
-
-    return null;
-  }, [search]);
+  const searchMatch = useMemo(() => findLineageStep(search), [search]);
 
   const featured = useMemo(
     () => deityEvolutionLineages.filter((lineage) => FEATURED_LINEAGE_IDS.includes(lineage.id)),
@@ -87,38 +90,38 @@ export default function DeityEvolutionPageClient() {
   }, [selectedStep]);
 
   return (
-    <div className="min-h-screen bg-[#050505] px-4 pb-14 pt-24 text-[#ebd7ab] sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-void px-4 pb-14 pt-24 text-parchment sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-8 rounded-2xl border border-[#c9a84c]/25 bg-[radial-gradient(circle_at_18%_20%,rgba(201,168,76,0.16),rgba(7,7,7,0.94)_55%)] p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-[#d9bf87]">Kültürler arası dönüşüm</p>
-          <h1 className="mt-3 font-heading text-3xl text-[#f0d58d] sm:text-4xl">Tanrı Evrim Zincirleri</h1>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-[#cfbc95]">
+        <div className="mb-8 rounded-2xl border border-gold/25 bg-[radial-gradient(circle_at_18%_20%,rgba(201,168,76,0.16),rgba(7,7,7,0.94)_55%)] p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-parchment-dim">Kültürler arası dönüşüm</p>
+          <h1 className="mt-3 font-heading text-3xl text-gold-pale sm:text-4xl">Tanrı Evrim Zincirleri</h1>
+          <p className="mt-3 max-w-3xl text-sm leading-7 text-parchment-dim">
             Zincirler, tanrı figürlerinin farklı mitolojik sistemlerde nasıl yeniden yorumlandığını gösterir.
             Okların üstüne gelerek hangi özelliklerin değiştiğini görebilirsin.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
-            <HoverPrefetchLink href="/family-tree" className="rounded-full border border-[#c9a84c]/35 px-4 py-2 text-xs text-[#f0d58d]">
+            <HoverPrefetchLink href="/family-tree" className="rounded-full border border-gold/35 px-4 py-2 text-xs text-gold-pale">
               Aile ağacı grafiğine dön
             </HoverPrefetchLink>
-            <HoverPrefetchLink href="/compare" className="rounded-full border border-[#7ad7f4]/35 px-4 py-2 text-xs text-[#bceffc]">
+            <HoverPrefetchLink href="/compare" className="rounded-full border border-rel-cyan/35 px-4 py-2 text-xs text-rel-cyan-light">
               Karşılaştırma aracı
             </HoverPrefetchLink>
           </div>
         </div>
 
-        <div className="mb-8 rounded-xl border border-[#c9a84c]/20 bg-[#0f0d09]/85 p-4">
-          <label className="text-xs uppercase tracking-[0.16em] text-[#c9b082]">Tanrı soyunda ara</label>
+        <div className="mb-8 rounded-xl border border-gold/20 bg-background/85 p-4">
+          <label className="text-xs uppercase tracking-[0.16em] text-parchment-muted">Tanrı soyunda ara</label>
           <input
             value={search}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Örnek: Ishtar, Zeus, Enki..."
-            className="mt-2 w-full rounded-md border border-[#c9a84c]/25 bg-[#16120d] px-3 py-2 text-sm text-[#ead5a4] outline-none focus:border-[#e6c879]"
+            className="mt-2 w-full rounded-md border border-gold/25 bg-surface px-3 py-2 text-sm text-gold-pale outline-none focus:border-gold-light"
           />
           {normalize(search).length >= 2 && !searchMatch && (
-            <p className="mt-2 text-sm text-[#d8b383]">Bu tanrının bilinen bir evrimi bulunmuyor.</p>
+            <p className="mt-2 text-sm text-parchment-muted">Bu tanrının bilinen bir evrimi bulunmuyor.</p>
           )}
           {searchMatch && (
-            <p className="mt-2 text-sm text-[#9fe6ff]">
+            <p className="mt-2 text-sm text-rel-cyan">
               Bulundu: {getDeityName(searchMatch.lineage.chain[searchMatch.index].deityId)} (
               {searchMatch.lineage.name} zinciri, adim {searchMatch.index + 1})
             </p>
@@ -127,10 +130,10 @@ export default function DeityEvolutionPageClient() {
 
         <section className="space-y-7">
           {visibleLineages.map((lineage) => (
-            <div key={lineage.id} className="rounded-2xl border border-[#c9a84c]/20 bg-[#0f0d09]/88 p-4 sm:p-5">
+            <div key={lineage.id} className="rounded-2xl border border-gold/20 bg-background/88 p-4 sm:p-5">
               <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-                <h2 className="font-heading text-xl text-[#f0d58d]">{lineage.name}</h2>
-                <span className="rounded-full border border-[#c9a84c]/25 px-2 py-1 text-[11px] text-[#cdb786]">
+                <h2 className="font-heading text-xl text-gold-pale">{lineage.name}</h2>
+                <span className="rounded-full border border-gold/25 px-2 py-1 text-[11px] text-parchment-muted">
                   {lineage.chain.length} adim
                 </span>
               </div>
@@ -149,8 +152,8 @@ export default function DeityEvolutionPageClient() {
                           onClick={() => setSelectedStep({ lineageId: lineage.id, index })}
                           className={`w-56 overflow-hidden rounded-lg border text-left ${
                             highlighted
-                              ? 'border-[#7ad7f4]/70 bg-[#102532]'
-                              : 'border-[#c9a84c]/20 bg-[#16120d] hover:border-[#c9a84c]/45'
+                              ? 'border-rel-cyan/70 bg-rel-cyan-deep'
+                              : 'border-gold/20 bg-surface hover:border-gold/45'
                           }`}
                         >
                           <div className="h-32 overflow-hidden">
@@ -166,11 +169,11 @@ export default function DeityEvolutionPageClient() {
                             />
                           </div>
                           <div className="space-y-1 p-3">
-                            <p className="text-sm text-[#f0d58d]">{deityName}</p>
-                            <p className="text-xs text-[#baa67c]">{getMythologyName(step.mythologyId)}</p>
-                            <p className="text-[11px] text-[#9f8a63]">{step.period}</p>
+                            <p className="text-sm text-gold-pale">{deityName}</p>
+                            <p className="text-xs text-parchment-muted">{getMythologyName(step.mythologyId)}</p>
+                            <p className="text-[11px] text-muted">{step.period}</p>
                             {deity && (
-                              <p className="line-clamp-2 text-[11px] text-[#bda980]">{deity.description}</p>
+                              <p className="line-clamp-2 text-[11px] text-parchment-muted">{deity.description}</p>
                             )}
                           </div>
                         </button>
@@ -181,11 +184,11 @@ export default function DeityEvolutionPageClient() {
                             onMouseEnter={() => setHoveredTransition({ lineageId: lineage.id, index })}
                             onMouseLeave={() => setHoveredTransition(null)}
                           >
-                            <div className="h-[2px] w-10 bg-[#7ad7f4]/60" />
-                            <span className="ml-1 text-[#7ad7f4]">➜</span>
+                            <div className="h-[2px] w-10 bg-rel-cyan/60" />
+                            <span className="ml-1 text-rel-cyan">➜</span>
                             {hoveredTransition?.lineageId === lineage.id && hoveredTransition.index === index && (
-                              <div className="absolute left-1/2 top-8 z-20 w-64 -translate-x-1/2 rounded-md border border-[#7ad7f4]/35 bg-[#0f2230]/95 p-2 text-xs text-[#c9eefb]">
-                                <p className="mb-1 text-[#d7f4ff]">Neler degisti?</p>
+                              <div className="absolute left-1/2 top-8 z-20 w-64 -translate-x-1/2 rounded-md border border-rel-cyan/35 bg-rel-cyan-deep/95 p-2 text-xs text-rel-cyan-light">
+                                <p className="mb-1 text-rel-cyan-light">Neler degisti?</p>
                                 <ul className="list-disc space-y-1 pl-4">
                                   {lineage.chain[index + 1].changes.map((change) => (
                                     <li key={change}>{change}</li>
@@ -205,19 +208,19 @@ export default function DeityEvolutionPageClient() {
         </section>
 
         <aside
-          className={`pointer-events-auto fixed right-0 top-0 z-50 h-full w-full transform border-l border-[#c9a84c]/25 bg-[#090806]/96 backdrop-blur-xl transition-transform duration-300 sm:w-[min(92vw,420px)] ${
+          className={`pointer-events-auto fixed right-0 top-0 z-50 h-full w-full transform border-l border-gold/25 bg-background/96 backdrop-blur-xl transition-transform duration-300 sm:w-[min(92vw,420px)] ${
             activeStepData ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="flex items-center justify-between border-b border-[#c9a84c]/20 px-4 py-3">
-            <h3 className="text-sm tracking-[0.14em] text-[#edd39c]">Tanrı Ayrıntısı</h3>
-            <button type="button" onClick={() => setSelectedStep(null)} className="text-xs text-[#d0bb8b] hover:text-[#f2d68e]">
+          <div className="flex items-center justify-between border-b border-gold/20 px-4 py-3">
+            <h3 className="text-sm tracking-[0.14em] text-gold-pale">Tanrı Ayrıntısı</h3>
+            <button type="button" onClick={() => setSelectedStep(null)} className="text-xs text-parchment-dim hover:text-gold-pale">
               Kapat
             </button>
           </div>
           {activeStepData && (
-            <div className="space-y-4 overflow-y-auto p-4 text-sm text-[#d9c7a2]">
-              <div className="h-44 overflow-hidden rounded-lg border border-[#c9a84c]/20">
+            <div className="space-y-4 overflow-y-auto p-4 text-sm text-parchment-dim">
+              <div className="h-44 overflow-hidden rounded-lg border border-gold/20">
                 <AncientImage
                   src={stepImage(activeStepData.step)}
                   fallbackSrc={getMythologyNode(activeStepData.step.mythologyId)?.imageUrl ?? null}
@@ -229,20 +232,20 @@ export default function DeityEvolutionPageClient() {
                   fallbackLabel={getDeityName(activeStepData.step.deityId)}
                 />
               </div>
-              <p className="text-lg text-[#f0d58d]">{getDeityName(activeStepData.step.deityId)}</p>
-              <p className="text-xs text-[#bfa97c]">
+              <p className="text-lg text-gold-pale">{getDeityName(activeStepData.step.deityId)}</p>
+              <p className="text-xs text-parchment-muted">
                 {getMythologyName(activeStepData.step.mythologyId)} · {activeStepData.step.period}
               </p>
               {activeStepData.deity ? (
                 <p className="leading-relaxed">{activeStepData.deity.description}</p>
               ) : (
-                <p className="leading-relaxed text-[#c5b38d]">
+                <p className="leading-relaxed text-parchment-muted">
                   Bu adım için yerel tanrı kaydı bulunmuyor; zincir verisi akademik karşılaştırma amacıyla
                   derlenmiştir.
                 </p>
               )}
               <div>
-                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Değişim Notlari</p>
+                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-parchment-muted">Değişim Notlari</p>
                 <ul className="list-disc space-y-1 pl-5 text-xs">
                   {activeStepData.step.changes.map((change) => (
                     <li key={change}>{change}</li>
@@ -252,7 +255,7 @@ export default function DeityEvolutionPageClient() {
               {activeStepData.deity && (
                 <HoverPrefetchLink
                   href={`/deity/${activeStepData.deity.id}`}
-                  className="inline-flex rounded-full border border-[#c9a84c]/40 px-4 py-2 text-xs text-[#f0d58d]"
+                  className="inline-flex rounded-full border border-gold/40 px-4 py-2 text-xs text-gold-pale"
                 >
                   Tanrı ayrıntı sayfası
                 </HoverPrefetchLink>

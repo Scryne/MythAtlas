@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
 import type { MythUI, Myth } from '@/types/mythology';
 import mythsData from '@/data/myths.json';
 
@@ -20,48 +20,19 @@ function toMythUI(m: Myth): MythUI {
   };
 }
 
+const ALL_MYTHS = (mythsData as unknown as Myth[]).map(toMythUI);
+
+// Veri derleme anında içe aktarılan JSON: senkron, ağ yok. Efekt + "yükleniyor" bir render boyunca boş
+// liste gösteriyordu; şimdi ilk render'da hazır. Dönüş biçimi (data, loading, error) çağıranlar için korunur.
 export function useMyths(cultureId?: string) {
-  const [data, setData] = useState<MythUI[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    try {
-      let myths = (mythsData as unknown as Myth[]).map(toMythUI);
-      if (cultureId) {
-        myths = myths.filter((m) => m.cultureId === cultureId);
-      }
-      setData(myths);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load myths');
-    } finally {
-      setLoading(false);
-    }
-  }, [cultureId]);
-
-  return { data, loading, error };
+  const data = useMemo(
+    () => (cultureId ? ALL_MYTHS.filter((m) => m.cultureId === cultureId) : ALL_MYTHS),
+    [cultureId]
+  );
+  return { data, loading: false, error: null as string | null };
 }
 
 export function useMyth(id: string) {
-  const [data, setData] = useState<MythUI | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    try {
-      const myth = (mythsData as unknown as Myth[]).find((m) => m.id === id);
-      if (myth) {
-        setData(toMythUI(myth));
-      } else {
-        setData(null);
-        setError('Myth not found');
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load myth');
-    } finally {
-      setLoading(false);
-    }
-  }, [id]);
-
-  return { data, loading, error };
+  const data = useMemo(() => ALL_MYTHS.find((m) => m.id === id) ?? null, [id]);
+  return { data, loading: false, error: data ? null : 'Myth not found' };
 }

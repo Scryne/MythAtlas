@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useId, useRef } from 'react';
 import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
 import { cn } from '@/lib/cn';
 
@@ -47,14 +47,10 @@ export default function Modal({
   showCloseButton = true,
 }: ModalProps) {
   const panelRef = useRef<HTMLDivElement | null>(null);
-  const titleId = useMemo(
-    () => `modal-title-${Math.random().toString(36).slice(2, 9)}`,
-    []
-  );
-  const descriptionId = useMemo(
-    () => `modal-description-${Math.random().toString(36).slice(2, 9)}`,
-    []
-  );
+  // useId: render saf kalır ve sunucu/istemci aynı kimliği üretir (Math.random hidrasyonda ayrışıyordu).
+  const baseId = useId();
+  const titleId = `modal-title-${baseId}`;
+  const descriptionId = `modal-description-${baseId}`;
 
   useBodyScrollLock(open);
 

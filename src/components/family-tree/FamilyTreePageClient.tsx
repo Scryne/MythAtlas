@@ -20,6 +20,7 @@ import {
   type MythologyConnectionType,
 } from '@/lib/family-tree-data';
 import { getDisplayImageSrc } from '@/lib/image-proxy';
+import { startLoad } from '@/lib/start-load';
 
 interface SimNode extends FamilyTreeMythologyNode, SimulationNodeDatum {
   x: number;
@@ -204,16 +205,21 @@ export default function FamilyTreePageClient() {
     return { min: Math.min(...years), max: Math.max(...years) };
   }, [filteredConnections]);
 
-  useEffect(() => {
+  // Zaman aralığı değişince imleç başa döner: render sırasında, önceki alt sınır izlenerek.
+  const [boundsMin, setBoundsMin] = useState(timelineBounds.min);
+  if (boundsMin !== timelineBounds.min) {
+    setBoundsMin(timelineBounds.min);
     setTimelineYear(timelineBounds.min);
-  }, [timelineBounds.min]);
+  }
 
   useEffect(() => {
     const focusId = searchParams.get('mythologyId');
     if (!focusId) return;
     if (visibleNodeById.has(focusId)) {
-      setSelectedNodeId(focusId);
-      setSelectedConnectionId(null);
+      startLoad(() => {
+        setSelectedNodeId(focusId);
+        setSelectedConnectionId(null);
+      });
     }
   }, [searchParams, visibleNodeById]);
 
@@ -261,12 +267,14 @@ export default function FamilyTreePageClient() {
 
   useEffect(() => {
     if (timelineMode) {
-      setSimNodes(
-        timelineLayout.map((node) => ({
-          ...node,
-          x: node.x,
-          y: node.y,
-        }))
+      startLoad(() =>
+        setSimNodes(
+          timelineLayout.map((node) => ({
+            ...node,
+            x: node.x,
+            y: node.y,
+          }))
+        )
       );
       if (simulationRef.current) simulationRef.current.stop();
       return;
@@ -400,16 +408,16 @@ export default function FamilyTreePageClient() {
 
   if (isMobileViewport && !allowMobileGraph) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#050505] px-4 pt-16 text-[#efdcb0]">
-        <div className="w-full max-w-md rounded-xl border border-[#c9a84c]/30 bg-[#0f0d08]/95 p-5 text-center">
-          <p className="text-lg text-[#f1d58d]">Aile ağacı masaüstünde daha iyi görüntülenir</p>
-          <p className="mt-2 text-sm text-[#d8c59b]">
+      <div className="flex min-h-screen items-center justify-center bg-void px-4 pt-16 text-parchment">
+        <div className="w-full max-w-md rounded-xl border border-gold/30 bg-background/95 p-5 text-center">
+          <p className="text-lg text-gold-pale">Aile ağacı masaüstünde daha iyi görüntülenir</p>
+          <p className="mt-2 text-sm text-parchment-dim">
             Mobilde devam etmek isterseniz grafik dokunmatik kaydırma ve yakınlaştırma ile kullanılabilir.
           </p>
           <button
             type="button"
             onClick={() => setAllowMobileGraph(true)}
-            className="mt-4 rounded-full border border-[#c9a84c]/45 bg-[#2a1e11] px-4 py-2 text-xs tracking-[0.12em] text-[#f1d58d]"
+            className="mt-4 rounded-full border border-gold/45 bg-gold-deep px-4 py-2 text-xs tracking-[0.12em] text-gold-pale"
           >
             Devam et
           </button>
@@ -419,20 +427,20 @@ export default function FamilyTreePageClient() {
   }
 
   return (
-    <div className="relative min-h-screen overflow-x-clip bg-[#050505] pt-16 text-[#efdcb0]">
-      <div className="pointer-events-auto absolute left-4 top-4 z-40 flex flex-wrap items-center gap-2 rounded-xl border border-[#c9a84c]/30 bg-[#0f0d08]/90 px-3 py-2 backdrop-blur-md">
-        <HoverPrefetchLink href="/" className="rounded-md border border-[#c9a84c]/25 px-2 py-1 text-xs text-[#d8c59b]">
+    <div className="relative min-h-screen overflow-x-clip bg-void pt-16 text-parchment">
+      <div className="pointer-events-auto absolute left-4 top-4 z-40 flex flex-wrap items-center gap-2 rounded-xl border border-gold/30 bg-background/90 px-3 py-2 backdrop-blur-md">
+        <HoverPrefetchLink href="/" className="rounded-md border border-gold/25 px-2 py-1 text-xs text-parchment-dim">
           Ana sayfa
         </HoverPrefetchLink>
-        <HoverPrefetchLink href="/map" className="rounded-md border border-[#c9a84c]/25 px-2 py-1 text-xs text-[#d8c59b]">
+        <HoverPrefetchLink href="/map" className="rounded-md border border-gold/25 px-2 py-1 text-xs text-parchment-dim">
           Harita
         </HoverPrefetchLink>
-        <HoverPrefetchLink href="/family-tree/deities" className="rounded-md border border-[#c9a84c]/25 px-2 py-1 text-xs text-[#f1d58d]">
+        <HoverPrefetchLink href="/family-tree/deities" className="rounded-md border border-gold/25 px-2 py-1 text-xs text-gold-pale">
           Tanrı zincirleri
         </HoverPrefetchLink>
       </div>
 
-      <div className="pointer-events-auto absolute right-4 top-4 z-40 flex max-w-[70vw] flex-wrap items-center justify-end gap-2 rounded-xl border border-[#c9a84c]/25 bg-[#100d08]/92 px-3 py-2 backdrop-blur-md">
+      <div className="pointer-events-auto absolute right-4 top-4 z-40 flex max-w-[70vw] flex-wrap items-center justify-end gap-2 rounded-xl border border-gold/25 bg-background/92 px-3 py-2 backdrop-blur-md">
         {ALL_TYPES.map((type) => {
           const active = selectedTypes.includes(type);
           return (
@@ -444,7 +452,7 @@ export default function FamilyTreePageClient() {
                   current.includes(type) ? current.filter((item) => item !== type) : [...current, type]
                 )
               }
-              className={`rounded-full border px-2 py-1 text-[11px] ${active ? 'border-[#f3d78f] bg-[#2c210f] text-[#f3d78f]' : 'border-[#c9a84c]/25 text-[#bca77d]'}`}
+              className={`rounded-full border px-2 py-1 text-[11px] ${active ? 'border-gold-pale bg-gold-deep text-gold-pale' : 'border-gold/25 text-parchment-muted'}`}
             >
               <span className="mr-1 inline-block h-2 w-2 rounded-full" style={{ backgroundColor: CONNECTION_TYPE_COLORS[type] }} />
               {CONNECTION_TYPE_LABELS[type]}
@@ -464,7 +472,7 @@ export default function FamilyTreePageClient() {
                     : [...current, consensus]
                 )
               }
-              className={`rounded-full border px-2 py-1 text-[11px] ${active ? 'border-[#7ad7f4]/75 bg-[#0e2230] text-[#beeefd]' : 'border-[#7ad7f4]/25 text-[#8fb8c6]'}`}
+              className={`rounded-full border px-2 py-1 text-[11px] ${active ? 'border-rel-cyan/75 bg-rel-cyan-deep text-rel-cyan-light' : 'border-rel-cyan/25 text-rel-cyan-muted'}`}
             >
               {CONSENSUS_LABELS[consensus]}
             </button>
@@ -481,7 +489,7 @@ export default function FamilyTreePageClient() {
                   current.includes(era) ? current.filter((item) => item !== era) : [...current, era]
                 )
               }
-              className={`rounded-full border px-2 py-1 text-[11px] ${active ? 'border-[#8be39a]/70 bg-[#102613] text-[#cbf4d2]' : 'border-[#8be39a]/25 text-[#86b98d]'}`}
+              className={`rounded-full border px-2 py-1 text-[11px] ${active ? 'border-rel-green/70 bg-rel-green-deep text-rel-green-light' : 'border-rel-green/25 text-rel-green'}`}
             >
               {ERA_LABELS[era]}
             </button>
@@ -490,7 +498,7 @@ export default function FamilyTreePageClient() {
         <select
           value={highlightRegion}
           onChange={(event) => setHighlightRegion(event.target.value)}
-          className="rounded-md border border-[#c9a84c]/25 bg-[#0f0c08] px-2 py-1 text-[11px] text-[#ead4a0]"
+          className="rounded-md border border-gold/25 bg-background px-2 py-1 text-[11px] text-gold-pale"
         >
           <option value="all">Bölge vurgula</option>
           {regionOptions.map((region) => (
@@ -502,7 +510,7 @@ export default function FamilyTreePageClient() {
         <button
           type="button"
           onClick={() => setShowEdgeLabels((value) => !value)}
-          className={`rounded-md border px-2 py-1 text-[11px] ${showEdgeLabels ? 'border-[#f0d58d]/70 bg-[#281d0f] text-[#f0d58d]' : 'border-[#c9a84c]/25 text-[#bca77d]'}`}
+          className={`rounded-md border px-2 py-1 text-[11px] ${showEdgeLabels ? 'border-gold-pale/70 bg-gold-deep text-gold-pale' : 'border-gold/25 text-parchment-muted'}`}
         >
           Bağlantı etiketleri
         </button>
@@ -512,7 +520,7 @@ export default function FamilyTreePageClient() {
             setTimelineMode((value) => !value);
             setTimelinePlaying(false);
           }}
-          className={`rounded-md border px-2 py-1 text-[11px] ${timelineMode ? 'border-[#91e9ff]/70 bg-[#102837] text-[#c8f5ff]' : 'border-[#91e9ff]/25 text-[#94bdc8]'}`}
+          className={`rounded-md border px-2 py-1 text-[11px] ${timelineMode ? 'border-rel-cyan/70 bg-rel-cyan-deep text-rel-cyan-light' : 'border-rel-cyan/25 text-rel-cyan-muted'}`}
         >
           Zaman çizelgesi
         </button>
@@ -521,7 +529,7 @@ export default function FamilyTreePageClient() {
             type="button"
             aria-label="Yakınlaştır"
             onClick={() => setZoom((current) => Math.min(2.2, Number((current + 0.15).toFixed(2))))}
-            className="h-6 w-6 rounded-md border border-[#c9a84c]/30 text-xs text-[#f1d68f]"
+            className="h-6 w-6 rounded-md border border-gold/30 text-xs text-gold-pale"
           >
             +
           </button>
@@ -529,7 +537,7 @@ export default function FamilyTreePageClient() {
             type="button"
             aria-label="Uzaklaştır"
             onClick={() => setZoom((current) => Math.max(0.6, Number((current - 0.15).toFixed(2))))}
-            className="h-6 w-6 rounded-md border border-[#c9a84c]/30 text-xs text-[#f1d68f]"
+            className="h-6 w-6 rounded-md border border-gold/30 text-xs text-gold-pale"
           >
             -
           </button>
@@ -537,7 +545,7 @@ export default function FamilyTreePageClient() {
             type="button"
             aria-label="Grafiği ekrana sığdır"
             onClick={() => setZoom(1)}
-            className="rounded-md border border-[#c9a84c]/30 px-2 py-1 text-[11px] text-[#f1d68f]"
+            className="rounded-md border border-gold/30 px-2 py-1 text-[11px] text-gold-pale"
           >
             Sığdır
           </button>
@@ -545,14 +553,14 @@ export default function FamilyTreePageClient() {
       </div>
 
       {timelineMode && (
-        <div className="pointer-events-auto absolute bottom-6 left-1/2 z-40 w-[min(92vw,920px)] -translate-x-1/2 rounded-xl border border-[#6ed2ef]/35 bg-[#081822]/93 p-3">
+        <div className="pointer-events-auto absolute bottom-6 left-1/2 z-40 w-[min(92vw,920px)] -translate-x-1/2 rounded-xl border border-rel-cyan/35 bg-rel-cyan-deep/93 p-3">
           <div className="mb-2 flex items-center justify-between">
-            <p className="text-xs tracking-[0.1em] text-[#bfeefe]">Zaman çizelgesi: {yearLabel(timelineYear)}</p>
+            <p className="text-xs tracking-[0.1em] text-rel-cyan-light">Zaman çizelgesi: {yearLabel(timelineYear)}</p>
             <div className="flex items-center gap-2">
               <button
                 type="button"
                 onClick={() => setTimelinePlaying((value) => !value)}
-                className="rounded-md border border-[#6ed2ef]/45 px-2 py-1 text-xs text-[#c9f3ff]"
+                className="rounded-md border border-rel-cyan/45 px-2 py-1 text-xs text-rel-cyan-light"
               >
                 {timelinePlaying ? 'Pause' : 'Play'}
               </button>
@@ -562,7 +570,7 @@ export default function FamilyTreePageClient() {
                   setTimelinePlaying(false);
                   setTimelineYear(timelineBounds.min);
                 }}
-                className="rounded-md border border-[#6ed2ef]/35 px-2 py-1 text-xs text-[#c9f3ff]"
+                className="rounded-md border border-rel-cyan/35 px-2 py-1 text-xs text-rel-cyan-light"
               >
                 Sıfırla
               </button>
@@ -578,9 +586,9 @@ export default function FamilyTreePageClient() {
               setTimelinePlaying(false);
               setTimelineYear(Number(event.target.value));
             }}
-            className="w-full accent-[#6ed2ef]"
+            className="w-full accent-rel-cyan"
           />
-          <div className="mt-2 flex justify-between text-[10px] text-[#8fbdd0]">
+          <div className="mt-2 flex justify-between text-[10px] text-rel-cyan-muted">
             <span>{yearLabel(timelineBounds.min)}</span>
             <span>{yearLabel(Math.round((timelineBounds.min + timelineBounds.max) / 2))}</span>
             <span>{yearLabel(timelineBounds.max)}</span>
@@ -619,7 +627,7 @@ export default function FamilyTreePageClient() {
           ))}
         </defs>
 
-        <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#060606" />
+        <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="var(--color-void)" />
         {renderedEdges.map(({ connection, source, target, index, year }) => {
           const color = CONNECTION_TYPE_COLORS[connection.type];
           const dimByRegion =
@@ -661,7 +669,7 @@ export default function FamilyTreePageClient() {
                   x={(source.x + target.x) / 2}
                   y={(source.y + target.y) / 2 - EDGE_LABEL_OFFSET}
                   textAnchor="middle"
-                  className="fill-[#d7c398] text-[10px]"
+                  className="fill-parchment-dim text-[10px]"
                 >
                   {CONNECTION_TYPE_LABELS[connection.type]}
                 </text>
@@ -726,7 +734,7 @@ export default function FamilyTreePageClient() {
               <text
                 y={radius + 18}
                 textAnchor="middle"
-                className="fill-[#f0ddb0] text-[12px]"
+                className="fill-parchment text-[12px]"
                 style={{ textShadow: '0 0 8px rgba(0,0,0,0.8)' }}
               >
                 {node.name.replace(' Mythology', '')}
@@ -737,13 +745,13 @@ export default function FamilyTreePageClient() {
       </svg>
 
       {hoveredNodeId && !selectedConnectionId && (
-        <div className="pointer-events-none absolute bottom-10 left-6 z-40 rounded-lg border border-[#c9a84c]/35 bg-[#16120b]/95 px-3 py-2 text-xs text-[#dfcca2]">
+        <div className="pointer-events-none absolute bottom-10 left-6 z-40 rounded-lg border border-gold/35 bg-surface/95 px-3 py-2 text-xs text-parchment-dim">
           {(() => {
             const node = nodeMetaById.get(hoveredNodeId);
             if (!node) return null;
             return (
               <>
-                <p className="text-[#f2d58d]">{node.name}</p>
+                <p className="text-gold-pale">{node.name}</p>
                 <p>Mitler: {node.mythCount}</p>
                 <p>Tanrılar: {node.deityCount}</p>
                 <p>Alanlar: {node.siteCount}</p>
@@ -756,13 +764,13 @@ export default function FamilyTreePageClient() {
       )}
 
       {hoveredConnectionId && !selectedConnectionId && (
-        <div className="pointer-events-none absolute bottom-10 left-6 z-40 max-w-xl rounded-lg border border-[#7ad7f4]/35 bg-[#0c1e28]/95 px-3 py-2 text-xs text-[#bde8f6]">
+        <div className="pointer-events-none absolute bottom-10 left-6 z-40 max-w-xl rounded-lg border border-rel-cyan/35 bg-rel-cyan-deep/95 px-3 py-2 text-xs text-rel-cyan-light">
           {(() => {
             const connection = filteredConnections.find((item) => item.id === hoveredConnectionId);
             if (!connection) return null;
             return (
               <>
-                <p className="text-[#d6f3fc]">
+                <p className="text-rel-cyan-light">
                   {getMythologyName(connection.sourceId)} {' to '} {getMythologyName(connection.targetId)}
                 </p>
                 <p className="mt-1 line-clamp-2">{connection.description}</p>
@@ -773,10 +781,10 @@ export default function FamilyTreePageClient() {
       )}
 
       <aside
-        className={`pointer-events-auto absolute right-0 top-0 z-50 h-full w-full transform border-l border-[#c9a84c]/20 bg-[#090806]/96 backdrop-blur-xl transition-transform duration-300 sm:w-[min(92vw,430px)] ${selectedNode || selectedConnection ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`pointer-events-auto absolute right-0 top-0 z-50 h-full w-full transform border-l border-gold/20 bg-background/96 backdrop-blur-xl transition-transform duration-300 sm:w-[min(92vw,430px)] ${selectedNode || selectedConnection ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <div className="flex items-center justify-between border-b border-[#c9a84c]/20 px-4 py-3">
-          <h2 className="text-sm tracking-[0.14em] text-[#ecd39d]">
+        <div className="flex items-center justify-between border-b border-gold/20 px-4 py-3">
+          <h2 className="text-sm tracking-[0.14em] text-gold-pale">
             {selectedConnection ? 'Bağlantı ayrıntısı' : 'Mitoloji ayrıntısı'}
           </h2>
           <button
@@ -785,25 +793,25 @@ export default function FamilyTreePageClient() {
               setSelectedConnectionId(null);
               setSelectedNodeId(null);
             }}
-            className="text-xs text-[#cdb888] hover:text-[#f2d68e]"
+            className="text-xs text-parchment-muted hover:text-gold-pale"
           >
             Kapat
           </button>
         </div>
 
-        <div className="h-[calc(100%-56px)] space-y-4 overflow-y-auto p-4 text-sm text-[#d8c6a2]">
+        <div className="h-[calc(100%-56px)] space-y-4 overflow-y-auto p-4 text-sm text-parchment-dim">
           {selectedConnection && (
             <>
-              <p className="text-[#f1d58d]">
+              <p className="text-gold-pale">
                 {getMythologyName(selectedConnection.sourceId)} {' to '} {getMythologyName(selectedConnection.targetId)}
               </p>
-              <p className="inline-flex rounded-full border border-[#7ad7f4]/35 bg-[#122735] px-2 py-0.5 text-xs text-[#c9f1ff]">
+              <p className="inline-flex rounded-full border border-rel-cyan/35 bg-rel-cyan-deep px-2 py-0.5 text-xs text-rel-cyan-light">
                 {CONNECTION_TYPE_LABELS[selectedConnection.type]}
               </p>
-              <p className="text-[#f3deaa]">Bağ gücü: {strengthStars(selectedConnection.strength)}</p>
+              <p className="text-parchment">Bağ gücü: {strengthStars(selectedConnection.strength)}</p>
               <p className="leading-relaxed">{selectedConnection.description}</p>
               <div>
-                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Örnekler</p>
+                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-parchment-muted">Örnekler</p>
                 <ul className="list-disc space-y-1 pl-5 text-xs">
                   {selectedConnection.examples.map((example) => (
                     <li key={example}>{example}</li>
@@ -811,24 +819,24 @@ export default function FamilyTreePageClient() {
                 </ul>
               </div>
               <p className="text-xs">
-                Period: <span className="text-[#e6d3ab]">{selectedConnection.period}</span>
+                Period: <span className="text-parchment-dim">{selectedConnection.period}</span>
               </p>
               <p className="text-xs">
                 Academic Consensus:{' '}
                 <span
                   className={`rounded-full border px-2 py-0.5 ${
                     selectedConnection.academicConsensus === 'established'
-                      ? 'border-[#7fd197]/45 text-[#c5f1d0]'
+                      ? 'border-rel-green/45 text-rel-green-light'
                       : selectedConnection.academicConsensus === 'debated'
-                        ? 'border-[#f0cf85]/45 text-[#f0cf85]'
-                        : 'border-[#b9b9b9]/45 text-[#dadada]'
+                        ? 'border-gold-pale/45 text-gold-pale'
+                        : 'border-parchment-dim/45 text-foreground'
                   }`}
                 >
                   {CONSENSUS_LABELS[selectedConnection.academicConsensus]}
                 </span>
               </p>
               <div>
-                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Kaynaklar</p>
+                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-parchment-muted">Kaynaklar</p>
                 <ul className="list-disc space-y-1 pl-5 text-xs">
                   {selectedConnection.sources.map((source) => (
                     <li key={source}>{source}</li>
@@ -837,7 +845,7 @@ export default function FamilyTreePageClient() {
               </div>
               <HoverPrefetchLink
                 href={`/compare?left=${selectedConnection.sourceId}&right=${selectedConnection.targetId}`}
-                className="inline-flex rounded-full border border-[#7ad7f4]/45 bg-[#123243] px-4 py-2 text-xs tracking-[0.1em] text-[#d2f1fb] hover:bg-[#17435b]"
+                className="inline-flex rounded-full border border-rel-cyan/45 bg-rel-cyan-mid px-4 py-2 text-xs tracking-[0.1em] text-rel-cyan-light hover:bg-rel-cyan-mid"
               >
                 Her iki mitolojiyi karşılaştır
               </HoverPrefetchLink>
@@ -846,7 +854,7 @@ export default function FamilyTreePageClient() {
 
           {selectedNode && (
             <>
-              <div className="relative h-44 overflow-hidden rounded-lg border border-[#c9a84c]/20">
+              <div className="relative h-44 overflow-hidden rounded-lg border border-gold/20">
                 <AncientImage
                   src={selectedNode.imageUrl}
                   alt={selectedNode.name}
@@ -856,35 +864,35 @@ export default function FamilyTreePageClient() {
                   fallbackLabel={selectedNode.name}
                 />
               </div>
-              <p className="text-lg text-[#f1d58d]">{selectedNode.name}</p>
-              <p className="text-xs text-[#bfa97b]">
+              <p className="text-lg text-gold-pale">{selectedNode.name}</p>
+              <p className="text-xs text-parchment-muted">
                 {selectedNode.region} · {selectedNode.era}
               </p>
               <div className="grid grid-cols-2 gap-2 text-xs">
-                <div className="rounded-md border border-[#c9a84c]/20 bg-[#1a130c] p-2">
-                  <p className="text-[#bfa97b]">Mitler</p>
-                  <p className="text-[#f1d58d]">{selectedNode.mythCount}</p>
+                <div className="rounded-md border border-gold/20 bg-surface p-2">
+                  <p className="text-parchment-muted">Mitler</p>
+                  <p className="text-gold-pale">{selectedNode.mythCount}</p>
                 </div>
-                <div className="rounded-md border border-[#c9a84c]/20 bg-[#1a130c] p-2">
-                  <p className="text-[#bfa97b]">Tanrılar</p>
-                  <p className="text-[#f1d58d]">{selectedNode.deityCount}</p>
+                <div className="rounded-md border border-gold/20 bg-surface p-2">
+                  <p className="text-parchment-muted">Tanrılar</p>
+                  <p className="text-gold-pale">{selectedNode.deityCount}</p>
                 </div>
-                <div className="rounded-md border border-[#c9a84c]/20 bg-[#1a130c] p-2">
-                  <p className="text-[#bfa97b]">Alanlar</p>
-                  <p className="text-[#f1d58d]">{selectedNode.siteCount}</p>
+                <div className="rounded-md border border-gold/20 bg-surface p-2">
+                  <p className="text-parchment-muted">Alanlar</p>
+                  <p className="text-gold-pale">{selectedNode.siteCount}</p>
                 </div>
-                <div className="rounded-md border border-[#c9a84c]/20 bg-[#1a130c] p-2">
-                  <p className="text-[#bfa97b]">Etkiledikleri</p>
-                  <p className="text-[#f1d58d]">{outgoingForSelectedNode.length}</p>
+                <div className="rounded-md border border-gold/20 bg-surface p-2">
+                  <p className="text-parchment-muted">Etkiledikleri</p>
+                  <p className="text-gold-pale">{outgoingForSelectedNode.length}</p>
                 </div>
-                <div className="rounded-md border border-[#c9a84c]/20 bg-[#1a130c] p-2">
-                  <p className="text-[#bfa97b]">Etkilendikleri</p>
-                  <p className="text-[#f1d58d]">{incomingForSelectedNode.length}</p>
+                <div className="rounded-md border border-gold/20 bg-surface p-2">
+                  <p className="text-parchment-muted">Etkilendikleri</p>
+                  <p className="text-gold-pale">{incomingForSelectedNode.length}</p>
                 </div>
               </div>
-              <div className="rounded-md border border-[#c9a84c]/18 bg-[#1a130c] p-3 text-xs text-[#d8c6a2]">
+              <div className="rounded-md border border-gold/18 bg-surface p-3 text-xs text-parchment-dim">
                 <p>
-                  Veri durumu: <span className="text-[#f1d58d]">{COMPLETENESS_LABELS[selectedNode.completeness.label]}</span>
+                  Veri durumu: <span className="text-gold-pale">{COMPLETENESS_LABELS[selectedNode.completeness.label]}</span>
                 </p>
                 <p className="mt-1">Kanonik panteon genisligi: {selectedNode.canonicalPantheonSize || 'bilinmiyor'}</p>
                 {selectedNode.missingSections.length > 0 ? (
@@ -892,12 +900,12 @@ export default function FamilyTreePageClient() {
                 ) : null}
               </div>
               {selectedNode.isSynthetic || selectedNode.missingSections.length > 0 ? (
-                <div className="rounded-md border border-[#f0cf85]/25 bg-[#2a1c0f] p-3 text-xs text-[#e1c792]">
+                <div className="rounded-md border border-gold-pale/25 bg-gold-deep p-3 text-xs text-parchment-dim">
                   Bu düğüm için ayrıntı verisi sınırlı olabilir; gösterilen sayaçlar yalnızca mevcut veri setinden gelir.
                 </div>
               ) : null}
               <div>
-                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Etkilediği Mitolojiler</p>
+                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-parchment-muted">Etkilediği Mitolojiler</p>
                 <ul className="list-disc space-y-1 pl-5 text-xs">
                   {outgoingForSelectedNode.map((connection) => (
                     <li key={connection.id}>
@@ -907,7 +915,7 @@ export default function FamilyTreePageClient() {
                 </ul>
               </div>
               <div>
-                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-[#bea571]">Etkilendikleri</p>
+                <p className="mb-1 text-xs uppercase tracking-[0.14em] text-parchment-muted">Etkilendikleri</p>
                 <ul className="list-disc space-y-1 pl-5 text-xs">
                   {incomingForSelectedNode.map((connection) => (
                     <li key={connection.id}>
@@ -919,14 +927,14 @@ export default function FamilyTreePageClient() {
               {!selectedNode.isSynthetic && (
                 <HoverPrefetchLink
                   href={`/mythology/${selectedNode.id}`}
-                  className="inline-flex rounded-full border border-[#c9a84c]/40 px-4 py-2 text-xs tracking-[0.1em] text-[#f1d58d]"
+                  className="inline-flex rounded-full border border-gold/40 px-4 py-2 text-xs tracking-[0.1em] text-gold-pale"
                 >
                   Mitoloji ayrıntı sayfası
                 </HoverPrefetchLink>
               )}
               <HoverPrefetchLink
                 href={`/family-tree?mythologyId=${selectedNode.id}`}
-                className="inline-flex rounded-full border border-[#7ad7f4]/40 px-4 py-2 text-xs tracking-[0.1em] text-[#bceafb]"
+                className="inline-flex rounded-full border border-rel-cyan/40 px-4 py-2 text-xs tracking-[0.1em] text-rel-cyan-light"
               >
                 Grafiği bu düğüme ortala
               </HoverPrefetchLink>

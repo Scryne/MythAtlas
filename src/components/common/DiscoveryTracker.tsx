@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { startLoad } from '@/lib/start-load';
 
 const DISCOVERY_COUNT_KEY = 'mythatlas:discovered-count';
 
@@ -35,7 +36,7 @@ export function DiscoveryCounterBadge() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    setCount(readCount());
+    startLoad(() => setCount(readCount()));
 
     const sync = () => setCount(readCount());
     window.addEventListener('focus', sync);

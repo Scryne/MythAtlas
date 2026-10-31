@@ -90,9 +90,13 @@ export default function AllSitesPage() {
 
   const visibleMapCards = useMemo(() => filteredSites.slice(0, mapCardLimit), [filteredSites, mapCardLimit]);
 
-  useEffect(() => {
+  // Süzgeç değişince kart sayısı başa döner; render sırasında, önceki süzgeç anahtarı izlenerek.
+  const filterKey = [query, mythologyFilter, typeFilter, protectionFilter, periodFilter, sortBy].join('|');
+  const [limitKey, setLimitKey] = useState(filterKey);
+  if (limitKey !== filterKey) {
+    setLimitKey(filterKey);
     setMapCardLimit(6);
-  }, [query, mythologyFilter, typeFilter, protectionFilter, periodFilter, sortBy]);
+  }
 
   const mapMarkers = useMemo(
     () =>

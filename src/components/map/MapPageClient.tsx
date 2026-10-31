@@ -35,6 +35,7 @@ import {
 } from '@/lib/family-tree-data';
 import type { Deity, Mythology } from '@/types/mythology';
 import { withBasePath } from '@/lib/site';
+import { startLoad } from '@/lib/start-load';
 
 // Worker dosyası scripts/copy-maplibre-worker.mjs ile public/ altına kopyalanır.
 maplibregl.setWorkerUrl(withBasePath('/vendor/maplibre/maplibre-gl-worker.mjs'));
@@ -1572,13 +1573,13 @@ export default function MapPage() {
       .split(',')
       .map((item) => item.trim().toLowerCase())
       .filter(Boolean);
-    if (requestedThemes.length) setThemeFilters(requestedThemes);
+    if (requestedThemes.length) startLoad(() => setThemeFilters(requestedThemes));
 
     const requestedDNAElements = (params.get('dnaElements') || '')
       .split(',')
       .map((item) => item.trim().toLowerCase())
       .filter((item) => (DNA_ELEMENT_UNIVERSE as readonly string[]).includes(item));
-    if (requestedDNAElements.length) setDnaElementFilters(requestedDNAElements);
+    if (requestedDNAElements.length) startLoad(() => setDnaElementFilters(requestedDNAElements));
 
     const mythologyId = params.get('mythologyId');
     if (mythologyId && mythologyById.has(mythologyId) && mapReady) {
@@ -1595,11 +1596,11 @@ export default function MapPage() {
         mapRef.current.flyTo({ center: [lng, lat], zoom: 5.4, duration: reducedMotion ? 0 : 850 });
       }
 
-      if (focusId && focusKind === 'myth') setDetail({ kind: 'myth', id: focusId });
-      if (focusId && focusKind === 'deity') setDetail({ kind: 'deity', id: focusId });
-      if (focusId && focusKind === 'site') setDetail({ kind: 'site', id: focusId });
+      if (focusId && (focusKind === 'myth' || focusKind === 'deity' || focusKind === 'site')) {
+        startLoad(() => setDetail({ kind: focusKind, id: focusId }));
+      }
 
-      if (mythologyId) setSelectedMythologyId(mythologyId);
+      if (mythologyId) startLoad(() => setSelectedMythologyId(mythologyId));
     }
 
     appliedQueryRef.current = signature;
@@ -2006,19 +2007,19 @@ export default function MapPage() {
     setContentVisibility({ sites: true, myths: true, deities: true });
   };
 
-  useEffect(() => {
+  // Mod kapanınca seçim temizlenir: render sırasında, önceki mod izlenerek (efekt ek render zinciri kuruyordu).
+  const [modeSnapshot, setModeSnapshot] = useState({ parallelMode, influenceMode });
+  if (modeSnapshot.parallelMode !== parallelMode || modeSnapshot.influenceMode !== influenceMode) {
+    setModeSnapshot({ parallelMode, influenceMode });
     if (!parallelMode) {
       setSelectedParallelConnectionId(null);
       setHoveredParallelConnectionId(null);
     }
-  }, [parallelMode]);
-
-  useEffect(() => {
     if (!influenceMode) {
       setSelectedInfluenceConnectionId(null);
       setHoveredInfluenceConnectionId(null);
     }
-  }, [influenceMode]);
+  }
 
   const panelTabs: TabKey[] = ['overview', 'myths', 'deities', 'sites'];
   const activePanelTabIndex = panelTabs.indexOf(tab);

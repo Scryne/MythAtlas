@@ -7,6 +7,7 @@ import MythDNA from '@/components/MythDNA';
 import { getMythsForTheme, getThemeSummaries, buildThemeNetwork } from '@/lib/insights';
 import { mythologies } from '@/lib/myth-data';
 import ThemeNetworkGraph from './ThemeNetworkGraph.lazy';
+import { startLoad } from '@/lib/start-load';
 
 export default function ThemesPage() {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function ThemesPage() {
     const params = new URLSearchParams(window.location.search);
     const requested = params.get('theme');
     const available = requested && themes.some((theme) => theme.id === requested) ? requested : themes[0].id;
-    setSelectedThemeId(available);
+    startLoad(() => setSelectedThemeId(available));
   }, [themes]);
 
   const selectedTheme = themes.find((item) => item.id === selectedThemeId) || null;

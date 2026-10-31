@@ -27,14 +27,26 @@
   kendi yer tutucusu.
 - Footer'daki "Veriye katkı" bağlantısı yanlış kullanıcı/dala gidiyordu (`scryn`/`main`) → `Scryne`/`master`.
 
+## 2026-10-31
+
+- **Görseller:** Commons'ta bulunamayan 41 görselin 36'sı konusuyla aranıp gözle doğrulanarak eşlendi
+  (`scripts/resolve-images.mjs` → `ESLEME`); veride uydurulmuş adlardı. Kalan 5 (Bremmer, Watkins, Burkert, Lincoln,
+  Segal) için Commons'ta özgür fotoğraf yok; yer tutucu.
+- **Renk token'ları:** soy ağacı, tanrı zincirleri ve paraleller sayfalarındaki ~40 farklı ham hex (aynı altın için on ton)
+  token'a toplandı (`gold-pale`, `parchment-dim/muted`, `rel-cyan/green`, `void`…); üç sayfada ham hex 0.
+- **Günlük seçimler donuyordu:** keşfet sayfası statik derlemede sunucu bileşeni olduğu için "Her gün yeni bir hikâye"
+  derleme gününde kalıyordu. Derleme artık `/daily.json` yazar (73 KB gzip); tarayıcı bugünü hesaplayıp doğru günü
+  gösterir, HTML yine derleme gününün seçimiyle gelir. Saat ±1/2 gün kaydırılarak doğrulandı.
+- **Paraleller:** "ortak motif ağı" düz bir çizgiye kilitliydi (aynı y'den başlıyordu, bağ yoktu) → daire başlangıcı +
+  ortak motif bağları; sayaç "0" yerine gerçek değerle başlıyor; "Orta düzey", "A seç/B seç".
+- **Lint 0:** 31 uyarı düzeltildi (render sırasında sıfırlama, `useId`, belirli yerleşim, kancalar `useMemo`).
+- Doğrulama: statik dışa aktarım (1076 sayfa), 10 rota × 4 genişlik = 40 kare 0 sorun.
+
 ## Ne yarım / bilinen sınırlar
 
-- ~~Canlı kurulum yok~~ → 2026-10-26: statik dışa aktarım + GitHub Pages (`.github/workflows/pages.yml`). Görsel proxy'si
-  kalktı (Commons adresleri derlemeden önce `npm run images:resolve` ile çözülüyor; 371 adresin 41'i Commons'ta yok, yer
-  tutucu), paylaşım kartları derlemede metin kartı olarak üretiliyor, taban yol `/MythAtlas` tek modülden (`src/lib/site.ts`).
-- Soy ağacı ve paraleller sayfalarında ham hex renkler duruyor (eski borç, `DESIGN.md`'de not edildi).
+- Canlı kurulum GitHub Pages (`master`'a push'ta derlenir). Bu oturumun commit'leri henüz push edilmedi.
 - Mobilde soy ağacı "masaüstünde daha iyi" kapısıyla açılıyor; kapıdan geçilince grafik dokunmatik kaydırmayla çalışıyor.
-- `eslint` 33 uyarı (çoğu `set-state-in-effect`), hata yok.
+- İstatistik ve harita grafiklerinde ham hex hâlâ var (grafik kütüphanesi renk dizileri); soy ağacı/paraleller temiz.
 
 ## Sonraki adım
 

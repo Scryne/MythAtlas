@@ -12,6 +12,7 @@ import {
 } from '@/lib/dna';
 import { mythologies, myths } from '@/lib/myth-data';
 import { haversineKm } from '@/lib/myth-utils';
+import { startLoad } from '@/lib/start-load';
 
 type DNAElement = (typeof DNA_ELEMENT_UNIVERSE)[number];
 type DNAArchetype = (typeof DNA_ARCHETYPE_UNIVERSE)[number];
@@ -202,7 +203,7 @@ export default function DNAExplorerPage() {
   const [selectedArchetypes, setSelectedArchetypes] = useState<string[]>([]);
 
   useEffect(() => {
-    if (!selectedElement && elementStats.length) setSelectedElement(elementStats[0].element);
+    if (!selectedElement && elementStats.length) startLoad(() => setSelectedElement(elementStats[0].element));
   }, [elementStats, selectedElement]);
 
   const mythsForSelectedElement = useMemo(

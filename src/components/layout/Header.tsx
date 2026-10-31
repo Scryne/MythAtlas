@@ -43,9 +43,12 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => {
+  // Rota değişince menü kapanır: efekt yerine render sırasında (ek render zinciri yok).
+  const [menuPath, setMenuPath] = useState(pathname);
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
     setMobileOpen(false);
-  }, [pathname]);
+  }
 
   const openSearch = () => window.dispatchEvent(new Event(OPEN_SEARCH_EVENT));
 

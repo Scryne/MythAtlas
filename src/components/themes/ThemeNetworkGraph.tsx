@@ -42,13 +42,14 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
 
   const simNodes = useMemo<SimNode[]>(
     () =>
-      nodes.map((node) => ({
+      nodes.map((node, index) => ({
         id: node.id,
         label: node.label,
         icon: node.icon,
         count: node.count,
-        x: Math.random() * WIDTH,
-        y: Math.random() * HEIGHT,
+        // Belirli başlangıç (altın açı sarmalı): her açılışta aynı yerleşim, render saf.
+        x: WIDTH / 2 + Math.cos(index * 2.39996) * (20 + index * 6),
+        y: HEIGHT / 2 + Math.sin(index * 2.39996) * (20 + index * 6),
       })),
     [nodes]
   );

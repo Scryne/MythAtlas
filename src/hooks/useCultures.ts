@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
 import type { Culture, Mythology } from '@/types/mythology';
 import mythologiesData from '@/data/mythologies.json';
 
@@ -22,45 +22,14 @@ function toCulture(m: Mythology): Culture {
   };
 }
 
+const ALL_CULTURES = (mythologiesData as Mythology[]).map(toCulture);
+
+// Veri derleme anında içe aktarılan JSON: senkron. Dönüş biçimi (data, loading, error) korunur.
 export function useCultures() {
-  const [data, setData] = useState<Culture[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    try {
-      const cultures = (mythologiesData as Mythology[]).map(toCulture);
-      setData(cultures);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load cultures');
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  return { data, loading, error };
+  return { data: ALL_CULTURES, loading: false, error: null as string | null };
 }
 
 export function useCulture(id: string) {
-  const [data, setData] = useState<Culture | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    try {
-      const mythology = (mythologiesData as Mythology[]).find((m) => m.id === id);
-      if (mythology) {
-        setData(toCulture(mythology));
-      } else {
-        setData(null);
-        setError('Culture not found');
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load culture');
-    } finally {
-      setLoading(false);
-    }
-  }, [id]);
-
-  return { data, loading, error };
+  const data = useMemo(() => ALL_CULTURES.find((m) => m.id === id) ?? null, [id]);
+  return { data, loading: false, error: data ? null : 'Culture not found' };
 }

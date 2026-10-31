@@ -10,6 +10,7 @@ import {
   type DeityData,
   type MythData,
 } from '@/lib/myth-data';
+import { startLoad } from '@/lib/start-load';
 
 interface ComparableEntity {
   id: string;
@@ -182,7 +183,7 @@ function similarityBand(score: number) {
   if (score >= 90) return 'Çok Yüksek';
   if (score >= 75) return 'Yüksek';
   if (score >= 60) return 'Orta';
-  return 'Dusuk-Orta';
+  return 'Düşük-Orta';
 }
 
 export default function ComparePage() {
@@ -270,13 +271,17 @@ export default function ComparePage() {
     const params = new URLSearchParams(window.location.search);
     const leftFromQuery = params.get('left');
     const rightFromQuery = params.get('right');
-    if (leftFromQuery && entityById.has(leftFromQuery)) setLeftId(leftFromQuery);
-    if (rightFromQuery && entityById.has(rightFromQuery)) setRightId(rightFromQuery);
+    startLoad(() => {
+      if (leftFromQuery && entityById.has(leftFromQuery)) setLeftId(leftFromQuery);
+      if (rightFromQuery && entityById.has(rightFromQuery)) setRightId(rightFromQuery);
+    });
   }, [entityById]);
 
   useEffect(() => {
-    if (!entityById.has(leftId)) setLeftId(comparableEntities[0]?.id ?? '');
-    if (!entityById.has(rightId)) setRightId(comparableEntities[1]?.id ?? '');
+    startLoad(() => {
+      if (!entityById.has(leftId)) setLeftId(comparableEntities[0]?.id ?? '');
+      if (!entityById.has(rightId)) setRightId(comparableEntities[1]?.id ?? '');
+    });
   }, [comparableEntities, entityById, leftId, rightId]);
 
   useEffect(() => {

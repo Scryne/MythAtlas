@@ -8,6 +8,7 @@ import {
   formatDNAKeyLabel,
   getDNAFingerprint,
 } from '@/lib/dna';
+import { startLoad } from '@/lib/start-load';
 
 type MythDNASize = 'full' | 'compact' | 'mini';
 
@@ -46,7 +47,7 @@ export function DNABar({ myth, size = 'full', showHoverLegend = false }: DNABarP
   const present = useMemo(() => new Set(myth.dna.elements || []), [myth.dna.elements]);
 
   useEffect(() => {
-    setVisibleCount(0);
+    startLoad(() => setVisibleCount(0));
     const timers = DNA_ELEMENT_UNIVERSE.map((_, index) =>
       window.setTimeout(() => {
         setVisibleCount(index + 1);
@@ -99,7 +100,7 @@ export function ArchetypeRadar({ myth, size = 'full' }: ArchetypeRadarProps) {
   const archetypes = useMemo(() => new Set(myth.dna.archetypes || []), [myth.dna.archetypes]);
 
   useEffect(() => {
-    setExpanded(0);
+    startLoad(() => setExpanded(0));
     const frame = window.requestAnimationFrame(() => setExpanded(1));
     return () => window.cancelAnimationFrame(frame);
   }, [myth.id]);

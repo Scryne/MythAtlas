@@ -8,6 +8,7 @@ import {
   type BibliographyEntry,
 } from '@/lib/academic-utils';
 import type { AcademicSourceType } from '@/lib/myth-data';
+import { startLoad } from '@/lib/start-load';
 
 function includesTerm(value: string, term: string): boolean {
   return value.toLowerCase().includes(term.toLowerCase());
@@ -36,10 +37,12 @@ export default function BibliographyPageClient() {
     const nextMythologyId =
       rawMythologyId && mythologyIdSet.has(rawMythologyId) ? rawMythologyId : ('all' as const);
 
-    setQuery(nextQuery);
-    setType(nextType);
-    setMythologyId(nextMythologyId);
-    setYearFilter(nextYear);
+    startLoad(() => {
+      setQuery(nextQuery);
+      setType(nextType);
+      setMythologyId(nextMythologyId);
+      setYearFilter(nextYear);
+    });
   }, [mythologyIdSet]);
 
   const entries = useMemo(() => buildBibliographyEntries(), []);

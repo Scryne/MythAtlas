@@ -22,6 +22,8 @@ const config: Config = {
           DEFAULT: "rgb(var(--rgb-gold) / <alpha-value>)",
           light: "rgb(var(--rgb-gold-light) / <alpha-value>)",
           dark: "rgb(var(--rgb-gold-dim) / <alpha-value>)",
+          pale: "rgb(var(--rgb-gold-pale) / <alpha-value>)",
+          deep: "rgb(var(--rgb-gold-deep) / <alpha-value>)",
         },
         red: {
           DEFAULT: "rgb(var(--rgb-red) / <alpha-value>)",
@@ -30,7 +32,21 @@ const config: Config = {
         parchment: {
           DEFAULT: "rgb(var(--rgb-parchment) / <alpha-value>)",
           dark: "rgb(var(--rgb-parchment) / 0.82)",
+          dim: "rgb(var(--rgb-parchment-dim) / <alpha-value>)",
+          muted: "rgb(var(--rgb-parchment-muted) / <alpha-value>)",
           light: "rgb(var(--rgb-parchment) / 1)",
+        },
+        void: "rgb(var(--rgb-void) / <alpha-value>)",
+        // Soy ağacındaki ilişki türleri: camgöbeği (soy/zaman), yeşil (eşlik/ittifak).
+        rel: {
+          cyan: "rgb(var(--rgb-rel-cyan) / <alpha-value>)",
+          "cyan-light": "rgb(var(--rgb-rel-cyan-light) / <alpha-value>)",
+          "cyan-muted": "rgb(var(--rgb-rel-cyan-muted) / <alpha-value>)",
+          "cyan-mid": "rgb(var(--rgb-rel-cyan-mid) / <alpha-value>)",
+          "cyan-deep": "rgb(var(--rgb-rel-cyan-deep) / <alpha-value>)",
+          green: "rgb(var(--rgb-rel-green) / <alpha-value>)",
+          "green-light": "rgb(var(--rgb-rel-green-light) / <alpha-value>)",
+          "green-deep": "rgb(var(--rgb-rel-green-deep) / <alpha-value>)",
         },
         ink: {
           DEFAULT: "rgb(var(--rgb-bg-surface) / <alpha-value>)",

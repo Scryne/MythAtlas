@@ -144,7 +144,7 @@ export default function HomeClient() {
               onClick={handleExplore}
               className="animate-glow-pulse rounded-full px-6 text-xs uppercase tracking-[0.2em]"
             >
-              Kesfe basla
+              Keşfe başla
             </Button>
             <span className="app-badge border-[color:var(--color-border)] bg-black/20 text-secondary">
               Enter ile haritaya geç

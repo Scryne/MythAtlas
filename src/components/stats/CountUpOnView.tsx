@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useRef, useState } from 'react';
 
@@ -9,7 +9,9 @@ interface CountUpOnViewProps {
 
 export default function CountUpOnView({ value, durationMs = 900 }: CountUpOnViewProps) {
   const hostRef = useRef<HTMLSpanElement | null>(null);
-  const [display, setDisplay] = useState(0);
+  // Gerçek değerle başlar: JavaScript'siz okuyucu, arama motoru ve hiç kaydırılmayan görünüm "0" görmüyordu.
+  // Sayma animasyonu yalnız öğe görünüme girince 0'dan başlar.
+  const [display, setDisplay] = useState(value);
   const [started, setStarted] = useState(false);
 
   useEffect(() => {
@@ -33,10 +35,7 @@ export default function CountUpOnView({ value, durationMs = 900 }: CountUpOnView
   useEffect(() => {
     if (!started) return;
     const media = typeof window !== 'undefined' ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
-    if (media?.matches) {
-      setDisplay(value);
-      return;
-    }
+    if (media?.matches) return;
 
     const start = performance.now();
     let frame: number | null = null;
