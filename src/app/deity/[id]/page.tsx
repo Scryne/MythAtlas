@@ -45,20 +45,6 @@ interface EquivalentCard {
   isPlaceholder: boolean;
 }
 
-function symbolEmoji(symbol: string): string {
-  const normalized = symbol.toLowerCase();
-  if (normalized.includes('sun')) return '?';
-  if (normalized.includes('moon')) return '?';
-  if (normalized.includes('thunder') || normalized.includes('lightning')) return '?';
-  if (normalized.includes('sea') || normalized.includes('water')) return '??';
-  if (normalized.includes('spear') || normalized.includes('sword')) return '??';
-  if (normalized.includes('owl')) return '??';
-  if (normalized.includes('serpent') || normalized.includes('snake')) return '??';
-  if (normalized.includes('fire')) return '??';
-  if (normalized.includes('tree')) return '??';
-  return '?';
-}
-
 function toEquivalentCards(baseDeityId: string, equivalentIds: string[]): EquivalentCard[] {
   const direct = equivalentIds.map((id) => {
     const record = deityById.get(id);
@@ -437,7 +423,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
                       ))}
                     </div>
                   ) : (
-                    <p className="meta-text mt-3 text-xs">No direct domain overlap indexed.</p>
+                    <p className="meta-text mt-3 text-xs">Ortak alan kaydı yok.</p>
                   )}
                 </div>
               );
@@ -451,7 +437,10 @@ export default async function DeityDetailPage(props: DeityPageProps) {
           <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
             {deity.symbols.map((symbol) => (
               <div key={symbol} className="rounded-md border border-gold/25 bg-gold/10 p-3">
-                <p className="text-lg text-gold-light">{symbolEmoji(symbol)} {formatSlugLabel(symbol)}</p>
+                <p className="flex items-center gap-2 text-lg text-gold-light">
+                  <span aria-hidden className="inline-block size-2 rotate-45 bg-gold/70" />
+                  {formatSlugLabel(symbol)}
+                </p>
                 <p className="mt-1 text-xs text-foreground/60">
                   Bu sembol, {deity.name} figürüyle ilişkilendirilen ritüel veya temsil alanını ifade eder.
                 </p>
