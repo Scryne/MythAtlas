@@ -11,7 +11,7 @@ import mythologiesData from '@/data/mythologies.json';
 function toCulture(m: Mythology): Culture {
   return {
     id: m.id,
-    name: { en: m.name, tr: m.name }, // TODO: add Turkish translations
+    name: { en: m.name, tr: m.name }, // İçerik verisi kaynak dilinde (DESIGN.md)
     description: { en: m.description, tr: m.description },
     region: m.region,
     coordinates: [m.origin.lng, m.origin.lat], // [lng, lat] for MapLibre

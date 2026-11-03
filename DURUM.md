@@ -73,7 +73,7 @@
 
 ## Ne yarım / bilinen sınırlar
 
-- Canlı kurulum GitHub Pages (`master`'a push'ta derlenir). Bu oturumun commit'leri henüz push edilmedi.
+- Canlı kurulum GitHub Pages (`master`'a push'ta derlenir).
 - Mobilde soy ağacı "masaüstünde daha iyi" kapısıyla açılıyor; kapıdan geçilince grafik dokunmatik kaydırmayla çalışıyor.
 - Ham hex/rgba hâlâ duran küçük yerler (eski borç, dokunulduğunda token'a; 2026-11-03'te yeniden sayıldı):
   `globals.css`'teki siyah gölge/vinyet ve üç kahverengi `rgba()`, `SiteDetailTabs`'teki `#20160d`, `not-found`'daki

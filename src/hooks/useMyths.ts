@@ -12,7 +12,7 @@ function toMythUI(m: Myth): MythUI {
   return {
     id: m.id,
     cultureId: m.mythologyId,
-    name: { en: m.name, tr: m.name }, // TODO: add Turkish translations
+    name: { en: m.name, tr: m.name }, // İçerik verisi kaynak dilinde (DESIGN.md)
     description: { en: m.summary, tr: m.summary },
     type: m.type,
     imageUrl: m.imageUrl,
