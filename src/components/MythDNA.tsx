@@ -76,10 +76,10 @@ export function DNABar({ myth, size = 'full', showHoverLegend = false }: DNABarP
               style={{
                 backgroundColor: revealed
                   ? filled
-                    ? 'rgba(233, 190, 94, 0.9)'
-                    : 'rgba(27, 20, 12, 0.92)'
-                  : 'rgba(11, 9, 7, 0.85)',
-                boxShadow: revealed && filled ? '0 0 8px rgba(233,190,94,0.35)' : 'none',
+                    ? 'rgb(var(--rgb-dna-gene) / 0.9)'
+                    : 'rgb(var(--rgb-dna-empty) / 0.92)'
+                  : 'rgb(var(--rgb-graph-bg) / 0.85)',
+                boxShadow: revealed && filled ? '0 0 8px rgb(var(--rgb-dna-gene) / 0.35)' : 'none',
               }}
             />
           );
@@ -87,7 +87,7 @@ export function DNABar({ myth, size = 'full', showHoverLegend = false }: DNABarP
       </div>
 
       {showHoverLegend && presentLabels.length > 0 && (
-        <div className="pointer-events-none absolute left-0 right-0 top-full z-20 mt-1 max-h-28 overflow-y-auto rounded-md border border-gold/20 bg-[#0f0a06]/95 p-2 text-[10px] text-gold-light opacity-0 transition-opacity group-hover:opacity-100">
+        <div className="pointer-events-none absolute left-0 right-0 top-full z-20 mt-1 max-h-28 overflow-y-auto rounded-md border border-gold/20 bg-[rgb(var(--rgb-dna-legend-bg)/0.95)] p-2 text-[10px] text-gold-light opacity-0 transition-opacity group-hover:opacity-100">
           {presentLabels.join(' · ')}
         </div>
       )}
@@ -137,17 +137,17 @@ export function ArchetypeRadar({ myth, size = 'full' }: ArchetypeRadarProps) {
           return `${x},${y}`;
         }).join(' ');
 
-        return <polygon key={`ring-${step}`} points={ring} fill="none" stroke="rgba(201,168,76,0.2)" strokeWidth="1" />;
+        return <polygon key={`ring-${step}`} points={ring} fill="none" stroke="rgb(var(--rgb-gold) / 0.2)" strokeWidth="1" />;
       })}
 
       {points.map((point) => (
-        <line key={`axis-${point.archetype}`} x1={center} y1={center} x2={point.axisX} y2={point.axisY} stroke="rgba(201,168,76,0.16)" strokeWidth="1" />
+        <line key={`axis-${point.archetype}`} x1={center} y1={center} x2={point.axisX} y2={point.axisY} stroke="rgb(var(--rgb-gold) / 0.16)" strokeWidth="1" />
       ))}
 
       <polygon
         points={polygon}
-        fill="rgba(233,190,94,0.4)"
-        stroke="rgba(233,190,94,0.95)"
+        fill="rgb(var(--rgb-dna-gene) / 0.4)"
+        stroke="rgb(var(--rgb-dna-gene) / 0.95)"
         strokeWidth="2"
         style={{
           transformOrigin: `${center}px ${center}px`,
@@ -164,7 +164,7 @@ export function ArchetypeRadar({ myth, size = 'full' }: ArchetypeRadarProps) {
             y={point.labelY}
             fontSize="9"
             textAnchor="middle"
-            fill="rgba(240,213,141,0.72)"
+            fill="rgb(var(--rgb-gold-glow) / 0.72)"
           >
             {formatDNAKeyLabel(point.archetype)}
           </text>
@@ -195,8 +195,8 @@ export function DNAFingerprint({ myth }: FingerprintProps) {
             <span
               key={`${myth.id}-fp-${index}`}
               style={{
-                color: char === '1' ? '#f0d58d' : '#3a2a16',
-                textShadow: char === '1' ? '0 0 6px rgba(240,213,141,0.5)' : 'none',
+                color: char === '1' ? 'var(--color-gold-glow)' : 'var(--color-dna-bit-off)',
+                textShadow: char === '1' ? '0 0 6px rgb(var(--rgb-gold-glow) / 0.5)' : 'none',
               }}
             >
               {char}

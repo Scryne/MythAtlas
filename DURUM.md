@@ -52,13 +52,24 @@
 - `next dev`'in ürettiği `AGENTS.md` `.gitignore`'a eklendi (hiç izlenmiyordu).
 - `tsc`, `eslint`, `qa:data-integrity` (0 sorun), `qa:content` (temiz), `next build` geçti.
 
+- **Kalan grafik renkleri de token'da:** mitoloji ayrıntısındaki etki mini grafiği, zaman çizelgesi, mit türü vurguları
+  ve paralel küme şeması; yükleniyor simgesi; DNA şeridi/radarı/parmak izi ve `/dna` çubukları; arkeoloji grafikleri ve
+  müze işaretleri; tema ağı. 9 dosyadaki ham hex/rgba `tokens.css`'e (`--color-graph-*`, `--color-timeline-*`,
+  `--color-myth-type-*`, `--color-spinner-*`, `--color-dna-*`, `--rgb-dna-*`, `--rgb-theme-*`, `--color-gold-glow`…)
+  taşındı; aynı değeri taşıyan mevcut token'lar (`gold`, `rel-cyan`, `chart-gold`, `chart-tooltip-bg`, `map-marker`)
+  yeniden kullanıldı. Bu dosyalarda ham renk 0. Doğrulama: değişiklik öncesi ve sonrası iki sunucu yan yana; 16 sayfa/
+  sekme hâlinde 10.225 öğenin 11 renk özelliği (+ JS'siz yükleniyor simgesi, 3 rota) önce/sonra 0 fark; 8 ekranda tam
+  sayfa piksel karşılaştırması (bir ekrandaki fark yapışkan başlığın 2 px kaymasıydı, kart ızgarası piksel piksel aynı).
+
 ## Ne yarım / bilinen sınırlar
 
 - Canlı kurulum GitHub Pages (`master`'a push'ta derlenir). Bu oturumun commit'leri henüz push edilmedi.
 - Mobilde soy ağacı "masaüstünde daha iyi" kapısıyla açılıyor; kapıdan geçilince grafik dokunmatik kaydırmayla çalışıyor.
-- Ham hex hâlâ duran yerler: mitoloji ayrıntı sayfasındaki etki mini grafiği, zaman çizelgesi ve tür vurguları,
-  yükleniyor simgesi, DNA/arkeoloji/tema grafikleri. Ana harita (`MapPageClient`) hex değil `rgb()` yazıyor ama değerleri
-  token'larla aynı; MapLibre çözülmüş renk istediği için ayrı iş.
+- Ham hex/rgba hâlâ duran yerler (eski borç, dokunulduğunda token'a): mit ve tanrı ayrıntı sayfaları (`myth/[id]`,
+  `deity/[id]`), `/sites`, `/stats` sayfa kabı, `StatsCharts`/koroplet/`MiniWorldMap`/`SiteLocationMap`'teki saydam
+  altın `rgba()`'lar, `HomeClient`, `AncientImage`, `AcademicSources`, `parallels` sayfa kabı, `lib/` veri renkleri.
+  Bilerek ham kalanlar: ana harita (`MapPageClient`, MapLibre çözülmüş renk ister), OG görseli ve `manifest.ts`
+  (CSS dışında çalışır).
 
 ## Sonraki adım
 

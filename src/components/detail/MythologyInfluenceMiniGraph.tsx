@@ -63,7 +63,7 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
     <div className="space-y-4">
       <div className="overflow-x-auto rounded-xl border border-gold/20 bg-black/20 p-3">
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="h-72 w-full min-w-[620px]">
-          <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#0b0907" rx={14} />
+          <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="var(--color-graph-bg)" rx={14} />
 
           {[...incoming, ...outgoing].map((connection) => {
             const fromId = connection.sourceId;
@@ -97,8 +97,8 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
 
           {miniNodes.map((node) => (
             <g key={node.id} transform={`translate(${node.x},${node.y})`}>
-              <circle r={18} fill="#111" stroke="#d4b871" strokeWidth={1.2} />
-              <text y={30} textAnchor="middle" className="fill-[#d9c69c] text-[10px]">
+              <circle r={18} fill="var(--color-graph-node)" stroke="var(--color-graph-node-stroke)" strokeWidth={1.2} />
+              <text y={30} textAnchor="middle" className="fill-[color:var(--color-graph-node-label)] text-[10px]">
                 {node.name.replace(' Mythology', '')}
               </text>
             </g>
@@ -106,7 +106,7 @@ export default function MythologyInfluenceMiniGraph({ mythologyId }: MythologyIn
 
           <g transform={`translate(${WIDTH / 2},${HEIGHT / 2})`}>
             <circle r={30} fill={centerNode.color} fillOpacity={0.28} stroke={centerNode.color} strokeWidth={2} />
-            <text y={48} textAnchor="middle" className="fill-[#f3ddb1] text-[11px]">
+            <text y={48} textAnchor="middle" className="fill-[color:var(--color-graph-center-label)] text-[11px]">
               {centerNode.name.replace(' Mythology', '')}
             </text>
           </g>

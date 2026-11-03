@@ -479,8 +479,8 @@ export default function DNAExplorerPage() {
                 {mythologyNameById.get(pair.left.mythologyId)} - {mythologyNameById.get(pair.right.mythologyId)}
               </p>
               <div className="mt-2 flex items-center gap-3">
-                <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-[#2d2213]">
-                  <div className="h-full rounded-full bg-[linear-gradient(90deg,#7ad7f4,#f3d78d)]" style={{ width: `${pair.score}%` }} />
+                <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-[color:var(--color-dna-track)]">
+                  <div className="h-full rounded-full bg-[linear-gradient(90deg,var(--color-rel-cyan),var(--color-dna-bar-end))]" style={{ width: `${pair.score}%` }} />
                 </div>
                 <span className="text-xs text-gold-light">{pair.score}%</span>
               </div>
@@ -514,8 +514,8 @@ export default function DNAExplorerPage() {
                     <span>{formatDNAKeyLabel(element)}</span>
                     <span>{count}</span>
                   </div>
-                  <div className="h-2 rounded-full bg-[#2f2314]">
-                    <div className="h-full rounded-full bg-[#dfbe73]" style={{ width: `${(count / myths.length) * 100}%` }} />
+                  <div className="h-2 rounded-full bg-[color:var(--color-dna-track-alt)]">
+                    <div className="h-full rounded-full bg-[color:var(--color-dna-bar)]" style={{ width: `${(count / myths.length) * 100}%` }} />
                   </div>
                 </div>
               ))}
@@ -531,8 +531,8 @@ export default function DNAExplorerPage() {
                     <span>{formatDNAKeyLabel(archetype)}</span>
                     <span>{count}</span>
                   </div>
-                  <div className="h-2 rounded-full bg-[#2f2314]">
-                    <div className="h-full rounded-full bg-[#7ad7f4]" style={{ width: `${(count / myths.length) * 100}%` }} />
+                  <div className="h-2 rounded-full bg-[color:var(--color-dna-track-alt)]">
+                    <div className="h-full rounded-full bg-[color:var(--color-rel-cyan)]" style={{ width: `${(count / myths.length) * 100}%` }} />
                   </div>
                 </div>
               ))}

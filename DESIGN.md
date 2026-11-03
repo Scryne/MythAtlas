@@ -71,9 +71,14 @@ Mitleri, tanrıları ve kutsal alanları aynı atlas üzerinde okuyan bir başvu
 - `red`/`red-light` yalnız olumsuz durum (yıkılmış alan, hata). Durum rozetlerinde emerald/kırmızı Tailwind tonları
   yarı saydam zeminle kullanılır ("Hâlâ ayakta" / "Tarihe karıştı").
 - Kenarlar `border` (0,15 altın), üzerine gelince `border-hover`. Yeni renk gerekirse önce buraya token olarak eklenir;
-  bileşene ham hex yazılmaz (soy ağacı ve paraleller sayfalarında kalan ham hex'ler eski borçtur, dokunulduğunda
-  token'a çekilir). İstatistik ve harita grafiklerinin renkleri `tokens.css`'te `--color-chart-*` / `--color-map-*`
-  grubunda; Recharts ve SVG bunları `var(--…)` olarak okur.
+  bileşene ham hex/rgba yazılmaz. İstatistik ve harita grafiklerinin renkleri `tokens.css`'te `--color-chart-*` /
+  `--color-map-*` grubunda; mitoloji ayrıntısındaki etki grafiği, zaman çizelgesi ve tür vurguları (`--color-graph-*`,
+  `--color-timeline-*`, `--color-myth-type-*`), yükleniyor simgesi (`--color-spinner-*`), DNA (`--color-dna-*`,
+  `--rgb-dna-*`) ve tema ağı (`--rgb-theme-*`) da orada. Recharts ve SVG bunları `var(--…)` olarak okur; saydamlık
+  gereken yerde `rgb(var(--rgb-…) / a)`. İstisnalar: ana harita (`MapPageClient`) MapLibre CSS değişkeni çözemediği
+  için çözülmüş `rgb()` yazar; OG görseli (`og/…/route.tsx`) ve `manifest.ts` CSS dışında çalıştığı için değişmez değer
+  ister — üçünde de değerler token'larla aynı tutulur. Mit/tanrı ayrıntı sayfaları, `/sites`, `/stats` ve birkaç
+  ortak bileşende kalan ham hex/rgba eski borçtur (envanter `DURUM.md`), dokunulduğunda token'a çekilir.
 
 ## Typography
 
