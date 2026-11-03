@@ -70,8 +70,8 @@ export default function HomeClient() {
   return (
     <LazyMotion features={domAnimation}>
       <div className="relative overflow-hidden bg-background">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_38%,rgba(201,168,76,0.18)_0%,rgba(13,10,7,0.95)_52%,rgba(13,10,7,1)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(36,29,23,0.3)_0%,rgba(13,10,7,0.94)_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_38%,rgb(var(--rgb-gold)/0.18)_0%,rgb(var(--rgb-bg-primary)/0.95)_52%,rgb(var(--rgb-bg-primary)/1)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgb(var(--rgb-bg-elevated)/0.3)_0%,rgb(var(--rgb-bg-primary)/0.94)_70%)]" />
 
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           {particles.map((particle) => (
@@ -108,7 +108,7 @@ export default function HomeClient() {
             className="max-w-4xl font-heading text-5xl font-bold tracking-[0.16em] text-gold-light sm:text-6xl md:text-7xl lg:text-8xl"
             style={{
               textShadow:
-                '0 0 10px rgba(201,168,76,0.22), 0 0 24px rgba(201,168,76,0.14)',
+                '0 0 10px rgb(var(--rgb-gold) / 0.22), 0 0 24px rgb(var(--rgb-gold) / 0.14)',
             }}
           >
             MythAtlas

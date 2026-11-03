@@ -60,7 +60,7 @@ export default function MiniWorldMap({
               x2={WIDTH}
               y1={y}
               y2={y}
-              stroke="rgba(201,168,76,0.12)"
+              stroke="rgb(var(--rgb-gold) / 0.12)"
               strokeWidth={0.8}
             />
           );
@@ -75,13 +75,13 @@ export default function MiniWorldMap({
               x2={x}
               y1={0}
               y2={HEIGHT}
-              stroke="rgba(201,168,76,0.1)"
+              stroke="rgb(var(--rgb-gold) / 0.1)"
               strokeWidth={0.8}
             />
           );
         })}
 
-        <g fill="rgba(188,162,107,0.2)" stroke="rgba(201,168,76,0.25)" strokeWidth={0.8}>
+        <g fill="rgb(var(--rgb-map-continent) / 0.2)" stroke="rgb(var(--rgb-gold) / 0.25)" strokeWidth={0.8}>
           <path d="M28 34 L65 26 L94 40 L102 66 L86 88 L54 98 L30 80 L18 54 Z" />
           <path d="M96 92 L112 110 L116 142 L102 165 L86 142 L90 110 Z" />
           <path d="M126 36 L162 26 L204 32 L238 44 L262 62 L250 84 L216 82 L188 92 L168 112 L144 106 L128 78 Z" />
@@ -95,8 +95,8 @@ export default function MiniWorldMap({
             y={Math.min(box.leftTop.y, box.rightBottom.y)}
             width={Math.abs(box.rightBottom.x - box.leftTop.x)}
             height={Math.abs(box.rightBottom.y - box.leftTop.y)}
-            fill="rgba(201,168,76,0.12)"
-            stroke="rgba(224,200,120,0.7)"
+            fill="rgb(var(--rgb-gold) / 0.12)"
+            stroke="rgb(var(--rgb-map-focus-box) / 0.7)"
             strokeDasharray="4 3"
           />
         )}

@@ -61,15 +61,26 @@
   sekme hâlinde 10.225 öğenin 11 renk özelliği (+ JS'siz yükleniyor simgesi, 3 rota) önce/sonra 0 fark; 8 ekranda tam
   sayfa piksel karşılaştırması (bir ekrandaki fark yapışkan başlığın 2 px kaymasıydı, kart ızgarası piksel piksel aynı).
 
+- **Ayrıntı sayfaları ve ortak bileşenler de token'da:** mit ve tanrı ayrıntı sayfaları (benzerlik yayı, rozetler, harita
+  işareti yedekleri, tapınılan dönem şeridi, takımyıldız), `/sites` işaretleri, `/stats` soy ağacı kabı, `StatsCharts`
+  ipucu/imleç saydamları, iki koroplet kenarı, `MiniWorldMap`/`SiteLocationMap` ızgara ve kıtaları, `HomeClient`
+  degradeleri ve başlık gölgesi, `AncientImage` yer tutucusu, `AcademicSources` vurgusu, paraleller sayfa kabı. 13
+  dosyada ham hex/rgba 0; 24 yeni token, gerisi mevcut `gold`, `bg-primary`, `bg-elevated`, `parchment`, `rel-cyan`,
+  `gold-pale`, `gold-glow`. `lib/` veri renkleri incelendi ve bilerek ham bırakıldı (yukarıda). Doğrulama: önce/sonra iki
+  derleme yan yana; 18 rotada 9.146 öğenin 14 renk özelliği 0 fark (CSS animasyonları 0. karede sabitlenerek — ana
+  sayfadaki sonsuz `glow-pulse` aksi hâlde anlık faz farkı veriyor); veride hiç görünmeyen ya da etkileşimle açılan 22
+  hâl (mit "evrensel hikâye" rozeti, kaynak vurgusu, yer tutucu, işaret yedekleri, grafik ipucu…) enjeksiyonla 0 fark.
+
 ## Ne yarım / bilinen sınırlar
 
 - Canlı kurulum GitHub Pages (`master`'a push'ta derlenir). Bu oturumun commit'leri henüz push edilmedi.
 - Mobilde soy ağacı "masaüstünde daha iyi" kapısıyla açılıyor; kapıdan geçilince grafik dokunmatik kaydırmayla çalışıyor.
-- Ham hex/rgba hâlâ duran yerler (eski borç, dokunulduğunda token'a): mit ve tanrı ayrıntı sayfaları (`myth/[id]`,
-  `deity/[id]`), `/sites`, `/stats` sayfa kabı, `StatsCharts`/koroplet/`MiniWorldMap`/`SiteLocationMap`'teki saydam
-  altın `rgba()`'lar, `HomeClient`, `AncientImage`, `AcademicSources`, `parallels` sayfa kabı, `lib/` veri renkleri.
+- Ham hex/rgba hâlâ duran küçük yerler (eski borç, dokunulduğunda token'a; 2026-11-03'te yeniden sayıldı):
+  `globals.css`'teki siyah gölge/vinyet ve üç kahverengi `rgba()`, `SiteDetailTabs`'teki `#20160d`, `not-found`'daki
+  saydam altın, `DeityEvolutionPageClient`'ın kahraman degradesi ve `FamilyTreePageClient`'ın siyah metin gölgesi.
   Bilerek ham kalanlar: ana harita (`MapPageClient`, MapLibre çözülmüş renk ister), OG görseli ve `manifest.ts`
-  (CSS dışında çalışır).
+  (CSS dışında çalışır), `lib/` veri renkleri (`family-tree-data`, `parallels-data`, `insights`: MapLibre'ye gidiyor
+  ya da çağrı yerinde hex'e alfa eklenerek `${color}55` kullanılıyor; `var()` ikisini de bozar).
 
 ## Sonraki adım
 

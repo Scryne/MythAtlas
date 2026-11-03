@@ -80,7 +80,7 @@ export default function ArtifactCountryChoropleth({ data }: ArtifactCountryChoro
               width={w}
               height={h}
               fill={fill}
-              stroke="rgba(204,230,255,0.45)"
+              stroke="rgb(var(--rgb-choropleth-artifact-stroke) / 0.45)"
               strokeWidth={0.8}
               onMouseMove={(event) => {
                 const bounds = (event.currentTarget.ownerSVGElement as SVGSVGElement).getBoundingClientRect();

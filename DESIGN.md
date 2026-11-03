@@ -77,8 +77,12 @@ Mitleri, tanrıları ve kutsal alanları aynı atlas üzerinde okuyan bir başvu
   `--rgb-dna-*`) ve tema ağı (`--rgb-theme-*`) da orada. Recharts ve SVG bunları `var(--…)` olarak okur; saydamlık
   gereken yerde `rgb(var(--rgb-…) / a)`. İstisnalar: ana harita (`MapPageClient`) MapLibre CSS değişkeni çözemediği
   için çözülmüş `rgb()` yazar; OG görseli (`og/…/route.tsx`) ve `manifest.ts` CSS dışında çalıştığı için değişmez değer
-  ister — üçünde de değerler token'larla aynı tutulur. Mit/tanrı ayrıntı sayfaları, `/sites`, `/stats` ve birkaç
-  ortak bileşende kalan ham hex/rgba eski borçtur (envanter `DURUM.md`), dokunulduğunda token'a çekilir.
+  ister — üçünde de değerler token'larla aynı tutulur. Mit/tanrı ayrıntı sayfalarının rozet, işaret ve takımyıldız
+  renkleri (`--rgb-myth-badge-*`, `--color-myth-marker-*`, `--rgb-deity-badge-*`, `--color-deity-*`), harita kıtaları
+  (`--rgb-map-continent`), koroplet kenarları (`--rgb-choropleth-*`) ve paraleller kabı (`--rgb-parallels-*`) da
+  `tokens.css`'te. `lib/` içindeki veri renkleri (`family-tree-data`, `parallels-data`, `insights`) de bilerek ham:
+  MapLibre'ye gidiyorlar ya da çağrı yerinde hex'e alfa eklenerek (`${color}55`) kullanılıyorlar, `var()` ikisini de
+  bozar. Kalan küçük ham değerlerin envanteri `DURUM.md`'de; dokunulduğunda token'a çekilir.
 
 ## Typography
 

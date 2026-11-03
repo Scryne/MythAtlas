@@ -133,6 +133,33 @@
   --rgb-theme-node-stroke: 244 214 141;
   --color-theme-node-icon: #f1dba7;
   --color-theme-node-label: #e7d4ad;
+  /* Mit/tanrı ayrıntı sayfaları, /sites, /stats sayfa kabı, istatistik ve koroplet saydamları, mini/alan haritaları,
+     ana sayfa, AncientImage, AcademicSources, paraleller sayfa kabı: önceden ham hex/rgba'ydı (2026-11-03).
+     Değerler birebir korundu; saydamlık çağrı yerinde `rgb(var(--rgb-…) / a)` ile veriliyor. */
+  --rgb-map-continent: 188 162 107;
+  --rgb-map-focus-box: 224 200 120;
+  --rgb-choropleth-artifact-stroke: 204 230 255;
+  --rgb-choropleth-myth-stroke: 255 230 160;
+  --rgb-chart-node-bg: 18 14 10;
+  --rgb-chart-node-pending: 240 207 133;
+  --color-site-marker-other: #9bc2ff;
+  --rgb-parallels-glow: 214 181 106;
+  --rgb-parallels-hero-bg: 9 8 6;
+  --rgb-parallels-active-glow: 244 209 122;
+  --color-similarity-label: #f6e4b8;
+  --color-myth-marker-primary: #d9bd70;
+  --color-myth-marker-dna: #9bb8d8;
+  --color-myth-marker-parallel: #8dc6de;
+  --rgb-myth-badge-border: 230 197 106;
+  --rgb-myth-badge-bg: 50 34 16;
+  --color-myth-badge-text: #f4dea2;
+  --rgb-deity-badge-border: 227 193 105;
+  --rgb-deity-badge-bg: 47 31 15;
+  --color-deity-badge-text: #f6dfab;
+  --color-deity-worship-track: #2a1f13;
+  --color-deity-constellation-center-label: #f4deaa;
+  --color-deity-constellation-node-stroke: #8adff9;
+  --color-deity-constellation-node-label: #d8eef7;
   --font-display:var(--font-cinzel), 'Cinzel', serif;
   --font-body: var(--font-inter), 'Inter', sans-serif;
   --font-mono: var(--font-jetbrains), 'JetBrains Mono', monospace;

@@ -58,7 +58,7 @@ export default function AncientImage({
       <div
         role="img"
         aria-label={alt}
-        className={`flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_35%_25%,rgba(201,168,76,0.22),rgba(13,10,7,0.96)_64%)] text-center ${
+        className={`flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_35%_25%,rgb(var(--rgb-gold)/0.22),rgb(var(--rgb-bg-primary)/0.96)_64%)] text-center ${
           className || ''
         }`}
       >

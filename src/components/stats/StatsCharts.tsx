@@ -129,7 +129,7 @@ export default function StatsCharts({
                 </Pie>
                 <Tooltip
                   formatter={(value: number, name: string) => [`${value} mit`, name]}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -158,7 +158,7 @@ export default function StatsCharts({
                     `${value} bağlantı`,
                     entry.payload?.mythology || 'Mit',
                   ]}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
                 <Bar dataKey="connections" fill="var(--color-chart-gold-soft)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
               </BarChart>
@@ -174,12 +174,12 @@ export default function StatsCharts({
                 <XAxis type="number" dataKey="x" hide domain={[-0.8, 5.8]} />
                 <YAxis type="number" dataKey="y" hide domain={[-0.8, 4.8]} />
                 <Tooltip
-                  cursor={{ stroke: 'rgba(201,168,76,0.25)' }}
+                  cursor={{ stroke: 'rgb(var(--rgb-gold) / 0.25)' }}
                   formatter={(value: number, _name: string, entry: { payload?: { domain?: string } }) => [
                     `${value} tanrı`,
                     entry.payload?.domain || 'Domain',
                   ]}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
                 <Scatter data={domains} fill="var(--color-chart-gold-bright)" isAnimationActive animationDuration={1100}>
                   <LabelList dataKey="domain" position="center" className="fill-[color:var(--color-chart-ink)]" fontSize={10} />
@@ -200,7 +200,7 @@ export default function StatsCharts({
                 <YAxis type="category" dataKey="type" width={120} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number) => [`${value} mekân`, 'Adet']}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
                 <Bar dataKey="count" fill="var(--color-chart-blue)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
               </BarChart>
@@ -239,9 +239,9 @@ export default function StatsCharts({
                       ];
                     }
                   }
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
-                <Bar dataKey="startOffset" stackId="timeline" fill="rgba(0,0,0,0)" />
+                <Bar dataKey="startOffset" stackId="timeline" fill="transparent" />
                 <Bar dataKey="duration" stackId="timeline" fill="var(--color-chart-gold)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={1200}>
                   {timeline.data.map((item) => (
                     <Cell key={item.id} fill={regionColor(item.region)} />
@@ -276,7 +276,7 @@ export default function StatsCharts({
                 </Pie>
                 <Tooltip
                   formatter={(value: number, name: string) => [`${value} site`, protectionLabel(name)]}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -292,7 +292,7 @@ export default function StatsCharts({
                 <YAxis stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number) => [`${value} kazı kaydı`, 'Kampanya']}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
                 <Bar dataKey="count" fill="var(--color-chart-blue-bright)" radius={[4, 4, 0, 0]} isAnimationActive animationDuration={1000} />
               </BarChart>
@@ -324,7 +324,7 @@ export default function StatsCharts({
                     }
                     return [String(value), name];
                   }}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
                 <Bar dataKey="artifactCount" fill="var(--color-chart-gold)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={950} />
               </BarChart>

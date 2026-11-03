@@ -74,7 +74,7 @@ export default function MythologyChoropleth({ data }: ChoroplethProps) {
               width={w}
               height={h}
               fill={fill}
-              stroke="rgba(255,230,160,0.45)"
+              stroke="rgb(var(--rgb-choropleth-myth-stroke) / 0.45)"
               strokeWidth={0.8}
               onMouseMove={(event) => {
                 const bounds = (event.currentTarget.ownerSVGElement as SVGSVGElement).getBoundingClientRect();

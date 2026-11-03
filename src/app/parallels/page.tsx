@@ -240,7 +240,7 @@ export default function ParallelsPage() {
   return (
     <div className="min-h-screen bg-background px-4 pb-16 pt-24 text-parchment sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 rounded-2xl border border-gold-light/25 bg-[radial-gradient(circle_at_20%_20%,rgba(214,181,106,0.18),rgba(9,8,6,0.94)_55%)] p-6 sm:p-8">
+        <div className="mb-10 rounded-2xl border border-gold-light/25 bg-[radial-gradient(circle_at_20%_20%,rgb(var(--rgb-parallels-glow)/0.18),rgb(var(--rgb-parallels-hero-bg)/0.94)_55%)] p-6 sm:p-8">
           <p className="text-xs uppercase tracking-[0.2em] text-gold-light/90">Paralel Mitler Gezgini</p>
           <h1 className="mt-3 font-heading text-3xl text-gold-pale sm:text-4xl">İnsanlığın Ortak Hikâye Haritası</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-parchment-dim sm:text-base">
@@ -273,7 +273,7 @@ export default function ParallelsPage() {
                 onClick={() => setActiveThemeId(cluster.id)}
                 className={`rounded-2xl border p-5 text-left transition-all ${
                   isActive
-                    ? 'border-gold-pale/80 bg-surface shadow-[0_0_28px_rgba(244,209,122,0.16)]'
+                    ? 'border-gold-pale/80 bg-surface shadow-[0_0_28px_rgb(var(--rgb-parallels-active-glow)/0.16)]'
                     : 'border-gold-light/20 bg-background hover:border-gold-light/45'
                 }`}
               >
@@ -439,7 +439,7 @@ export default function ParallelsPage() {
                 <p className="text-[11px] uppercase tracking-[0.15em] text-parchment-muted">Benzerlik Gösterge Saati</p>
                 <div className="mt-2 flex items-center justify-between gap-4">
                   <svg viewBox="0 0 140 90" className="h-24 w-36">
-                    <path d="M 14 76 A 56 56 0 0 1 126 76" fill="none" stroke="rgba(214,181,106,0.2)" strokeWidth="11" />
+                    <path d="M 14 76 A 56 56 0 0 1 126 76" fill="none" stroke="rgb(var(--rgb-parallels-glow) / 0.2)" strokeWidth="11" />
                     <path
                       d="M 14 76 A 56 56 0 0 1 126 76"
                       fill="none"
