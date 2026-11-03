@@ -125,7 +125,7 @@ export default function StatsPage() {
                     y1={from.y + 18}
                     x2={to.x + 4}
                     y2={to.y + 18}
-                    stroke="rgba(201,168,76,.55)"
+                    stroke="rgb(var(--rgb-gold) / .55)"
                     strokeWidth="2"
                   />
                 );
@@ -136,13 +136,13 @@ export default function StatsPage() {
                     width="84"
                     height="36"
                     rx="8"
-                    fill="rgba(18,14,10,.92)"
+                    fill="rgb(var(--rgb-chart-node-bg) / .92)"
                     stroke={
                       node.completeness === 'complete'
-                        ? 'rgba(201,168,76,.55)'
+                        ? 'rgb(var(--rgb-gold) / .55)'
                         : node.completeness === 'partial'
-                          ? 'rgba(122,215,244,.45)'
-                          : 'rgba(240,207,133,.38)'
+                          ? 'rgb(var(--rgb-rel-cyan) / .45)'
+                          : 'rgb(var(--rgb-chart-node-pending) / .38)'
                     }
                   />
                   <text x="42" y="22" textAnchor="middle" fill="var(--color-chart-node-text)" fontSize="11">

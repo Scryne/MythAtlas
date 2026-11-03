@@ -70,20 +70,20 @@ function SimilarityArc({ score }: { score: number }) {
 
   return (
     <svg viewBox="0 0 56 56" className="h-14 w-14">
-      <circle cx="28" cy="28" r={radius} fill="none" stroke="rgba(201,168,76,0.2)" strokeWidth="6" />
+      <circle cx="28" cy="28" r={radius} fill="none" stroke="rgb(var(--rgb-gold) / 0.2)" strokeWidth="6" />
       <circle
         cx="28"
         cy="28"
         r={radius}
         fill="none"
-        stroke="#f0d58d"
+        stroke="var(--color-gold-glow)"
         strokeWidth="6"
         strokeLinecap="round"
         strokeDasharray={circumference}
         strokeDashoffset={dashOffset}
         transform="rotate(-90 28 28)"
       />
-      <text x="28" y="31" textAnchor="middle" fontSize="11" fill="#f6e4b8">
+      <text x="28" y="31" textAnchor="middle" fontSize="11" fill="var(--color-similarity-label)">
         {score}%
       </text>
     </svg>
@@ -195,7 +195,7 @@ export default async function MythDetailPage(props: MythPageProps) {
       label: `${myth.name} (Primary)`,
       lat: myth.origin.lat,
       lng: myth.origin.lng,
-      color: mythology?.color || '#d9bd70',
+      color: mythology?.color || 'var(--color-myth-marker-primary)',
     },
     ...dnaMatches.map(({ myth: item }) => {
       const parent = mythologyById.get(item.mythologyId);
@@ -204,7 +204,7 @@ export default async function MythDetailPage(props: MythPageProps) {
         label: `${item.name} (${parent?.name || item.mythologyId})`,
         lat: item.origin.lat,
         lng: item.origin.lng,
-        color: parent?.color || '#9bb8d8',
+        color: parent?.color || 'var(--color-myth-marker-dna)',
       };
     }),
   ];
@@ -264,7 +264,7 @@ export default async function MythDetailPage(props: MythPageProps) {
             {isUniversalStory && (
               <span
                 title="Bu hikâye dünyanın pek çok kültüründe anlatılır"
-                className="rounded-full border border-[#e6c56a]/45 bg-[#322210]/75 px-3 py-1 text-xs text-[#f4dea2]"
+                className="rounded-full border border-[rgb(var(--rgb-myth-badge-border)/0.45)] bg-[rgb(var(--rgb-myth-badge-bg)/0.75)] px-3 py-1 text-xs text-[color:var(--color-myth-badge-text)]"
               >
                 Evrensel Hikâye
               </span>
@@ -380,7 +380,7 @@ export default async function MythDetailPage(props: MythPageProps) {
                 label: myth.name,
                 lat: myth.origin.lat,
                 lng: myth.origin.lng,
-                color: mythology?.color || '#d9bd70',
+                color: mythology?.color || 'var(--color-myth-marker-primary)',
               },
               ...parallelEntries.map((entry) => {
                 const parent = mythologyById.get(entry.myth.mythologyId);
@@ -389,7 +389,7 @@ export default async function MythDetailPage(props: MythPageProps) {
                   label: `${entry.myth.name} (${parent?.name || entry.myth.mythologyId})`,
                   lat: entry.myth.origin.lat,
                   lng: entry.myth.origin.lng,
-                  color: parent?.color || '#8dc6de',
+                  color: parent?.color || 'var(--color-myth-marker-parallel)',
                 };
               }),
             ]}
@@ -470,14 +470,14 @@ export default async function MythDetailPage(props: MythPageProps) {
                     label: myth.name,
                     lat: myth.origin.lat,
                     lng: myth.origin.lng,
-                    color: mythology?.color || '#d9bd70',
+                    color: mythology?.color || 'var(--color-myth-marker-primary)',
                   },
                   ...parallelEntries.map((entry) => ({
                     id: entry.myth.id,
                     label: entry.myth.name,
                     lat: entry.myth.origin.lat,
                     lng: entry.myth.origin.lng,
-                    color: mythologyById.get(entry.myth.mythologyId)?.color || '#8dc6de',
+                    color: mythologyById.get(entry.myth.mythologyId)?.color || 'var(--color-myth-marker-parallel)',
                   })),
                 ]}
               />

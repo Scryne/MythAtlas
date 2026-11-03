@@ -136,7 +136,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                   key={source.id}
                   className={`rounded-md border bg-black/20 p-4 transition ${
                     isHighlighted
-                      ? 'border-gold/60 shadow-[0_0_20px_rgba(201,168,76,0.28)]'
+                      ? 'border-gold/60 shadow-[0_0_20px_rgb(var(--rgb-gold)/0.28)]'
                       : 'border-gold/20'
                   }`}
                 >
@@ -163,7 +163,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
 
                   <p className="mt-3 text-sm leading-6 text-foreground/80">{source.description}</p>
 
-                  <blockquote className="mt-3 select-text rounded-md border border-gold/20 bg-[#f4e4c1]/10 p-3 text-sm italic text-foreground/80">
+                  <blockquote className="mt-3 select-text rounded-md border border-gold/20 bg-parchment/10 p-3 text-sm italic text-foreground/80">
                     {source.relevantPassage}
                   </blockquote>
 

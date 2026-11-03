@@ -38,7 +38,7 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
 
         <rect width={WIDTH} height={HEIGHT} fill="url(#site-map-bg)" />
 
-        <g fill="rgba(188,162,107,0.2)" stroke="rgba(201,168,76,0.25)" strokeWidth={0.7}>
+        <g fill="rgb(var(--rgb-map-continent) / 0.2)" stroke="rgb(var(--rgb-gold) / 0.25)" strokeWidth={0.7}>
           <path d="M35 50 L105 38 L138 62 L132 95 L92 120 L44 102 L30 72 Z" />
           <path d="M128 138 L146 162 L142 216 L118 226 L104 178 Z" />
           <path d="M166 52 L246 40 L306 58 L328 92 L304 108 L244 108 L210 122 L176 102 Z" />
@@ -53,7 +53,7 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
             x2={WIDTH}
             y1={(HEIGHT / 7) * index}
             y2={(HEIGHT / 7) * index}
-            stroke="rgba(201,168,76,0.1)"
+            stroke="rgb(var(--rgb-gold) / 0.1)"
             strokeWidth={0.7}
           />
         ))}
@@ -65,7 +65,7 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
             x2={(WIDTH / 9) * index}
             y1={0}
             y2={HEIGHT}
-            stroke="rgba(201,168,76,0.09)"
+            stroke="rgb(var(--rgb-gold) / 0.09)"
             strokeWidth={0.7}
           />
         ))}

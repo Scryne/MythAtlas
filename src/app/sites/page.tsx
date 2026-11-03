@@ -105,7 +105,7 @@ export default function AllSitesPage() {
         label: site.name,
         lat: site.coordinates.lat,
         lng: site.coordinates.lng,
-        color: siteProtectionStatus(site) === 'UNESCO' ? '#f0d58d' : '#9bc2ff',
+        color: siteProtectionStatus(site) === 'UNESCO' ? 'var(--color-gold-glow)' : 'var(--color-site-marker-other)',
       })),
     [filteredSites]
   );

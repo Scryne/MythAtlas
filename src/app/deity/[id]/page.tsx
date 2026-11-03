@@ -267,7 +267,7 @@ export default async function DeityDetailPage(props: DeityPageProps) {
               {equivalentCultures} kültürde benzeri var
             </span>
             {archetype && (
-              <span className="rounded-full border border-[#e3c169]/45 bg-[#2f1f0f]/75 px-3 py-1 text-xs text-[#f6dfab]">
+              <span className="rounded-full border border-[rgb(var(--rgb-deity-badge-border)/0.45)] bg-[rgb(var(--rgb-deity-badge-bg)/0.75)] px-3 py-1 text-xs text-[color:var(--color-deity-badge-text)]">
                 Arketip Tanrı
               </span>
             )}
@@ -325,9 +325,9 @@ export default async function DeityDetailPage(props: DeityPageProps) {
         <div className="ancient-card p-6">
           <h3 className="mb-4 text-xl text-gold">Tapınılan dönem</h3>
           <div className="rounded-md border border-gold/20 bg-black/20 p-4">
-            <div className="relative h-3 rounded-full bg-[#2a1f13]">
+            <div className="relative h-3 rounded-full bg-[color:var(--color-deity-worship-track)]">
               <div
-                className="absolute h-3 rounded-full bg-[linear-gradient(90deg,#7ad7f4,#f1d58d)]"
+                className="absolute h-3 rounded-full bg-[linear-gradient(90deg,var(--color-rel-cyan),var(--color-gold-pale))]"
                 style={{ left: `${Math.max(0, startPct)}%`, width: `${Math.max(1, endPct - startPct)}%` }}
               />
             </div>
@@ -367,20 +367,20 @@ export default async function DeityDetailPage(props: DeityPageProps) {
                   y1={center.y}
                   x2={item.x}
                   y2={item.y}
-                  stroke="rgba(201,168,76,0.38)"
+                  stroke="rgb(var(--rgb-gold) / 0.38)"
                   strokeWidth={1.2}
                 />
               ))}
 
-              <circle cx={center.x} cy={center.y} r={34} fill="rgba(201,168,76,0.22)" stroke="#f0d58d" strokeWidth={1.8} />
-              <text x={center.x} y={center.y + 4} textAnchor="middle" fill="#f4deaa" fontSize="11">
+              <circle cx={center.x} cy={center.y} r={34} fill="rgb(var(--rgb-gold) / 0.22)" stroke="var(--color-gold-glow)" strokeWidth={1.8} />
+              <text x={center.x} y={center.y + 4} textAnchor="middle" fill="var(--color-deity-constellation-center-label)" fontSize="11">
                 {deity.name.slice(0, 12)}
               </text>
 
               {constellationNodes.map((item) => (
                 <g key={item.id}>
-                  <circle cx={item.x} cy={item.y} r={22} fill="rgba(122,215,244,0.18)" stroke="#8adff9" strokeWidth={1.2} />
-                  <text x={item.x} y={item.y + 3} textAnchor="middle" fill="#d8eef7" fontSize="9">
+                  <circle cx={item.x} cy={item.y} r={22} fill="rgb(var(--rgb-rel-cyan) / 0.18)" stroke="var(--color-deity-constellation-node-stroke)" strokeWidth={1.2} />
+                  <text x={item.x} y={item.y + 3} textAnchor="middle" fill="var(--color-deity-constellation-node-label)" fontSize="9">
                     {item.name.slice(0, 10)}
                   </text>
                   <title>{item.name}</title>
