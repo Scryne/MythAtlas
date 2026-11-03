@@ -11,7 +11,7 @@ export default function LoadingSpinner({ text = 'Yükleniyor...' }: { text?: str
               cy="40"
               r="34"
               fill="none"
-              stroke="rgba(201, 168, 76, 0.2)"
+              stroke="rgb(var(--rgb-gold) / 0.2)"
               strokeWidth="2"
             />
             <path
@@ -21,15 +21,15 @@ export default function LoadingSpinner({ text = 'Yükleniyor...' }: { text?: str
               strokeWidth="2"
               strokeLinecap="round"
             />
-            <path d="M40 13 L44 36 L40 33 L36 36 Z" fill="#d9be7a" />
-            <path d="M40 67 L44 44 L40 47 L36 44 Z" fill="#b6923e" />
-            <path d="M13 40 L36 44 L33 40 L36 36 Z" fill="#ae8740" />
-            <path d="M67 40 L44 44 L47 40 L44 36 Z" fill="#d7bc77" />
-            <circle cx="40" cy="40" r="4" fill="#f0d58d" />
+            <path d="M40 13 L44 36 L40 33 L36 36 Z" fill="var(--color-spinner-north)" />
+            <path d="M40 67 L44 44 L40 47 L36 44 Z" fill="var(--color-spinner-south)" />
+            <path d="M13 40 L36 44 L33 40 L36 36 Z" fill="var(--color-spinner-west)" />
+            <path d="M67 40 L44 44 L47 40 L44 36 Z" fill="var(--color-spinner-east)" />
+            <circle cx="40" cy="40" r="4" fill="var(--color-gold-glow)" />
             <defs>
               <linearGradient id="spinnerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="transparent" />
-                <stop offset="100%" stopColor="#c9a84c" />
+                <stop offset="100%" stopColor="var(--color-gold)" />
               </linearGradient>
             </defs>
           </svg>

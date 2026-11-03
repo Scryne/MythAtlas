@@ -43,18 +43,18 @@ export default function ArchaeologyHubCharts({
         <div className="mt-4 h-[360px]">
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart margin={{ top: 16, right: 18, bottom: 16, left: 8 }}>
-              <XAxis type="number" dataKey="year" domain={[1700, 'dataMax']} stroke="#c3ae82" tick={{ fill: '#c3ae82', fontSize: 11 }} />
-              <YAxis type="number" dataKey="regionIdx" stroke="#c3ae82" tick={{ fill: '#c3ae82', fontSize: 11 }} allowDecimals={false} />
+              <XAxis type="number" dataKey="year" domain={[1700, 'dataMax']} stroke="var(--color-chart-axis-warm)" tick={{ fill: 'var(--color-chart-axis-warm)', fontSize: 11 }} />
+              <YAxis type="number" dataKey="regionIdx" stroke="var(--color-chart-axis-warm)" tick={{ fill: 'var(--color-chart-axis-warm)', fontSize: 11 }} allowDecimals={false} />
               <Tooltip
-                cursor={{ stroke: 'rgba(201,168,76,0.35)' }}
-                contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                cursor={{ stroke: 'rgb(var(--rgb-gold) / 0.35)' }}
+                contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / 0.3)' }}
                 formatter={(_value: number, _name: string, payload: { payload?: { siteName?: string; excavator?: string; finding?: string; region?: string } }) => {
                   const row = payload.payload;
                   if (!row) return ['', ''];
                   return [row.finding || '', `${row.siteName || ''} · ${row.excavator || ''} · ${row.region || ''}`];
                 }}
               />
-              <Scatter data={excavationTimeline} fill="#f0d58d" />
+              <Scatter data={excavationTimeline} fill="var(--color-gold-glow)" />
             </ScatterChart>
           </ResponsiveContainer>
         </div>
@@ -66,12 +66,12 @@ export default function ArchaeologyHubCharts({
           <div className="h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={protectionStats}>
-                <XAxis dataKey="status" stroke="#c3ae82" tick={{ fill: '#c3ae82', fontSize: 11 }} />
-                <YAxis stroke="#c3ae82" tick={{ fill: '#c3ae82', fontSize: 11 }} />
-                <Tooltip contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }} />
-                <Bar dataKey="count" fill="#cfad5d">
+                <XAxis dataKey="status" stroke="var(--color-chart-axis-warm)" tick={{ fill: 'var(--color-chart-axis-warm)', fontSize: 11 }} />
+                <YAxis stroke="var(--color-chart-axis-warm)" tick={{ fill: 'var(--color-chart-axis-warm)', fontSize: 11 }} />
+                <Tooltip contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / 0.3)' }} />
+                <Bar dataKey="count" fill="var(--color-chart-gold)">
                   {protectionStats.map((item, index) => (
-                    <Cell key={item.status} fill={index % 2 === 0 ? '#cfad5d' : '#7bb2dd'} />
+                    <Cell key={item.status} fill={index % 2 === 0 ? 'var(--color-chart-gold)' : 'var(--color-chart-blue-soft)'} />
                   ))}
                 </Bar>
               </BarChart>

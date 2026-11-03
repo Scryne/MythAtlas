@@ -99,7 +99,7 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
   return (
     <div className="rounded-xl border border-gold/20 bg-black/25 p-4">
       <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="h-[460px] w-full">
-        <rect width={WIDTH} height={HEIGHT} fill="#0b0907" rx={18} />
+        <rect width={WIDTH} height={HEIGHT} fill="var(--color-graph-bg)" rx={18} />
 
         <g>
           {simEdges.map((edge, index) => {
@@ -114,7 +114,7 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
                 y1={source.y || 0}
                 x2={target.x || 0}
                 y2={target.y || 0}
-                stroke="rgba(210,176,98,0.35)"
+                stroke="rgb(var(--rgb-theme-edge) / 0.35)"
                 strokeWidth={Math.max(1, edge.weight * 0.35)}
               />
             );
@@ -126,14 +126,14 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
             <g key={`node-${node.id}-${tick}`} transform={`translate(${node.x || 0}, ${node.y || 0})`}>
               <circle
                 r={nodeRadius(node.count)}
-                fill="rgba(201, 168, 76, 0.18)"
-                stroke="rgba(244, 214, 141, 0.62)"
+                fill="rgb(var(--rgb-gold) / 0.18)"
+                stroke="rgb(var(--rgb-theme-node-stroke) / 0.62)"
                 strokeWidth={1.5}
               />
               <text
                 textAnchor="middle"
                 y={4}
-                className="fill-[#f1dba7] text-[12px]"
+                className="fill-[color:var(--color-theme-node-icon)] text-[12px]"
                 fontFamily="Inter, sans-serif"
               >
                 {node.icon}
@@ -141,7 +141,7 @@ export default function ThemeNetworkGraph({ nodes, edges }: GraphProps) {
               <text
                 textAnchor="middle"
                 y={nodeRadius(node.count) + 16}
-                className="fill-[#e7d4ad] text-[11px]"
+                className="fill-[color:var(--color-theme-node-label)] text-[11px]"
                 fontFamily="Inter, sans-serif"
               >
                 {node.label}

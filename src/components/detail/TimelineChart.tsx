@@ -30,8 +30,8 @@ export default function TimelineChart({ era }: TimelineChartProps) {
                 style={{ left: `${left}%`, top: '16px' }}
                 title={`${point.label}: ${point.displayYear}`}
               >
-                <div className="h-3 w-3 rounded-full border-2 border-[#2a1f14] bg-[#f0d68e]" />
-                <p className="mt-2 whitespace-nowrap text-[11px] text-[#d3bf93]">{point.label}</p>
+                <div className="h-3 w-3 rounded-full border-2 border-[color:var(--color-timeline-dot-ring)] bg-[color:var(--color-timeline-dot)]" />
+                <p className="mt-2 whitespace-nowrap text-[11px] text-[color:var(--color-timeline-label)]">{point.label}</p>
               </div>
             );
           })}

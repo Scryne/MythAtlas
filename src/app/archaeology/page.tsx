@@ -300,7 +300,7 @@ export default function ArchaeologyHubPage() {
             label: `${museum.museumName} (${museum.city})`,
             lat: coords.lat,
             lng: coords.lng,
-            color: '#f0d58d',
+            color: 'var(--color-map-marker)',
           };
         })
         .filter((item): item is { id: string; label: string; lat: number; lng: number; color: string } => Boolean(item)),
