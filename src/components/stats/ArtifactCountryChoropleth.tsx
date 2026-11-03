@@ -48,20 +48,20 @@ export default function ArtifactCountryChoropleth({ data }: ArtifactCountryChoro
   }, [rows]);
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-gold/20 bg-[#0d0b08] p-3">
+    <div className="relative overflow-hidden rounded-xl border border-gold/20 bg-[color:var(--color-map-frame)] p-3">
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         role="img"
         aria-label="Bugünkü ülkeye göre eser haritası"
         className="h-[380px] w-full"
       >
-        <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#0b0907" />
+        <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="var(--color-map-sea)" />
 
-        <path d="M62 94 L255 66 L308 152 L252 210 L76 194 Z" fill="#15120e" />
-        <path d="M272 70 L496 66 L598 152 L536 224 L368 246 L292 173 Z" fill="#14110d" />
-        <path d="M300 224 L389 213 L431 348 L327 362 Z" fill="#13100c" />
-        <path d="M548 270 L772 266 L846 331 L781 376 L582 358 Z" fill="#14110d" />
-        <path d="M713 147 L828 132 L876 189 L826 238 L732 224 Z" fill="#15120e" />
+        <path d="M62 94 L255 66 L308 152 L252 210 L76 194 Z" fill="var(--color-map-land-1)" />
+        <path d="M272 70 L496 66 L598 152 L536 224 L368 246 L292 173 Z" fill="var(--color-map-land-2)" />
+        <path d="M300 224 L389 213 L431 348 L327 362 Z" fill="var(--color-map-land-3)" />
+        <path d="M548 270 L772 266 L846 331 L781 376 L582 358 Z" fill="var(--color-map-land-2)" />
+        <path d="M713 147 L828 132 L876 189 L826 238 L732 224 Z" fill="var(--color-map-land-1)" />
 
         {rows.map((item) => {
           const [west, south, east, north] = item.boundingBox;

@@ -31,20 +31,30 @@ import {
 } from '@/lib/insights';
 import { formatYear } from '@/lib/myth-utils';
 
-const PIE_COLORS = ['#d6b15b', '#6ba8de', '#cb7676', '#9b86e0', '#4ab291', '#de8e5d', '#f2c97f', '#a0b7d8'];
+// Renk değerleri src/styles/tokens.css'te (--color-chart-*); SVG fill/stroke var(--…) okur.
+const PIE_COLORS = [
+  'var(--color-chart-cat-1)',
+  'var(--color-chart-cat-2)',
+  'var(--color-chart-cat-3)',
+  'var(--color-chart-cat-4)',
+  'var(--color-chart-cat-5)',
+  'var(--color-chart-cat-6)',
+  'var(--color-chart-cat-7)',
+  'var(--color-chart-cat-8)',
+];
 const REGION_COLORS: Record<string, string> = {
-  mediterranean: '#6ba8de',
-  europe: '#6ba8de',
-  'northern europe': '#5bbd7a',
-  'north europe': '#5bbd7a',
-  scandinavia: '#5bbd7a',
-  asia: '#de8e5d',
-  'east asia': '#de8e5d',
-  'south asia': '#de8e5d',
-  mesopotamia: '#b985de',
-  africa: '#d66f6f',
-  americas: '#57c2c2',
-  oceania: '#e4c16a',
+  mediterranean: 'var(--color-chart-region-mediterranean)',
+  europe: 'var(--color-chart-region-mediterranean)',
+  'northern europe': 'var(--color-chart-region-north-europe)',
+  'north europe': 'var(--color-chart-region-north-europe)',
+  scandinavia: 'var(--color-chart-region-north-europe)',
+  asia: 'var(--color-chart-region-asia)',
+  'east asia': 'var(--color-chart-region-asia)',
+  'south asia': 'var(--color-chart-region-asia)',
+  mesopotamia: 'var(--color-chart-region-mesopotamia)',
+  africa: 'var(--color-chart-region-africa)',
+  americas: 'var(--color-chart-region-americas)',
+  oceania: 'var(--color-chart-region-oceania)',
 };
 
 function regionColor(region: string) {
@@ -52,7 +62,7 @@ function regionColor(region: string) {
   for (const [regionKey, color] of Object.entries(REGION_COLORS)) {
     if (key.includes(regionKey)) return color;
   }
-  return '#cfad5d';
+  return 'var(--color-chart-gold)';
 }
 
 interface StatsChartsProps {
@@ -119,7 +129,7 @@ export default function StatsCharts({
                 </Pie>
                 <Tooltip
                   formatter={(value: number, name: string) => [`${value} mit`, name]}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -141,16 +151,16 @@ export default function StatsCharts({
           <div className="mt-4 h-[360px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={connected} layout="vertical" margin={{ left: 18, right: 24, top: 8, bottom: 8 }}>
-                <XAxis type="number" stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 11 }} />
-                <YAxis type="category" dataKey="name" width={150} tick={{ fill: '#d9c39b', fontSize: 11 }} />
+                <XAxis type="number" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <YAxis type="category" dataKey="name" width={150} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number, _name: string, entry: { payload?: { mythology?: string } }) => [
                     `${value} bağlantı`,
                     entry.payload?.mythology || 'Mit',
                   ]}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
-                <Bar dataKey="connections" fill="#ccaa5a" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
+                <Bar dataKey="connections" fill="var(--color-chart-gold-soft)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -169,10 +179,10 @@ export default function StatsCharts({
                     `${value} tanrı`,
                     entry.payload?.domain || 'Domain',
                   ]}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
-                <Scatter data={domains} fill="#d4b368" isAnimationActive animationDuration={1100}>
-                  <LabelList dataKey="domain" position="center" className="fill-[#181109]" fontSize={10} />
+                <Scatter data={domains} fill="var(--color-chart-gold-bright)" isAnimationActive animationDuration={1100}>
+                  <LabelList dataKey="domain" position="center" className="fill-[color:var(--color-chart-ink)]" fontSize={10} />
                 </Scatter>
               </ScatterChart>
             </ResponsiveContainer>
@@ -186,13 +196,13 @@ export default function StatsCharts({
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={sitesByType} layout="vertical" margin={{ left: 12, right: 24, top: 8, bottom: 8 }}>
-                <XAxis type="number" stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 11 }} />
-                <YAxis type="category" dataKey="type" width={120} tick={{ fill: '#d9c39b', fontSize: 11 }} />
+                <XAxis type="number" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <YAxis type="category" dataKey="type" width={120} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number) => [`${value} mekân`, 'Adet']}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
-                <Bar dataKey="count" fill="#81b7df" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
+                <Bar dataKey="count" fill="var(--color-chart-blue)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={900} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -202,10 +212,10 @@ export default function StatsCharts({
           <h2 className="text-xl text-gold">Mitoloji zaman çizelgesi (Gantt)</h2>
           <p className="mt-1 text-xs text-foreground/60">Barlar mitolojik sistemlerin etkin dönemini gösterir.</p>
           <div className="mt-2 flex flex-wrap gap-2 text-[11px] text-foreground/70">
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#6ba8de]" />Akdeniz</span>
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#5bbd7a]" />Kuzey Avrupa</span>
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#de8e5d]" />Asya</span>
-            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[#d66f6f]" />Afrika</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[color:var(--color-chart-region-mediterranean)]" />Akdeniz</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[color:var(--color-chart-region-north-europe)]" />Kuzey Avrupa</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[color:var(--color-chart-region-asia)]" />Asya</span>
+            <span className="rounded-full border border-gold/20 bg-black/20 px-2 py-0.5"><span className="mr-1 inline-block h-2 w-2 rounded-full bg-[color:var(--color-chart-region-africa)]" />Afrika</span>
           </div>
           <div className="mt-4 h-[360px]">
             <ResponsiveContainer width="100%" height="100%">
@@ -214,10 +224,10 @@ export default function StatsCharts({
                   type="number"
                   domain={[0, Math.max(1, timelineSpan)]}
                   tickFormatter={(value: number) => formatYear(timeline.meta.minYear + value)}
-                  tick={{ fill: '#b8a27b', fontSize: 10 }}
-                  stroke="#b8a27b"
+                  tick={{ fill: 'var(--color-chart-axis)', fontSize: 10 }}
+                  stroke="var(--color-chart-axis)"
                 />
-                <YAxis type="category" dataKey="name" width={150} tick={{ fill: '#d9c39b', fontSize: 10 }} />
+                <YAxis type="category" dataKey="name" width={150} tick={{ fill: 'var(--color-chart-label)', fontSize: 10 }} />
                 <Tooltip
                   formatter={
                     (_value: number, _name: string, entry: { payload?: { startYear?: number; endYear?: number; mythCount?: number } }) => {
@@ -229,14 +239,14 @@ export default function StatsCharts({
                       ];
                     }
                   }
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
                 <Bar dataKey="startOffset" stackId="timeline" fill="rgba(0,0,0,0)" />
-                <Bar dataKey="duration" stackId="timeline" fill="#cfad5d" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={1200}>
+                <Bar dataKey="duration" stackId="timeline" fill="var(--color-chart-gold)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={1200}>
                   {timeline.data.map((item) => (
                     <Cell key={item.id} fill={regionColor(item.region)} />
                   ))}
-                  <LabelList dataKey="mythCount" position="right" className="fill-[#d8c39a]" fontSize={10} />
+                  <LabelList dataKey="mythCount" position="right" className="fill-[color:var(--color-chart-value)]" fontSize={10} />
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
@@ -266,7 +276,7 @@ export default function StatsCharts({
                 </Pie>
                 <Tooltip
                   formatter={(value: number, name: string) => [`${value} site`, protectionLabel(name)]}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -278,13 +288,13 @@ export default function StatsCharts({
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={excavationByDecade} margin={{ left: 6, right: 14, top: 8, bottom: 12 }}>
-                <XAxis dataKey="decade" stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 10 }} interval={0} angle={-35} textAnchor="end" height={54} />
-                <YAxis stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 11 }} />
+                <XAxis dataKey="decade" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 10 }} interval={0} angle={-35} textAnchor="end" height={54} />
+                <YAxis stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number) => [`${value} kazı kaydı`, 'Kampanya']}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
-                <Bar dataKey="count" fill="#78b9e8" radius={[4, 4, 0, 0]} isAnimationActive animationDuration={1000} />
+                <Bar dataKey="count" fill="var(--color-chart-blue-bright)" radius={[4, 4, 0, 0]} isAnimationActive animationDuration={1000} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -305,8 +315,8 @@ export default function StatsCharts({
           <div className="mt-4 h-[380px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={artifactRichMythologies} layout="vertical" margin={{ left: 16, right: 20, top: 8, bottom: 8 }}>
-                <XAxis type="number" stroke="#b8a27b" tick={{ fill: '#b8a27b', fontSize: 11 }} />
-                <YAxis type="category" dataKey="name" width={138} tick={{ fill: '#d9c39b', fontSize: 11 }} />
+                <XAxis type="number" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <YAxis type="category" dataKey="name" width={138} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number, name: string, entry: { payload?: { siteCount?: number } }) => {
                     if (name === 'artifactCount') {
@@ -314,9 +324,9 @@ export default function StatsCharts({
                     }
                     return [String(value), name];
                   }}
-                  contentStyle={{ background: '#0f0b08', border: '1px solid rgba(201,168,76,.3)' }}
+                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgba(201,168,76,.3)' }}
                 />
-                <Bar dataKey="artifactCount" fill="#cfad5d" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={950} />
+                <Bar dataKey="artifactCount" fill="var(--color-chart-gold)" radius={[0, 4, 4, 0]} isAnimationActive animationDuration={950} />
               </BarChart>
             </ResponsiveContainer>
           </div>

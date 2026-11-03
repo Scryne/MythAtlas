@@ -38,14 +38,14 @@ export default function MiniWorldMap({
       <h3 className="mb-2 text-sm uppercase tracking-[0.2em] text-gold/80">{title}</h3>
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-        className="h-auto w-full rounded-md border border-gold/20 bg-[#100d09]"
+        className="h-auto w-full rounded-md border border-gold/20 bg-[color:var(--color-map-mini-frame)]"
         role="img"
         aria-label={title}
       >
         <defs>
           <linearGradient id="map-ocean" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#16120e" />
-            <stop offset="100%" stopColor="#0d0a07" />
+            <stop offset="0%" stopColor="var(--color-map-mini-ocean)" />
+            <stop offset="100%" stopColor="var(--color-bg-primary)" />
           </linearGradient>
         </defs>
 
@@ -109,15 +109,15 @@ export default function MiniWorldMap({
                 cx={point.x}
                 cy={point.y}
                 r={6}
-                fill={marker.color || '#f0d58d'}
+                fill={marker.color || 'var(--color-map-marker)'}
                 opacity={0.2}
               />
               <circle
                 cx={point.x}
                 cy={point.y}
                 r={3}
-                fill={marker.color || '#f0d58d'}
-                stroke="#1a140d"
+                fill={marker.color || 'var(--color-map-marker)'}
+                stroke="var(--color-map-marker-stroke)"
                 strokeWidth={1}
               />
               <title>{marker.label}</title>
