@@ -42,11 +42,23 @@
 - **Lint 0:** 31 uyarı düzeltildi (render sırasında sıfırlama, `useId`, belirli yerleşim, kancalar `useMemo`).
 - Doğrulama: statik dışa aktarım (1076 sayfa), 10 rota × 4 genişlik = 40 kare 0 sorun.
 
+## 2026-11-03
+
+- **Grafik renkleri token'da:** istatistik sayfası (Recharts pasta/çubuk/Gantt, iki koroplet) ve mini dünya haritasındaki
+  37 farklı ham hex değeri `tokens.css`'e `--color-chart-*` / `--color-map-*` olarak taşındı, bileşenler `var(--…)` okuyor. Değerler
+  birebir aynı; yalnız `#0d0a07` mevcut `--color-bg-primary`'ye bağlandı. Doğrulama: `/stats`, `/map`, `/mythology/greek`,
+  `/site/parthenon`'da tüm öğelerin hesaplanmış renkleri önce/sonra aynı; `/stats`'taki 12 grafik kartı animasyon
+  bittikten sonra piksel piksel aynı.
+- `next dev`'in ürettiği `AGENTS.md` `.gitignore`'a eklendi (hiç izlenmiyordu).
+- `tsc`, `eslint`, `qa:data-integrity` (0 sorun), `qa:content` (temiz), `next build` geçti.
+
 ## Ne yarım / bilinen sınırlar
 
 - Canlı kurulum GitHub Pages (`master`'a push'ta derlenir). Bu oturumun commit'leri henüz push edilmedi.
 - Mobilde soy ağacı "masaüstünde daha iyi" kapısıyla açılıyor; kapıdan geçilince grafik dokunmatik kaydırmayla çalışıyor.
-- İstatistik ve harita grafiklerinde ham hex hâlâ var (grafik kütüphanesi renk dizileri); soy ağacı/paraleller temiz.
+- Ham hex hâlâ duran yerler: mitoloji ayrıntı sayfasındaki etki mini grafiği, zaman çizelgesi ve tür vurguları,
+  yükleniyor simgesi, DNA/arkeoloji/tema grafikleri. Ana harita (`MapPageClient`) hex değil `rgb()` yazıyor ama değerleri
+  token'larla aynı; MapLibre çözülmüş renk istediği için ayrı iş.
 
 ## Sonraki adım
 

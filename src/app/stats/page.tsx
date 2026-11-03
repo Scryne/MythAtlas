@@ -145,7 +145,7 @@ export default function StatsPage() {
                           : 'rgba(240,207,133,.38)'
                     }
                   />
-                  <text x="42" y="22" textAnchor="middle" fill="#f4e0b0" fontSize="11">
+                  <text x="42" y="22" textAnchor="middle" fill="var(--color-chart-node-text)" fontSize="11">
                     {node.label}
                   </text>
                 </g>

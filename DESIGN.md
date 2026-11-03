@@ -72,7 +72,8 @@ Mitleri, tanrıları ve kutsal alanları aynı atlas üzerinde okuyan bir başvu
   yarı saydam zeminle kullanılır ("Hâlâ ayakta" / "Tarihe karıştı").
 - Kenarlar `border` (0,15 altın), üzerine gelince `border-hover`. Yeni renk gerekirse önce buraya token olarak eklenir;
   bileşene ham hex yazılmaz (soy ağacı ve paraleller sayfalarında kalan ham hex'ler eski borçtur, dokunulduğunda
-  token'a çekilir).
+  token'a çekilir). İstatistik ve harita grafiklerinin renkleri `tokens.css`'te `--color-chart-*` / `--color-map-*`
+  grubunda; Recharts ve SVG bunları `var(--…)` olarak okur.
 
 ## Typography
 
