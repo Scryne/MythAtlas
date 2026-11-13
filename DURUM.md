@@ -3,8 +3,25 @@
 > **Ne bu dosya:** sertifika değil **envanter**. Ölçülen gerçek durum; "çalışmıyor" yazan satır kusur değil, kayıt.
 > Kapanış standardı: `ScryneOS/🎯 100-Command-Center/Kapanis-Standardi.md`
 
-**Ölçüm tarihi:** 2026-10-26 (önceki: 2026-08-27)
+**Ölçüm tarihi:** 2026-11-13 (önceki: 2026-10-26)
 **Tek cümle:** Canlıda (https://scryne.github.io/MythAtlas/, GitHub Pages, statik); 566 sayfa, veri ve içerik denetimleri temiz, arayüz tutarlı Türkçe.
+
+## 2026-11-13 denetimi (ölçüldü)
+
+- **Kalite:** `tsc` 0, `eslint` 0, `next build` 0 (560 segment), `qa:content` temiz. `npm audit`: 7 orta, hepsi
+  `typescript-eslint` → `minimatch` zinciri (lint aracı, üst akım).
+- **Tanımsız sınıflar (`f8df6b0`):** `text-primary/secondary` ve saydamlık sınıfları tanımlandı; karşılaştırma
+  sayfası basePath + Türkçe mesaj.
+- **İstatistik (`70028ee`, `2f5a013`):** pasta grafiklerine görünür lejant, kabarcığa ekran okuyucu listesi.
+  Kabarcık grafiğinde `ZAxis` yoktu: bütün kabarcıklar aynı küçük boydaydı, adlar okunmuyordu → boy = tanrı
+  sayısı, ad kabarcığın altında. Sayım eksenlerinde 0,25'lik kesirler kalktı.
+- **Harita (`2d13980`):** altlık stilinin `text-transform: uppercase`'i yerel duyarlı çalışıyor; tr yerelinde
+  "KİNGDOM", "SPAİN" çıkıyordu → stil yüklenince etiket `upcase` ifadesiyle büyütülüyor. 960 px'te araç çubuğu
+  ikinci satıra inip kümeleri örtüyordu → marka kartı `xl` altında gizli, çubuk tek satır.
+- **Gezi:** `next start`, 20 rota (sitemap'teki her tür + ayrıntı sayfaları + 404) × 390/1440 koyu: taşma 0,
+  konsol 0 (404 beklenen).
+- **Bilinen sınır:** /stats'taki iki "koroplet" gerçek koroplet değil; kaba kıta silüeti üstünde bölge sınır
+  kutuları. Ülke geometrisiyle yeniden çizim açık iş (~3–4 saat).
 
 ## Ne çalışıyor (2026-10-26'da ölçüldü)
 
