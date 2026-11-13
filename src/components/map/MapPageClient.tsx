@@ -173,6 +173,34 @@ function debounce<T extends (...args: any[]) => void>(fn: T, wait = 100) {
   };
 }
 
+// Altlık stilindeki `text-transform: uppercase` toLocaleUpperCase ile çalışıyor: Türkçe yerelde İngilizce etiketler
+// "KİNGDOM", "SPAİN" çıkıyordu. Dönüşümü kaldırıp etiketi yerelden bağımsız `upcase` ifadesiyle büyütüyoruz.
+function tokensToExpression(field: string): unknown {
+  const parts = field.split(/(\{[^}]+\})/).filter(Boolean);
+  const exprs = parts.map((part) => {
+    const match = /^\{([^}]+)\}$/.exec(part);
+    return match ? ['to-string', ['coalesce', ['get', match[1]], '']] : part;
+  });
+  return exprs.length === 1 ? exprs[0] : ['concat', ...exprs];
+}
+
+function upcaseLabelsLocaleFree(map: maplibregl.Map) {
+  for (const layer of map.getStyle()?.layers ?? []) {
+    if (layer.type !== 'symbol') continue;
+    if (map.getLayoutProperty(layer.id, 'text-transform') !== 'uppercase') continue;
+    const field = map.getLayoutProperty(layer.id, 'text-field');
+    // Biçimli (format) metinler `upcase` alamaz; onlara dokunma.
+    if (Array.isArray(field) && field[0] === 'format') continue;
+    const source = typeof field === 'string' ? tokensToExpression(field) : field;
+    try {
+      map.setLayoutProperty(layer.id, 'text-field', ['upcase', ['to-string', source]]);
+      map.setLayoutProperty(layer.id, 'text-transform', 'none');
+    } catch {
+      // Beklenmeyen ifade biçimi: özgün etiketi bırak.
+    }
+  }
+}
+
 function computeScale(map: maplibregl.Map) {
   const lat = map.getCenter().lat;
   const zoom = map.getZoom();
@@ -823,6 +851,7 @@ export default function MapPage() {
       attributionControl: false,
     });
     map.doubleClickZoom.enable();
+    map.on('style.load', () => upcaseLabelsLocaleFree(map));
 
     mapRef.current = map;
 
@@ -2131,8 +2160,8 @@ export default function MapPage() {
       )}
 
       <div className="pointer-events-none absolute inset-0 z-20">
-        {/* Dar ekranda sitenin üst çubuğu zaten markayı taşıyor; kart araç çubuğunun altında kalıyordu. */}
-        <div className="pointer-events-auto absolute left-4 top-4 hidden items-center gap-3 rounded-xl border border-gold/25 bg-surface/85 px-3 py-2 backdrop-blur-md md:flex">
+        {/* xl altında sitenin üst çubuğu zaten markayı taşıyor; kart araç çubuğunu ikinci satıra itip kümeleri örtüyordu (960). */}
+        <div className="pointer-events-auto absolute left-4 top-4 hidden items-center gap-3 rounded-xl border border-gold/25 bg-surface/85 px-3 py-2 backdrop-blur-md xl:flex">
           <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/50 bg-overlay text-gold-light">✧</div>
           <div>
             <p className="font-heading text-sm tracking-[0.14em] text-gold-light">MythAtlas</p>
@@ -2141,7 +2170,7 @@ export default function MapPage() {
         </div>
 
         {/* Araç çubuğu marka kartının sağında kırılır; boş kalan şerit haritayı sürüklemeyi engellemesin diye yalnız düğmeler tıklanır. */}
-        <div className="pointer-events-none absolute left-4 right-4 top-4 flex flex-wrap items-center justify-end gap-2 *:pointer-events-auto md:left-56">
+        <div className="pointer-events-none absolute left-4 right-4 top-4 flex flex-wrap items-center justify-end gap-1.5 *:pointer-events-auto xl:left-56 xl:gap-2">
           <button
             type="button"
             aria-label="Paralel mit kipini aç/kapat"
