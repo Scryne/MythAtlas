@@ -109,7 +109,7 @@ export default function StatsCharts({
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Türe göre mitler</h2>
-          <div className="mt-4 h-[320px]">
+          <div className="mt-4 h-[320px]" aria-hidden="true">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -168,7 +168,7 @@ export default function StatsCharts({
 
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Etki alanına göre tanrılar</h2>
-          <div className="mt-4 h-[360px]">
+          <div className="mt-4 h-[360px]" aria-hidden="true">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 12, right: 12, bottom: 20, left: 12 }}>
                 <XAxis type="number" dataKey="x" hide domain={[-0.8, 5.8]} />
@@ -257,7 +257,7 @@ export default function StatsCharts({
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Koruma durumuna göre alanlar</h2>
-          <div className="mt-4 h-[320px]">
+          <div className="mt-4 h-[320px]" aria-hidden="true">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie

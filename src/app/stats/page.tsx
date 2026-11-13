@@ -112,8 +112,8 @@ export default function StatsPage() {
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-6">
           <h2 className="text-2xl text-gold">Mitoloji Ailesi Ağacı</h2>
-          <p className="meta-text mt-1 text-sm">Basit etki akislari: Greek -&gt; Roman, Sumerian -&gt; Babylonian -&gt; Hebrew.</p>
-          <div className="mt-4 overflow-x-auto">
+          <p className="meta-text mt-1 text-sm">Basit etki akışları: Yunan → Roma, Sümer → Babil → İbrani.</p>
+          <div className="mt-4 overflow-x-auto" tabIndex={0} role="region" aria-label="Mitoloji ailesi ağacı">
             <svg viewBox="0 0 560 200" className="min-w-[560px]">
               {familyTree.edges.map(([fromId, toId]) => {
                 const from = nodeById.get(fromId)!;

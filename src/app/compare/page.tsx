@@ -11,6 +11,7 @@ import {
   type MythData,
 } from '@/lib/myth-data';
 import { startLoad } from '@/lib/start-load';
+import { withBasePath } from '@/lib/site';
 
 interface ComparableEntity {
   id: string;
@@ -253,7 +254,12 @@ export default function ComparePage() {
       coordinates: [deity.origin.lng, deity.origin.lat],
     }));
 
-    return [...curatedExtraEntities, ...mythologyEntities, ...mythEntities, ...deityEntities];
+    // Aynı kimlik hem mit hem tanrı olabilir (dangun): seçim kutusunda ve eşlemede tek kayıt kalır.
+    const tekil = new Map<string, ComparableEntity>();
+    for (const varlik of [...curatedExtraEntities, ...mythologyEntities, ...mythEntities, ...deityEntities]) {
+      if (!tekil.has(varlik.id)) tekil.set(varlik.id, varlik);
+    }
+    return [...tekil.values()];
   }, [bundles, deities, mythById, mythologyById, myths]);
 
   const entityById = useMemo(
@@ -293,7 +299,7 @@ export default function ComparePage() {
 
     params.set('left', leftId);
     params.set('right', rightId);
-    window.history.replaceState(window.history.state, '', `/compare?${params.toString()}`);
+    window.history.replaceState(window.history.state, '', withBasePath(`/compare/?${params.toString()}`));
   }, [leftId, rightId]);
 
   const left = entityById.get(leftId) ?? comparableEntities[0];
@@ -403,12 +409,12 @@ export default function ComparePage() {
 
   const copyShareUrl = async () => {
     if (sameSelection) return;
-    const shareUrl = `${window.location.origin}/compare?left=${encodeURIComponent(leftId)}&right=${encodeURIComponent(rightId)}`;
+    const shareUrl = `${window.location.origin}${withBasePath('/compare/')}?left=${encodeURIComponent(leftId)}&right=${encodeURIComponent(rightId)}`;
     try {
       await navigator.clipboard.writeText(shareUrl);
-      setShareMessage('Link copied');
+      setShareMessage('Bağlantı kopyalandı');
     } catch {
-      setShareMessage('Copy failed');
+      setShareMessage('Kopyalanamadı: tarayıcı panoya erişim izni vermedi');
     }
     window.setTimeout(() => setShareMessage(null), 2000);
   };
@@ -419,9 +425,9 @@ export default function ComparePage() {
     const summary = `Biliyor muydunuz? ${left.name} ve ${right.name} anlatılarının benzerlik skoru ${similarityScore}. ${probableConnection}`;
     try {
       await navigator.clipboard.writeText(summary);
-      setShareMessage('Summary copied');
+      setShareMessage('Özet kopyalandı');
     } catch {
-      setShareMessage('Copy failed');
+      setShareMessage('Kopyalanamadı: tarayıcı panoya erişim izni vermedi');
     }
     window.setTimeout(() => setShareMessage(null), 2000);
   };
@@ -477,7 +483,7 @@ export default function ComparePage() {
           <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="font-heading text-xl text-gold-light">İki Öğe Seç</h2>
               <div className="flex items-center gap-2">
-                {shareMessage && <span className="text-xs text-secondary">{shareMessage}</span>}
+                {shareMessage && <span role="status" className="text-xs text-secondary">{shareMessage}</span>}
                 <button
                   type="button"
                   onClick={copyShareUrl}

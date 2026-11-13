@@ -40,7 +40,7 @@ export default function ArchaeologyHubCharts({
       <section className="ancient-card p-6">
         <h2 className="text-2xl text-gold">Keşif Zaman Çizelgesi</h2>
         <p className="meta-text mt-1 text-sm">1700-sonrası büyük keşif ve kazı kampanyaları.</p>
-        <div className="mt-4 h-[360px]">
+        <div className="mt-4 h-[360px]" aria-hidden="true">
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart margin={{ top: 16, right: 18, bottom: 16, left: 8 }}>
               <XAxis type="number" dataKey="year" domain={[1700, 'dataMax']} stroke="var(--color-chart-axis-warm)" tick={{ fill: 'var(--color-chart-axis-warm)', fontSize: 11 }} />

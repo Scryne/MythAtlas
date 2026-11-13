@@ -126,6 +126,7 @@ export default function AllSitesPage() {
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85 outline-none focus:border-gold/40"
           />
           <select
+            aria-label="Mitoloji"
             value={mythologyFilter}
             onChange={(event) => setMythologyFilter(event.target.value)}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
@@ -138,6 +139,7 @@ export default function AllSitesPage() {
             ))}
           </select>
           <select
+            aria-label="Alan türü"
             value={typeFilter}
             onChange={(event) => setTypeFilter(event.target.value)}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
@@ -150,6 +152,7 @@ export default function AllSitesPage() {
             ))}
           </select>
           <select
+            aria-label="Sıralama"
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value as 'name' | 'mythology' | 'era' | 'artifactCount')}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
@@ -163,6 +166,7 @@ export default function AllSitesPage() {
 
         <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-4">
           <select
+            aria-label="Koruma durumu"
             value={protectionFilter}
             onChange={(event) => setProtectionFilter(event.target.value as (typeof PROTECTION_FILTERS)[number]['key'])}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"
@@ -174,6 +178,7 @@ export default function AllSitesPage() {
             ))}
           </select>
           <select
+            aria-label="Dönem"
             value={periodFilter}
             onChange={(event) => setPeriodFilter(event.target.value as (typeof PERIOD_FILTERS)[number]['key'])}
             className="rounded-md border border-gold/20 bg-black/20 px-3 py-2 text-sm text-foreground/85"

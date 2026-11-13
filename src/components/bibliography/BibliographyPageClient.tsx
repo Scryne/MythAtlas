@@ -108,6 +108,7 @@ export default function BibliographyPageClient() {
           className="rounded-md border border-gold/25 bg-black/25 px-3 py-2 text-sm text-foreground"
         />
         <select
+          aria-label="Kaynak tipi"
           value={type}
           onChange={(event) => setType(event.target.value as 'all' | AcademicSourceType)}
           className="rounded-md border border-gold/25 bg-black/25 px-3 py-2 text-sm text-foreground"
@@ -118,6 +119,7 @@ export default function BibliographyPageClient() {
           <option value="archaeological">Arkeolojik</option>
         </select>
         <select
+          aria-label="Mitoloji"
           value={mythologyId}
           onChange={(event) => setMythologyId(event.target.value)}
           className="rounded-md border border-gold/25 bg-black/25 px-3 py-2 text-sm text-foreground"

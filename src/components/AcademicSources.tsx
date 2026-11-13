@@ -180,6 +180,7 @@ export default function AcademicSources({ sources }: AcademicSourcesProps) {
                     )}
 
                     <select
+                      aria-label="Atıf biçimi"
                       className="rounded-full border border-gold/30 bg-black/35 px-3 py-1 text-[11px] uppercase tracking-[0.12em] text-foreground/80"
                       value={citationStyle}
                       onChange={(event) =>

@@ -428,6 +428,7 @@ export default function FamilyTreePageClient() {
 
   return (
     <div className="relative min-h-screen overflow-x-clip bg-void pt-16 text-parchment">
+      <h1 className="sr-only">Mitoloji Aile Ağacı</h1>
       <div className="pointer-events-auto absolute left-4 top-4 z-40 flex flex-wrap items-center gap-2 rounded-xl border border-gold/30 bg-background/90 px-3 py-2 backdrop-blur-md">
         <HoverPrefetchLink href="/" className="rounded-md border border-gold/25 px-2 py-1 text-xs text-parchment-dim">
           Ana sayfa
@@ -496,6 +497,7 @@ export default function FamilyTreePageClient() {
           );
         })}
         <select
+          aria-label="Bölge vurgula"
           value={highlightRegion}
           onChange={(event) => setHighlightRegion(event.target.value)}
           className="rounded-md border border-gold/25 bg-background px-2 py-1 text-[11px] text-gold-pale"

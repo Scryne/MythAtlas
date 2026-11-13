@@ -2037,7 +2037,7 @@ export default function MapPage() {
       <div className="map-sepia-overlay" />
 
       <div className="sr-only">
-        <h2>Haritada mitoloji bölgeleri</h2>
+        <h1>Haritada mitoloji bölgeleri</h1>
         <ul>
           {mythologies.map((mythology) => (
             <li key={`sr-${mythology.id}`}>
@@ -2263,7 +2263,7 @@ export default function MapPage() {
         </div>
       </div>
 
-      <div tabIndex={0} aria-label="Harita lejant paneli" className={`pointer-events-auto absolute left-0 top-0 z-30 h-full w-full transform border-r border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,340px)] ${legendOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div tabIndex={0} role="region" aria-label="Harita lejant paneli" className={`pointer-events-auto absolute left-0 top-0 z-30 h-full w-full transform border-r border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,340px)] ${legendOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex items-center justify-between border-b border-gold/15 px-4 py-3">
           <h2 className="font-heading text-sm tracking-[0.2em] text-gold-light">Lejant</h2>
           <button type="button" onClick={() => setLegendOpen(false)} className="text-xs text-secondary hover:text-gold-light">Kapat</button>
@@ -2311,7 +2311,7 @@ export default function MapPage() {
         </div>
       </div>
 
-      <div tabIndex={0} aria-label="Harita filtre paneli" className={`pointer-events-auto absolute right-0 top-0 z-30 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(94vw,360px)] ${filterOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div tabIndex={0} role="region" aria-label="Harita filtre paneli" className={`pointer-events-auto absolute right-0 top-0 z-30 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(94vw,360px)] ${filterOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex items-center justify-between border-b border-gold/15 px-4 py-3"><h2 className="font-heading text-sm tracking-[0.2em] text-gold-light">Filtreler</h2><button type="button" onClick={() => setFilterOpen(false)} className="text-xs text-secondary hover:text-gold-light">Kapat</button></div>
 
         <div className="h-[calc(100%-56px)] space-y-5 overflow-y-auto px-4 py-4 text-sm text-primary">
@@ -2414,6 +2414,7 @@ export default function MapPage() {
 
       <div
         tabIndex={0}
+        role="region"
         aria-label="Seçili mitoloji paneli"
         className={`panel-gradient-top pointer-events-auto absolute right-0 top-0 z-40 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(94vw,400px)] ${selectedMythology ? 'translate-x-0' : 'translate-x-full'}`}
       >
@@ -2639,7 +2640,7 @@ export default function MapPage() {
         )}
       </div>
 
-      <div tabIndex={0} aria-label="Kayıt ayrıntı paneli" className={`pointer-events-auto absolute right-0 top-0 z-50 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,360px)] ${detailData ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div tabIndex={0} role="region" aria-label="Kayıt ayrıntı paneli" className={`pointer-events-auto absolute right-0 top-0 z-50 h-full w-full transform border-l border-gold/20 bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out sm:w-[min(92vw,360px)] ${detailData ? 'translate-x-0' : 'translate-x-full'}`}>
         {detailData && (<><div className="flex items-center justify-between border-b border-gold/15 px-4 py-3"><h2 className="font-heading text-sm tracking-[0.14em] text-gold-light">Ayrıntı</h2><button type="button" onClick={() => setDetail(null)} className="text-xs text-secondary hover:text-gold-light">Kapat</button></div><div className="h-[calc(100%-56px)] overflow-y-auto px-4 py-4 text-sm text-primary">{detailData.imageUrl && <AncientImage src={detailData.imageUrl} alt={detailData.title} width={560} height={240} sizes="(max-width: 768px) 90vw, 560px" className="mb-3 h-44 w-full rounded-md object-cover" />}<h3 className="font-heading text-base text-gold-light">{detailData.title}</h3><p className="mb-3 text-xs text-secondary">{detailData.subtitle}</p><p className="leading-relaxed text-primary">{detailData.description}</p>{'meta' in detailData && detailData.meta && <p className="mt-3 text-xs text-secondary">{detailData.meta}</p>}<div className="mt-4 flex flex-wrap gap-2 text-xs">{detailData.chips.map((chip) => (<span key={chip} className="rounded-full border border-gold/25 px-2 py-1 text-secondary">{chip}</span>))}</div></div></>)}
       </div>
 

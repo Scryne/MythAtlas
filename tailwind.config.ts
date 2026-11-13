@@ -57,6 +57,21 @@ const config: Config = {
           light: "rgb(var(--rgb-bg-overlay) / 0.8)",
         },
       },
+      // Kodda text-primary / text-secondary olarak kullanılıyor; colors'a konursa bg-primary ile çakışır.
+      textColor: {
+        primary: "rgb(var(--rgb-text-primary) / <alpha-value>)",
+        secondary: "rgb(var(--rgb-text-secondary) / <alpha-value>)",
+      },
+      // Varsayılan ölçekte olmayan, kodda kullanılan saydamlıklar (bg-gold/8, bg-background/96 ...).
+      opacity: {
+        8: "0.08",
+        12: "0.12",
+        18: "0.18",
+        88: "0.88",
+        92: "0.92",
+        93: "0.93",
+        96: "0.96",
+      },
       fontFamily: {
         heading: ["var(--font-display)"],
         body: ["var(--font-body)"],
