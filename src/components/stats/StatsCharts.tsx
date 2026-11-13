@@ -82,12 +82,28 @@ interface StatsChartsProps {
   timelineSpan: number;
 }
 
+// Pasta ve kabarcık grafiklerinin değerleri yalnız üzerine gelince görünüyordu: görünür lejant hem
+// dokunmatikte hem ekran okuyucuda (grafiğin kendisi aria-hidden) aynı sayıları verir.
+function ChartLegend({ label, items }: { label: string; items: { key: string; label: string; count: number; color?: string }[] }) {
+  return (
+    <ul aria-label={label} className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-foreground/75 sm:grid-cols-3">
+      {items.map((item) => (
+        <li key={item.key} className="flex min-w-0 items-center gap-2">
+          {item.color && <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-sm" style={{ background: item.color }} />}
+          <span className="truncate">{item.label}</span>
+          <span className="ml-auto tabular-nums text-foreground/55">{item.count}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function protectionLabel(status: string): string {
   if (status === 'UNESCO') return 'UNESCO';
   if (status === 'national_heritage') return 'Ulusal miras';
   if (status === 'local_protection') return 'Yerel koruma';
   if (status === 'disputed') return 'Tartışmalı';
-  if (status === 'unprotected') return 'Korumasiz';
+  if (status === 'unprotected') return 'Korumasız';
   return status;
 }
 
@@ -134,6 +150,10 @@ export default function StatsCharts({
               </PieChart>
             </ResponsiveContainer>
           </div>
+          <ChartLegend
+            label="Türe göre mit sayıları"
+            items={mythsByType.map((item, index) => ({ key: item.type, label: item.type, count: item.count, color: PIE_COLORS[index % PIE_COLORS.length] }))}
+          />
         </article>
 
         <article className="ancient-card p-5">
@@ -177,7 +197,7 @@ export default function StatsCharts({
                   cursor={{ stroke: 'rgb(var(--rgb-gold) / 0.25)' }}
                   formatter={(value: number, _name: string, entry: { payload?: { domain?: string } }) => [
                     `${value} tanrı`,
-                    entry.payload?.domain || 'Domain',
+                    entry.payload?.domain || 'Etki alanı',
                   ]}
                   contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
@@ -187,6 +207,11 @@ export default function StatsCharts({
               </ScatterChart>
             </ResponsiveContainer>
           </div>
+          <ul className="sr-only" aria-label="Etki alanına göre tanrı sayıları">
+            {domains.map((item) => (
+              <li key={item.domain}>{item.domain}: {item.count} tanrı</li>
+            ))}
+          </ul>
         </article>
       </section>
 
@@ -234,7 +259,7 @@ export default function StatsCharts({
                       const payload = entry.payload;
                       if (!payload) return ['', ''];
                       return [
-                        `${formatYear(payload.startYear || 0)} -> ${formatYear(payload.endYear || 0)}`,
+                        `${formatYear(payload.startYear || 0)} → ${formatYear(payload.endYear || 0)}`,
                         `${payload.mythCount || 0} mit`,
                       ];
                     }
@@ -275,12 +300,16 @@ export default function StatsCharts({
                   ))}
                 </Pie>
                 <Tooltip
-                  formatter={(value: number, name: string) => [`${value} site`, protectionLabel(name)]}
+                  formatter={(value: number, name: string) => [`${value} alan`, protectionLabel(name)]}
                   contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
               </PieChart>
             </ResponsiveContainer>
           </div>
+          <ChartLegend
+            label="Koruma durumuna göre alan sayıları"
+            items={archaeologyProtection.map((item, index) => ({ key: item.status, label: protectionLabel(item.status), count: item.count, color: PIE_COLORS[(index + 2) % PIE_COLORS.length] }))}
+          />
         </article>
 
         <article className="ancient-card p-5">
@@ -303,7 +332,7 @@ export default function StatsCharts({
 
       <section className="grid gap-5 xl:grid-cols-2">
         <article className="ancient-card p-5">
-          <h2 className="text-xl text-gold">Artifacts by current country (choropleth)</h2>
+          <h2 className="text-xl text-gold">Bugünkü ülkeye göre eserler (koroplet)</h2>
           <p className="mt-1 text-xs text-foreground/60">Müze koleksiyonlarındaki yaklaşık eser dağılımı.</p>
           <div className="mt-4">
             <ArtifactCountryChoropleth data={artifactsByCountry} />
@@ -320,7 +349,7 @@ export default function StatsCharts({
                 <Tooltip
                   formatter={(value: number, name: string, entry: { payload?: { siteCount?: number } }) => {
                     if (name === 'artifactCount') {
-                      return [`${value} eser`, `${entry.payload?.siteCount || 0} site`];
+                      return [`${value} eser`, `${entry.payload?.siteCount || 0} alan`];
                     }
                     return [String(value), name];
                   }}
