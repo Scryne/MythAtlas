@@ -13,6 +13,7 @@ import {
   Tooltip,
   XAxis,
   YAxis,
+  ZAxis,
 } from 'recharts';
 import ArtifactCountryChoropleth from '@/components/stats/ArtifactCountryChoropleth';
 import MythologyChoropleth from '@/components/stats/MythologyChoropleth';
@@ -171,7 +172,7 @@ export default function StatsCharts({
           <div className="mt-4 h-[360px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={connected} layout="vertical" margin={{ left: 18, right: 24, top: 8, bottom: 8 }}>
-                <XAxis type="number" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <XAxis type="number" allowDecimals={false} stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
                 <YAxis type="category" dataKey="name" width={150} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number, _name: string, entry: { payload?: { mythology?: string } }) => [
@@ -188,11 +189,13 @@ export default function StatsCharts({
 
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Etki alanına göre tanrılar</h2>
-          <div className="mt-4 h-[360px]" aria-hidden="true">
+          <div className="mt-4 h-[400px]" aria-hidden="true">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 12, right: 12, bottom: 20, left: 12 }}>
                 <XAxis type="number" dataKey="x" hide domain={[-0.8, 5.8]} />
-                <YAxis type="number" dataKey="y" hide domain={[-0.8, 4.8]} />
+                <YAxis type="number" dataKey="y" hide domain={[-0.8, 4.8]} reversed />
+                {/* z = tanrı sayısı. ZAxis yokken bütün kabarcıklar aynı küçük boydaydı, adlar okunmuyordu. */}
+                <ZAxis type="number" dataKey="z" range={[220, 1600]} />
                 <Tooltip
                   cursor={{ stroke: 'rgb(var(--rgb-gold) / 0.25)' }}
                   formatter={(value: number, _name: string, entry: { payload?: { domain?: string } }) => [
@@ -202,7 +205,7 @@ export default function StatsCharts({
                   contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
                 />
                 <Scatter data={domains} fill="var(--color-chart-gold-bright)" isAnimationActive animationDuration={1100}>
-                  <LabelList dataKey="domain" position="center" className="fill-[color:var(--color-chart-ink)]" fontSize={10} />
+                  <LabelList dataKey="domain" position="bottom" offset={6} fill="var(--color-chart-label)" fontSize={11} />
                 </Scatter>
               </ScatterChart>
             </ResponsiveContainer>
@@ -221,7 +224,7 @@ export default function StatsCharts({
           <div className="mt-4 h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={sitesByType} layout="vertical" margin={{ left: 12, right: 24, top: 8, bottom: 8 }}>
-                <XAxis type="number" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <XAxis type="number" allowDecimals={false} stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
                 <YAxis type="category" dataKey="type" width={120} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number) => [`${value} mekân`, 'Adet']}
@@ -318,7 +321,7 @@ export default function StatsCharts({
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={excavationByDecade} margin={{ left: 6, right: 14, top: 8, bottom: 12 }}>
                 <XAxis dataKey="decade" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 10 }} interval={0} angle={-35} textAnchor="end" height={54} />
-                <YAxis stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <YAxis allowDecimals={false} stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number) => [`${value} kazı kaydı`, 'Kampanya']}
                   contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
@@ -344,7 +347,7 @@ export default function StatsCharts({
           <div className="mt-4 h-[380px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={artifactRichMythologies} layout="vertical" margin={{ left: 16, right: 20, top: 8, bottom: 8 }}>
-                <XAxis type="number" stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
+                <XAxis type="number" allowDecimals={false} stroke="var(--color-chart-axis)" tick={{ fill: 'var(--color-chart-axis)', fontSize: 11 }} />
                 <YAxis type="category" dataKey="name" width={138} tick={{ fill: 'var(--color-chart-label)', fontSize: 11 }} />
                 <Tooltip
                   formatter={(value: number, name: string, entry: { payload?: { siteCount?: number } }) => {
