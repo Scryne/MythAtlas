@@ -96,6 +96,8 @@ export interface MythologyHeatDatum {
   name: string;
   mythCount: number;
   boundingBox: [number, number, number, number];
+  /** Köken noktası: koroplet bu noktanın bugünkü ülkesine sayar. */
+  origin: { lat: number; lng: number };
   color: string;
 }
 
@@ -564,6 +566,7 @@ export function getMythologyHeatData(): MythologyHeatDatum[] {
     name: bundle.mythology.name,
     mythCount: bundle.datasetCounts.myths,
     boundingBox: bundle.mythology.boundingBox,
+    origin: bundle.mythology.origin,
     color: bundle.mythology.color,
   }));
 }

@@ -155,6 +155,11 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Tam ekran harita kaymaz: ayrılmış kaydırma şeridi sağda boş koyu bir bant olarak kalıyordu. */
+html:has([data-full-viewport]) {
+  scrollbar-gutter: auto;
+}
+
 body,
 * {
   scrollbar-color: rgb(var(--rgb-gold) / 0.35) rgb(var(--rgb-bg-primary));

@@ -2054,7 +2054,7 @@ export default function MapPage() {
   const activePanelTabIndex = panelTabs.indexOf(tab);
 
   return (
-    <div className="relative h-[calc(100vh-var(--header-height))] w-full overflow-hidden bg-background">
+    <div data-full-viewport className="relative h-[calc(100vh-var(--header-height))] w-full overflow-hidden bg-background">
       <div
         ref={mapContainerRef}
         className="map-container absolute inset-0"
@@ -2160,6 +2160,12 @@ export default function MapPage() {
       )}
 
       <div className="pointer-events-none absolute inset-0 z-20">
+        {/* Araç çubuğunun arkasında yumuşak koyu şerit: çipler altlık etiketlerinin (ülke adları) üstünde okunur kalsın. */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 h-28"
+          style={{ background: 'linear-gradient(to bottom, rgb(var(--rgb-bg-primary) / 0.92), rgb(var(--rgb-bg-primary) / 0.55) 55%, transparent)' }}
+        />
         {/* xl altında sitenin üst çubuğu zaten markayı taşıyor; kart araç çubuğunu ikinci satıra itip kümeleri örtüyordu (960). */}
         <div className="pointer-events-auto absolute left-4 top-4 hidden items-center gap-3 rounded-xl border border-gold/25 bg-surface/85 px-3 py-2 backdrop-blur-md xl:flex">
           <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/50 bg-overlay text-gold-light">✧</div>

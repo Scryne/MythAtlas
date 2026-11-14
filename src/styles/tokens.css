@@ -140,6 +140,9 @@
   --rgb-map-focus-box: 224 200 120;
   --rgb-choropleth-artifact-stroke: 204 230 255;
   --rgb-choropleth-myth-stroke: 255 230 160;
+  /* Dünya koropletlerinin dolgusu (2026-11-14): mit = altın, eser = önceki mavi saydamın tabanı. */
+  --rgb-choropleth-myth: 201 168 76;
+  --rgb-choropleth-artifact: 122 182 235;
   --rgb-chart-node-bg: 18 14 10;
   --rgb-chart-node-pending: 240 207 133;
   --color-site-marker-other: #9bc2ff;

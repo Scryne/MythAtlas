@@ -189,27 +189,37 @@ export default function StatsCharts({
 
         <article className="ancient-card p-5">
           <h2 className="text-xl text-gold">Etki alanına göre tanrılar</h2>
-          <div className="mt-4 h-[400px]" aria-hidden="true">
-            <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart margin={{ top: 12, right: 12, bottom: 20, left: 12 }}>
-                <XAxis type="number" dataKey="x" hide domain={[-0.8, 5.8]} />
-                <YAxis type="number" dataKey="y" hide domain={[-0.8, 4.8]} reversed />
-                {/* z = tanrı sayısı. ZAxis yokken bütün kabarcıklar aynı küçük boydaydı, adlar okunmuyordu. */}
-                <ZAxis type="number" dataKey="z" range={[220, 1600]} />
-                <Tooltip
-                  cursor={{ stroke: 'rgb(var(--rgb-gold) / 0.25)' }}
-                  formatter={(value: number, _name: string, entry: { payload?: { domain?: string } }) => [
-                    `${value} tanrı`,
-                    entry.payload?.domain || 'Etki alanı',
-                  ]}
-                  contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
-                />
-                <Scatter data={domains} fill="var(--color-chart-gold-bright)" isAnimationActive animationDuration={1100}>
-                  <LabelList dataKey="domain" position="bottom" offset={6} fill="var(--color-chart-label)" fontSize={11} />
-                </Scatter>
-              </ScatterChart>
-            </ResponsiveContainer>
-          </div>
+          {/* Telefonda 6 sütunlu ızgarada adlar birbirine giriyordu: dar ekranda 3 sütun. */}
+          {[
+            { cols: 6, className: 'mt-4 hidden h-[400px] sm:block' },
+            { cols: 3, className: 'mt-4 h-[600px] sm:hidden' },
+          ].map(({ cols, className }) => {
+            const rows = Math.ceil(domains.length / cols);
+            const grid = domains.map((item, index) => ({ ...item, x: index % cols, y: Math.floor(index / cols) }));
+            return (
+              <div key={cols} className={className} aria-hidden="true">
+                <ResponsiveContainer width="100%" height="100%">
+                  <ScatterChart margin={{ top: 12, right: 12, bottom: 20, left: 12 }}>
+                    <XAxis type="number" dataKey="x" hide domain={[-0.8, cols - 0.2]} />
+                    <YAxis type="number" dataKey="y" hide domain={[-0.8, rows - 0.2]} reversed />
+                    {/* z = tanrı sayısı. ZAxis yokken bütün kabarcıklar aynı küçük boydaydı, adlar okunmuyordu. */}
+                    <ZAxis type="number" dataKey="z" range={[220, 1600]} />
+                    <Tooltip
+                      cursor={{ stroke: 'rgb(var(--rgb-gold) / 0.25)' }}
+                      formatter={(value: number, _name: string, entry: { payload?: { domain?: string } }) => [
+                        `${value} tanrı`,
+                        entry.payload?.domain || 'Etki alanı',
+                      ]}
+                      contentStyle={{ background: 'var(--color-chart-tooltip-bg)', border: '1px solid rgb(var(--rgb-gold) / .3)' }}
+                    />
+                    <Scatter data={grid} fill="var(--color-chart-gold-bright)" isAnimationActive animationDuration={1100}>
+                      <LabelList dataKey="domain" position="bottom" offset={6} fill="var(--color-chart-label)" fontSize={11} />
+                    </Scatter>
+                  </ScatterChart>
+                </ResponsiveContainer>
+              </div>
+            );
+          })}
           <ul className="sr-only" aria-label="Etki alanına göre tanrı sayıları">
             {domains.map((item) => (
               <li key={item.domain}>{item.domain}: {item.count} tanrı</li>
