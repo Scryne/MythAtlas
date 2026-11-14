@@ -2163,7 +2163,7 @@ export default function MapPage() {
         {/* Araç çubuğunun arkasında yumuşak koyu şerit: çipler altlık etiketlerinin (ülke adları) üstünde okunur kalsın. */}
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-28"
+          className="absolute inset-x-0 top-0 h-48 md:h-28"
           style={{ background: 'linear-gradient(to bottom, rgb(var(--rgb-bg-primary) / 0.94), rgb(var(--rgb-bg-primary) / 0.86) 50%, transparent)' }}
         />
         {/* xl altında sitenin üst çubuğu zaten markayı taşıyor; kart araç çubuğunu ikinci satıra itip kümeleri örtüyordu (960). */}
