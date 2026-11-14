@@ -1,6 +1,7 @@
 'use client';
 
 import { toWorldMapPoint } from '@/lib/myth-utils';
+import { WORLD_COUNTRIES, WORLD_HEIGHT, WORLD_WIDTH } from '@/lib/worldMap';
 
 export interface MiniWorldMapMarker {
   id: string;
@@ -20,9 +21,12 @@ interface MiniWorldMapProps {
 const WIDTH = 360;
 const HEIGHT = 180;
 
+// Ülke yolları 1000×394 eşdikdörtgende, 84°K–58°G (src/data/world-110m.json); bu harita 360×180, 90°K–90°G.
+const COUNTRY_TRANSFORM = `translate(0 ${90 - 84}) scale(${WIDTH / WORLD_WIDTH} ${(84 + 58) / WORLD_HEIGHT})`;
+
 export default function MiniWorldMap({
   markers,
-  title = 'World Context',
+  title = 'Dünya bağlamı',
   highlightBox,
   className,
 }: MiniWorldMapProps) {
@@ -81,12 +85,17 @@ export default function MiniWorldMap({
           );
         })}
 
-        <g fill="rgb(var(--rgb-map-continent) / 0.2)" stroke="rgb(var(--rgb-gold) / 0.25)" strokeWidth={0.8}>
-          <path d="M28 34 L65 26 L94 40 L102 66 L86 88 L54 98 L30 80 L18 54 Z" />
-          <path d="M96 92 L112 110 L116 142 L102 165 L86 142 L90 110 Z" />
-          <path d="M126 36 L162 26 L204 32 L238 44 L262 62 L250 84 L216 82 L188 92 L168 112 L144 106 L128 78 Z" />
-          <path d="M170 92 L196 96 L214 114 L208 146 L182 168 L160 154 L154 126 Z" />
-          <path d="M258 112 L280 118 L298 132 L292 150 L268 152 L254 134 Z" />
+        {/* Önceden beş kaba kıta çokgeniydi; artık Natural Earth 1:110m ülke sınırları. */}
+        <g
+          transform={COUNTRY_TRANSFORM}
+          fill="rgb(var(--rgb-map-continent) / 0.2)"
+          stroke="rgb(var(--rgb-gold) / 0.3)"
+          strokeWidth={1.4}
+          strokeLinejoin="round"
+        >
+          {WORLD_COUNTRIES.map((country) => (
+            <path key={country.name} d={country.d} />
+          ))}
         </g>
 
         {box && (
@@ -126,7 +135,7 @@ export default function MiniWorldMap({
         })}
       </svg>
       <p className="mt-2 text-xs text-foreground/45">
-        {markers.length} marked location{markers.length === 1 ? '' : 's'}
+        {markers.length} işaretli konum
       </p>
     </div>
   );

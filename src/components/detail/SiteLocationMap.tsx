@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { toWorldMapPoint } from '@/lib/myth-utils';
+import { WORLD_COUNTRIES, WORLD_HEIGHT, WORLD_WIDTH } from '@/lib/worldMap';
 
 interface NearbyMarker {
   id: string;
@@ -17,17 +18,25 @@ interface SiteLocationMapProps {
 
 const WIDTH = 460;
 const HEIGHT = 260;
+// Konum haritası alanın çevresini 3 kat yakın gösterir (önceden beş kaba kıta çokgenli bütün dünyaydı).
+const ZOOM = 3;
+const VIEW_W = WIDTH / ZOOM;
+const VIEW_H = HEIGHT / ZOOM;
+// Ülke yolları 1000×394 eşdikdörtgende, 84°K–58°G; bu harita 90°K–90°G.
+const COUNTRY_TRANSFORM = `translate(0 ${((90 - 84) * HEIGHT) / 180}) scale(${WIDTH / WORLD_WIDTH} ${((84 + 58) * HEIGHT) / (180 * WORLD_HEIGHT)})`;
 
 export default function SiteLocationMap({ center, label, nearby = [] }: SiteLocationMapProps) {
   const centerPoint = toWorldMapPoint(center.lat, center.lng, WIDTH, HEIGHT);
+  const viewX = Math.min(Math.max(centerPoint.x - VIEW_W / 2, 0), WIDTH - VIEW_W);
+  const viewY = Math.min(Math.max(centerPoint.y - VIEW_H / 2, 0), HEIGHT - VIEW_H);
 
   return (
     <div className="ancient-card overflow-hidden">
       <svg
-        viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+        viewBox={`${viewX} ${viewY} ${VIEW_W} ${VIEW_H}`}
         className="h-64 w-full"
         role="img"
-        aria-label={`Map around ${label}`}
+        aria-label={`${label} çevresi haritası`}
       >
         <defs>
           <linearGradient id="site-map-bg" x1="0" y1="0" x2="1" y2="1">
@@ -38,12 +47,16 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
 
         <rect width={WIDTH} height={HEIGHT} fill="url(#site-map-bg)" />
 
-        <g fill="rgb(var(--rgb-map-continent) / 0.2)" stroke="rgb(var(--rgb-gold) / 0.25)" strokeWidth={0.7}>
-          <path d="M35 50 L105 38 L138 62 L132 95 L92 120 L44 102 L30 72 Z" />
-          <path d="M128 138 L146 162 L142 216 L118 226 L104 178 Z" />
-          <path d="M166 52 L246 40 L306 58 L328 92 L304 108 L244 108 L210 122 L176 102 Z" />
-          <path d="M240 132 L276 136 L292 172 L278 220 L236 232 L220 188 Z" />
-          <path d="M328 148 L374 154 L404 182 L398 214 L352 220 L332 182 Z" />
+        <g
+          transform={COUNTRY_TRANSFORM}
+          fill="rgb(var(--rgb-map-continent) / 0.2)"
+          stroke="rgb(var(--rgb-gold) / 0.35)"
+          strokeWidth={0.6}
+          strokeLinejoin="round"
+        >
+          {WORLD_COUNTRIES.map((country) => (
+            <path key={country.name} d={country.d} />
+          ))}
         </g>
 
         {[...Array(8)].map((_, index) => (
@@ -54,7 +67,7 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
             y1={(HEIGHT / 7) * index}
             y2={(HEIGHT / 7) * index}
             stroke="rgb(var(--rgb-gold) / 0.1)"
-            strokeWidth={0.7}
+            strokeWidth={0.7 / ZOOM}
           />
         ))}
 
@@ -66,7 +79,7 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
             y1={0}
             y2={HEIGHT}
             stroke="rgb(var(--rgb-gold) / 0.09)"
-            strokeWidth={0.7}
+            strokeWidth={0.7 / ZOOM}
           />
         ))}
 
@@ -74,15 +87,15 @@ export default function SiteLocationMap({ center, label, nearby = [] }: SiteLoca
           const point = toWorldMapPoint(item.lat, item.lng, WIDTH, HEIGHT);
           return (
             <g key={item.id}>
-              <circle cx={point.x} cy={point.y} r={4.2} fill="rgb(var(--rgb-gold-light))" fillOpacity={0.22} />
-              <circle cx={point.x} cy={point.y} r={2.2} fill="rgb(var(--rgb-gold-light))" stroke="var(--color-bg-primary)" strokeWidth={0.8} />
+              <circle cx={point.x} cy={point.y} r={4.2 / ZOOM} fill="rgb(var(--rgb-gold-light))" fillOpacity={0.22} />
+              <circle cx={point.x} cy={point.y} r={2.2 / ZOOM} fill="rgb(var(--rgb-gold-light))" stroke="var(--color-bg-primary)" strokeWidth={0.8 / ZOOM} />
               <title>{item.label}</title>
             </g>
           );
         })}
 
-        <circle cx={centerPoint.x} cy={centerPoint.y} r={10} fill="var(--color-gold)" fillOpacity={0.26} />
-        <circle cx={centerPoint.x} cy={centerPoint.y} r={4.2} fill="var(--color-gold-light)" stroke="var(--color-bg-surface)" strokeWidth={1.1} />
+        <circle cx={centerPoint.x} cy={centerPoint.y} r={10 / ZOOM} fill="var(--color-gold)" fillOpacity={0.26} />
+        <circle cx={centerPoint.x} cy={centerPoint.y} r={4.2 / ZOOM} fill="var(--color-gold-light)" stroke="var(--color-bg-surface)" strokeWidth={1.1 / ZOOM} />
       </svg>
     </div>
   );
