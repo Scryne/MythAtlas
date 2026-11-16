@@ -20,8 +20,10 @@
   ikinci satıra inip kümeleri örtüyordu → marka kartı `xl` altında gizli, çubuk tek satır.
 - **Gezi:** `next start`, 20 rota (sitemap'teki her tür + ayrıntı sayfaları + 404) × 390/1440 koyu: taşma 0,
   konsol 0 (404 beklenen).
-- **Bilinen sınır:** /stats'taki iki "koroplet" gerçek koroplet değil; kaba kıta silüeti üstünde bölge sınır
-  kutuları. Ülke geometrisiyle yeniden çizim açık iş (~3–4 saat).
+- ~~**Bilinen sınır:** /stats'taki iki "koroplet" gerçek koroplet değil.~~ **Kapandı (11-14, `5160979`):** Natural
+  Earth 1:110m ülke sınırları (`scripts/build-world-map.mjs` ile önceden SVG yoluna izdüşürülür, çalışma zamanında
+  coğrafya kütüphanesi yok); mitolojiler köken noktasının bugünkü ülkesine, eserler müzenin ülkesine sayılır.
+  Ayrıntı haritaları da gerçek sınırlarla (`313c821`); telefonda araç çubuğu üç satır (`4eb2cc6`).
 
 ## Ne çalışıyor (2026-10-26'da ölçüldü)
 
