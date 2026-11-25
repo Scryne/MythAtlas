@@ -3,7 +3,27 @@
 > **Ne bu dosya:** sertifika değil **envanter**. Ölçülen gerçek durum; "çalışmıyor" yazan satır kusur değil, kayıt.
 > Kapanış standardı: `ScryneOS/🎯 100-Command-Center/Kapanis-Standardi.md`
 
-**Ölçüm tarihi:** 2026-11-13 (önceki: 2026-10-26)
+**Ölçüm tarihi:** 2026-11-25 (yayına hazır turu; önceki: 2026-11-13)
+
+**Yayına hazır karnesi (2026-11-25):** Kod ✅ · Ürün ✅ (yayında) · Ön yüz ✅ (vitrin: siniyor) · Belge ✅ · Kapı: ağaç temiz
+(`.env.local.example` yalnız açıklama; "telefon" eşleşmesi Flickr görsel numarası), geçmişte `51e9377` (11-03 `gh pr merge`)
+gerçek e-posta kimliği, yeniden yazma kararı Scryne'da · Dış adım yok. Bundan sonra bulunan "v2 fikirleri"ne girer.
+
+## 2026-11-25 ölçümü
+
+- `tsc` 0, `eslint` 0, `qa:content` temiz (157 mit, 212 tanrı, 104 alan, 274 kaynak), `qa:data-integrity` 0 sorun,
+  `next build` 560 segment. `npm audit --omit=dev`: next 16.4.3'teki orta açık → 16.4.6, 0 (`b41e7e4`, Pages yeşil).
+- Gezi: yerel derleme 11 rota × 4 × 2 = 88 kare, 80'i temiz; harita sayfasının 8 karesi yalnız yerel sunucuda düştü
+  (Python `http.server` `.mjs` işçisini `text/plain` veriyor, Pages `text/javascript`). Canlıda ana sayfa + harita
+  390/1440 × 2 tema 0 sorun, yeni dağıtımdan sonra yeniden ölçüldü.
+
+## v2 fikirleri
+
+- (yok; bulunan buraya)
+
+---
+
+**Önceki ölçüm: 2026-11-13**
 **Tek cümle:** Canlıda (https://scryne.github.io/MythAtlas/, GitHub Pages, statik); 566 sayfa, veri ve içerik denetimleri temiz, arayüz tutarlı Türkçe.
 
 ## 2026-11-13 denetimi (ölçüldü)
